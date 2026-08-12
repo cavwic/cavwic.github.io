@@ -8,15 +8,66 @@ export type Entry = {
   action?: string;
 };
 
+export type Industry = {
+  id: string;
+  code: string;
+  name: string;
+  description: string;
+  entries: Entry[];
+};
+
 export const githubUrl = "https://github.com/cavwic";
 
 export const navigation = [
   { label: "首页", href: "/" },
+  { label: "行业", href: "/industries" },
   { label: "方案", href: "/solutions" },
   { label: "文章", href: "/articles" },
   { label: "工具", href: "/tools" },
   { label: "Skills", href: "/skills" },
   { label: "关于", href: "/about" },
+];
+
+export const industries: Industry[] = [
+  {
+    id: "ai",
+    code: "AI",
+    name: "AI",
+    description: "整理模型、工作流、自动化方式，以及它们在实际项目中的使用边界。",
+    entries: [
+      {
+        title: "AI 工作流与应用记录",
+        description: "后续发布模型选型、本地工作流和项目落地过程中的具体判断。",
+        status: "建设中",
+      },
+    ],
+  },
+  {
+    id: "robotics",
+    code: "ROBOTICS",
+    name: "机器人",
+    description: "关注机器人系统方案、关键部件、控制方式和可落地的应用场景。",
+    entries: [
+      {
+        title: "机器人行业与方案记录",
+        description: "后续整理行业观察、系统拆解和方案实践中可复核的内容。",
+        status: "建设中",
+      },
+    ],
+  },
+  {
+    id: "dexterous-hands",
+    code: "DEXTEROUS HANDS",
+    name: "灵巧手",
+    description: "持续记录驱动、传动、感知、控制和产品化方向的公开资料与判断。",
+    entries: [
+      {
+        title: "灵巧手技术与产品记录",
+        description: "后续发布技术路线、零部件信息和产品方案的阶段性整理。",
+        status: "建设中",
+      },
+    ],
+  },
 ];
 
 export const collections: Record<string, Entry[]> = {

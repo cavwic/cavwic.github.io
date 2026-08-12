@@ -68,6 +68,12 @@ status: 草稿
 
 写完后，在 `src/data/site.ts` 的 `articles` 数组中增加对应条目，`href` 使用 `/articles/my-new-article`。
 
+## 更新行业内容
+
+行业页的 AI、机器人和灵巧手内容保存在 `src/data/site.ts` 的 `industries` 数组中。每个行业都有自己的 `entries`，新增内容时只需在对应的 `entries` 中增加条目。
+
+如需增加新的行业分类，复制一个完整的行业对象并修改 `id`、`code`、`name`、`description` 和 `entries`。`id` 需要使用不重复的英文短名称。
+
 ## 发布方案、工具和 Skills
 
 - 方案：编辑 `src/data/site.ts` 的 `solutions` 数组。

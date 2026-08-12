@@ -1,0 +1,43 @@
+---
+import { ArrowDown } from "@lucide/astro";
+import EntryList from "../../components/EntryList.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { industries } from "../../data/site";
+---
+
+<BaseLayout title="行业 | CAVWIC" description="按 AI、机器人和灵巧手三个方向整理行业内容。">
+  <header class="page-head">
+    <div class="page-head-inner">
+      <p class="eyebrow">INDUSTRIES</p>
+      <h1>行业</h1>
+      <p>按方向归档长期跟踪的技术、产品和方案内容。</p>
+    </div>
+  </header>
+
+  <nav class="industry-directory" aria-label="行业分类">
+    <div class="industry-directory-inner">
+      {industries.map((industry) => (
+        <a class="industry-tab" href={`#${industry.id}`}>
+          <span>{industry.code}</span>
+          <strong>{industry.name}</strong>
+          <ArrowDown size={18} strokeWidth={1.8} aria-hidden="true" />
+        </a>
+      ))}
+    </div>
+  </nav>
+
+  <div class="industries-content">
+    {industries.map((industry) => (
+      <section id={industry.id} class="industry-section" aria-labelledby={`${industry.id}-title`}>
+        <div class="industry-section-head">
+          <div>
+            <p class="eyebrow">{industry.code}</p>
+            <h2 id={`${industry.id}-title`}>{industry.name}</h2>
+          </div>
+          <p>{industry.description}</p>
+        </div>
+        <EntryList entries={industry.entries} />
+      </section>
+    ))}
+  </div>
+</BaseLayout>

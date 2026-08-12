@@ -555,6 +555,7 @@ a {
   display: grid;
   width: var(--content);
   min-height: 336px;
+  margin: 0 auto;
   align-content: end;
   padding: 70px 0;
 }
@@ -575,6 +576,91 @@ a {
 
 .collection {
   min-height: 420px;
+}
+
+.industry-directory {
+  background: var(--white);
+}
+
+.industry-directory-inner {
+  display: grid;
+  width: var(--content);
+  margin: 0 auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-left: 1px solid var(--ink);
+}
+
+.industry-tab {
+  display: grid;
+  min-height: 126px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-content: center;
+  gap: 4px 18px;
+  padding: 24px 28px;
+  border-right: 1px solid var(--ink);
+  transition: color 160ms ease, background-color 160ms ease;
+}
+
+.industry-tab span {
+  grid-column: 1 / -1;
+  color: #66706d;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.industry-tab strong {
+  font-family: var(--display);
+  font-size: 22px;
+}
+
+.industry-tab svg {
+  align-self: center;
+}
+
+.industry-tab:hover {
+  color: var(--white);
+  background: var(--teal);
+}
+
+.industry-tab:hover span {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.industries-content {
+  width: var(--content);
+  margin: 0 auto;
+}
+
+.industry-section {
+  padding: 88px 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 74px;
+}
+
+.industry-section:last-child {
+  border-bottom: 0;
+}
+
+.industry-section-head {
+  display: grid;
+  grid-template-columns: minmax(220px, .7fr) minmax(320px, 1fr);
+  gap: 64px;
+  align-items: end;
+  margin-bottom: 36px;
+}
+
+.industry-section-head h2 {
+  margin: 7px 0 0;
+  font-family: var(--display);
+  font-size: 42px;
+  line-height: 1.15;
+}
+
+.industry-section-head > p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 16px;
 }
 
 .about-grid {
@@ -740,6 +826,11 @@ a {
     gap: 56px;
   }
 
+  .industry-section-head {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
   .site-footer {
     grid-template-columns: 1fr auto;
   }
@@ -837,6 +928,28 @@ a {
 
   .distribution-band h2 {
     font-size: 36px;
+  }
+
+  .industry-directory-inner {
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid var(--ink);
+  }
+
+  .industry-tab {
+    min-height: 90px;
+    border-bottom: 1px solid var(--ink);
+  }
+
+  .industry-tab:last-child {
+    border-bottom: 0;
+  }
+
+  .industry-section {
+    padding: 64px 0;
+  }
+
+  .industry-section-head h2 {
+    font-size: 34px;
   }
 
   .site-footer {
