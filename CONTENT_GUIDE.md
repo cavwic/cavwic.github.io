@@ -76,7 +76,15 @@ status: 草稿
 
 ## 更新简历下载
 
-公开简历使用 PDF 格式，文件固定放在：
+正在修改的简历原稿保存在本地：
+
+```text
+src/陈文聪简历.pdf
+```
+
+该文件已加入 `.gitignore`，不会被 Git 提交或自动发布。替换这个文件只会更新本地原稿，不会自动同步到网站。
+
+确认可以公开后，将脱敏后的 PDF 复制并改名为：
 
 ```text
 public/downloads/cavwic-resume.pdf
