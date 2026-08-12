@@ -1,0 +1,11 @@
+---
+import CollectionPage from "../../components/CollectionPage.astro";
+import { collections } from "../../data/site";
+---
+
+<CollectionPage
+  eyebrow="TOOLS"
+  title="工具"
+  intro="每个工具都应有清楚的用途、运行方式和源码地址。未完成的项目不会包装成成品。"
+  entries={collections.tools}
+/>

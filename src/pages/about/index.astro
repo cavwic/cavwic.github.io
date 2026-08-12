@@ -1,0 +1,38 @@
+---
+import { ArrowUpRight, GitBranch, HardDrive, RadioTower } from "@lucide/astro";
+import { githubUrl } from "../../data/site";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="关于 | CAVWIC" description="CAVWIC 个人作品与工作记录站的内容范围和发布方式。">
+  <header class="page-head">
+    <div class="page-head-inner">
+      <p class="eyebrow">ABOUT</p>
+      <h1>关于本站</h1>
+      <p>这里发布我自己完成的方案、文章、工具和 Skills。内容仍在整理，未验证的经历和结果不会写进来。</p>
+    </div>
+  </header>
+
+  <section class="about-grid">
+    <div class="about-copy">
+      <p class="eyebrow">工作方式</p>
+      <h2>本地写，线上读。</h2>
+      <p>正文和源码保存在本地项目与 GitHub。静态托管平台负责网页访问，下载文件通过 GitHub Releases 分发。站点本身不依赖家里的 NAS 持续运行。</p>
+      <a class="text-link" href={githubUrl} target="_blank" rel="noreferrer">查看 GitHub <ArrowUpRight size={18} /></a>
+    </div>
+    <div class="about-facts">
+      <div class="fact-row">
+        <HardDrive size={22} strokeWidth={1.5} />
+        <div><strong>编辑</strong><span>本地 Markdown 与源码</span></div>
+      </div>
+      <div class="fact-row">
+        <GitBranch size={22} strokeWidth={1.5} />
+        <div><strong>版本</strong><span>GitHub 仓库与 Releases</span></div>
+      </div>
+      <div class="fact-row">
+        <RadioTower size={22} strokeWidth={1.5} />
+        <div><strong>访问</strong><span>静态托管与独立域名</span></div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

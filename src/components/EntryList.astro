@@ -1,0 +1,35 @@
+---
+import { ArrowUpRight, Clock3 } from "@lucide/astro";
+import type { Entry } from "../data/site";
+
+interface Props {
+  entries: Entry[];
+}
+
+const { entries } = Astro.props;
+---
+
+<div class="entry-list">
+  {entries.map((entry) => (
+    <article class="entry-row">
+      <div class="entry-meta">
+        <span class:list={["status", `status-${entry.status}`]}>{entry.status}</span>
+        {entry.date && <time>{entry.date}</time>}
+      </div>
+      <div class="entry-copy">
+        <h2>{entry.title}</h2>
+        <p>{entry.description}</p>
+      </div>
+      {entry.href ? (
+        <a class="entry-action" href={entry.href} target={entry.external ? "_blank" : undefined} rel={entry.external ? "noreferrer" : undefined}>
+          <span>{entry.action ?? "查看"}</span>
+          <ArrowUpRight size={18} strokeWidth={1.8} />
+        </a>
+      ) : (
+        <span class="entry-action pending" aria-label="尚未开放">
+          <Clock3 size={18} strokeWidth={1.8} />
+        </span>
+      )}
+    </article>
+  ))}
+</div>

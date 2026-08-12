@@ -1,0 +1,11 @@
+---
+import CollectionPage from "../../components/CollectionPage.astro";
+import { collections } from "../../data/site";
+---
+
+<CollectionPage
+  eyebrow="SOLUTIONS"
+  title="方案"
+  intro="记录问题边界、判断依据和实施步骤。内容以能复核、能执行为准。"
+  entries={collections.solutions}
+/>

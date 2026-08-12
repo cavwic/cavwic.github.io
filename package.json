@@ -1,0 +1,16 @@
+{
+  "name": "cavwic-home",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@lucide/astro": "^1.31.0",
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.2.1"
+  }
+}

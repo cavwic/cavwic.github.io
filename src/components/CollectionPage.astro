@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import EntryList from "./EntryList.astro";
+import type { Entry } from "../data/site";
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  entries: Entry[];
+}
+
+const { eyebrow, title, intro, entries } = Astro.props;
+---
+
+<BaseLayout title={`${title} | CAVWIC`} description={intro}>
+  <header class="page-head">
+    <div class="page-head-inner">
+      <p class="eyebrow">{eyebrow}</p>
+      <h1>{title}</h1>
+      <p>{intro}</p>
+    </div>
+  </header>
+  <section class="collection" aria-label={`${title}列表`}>
+    <EntryList entries={entries} />
+  </section>
+</BaseLayout>

@@ -1,0 +1,11 @@
+---
+import CollectionPage from "../../components/CollectionPage.astro";
+import { collections } from "../../data/site";
+---
+
+<CollectionPage
+  eyebrow="SKILLS"
+  title="Skills"
+  intro="把反复使用的方法整理成可安装、可更新的文件包。下载区会随首个正式版本开放。"
+  entries={collections.skills}
+/>

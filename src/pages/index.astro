@@ -1,0 +1,81 @@
+---
+import { ArrowDown, ArrowUpRight, FileText, GitBranch, PackageOpen, Wrench } from "@lucide/astro";
+import EntryList from "../components/EntryList.astro";
+import { collections, githubUrl } from "../data/site";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const latest = [collections.solutions[0], collections.articles[0]];
+---
+
+<BaseLayout>
+  <section class="hero">
+    <img src="/images/workbench-hero.webp" alt="放有代码、技术图纸、卡尺与机械手结构的工作台" fetchpriority="high" />
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">个人作品与工作记录</p>
+      <h1>CAVWIC</h1>
+      <p class="hero-summary">把做过的方案写清楚，把能复用的工具交出来。</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#latest">查看最新内容 <ArrowDown size={18} /></a>
+        <a class="button button-quiet" href={githubUrl} target="_blank" rel="noreferrer">GitHub <GitBranch size={18} /></a>
+      </div>
+    </div>
+    <p class="hero-index">SOLUTIONS / NOTES / TOOLS / SKILLS</p>
+  </section>
+
+  <section id="latest" class="latest-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">最近整理</p>
+        <h2>正在形成的内容</h2>
+      </div>
+      <p>先发布能说明问题的版本，再补齐过程、文件和复现步骤。</p>
+    </div>
+    <EntryList entries={latest} />
+  </section>
+
+  <section class="catalog-section" aria-labelledby="catalog-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">内容索引</p>
+        <h2 id="catalog-title">四类交付物</h2>
+      </div>
+    </div>
+    <div class="catalog-grid">
+      <a class="catalog-item" href="/solutions">
+        <FileText size={24} strokeWidth={1.5} />
+        <span class="catalog-code">SOLUTION</span>
+        <h3>方案</h3>
+        <p>需求拆解、选型和可执行的实施路径。</p>
+        <ArrowUpRight class="catalog-arrow" size={20} />
+      </a>
+      <a class="catalog-item" href="/articles">
+        <PackageOpen size={24} strokeWidth={1.5} />
+        <span class="catalog-code">ARTICLE</span>
+        <h3>文章</h3>
+        <p>项目记录、技术判断和踩坑后的结论。</p>
+        <ArrowUpRight class="catalog-arrow" size={20} />
+      </a>
+      <a class="catalog-item" href="/tools">
+        <Wrench size={24} strokeWidth={1.5} />
+        <span class="catalog-code">TOOL</span>
+        <h3>工具</h3>
+        <p>能直接运行的小工具，源码放在 GitHub。</p>
+        <ArrowUpRight class="catalog-arrow" size={20} />
+      </a>
+      <a class="catalog-item catalog-item-accent" href="/skills">
+        <span class="skill-symbol" aria-hidden="true">{ }</span>
+        <span class="catalog-code">SKILL</span>
+        <h3>Skills</h3>
+        <p>整理过的工作方法，附版本和使用说明。</p>
+        <ArrowUpRight class="catalog-arrow" size={20} />
+      </a>
+    </div>
+  </section>
+
+  <section class="distribution-band">
+    <p class="eyebrow">分发方式</p>
+    <h2>网页负责阅读，GitHub 负责版本，Release 负责下载。</h2>
+    <a class="text-link" href="/about">了解本站结构 <ArrowUpRight size={18} /></a>
+  </section>
+</BaseLayout>
