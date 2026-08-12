@@ -74,6 +74,28 @@ status: 草稿
 
 如需增加新的行业分类，复制一个完整的行业对象并修改 `id`、`code`、`name`、`description` 和 `entries`。`id` 需要使用不重复的英文短名称。
 
+## 更新简历下载
+
+公开简历使用 PDF 格式，文件固定放在：
+
+```text
+public/downloads/cavwic-resume.pdf
+```
+
+建议使用隐藏手机号、详细住址和证件信息的公开脱敏版。准备好文件后，打开 `src/data/site.ts`，找到 `resume` 配置并把：
+
+```ts
+available: false
+```
+
+改为：
+
+```ts
+available: true
+```
+
+首页和关于页会同时从“简历整理中”切换为“下载简历”。替换新版本时保持文件名不变，再重新构建和发布即可。
+
 ## 发布方案、工具和 Skills
 
 - 方案：编辑 `src/data/site.ts` 的 `solutions` 数组。

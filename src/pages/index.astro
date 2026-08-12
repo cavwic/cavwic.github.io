@@ -1,7 +1,8 @@
 ---
-import { ArrowDown, ArrowUpRight, FileText, GitBranch, PackageOpen, Wrench } from "@lucide/astro";
+import { ArrowDown, ArrowUpRight, FileText, PackageOpen, Wrench } from "@lucide/astro";
 import EntryList from "../components/EntryList.astro";
-import { collections, githubUrl } from "../data/site";
+import ResumeLink from "../components/ResumeLink.astro";
+import { collections } from "../data/site";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const latest = [collections.solutions[0], collections.articles[0]];
@@ -17,7 +18,7 @@ const latest = [collections.solutions[0], collections.articles[0]];
       <p class="hero-summary">把做过的方案写清楚，把能复用的工具交出来。</p>
       <div class="hero-actions">
         <a class="button button-primary" href="#latest">查看最新内容 <ArrowDown size={18} /></a>
-        <a class="button button-quiet" href={githubUrl} target="_blank" rel="noreferrer">GitHub <GitBranch size={18} /></a>
+        <ResumeLink className="button button-quiet" />
       </div>
     </div>
     <p class="hero-index">SOLUTIONS / NOTES / TOOLS / SKILLS</p>

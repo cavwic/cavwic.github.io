@@ -289,6 +289,17 @@ a {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.resume-link-pending {
+  cursor: default;
+}
+
+.button-quiet.resume-link-pending,
+.button-quiet.resume-link-pending:hover {
+  color: rgba(255, 255, 255, 0.68);
+  border-color: rgba(255, 255, 255, 0.32);
+  background: rgba(10, 12, 12, 0.2);
+}
+
 .hero-index {
   position: absolute;
   z-index: 2;
@@ -669,9 +680,23 @@ a {
   gap: 100px;
 }
 
-.about-copy .text-link {
-  justify-content: flex-start;
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 28px;
   margin-top: 28px;
+}
+
+.about-actions .text-link {
+  justify-content: flex-start;
+}
+
+.text-link.resume-link-pending {
+  color: #737c79;
+}
+
+.text-link.resume-link-pending:hover svg {
+  transform: none;
 }
 
 .about-facts {

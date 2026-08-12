@@ -1,0 +1,24 @@
+---
+import { Clock3, Download } from "@lucide/astro";
+import { resume } from "../data/site";
+
+interface Props {
+  className: string;
+}
+
+const { className } = Astro.props;
+---
+
+{
+  resume.available ? (
+    <a class={className} href={resume.href} download={resume.fileName} aria-label={`下载${resume.displayName}`}>
+      <span>下载简历</span>
+      <Download size={18} strokeWidth={1.8} aria-hidden="true" />
+    </a>
+  ) : (
+    <span class:list={[className, "resume-link-pending"]} role="link" aria-disabled="true">
+      <span>简历整理中</span>
+      <Clock3 size={18} strokeWidth={1.8} aria-hidden="true" />
+    </span>
+  )
+}

@@ -18,6 +18,13 @@ export type Industry = {
 
 export const githubUrl = "https://github.com/cavwic";
 
+export const resume = {
+  displayName: "CAVWIC 个人简历",
+  href: "/downloads/cavwic-resume.pdf",
+  fileName: "cavwic-resume.pdf",
+  available: false,
+};
+
 export const navigation = [
   { label: "首页", href: "/" },
   { label: "行业", href: "/industries" },
