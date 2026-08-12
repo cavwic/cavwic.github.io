@@ -1,0 +1,42 @@
+---
+import { ArrowUpRight, GitBranch, HardDrive, RadioTower } from "@lucide/astro";
+import ResumeLink from "../../../components/ResumeLink.astro";
+import { githubUrl } from "../../../data/site";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout locale="en" title="About | CAVWIC" description="What CAVWIC publishes and how this site is maintained.">
+  <header class="page-head">
+    <div class="page-head-inner">
+      <p class="eyebrow">ABOUT</p>
+      <h1>About this site</h1>
+      <p>I publish solutions, articles, tools, and skills that I have worked on myself. Unverified experience and results are left out.</p>
+    </div>
+  </header>
+
+  <section class="about-grid">
+    <div class="about-copy">
+      <p class="eyebrow">WORKFLOW</p>
+      <h2>Written locally. Read online.</h2>
+      <p>Content and source code live in local projects and on GitHub. Static hosting serves the site, while GitHub Releases distributes files. The site stays online without relying on my home NAS.</p>
+      <div class="about-actions">
+        <ResumeLink className="text-link" locale="en" />
+        <a class="text-link" href={githubUrl} target="_blank" rel="noreferrer">View GitHub <ArrowUpRight size={18} /></a>
+      </div>
+    </div>
+    <div class="about-facts">
+      <div class="fact-row">
+        <HardDrive size={22} strokeWidth={1.5} />
+        <div><strong>Editing</strong><span>Local Markdown and source code</span></div>
+      </div>
+      <div class="fact-row">
+        <GitBranch size={22} strokeWidth={1.5} />
+        <div><strong>Versions</strong><span>GitHub repositories and Releases</span></div>
+      </div>
+      <div class="fact-row">
+        <RadioTower size={22} strokeWidth={1.5} />
+        <div><strong>Access</strong><span>Static hosting and a custom domain</span></div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

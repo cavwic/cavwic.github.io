@@ -1,22 +1,22 @@
 ---
 import { ArrowDown } from "@lucide/astro";
-import EntryList from "../../components/EntryList.astro";
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import { industries } from "../../data/site";
+import EntryList from "../../../components/EntryList.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { industries } from "../../../data/site";
 
-const industryList = industries.zh;
+const industryList = industries.en;
 ---
 
-<BaseLayout title="行业 | CAVWIC" description="按 AI、机器人和灵巧手三个方向整理行业内容。">
+<BaseLayout locale="en" title="Industries | CAVWIC" description="Industry notes organized around AI, robotics, and dexterous hands.">
   <header class="page-head">
     <div class="page-head-inner">
       <p class="eyebrow">INDUSTRIES</p>
-      <h1>行业</h1>
-      <p>按方向归档长期跟踪的技术、产品和方案内容。</p>
+      <h1>Industries</h1>
+      <p>Long-running notes on technologies, products, and solution work, organized by field.</p>
     </div>
   </header>
 
-  <nav class="industry-directory" aria-label="行业分类">
+  <nav class="industry-directory" aria-label="Industry categories">
     <div class="industry-directory-inner">
       {industryList.map((industry) => (
         <a class="industry-tab" href={`#${industry.id}`}>
@@ -38,7 +38,7 @@ const industryList = industries.zh;
           </div>
           <p>{industry.description}</p>
         </div>
-        <EntryList entries={industry.entries} locale="zh" />
+        <EntryList entries={industry.entries} locale="en" />
       </section>
     ))}
   </div>

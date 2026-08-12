@@ -1,0 +1,82 @@
+---
+import { ArrowDown, ArrowUpRight, FileText, PackageOpen, Wrench } from "@lucide/astro";
+import EntryList from "../../components/EntryList.astro";
+import ResumeLink from "../../components/ResumeLink.astro";
+import { collections } from "../../data/site";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const latest = [collections.en.solutions[0], collections.en.articles[0]];
+---
+
+<BaseLayout locale="en">
+  <section class="hero">
+    <img src="/images/workbench-hero.webp" alt="A workbench with code, technical drawings, calipers, and a robotic hand assembly" fetchpriority="high" />
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">Selected work and working notes</p>
+      <h1>CAVWIC</h1>
+      <p class="hero-summary">I document the reasoning behind solutions and release the tools worth reusing.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#latest">Latest work <ArrowDown size={18} /></a>
+        <ResumeLink className="button button-quiet" locale="en" />
+      </div>
+    </div>
+    <p class="hero-index">SOLUTIONS / NOTES / TOOLS / SKILLS</p>
+  </section>
+
+  <section id="latest" class="latest-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">RECENT WORK</p>
+        <h2>Work in progress</h2>
+      </div>
+      <p>I publish a useful first version, then add the process, files, and reproduction steps.</p>
+    </div>
+    <EntryList entries={latest} locale="en" />
+  </section>
+
+  <section class="catalog-section" aria-labelledby="catalog-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">CONTENT INDEX</p>
+        <h2 id="catalog-title">Four kinds of work</h2>
+      </div>
+    </div>
+    <div class="catalog-grid">
+      <a class="catalog-item" href="/en/solutions">
+        <FileText size={24} strokeWidth={1.5} />
+        <span class="catalog-code">SOLUTION</span>
+        <h3>Solutions</h3>
+        <p>Problem framing, technical choices, and executable implementation plans.</p>
+        <ArrowUpRight class="catalog-arrow" size={20} />
+      </a>
+      <a class="catalog-item" href="/en/articles">
+        <PackageOpen size={24} strokeWidth={1.5} />
+        <span class="catalog-code">ARTICLE</span>
+        <h3>Articles</h3>
+        <p>Project notes, technical decisions, and lessons from implementation.</p>
+        <ArrowUpRight class="catalog-arrow" size={20} />
+      </a>
+      <a class="catalog-item" href="/en/tools">
+        <Wrench size={24} strokeWidth={1.5} />
+        <span class="catalog-code">TOOL</span>
+        <h3>Tools</h3>
+        <p>Standalone tools with source code published on GitHub.</p>
+        <ArrowUpRight class="catalog-arrow" size={20} />
+      </a>
+      <a class="catalog-item catalog-item-accent" href="/en/skills">
+        <span class="skill-symbol" aria-hidden="true">{ }</span>
+        <span class="catalog-code">SKILL</span>
+        <h3>Skills</h3>
+        <p>Reusable working methods with versions and usage notes.</p>
+        <ArrowUpRight class="catalog-arrow" size={20} />
+      </a>
+    </div>
+  </section>
+
+  <section class="distribution-band">
+    <p class="eyebrow">DISTRIBUTION</p>
+    <h2>The site is for reading. GitHub handles versions. Releases handle downloads.</h2>
+    <a class="text-link" href="/en/about">How this site works <ArrowUpRight size={18} /></a>
+  </section>
+</BaseLayout>

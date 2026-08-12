@@ -13,28 +13,28 @@ npm run dev
 
 浏览器打开 `http://127.0.0.1:4321`。修改文件后，页面会自动刷新。
 
-## 修改首页条目
+## 修改首页和栏目条目
 
-首页和四个栏目中的条目集中保存在：
+中文、英文栏目中的条目集中保存在：
 
 ```text
 src/data/site.ts
 ```
 
-在对应数组中增加一项：
+中文内容写入 `collections.zh`，英文内容写入 `collections.en`。在对应栏目数组中各增加一项：
 
 ```ts
 {
   title: "条目标题",
   description: "一句话说明内容和用途。",
-  status: "已发布",
+  status: "published",
   date: "2026.08",
   href: "/articles/article-file-name",
   action: "阅读全文",
 }
 ```
 
-`status` 只能填写 `已发布`、`草稿` 或 `建设中`。外部链接需要增加：
+`status` 只能填写 `published`、`draft` 或 `building`，页面会自动显示对应语言的状态文字。外部链接需要增加：
 
 ```ts
 external: true
@@ -66,11 +66,17 @@ status: 草稿
 正文内容。
 ```
 
-写完后，在 `src/data/site.ts` 的 `articles` 数组中增加对应条目，`href` 使用 `/articles/my-new-article`。
+英文文章放在 `src/pages/en/articles/`，并在开头增加：
+
+```yaml
+locale: en
+```
+
+写完后，在 `src/data/site.ts` 的 `collections.zh.articles` 和 `collections.en.articles` 中分别增加条目。中文链接使用 `/articles/my-new-article`，英文链接使用 `/en/articles/my-new-article`。两个文件应使用相同的英文文件名，语言切换才能停留在对应文章。
 
 ## 更新行业内容
 
-行业页的 AI、机器人和灵巧手内容保存在 `src/data/site.ts` 的 `industries` 数组中。每个行业都有自己的 `entries`，新增内容时只需在对应的 `entries` 中增加条目。
+行业页的 AI、机器人和灵巧手内容保存在 `src/data/site.ts` 的 `industries.zh` 和 `industries.en` 中。每个行业都有自己的 `entries`，新增内容时需要同步填写中文和英文版本。
 
 如需增加新的行业分类，复制一个完整的行业对象并修改 `id`、`code`、`name`、`description` 和 `entries`。`id` 需要使用不重复的英文短名称。
 
@@ -106,11 +112,17 @@ available: true
 
 ## 发布方案、工具和 Skills
 
-- 方案：编辑 `src/data/site.ts` 的 `solutions` 数组。
-- 工具：编辑 `tools` 数组，`href` 指向对应 GitHub 仓库。
-- Skills：编辑 `skills` 数组；正式下载文件放到 GitHub Releases，并把 `href` 指向 Release 下载页。
+- 方案：编辑 `collections.zh.solutions` 和 `collections.en.solutions`。
+- 工具：编辑两种语言的 `tools` 数组，`href` 指向对应 GitHub 仓库。
+- Skills：编辑两种语言的 `skills` 数组；正式下载文件放到 GitHub Releases，并把 `href` 指向 Release 下载页。
 
 需要长篇说明时，可以参照文章方式新建 Markdown 页面，再从栏目条目链接过去。
+
+## 深浅色与中英文
+
+网站首次打开时跟随电脑或手机的系统深浅色。访客点击右上角的太阳或月亮按钮后，浏览器会在本机记住手动选择。
+
+中文页面使用原有路径，英文页面统一位于 `/en` 下。右上角语言按钮会切换到当前页面的另一种语言，因此新增栏目页或文章时应保持中英文路径除 `/en` 前缀外完全一致。
 
 ## 更换图片
 

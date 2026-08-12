@@ -1,23 +1,27 @@
 ---
 import { Clock3, Download } from "@lucide/astro";
-import { resume } from "../data/site";
+import { resume, type Locale } from "../data/site";
 
 interface Props {
   className: string;
+  locale?: Locale;
 }
 
-const { className } = Astro.props;
+const { className, locale = "zh" } = Astro.props;
+const label = locale === "zh"
+  ? { download: "下载简历", pending: "简历整理中" }
+  : { download: "Download resume", pending: "Resume in progress" };
 ---
 
 {
   resume.available ? (
-    <a class={className} href={resume.href} download={resume.fileName} aria-label={`下载${resume.displayName}`}>
-      <span>下载简历</span>
+    <a class={className} href={resume.href} download={resume.fileName} aria-label={`${label.download}: ${resume.displayName[locale]}`}>
+      <span>{label.download}</span>
       <Download size={18} strokeWidth={1.8} aria-hidden="true" />
     </a>
   ) : (
     <span class:list={[className, "resume-link-pending"]} role="link" aria-disabled="true">
-      <span>简历整理中</span>
+      <span>{label.pending}</span>
       <Clock3 size={18} strokeWidth={1.8} aria-hidden="true" />
     </span>
   )

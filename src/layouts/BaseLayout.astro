@@ -1,62 +1,125 @@
 ---
-import { GitBranch, Menu, X } from "@lucide/astro";
-import { githubUrl, navigation } from "../data/site";
+import { GitBranch, Languages, Menu, Moon, Sun, X } from "@lucide/astro";
+import { getBasePath, getNavigation, githubUrl, localizePath, type Locale } from "../data/site";
 import "../styles/global.css";
 
 interface Props {
   title?: string;
   description?: string;
   image?: string;
+  locale?: Locale;
 }
 
 const {
+  locale = "zh",
   title = "CAVWIC",
-  description = "CAVWIC 的方案、文章、工具与 Skills 发布站。",
+  description = locale === "zh"
+    ? "CAVWIC 的方案、文章、工具与 Skills 发布站。"
+    : "CAVWIC publishes solutions, articles, tools, and reusable skills.",
   image = "/images/workbench-hero.webp",
 } = Astro.props;
 
+const copy = locale === "zh"
+  ? {
+      skip: "跳到正文",
+      home: "CAVWIC 首页",
+      openNav: "打开导航",
+      closeNav: "关闭导航",
+      nav: "主导航",
+      github: "打开 CAVWIC 的 GitHub",
+      language: "Switch to English",
+      dark: "切换为深色模式",
+      light: "切换为浅色模式",
+      footer: "方案、文章、工具与可复用的 Skills。",
+      about: "关于本站",
+    }
+  : {
+      skip: "Skip to content",
+      home: "CAVWIC home",
+      openNav: "Open navigation",
+      closeNav: "Close navigation",
+      nav: "Main navigation",
+      github: "Open CAVWIC on GitHub",
+      language: "切换到中文",
+      dark: "Switch to dark mode",
+      light: "Switch to light mode",
+      footer: "Solutions, articles, tools, and reusable skills.",
+      about: "About this site",
+    };
+
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const currentPath = Astro.url.pathname;
+const basePath = getBasePath(currentPath);
+const alternateLocale: Locale = locale === "zh" ? "en" : "zh";
+const alternatePath = localizePath(alternateLocale, basePath);
+const navigation = getNavigation(locale);
+const homePath = localizePath(locale, "/");
+const aboutPath = localizePath(locale, "/about");
 ---
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang={locale === "zh" ? "zh-CN" : "en"} data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#161b1a" />
+    <meta name="theme-color" content="#f1f4ef" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang={locale === "zh" ? "en" : "zh-CN"} href={new URL(alternatePath, Astro.site)} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(image, Astro.site)} />
     <meta property="og:url" content={canonical} />
     <title>{title}</title>
+    <script is:inline>
+      (() => {
+        try {
+          const saved = localStorage.getItem("cavwic-theme");
+          const darkSystem = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = saved === "dark" || saved === "light" ? saved : darkSystem ? "dark" : "light";
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.dataset.themePreference = saved ?? "system";
+          document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#181c1b" : "#f1f4ef");
+        } catch {}
+      })();
+    </script>
   </head>
   <body>
-    <a class="skip-link" href="#main">跳到正文</a>
+    <a class="skip-link" href="#main">{copy.skip}</a>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="CAVWIC 首页">
+      <a class="brand" href={homePath} aria-label={copy.home}>
         <span class="brand-mark" aria-hidden="true">C</span>
         <span>CAVWIC</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false" aria-controls="site-nav">
+      <button class="nav-toggle" type="button" aria-label={copy.openNav} aria-expanded="false" aria-controls="site-nav" data-open-label={copy.openNav} data-close-label={copy.closeNav}>
         <Menu class="menu-icon" size={20} strokeWidth={1.8} />
         <X class="close-icon" size={20} strokeWidth={1.8} />
       </button>
 
-      <nav id="site-nav" class="site-nav" aria-label="主导航">
-        {navigation.map((item) => (
-          <a class:list={["nav-link", { active: item.href === "/" ? currentPath === "/" : currentPath.startsWith(item.href) }]} href={item.href}>
-            {item.label}
+      <nav id="site-nav" class="site-nav" aria-label={copy.nav}>
+        <div class="nav-pages">
+          {navigation.map((item) => (
+            <a class:list={["nav-link", { active: item.basePath === "/" ? basePath === "/" : basePath.startsWith(item.basePath) }]} href={item.href}>
+              {item.label}
+            </a>
+          ))}
+        </div>
+        <div class="nav-utilities">
+          <button class="utility-button theme-toggle" type="button" aria-label={copy.dark} aria-pressed="false" title={copy.dark} data-dark-label={copy.dark} data-light-label={copy.light}>
+            <Moon class="theme-icon-moon" size={18} strokeWidth={1.8} aria-hidden="true" />
+            <Sun class="theme-icon-sun" size={18} strokeWidth={1.8} aria-hidden="true" />
+          </button>
+          <a class="utility-button language-toggle" href={alternatePath} aria-label={copy.language} title={copy.language}>
+            <Languages size={18} strokeWidth={1.8} aria-hidden="true" />
+            <span>{locale === "zh" ? "EN" : "中"}</span>
           </a>
-        ))}
-        <a class="github-link" href={githubUrl} target="_blank" rel="noreferrer" aria-label="打开 CAVWIC 的 GitHub">
-          <GitBranch size={19} strokeWidth={1.8} />
-        </a>
+          <a class="utility-button github-link" href={githubUrl} target="_blank" rel="noreferrer" aria-label={copy.github}>
+            <GitBranch size={19} strokeWidth={1.8} />
+          </a>
+        </div>
       </nav>
     </header>
 
@@ -66,30 +129,54 @@ const currentPath = Astro.url.pathname;
 
     <footer class="site-footer">
       <div>
-        <a class="brand footer-brand" href="/">
+        <a class="brand footer-brand" href={homePath}>
           <span class="brand-mark" aria-hidden="true">C</span>
           <span>CAVWIC</span>
         </a>
-        <p>方案、文章、工具与可复用的 Skills。</p>
+        <p>{copy.footer}</p>
       </div>
       <div class="footer-links">
         <a href={githubUrl} target="_blank" rel="noreferrer">GitHub</a>
-        <a href="/about">关于本站</a>
+        <a href={aboutPath}>{copy.about}</a>
       </div>
       <p class="copyright">© {new Date().getFullYear()} CAVWIC</p>
     </footer>
 
-    <script>
-      const toggle = document.querySelector(".nav-toggle");
-      const nav = document.querySelector(".site-nav");
+    <script is:inline>
+      const navToggle = document.querySelector(".nav-toggle");
+      const siteNav = document.querySelector(".site-nav");
+      const themeToggle = document.querySelector(".theme-toggle");
+      const themeMedia = window.matchMedia("(prefers-color-scheme: dark)");
 
-      toggle?.addEventListener("click", () => {
-        const isOpen = toggle.getAttribute("aria-expanded") === "true";
-        toggle.setAttribute("aria-expanded", String(!isOpen));
-        toggle.setAttribute("aria-label", isOpen ? "打开导航" : "关闭导航");
-        nav?.classList.toggle("open", !isOpen);
+      navToggle?.addEventListener("click", () => {
+        const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", String(!isOpen));
+        navToggle.setAttribute("aria-label", isOpen ? navToggle.dataset.openLabel : navToggle.dataset.closeLabel);
+        siteNav?.classList.toggle("open", !isOpen);
       });
 
+      const applyTheme = (theme) => {
+        document.documentElement.dataset.theme = theme;
+        themeToggle?.setAttribute("aria-label", theme === "dark" ? themeToggle.dataset.lightLabel : themeToggle.dataset.darkLabel);
+        themeToggle?.setAttribute("title", theme === "dark" ? themeToggle.dataset.lightLabel : themeToggle.dataset.darkLabel);
+        themeToggle?.setAttribute("aria-pressed", String(theme === "dark"));
+        document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#181c1b" : "#f1f4ef");
+      };
+
+      applyTheme(document.documentElement.dataset.theme);
+
+      themeToggle?.addEventListener("click", () => {
+        const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        document.documentElement.dataset.themePreference = nextTheme;
+        try { localStorage.setItem("cavwic-theme", nextTheme); } catch {}
+        applyTheme(nextTheme);
+      });
+
+      themeMedia.addEventListener("change", (event) => {
+        if (document.documentElement.dataset.themePreference === "system") {
+          applyTheme(event.matches ? "dark" : "light");
+        }
+      });
     </script>
   </body>
 </html>

@@ -1,19 +1,23 @@
 ---
 import { ArrowUpRight, Clock3 } from "@lucide/astro";
-import type { Entry } from "../data/site";
+import { statusLabels, type Entry, type Locale } from "../data/site";
 
 interface Props {
   entries: Entry[];
+  locale?: Locale;
 }
 
-const { entries } = Astro.props;
+const { entries, locale = "zh" } = Astro.props;
+const copy = locale === "zh"
+  ? { view: "查看", unavailable: "尚未开放" }
+  : { view: "View", unavailable: "Not available yet" };
 ---
 
 <div class="entry-list">
   {entries.map((entry) => (
     <article class="entry-row">
       <div class="entry-meta">
-        <span class:list={["status", `status-${entry.status}`]}>{entry.status}</span>
+        <span class:list={["status", `status-${entry.status}`]}>{statusLabels[locale][entry.status]}</span>
         {entry.date && <time>{entry.date}</time>}
       </div>
       <div class="entry-copy">
@@ -22,11 +26,11 @@ const { entries } = Astro.props;
       </div>
       {entry.href ? (
         <a class="entry-action" href={entry.href} target={entry.external ? "_blank" : undefined} rel={entry.external ? "noreferrer" : undefined}>
-          <span>{entry.action ?? "查看"}</span>
+          <span>{entry.action ?? copy.view}</span>
           <ArrowUpRight size={18} strokeWidth={1.8} />
         </a>
       ) : (
-        <span class="entry-action pending" aria-label="尚未开放">
+        <span class="entry-action pending" aria-label={copy.unavailable}>
           <Clock3 size={18} strokeWidth={1.8} />
         </span>
       )}

@@ -8,18 +8,23 @@ interface Props {
     description: string;
     date: string;
     status?: string;
+    locale?: "zh" | "en";
   };
 }
 
 const { frontmatter } = Astro.props;
+const locale = frontmatter.locale ?? "zh";
+const copy = locale === "zh"
+  ? { back: "返回文章", published: "已发布" }
+  : { back: "Back to articles", published: "Published" };
 ---
 
-<BaseLayout title={`${frontmatter.title} | CAVWIC`} description={frontmatter.description}>
+<BaseLayout title={`${frontmatter.title} | CAVWIC`} description={frontmatter.description} locale={locale}>
   <article class="article-shell">
     <header class="article-head">
-      <a class="back-link" href="/articles"><ArrowLeft size={17} />返回文章</a>
+      <a class="back-link" href={locale === "zh" ? "/articles" : "/en/articles"}><ArrowLeft size={17} />{copy.back}</a>
       <div class="article-meta">
-        <span>{frontmatter.status ?? "已发布"}</span>
+        <span>{frontmatter.status ?? copy.published}</span>
         <time>{frontmatter.date}</time>
       </div>
       <h1>{frontmatter.title}</h1>

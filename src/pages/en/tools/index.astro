@@ -1,0 +1,12 @@
+---
+import CollectionPage from "../../../components/CollectionPage.astro";
+import { collections } from "../../../data/site";
+---
+
+<CollectionPage
+  eyebrow="TOOLS"
+  title="Tools"
+  intro="Each tool should explain its purpose, how to run it, and where to find the source. Unfinished work stays clearly marked."
+  entries={collections.en.tools}
+  locale="en"
+/>

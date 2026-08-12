@@ -5,7 +5,7 @@ import ResumeLink from "../components/ResumeLink.astro";
 import { collections } from "../data/site";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const latest = [collections.solutions[0], collections.articles[0]];
+const latest = [collections.zh.solutions[0], collections.zh.articles[0]];
 ---
 
 <BaseLayout>
@@ -32,7 +32,7 @@ const latest = [collections.solutions[0], collections.articles[0]];
       </div>
       <p>先发布能说明问题的版本，再补齐过程、文件和复现步骤。</p>
     </div>
-    <EntryList entries={latest} />
+    <EntryList entries={latest} locale="zh" />
   </section>
 
   <section class="catalog-section" aria-labelledby="catalog-title">

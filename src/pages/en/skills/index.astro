@@ -1,0 +1,12 @@
+---
+import CollectionPage from "../../../components/CollectionPage.astro";
+import { collections } from "../../../data/site";
+---
+
+<CollectionPage
+  eyebrow="SKILLS"
+  title="Skills"
+  intro="Methods I use repeatedly, packaged for installation and updates. Downloads will open with the first stable release."
+  entries={collections.en.skills}
+  locale="en"
+/>
