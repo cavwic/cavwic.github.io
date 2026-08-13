@@ -58,7 +58,13 @@ const aboutPath = localizePath(locale, "/about");
 ---
 
 <!doctype html>
-<html lang={locale === "zh" ? "zh-CN" : "en"} data-theme="light">
+<html
+  lang={locale === "zh" ? "zh-CN" : "en"}
+  data-locale={locale}
+  data-alternate-locale={alternateLocale}
+  data-alternate-path={alternatePath}
+  data-theme="light"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -76,11 +82,22 @@ const aboutPath = localizePath(locale, "/about");
     <script is:inline>
       (() => {
         try {
+          const root = document.documentElement;
+          const savedLocale = localStorage.getItem("cavwic-locale");
+          const systemLocale = navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en";
+          const preferredLocale = savedLocale === "zh" || savedLocale === "en" ? savedLocale : systemLocale;
+
+          root.dataset.languagePreference = savedLocale ?? "system";
+          if (preferredLocale !== root.dataset.locale) {
+            location.replace(`${root.dataset.alternatePath}${location.search}${location.hash}`);
+            return;
+          }
+
           const saved = localStorage.getItem("cavwic-theme");
           const darkSystem = window.matchMedia("(prefers-color-scheme: dark)").matches;
           const theme = saved === "dark" || saved === "light" ? saved : darkSystem ? "dark" : "light";
-          document.documentElement.dataset.theme = theme;
-          document.documentElement.dataset.themePreference = saved ?? "system";
+          root.dataset.theme = theme;
+          root.dataset.themePreference = saved ?? "system";
           document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#181c1b" : "#f1f4ef");
         } catch {}
       })();
@@ -146,6 +163,7 @@ const aboutPath = localizePath(locale, "/about");
       const navToggle = document.querySelector(".nav-toggle");
       const siteNav = document.querySelector(".site-nav");
       const themeToggle = document.querySelector(".theme-toggle");
+      const languageToggle = document.querySelector(".language-toggle");
       const themeMedia = window.matchMedia("(prefers-color-scheme: dark)");
 
       navToggle?.addEventListener("click", () => {
@@ -176,6 +194,12 @@ const aboutPath = localizePath(locale, "/about");
         if (document.documentElement.dataset.themePreference === "system") {
           applyTheme(event.matches ? "dark" : "light");
         }
+      });
+
+      languageToggle?.addEventListener("click", () => {
+        const nextLocale = document.documentElement.dataset.alternateLocale;
+        document.documentElement.dataset.languagePreference = nextLocale;
+        try { localStorage.setItem("cavwic-locale", nextLocale); } catch {}
       });
     </script>
   </body>
