@@ -26,9 +26,9 @@ export const resume = {
     zh: "CAVWIC 个人简历",
     en: "CAVWIC resume",
   },
-  href: "/downloads/cavwic-resume.pdf",
-  fileName: "cavwic-resume.pdf",
-  available: false,
+  href: "/downloads/陈文聪简历.pdf",
+  fileName: "陈文聪简历.pdf",
+  available: true,
 };
 
 const routePaths = ["/", "/industries", "/solutions", "/articles", "/tools", "/skills", "/about"] as const;
