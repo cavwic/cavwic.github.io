@@ -50,7 +50,7 @@ const library = (await getCollection("library"))
   </section>}
 
   <section class="latest-section">
-    <div class="section-heading"><div><p class="eyebrow">LOCAL REVIEW</p><h2>正在审阅的内容</h2></div><p>草稿只在本地开发和 review 构建中出现，正式构建不会生成对应页面。</p></div>
+    <div class="section-heading"><div><p class="eyebrow">LATEST PUBLICATIONS</p><h2>近期发布</h2></div><p>围绕企业 AI、具身机器人与灵巧手，持续发布白皮书、技术文章和案例分析。每篇内容都会标明证据类型与核验日期；引用公开资料时，同时列出来源。</p></div>
     <EntryList entries={library.map((entry) => toEntry(entry))} locale="zh" />
   </section>
 
