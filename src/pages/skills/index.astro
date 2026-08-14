@@ -1,12 +1,20 @@
 ---
 import CollectionPage from "../../components/CollectionPage.astro";
-import { collections } from "../../data/site";
+const skills = [
+  ["presales-discovery", "把模糊需求整理为对象、流程、数据、现场、干系人、约束和下一步验证。"],
+  ["solution-architecture-pack", "产出边界清楚的架构包：系统分层、接口、权限、依赖、风险和替代方案。"],
+  ["poc-acceptance", "在构建前定义样本、指标、失败条件、责任人和验收记录。"],
+  ["product-comparison-research", "按来源和核验日期建立产品矩阵，保留未知字段并区分事实与判断。"],
+  ["technical-proposal-audit", "检查技术方案中的证据断裂、范围漂移、接口遗漏与不可验收承诺。"],
+];
+const repository = "https://github.com/cavwic/cavwic-solutions-lab/tree/main/skills";
+const entries = skills.map(([title, description]) => ({
+  title,
+  description,
+  status: "published" as const,
+  href: `${repository}/${title}`,
+  external: true,
+  action: "查看 Skill",
+}));
 ---
-
-<CollectionPage
-  eyebrow="SKILLS"
-  title="Skills"
-  intro="把反复使用的方法整理成可安装、可更新的文件包。下载区会随首个正式版本开放。"
-  entries={collections.zh.skills}
-  locale="zh"
-/>
+<CollectionPage eyebrow="AGENT SKILLS" title="Skills" intro="五个 Skill 提供标准 SKILL.md、模板、示例、检查脚本和适用边界，可从公开仓库查看与下载。" entries={entries} locale="zh" />

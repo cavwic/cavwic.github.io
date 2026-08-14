@@ -1,12 +1,10 @@
 ---
 import CollectionPage from "../../components/CollectionPage.astro";
-import { collections } from "../../data/site";
+const labUrl = import.meta.env.DEV ? "http://127.0.0.1:4322/cavwic-solutions-lab" : "https://cavwic.github.io/cavwic-solutions-lab";
+const entries = [
+  { title: "企业 AI 方案与 POC 工作台", description: "需求、数据、权限、RAG/Agent 架构、接口、评测、成本、风险、人工接管与验收标准。", status: "published" as const, href: `${labUrl}/ai-poc`, external: !import.meta.env.DEV, action: "打开工具" },
+  { title: "机器人场景资格与 POC Studio", description: "现场条件、任务状态机、安全边界、失败降级、资源依赖、验收矩阵和实施风险。", status: "published" as const, href: `${labUrl}/robot-poc`, external: !import.meta.env.DEV, action: "打开工具" },
+  { title: "灵巧手选型与抓取测试设计器", description: "公开参数筛选、透明权重、未知字段处理、敏感性分析、对象集与验证记录。", status: "published" as const, href: `${labUrl}/dexterous-hand`, external: !import.meta.env.DEV, action: "打开工具" },
+];
 ---
-
-<CollectionPage
-  eyebrow="TOOLS"
-  title="工具"
-  intro="每个工具都应有清楚的用途、运行方式和源码地址。未完成的项目不会包装成成品。"
-  entries={collections.zh.tools}
-  locale="zh"
-/>
+<CollectionPage eyebrow="SOLUTIONS LAB" title="工具" intro="三个工具均在浏览器本地运行，不上传表单数据。输入、评分与导出都在当前设备完成。" entries={entries} locale="zh" />

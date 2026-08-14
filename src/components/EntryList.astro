@@ -1,4 +1,4 @@
----
+﻿---
 import { ArrowUpRight, Clock3 } from "@lucide/astro";
 import { statusLabels, type Entry, type Locale } from "../data/site";
 
@@ -27,11 +27,11 @@ const copy = locale === "zh"
       {entry.href ? (
         <a class="entry-action" href={entry.href} target={entry.external ? "_blank" : undefined} rel={entry.external ? "noreferrer" : undefined}>
           <span>{entry.action ?? copy.view}</span>
-          <ArrowUpRight size={18} strokeWidth={1.8} />
+          <ArrowUpRight size={18} stroke-width={1.8} />
         </a>
       ) : (
         <span class="entry-action pending" aria-label={copy.unavailable}>
-          <Clock3 size={18} strokeWidth={1.8} />
+          <Clock3 size={18} stroke-width={1.8} />
         </span>
       )}
     </article>

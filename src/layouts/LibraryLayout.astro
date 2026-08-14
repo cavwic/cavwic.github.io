@@ -1,0 +1,68 @@
+---
+import { ArrowLeft, CalendarDays, ExternalLink, ShieldCheck } from "@lucide/astro";
+import { kindLabels, industryLabels } from "../data/content";
+import type { LibraryEntry, SourceRef } from "../data/content";
+import { sourcesById } from "../data/sources";
+import BaseLayout from "./BaseLayout.astro";
+
+const { entry } = Astro.props as { entry: LibraryEntry };
+const refs = entry.data.sourceIds
+  .map((id: string) => sourcesById.get(id))
+  .filter((ref): ref is SourceRef => Boolean(ref));
+const reviewedAt = entry.data.reviewedAt.toISOString().slice(0, 10);
+const age = Math.floor((Date.now() - entry.data.reviewedAt.getTime()) / 86_400_000);
+---
+
+<BaseLayout
+  title={`${entry.data.title} | CAVWIC`}
+  description={entry.data.description}
+  locale={entry.data.locale}
+  alternatePath={entry.data.alternatePath ?? (entry.data.locale === "zh" ? "/en/industries" : "/industries")}
+>
+  <article class="library-article">
+    <header class="library-head">
+      <a class="text-link back-link" href={entry.data.locale === "zh" ? "/industries" : "/en/industries"}>
+        <ArrowLeft size={18} /> {entry.data.locale === "zh" ? "返回资料库" : "Back to library"}
+      </a>
+      <div class="library-meta">
+        <span>{kindLabels[entry.data.kind]}</span>
+        <span>{industryLabels[entry.data.industry]}</span>
+        <span class:list={["status", `status-${entry.data.publicationStatus}`]}>{entry.data.publicationStatus === "draft" ? "本地草稿" : "已发布"}</span>
+      </div>
+      <h1>{entry.data.title}</h1>
+      <p>{entry.data.description}</p>
+      <div class="evidence-strip" aria-label="证据类型">
+        {entry.data.evidence.map((item: string) => <span>{item}</span>)}
+      </div>
+    </header>
+
+    <div class="library-body prose">
+      <slot />
+    </div>
+
+    <footer class="source-panel">
+      <div class="source-panel-head">
+        <div>
+          <p class="eyebrow">SOURCE TRACE</p>
+          <h2>{entry.data.locale === "zh" ? "来源与复核" : "Sources and review"}</h2>
+        </div>
+        <p class:list={["review-date", { stale: age > 90 }]}>
+          <CalendarDays size={16} /> {reviewedAt}{age > 90 ? " · 待复核" : ""}
+        </p>
+      </div>
+      {refs.length > 0 ? (
+        <ol class="source-list">
+          {refs.map((ref) => (
+            <li id={ref.id}>
+              <span>{ref.sourceType}</span>
+              <a href={ref.url} target="_blank" rel="noreferrer">{ref.title} <ExternalLink size={14} /></a>
+              <small>{ref.publisher} · 核验 {ref.verifiedAt}</small>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <p class="source-empty"><ShieldCheck size={18} /> {entry.data.locale === "zh" ? "本页仅陈述已脱敏的个人工作方法，不含外部产品参数。" : "This page contains a redacted account of personal working methods."}</p>
+      )}
+    </footer>
+  </article>
+</BaseLayout>

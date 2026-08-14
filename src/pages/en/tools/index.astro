@@ -1,12 +1,17 @@
 ---
 import CollectionPage from "../../../components/CollectionPage.astro";
-import { collections } from "../../../data/site";
+const labUrl = import.meta.env.DEV ? "http://127.0.0.1:4322/cavwic-solutions-lab" : "https://cavwic.github.io/cavwic-solutions-lab";
+const entries = [
+  { title: "Enterprise AI Solution & POC Workbench", description: "Requirements, data, permissions, RAG/Agent architecture, integrations, evaluation, cost, risk, human takeover, and acceptance.", status: "published" as const, href: `${labUrl}/ai-poc`, external: !import.meta.env.DEV, action: "Open tool" },
+  { title: "Robot Scenario Qualification & POC Studio", description: "Site conditions, task state machine, safety boundaries, fallback, dependencies, acceptance matrix, and implementation risk.", status: "published" as const, href: `${labUrl}/robot-poc`, external: !import.meta.env.DEV, action: "Open tool" },
+  { title: "Dexterous Hand Selection & Grasp Test Designer", description: "Public-spec screening, transparent weights, unknown-field handling, sensitivity analysis, object sets, and validation records.", status: "published" as const, href: `${labUrl}/dexterous-hand`, external: !import.meta.env.DEV, action: "Open tool" },
+];
 ---
 
 <CollectionPage
   eyebrow="TOOLS"
   title="Tools"
-  intro="Each tool should explain its purpose, how to run it, and where to find the source. Unfinished work stays clearly marked."
-  entries={collections.en.tools}
+  intro="All three tools run locally in the browser. Inputs, scoring, and exports stay on the current device."
+  entries={entries}
   locale="en"
 />

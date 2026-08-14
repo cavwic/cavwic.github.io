@@ -1,0 +1,27 @@
+---
+import { Search } from "@lucide/astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { glossary } from "../../data/glossary";
+import { industryLabels } from "../../data/content";
+import { isReviewBuild } from "../../data/content";
+const visibleGlossary = isReviewBuild ? glossary : [];
+---
+<BaseLayout title="术语库 | CAVWIC" description="企业 AI、具身机器人与灵巧手售前常用术语。" alternatePath="/en/industries">
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">GLOSSARY / {glossary.length}</p><h1>术语库</h1><p>术语不是装饰。每个定义都要能落到需求、接口、测试或验收动作上。</p></div></header>
+  <section class="glossary-shell">
+    <div class="glossary-toolbar"><label><Search size={18} /><span class="sr-only">搜索术语</span><input id="term-search" type="search" placeholder="搜索中文、英文或定义" /></label><div class="filter-buttons" role="group" aria-label="行业筛选"><button class="active" data-filter="all">全部</button><button data-filter="ai">AI</button><button data-filter="robotics">机器人</button><button data-filter="dexterous-hands">灵巧手</button></div></div>
+    <div class="term-list">{visibleGlossary.map((item, index) => <article class="term-row" data-industry={item.industry} data-search={`${item.term} ${item.english} ${item.definition}`.toLowerCase()}><span class="term-index">{String(index + 1).padStart(3, "0")}</span><div><p class="eyebrow">{industryLabels[item.industry]}</p><h2>{item.term}</h2><span>{item.english}</span></div><p>{item.definition}</p></article>)}</div>
+  </section>
+  <script is:inline>
+    const input = document.querySelector('#term-search');
+    const buttons = [...document.querySelectorAll('[data-filter]')];
+    const rows = [...document.querySelectorAll('.term-row')];
+    let filter = 'all';
+    const apply = () => {
+      const query = input?.value.trim().toLowerCase() ?? '';
+      rows.forEach((row) => { row.hidden = !((filter === 'all' || row.dataset.industry === filter) && (row.dataset.search ?? '').includes(query)); });
+    };
+    input?.addEventListener('input', apply);
+    buttons.forEach((button) => button.addEventListener('click', () => { filter = button.dataset.filter; buttons.forEach((item) => item.classList.toggle('active', item === button)); apply(); }));
+  </script>
+</BaseLayout>

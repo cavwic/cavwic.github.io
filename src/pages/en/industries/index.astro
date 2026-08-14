@@ -1,45 +1,11 @@
 ---
-import { ArrowDown } from "@lucide/astro";
-import EntryList from "../../../components/EntryList.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import { industries } from "../../../data/site";
-
-const industryList = industries.en;
 ---
-
-<BaseLayout locale="en" title="Industries | CAVWIC" description="Industry notes organized around AI, robotics, and dexterous hands.">
-  <header class="page-head">
-    <div class="page-head-inner">
-      <p class="eyebrow">INDUSTRIES</p>
-      <h1>Industries</h1>
-      <p>Long-running notes on technologies, products, and solution work, organized by field.</p>
-    </div>
-  </header>
-
-  <nav class="industry-directory" aria-label="Industry categories">
-    <div class="industry-directory-inner">
-      {industryList.map((industry) => (
-        <a class="industry-tab" href={`#${industry.id}`}>
-          <span>{industry.code}</span>
-          <strong>{industry.name}</strong>
-          <ArrowDown size={18} strokeWidth={1.8} aria-hidden="true" />
-        </a>
-      ))}
-    </div>
-  </nav>
-
-  <div class="industries-content">
-    {industryList.map((industry) => (
-      <section id={industry.id} class="industry-section" aria-labelledby={`${industry.id}-title`}>
-        <div class="industry-section-head">
-          <div>
-            <p class="eyebrow">{industry.code}</p>
-            <h2 id={`${industry.id}-title`}>{industry.name}</h2>
-          </div>
-          <p>{industry.description}</p>
-        </div>
-        <EntryList entries={industry.entries} locale="en" />
-      </section>
-    ))}
+<BaseLayout locale="en" title="Industry Research | CAVWIC" description="Core English summaries for enterprise AI, embodied robotics, and dexterous hands." alternatePath="/industries">
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">INDUSTRY RESEARCH</p><h1>Three fields, one delivery discipline</h1><p>The full research library is reviewed in Chinese. These summaries state the decision framework and the evidence still required.</p></div></header>
+  <div class="industries-content english-summaries">
+    <section id="ai" class="industry-section"><div class="industry-section-head"><div><p class="eyebrow">AI</p><h2>Enterprise AI</h2></div><p>RAG and agents are operational systems. A proposal must cover data ownership, access control, retrieval evaluation, tool permissions, cost, observability, fallback, and human takeover. A polished answer alone is not acceptance evidence.</p></div></section>
+    <section id="robotics" class="industry-section"><div class="industry-section-head"><div><p class="eyebrow">ROBOTICS</p><h2>Embodied robotics</h2></div><p>Robot capability is conditional on the site, task, payload, integration, safety system, recovery logic, and service model. A demo without an explicit failure script cannot establish deployability.</p></div></section>
+    <section id="dexterous-hands" class="industry-section"><div class="industry-section-head"><div><p class="eyebrow">DEXTEROUS HANDS</p><h2>Dexterous hands</h2></div><p>Degrees of freedom do not decide fit. Object geometry, contact strategy, tactile sensing, control interface, thermal limits, cycle life, maintainability, and a representative acceptance object set do.</p></div></section>
   </div>
 </BaseLayout>

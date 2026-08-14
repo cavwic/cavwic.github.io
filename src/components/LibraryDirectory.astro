@@ -1,0 +1,35 @@
+---
+import { ArrowUpRight, BookOpenText } from "@lucide/astro";
+import type { LibraryEntry } from "../data/content";
+import { kindLabels, toEntry } from "../data/content";
+import EntryList from "./EntryList.astro";
+
+const { entries, locale = "zh", title = "资料" } = Astro.props as { entries: LibraryEntry[]; locale?: "zh" | "en"; title?: string };
+const grouped = Object.entries(entries.reduce<Record<string, LibraryEntry[]>>((result, entry) => {
+  (result[entry.data.kind] ??= []).push(entry);
+  return result;
+}, {}));
+---
+
+<div class="library-directory">
+  {grouped.map(([kind, values]) => (
+    <section class="library-group">
+      <div class="section-heading compact-heading">
+        <div>
+          <p class="eyebrow">{kind?.toUpperCase()}</p>
+          <h2>{kindLabels[kind as keyof typeof kindLabels]}</h2>
+        </div>
+        <p>{values?.length ?? 0} {locale === "zh" ? "份本地审阅稿" : "local review drafts"}</p>
+      </div>
+      <EntryList entries={(values ?? []).map((entry) => toEntry(entry, locale))} locale={locale} />
+    </section>
+  ))}
+  {entries.length === 0 && (
+    <div class="empty-state"><BookOpenText size={24} /><p>{title}{locale === "zh" ? "尚无公开条目。" : " has no public entries yet."}</p></div>
+  )}
+  <div class="directory-links">
+    <a class="text-link" href="/matrices">产品矩阵 <ArrowUpRight size={18} /></a>
+    <a class="text-link" href="/companies">公司档案 <ArrowUpRight size={18} /></a>
+    <a class="text-link" href="/glossary">术语库 <ArrowUpRight size={18} /></a>
+  </div>
+</div>

@@ -20,6 +20,8 @@ export type Industry = {
 };
 
 export const githubUrl = "https://github.com/cavwic";
+export const solutionsLabUrl = "https://cavwic.github.io/cavwic-solutions-lab";
+export const solutionsLabRepositoryUrl = "https://github.com/cavwic/cavwic-solutions-lab";
 
 export const resume = {
   displayName: {
@@ -178,19 +180,22 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
     ],
     tools: [
       {
-        title: "工具仓库",
-        description: "可独立运行的小工具会保留源码、说明和版本记录。首批项目仍在整理。",
-        status: "building",
-        href: githubUrl,
+        title: "解决方案工具实验室",
+        description: "三个浏览器本地工作台覆盖企业 AI POC、机器人场景资格和灵巧手选型验证。",
+        status: "published",
+        href: solutionsLabUrl,
         external: true,
-        action: "前往 GitHub",
+        action: "打开工具",
       },
     ],
     skills: [
       {
-        title: "Skill 下载区",
-        description: "后续提供版本号、适用范围、安装说明和可下载压缩包。",
-        status: "building",
+        title: "售前解决方案 Skills",
+        description: "五个可复用 Skill 提供模板、示例、检查脚本和明确的适用边界。",
+        status: "published",
+        href: `${solutionsLabRepositoryUrl}/tree/main/skills`,
+        external: true,
+        action: "查看 Skills",
       },
     ],
   },
@@ -217,19 +222,22 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
     ],
     tools: [
       {
-        title: "Tool repositories",
-        description: "Standalone tools will include source code, instructions, and version history. The first releases are still being prepared.",
-        status: "building",
-        href: githubUrl,
+        title: "Solutions Lab",
+        description: "Three browser-local workbenches for enterprise AI POCs, robot scenario qualification, and dexterous-hand validation.",
+        status: "published",
+        href: solutionsLabUrl,
         external: true,
-        action: "Open GitHub",
+        action: "Open tools",
       },
     ],
     skills: [
       {
-        title: "Skill downloads",
-        description: "Future releases will include a version, intended use, installation notes, and a downloadable package.",
-        status: "building",
+        title: "Presales solution skills",
+        description: "Five reusable skills with templates, examples, validation scripts, and explicit operating boundaries.",
+        status: "published",
+        href: `${solutionsLabRepositoryUrl}/tree/main/skills`,
+        external: true,
+        action: "View skills",
       },
     ],
   },

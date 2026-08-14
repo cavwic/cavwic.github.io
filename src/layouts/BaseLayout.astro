@@ -1,4 +1,4 @@
----
+﻿---
 import { GitBranch, Languages, Menu, Moon, Sun, X } from "@lucide/astro";
 import { getBasePath, getNavigation, githubUrl, localizePath, type Locale } from "../data/site";
 import "../styles/global.css";
@@ -8,6 +8,8 @@ interface Props {
   description?: string;
   image?: string;
   locale?: Locale;
+  alternatePath?: string;
+  autoDetectLocale?: boolean;
 }
 
 const {
@@ -17,6 +19,8 @@ const {
     ? "CAVWIC 的方案、文章、工具与 Skills 发布站。"
     : "CAVWIC publishes solutions, articles, tools, and reusable skills.",
   image = "/images/workbench-hero.webp",
+  alternatePath: alternatePathProp,
+  autoDetectLocale = false,
 } = Astro.props;
 
 const copy = locale === "zh"
@@ -51,7 +55,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 const currentPath = Astro.url.pathname;
 const basePath = getBasePath(currentPath);
 const alternateLocale: Locale = locale === "zh" ? "en" : "zh";
-const alternatePath = localizePath(alternateLocale, basePath);
+const alternatePath = alternatePathProp ?? (locale === "zh" ? "/en/industries" : "/industries");
 const navigation = getNavigation(locale);
 const homePath = localizePath(locale, "/");
 const aboutPath = localizePath(locale, "/about");
@@ -63,6 +67,7 @@ const aboutPath = localizePath(locale, "/about");
   data-locale={locale}
   data-alternate-locale={alternateLocale}
   data-alternate-path={alternatePath}
+  data-auto-detect-locale={autoDetectLocale ? "true" : "false"}
   data-theme="light"
 >
   <head>
@@ -88,7 +93,7 @@ const aboutPath = localizePath(locale, "/about");
           const preferredLocale = savedLocale === "zh" || savedLocale === "en" ? savedLocale : systemLocale;
 
           root.dataset.languagePreference = savedLocale ?? "system";
-          if (preferredLocale !== root.dataset.locale) {
+          if (root.dataset.autoDetectLocale === "true" && preferredLocale !== root.dataset.locale) {
             location.replace(`${root.dataset.alternatePath}${location.search}${location.hash}`);
             return;
           }
@@ -112,8 +117,8 @@ const aboutPath = localizePath(locale, "/about");
       </a>
 
       <button class="nav-toggle" type="button" aria-label={copy.openNav} aria-expanded="false" aria-controls="site-nav" data-open-label={copy.openNav} data-close-label={copy.closeNav}>
-        <Menu class="menu-icon" size={20} strokeWidth={1.8} />
-        <X class="close-icon" size={20} strokeWidth={1.8} />
+        <Menu class="menu-icon" size={20} stroke-width={1.8} />
+        <X class="close-icon" size={20} stroke-width={1.8} />
       </button>
 
       <nav id="site-nav" class="site-nav" aria-label={copy.nav}>
@@ -126,15 +131,15 @@ const aboutPath = localizePath(locale, "/about");
         </div>
         <div class="nav-utilities">
           <button class="utility-button theme-toggle" type="button" aria-label={copy.dark} aria-pressed="false" title={copy.dark} data-dark-label={copy.dark} data-light-label={copy.light}>
-            <Moon class="theme-icon-moon" size={18} strokeWidth={1.8} aria-hidden="true" />
-            <Sun class="theme-icon-sun" size={18} strokeWidth={1.8} aria-hidden="true" />
+            <Moon class="theme-icon-moon" size={18} stroke-width={1.8} aria-hidden="true" />
+            <Sun class="theme-icon-sun" size={18} stroke-width={1.8} aria-hidden="true" />
           </button>
           <a class="utility-button language-toggle" href={alternatePath} aria-label={copy.language} title={copy.language}>
-            <Languages size={18} strokeWidth={1.8} aria-hidden="true" />
+            <Languages size={18} stroke-width={1.8} aria-hidden="true" />
             <span>{locale === "zh" ? "EN" : "中"}</span>
           </a>
           <a class="utility-button github-link" href={githubUrl} target="_blank" rel="noreferrer" aria-label={copy.github}>
-            <GitBranch size={19} strokeWidth={1.8} />
+            <GitBranch size={19} stroke-width={1.8} />
           </a>
         </div>
       </nav>

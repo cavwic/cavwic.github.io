@@ -5,7 +5,7 @@ import { githubUrl } from "../../../data/site";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout locale="en" title="About | CAVWIC" description="What CAVWIC publishes and how this site is maintained.">
+<BaseLayout locale="en" title="About | CAVWIC" description="What CAVWIC publishes and how this site is maintained." alternatePath="/about">
   <header class="page-head">
     <div class="page-head-inner">
       <p class="eyebrow">ABOUT</p>
@@ -26,15 +26,15 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
     </div>
     <div class="about-facts">
       <div class="fact-row">
-        <HardDrive size={22} strokeWidth={1.5} />
+        <HardDrive size={22} stroke-width={1.5} />
         <div><strong>Editing</strong><span>Local Markdown and source code</span></div>
       </div>
       <div class="fact-row">
-        <GitBranch size={22} strokeWidth={1.5} />
+        <GitBranch size={22} stroke-width={1.5} />
         <div><strong>Versions</strong><span>GitHub repositories and Releases</span></div>
       </div>
       <div class="fact-row">
-        <RadioTower size={22} strokeWidth={1.5} />
+        <RadioTower size={22} stroke-width={1.5} />
         <div><strong>Access</strong><span>Static hosting and a custom domain</span></div>
       </div>
     </div>

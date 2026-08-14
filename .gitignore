@@ -4,4 +4,7 @@ dist/
 .DS_Store
 npm-debug.log*
 *.log
+review/rendered-resume/
+review/
+scripts/create_public_resume_candidate.py
 src/陈文聪简历.pdf

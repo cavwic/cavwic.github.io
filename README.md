@@ -1,6 +1,6 @@
 # CAVWIC 个人主页
 
-用于发布方案、文章、工具和 Skills 的静态站点。项目使用 Astro，本地负责编辑和构建，线上由静态托管平台持续提供访问。
+用于发布企业 AI 与具身机器人售前方案、文章、工具和 Skills 的静态站点。项目使用 Astro，本地负责编辑和构建，线上由 GitHub Pages 持续提供访问。
 
 ## 本地运行
 
@@ -9,9 +9,11 @@ npm install
 npm run dev
 ```
 
-生产构建：
+本地审阅与生产构建：
 
 ```powershell
+npm run verify
+npm run build:review
 npm run build
 npm run preview
 ```
@@ -19,7 +21,10 @@ npm run preview
 ## 内容入口
 
 - 页面与文案：`src/pages/`
-- 首页条目数据：`src/data/site.ts`
+- 白皮书、文章和案例：`src/content/library/`
+- 公司、产品矩阵和术语：`src/data/`
+- 来源记录：`src/data/sources.ts`
+- 研究与风险审计：`research/`
 - 全局样式：`src/styles/global.css`
 - 首屏图片：`public/images/workbench-hero.webp`
 
@@ -27,7 +32,7 @@ npm run preview
 
 ## 发布顺序
 
-1. 本地修改内容并运行 `npm run build`。
+1. 本地修改内容并运行 `npm run verify`；`draft` 只进入 review 构建。
 2. 提交并推送到 GitHub 的 `main` 分支。
 3. GitHub Actions 自动构建并发布 GitHub Pages。
 4. 先验证 `https://cavwic.github.io`。

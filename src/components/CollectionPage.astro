@@ -12,9 +12,10 @@ interface Props {
 }
 
 const { eyebrow, title, intro, entries, locale = "zh" } = Astro.props;
+const alternatePath = locale === "zh" ? `/en${Astro.url.pathname}` : Astro.url.pathname.replace(/^\/en/, "") || "/";
 ---
 
-<BaseLayout title={`${title} | CAVWIC`} description={intro} locale={locale}>
+<BaseLayout title={`${title} | CAVWIC`} description={intro} locale={locale} alternatePath={alternatePath}>
   <header class="page-head">
     <div class="page-head-inner">
       <p class="eyebrow">{eyebrow}</p>

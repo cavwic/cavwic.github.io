@@ -1,4 +1,4 @@
----
+﻿---
 import { Clock3, Download } from "@lucide/astro";
 import { resume, type Locale } from "../data/site";
 
@@ -17,12 +17,12 @@ const label = locale === "zh"
   resume.available ? (
     <a class={className} href={resume.href} download={resume.fileName} aria-label={`${label.download}: ${resume.displayName[locale]}`}>
       <span>{label.download}</span>
-      <Download size={18} strokeWidth={1.8} aria-hidden="true" />
+      <Download size={18} stroke-width={1.8} aria-hidden="true" />
     </a>
   ) : (
     <span class:list={[className, "resume-link-pending"]} role="link" aria-disabled="true">
       <span>{label.pending}</span>
-      <Clock3 size={18} strokeWidth={1.8} aria-hidden="true" />
+      <Clock3 size={18} stroke-width={1.8} aria-hidden="true" />
     </span>
   )
 }

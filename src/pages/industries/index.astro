@@ -1,45 +1,20 @@
 ---
-import { ArrowDown } from "@lucide/astro";
-import EntryList from "../../components/EntryList.astro";
+import { ArrowDown, ArrowUpRight } from "@lucide/astro";
+import { getCollection } from "astro:content";
+import LibraryDirectory from "../../components/LibraryDirectory.astro";
+import { isReviewBuild, isVisible } from "../../data/content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { industries } from "../../data/site";
 
-const industryList = industries.zh;
+const all = (await getCollection("library")).filter((entry) => entry.data.locale === "zh" && isVisible(entry));
+const industries = [
+  { id: "ai", code: "AI", name: "企业 AI", description: "从业务任务、知识与权限出发，评估 RAG、Agent、系统集成、评测和防护。", question: "它能否在真实权限、脏数据和异常输入下稳定完成任务？" },
+  { id: "robotics", code: "ROBOTICS", name: "具身机器人", description: "把本体、感知、控制、任务系统、安全、现场条件和服务能力放在同一方案里。", question: "演示之外，失败恢复、人员安全和连续运行由谁负责？" },
+  { id: "dexterous-hands", code: "DEXTEROUS HANDS", name: "灵巧手", description: "围绕末端任务研究机构、驱动、触觉、控制、接口、对象集和验证方法。", question: "为什么必须用灵巧手，怎样证明它比夹爪更合适？" },
+] as const;
 ---
-
-<BaseLayout title="行业 | CAVWIC" description="按 AI、机器人和灵巧手三个方向整理行业内容。">
-  <header class="page-head">
-    <div class="page-head-inner">
-      <p class="eyebrow">INDUSTRIES</p>
-      <h1>行业</h1>
-      <p>按方向归档长期跟踪的技术、产品和方案内容。</p>
-    </div>
-  </header>
-
-  <nav class="industry-directory" aria-label="行业分类">
-    <div class="industry-directory-inner">
-      {industryList.map((industry) => (
-        <a class="industry-tab" href={`#${industry.id}`}>
-          <span>{industry.code}</span>
-          <strong>{industry.name}</strong>
-          <ArrowDown size={18} strokeWidth={1.8} aria-hidden="true" />
-        </a>
-      ))}
-    </div>
-  </nav>
-
-  <div class="industries-content">
-    {industryList.map((industry) => (
-      <section id={industry.id} class="industry-section" aria-labelledby={`${industry.id}-title`}>
-        <div class="industry-section-head">
-          <div>
-            <p class="eyebrow">{industry.code}</p>
-            <h2 id={`${industry.id}-title`}>{industry.name}</h2>
-          </div>
-          <p>{industry.description}</p>
-        </div>
-        <EntryList entries={industry.entries} locale="zh" />
-      </section>
-    ))}
-  </div>
+<BaseLayout title="行业资料库 | CAVWIC" description="企业 AI、具身机器人与灵巧手的白皮书、产品矩阵、公司档案、文章和案例。" alternatePath="/en/industries">
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">INDUSTRY LIBRARY</p><h1>行业资料库</h1><p>事实、实践和判断分开标注。所有产品结论都回到来源、核验日期和待验证条件。</p></div></header>
+  <nav class="industry-directory" aria-label="行业分类"><div class="industry-directory-inner">{industries.map((industry) => <a class="industry-tab" href={`#${industry.id}`}><span>{industry.code}</span><strong>{industry.name}</strong><ArrowDown size={18}/></a>)}</div></nav>
+  <div class="industries-content">{industries.map((industry) => <section id={industry.id} class="industry-section"><div class="industry-section-head"><div><p class="eyebrow">{industry.code}</p><h2>{industry.name}</h2></div><div><p>{industry.description}</p><strong class="industry-question">{industry.question}</strong></div></div><LibraryDirectory entries={all.filter((entry) => entry.data.industry === industry.id)} /></section>)}</div>
+  {isReviewBuild && <section class="cross-links"><a href="/companies"><span>13 FILES</span><h2>公司档案</h2><ArrowUpRight size={20}/></a><a href="/matrices"><span>03 MATRICES</span><h2>产品矩阵</h2><ArrowUpRight size={20}/></a><a href="/glossary"><span>120 TERMS</span><h2>术语库</h2><ArrowUpRight size={20}/></a></section>}
 </BaseLayout>

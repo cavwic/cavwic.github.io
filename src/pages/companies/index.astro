@@ -1,0 +1,21 @@
+---
+import { ArrowUpRight } from "@lucide/astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { companies } from "../../data/catalog";
+import { industryLabels } from "../../data/content";
+import { isReviewBuild } from "../../data/content";
+const visibleCompanies = isReviewBuild ? companies : [];
+---
+
+<BaseLayout title="公司档案 | CAVWIC" description="13 家企业 AI、具身机器人与灵巧手公司的公开资料档案。" alternatePath="/en/industries">
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">COMPANY FILES / 13</p><h1>公司档案</h1><p>只整理公开产品、开放能力和售前应追问的问题。不复述宣传口号，也不替厂商补写未公开参数。</p></div></header>
+  <section class="profile-grid" aria-label="公司档案">
+    {visibleCompanies.map((company, index) => (
+      <a class="profile-row" href={`/companies/${company.slug}`}>
+        <span class="profile-index">{String(index + 1).padStart(2, "0")}</span>
+        <div><p class="eyebrow">{industryLabels[company.industry]}</p><h2>{company.name}</h2><p>{company.positioning}</p></div>
+        <ArrowUpRight size={20} />
+      </a>
+    ))}
+  </section>
+</BaseLayout>

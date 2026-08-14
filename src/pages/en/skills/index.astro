@@ -1,12 +1,20 @@
 ---
 import CollectionPage from "../../../components/CollectionPage.astro";
-import { collections } from "../../../data/site";
+const repository = "https://github.com/cavwic/cavwic-solutions-lab/tree/main/skills";
+const skills = [
+  ["presales-discovery", "Turn an ambiguous request into objects, workflows, data, site conditions, stakeholders, constraints, and verification steps."],
+  ["solution-architecture-pack", "Build a bounded architecture pack covering layers, interfaces, permissions, dependencies, risks, and alternatives."],
+  ["poc-acceptance", "Define samples, metrics, failure conditions, owners, and acceptance records before implementation."],
+  ["product-comparison-research", "Build source-dated product matrices while preserving unknowns and separating facts from analysis."],
+  ["technical-proposal-audit", "Find evidence gaps, scope drift, missing interfaces, and commitments that cannot be accepted."],
+];
+const entries = skills.map(([title, description]) => ({ title, description, status: "published" as const, href: `${repository}/${title}`, external: true, action: "View skill" }));
 ---
 
 <CollectionPage
   eyebrow="SKILLS"
   title="Skills"
-  intro="Methods I use repeatedly, packaged for installation and updates. Downloads will open with the first stable release."
-  entries={collections.en.skills}
+  intro="Five reusable skills with SKILL.md instructions, templates, examples, validation scripts, and explicit operating boundaries."
+  entries={entries}
   locale="en"
 />

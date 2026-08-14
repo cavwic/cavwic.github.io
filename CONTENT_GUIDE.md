@@ -1,167 +1,146 @@
 # 网站内容编辑手册
 
-这个网站在本地编辑，通过 GitHub 自动发布。本地电脑和 NAS 都不是网站服务器，发布完成后可以关机。
+网站在本地编辑，通过 GitHub Pages 托管。电脑和 NAS 都不是线上服务器；专业资料库和工具站已经发布，后续修改仍先在本地检查再推送。
 
-## 启动本地预览
-
-首次使用：
+## 本地预览
 
 ```powershell
+cd "D:\Codex Project\个人主页"
 npm install
 npm run dev
 ```
 
-浏览器打开 `http://127.0.0.1:4321`。修改文件后，页面会自动刷新。
+浏览器打开 `http://127.0.0.1:4321`。开发环境会显示 `draft` 和 `published` 内容。
 
-## 修改首页和栏目条目
-
-中文、英文栏目中的条目集中保存在：
+独立工具项目位于：
 
 ```text
-src/data/site.ts
+D:\Codex Project\cavwic-solutions-lab
 ```
 
-中文内容写入 `collections.zh`，英文内容写入 `collections.en`。在对应栏目数组中各增加一项：
+在该目录执行 `npm run dev`，打开 `http://localhost:4322/cavwic-solutions-lab/`。
 
-```ts
-{
-  title: "条目标题",
-  description: "一句话说明内容和用途。",
-  status: "published",
-  date: "2026.08",
-  href: "/articles/article-file-name",
-  action: "阅读全文",
-}
-```
+## 新增白皮书、文章或案例
 
-`status` 只能填写 `published`、`draft` 或 `building`，页面会自动显示对应语言的状态文字。外部链接需要增加：
-
-```ts
-external: true
-```
-
-## 发布文章
-
-在 `src/pages/articles/` 中新建 Markdown 文件，例如：
+在 `src/content/library/` 新建 Markdown 文件。文件名使用小写英文和连字符，例如：
 
 ```text
-src/pages/articles/my-new-article.md
+src/content/library/robot-service-readiness.md
 ```
 
-文件开头使用以下格式：
-
-```markdown
----
-layout: ../../layouts/ArticleLayout.astro
-title: 文章标题
-description: 文章摘要
-date: 2026.08.12
-status: 草稿
----
-
-这里开始写正文。
-
-## 一级章节
-
-正文内容。
-```
-
-英文文章放在 `src/pages/en/articles/`，并在开头增加：
+文件头示例：
 
 ```yaml
-locale: en
+---
+title: "文章标题"
+description: "说明问题、观点和读者能得到的结果，至少二十个字。"
+locale: zh
+kind: article
+industry: robotics
+evidence: [公开资料研究, 分析判断]
+publicationStatus: draft
+date: 2026-08-14
+reviewedAt: 2026-08-14
+featured: false
+tags: [机器人, 服务]
+sourceIds: [ref-23, ref-45]
+alternatePath: /en/industries#robotics
+---
 ```
 
-写完后，在 `src/data/site.ts` 的 `collections.zh.articles` 和 `collections.en.articles` 中分别增加条目。中文链接使用 `/articles/my-new-article`，英文链接使用 `/en/articles/my-new-article`。两个文件应使用相同的英文文件名，语言切换才能停留在对应文章。
+字段规则：
 
-## 更新行业内容
+| 字段 | 可用值或要求 |
+| --- | --- |
+| `kind` | `whitepaper`、`article`、`case-study` |
+| `industry` | `ai`、`robotics`、`dexterous-hands`、`cross-industry` |
+| `evidence` | `真实经历`、`个人实践`、`公开资料研究`、`分析判断`，可多选 |
+| `publicationStatus` | 审阅阶段保持 `draft`；明确批准后才改为 `published` |
+| `reviewedAt` | 最后一次逐条核对事实和链接的日期 |
+| `sourceIds` | 必须存在于 `src/data/sources.ts`；脱敏真实经历可为空 |
+| `alternatePath` | 没有英文全文时，指向相应英文行业摘要，不创建不存在的 `/en/...` |
 
-行业页的 AI、机器人和灵巧手内容保存在 `src/data/site.ts` 的 `industries.zh` 和 `industries.en` 中。每个行业都有自己的 `entries`，新增内容时需要同步填写中文和英文版本。
+类型和必填项由 `src/content.config.ts` 校验。栏目页会按内容类型和行业自动归档，不再手工维护文章列表。
 
-如需增加新的行业分类，复制一个完整的行业对象并修改 `id`、`code`、`name`、`description` 和 `entries`。`id` 需要使用不重复的英文短名称。
+## 增加来源
 
-## 更新简历下载
+来源统一保存在 `src/data/sources.ts`。新增记录必须有唯一 ID、标题、URL、发布方、类型、核验日期和用途说明。
 
-正在修改的简历原稿保存在本地：
+优先使用官方产品手册、开发文档、标准或政府入口、论文和公司官方招聘页。招聘平台和行业报告可用于岗位与市场背景。没有公开依据的产品参数直接写“未公开”或“需询证”。
 
-```text
-src/陈文聪简历.pdf
-```
+内容超过 90 天没有复核时，文章页会显示“待复核”。更新资料后同时修改来源记录和内容文件的 `reviewedAt`。
 
-该文件已加入 `.gitignore`，不会被 Git 提交或自动发布。替换这个文件只会更新本地原稿，不会自动同步到网站。
+## 公司、矩阵和术语
 
-确认可以公开后，将 PDF 保存为：
+- 公司档案：`src/data/catalog.ts` 的 `companies`
+- 产品矩阵：`src/data/catalog.ts` 的 `matrices`
+- 术语库：`src/data/glossary.ts`
+
+产品比较维度应随产品类型变化。不要用一个总分同时比较 AI 平台、机器人本体和末端执行器；不要给未知字段补平均值。
+
+## 首页和关于页
+
+首页的定位、能力链和代表交付物在 `src/pages/index.astro`。英文核心定位在 `src/pages/en/index.astro`。
+
+关于页职业经历在 `src/pages/about/index.astro`。只能使用公开履历；客户、金额、内部接口、事故细节、联系人和第三方个人信息不能进入网页。HTML 只展示邮箱，不展示电话。
+
+## 语言与主题
+
+只有首页根据浏览器语言自动进入中文或英文：系统语言以 `zh` 开头显示中文，否则显示英文。用户手动切换后，本机浏览器会记住选择。
+
+深层中文页面没有英文全文时，语言按钮返回英文行业摘要；不会跳转到不存在的 `/en/...` 页面。主题默认跟随系统，点击按钮后保存为手动选择。
+
+## 更新简历
+
+当前线上下载文件仍是：
 
 ```text
 public/downloads/陈文聪简历.pdf
 ```
 
-建议使用隐藏手机号、详细住址和证件信息的公开脱敏版。准备好文件后，打开 `src/data/site.ts`，找到 `resume` 配置并把：
-
-```ts
-available: false
-```
-
-改为：
-
-```ts
-available: true
-```
-
-首页和关于页会同时从“简历整理中”切换为“下载简历”。替换新版本时保持文件名不变，再重新构建和发布即可。
-
-网站当前已经开放简历下载。以后替换 `public/downloads/陈文聪简历.pdf` 后仍需执行构建、提交和推送；仅覆盖本地文件不会自动更新线上版本。
-
-## 发布方案、工具和 Skills
-
-- 方案：编辑 `collections.zh.solutions` 和 `collections.en.solutions`。
-- 工具：编辑两种语言的 `tools` 数组，`href` 指向对应 GitHub 仓库。
-- Skills：编辑两种语言的 `skills` 数组；正式下载文件放到 GitHub Releases，并把 `href` 指向 Release 下载页。
-
-需要长篇说明时，可以参照文章方式新建 Markdown 页面，再从栏目条目链接过去。
-
-## 深浅色与中英文
-
-网站首次打开时跟随电脑或手机的系统深浅色。访客点击右上角的太阳或月亮按钮后，浏览器会在本机记住手动选择。
-
-中文页面使用原有路径，英文页面统一位于 `/en` 下。右上角语言按钮会切换到当前页面的另一种语言，因此新增栏目页或文章时应保持中英文路径除 `/en` 前缀外完全一致。
-
-访客首次打开网站时，浏览器语言以 `zh` 开头则显示中文，否则显示英文。访客手动点击语言按钮后，浏览器会在本机记住选择，之后优先使用手动选择。
-
-## 更换图片
-
-图片放在：
+本次生成的脱敏候选稿只用于本地审阅，`review/` 已加入 `.gitignore`，不会进入公开仓库：
 
 ```text
-public/images/
+review/陈文聪-公开版简历候选稿.docx
+review/陈文聪-公开版简历候选稿.pdf
 ```
 
-页面中使用 `/images/文件名.webp` 引用。照片优先转为 WebP，避免原图过大影响访问速度。
+候选稿不会自动替换线上 PDF。确认内容后，才把批准的 PDF 覆盖到 `public/downloads/陈文聪简历.pdf`，随后重新构建、提交和推送。仅替换本地文件不会同步线上版本。
 
-## 发布更新
+公开版建议只保留邮箱；删除手机号、详细住址、证件信息、客户名称、项目金额、内部截图和受限材料。
 
-修改完成后先检查构建：
+## 审阅与构建
+
+完整本地检查：
 
 ```powershell
-npm run build
+npm run verify
 ```
 
-然后发布：
+其中：
+
+- `npm run check`：Astro 与 TypeScript 校验
+- `npm run audit`：数量、来源、证据标签和敏感信息扫描
+- `npm run build`：正式构建，只生成 `published` 内容
+- `npm run build:review`：本地审阅构建，包含 `draft`
+- `npm run check:links`：检查构建产物中的内部链接和 URL 格式
+
+即使草稿文件误入远程仓库，正式构建也不会生成草稿正文路由。发布前仍要人工审阅劳动合同、保密协议、版权和个人信息边界。
+
+## 发布步骤
+
+完成内容审阅后执行：
 
 ```powershell
-git add -A
-git commit -m "更新文章或项目内容"
-git push
+npm run verify
+git status
+git add <明确批准的文件>
+git commit -m "发布专业资料库"
+git push origin main
 ```
 
-推送到 `main` 后，GitHub Actions 会自动更新网站。可以在仓库的 `Actions` 页面查看进度。
+不要直接使用 `git add -A`，先确认没有把本地审阅材料、测试截图或个人文件加入提交。推送到 `main` 后，GitHub Actions 会更新线上网站。
 
-## 公开访问地址
+工具站位于公开仓库 `cavwic/cavwic-solutions-lab`。在其目录执行相同的检查、提交和 `git push origin main`，GitHub Actions 会更新 `https://cavwic.github.io/cavwic-solutions-lab/`。
 
-GitHub Pages 地址：
-
-```text
-https://cavwic.github.io
-```
-
-后续将 `cavwic.top` 绑定到 GitHub Pages 后，访问者也可以通过独立域名进入。NAS 继续使用 `nasremote.cavwic.top`，两者互不影响。
+当前 canonical 和访问地址为 `https://cavwic.github.io`。只有 `cavwic.top` 完成 DNS 与 GitHub Pages 验证后，才修改 `astro.config.mjs`。

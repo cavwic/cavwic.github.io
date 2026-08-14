@@ -1,42 +1,15 @@
 ---
-import { ArrowUpRight, GitBranch, HardDrive, RadioTower } from "@lucide/astro";
+import { ArrowUpRight, BriefcaseBusiness, FileCheck, Mail, ShieldCheck } from "@lucide/astro";
 import ResumeLink from "../../components/ResumeLink.astro";
 import { githubUrl } from "../../data/site";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
-
-<BaseLayout title="关于 | CAVWIC" description="CAVWIC 个人作品与工作记录站的内容范围和发布方式。">
-  <header class="page-head">
-    <div class="page-head-inner">
-      <p class="eyebrow">ABOUT</p>
-      <h1>关于本站</h1>
-      <p>这里发布我自己完成的方案、文章、工具和 Skills。内容仍在整理，未验证的经历和结果不会写进来。</p>
-    </div>
-  </header>
-
-  <section class="about-grid">
-    <div class="about-copy">
-      <p class="eyebrow">工作方式</p>
-      <h2>本地写，线上读。</h2>
-      <p>正文和源码保存在本地项目与 GitHub。静态托管平台负责网页访问，下载文件通过 GitHub Releases 分发。站点本身不依赖家里的 NAS 持续运行。</p>
-      <div class="about-actions">
-        <ResumeLink className="text-link" locale="zh" />
-        <a class="text-link" href={githubUrl} target="_blank" rel="noreferrer">查看 GitHub <ArrowUpRight size={18} /></a>
-      </div>
-    </div>
-    <div class="about-facts">
-      <div class="fact-row">
-        <HardDrive size={22} strokeWidth={1.5} />
-        <div><strong>编辑</strong><span>本地 Markdown 与源码</span></div>
-      </div>
-      <div class="fact-row">
-        <GitBranch size={22} strokeWidth={1.5} />
-        <div><strong>版本</strong><span>GitHub 仓库与 Releases</span></div>
-      </div>
-      <div class="fact-row">
-        <RadioTower size={22} strokeWidth={1.5} />
-        <div><strong>访问</strong><span>静态托管与独立域名</span></div>
-      </div>
-    </div>
+<BaseLayout title="关于陈文聪 | CAVWIC" description="陈文聪的职业经历、售前工作方法、公开边界与联系方式。" alternatePath="/en/about">
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">ABOUT / CHEN WENCONG</p><h1>复杂系统，需要可交付的翻译</h1><p>我的工作不是把产品名堆成方案，而是让客户问题、技术边界、验证步骤和交付责任在一张图上对得起来。</p></div></header>
+  <section class="about-grid professional-about">
+    <div class="about-copy"><p class="eyebrow">POSITIONING</p><h2>企业 AI 与具身机器人售前解决方案</h2><p>六年以上 B2B 售前与解决方案经历，覆盖复杂软硬件系统、现场调研、方案与技术标、演示与 POC、部署培训、接口协同和验收移交。机器人和灵巧手内容以公开研究与个人实践为主，未写成客户项目。</p><div class="about-actions"><ResumeLink className="text-link" locale="zh"/><a class="text-link" href="mailto:buct200831111@sina.com">邮件联系 <Mail size={18}/></a><a class="text-link" href={githubUrl} target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={18}/></a></div></div>
+    <div class="about-facts"><div class="fact-row"><BriefcaseBusiness size={22}/><div><strong>真实经历</strong><span>复杂机电、文档数字化与系统协同</span></div></div><div class="fact-row"><FileCheck size={22}/><div><strong>工作链路</strong><span>需求、架构、POC、投标、交付、验收</span></div></div><div class="fact-row"><ShieldCheck size={22}/><div><strong>公开规则</strong><span>客户泛化、事实溯源、未知字段不补猜</span></div></div></div>
   </section>
+  <section class="career-section"><div class="section-heading"><div><p class="eyebrow">EXPERIENCE</p><h2>职业经历</h2></div><p>只保留公开履历和可迁移职责；客户、金额、内部接口、事故细节与第三方个人信息不进入网页。</p></div><ol class="career-timeline"><li><time>2025.06—2025.12</time><div><h3>佳能（中国）有限公司</h3><p>企业级产品与解决方案支持、客户沟通、技术演示和渠道协作。</p></div></li><li><time>2022.05—2024.05</time><div><h3>柯达乐芮管理（上海）有限公司</h3><p>文档数字化方案、软件工作流、POC、部署培训与客户问题闭环。</p></div></li><li><time>2017.07—2021.07</time><div><h3>同方威视技术股份有限公司</h3><p>复杂机电系统解决方案、现场条件与需求分析、技术标、演示、交付协同及验收支持。</p></div></li></ol></section>
+  <section class="boundary-band"><div><p class="eyebrow">PUBLIC BOUNDARY</p><h2>本网站怎样处理证据</h2></div><div><p><strong>真实经历</strong>：本人履历可核验、客户与商业细节已泛化。</p><p><strong>个人实践</strong>：自行完成的演练或工具，不写成客户落地。</p><p><strong>公开资料研究</strong>：绑定来源和复核日期，产品未公开字段保持未知。</p><p><strong>分析判断</strong>：明确写成判断，允许读者反驳。</p></div></section>
 </BaseLayout>

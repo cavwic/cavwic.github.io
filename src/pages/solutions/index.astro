@@ -1,12 +1,9 @@
 ---
+import { getCollection } from "astro:content";
 import CollectionPage from "../../components/CollectionPage.astro";
-import { collections } from "../../data/site";
+import { isVisible, toEntry } from "../../data/content";
+const entries = (await getCollection("library"))
+  .filter((entry) => entry.data.locale === "zh" && ["whitepaper", "case-study"].includes(entry.data.kind) && isVisible(entry))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
-
-<CollectionPage
-  eyebrow="SOLUTIONS"
-  title="方案"
-  intro="记录问题边界、判断依据和实施步骤。内容以能复核、能执行为准。"
-  entries={collections.zh.solutions}
-  locale="zh"
-/>
+<CollectionPage eyebrow="SOLUTIONS" title="方案" intro="白皮书说明方法，案例说明边界和交付动作。真实经历与个人实践不会混写。" entries={entries.map((entry) => toEntry(entry))} locale="zh" />

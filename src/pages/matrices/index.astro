@@ -1,0 +1,12 @@
+---
+import { ArrowUpRight } from "@lucide/astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { matrices } from "../../data/catalog";
+import { industryLabels } from "../../data/content";
+import { isReviewBuild } from "../../data/content";
+const visibleMatrices = isReviewBuild ? matrices : [];
+---
+<BaseLayout title="产品矩阵 | CAVWIC" description="企业 AI、具身机器人与灵巧手的场景化产品比较矩阵。" alternatePath="/en/industries">
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">PRODUCT MATRICES / 03</p><h1>产品矩阵</h1><p>按产品类型定义维度，保留未知字段。矩阵用于缩小验证范围，不代替样机测试和厂商询证。</p></div></header>
+  <section class="profile-grid">{visibleMatrices.map((matrix, index) => <a class="profile-row" href={`/matrices/${matrix.slug}`}><span class="profile-index">0{index + 1}</span><div><p class="eyebrow">{industryLabels[matrix.industry]}</p><h2>{matrix.title}</h2><p>{matrix.description}</p></div><ArrowUpRight size={20} /></a>)}</section>
+</BaseLayout>

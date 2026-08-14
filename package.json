@@ -6,11 +6,20 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:review": "astro build --mode review",
+    "check": "astro check",
+    "audit": "node scripts/audit-content.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "verify": "npm run check && npm run audit && npm run build && npm run build:review && npm run check:links",
     "preview": "astro preview"
   },
   "dependencies": {
     "@lucide/astro": "^1.31.0",
     "@astrojs/sitemap": "^3.7.3",
     "astro": "^7.2.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.6",
+    "typescript": "^5.9.3"
   }
 }

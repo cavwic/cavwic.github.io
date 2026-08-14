@@ -1,0 +1,29 @@
+---
+import { ArrowLeft, ExternalLink } from "@lucide/astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { companies } from "../../data/catalog";
+import { industryLabels } from "../../data/content";
+import { isReviewBuild } from "../../data/content";
+import { sourcesById } from "../../data/sources";
+
+export function getStaticPaths() {
+  return (isReviewBuild ? companies : []).map((company) => ({ params: { slug: company.slug }, props: { company } }));
+}
+const { company } = Astro.props;
+const refs = company.sourceIds.map((id: string) => sourcesById.get(id)).filter(Boolean);
+---
+
+<BaseLayout title={`${company.name} | 公司档案 | CAVWIC`} description={company.positioning} alternatePath="/en/industries">
+  <article class="detail-shell">
+    <header class="detail-head">
+      <a class="text-link back-link" href="/companies"><ArrowLeft size={18} /> 返回公司档案</a>
+      <p class="eyebrow">{industryLabels[company.industry]} / VERIFIED {company.reviewedAt}</p>
+      <h1>{company.name}</h1><p class="english-name">{company.englishName}</p><p>{company.positioning}</p>
+    </header>
+    <div class="detail-grid">
+      <section><p class="eyebrow">PUBLIC PRODUCTS</p><h2>公开产品线</h2><ul>{company.products.map((item: string) => <li>{item}</li>)}</ul></section>
+      <section><p class="eyebrow">PRESALES QUESTIONS</p><h2>售前先问什么</h2><ol>{company.presalesQuestions.map((item: string) => <li>{item}</li>)}</ol></section>
+    </div>
+    <section class="source-panel"><div class="source-panel-head"><div><p class="eyebrow">SOURCES</p><h2>来源</h2></div></div><ol class="source-list">{refs.map((ref: any) => <li><span>{ref.sourceType}</span><a href={ref.url} target="_blank" rel="noreferrer">{ref.title} <ExternalLink size={14} /></a><small>{ref.publisher} · {ref.verifiedAt}</small></li>)}</ol></section>
+  </article>
+</BaseLayout>
