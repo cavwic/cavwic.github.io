@@ -3,14 +3,13 @@ import { ArrowLeft } from "@lucide/astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { matrices } from "../../data/catalog";
 import { sourcesById } from "../../data/sources";
-import { isReviewBuild } from "../../data/content";
 
-export function getStaticPaths() { return (isReviewBuild ? matrices : []).map((matrix) => ({ params: { slug: matrix.slug }, props: { matrix } })); }
+export function getStaticPaths() { return matrices.map((matrix) => ({ params: { slug: matrix.slug }, props: { matrix } })); }
 const { matrix } = Astro.props;
 ---
 <BaseLayout title={`${matrix.title} | CAVWIC`} description={matrix.description} alternatePath="/en/industries">
   <article class="matrix-shell">
-    <header class="detail-head"><a class="text-link back-link" href="/matrices"><ArrowLeft size={18} /> 返回产品矩阵</a><p class="eyebrow">COMPARISON MATRIX / REVIEW 2026-08-14</p><h1>{matrix.title}</h1><p>{matrix.description}</p></header>
+    <header class="detail-head"><a class="text-link back-link" href="/matrices"><ArrowLeft size={18} /> 返回产品矩阵</a><p class="eyebrow">COMPARISON MATRIX / VERIFIED {matrix.reviewedAt}</p><h1>{matrix.title}</h1><p>{matrix.description}</p></header>
     <div class="dimension-strip">{matrix.dimensions.map((item: string, index: number) => <span><b>{String(index + 1).padStart(2, "0")}</b>{item}</span>)}</div>
     <div class="matrix-table-wrap"><table class="matrix-table"><thead><tr><th>产品</th><th>厂商</th><th>类型</th><th>公开与开放度</th><th>集成说明</th><th>验证重点</th><th>来源</th></tr></thead><tbody>{matrix.rows.map((row: any) => <tr><th>{row.product}</th><td>{row.company}</td><td>{row.type}</td><td>{row.openness}</td><td>{row.integration}</td><td>{row.verificationFocus}</td><td>{row.sourceIds.map((id: string) => <a href={sourcesById.get(id)?.url} target="_blank" rel="noreferrer">[{id}]</a>)}</td></tr>)}</tbody></table></div>
     <p class="matrix-note">所有未公开字段均保留为“未公开”或“需询证”。此表不做总分排名，选型必须回到任务、现场、安全和维护条件。</p>

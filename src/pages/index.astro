@@ -3,7 +3,7 @@ import { ArrowDown, ArrowUpRight, Blocks, ClipboardCheck, FileSearch, Mail, Rout
 import { getCollection } from "astro:content";
 import EntryList from "../components/EntryList.astro";
 import ResumeLink from "../components/ResumeLink.astro";
-import { isReviewBuild, isVisible, toEntry } from "../data/content";
+import { isVisible, toEntry } from "../data/content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const library = (await getCollection("library"))
@@ -39,15 +39,15 @@ const library = (await getCollection("library"))
     </div>
   </section>
 
-  {isReviewBuild && <section class="deliverable-band">
-    <div class="section-heading"><div><p class="eyebrow">REPRESENTATIVE DELIVERABLES</p><h2>招聘方可以直接检查的交付物</h2></div><p>本地审阅版内容全部标注证据类型；正式站点仍只发布通过审阅的条目。</p></div>
+  <section class="deliverable-band">
+    <div class="section-heading"><div><p class="eyebrow">REPRESENTATIVE DELIVERABLES</p><h2>招聘方可以直接检查的交付物</h2></div><p>公开资料、分析判断、个人实践与真实经历分开标注；产品结论保留来源、核验日期和待确认条件。</p></div>
     <div class="deliverable-grid">
       <a href="/matrices/enterprise-ai-platforms"><span>01 / MATRIX</span><h3>企业 AI 平台对比</h3><p>Dify、RAGFlow、FastGPT、Coze Studio，按部署、知识、编排、扩展和评测比较。</p><ArrowUpRight size={18} /></a>
       <a href="/matrices/embodied-robot-platforms"><span>02 / MATRIX</span><h3>具身机器人平台对比</h3><p>先分清科研、展示和任务执行，再谈本体与开发开放度。</p><ArrowUpRight size={18} /></a>
       <a href="/matrices/dexterous-hand-selection"><span>03 / MATRIX</span><h3>灵巧手选型与验证</h3><p>自由度之外，检查触觉、接口、负载口径、温升、寿命和对象集。</p><ArrowUpRight size={18} /></a>
-      <a href="/glossary"><span>04 / GLOSSARY</span><h3>120 项售前术语</h3><p>每个术语都落到需求、接口、测试或验收动作。</p><ArrowUpRight size={18} /></a>
+      <a href="/companies"><span>04 / COMPANY FILES</span><h3>公司与产业链档案</h3><p>按产业位置整理产品、擅长方向、适用场景和选型核验项。</p><ArrowUpRight size={18} /></a>
     </div>
-  </section>}
+  </section>
 
   <section class="latest-section">
     <div class="section-heading"><div><p class="eyebrow">LATEST PUBLICATIONS</p><h2>近期发布</h2></div><p>围绕企业 AI、具身机器人与灵巧手，持续发布白皮书、技术文章和案例分析。每篇内容都会标明证据类型与核验日期；引用公开资料时，同时列出来源。</p></div>

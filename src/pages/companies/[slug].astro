@@ -3,11 +3,10 @@ import { ArrowLeft, ExternalLink } from "@lucide/astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { companies } from "../../data/catalog";
 import { industryLabels } from "../../data/content";
-import { isReviewBuild } from "../../data/content";
 import { sourcesById } from "../../data/sources";
 
 export function getStaticPaths() {
-  return (isReviewBuild ? companies : []).map((company) => ({ params: { slug: company.slug }, props: { company } }));
+  return companies.map((company) => ({ params: { slug: company.slug }, props: { company } }));
 }
 const { company } = Astro.props;
 const refs = company.sourceIds.map((id: string) => sourcesById.get(id)).filter(Boolean);
@@ -18,10 +17,13 @@ const refs = company.sourceIds.map((id: string) => sourcesById.get(id)).filter(B
     <header class="detail-head">
       <a class="text-link back-link" href="/companies"><ArrowLeft size={18} /> 返回公司档案</a>
       <p class="eyebrow">{industryLabels[company.industry]} / VERIFIED {company.reviewedAt}</p>
-      <h1>{company.name}</h1><p class="english-name">{company.englishName}</p><p>{company.positioning}</p>
+      <h1>{company.name}</h1><p class="english-name">{company.englishName}</p>{company.valueChainRole && <p class="company-role">{company.valueChainRole}</p>}<p>{company.positioning}</p>
     </header>
     <div class="detail-grid">
       <section><p class="eyebrow">PUBLIC PRODUCTS</p><h2>公开产品线</h2><ul>{company.products.map((item: string) => <li>{item}</li>)}</ul></section>
+      {company.strengths && <section><p class="eyebrow">PUBLIC STRENGTHS</p><h2>公开优势</h2><ul>{company.strengths.map((item: string) => <li>{item}</li>)}</ul></section>}
+      {company.fit && <section><p class="eyebrow">SCENARIO FIT</p><h2>适用场景</h2><ul>{company.fit.map((item: string) => <li>{item}</li>)}</ul></section>}
+      {company.verificationFocus && <section><p class="eyebrow">VERIFICATION</p><h2>选型核验</h2><p>{company.verificationFocus}</p></section>}
       <section><p class="eyebrow">PRESALES QUESTIONS</p><h2>售前先问什么</h2><ol>{company.presalesQuestions.map((item: string) => <li>{item}</li>)}</ol></section>
     </div>
     <section class="source-panel"><div class="source-panel-head"><div><p class="eyebrow">SOURCES</p><h2>来源</h2></div></div><ol class="source-list">{refs.map((ref: any) => <li><span>{ref.sourceType}</span><a href={ref.url} target="_blank" rel="noreferrer">{ref.title} <ExternalLink size={14} /></a><small>{ref.publisher} · {ref.verifiedAt}</small></li>)}</ol></section>
