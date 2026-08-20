@@ -1,0 +1,124 @@
+---
+import { ArrowUpRight, ChevronDown } from "@lucide/astro";
+import {
+  industryLandscapes,
+  landscapeCompanies,
+  pickText,
+  type LandscapeIndustryId,
+  type LandscapeLocale,
+} from "../data/industry-landscape";
+
+interface Props {
+  industry: LandscapeIndustryId;
+  locale?: LandscapeLocale;
+}
+
+const { industry, locale = "zh" } = Astro.props;
+const copy = industryLandscapes[industry];
+const t = (value: Parameters<typeof pickText>[0]) => pickText(value, locale);
+const labels = locale === "zh" ? {
+  route: "按产业环节浏览",
+  companies: "代表公司档案",
+  position: "产业角色",
+  expand: "展开档案",
+  fields: { strengths: "公开侧重", products: "产品类别", fit: "适合进入验证的场景", verify: "项目中先确认" },
+  verified: "核验",
+  source: "官方来源",
+} : {
+  route: "Browse by value-chain layer",
+  companies: "Representative company files",
+  position: "Value-chain role",
+  expand: "Open file",
+  fields: { strengths: "Public focus", products: "Product categories", fit: "Scenarios worth validating", verify: "Confirm before selection" },
+  verified: "VERIFIED",
+  source: "Official source",
+};
+---
+
+<section class="industry-landscape" aria-labelledby={`landscape-title-${industry}-${locale}`}>
+  <header class="landscape-sample-head">
+    <div>
+      <p class="eyebrow">{t(copy.label)}</p>
+      <h3 id={`landscape-title-${industry}-${locale}`}>{t(copy.title)}</h3>
+    </div>
+    <p>{t(copy.intro)}</p>
+  </header>
+
+  <figure class="landscape-visual">
+    <img src={copy.image} alt={t(copy.imageAlt)} loading="lazy" />
+    <figcaption>{t(copy.imageNote)}</figcaption>
+  </figure>
+
+  <nav class="landscape-route" style={`--landscape-columns: ${copy.chapters.length}`} aria-label={labels.route}>
+    {copy.chapters.map((chapter) => (
+      <a href={`#${chapter.id}`}>
+        <span>{chapter.index}</span>
+        <strong>{t(chapter.title)}</strong>
+      </a>
+    ))}
+  </nav>
+
+  <div class="landscape-chapters">
+    {copy.chapters.map((chapter, chapterIndex) => (
+      <article id={chapter.id} class="landscape-chapter">
+        <header class="landscape-layer-head">
+          <span class="landscape-layer-index">{chapter.index}</span>
+          <div>
+            <p class="eyebrow">{chapter.eyebrow}</p>
+            <h4>{t(chapter.title)}</h4>
+            <p>{t(chapter.description)}</p>
+          </div>
+          <ul aria-label={labels.route}>
+            {chapter.chain.map((item) => <li>{t(item)}</li>)}
+          </ul>
+        </header>
+
+        <div class="landscape-company-register">
+          <p class="landscape-company-count"><span>{String(chapter.companyIds.length).padStart(2, "0")}</span>{labels.companies}</p>
+          {chapter.companyIds.map((companyId, companyIndex) => {
+            const profile = landscapeCompanies[companyId];
+            return (
+              <details class="company-dossier" open={chapterIndex === 0 && companyIndex === 0}>
+                <summary>
+                  <div>
+                    <p>COMPANY / {chapter.index}</p>
+                    <h5>{t(profile.name)}</h5>
+                    {profile.englishName && profile.englishName !== t(profile.name) && <span>{profile.englishName}</span>}
+                  </div>
+                  <strong>{t(profile.role)}</strong>
+                  <span class="dossier-trigger">{labels.expand}<ChevronDown size={19} /></span>
+                </summary>
+                <div class="dossier-body">
+                  <section class="dossier-position">
+                    <p class="eyebrow">{labels.position}</p>
+                    <strong>{t(profile.role)}</strong>
+                    <p>{t(profile.positioning)}</p>
+                    <div class="dossier-evidence">
+                      {profile.evidence.map((item) => <span>{t(item)}</span>)}
+                    </div>
+                  </section>
+                  <dl class="dossier-fields">
+                    <div><dt>{labels.fields.strengths}</dt><dd>{t(profile.strengths)}</dd></div>
+                    <div><dt>{labels.fields.products}</dt><dd>{t(profile.products)}</dd></div>
+                    <div><dt>{labels.fields.fit}</dt><dd>{t(profile.fit)}</dd></div>
+                    <div><dt>{labels.fields.verify}</dt><dd>{t(profile.verify)}</dd></div>
+                  </dl>
+                  <footer class="dossier-source">
+                    <span>{labels.verified} {profile.reviewedAt}</span>
+                    <div>
+                      {profile.sources.map((source) => (
+                        <a href={source.url} target="_blank" rel="noreferrer">
+                          {labels.source}: {t(source.label)}<ArrowUpRight size={16} />
+                        </a>
+                      ))}
+                    </div>
+                  </footer>
+                </div>
+              </details>
+            );
+          })}
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

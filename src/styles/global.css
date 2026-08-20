@@ -753,7 +753,7 @@ html[data-theme="dark"] .industry-tab span {
   font-size: 16px;
 }
 
-.landscape-sample {
+.industry-landscape {
   margin: 70px 0 92px;
   border-top: 1px solid var(--ink);
 }
@@ -814,7 +814,7 @@ html[data-theme="dark"] .industry-tab span {
   z-index: 4;
   top: 74px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--landscape-columns), minmax(0, 1fr));
   border: 1px solid var(--ink);
   background: var(--paper);
 }
@@ -848,7 +848,8 @@ html[data-theme="dark"] .industry-tab span {
 
 .landscape-route strong {
   font-family: var(--display);
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 1.25;
 }
 
 .landscape-chapter {
@@ -896,8 +897,29 @@ html[data-theme="dark"] .industry-tab span {
   font-size: 13px;
 }
 
-.company-dossier {
+.landscape-company-register {
   border-top: 1px solid var(--ink);
+}
+
+.landscape-company-count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  margin: 0;
+  padding: 8px 26px;
+  color: var(--ink-soft);
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.landscape-company-count span {
+  color: var(--signal);
+}
+
+.company-dossier {
   border-bottom: 1px solid var(--ink);
 }
 
@@ -1054,6 +1076,13 @@ html[data-theme="dark"] .industry-tab span {
   gap: 7px;
   color: var(--teal);
   font-weight: 700;
+}
+
+.dossier-source > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 18px;
 }
 
 .about-grid {
@@ -2157,7 +2186,7 @@ html[data-theme="dark"] .text-link.resume-link-pending {
 }
 
 @media (max-width: 620px) {
-  .landscape-sample {
+  .industry-landscape {
     margin: 50px 0 72px;
   }
 
@@ -2184,11 +2213,13 @@ html[data-theme="dark"] .text-link.resume-link-pending {
 
   .landscape-route {
     top: 74px;
+    grid-template-columns: repeat(var(--landscape-columns), minmax(132px, 1fr));
     overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
   }
 
   .landscape-route a {
-    min-width: 116px;
     grid-template-columns: 1fr;
     justify-items: start;
     gap: 2px;
@@ -2255,6 +2286,10 @@ html[data-theme="dark"] .text-link.resume-link-pending {
     align-items: flex-start;
     flex-direction: column;
     padding: 14px 20px;
+  }
+
+  .dossier-source > div {
+    justify-content: flex-start;
   }
 
   .professional-hero h1 {
