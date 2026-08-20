@@ -3,19 +3,31 @@ import { ArrowUpRight } from "@lucide/astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { companies } from "../../data/catalog";
 import { industryLabels } from "../../data/content";
-import { isReviewBuild } from "../../data/content";
-const visibleCompanies = isReviewBuild ? companies : [];
+const groups = (["ai", "robotics", "dexterous-hands"] as const).map((industry) => ({
+  industry,
+  companies: companies.filter((company) => company.industry === industry),
+}));
 ---
 
-<BaseLayout title="公司档案 | CAVWIC" description="13 家企业 AI、具身机器人与灵巧手公司的公开资料档案。" alternatePath="/en/industries">
-  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">COMPANY FILES / 13</p><h1>公司档案</h1><p>只整理公开产品、开放能力和售前应追问的问题。不复述宣传口号，也不替厂商补写未公开参数。</p></div></header>
-  <section class="profile-grid" aria-label="公司档案">
-    {visibleCompanies.map((company, index) => (
-      <a class="profile-row" href={`/companies/${company.slug}`}>
-        <span class="profile-index">{String(index + 1).padStart(2, "0")}</span>
-        <div><p class="eyebrow">{industryLabels[company.industry]}</p><h2>{company.name}</h2><p>{company.positioning}</p></div>
-        <ArrowUpRight size={20} />
-      </a>
+<BaseLayout title="公司档案 | CAVWIC" description="企业 AI、具身机器人与灵巧手公司的公开资料档案。" alternatePath="/en/industries">
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">COMPANY FILES / {String(companies.length).padStart(2, "0")}</p><h1>公司档案</h1><p>按产业位置整理公开产品、擅长方向、适用场景和选型核验项。未公开的参数仍保留为待询证。</p></div></header>
+  <div class="company-catalog" aria-label="公司档案">
+    {groups.map((group) => (
+      <section class="company-group">
+        <header class="company-group-head">
+          <p class="eyebrow">{group.industry.toUpperCase()} / {String(group.companies.length).padStart(2, "0")}</p>
+          <h2>{industryLabels[group.industry]}</h2>
+        </header>
+        <div class="profile-grid">
+          {group.companies.map((company) => (
+            <a class="profile-row" href={`/companies/${company.slug}`}>
+              <span class="profile-index">{String(companies.indexOf(company) + 1).padStart(2, "0")}</span>
+              <div><p class="eyebrow">{company.valueChainRole ?? industryLabels[company.industry]}</p><h3>{company.name}</h3><p>{company.positioning}</p></div>
+              <ArrowUpRight size={20} />
+            </a>
+          ))}
+        </div>
+      </section>
     ))}
-  </section>
+  </div>
 </BaseLayout>

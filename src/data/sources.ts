@@ -8,7 +8,8 @@ const source = (
   publisher: string,
   sourceType: SourceRef["sourceType"],
   note: string,
-): SourceRef => ({ id, title, url, publisher, sourceType, verifiedAt, note });
+  checkedAt = verifiedAt,
+): SourceRef => ({ id, title, url, publisher, sourceType, verifiedAt: checkedAt, note });
 
 export const jobSources: SourceRef[] = [
   source("job-01", "人形机器人解决方案售前/方案经理", "https://www.zhipin.com/job_detail/e28b3a7af4c9b3d00nR92dm5GVJQ.html", "BOSS直聘", "job", "历史投递样本；方案、演示、招投标与场景理解。"),
@@ -99,6 +100,37 @@ export const referenceSources: SourceRef[] = [
   source("ref-48", "中华人民共和国个人信息保护法", "https://www.npc.gov.cn/WZWSREL25wYy9jMi9jMzA4MzQvMjAyMTA4L3QyMDIxMDgyMF8zMTMwODguaHRtbD9yZWY9aW1i", "全国人大", "law", "个人信息处理与公开边界。"),
   source("ref-49", "中华人民共和国著作权法", "https://www.npc.gov.cn/c2/c30834/202011/t20201119_308796.html", "全国人大", "law", "转载、改写与图文素材的版权边界。"),
   source("ref-50", "中华人民共和国劳动合同法", "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html", "国家市场监督管理总局", "law", "劳动合同与保密义务的法律入口。"),
+  source("ref-51", "宇树 G1", "https://www.unitree.com/cn/g1/", "宇树科技", "official", "G1 人形智能体产品页。", "2026-08-20"),
+  source("ref-52", "宇树开源项目", "https://www.unitree.com/opensource/", "宇树科技", "official", "SDK、仿真与开源资源入口。", "2026-08-20"),
+  source("ref-53", "优必选官网", "https://www.ubtrobot.com/cn", "优必选", "official", "人形机器人和行业产品入口。", "2026-08-20"),
+  source("ref-54", "优必选 Walker C", "https://www.ubtrobot.com/cn/humanoid/products/walker-c", "优必选", "official", "Walker C 工业人形机器人产品页。", "2026-08-20"),
+  source("ref-55", "智元机器人官网", "https://www.agibot.com.cn/index.html", "智元机器人", "official", "公司、机器人产品与生态入口。", "2026-08-20"),
+  source("ref-56", "AgiBot AimDK", "https://open.agibot.com/docs/aimdk", "智元机器人", "official", "机器人开发套件文档入口。", "2026-08-20"),
+  source("ref-57", "傅利叶 GR-1", "https://www.fftai.cn/products-gr1", "傅利叶智能", "official", "GR-1 人形机器人产品页。", "2026-08-20"),
+  source("ref-58", "Fourier Intelligence 开发文档", "https://support.fftai.com/en/getting-started/general-information", "Fourier Intelligence", "official", "机器人开发与使用文档入口。", "2026-08-20"),
+  source("ref-59", "NVIDIA Isaac GR00T", "https://developer.nvidia.com/isaac/gr00t", "NVIDIA", "official", "通用机器人基础模型与开发资源入口。", "2026-08-20"),
+  source("ref-60", "NVIDIA Jetson Thor", "https://www.nvidia.com/en-eu/autonomous-machines/embedded-systems/jetson-thor/", "NVIDIA", "official", "面向机器人的边缘计算平台产品页。", "2026-08-20"),
+  source("ref-61", "Gemini Robotics", "https://deepmind.google/models/gemini-robotics/", "Google DeepMind", "official", "具身推理与机器人模型系列介绍。", "2026-08-20"),
+  source("ref-62", "Gemini Robotics 模型卡", "https://deepmind.google/models/model-cards/", "Google DeepMind", "official", "模型能力、限制与评测入口。", "2026-08-20"),
+  source("ref-63", "Physical Intelligence pi0", "https://www.physicalintelligence.company/blog/pi0", "Physical Intelligence", "official", "通用机器人策略研究说明。", "2026-08-20"),
+  source("ref-64", "奥比中光产品", "https://www.orbbec.com/products/", "奥比中光", "official", "3D 视觉与深度相机产品入口。", "2026-08-20"),
+  source("ref-65", "奥比中光 Gemini 335Lg", "https://www.orbbec.com/gemini-335lg/", "奥比中光", "official", "面向机器人的 RGB-D 相机产品页。", "2026-08-20"),
+  source("ref-66", "Livox MID-360", "https://www.livoxtech.com/mid-360", "Livox", "official", "移动机器人三维激光雷达产品页。", "2026-08-20"),
+  source("ref-67", "地瓜机器人 RDK X5", "https://en.d-robotics.cc/rdkx5", "地瓜机器人", "official", "机器人边缘计算开发套件产品页。", "2026-08-20"),
+  source("ref-68", "地瓜机器人硬件生态", "https://en.d-robotics.cc/accessories", "地瓜机器人", "official", "RDK 相机与扩展配件入口。", "2026-08-20"),
+  source("ref-69", "梅卡曼德产品", "https://www.mech-mind.com/videos/product-videos/002.html", "梅卡曼德", "official", "3D 视觉、机器人软件与工作站产品入口。", "2026-08-20"),
+  source("ref-70", "梅卡曼德解决方案", "https://www.mech-mind.com/videos/solution-videos/002.html", "梅卡曼德", "official", "工业场景方案与应用入口。", "2026-08-20"),
+  source("ref-71", "Shadow 灵巧手系列", "https://shadowrobot.com/dexterous-hand-series/", "Shadow Robot", "official", "高自由度灵巧手产品系列。", "2026-08-20"),
+  source("ref-72", "Shadow DEX-EE", "https://shadowrobot.com/dex-ee_series/", "Shadow Robot", "official", "DEX-EE 灵巧手产品页。", "2026-08-20"),
+  source("ref-73", "坤维科技产品", "https://www.kunweitech.com/products/", "坤维科技", "official", "六维力、扭矩与关节力矩传感器目录。", "2026-08-20"),
+  source("ref-74", "XELA uSkin 产品", "https://xelarobotics.com/products/", "XELA Robotics", "official", "模块化三轴触觉传感器产品入口。", "2026-08-20"),
+  source("ref-75", "GelSight 产品", "https://www.gelsight.com/products/", "GelSight", "official", "成像触觉与表面测量产品入口。", "2026-08-20"),
+  source("ref-76", "maxon 机器人解决方案", "https://www.maxongroup.com/en-us/market-solutions/mobility-solutions/robotics", "maxon", "official", "机器人电机、传动、控制与关节组件入口。", "2026-08-20"),
+  source("ref-77", "FAULHABER 机器人关节手册", "https://cdn.faulhaber.com/media/DAM/Documents/brochure/faulhaber-brochure-market-solution-robotic-joints-en.pdf", "FAULHABER", "official", "机器人关节微型驱动组合资料。", "2026-08-20"),
+  source("ref-78", "绿的谐波官网", "https://www.leaderdrive.cn/", "绿的谐波", "official", "谐波减速器、旋转执行器和机器人关节入口。", "2026-08-20"),
+  source("ref-79", "Harmonic Drive 产品", "https://www.harmonicdrive.net/", "Harmonic Drive", "official", "谐波齿轮与集成旋转执行器入口。", "2026-08-20"),
+  source("ref-80", "步科机器人关节方案", "https://automation.kinco.cn/solution/biped/articulated-joint", "步科", "official", "无框电机、驱动器与关节集成方案。", "2026-08-20"),
+  source("ref-81", "长兴动力官网", "https://www.cxdlrobotics.com/", "长兴动力", "official", "机器人关节模组与执行器产品入口。", "2026-08-20"),
 ];
 
 export const sources: SourceRef[] = [...jobSources, ...referenceSources];

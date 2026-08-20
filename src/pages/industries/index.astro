@@ -3,7 +3,8 @@ import { ArrowDown, ArrowUpRight } from "@lucide/astro";
 import { getCollection } from "astro:content";
 import IndustryLandscape from "../../components/IndustryLandscape.astro";
 import LibraryDirectory from "../../components/LibraryDirectory.astro";
-import { isReviewBuild, isVisible } from "../../data/content";
+import { companies, matrices } from "../../data/catalog";
+import { isVisible } from "../../data/content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const all = (await getCollection("library")).filter((entry) => entry.data.locale === "zh" && isVisible(entry));
@@ -17,5 +18,5 @@ const industries = [
   <header class="page-head"><div class="page-head-inner"><p class="eyebrow">INDUSTRY LIBRARY</p><h1>行业资料库</h1><p>事实、实践和判断分开标注。所有产品结论都回到来源、核验日期和待验证条件。</p></div></header>
   <nav class="industry-directory" aria-label="行业分类"><div class="industry-directory-inner">{industries.map((industry) => <a class="industry-tab" href={`#${industry.id}`}><span>{industry.code}</span><strong>{industry.name}</strong><ArrowDown size={18}/></a>)}</div></nav>
   <div class="industries-content">{industries.map((industry) => <section id={industry.id} class="industry-section"><div class="industry-section-head"><div><p class="eyebrow">{industry.code}</p><h2>{industry.name}</h2></div><div><p>{industry.description}</p><strong class="industry-question">{industry.question}</strong></div></div>{(industry.id === "robotics" || industry.id === "dexterous-hands") && <IndustryLandscape industry={industry.id} />}<LibraryDirectory entries={all.filter((entry) => entry.data.industry === industry.id)} /></section>)}</div>
-  {isReviewBuild && <section class="cross-links"><a href="/companies"><span>13 FILES</span><h2>公司档案</h2><ArrowUpRight size={20}/></a><a href="/matrices"><span>03 MATRICES</span><h2>产品矩阵</h2><ArrowUpRight size={20}/></a><a href="/glossary"><span>120 TERMS</span><h2>术语库</h2><ArrowUpRight size={20}/></a></section>}
+  <section class="cross-links"><a href="/companies"><span>{String(companies.length).padStart(2, "0")} FILES</span><h2>公司档案</h2><ArrowUpRight size={20}/></a><a href="/matrices"><span>{String(matrices.length).padStart(2, "0")} MATRICES</span><h2>产品矩阵</h2><ArrowUpRight size={20}/></a></section>
 </BaseLayout>
