@@ -24,13 +24,18 @@ export const solutionsLabUrl = "https://cavwic.github.io/cavwic-solutions-lab";
 export const solutionsLabRepositoryUrl = "https://github.com/cavwic/cavwic-solutions-lab";
 
 export const resume = {
-  displayName: {
-    zh: "CAVWIC 个人简历",
-    en: "CAVWIC resume",
+  zh: {
+    displayName: "CAVWIC 个人简历",
+    href: "/downloads/陈文聪简历.pdf",
+    fileName: "陈文聪简历.pdf",
+    available: true,
   },
-  href: "/downloads/陈文聪简历.pdf",
-  fileName: "陈文聪简历.pdf",
-  available: true,
+  en: {
+    displayName: "Wencong Chen Resume",
+    href: "/downloads/Wencong Chen-Resume.pdf",
+    fileName: "Wencong Chen-Resume.pdf",
+    available: true,
+  },
 };
 
 const routePaths = ["/", "/industries", "/solutions", "/articles", "/tools", "/skills", "/about"] as const;
