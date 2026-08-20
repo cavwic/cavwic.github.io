@@ -1,4 +1,6 @@
 ---
+import IndustryLandscapeSample from "../../../components/IndustryLandscapeSample.astro";
+import { isReviewBuild } from "../../../data/content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 ---
 <BaseLayout locale="en" title="Industry Research | CAVWIC" description="Core English summaries for enterprise AI, embodied robotics, and dexterous hands." alternatePath="/industries">
@@ -6,6 +8,6 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   <div class="industries-content english-summaries">
     <section id="ai" class="industry-section"><div class="industry-section-head"><div><p class="eyebrow">AI</p><h2>Enterprise AI</h2></div><p>RAG and agents are operational systems. A proposal must cover data ownership, access control, retrieval evaluation, tool permissions, cost, observability, fallback, and human takeover. A polished answer alone is not acceptance evidence.</p></div></section>
     <section id="robotics" class="industry-section"><div class="industry-section-head"><div><p class="eyebrow">ROBOTICS</p><h2>Embodied robotics</h2></div><p>Robot capability is conditional on the site, task, payload, integration, safety system, recovery logic, and service model. A demo without an explicit failure script cannot establish deployability.</p></div></section>
-    <section id="dexterous-hands" class="industry-section"><div class="industry-section-head"><div><p class="eyebrow">DEXTEROUS HANDS</p><h2>Dexterous hands</h2></div><p>Degrees of freedom do not decide fit. Object geometry, contact strategy, tactile sensing, control interface, thermal limits, cycle life, maintainability, and a representative acceptance object set do.</p></div></section>
+    <section id="dexterous-hands" class="industry-section"><div class="industry-section-head"><div><p class="eyebrow">DEXTEROUS HANDS</p><h2>Dexterous hands</h2></div><p>Degrees of freedom do not decide fit. Object geometry, contact strategy, tactile sensing, control interface, thermal limits, cycle life, maintainability, and a representative acceptance object set do.</p></div>{isReviewBuild && <IndustryLandscapeSample locale="en" />}</section>
   </div>
 </BaseLayout>

@@ -1,0 +1,87 @@
+---
+import { ArrowUpRight, ChevronDown } from "@lucide/astro";
+import { dexterousLandscapeSample, type LandscapeLocale } from "../data/industry-landscape";
+
+interface Props {
+  locale?: LandscapeLocale;
+}
+
+const { locale = "zh" } = Astro.props;
+const copy = dexterousLandscapeSample[locale];
+---
+
+<section class="landscape-sample" aria-labelledby={`landscape-sample-title-${locale}`}>
+  <header class="landscape-sample-head">
+    <div>
+      <p class="eyebrow">{copy.label}</p>
+      <h3 id={`landscape-sample-title-${locale}`}>{copy.title}</h3>
+    </div>
+    <p>{copy.intro}</p>
+  </header>
+
+  <figure class="landscape-visual">
+    <img src="/images/dexterous-hand-exploded-sample.webp" alt={copy.imageAlt} loading="lazy" />
+    <figcaption>{copy.imageNote}</figcaption>
+  </figure>
+
+  <nav class="landscape-route" aria-label={copy.routeLabel}>
+    {copy.layers.map((layer) => (
+      <a href={`#${layer.id}`}>
+        <span>{layer.index}</span>
+        <strong>{layer.title}</strong>
+      </a>
+    ))}
+  </nav>
+
+  <div class="landscape-chapters">
+    {copy.layers.map((layer, index) => (
+      <article id={layer.id} class="landscape-chapter">
+        <header class="landscape-layer-head">
+          <span class="landscape-layer-index">{layer.index}</span>
+          <div>
+            <p class="eyebrow">{layer.eyebrow}</p>
+            <h4>{layer.title}</h4>
+            <p>{layer.description}</p>
+          </div>
+          <ul aria-label={copy.routeLabel}>
+            {layer.chain.map((item) => <li>{item}</li>)}
+          </ul>
+        </header>
+
+        <details class="company-dossier" open={index === 0}>
+          <summary>
+            <div>
+              <p>{copy.companyLabel}</p>
+              <h5>{layer.company.name}</h5>
+              {layer.company.englishName !== layer.company.name && <span>{layer.company.englishName}</span>}
+            </div>
+            <strong>{layer.company.role}</strong>
+            <span class="dossier-trigger">{copy.expandLabel}<ChevronDown size={19} /></span>
+          </summary>
+          <div class="dossier-body">
+            <section class="dossier-position">
+              <p class="eyebrow">{copy.positionLabel}</p>
+              <strong>{layer.company.role}</strong>
+              <p>{layer.company.positioning}</p>
+              <div class="dossier-evidence">
+                {layer.company.evidence.map((item) => <span>{item}</span>)}
+              </div>
+            </section>
+            <dl class="dossier-fields">
+              <div><dt>{copy.fields.strengths}</dt><dd>{layer.company.strengths}</dd></div>
+              <div><dt>{copy.fields.products}</dt><dd>{layer.company.products}</dd></div>
+              <div><dt>{copy.fields.fit}</dt><dd>{layer.company.fit}</dd></div>
+              <div><dt>{copy.fields.verify}</dt><dd>{layer.company.verify}</dd></div>
+            </dl>
+            <footer class="dossier-source">
+              <span>VERIFIED {layer.company.reviewedAt}</span>
+              <a href={layer.company.sourceUrl} target="_blank" rel="noreferrer">
+                {copy.sourceLabel}: {layer.company.sourceLabel}<ArrowUpRight size={16} />
+              </a>
+            </footer>
+          </div>
+        </details>
+      </article>
+    ))}
+  </div>
+</section>
