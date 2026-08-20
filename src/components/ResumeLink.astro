@@ -11,11 +11,12 @@ const { className, locale = "zh" } = Astro.props;
 const label = locale === "zh"
   ? { download: "下载简历", pending: "简历整理中" }
   : { download: "Download resume", pending: "Resume in progress" };
+const localizedResume = resume[locale];
 ---
 
 {
-  resume.available ? (
-    <a class={className} href={resume.href} download={resume.fileName} aria-label={`${label.download}: ${resume.displayName[locale]}`}>
+  localizedResume.available ? (
+    <a class={className} href={localizedResume.href} download={localizedResume.fileName} aria-label={`${label.download}: ${localizedResume.displayName}`}>
       <span>{label.download}</span>
       <Download size={18} stroke-width={1.8} aria-hidden="true" />
     </a>

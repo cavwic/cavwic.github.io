@@ -92,10 +92,11 @@ alternatePath: /en/industries#robotics
 
 ## 更新简历
 
-当前线上下载文件仍是：
+中英文页面分别使用独立文件：
 
 ```text
 public/downloads/陈文聪简历.pdf
+public/downloads/Wencong Chen-Resume.pdf
 ```
 
 本次生成的脱敏候选稿只用于本地审阅，`review/` 已加入 `.gitignore`，不会进入公开仓库：
@@ -105,7 +106,9 @@ review/陈文聪-公开版简历候选稿.docx
 review/陈文聪-公开版简历候选稿.pdf
 ```
 
-候选稿不会自动替换线上 PDF。确认内容后，才把批准的 PDF 覆盖到 `public/downloads/陈文聪简历.pdf`，随后重新构建、提交和推送。仅替换本地文件不会同步线上版本。
+候选稿不会自动替换线上 PDF。确认内容后，把中文 PDF 覆盖到 `public/downloads/陈文聪简历.pdf`，英文 PDF 覆盖到 `public/downloads/Wencong Chen-Resume.pdf`，随后重新构建、提交和推送。仅替换本地文件不会同步线上版本。
+
+页面通过 HTML `download` 属性建议中文文件名为 `陈文聪简历.pdf`、英文文件名为 `Wencong Chen-Resume.pdf`。如果下载目录已经存在同名文件，浏览器可能自动添加 `(1)`；网站不能强制浏览器覆盖本地文件。
 
 公开版建议只保留邮箱；删除手机号、详细住址、证件信息、客户名称、项目金额、内部截图和受限材料。
 
