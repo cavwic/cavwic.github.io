@@ -328,10 +328,10 @@ export const landscapeCompanies: Record<string, LandscapeCompany> = {
 
 const dexterousHands: IndustryLandscape = {
   id: "dexterous-hands",
-  label: l("LOCAL REVIEW / NOT PUBLISHED", "LOCAL REVIEW / NOT PUBLISHED"),
+  label: l("INDUSTRY MAP / SOURCE REVIEW", "INDUSTRY MAP / SOURCE REVIEW"),
   title: l("把灵巧手放回整条产业链", "Put the dexterous hand back into its value chain"),
   intro: l("不按自由度给产品排队，而是沿着接触、驱动、传动、控制和应用逐层看：谁提供完整末端，谁解决关键部件，谁把它接入机器人和真实任务。", "Do not rank hands by degrees of freedom. Follow contact, actuation, transmission, control, and application to see who supplies a complete end effector, who solves a component problem, and who integrates it into a real task."),
-  image: "/images/dexterous-hand-exploded-sample.webp",
+  image: "/images/dexterous-hand-exploded.webp",
   imageAlt: l("概念性的灵巧手机构、触觉、驱动、传动和控制部件拆解陈列", "Conceptual arrangement of dexterous-hand mechanisms, tactile parts, drives, transmissions, and control electronics"),
   imageNote: l("概念图用于解释产业链浏览方式，不代表任何厂商的具体产品结构。", "This concept image explains the value-chain browsing model and does not represent any vendor's actual architecture."),
   chapters: [
@@ -346,10 +346,10 @@ const dexterousHands: IndustryLandscape = {
 
 const robotics: IndustryLandscape = {
   id: "robotics",
-  label: l("LOCAL REVIEW / NOT PUBLISHED", "LOCAL REVIEW / NOT PUBLISHED"),
+  label: l("INDUSTRY MAP / SOURCE REVIEW", "INDUSTRY MAP / SOURCE REVIEW"),
   title: l("一台具身机器人如何成为系统", "How an embodied robot becomes a system"),
   intro: l("本体只是载体。模型、感知、算力、关节、末端和现场流程必须同时成立，演示动作才能变成可验收、可维护的任务系统。", "The body is only a carrier. Models, sensing, compute, joints, end effectors, and site workflows must work together before a demo can become an acceptable and maintainable task system."),
-  image: "/images/embodied-robot-exploded-review.webp",
+  image: "/images/embodied-robot-exploded.webp",
   imageAlt: l("概念性人形机器人本体、传感器、算力、关节、驱动、灵巧手与电源部件拆解陈列", "Conceptual exploded arrangement of a humanoid body, sensors, compute, joints, drives, dexterous hands, and power components"),
   imageNote: l("概念图用于说明系统分层，不代表任何厂商本体、部件配置或实际产品结构。", "This concept image explains the system layers and does not represent any vendor's body, component configuration, or product architecture."),
   chapters: [
