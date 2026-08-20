@@ -180,12 +180,12 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
     ],
     tools: [
       {
-        title: "解决方案工具实验室",
-        description: "三个浏览器本地工作台覆盖企业 AI POC、机器人场景资格和灵巧手选型验证。",
+        title: "解决方案项目工作台",
+        description: "覆盖售前沟通、招标文件分析和投标文件编制，支持本地工作区、模型生成与 Codex 任务输出。",
         status: "published",
         href: solutionsLabUrl,
         external: true,
-        action: "打开工具",
+        action: "打开工作台",
       },
     ],
     skills: [
@@ -222,12 +222,12 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
     ],
     tools: [
       {
-        title: "Solutions Lab",
-        description: "Three browser-local workbenches for enterprise AI POCs, robot scenario qualification, and dexterous-hand validation.",
+        title: "Solution Project Workbench",
+        description: "Presales communication, tender analysis, and bid document preparation with local project storage and model-assisted generation.",
         status: "published",
         href: solutionsLabUrl,
         external: true,
-        action: "Open tools",
+        action: "Open workbench",
       },
     ],
     skills: [

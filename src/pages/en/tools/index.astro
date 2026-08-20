@@ -2,16 +2,14 @@
 import CollectionPage from "../../../components/CollectionPage.astro";
 const labUrl = import.meta.env.DEV ? "http://127.0.0.1:4322/cavwic-solutions-lab" : "https://cavwic.github.io/cavwic-solutions-lab";
 const entries = [
-  { title: "Enterprise AI Solution & POC Workbench", description: "Requirements, data, permissions, RAG/Agent architecture, integrations, evaluation, cost, risk, human takeover, and acceptance.", status: "published" as const, href: `${labUrl}/ai-poc`, external: !import.meta.env.DEV, action: "Open tool" },
-  { title: "Robot Scenario Qualification & POC Studio", description: "Site conditions, task state machine, safety boundaries, fallback, dependencies, acceptance matrix, and implementation risk.", status: "published" as const, href: `${labUrl}/robot-poc`, external: !import.meta.env.DEV, action: "Open tool" },
-  { title: "Dexterous Hand Selection & Grasp Test Designer", description: "Public-spec screening, transparent weights, unknown-field handling, sensitivity analysis, object sets, and validation records.", status: "published" as const, href: `${labUrl}/dexterous-hand`, external: !import.meta.env.DEV, action: "Open tool" },
+  { title: "Solution Project Workbench", description: "Manage presales communication, tender analysis, and bid document preparation with a local workspace, model generation, and Codex task output.", status: "published" as const, href: labUrl, external: !import.meta.env.DEV, action: "Open workbench" },
 ];
 ---
 
 <CollectionPage
   eyebrow="TOOLS"
   title="Tools"
-  intro="All three tools run locally in the browser. Inputs, scoring, and exports stay on the current device."
+  intro="The Solution Project Workbench is the only tool currently published. Project materials are processed in the browser and user-authorized local folders."
   entries={entries}
   locale="en"
 />
