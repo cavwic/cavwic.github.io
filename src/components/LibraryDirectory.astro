@@ -2,13 +2,24 @@
 import { ArrowUpRight, BookOpenText } from "@lucide/astro";
 import type { LibraryEntry } from "../data/content";
 import { kindLabels, toEntry } from "../data/content";
+import { getPrimaryIndustry, industryCompanyPath, industryMatrixPath, type PrimaryIndustryId } from "../data/industries";
 import EntryList from "./EntryList.astro";
 
-const { entries, locale = "zh", title = "资料" } = Astro.props as { entries: LibraryEntry[]; locale?: "zh" | "en"; title?: string };
+const { entries, locale = "zh", title = "资料", industry } = Astro.props as {
+  entries: LibraryEntry[];
+  locale?: "zh" | "en";
+  title?: string;
+  industry?: PrimaryIndustryId;
+};
 const grouped = Object.entries(entries.reduce<Record<string, LibraryEntry[]>>((result, entry) => {
   (result[entry.data.kind] ??= []).push(entry);
   return result;
 }, {}));
+const industryName = industry ? getPrimaryIndustry(industry)?.name ?? "" : "";
+const matrixHref = industry ? industryMatrixPath(industry) : "/matrices";
+const companyHref = industry ? industryCompanyPath(industry) : "/companies";
+const matrixLabel = locale === "zh" ? `${industryName} 产品矩阵` : `${industryName} product matrices`;
+const companyLabel = locale === "zh" ? `${industryName} 公司档案` : `${industryName} company files`;
 ---
 
 <div class="library-directory">
@@ -27,7 +38,7 @@ const grouped = Object.entries(entries.reduce<Record<string, LibraryEntry[]>>((r
     <div class="empty-state"><BookOpenText size={24} /><p>{title}{locale === "zh" ? "尚无公开条目。" : " has no public entries yet."}</p></div>
   )}
   <div class="directory-links">
-    <a class="text-link" href="/matrices">产品矩阵 <ArrowUpRight size={18} /></a>
-    <a class="text-link" href="/companies">公司档案 <ArrowUpRight size={18} /></a>
+    <a class="text-link" href={matrixHref}>{matrixLabel} <ArrowUpRight size={18} /></a>
+    <a class="text-link" href={companyHref}>{companyLabel} <ArrowUpRight size={18} /></a>
   </div>
 </div>

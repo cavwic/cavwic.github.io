@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: true
 tags: [灵巧手, 末端执行器, 触觉, 抓取, 选型]
 sourceIds: [ref-29, ref-30, ref-31, ref-32, ref-33, ref-34, ref-35, ref-36, ref-37, ref-38, ref-39, ref-40, job-33, job-34]
-alternatePath: /en/industries#dexterous-hands
+alternatePath: /en/industries/dexterous-hands
 ---
 
 ## 先问：为什么不是夹爪

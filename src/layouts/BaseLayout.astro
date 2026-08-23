@@ -1,5 +1,6 @@
 ﻿---
-import { GitBranch, Languages, Menu, Moon, Sun, X } from "@lucide/astro";
+import { ArrowUp, ChevronDown, GitBranch, Languages, Menu, Moon, Sun, X } from "@lucide/astro";
+import { industryPagePath, primaryIndustries } from "../data/industries";
 import { getBasePath, getNavigation, githubUrl, localizePath, type Locale } from "../data/site";
 import "../styles/global.css";
 
@@ -34,6 +35,7 @@ const copy = locale === "zh"
       language: "Switch to English",
       dark: "切换为深色模式",
       light: "切换为浅色模式",
+      top: "回到顶部",
       footer: "方案、文章、工具与可复用的 Skills。",
       about: "关于本站",
     }
@@ -47,6 +49,7 @@ const copy = locale === "zh"
       language: "切换到中文",
       dark: "Switch to dark mode",
       light: "Switch to light mode",
+      top: "Back to top",
       footer: "Solutions, articles, tools, and reusable skills.",
       about: "About this site",
     };
@@ -59,6 +62,24 @@ const alternatePath = alternatePathProp ?? (locale === "zh" ? "/en/industries" :
 const navigation = getNavigation(locale);
 const homePath = localizePath(locale, "/");
 const aboutPath = localizePath(locale, "/about");
+const industryNavActive = basePath.startsWith("/industries") || basePath.startsWith("/matrices") || basePath.startsWith("/companies");
+const industryMenu = locale === "zh"
+  ? {
+      label: "行业与资料",
+      industries: "行业",
+      resources: "资料",
+      matrices: "全部产品矩阵",
+      companies: "全部公司档案",
+      referenceCode: "REFERENCE",
+    }
+  : {
+      label: "Industries and references",
+      industries: "Industries",
+      resources: "Reference library",
+      matrices: "All product matrices",
+      companies: "All company files",
+      referenceCode: "CHINESE LIBRARY",
+    };
 ---
 
 <!doctype html>
@@ -123,7 +144,29 @@ const aboutPath = localizePath(locale, "/about");
 
       <nav id="site-nav" class="site-nav" aria-label={copy.nav}>
         <div class="nav-pages">
-          {navigation.map((item) => (
+          {navigation.map((item) => item.basePath === "/industries" ? (
+            <div class="nav-dropdown">
+              <a class:list={["nav-link", "nav-dropdown-trigger", { active: industryNavActive }]} href={item.href} aria-haspopup="true">
+                {item.label}<ChevronDown size={14} stroke-width={1.8} aria-hidden="true" />
+              </a>
+              <div class="nav-dropdown-panel" aria-label={industryMenu.label}>
+                <p>{industryMenu.industries}</p>
+                <div class="nav-dropdown-links">
+                  {primaryIndustries.map((industry) => (
+                    <a href={industryPagePath(industry.id, locale)}>
+                      <strong>{locale === "zh" ? industry.name : industry.englishName}</strong>
+                      <span>{industry.code}</span>
+                    </a>
+                  ))}
+                </div>
+                <div class="nav-dropdown-resources">
+                  <p>{industryMenu.resources}</p>
+                  <a href="/matrices"><strong>{industryMenu.matrices}</strong><span>{industryMenu.referenceCode}</span></a>
+                  <a href="/companies"><strong>{industryMenu.companies}</strong><span>{industryMenu.referenceCode}</span></a>
+                </div>
+              </div>
+            </div>
+          ) : (
             <a class:list={["nav-link", { active: item.basePath === "/" ? basePath === "/" : basePath.startsWith(item.basePath) }]} href={item.href}>
               {item.label}
             </a>
@@ -149,6 +192,10 @@ const aboutPath = localizePath(locale, "/about");
       <slot />
     </main>
 
+    <button class="back-to-top" type="button" aria-label={copy.top} title={copy.top} hidden>
+      <ArrowUp size={21} stroke-width={1.8} aria-hidden="true" />
+    </button>
+
     <footer class="site-footer">
       <div>
         <a class="brand footer-brand" href={homePath}>
@@ -169,7 +216,9 @@ const aboutPath = localizePath(locale, "/about");
       const siteNav = document.querySelector(".site-nav");
       const themeToggle = document.querySelector(".theme-toggle");
       const languageToggle = document.querySelector(".language-toggle");
+      const backToTop = document.querySelector(".back-to-top");
       const themeMedia = window.matchMedia("(prefers-color-scheme: dark)");
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
       navToggle?.addEventListener("click", () => {
         const isOpen = navToggle.getAttribute("aria-expanded") === "true";
@@ -206,6 +255,17 @@ const aboutPath = localizePath(locale, "/about");
         document.documentElement.dataset.languagePreference = nextLocale;
         try { localStorage.setItem("cavwic-locale", nextLocale); } catch {}
       });
+
+      const updateBackToTop = () => {
+        backToTop?.toggleAttribute("hidden", window.scrollY < 480);
+      };
+
+      backToTop?.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: reducedMotion.matches ? "auto" : "smooth" });
+      });
+
+      window.addEventListener("scroll", updateBackToTop, { passive: true });
+      updateBackToTop();
     </script>
   </body>
 </html>

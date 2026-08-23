@@ -1,0 +1,38 @@
+---
+import { ArrowUpRight } from "@lucide/astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { companies, matrices } from "../../../data/catalog";
+import { getPrimaryIndustry, industryCompanyPath, primaryIndustries, type PrimaryIndustryId } from "../../../data/industries";
+
+export function getStaticPaths() {
+  return primaryIndustries.map((industry) => ({ params: { industry: industry.id } }));
+}
+
+const industryId = Astro.params.industry as PrimaryIndustryId;
+const industry = getPrimaryIndustry(industryId);
+const filteredMatrices = matrices.filter((matrix) => matrix.industry === industryId);
+const companyCount = companies.filter((company) => company.industry === industryId).length;
+---
+
+<BaseLayout title={`${industry.name}产品矩阵 | CAVWIC`} description={`${industry.name}相关产品矩阵与选型核验资料。`} alternatePath={`/en/industries/${industry.id}`}>
+  <header class="page-head">
+    <div class="page-head-inner">
+      <p class="eyebrow">{industry.code} / PRODUCT MATRICES / {String(filteredMatrices.length).padStart(2, "0")}</p>
+      <h1>{industry.name}产品矩阵</h1>
+      <p>只显示当前行业的比较资料。矩阵用于缩小验证范围，不代替样机测试、厂商询证和现场验收。</p>
+    </div>
+  </header>
+  <section class="profile-grid">
+    {filteredMatrices.map((matrix, index) => (
+      <a class="profile-row" href={`/matrices/${matrix.slug}`}>
+        <span class="profile-index">{String(index + 1).padStart(2, "0")}</span>
+        <div><p class="eyebrow">{industry.code}</p><h2>{matrix.title}</h2><p>{matrix.description}</p></div>
+        <ArrowUpRight size={20} />
+      </a>
+    ))}
+  </section>
+  <section class="cross-links">
+    <a href="/matrices"><span>{String(matrices.length).padStart(2, "0")} MATRICES</span><h2>全部产品矩阵</h2><ArrowUpRight size={20}/></a>
+    <a href={industryCompanyPath(industry.id)}><span>{String(companyCount).padStart(2, "0")} FILES</span><h2>{industry.name}公司档案</h2><ArrowUpRight size={20}/></a>
+  </section>
+</BaseLayout>

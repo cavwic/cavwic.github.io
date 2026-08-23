@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: false
 tags: [Agent, 权限, 安全]
 sourceIds: [ref-05, ref-06, ref-14, ref-41, ref-43, ref-44, job-15, job-20]
-alternatePath: /en/industries#ai
+alternatePath: /en/industries/ai
 ---
 
 ## 观点

@@ -1,0 +1,39 @@
+---
+import IndustryDirectoryNav from "../../../components/IndustryDirectoryNav.astro";
+import IndustryLandscape from "../../../components/IndustryLandscape.astro";
+import IndustrySectionRail from "../../../components/IndustrySectionRail.astro";
+import { industryPagePath, primaryIndustries, type IndustryDirectoryItem, type PrimaryIndustryId } from "../../../data/industries";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return primaryIndustries.map((industry) => ({ params: { industry: industry.id }, props: { industry } }));
+}
+
+const { industry } = Astro.props as { industry: IndustryDirectoryItem };
+---
+
+<BaseLayout
+  locale="en"
+  title={`${industry.englishName} industry research | CAVWIC`}
+  description={industry.englishDescription}
+  alternatePath={industryPagePath(industry.id)}
+>
+  <header class="page-head">
+    <div class="page-head-inner">
+      <p class="eyebrow">{industry.code} / INDUSTRY RESEARCH</p>
+      <h1>{industry.englishName}</h1>
+      <p>{industry.englishDescription}</p>
+    </div>
+  </header>
+  <IndustryDirectoryNav locale="en" currentIndustry={industry.id as PrimaryIndustryId} />
+  <IndustrySectionRail locale="en" currentIndustry={industry.id as PrimaryIndustryId} />
+  <div class="industries-content english-summaries">
+    <section class="industry-section industry-detail-section">
+      <div class="industry-detail-question">
+        <p class="eyebrow">DELIVERY QUESTION</p>
+        <strong>{industry.englishQuestion}</strong>
+      </div>
+      {(industry.id === "robotics" || industry.id === "dexterous-hands") && <IndustryLandscape industry={industry.id} locale="en" />}
+    </section>
+  </div>
+</BaseLayout>

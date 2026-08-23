@@ -3,6 +3,7 @@ import { ArrowLeft, ExternalLink } from "@lucide/astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { companies } from "../../data/catalog";
 import { industryLabels } from "../../data/content";
+import { industryCompanyPath, type PrimaryIndustryId } from "../../data/industries";
 import { sourcesById } from "../../data/sources";
 
 export function getStaticPaths() {
@@ -15,7 +16,7 @@ const refs = company.sourceIds.map((id: string) => sourcesById.get(id)).filter(B
 <BaseLayout title={`${company.name} | 公司档案 | CAVWIC`} description={company.positioning} alternatePath="/en/industries">
   <article class="detail-shell">
     <header class="detail-head">
-      <a class="text-link back-link" href="/companies"><ArrowLeft size={18} /> 返回公司档案</a>
+      <a class="text-link back-link" href={industryCompanyPath(company.industry as PrimaryIndustryId)}><ArrowLeft size={18} /> 返回当前行业公司档案</a>
       <p class="eyebrow">{industryLabels[company.industry]} / VERIFIED {company.reviewedAt}</p>
       <h1>{company.name}</h1><p class="english-name">{company.englishName}</p>{company.valueChainRole && <p class="company-role">{company.valueChainRole}</p>}<p>{company.positioning}</p>
     </header>

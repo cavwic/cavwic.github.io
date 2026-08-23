@@ -1,0 +1,72 @@
+---
+import { ArrowUpRight, ChevronLeft } from "@lucide/astro";
+import { companies, matrices } from "../data/catalog";
+import { getPrimaryIndustry, industryPagePath, primaryIndustries, type PrimaryIndustryId } from "../data/industries";
+import type { Locale } from "../data/site";
+
+const { locale = "zh", currentIndustry } = Astro.props as { locale?: Locale; currentIndustry: PrimaryIndustryId };
+const activeIndustry = getPrimaryIndustry(currentIndustry);
+const copy = locale === "zh"
+  ? {
+      label: "行业页面导航",
+      current: "当前位置",
+      industries: "行业",
+      resources: "资料",
+      matrices: "全部产品矩阵",
+      companies: "全部公司档案",
+      items: "项",
+    }
+  : {
+      label: "Industry page navigation",
+      current: "Current section",
+      industries: "Industries",
+      resources: "Reference library",
+      matrices: "All product matrices",
+      companies: "All company files",
+      items: "ITEMS / ZH",
+    };
+---
+
+<nav class="industry-rail" aria-label={copy.label} data-industry-rail>
+  <button class="industry-rail-current" type="button" aria-label={copy.label} aria-expanded="false" aria-controls={`industry-rail-panel-${locale}`}>
+    <span>{copy.current}</span>
+    <strong>{locale === "zh" ? activeIndustry.name : activeIndustry.englishName}</strong>
+    <ChevronLeft size={17} aria-hidden="true" />
+  </button>
+
+  <div id={`industry-rail-panel-${locale}`} class="industry-rail-panel">
+    <p class="industry-rail-label">{copy.industries}</p>
+    <div class="industry-rail-links">
+      {primaryIndustries.map((industry) => (
+        <a
+          class:list={["industry-rail-link", { active: currentIndustry === industry.id }]}
+          href={industryPagePath(industry.id, locale)}
+          aria-current={currentIndustry === industry.id ? "page" : undefined}
+        >
+          <strong>{locale === "zh" ? industry.name : industry.englishName}</strong>
+          <span>{industry.code}</span>
+        </a>
+      ))}
+    </div>
+    <div class="industry-rail-resources">
+      <p class="industry-rail-label">{copy.resources}</p>
+      <a href="/matrices"><strong>{copy.matrices}</strong><span>{String(matrices.length).padStart(2, "0")} {copy.items}</span><ArrowUpRight size={16} /></a>
+      <a href="/companies"><strong>{copy.companies}</strong><span>{String(companies.length).padStart(2, "0")} {copy.items}</span><ArrowUpRight size={16} /></a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const rail = document.querySelector<HTMLElement>("[data-industry-rail]");
+  const railToggle = rail?.querySelector<HTMLButtonElement>(".industry-rail-current");
+  railToggle?.addEventListener("click", () => {
+    const open = rail?.classList.toggle("open") ?? false;
+    railToggle.setAttribute("aria-expanded", String(open));
+  });
+  rail?.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    rail.classList.remove("open");
+    railToggle?.setAttribute("aria-expanded", "false");
+    railToggle?.focus();
+  });
+</script>

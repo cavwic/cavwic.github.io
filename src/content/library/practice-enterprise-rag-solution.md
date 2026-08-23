@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: false
 tags: [RAG, 方案设计, 个人实践]
 sourceIds: [ref-01, ref-02, ref-04, ref-07, ref-08, ref-09, ref-10, ref-12, ref-41, ref-43]
-alternatePath: /en/industries#ai
+alternatePath: /en/industries/ai
 ---
 
 ## 性质说明

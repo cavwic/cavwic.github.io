@@ -1,0 +1,43 @@
+---
+import { getCollection } from "astro:content";
+import IndustryDirectoryNav from "../../components/IndustryDirectoryNav.astro";
+import IndustryLandscape from "../../components/IndustryLandscape.astro";
+import IndustrySectionRail from "../../components/IndustrySectionRail.astro";
+import LibraryDirectory from "../../components/LibraryDirectory.astro";
+import { isVisible } from "../../data/content";
+import { industryPagePath, primaryIndustries, type IndustryDirectoryItem, type PrimaryIndustryId } from "../../data/industries";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return primaryIndustries.map((industry) => ({ params: { industry: industry.id }, props: { industry } }));
+}
+
+const { industry } = Astro.props as { industry: IndustryDirectoryItem };
+const entries = (await getCollection("library")).filter((entry) => entry.data.locale === "zh" && entry.data.industry === industry.id && isVisible(entry));
+---
+
+<BaseLayout
+  title={`${industry.name}行业资料 | CAVWIC`}
+  description={industry.description}
+  alternatePath={industryPagePath(industry.id, "en")}
+>
+  <header class="page-head">
+    <div class="page-head-inner">
+      <p class="eyebrow">{industry.code} / INDUSTRY LIBRARY</p>
+      <h1>{industry.name}</h1>
+      <p>{industry.description}</p>
+    </div>
+  </header>
+  <IndustryDirectoryNav currentIndustry={industry.id as PrimaryIndustryId} />
+  <IndustrySectionRail currentIndustry={industry.id as PrimaryIndustryId} />
+  <div class="industries-content">
+    <section class="industry-section industry-detail-section">
+      <div class="industry-detail-question">
+        <p class="eyebrow">DELIVERY QUESTION</p>
+        <strong>{industry.question}</strong>
+      </div>
+      {(industry.id === "robotics" || industry.id === "dexterous-hands") && <IndustryLandscape industry={industry.id} />}
+      <LibraryDirectory entries={entries} industry={industry.id as PrimaryIndustryId} />
+    </section>
+  </div>
+</BaseLayout>

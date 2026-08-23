@@ -1,0 +1,38 @@
+---
+import { ArrowUpRight } from "@lucide/astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { companies, matrices } from "../../../data/catalog";
+import { getPrimaryIndustry, industryMatrixPath, primaryIndustries, type PrimaryIndustryId } from "../../../data/industries";
+
+export function getStaticPaths() {
+  return primaryIndustries.map((industry) => ({ params: { industry: industry.id } }));
+}
+
+const industryId = Astro.params.industry as PrimaryIndustryId;
+const industry = getPrimaryIndustry(industryId);
+const filteredCompanies = companies.filter((company) => company.industry === industryId);
+const matrixCount = matrices.filter((matrix) => matrix.industry === industryId).length;
+---
+
+<BaseLayout title={`${industry.name}公司档案 | CAVWIC`} description={`${industry.name}产业链公司的公开产品、定位和选型核验资料。`} alternatePath={`/en/industries/${industry.id}`}>
+  <header class="page-head">
+    <div class="page-head-inner">
+      <p class="eyebrow">{industry.code} / COMPANY FILES / {String(filteredCompanies.length).padStart(2, "0")}</p>
+      <h1>{industry.name}公司档案</h1>
+      <p>只显示当前行业的公司资料，按公开产品、产业位置、适用场景和项目核验项整理。</p>
+    </div>
+  </header>
+  <section class="profile-grid">
+    {filteredCompanies.map((company, index) => (
+      <a class="profile-row" href={`/companies/${company.slug}`}>
+        <span class="profile-index">{String(index + 1).padStart(2, "0")}</span>
+        <div><p class="eyebrow">{company.valueChainRole ?? industry.name}</p><h2>{company.name}</h2><p>{company.positioning}</p></div>
+        <ArrowUpRight size={20} />
+      </a>
+    ))}
+  </section>
+  <section class="cross-links">
+    <a href="/companies"><span>{String(companies.length).padStart(2, "0")} FILES</span><h2>全部公司档案</h2><ArrowUpRight size={20}/></a>
+    <a href={industryMatrixPath(industry.id)}><span>{String(matrixCount).padStart(2, "0")} MATRICES</span><h2>{industry.name}产品矩阵</h2><ArrowUpRight size={20}/></a>
+  </section>
+</BaseLayout>

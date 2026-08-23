@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: true
 tags: [灵巧手, 自由度, 选型]
 sourceIds: [ref-29, ref-32, ref-33, ref-34, ref-37, ref-38, ref-39, ref-40]
-alternatePath: /en/industries#dexterous-hands
+alternatePath: /en/industries/dexterous-hands
 ---
 
 ## 观点

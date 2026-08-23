@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: false
 tags: [机器人, 产品比较, 参数]
 sourceIds: [ref-17, ref-19, ref-22, ref-23, ref-25, ref-26]
-alternatePath: /en/industries#robotics
+alternatePath: /en/industries/robotics
 ---
 
 ## 观点

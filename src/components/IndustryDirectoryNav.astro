@@ -1,0 +1,57 @@
+---
+import { ArrowRight, ArrowUpRight } from "@lucide/astro";
+import { companies, matrices } from "../data/catalog";
+import { industryPagePath, primaryIndustries, type PrimaryIndustryId } from "../data/industries";
+import type { Locale } from "../data/site";
+
+const { locale = "zh", currentIndustry } = Astro.props as { locale?: Locale; currentIndustry?: PrimaryIndustryId };
+const copy = locale === "zh"
+  ? {
+      label: "行业与资料导航",
+      industries: "行业",
+      resources: "资料",
+      matrices: "全部产品矩阵",
+      companies: "全部公司档案",
+      items: "项",
+    }
+  : {
+      label: "Industries and reference navigation",
+      industries: "Industries",
+      resources: "Reference library",
+      matrices: "All product matrices",
+      companies: "All company files",
+      items: "ITEMS / ZH",
+    };
+---
+
+<nav class="industry-directory" aria-label={copy.label}>
+  <div class="industry-directory-inner">
+    <section class="directory-cluster directory-cluster-industries" aria-labelledby={`directory-industries-${locale}`}>
+      <p id={`directory-industries-${locale}`} class="directory-cluster-label">{copy.industries}</p>
+      <div class="directory-cluster-grid directory-industry-grid">
+        {primaryIndustries.map((industry) => (
+          <a class:list={["industry-tab", { active: currentIndustry === industry.id }]} href={industryPagePath(industry.id, locale)} aria-current={currentIndustry === industry.id ? "page" : undefined}>
+            <strong>{locale === "zh" ? industry.name : industry.englishName}</strong>
+            <ArrowRight size={18} />
+            <span>{industry.code}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+    <section class="directory-cluster directory-cluster-resources" aria-labelledby={`directory-resources-${locale}`}>
+      <p id={`directory-resources-${locale}`} class="directory-cluster-label">{copy.resources}</p>
+      <div class="directory-cluster-grid directory-resource-grid">
+        <a class="industry-tab resource-tab" href="/matrices">
+          <strong>{copy.matrices}</strong>
+          <ArrowUpRight size={18} />
+          <span>{String(matrices.length).padStart(2, "0")} {copy.items}</span>
+        </a>
+        <a class="industry-tab resource-tab" href="/companies">
+          <strong>{copy.companies}</strong>
+          <ArrowUpRight size={18} />
+          <span>{String(companies.length).padStart(2, "0")} {copy.items}</span>
+        </a>
+      </div>
+    </section>
+  </div>
+</nav>
