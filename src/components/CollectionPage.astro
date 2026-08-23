@@ -9,9 +9,10 @@ interface Props {
   intro: string;
   entries: Entry[];
   locale?: Locale;
+  showMeta?: boolean;
 }
 
-const { eyebrow, title, intro, entries, locale = "zh" } = Astro.props;
+const { eyebrow, title, intro, entries, locale = "zh", showMeta = true } = Astro.props;
 const alternatePath = locale === "zh" ? `/en${Astro.url.pathname}` : Astro.url.pathname.replace(/^\/en/, "") || "/";
 ---
 
@@ -24,6 +25,6 @@ const alternatePath = locale === "zh" ? `/en${Astro.url.pathname}` : Astro.url.p
     </div>
   </header>
   <section class="collection" aria-label={locale === "zh" ? `${title}列表` : `${title} list`}>
-    <EntryList entries={entries} locale={locale} />
+    <EntryList entries={entries} locale={locale} showMeta={showMeta} />
   </section>
 </BaseLayout>

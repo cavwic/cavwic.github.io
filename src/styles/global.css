@@ -547,6 +547,10 @@ html[data-theme="dark"] .theme-icon-sun {
   border-bottom: 1px solid var(--line);
 }
 
+.entry-row.entry-row-plain {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .entry-meta {
   display: flex;
   flex-direction: column;
