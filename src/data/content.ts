@@ -23,14 +23,13 @@ export function isVisible(entry: LibraryEntry) {
   return isReviewBuild || entry.data.publicationStatus === "published";
 }
 
-export function toEntry(entry: LibraryEntry, locale: "zh" | "en" = "zh") {
+export function toEntry(entry: LibraryEntry) {
   return {
     title: entry.data.title,
     description: entry.data.description,
     status: entry.data.publicationStatus,
     date: entry.data.date.toISOString().slice(0, 7).replace("-", "."),
     href: `/library/${entry.id.replace(/\.mdx?$/, "")}`,
-    action: locale === "zh" ? "阅读全文" : "Read",
   };
 }
 

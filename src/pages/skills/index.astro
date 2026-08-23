@@ -14,7 +14,6 @@ const entries = skills.map(([title, description]) => ({
   status: "published" as const,
   href: `${repository}/${title}`,
   external: true,
-  action: "查看 Skill",
 }));
 ---
 <CollectionPage eyebrow="AGENT SKILLS" title="Skills" intro="五个 Skill 提供标准 SKILL.md、模板、示例、检查脚本和适用边界，可从公开仓库查看与下载。" entries={entries} locale="zh" />

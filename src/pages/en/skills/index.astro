@@ -8,7 +8,7 @@ const skills = [
   ["product-comparison-research", "Build source-dated product matrices while preserving unknowns and separating facts from analysis."],
   ["technical-proposal-audit", "Find evidence gaps, scope drift, missing interfaces, and commitments that cannot be accepted."],
 ];
-const entries = skills.map(([title, description]) => ({ title, description, status: "published" as const, href: `${repository}/${title}`, external: true, action: "View skill" }));
+const entries = skills.map(([title, description]) => ({ title, description, status: "published" as const, href: `${repository}/${title}`, external: true }));
 ---
 
 <CollectionPage

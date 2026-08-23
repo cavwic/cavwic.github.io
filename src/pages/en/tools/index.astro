@@ -1,8 +1,8 @@
 ---
 import CollectionPage from "../../../components/CollectionPage.astro";
-const labUrl = import.meta.env.DEV ? "http://127.0.0.1:4322/cavwic-solutions-lab" : "https://cavwic.github.io/cavwic-solutions-lab";
+const labUrl = import.meta.env.DEV ? "http://127.0.0.1:43202/cavwic-solutions-lab" : "https://cavwic.github.io/cavwic-solutions-lab";
 const entries = [
-  { title: "Solution Project Workbench", description: "Manage presales communication, tender analysis, and bid document preparation with a local workspace, model generation, and Codex task output.", status: "published" as const, href: labUrl, external: !import.meta.env.DEV, action: "Open workbench" },
+  { title: "Solution Project Workbench", description: "Manage presales communication, tender analysis, and bid document preparation with a local workspace, model generation, and Codex task output.", status: "published" as const, href: labUrl, external: !import.meta.env.DEV },
 ];
 ---
 

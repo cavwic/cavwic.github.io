@@ -8,7 +8,6 @@ export type Entry = {
   date?: string;
   href?: string;
   external?: boolean;
-  action?: string;
 };
 
 export type Industry = {
@@ -170,7 +169,6 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
         status: "building",
         date: "2026.08",
         href: "/articles/local-edit-static-hosting",
-        action: "查看方案",
       },
     ],
     articles: [
@@ -180,7 +178,6 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
         status: "draft",
         date: "2026.08",
         href: "/articles/local-edit-static-hosting",
-        action: "阅读草稿",
       },
     ],
     tools: [
@@ -190,7 +187,6 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
         status: "published",
         href: solutionsLabUrl,
         external: true,
-        action: "打开工作台",
       },
     ],
     skills: [
@@ -200,7 +196,6 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
         status: "published",
         href: `${solutionsLabRepositoryUrl}/tree/main/skills`,
         external: true,
-        action: "查看 Skills",
       },
     ],
   },
@@ -212,7 +207,6 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
         status: "building",
         date: "2026.08",
         href: "/en/articles/local-edit-static-hosting",
-        action: "View solution",
       },
     ],
     articles: [
@@ -222,7 +216,6 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
         status: "draft",
         date: "2026.08",
         href: "/en/articles/local-edit-static-hosting",
-        action: "Read draft",
       },
     ],
     tools: [
@@ -232,7 +225,6 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
         status: "published",
         href: solutionsLabUrl,
         external: true,
-        action: "Open workbench",
       },
     ],
     skills: [
@@ -242,7 +234,6 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
         status: "published",
         href: `${solutionsLabRepositoryUrl}/tree/main/skills`,
         external: true,
-        action: "View skills",
       },
     ],
   },

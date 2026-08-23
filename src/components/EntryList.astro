@@ -1,5 +1,5 @@
 ﻿---
-import { ArrowUpRight, Clock3 } from "@lucide/astro";
+import { ArrowUpRight } from "@lucide/astro";
 import { statusLabels, type Entry, type Locale } from "../data/site";
 
 interface Props {
@@ -8,9 +8,6 @@ interface Props {
 }
 
 const { entries, locale = "zh" } = Astro.props;
-const copy = locale === "zh"
-  ? { view: "查看", unavailable: "尚未开放" }
-  : { view: "View", unavailable: "Not available yet" };
 ---
 
 <div class="entry-list">
@@ -21,19 +18,21 @@ const copy = locale === "zh"
         {entry.date && <time>{entry.date}</time>}
       </div>
       <div class="entry-copy">
-        <h2>{entry.title}</h2>
+        <h2>
+          {entry.href ? (
+            <a
+              class="entry-title-link"
+              href={entry.href}
+              target={entry.external ? "_blank" : undefined}
+              rel={entry.external ? "noreferrer" : undefined}
+            >
+              {entry.title}
+              <ArrowUpRight size={18} stroke-width={1.8} aria-hidden="true" />
+            </a>
+          ) : entry.title}
+        </h2>
         <p>{entry.description}</p>
       </div>
-      {entry.href ? (
-        <a class="entry-action" href={entry.href} target={entry.external ? "_blank" : undefined} rel={entry.external ? "noreferrer" : undefined}>
-          <span>{entry.action ?? copy.view}</span>
-          <ArrowUpRight size={18} stroke-width={1.8} />
-        </a>
-      ) : (
-        <span class="entry-action pending" aria-label={copy.unavailable}>
-          <Clock3 size={18} stroke-width={1.8} />
-        </span>
-      )}
     </article>
   ))}
 </div>

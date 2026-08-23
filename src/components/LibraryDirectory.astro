@@ -31,7 +31,7 @@ const companyLabel = locale === "zh" ? `${industryName} 公司档案` : `${indus
           <h2>{kindLabels[kind as keyof typeof kindLabels]}</h2>
         </div>
       </div>
-      <EntryList entries={(values ?? []).map((entry) => toEntry(entry, locale))} locale={locale} />
+      <EntryList entries={(values ?? []).map((entry) => toEntry(entry))} locale={locale} />
     </section>
   ))}
   {entries.length === 0 && (
