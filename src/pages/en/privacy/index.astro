@@ -1,0 +1,31 @@
+---
+import PrivacyControls from "../../../components/PrivacyControls.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout locale="en" title="Privacy | CAVWIC" description="What CAVWIC records for site analytics and how to opt out." alternatePath="/privacy">
+  <article class="article-shell privacy-page">
+    <header class="article-head">
+      <p class="eyebrow">PRIVACY</p>
+      <h1>Privacy</h1>
+      <p>This site measures content visits without showing a public counter or trying to identify visitors by name.</p>
+    </header>
+    <div class="prose privacy-body">
+      <h2>What is recorded</h2>
+      <p>A self-hosted Matomo instance records the visit time, pages viewed, referring page, browser and device type, and an approximate region derived from an anonymised IP address. The IP address is shortened before it is stored.</p>
+
+      <h2>What is not recorded</h2>
+      <p>Analytics runs without cookies. It does not collect names, account details, form contents, or the contents of downloaded files. The data is not sold or shared with advertising platforms.</p>
+
+      <h2>Why it is used</h2>
+      <p>The records help identify useful material, broken pages, and priorities for future updates. The analytics service runs on a private VPS and only the site owner can access its dashboard.</p>
+
+      <h2>Opt out</h2>
+      <p>You can disable analytics for this browser. You will need to repeat the choice after clearing this site's browser data.</p>
+      <PrivacyControls locale="en" />
+
+      <h2>Contact</h2>
+      <p>To ask about or request deletion of a visit record, email <a href="mailto:buct200831111@sina.com">buct200831111@sina.com</a> with the approximate visit time and page.</p>
+    </div>
+  </article>
+</BaseLayout>

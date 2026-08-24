@@ -1,0 +1,64 @@
+---
+interface Props {
+  locale?: "zh" | "en";
+}
+
+const { locale = "zh" } = Astro.props;
+const copy = locale === "zh"
+  ? {
+      status: "当前浏览器的统计状态",
+      enabled: "已启用",
+      disabled: "已停用",
+      disable: "在此浏览器停用统计",
+      enable: "重新启用",
+    }
+  : {
+      status: "Analytics status in this browser",
+      enabled: "Enabled",
+      disabled: "Disabled",
+      disable: "Disable analytics in this browser",
+      enable: "Enable again",
+    };
+---
+
+<div class="privacy-controls" data-privacy-controls data-enabled={copy.enabled} data-disabled={copy.disabled}>
+  <p><strong>{copy.status}：</strong><span data-analytics-status>{copy.enabled}</span></p>
+  <div>
+    <button class="button privacy-button" type="button" data-analytics-disable>{copy.disable}</button>
+    <button class="button privacy-button" type="button" data-analytics-enable>{copy.enable}</button>
+  </div>
+</div>
+
+<script is:inline>
+  (() => {
+    const key = "cavwic-analytics-disabled";
+    const controls = document.querySelector("[data-privacy-controls]");
+    if (!controls) return;
+
+    const status = controls.querySelector("[data-analytics-status]");
+    const disableButton = controls.querySelector("[data-analytics-disable]");
+    const enableButton = controls.querySelector("[data-analytics-enable]");
+
+    const render = () => {
+      let disabled = false;
+      try { disabled = localStorage.getItem(key) === "true"; } catch {}
+      if (status) status.textContent = disabled ? controls.dataset.disabled : controls.dataset.enabled;
+      disableButton?.toggleAttribute("disabled", disabled);
+      enableButton?.toggleAttribute("disabled", !disabled);
+    };
+
+    disableButton?.addEventListener("click", () => {
+      try { localStorage.setItem(key, "true"); } catch {}
+      document.documentElement.dataset.analyticsDisabled = "true";
+      render();
+    });
+
+    enableButton?.addEventListener("click", () => {
+      try { localStorage.removeItem(key); } catch {}
+      document.documentElement.dataset.analyticsDisabled = "false";
+      render();
+    });
+
+    render();
+  })();
+</script>

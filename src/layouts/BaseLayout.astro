@@ -1,5 +1,6 @@
 ﻿---
 import { ArrowUp, ChevronDown, GitBranch, Languages, Menu, Moon, Sun, X } from "@lucide/astro";
+import Analytics from "../components/Analytics.astro";
 import { industryPagePath, primaryIndustries } from "../data/industries";
 import { getBasePath, getNavigation, githubUrl, localizePath, type Locale } from "../data/site";
 import "../styles/global.css";
@@ -38,6 +39,7 @@ const copy = locale === "zh"
       top: "回到顶部",
       footer: "方案、文章、工具与可复用的 Skills。",
       about: "关于本站",
+      privacy: "隐私说明",
     }
   : {
       skip: "Skip to content",
@@ -52,6 +54,7 @@ const copy = locale === "zh"
       top: "Back to top",
       footer: "Solutions, articles, tools, and reusable skills.",
       about: "About this site",
+      privacy: "Privacy",
     };
 
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -62,6 +65,7 @@ const alternatePath = alternatePathProp ?? (locale === "zh" ? "/en/industries" :
 const navigation = getNavigation(locale);
 const homePath = localizePath(locale, "/");
 const aboutPath = localizePath(locale, "/about");
+const privacyPath = localizePath(locale, "/privacy");
 const industryNavActive = basePath.startsWith("/industries") || basePath.startsWith("/matrices") || basePath.startsWith("/companies");
 const industryMenu = locale === "zh"
   ? {
@@ -109,12 +113,23 @@ const industryMenu = locale === "zh"
       (() => {
         try {
           const root = document.documentElement;
+          const analyticsKey = "cavwic-analytics-disabled";
+          const currentUrl = new URL(location.href);
+          const analyticsAction = currentUrl.searchParams.get("analytics");
+          if (analyticsAction === "off") localStorage.setItem(analyticsKey, "true");
+          if (analyticsAction === "on") localStorage.removeItem(analyticsKey);
+          if (analyticsAction === "off" || analyticsAction === "on") {
+            currentUrl.searchParams.delete("analytics");
+            history.replaceState(null, "", `${currentUrl.pathname}${currentUrl.search}${currentUrl.hash}`);
+          }
+          root.dataset.analyticsDisabled = String(localStorage.getItem(analyticsKey) === "true");
           const savedLocale = localStorage.getItem("cavwic-locale");
           const systemLocale = navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en";
           const preferredLocale = savedLocale === "zh" || savedLocale === "en" ? savedLocale : systemLocale;
 
           root.dataset.languagePreference = savedLocale ?? "system";
           if (root.dataset.autoDetectLocale === "true" && preferredLocale !== root.dataset.locale) {
+            root.dataset.localeRedirect = "true";
             location.replace(`${root.dataset.alternatePath}${location.search}${location.hash}`);
             return;
           }
@@ -207,6 +222,7 @@ const industryMenu = locale === "zh"
       <div class="footer-links">
         <a href={githubUrl} target="_blank" rel="noreferrer">GitHub</a>
         <a href={aboutPath}>{copy.about}</a>
+        <a href={privacyPath}>{copy.privacy}</a>
       </div>
       <p class="copyright">© {new Date().getFullYear()} CAVWIC</p>
     </footer>
@@ -267,5 +283,6 @@ const industryMenu = locale === "zh"
       window.addEventListener("scroll", updateBackToTop, { passive: true });
       updateBackToTop();
     </script>
+    <Analytics />
   </body>
 </html>

@@ -1,0 +1,31 @@
+---
+import PrivacyControls from "../../components/PrivacyControls.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="隐私说明 | CAVWIC" description="CAVWIC 网站访问统计的范围、用途与停用方式。" alternatePath="/en/privacy">
+  <article class="article-shell privacy-page">
+    <header class="article-head">
+      <p class="eyebrow">PRIVACY</p>
+      <h1>隐私说明</h1>
+      <p>本站仅统计内容访问情况，不设置公开计数器，也不用于识别访问者的真实身份。</p>
+    </header>
+    <div class="prose privacy-body">
+      <h2>统计哪些信息</h2>
+      <p>本站使用自托管的 Matomo 记录访问时间、访问页面、来源页面、浏览器与设备类型，以及由匿名化 IP 推算的大致地区。IP 地址在保存前会被截断处理。</p>
+
+      <h2>不统计什么</h2>
+      <p>统计功能不使用 Cookie，不采集姓名、账号、表单内容或下载文件内容。数据不出售，也不提供给广告平台。</p>
+
+      <h2>数据用途</h2>
+      <p>这些记录只用于了解哪些内容有人阅读、发现失效页面，并安排后续更新。统计后台部署在自有 VPS，只有站点维护者可以登录查看。</p>
+
+      <h2>停用统计</h2>
+      <p>你可以在当前浏览器中停用统计。浏览器清除站点数据后，需要重新设置。</p>
+      <PrivacyControls locale="zh" />
+
+      <h2>联系</h2>
+      <p>如需询问或删除与一次访问相关的记录，请通过 <a href="mailto:buct200831111@sina.com">buct200831111@sina.com</a> 联系，并提供大致访问时间和页面。</p>
+    </div>
+  </article>
+</BaseLayout>

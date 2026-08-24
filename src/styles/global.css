@@ -772,6 +772,49 @@ html[data-theme="dark"] .status-building {
   font-family: var(--mono);
 }
 
+.privacy-body a {
+  color: var(--signal);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.privacy-controls {
+  display: grid;
+  gap: 14px;
+  margin: 28px 0 12px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.privacy-controls p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.privacy-controls > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.privacy-button {
+  color: var(--ink);
+  border-color: var(--line);
+  background: var(--paper);
+}
+
+.privacy-button:hover:not(:disabled) {
+  border-color: var(--signal);
+  color: var(--signal);
+}
+
+.privacy-button:disabled {
+  cursor: default;
+  opacity: 0.46;
+}
+
 .page-head {
   min-height: 410px;
   padding-top: 74px;

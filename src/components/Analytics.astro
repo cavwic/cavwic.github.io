@@ -1,0 +1,32 @@
+---
+const endpoint = "https://179.255.117.18:8443/";
+const siteId = "1";
+---
+
+<script is:inline define:vars={{ endpoint, siteId }}>
+  (() => {
+    const root = document.documentElement;
+    const allowedHosts = new Set(["cavwic.github.io", "cavwic.top"]);
+
+    if (
+      !allowedHosts.has(location.hostname) ||
+      root.dataset.analyticsDisabled === "true" ||
+      root.dataset.localeRedirect === "true"
+    ) {
+      return;
+    }
+
+    const queue = window._paq = window._paq || [];
+    queue.push(["disableCookies"]);
+    queue.push(["setDoNotTrack", true]);
+    queue.push(["trackPageView"]);
+    queue.push(["enableLinkTracking"]);
+    queue.push(["setTrackerUrl", `${endpoint}matomo.php`]);
+    queue.push(["setSiteId", siteId]);
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `${endpoint}matomo.js`;
+    document.head.appendChild(script);
+  })();
+</script>
