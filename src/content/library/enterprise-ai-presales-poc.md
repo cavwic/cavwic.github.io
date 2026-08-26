@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: true
 tags: [RAG, Agent, POC, 企业AI, 评测]
 sourceIds: [ref-01, ref-02, ref-04, ref-07, ref-08, ref-09, ref-10, ref-12, ref-14, ref-41, ref-42, ref-43, ref-44, job-10, job-12, job-15, job-20]
-alternatePath: /en/industries/ai
+alternatePath: /en/library/enterprise-ai-presales-poc
 ---
 
 ## 先把结论摆出来

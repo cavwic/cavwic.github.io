@@ -13,11 +13,11 @@ const { company } = Astro.props;
 const refs = company.sourceIds.map((id: string) => sourcesById.get(id)).filter(Boolean);
 ---
 
-<BaseLayout title={`${company.name} | 公司档案 | CAVWIC`} description={company.positioning} alternatePath="/en/industries">
+<BaseLayout title={`${company.name} | 公司档案 | CAVWIC`} description={company.positioning} alternatePath={`/en/companies/${company.slug}`}>
   <article class="detail-shell">
     <header class="detail-head">
       <a class="text-link back-link" href={industryCompanyPath(company.industry as PrimaryIndustryId)}><ArrowLeft size={18} /> 返回当前行业公司档案</a>
-      <p class="eyebrow">{industryLabels[company.industry]} / VERIFIED {company.reviewedAt}</p>
+      <p class="eyebrow">{industryLabels.zh[company.industry]} / VERIFIED {company.reviewedAt}</p>
       <h1>{company.name}</h1><p class="english-name">{company.englishName}</p>{company.valueChainRole && <p class="company-role">{company.valueChainRole}</p>}<p>{company.positioning}</p>
     </header>
     <div class="detail-grid">

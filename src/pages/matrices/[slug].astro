@@ -8,7 +8,7 @@ import { sourcesById } from "../../data/sources";
 export function getStaticPaths() { return matrices.map((matrix) => ({ params: { slug: matrix.slug }, props: { matrix } })); }
 const { matrix } = Astro.props;
 ---
-<BaseLayout title={`${matrix.title} | CAVWIC`} description={matrix.description} alternatePath="/en/industries">
+<BaseLayout title={`${matrix.title} | CAVWIC`} description={matrix.description} alternatePath={`/en/matrices/${matrix.slug}`}>
   <article class="matrix-shell">
     <header class="detail-head"><a class="text-link back-link" href={industryMatrixPath(matrix.industry as PrimaryIndustryId)}><ArrowLeft size={18} /> 返回当前行业产品矩阵</a><p class="eyebrow">COMPARISON MATRIX / VERIFIED {matrix.reviewedAt}</p><h1>{matrix.title}</h1><p>{matrix.description}</p></header>
     <div class="dimension-strip">{matrix.dimensions.map((item: string, index: number) => <span><b>{String(index + 1).padStart(2, "0")}</b>{item}</span>)}</div>

@@ -1,0 +1,22 @@
+---
+import { ArrowUpRight } from "@lucide/astro";
+import { getCompanies, getMatrices } from "../../../../data/catalog-localization";
+import { getPrimaryIndustry, industryCompanyPath, primaryIndustries, type PrimaryIndustryId } from "../../../../data/industries";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return primaryIndustries.map((industry) => ({ params: { industry: industry.id } }));
+}
+const industryId = Astro.params.industry as PrimaryIndustryId;
+const industry = getPrimaryIndustry(industryId);
+const matrices = getMatrices("en");
+const companies = getCompanies("en");
+const filteredMatrices = matrices.filter((matrix) => matrix.industry === industryId);
+const companyCount = companies.filter((company) => company.industry === industryId).length;
+---
+
+<BaseLayout locale="en" title={`${industry.englishName} Product Matrices | CAVWIC`} description={`Product matrices and selection-verification material for ${industry.englishName.toLowerCase()}.`} alternatePath={`/matrices/industry/${industry.id}`}>
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">{industry.code} / PRODUCT MATRICES / {String(filteredMatrices.length).padStart(2, "0")}</p><h1>{industry.englishName} product matrices</h1><p>Only matrices for this field are shown. They narrow the validation field but do not replace hardware tests, vendor confirmation, or site acceptance.</p></div></header>
+  <section class="profile-grid">{filteredMatrices.map((matrix, index) => <a class="profile-row" href={`/en/matrices/${matrix.slug}`}><span class="profile-index">{String(index + 1).padStart(2, "0")}</span><div><p class="eyebrow">{industry.code}</p><h2>{matrix.title}</h2><p>{matrix.description}</p></div><ArrowUpRight size={20} /></a>)}</section>
+  <section class="cross-links"><a href="/en/matrices"><span>{String(matrices.length).padStart(2, "0")} MATRICES</span><h2>All product matrices</h2><ArrowUpRight size={20}/></a><a href={industryCompanyPath(industry.id, "en")}><span>{String(companyCount).padStart(2, "0")} FILES</span><h2>{industry.englishName} company files</h2><ArrowUpRight size={20}/></a></section>
+</BaseLayout>

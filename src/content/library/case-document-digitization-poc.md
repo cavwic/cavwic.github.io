@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: false
 tags: [文档数字化, POC, 部署]
 sourceIds: []
-alternatePath: /en/industries/ai
+alternatePath: /en/library/case-document-digitization-poc
 ---
 
 ## 背景与公开边界

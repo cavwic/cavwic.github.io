@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: true
 tags: [机器人, 演示, 失败恢复]
 sourceIds: [ref-23, ref-45, ref-46, job-23, job-27, job-30, job-31]
-alternatePath: /en/industries/robotics
+alternatePath: /en/library/robot-demo-needs-failure-script
 ---
 
 ## 观点

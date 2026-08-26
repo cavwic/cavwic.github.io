@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: true
 tags: [复杂机电, 技术标, 现场勘察]
 sourceIds: []
-alternatePath: /en/industries
+alternatePath: /en/library/case-complex-electromechanical-proposal
 ---
 
 ## 背景与公开边界

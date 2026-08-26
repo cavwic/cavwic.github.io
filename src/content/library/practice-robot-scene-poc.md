@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: false
 tags: [机器人, 场景资格, 个人实践]
 sourceIds: [ref-17, ref-19, ref-22, ref-23, ref-25, ref-26, ref-45, ref-46]
-alternatePath: /en/industries/robotics
+alternatePath: /en/library/practice-robot-scene-poc
 ---
 
 ## 性质说明

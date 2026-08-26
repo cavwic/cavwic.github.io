@@ -1,0 +1,20 @@
+---
+import { getCollection, render } from "astro:content";
+import { isVisible } from "../../../data/content";
+import LibraryLayout from "../../../layouts/LibraryLayout.astro";
+
+export async function getStaticPaths() {
+  const entries = (await getCollection("library")).filter((entry) => entry.data.locale === "en" && isVisible(entry));
+  return entries.map((entry) => ({
+    params: { slug: entry.id.replace(/\.mdx?$/, "").replace(/^en\//, "") },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<LibraryLayout entry={entry}>
+  <Content />
+</LibraryLayout>

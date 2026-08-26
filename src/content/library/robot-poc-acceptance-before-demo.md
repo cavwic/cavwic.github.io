@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: false
 tags: [机器人, POC, 验收]
 sourceIds: [ref-45, ref-46, job-26, job-30, job-31]
-alternatePath: /en/industries/robotics
+alternatePath: /en/library/robot-poc-acceptance-before-demo
 ---
 
 ## 观点

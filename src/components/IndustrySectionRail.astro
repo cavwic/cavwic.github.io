@@ -14,6 +14,7 @@ const copy = locale === "zh"
       resources: "资料",
       matrices: "全部产品矩阵",
       companies: "全部公司档案",
+      glossary: "术语库",
       items: "项",
     }
   : {
@@ -23,7 +24,8 @@ const copy = locale === "zh"
       resources: "Reference library",
       matrices: "All product matrices",
       companies: "All company files",
-      items: "ITEMS / ZH",
+      glossary: "Glossary",
+      items: "ITEMS",
     };
 ---
 
@@ -50,8 +52,9 @@ const copy = locale === "zh"
     </div>
     <div class="industry-rail-resources">
       <p class="industry-rail-label">{copy.resources}</p>
-      <a href="/matrices"><strong>{copy.matrices}</strong><span>{String(matrices.length).padStart(2, "0")} {copy.items}</span><ArrowUpRight size={16} /></a>
-      <a href="/companies"><strong>{copy.companies}</strong><span>{String(companies.length).padStart(2, "0")} {copy.items}</span><ArrowUpRight size={16} /></a>
+      <a href={`${locale === "en" ? "/en" : ""}/matrices`}><strong>{copy.matrices}</strong><span>{String(matrices.length).padStart(2, "0")} {copy.items}</span><ArrowUpRight size={16} /></a>
+      <a href={`${locale === "en" ? "/en" : ""}/companies`}><strong>{copy.companies}</strong><span>{String(companies.length).padStart(2, "0")} {copy.items}</span><ArrowUpRight size={16} /></a>
+      <a href={`${locale === "en" ? "/en" : ""}/glossary`}><strong>{copy.glossary}</strong><span>120 {copy.items}</span><ArrowUpRight size={16} /></a>
     </div>
   </div>
 </nav>

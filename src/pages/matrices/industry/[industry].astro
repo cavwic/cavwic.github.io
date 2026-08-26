@@ -14,7 +14,7 @@ const filteredMatrices = matrices.filter((matrix) => matrix.industry === industr
 const companyCount = companies.filter((company) => company.industry === industryId).length;
 ---
 
-<BaseLayout title={`${industry.name}产品矩阵 | CAVWIC`} description={`${industry.name}相关产品矩阵与选型核验资料。`} alternatePath={`/en/industries/${industry.id}`}>
+<BaseLayout title={`${industry.name}产品矩阵 | CAVWIC`} description={`${industry.name}相关产品矩阵与选型核验资料。`} alternatePath={`/en/matrices/industry/${industry.id}`}>
   <header class="page-head">
     <div class="page-head-inner">
       <p class="eyebrow">{industry.code} / PRODUCT MATRICES / {String(filteredMatrices.length).padStart(2, "0")}</p>

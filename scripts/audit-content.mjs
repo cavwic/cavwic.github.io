@@ -19,6 +19,19 @@ const content = await Promise.all(contentFiles.map(async (file) => ({ file, text
 
 const failures = [];
 const assert = (condition, message) => { if (!condition) failures.push(message); };
+const frontmatterValue = (text, field) => text.match(new RegExp(`^${field}:\\s*(.+)$`, "m"))?.[1]?.trim();
+const inlineList = (value = "") => value
+  .replace(/^\[/, "")
+  .replace(/\]$/, "")
+  .split(",")
+  .map((item) => item.trim().replace(/^['"]|['"]$/g, ""))
+  .filter(Boolean);
+const contentRecords = content.map((item) => ({
+  ...item,
+  locale: frontmatterValue(item.text, "locale"),
+  slug: path.basename(item.file).replace(/\.mdx?$/, ""),
+  body: item.text.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, ""),
+}));
 const ids = [...sourcesText.matchAll(/source\("([^"]+)"/g)].map((match) => match[1]);
 const urls = [...sourcesText.matchAll(/source\("[^"]+",\s*"[^"]+",\s*"([^"]+)"/g)].map((match) => match[1]);
 const jobCount = ids.filter((id) => id.startsWith("job-")).length;
@@ -31,10 +44,42 @@ assert(new Set(urls).size === urls.length, "来源 URL 存在重复");
 assert((catalogText.match(/slug: "/g) ?? []).length >= 16, "公司档案或产品矩阵数量不足");
 assert((glossaryText.match(/^  \["/gm) ?? []).length >= 120, "术语数量不足 120");
 
-const countKind = (kind) => content.filter(({ text }) => text.includes(`kind: ${kind}`) && text.includes("locale: zh")).length;
-assert(countKind("whitepaper") === 3, `白皮书数量应为 3，当前 ${countKind("whitepaper")}`);
-assert(countKind("article") === 9, `技术文章数量应为 9，当前 ${countKind("article")}`);
-assert(countKind("case-study") === 6, `案例数量应为 6，当前 ${countKind("case-study")}`);
+const countKind = (kind, locale) => contentRecords.filter((item) => item.locale === locale && frontmatterValue(item.text, "kind") === kind).length;
+for (const locale of ["zh", "en"]) {
+  assert(countKind("whitepaper", locale) === 3, `${locale} 白皮书数量应为 3，当前 ${countKind("whitepaper", locale)}`);
+  assert(countKind("article", locale) === 9, `${locale} 技术文章数量应为 9，当前 ${countKind("article", locale)}`);
+  assert(countKind("case-study", locale) === 6, `${locale} 案例数量应为 6，当前 ${countKind("case-study", locale)}`);
+}
+
+const zhContent = contentRecords.filter((item) => item.locale === "zh");
+const enContent = contentRecords.filter((item) => item.locale === "en");
+assert(contentRecords.length === zhContent.length + enContent.length, "资料库中存在未识别的 locale");
+assert(zhContent.length === enContent.length, `中英文资料数量不一致：zh ${zhContent.length} / en ${enContent.length}`);
+
+const pairedFields = ["kind", "industry", "publicationStatus", "date", "reviewedAt"];
+const pairedLists = ["evidence", "sourceIds"];
+for (const zhItem of zhContent) {
+  const enItem = enContent.find((item) => item.slug === zhItem.slug);
+  assert(Boolean(enItem), `${zhItem.file} 缺少同名英文资料`);
+  if (!enItem) continue;
+  for (const field of pairedFields) {
+    assert(
+      frontmatterValue(zhItem.text, field) === frontmatterValue(enItem.text, field),
+      `${zhItem.slug} 的中英文 ${field} 不一致`,
+    );
+  }
+  for (const field of pairedLists) {
+    const zhValues = inlineList(frontmatterValue(zhItem.text, field)).sort().join("|");
+    const enValues = inlineList(frontmatterValue(enItem.text, field)).sort().join("|");
+    assert(zhValues === enValues, `${zhItem.slug} 的中英文 ${field} 不一致`);
+  }
+  assert(frontmatterValue(zhItem.text, "alternatePath") === `/en/library/${zhItem.slug}`, `${zhItem.file} 的英文替代路径不准确`);
+  assert(frontmatterValue(enItem.text, "alternatePath") === `/library/${zhItem.slug}`, `${enItem.file} 的中文替代路径不准确`);
+}
+for (const enItem of enContent) {
+  assert(zhContent.some((item) => item.slug === enItem.slug), `${enItem.file} 缺少同名中文资料`);
+  assert(!/[\u3400-\u9fff]/u.test(enItem.body), `${enItem.file} 英文正文中存在中文字符`);
+}
 
 const requiredFields = ["title:", "description:", "locale:", "kind:", "industry:", "evidence:", "publicationStatus:", "reviewedAt:", "sourceIds:"];
 for (const item of content) {
@@ -56,7 +101,11 @@ console.log(JSON.stringify({
   sources: ids.length,
   jobSources: jobCount,
   referenceSources: referenceCount,
-  content: { whitepapers: countKind("whitepaper"), articles: countKind("article"), cases: countKind("case-study") },
+  content: {
+    zh: { whitepapers: countKind("whitepaper", "zh"), articles: countKind("article", "zh"), cases: countKind("case-study", "zh") },
+    en: { whitepapers: countKind("whitepaper", "en"), articles: countKind("article", "en"), cases: countKind("case-study", "en") },
+    translationPairs: zhContent.filter((item) => enContent.some((candidate) => candidate.slug === item.slug)).length,
+  },
   glossary: (glossaryText.match(/^  \["/gm) ?? []).length,
   status: failures.length ? "failed" : "passed",
 }, null, 2));

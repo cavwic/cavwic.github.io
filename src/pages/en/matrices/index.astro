@@ -1,0 +1,13 @@
+---
+import { ArrowUpRight } from "@lucide/astro";
+import { getMatrices } from "../../../data/catalog-localization";
+import { industryLabels } from "../../../data/content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const matrices = getMatrices("en");
+---
+
+<BaseLayout locale="en" title="Product Matrices | CAVWIC" description="Scenario-based product matrices for enterprise AI, embodied robotics, and dexterous hands." alternatePath="/matrices">
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">PRODUCT MATRICES / {String(matrices.length).padStart(2, "0")}</p><h1>Product matrices</h1><p>Robot bodies, models and compute, perception, joint actuation, dexterous hands, and tactile sensing are compared within compatible product categories. These matrices narrow the validation field; they do not replace hardware tests or vendor confirmation.</p></div></header>
+  <section class="profile-grid">{matrices.map((matrix, index) => <a class="profile-row" href={`/en/matrices/${matrix.slug}`}><span class="profile-index">{String(index + 1).padStart(2, "0")}</span><div><p class="eyebrow">{industryLabels.en[matrix.industry]}</p><h2>{matrix.title}</h2><p>{matrix.description}</p></div><ArrowUpRight size={20} /></a>)}</section>
+</BaseLayout>

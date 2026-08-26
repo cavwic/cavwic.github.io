@@ -1,0 +1,23 @@
+---
+import { ArrowLeft, ExternalLink } from "@lucide/astro";
+import { getCompanies } from "../../../data/catalog-localization";
+import { industryLabels } from "../../../data/content";
+import { industryCompanyPath, type PrimaryIndustryId } from "../../../data/industries";
+import { localizeSource } from "../../../data/source-localization";
+import { sourcesById } from "../../../data/sources";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return getCompanies("en").map((company) => ({ params: { slug: company.slug }, props: { company } }));
+}
+const { company } = Astro.props;
+const refs = company.sourceIds.map((id: string) => sourcesById.get(id)).filter(Boolean).map((ref) => localizeSource(ref!, "en"));
+---
+
+<BaseLayout locale="en" title={`${company.name} | Company File | CAVWIC`} description={company.positioning} alternatePath={`/companies/${company.slug}`}>
+  <article class="detail-shell">
+    <header class="detail-head"><a class="text-link back-link" href={industryCompanyPath(company.industry as PrimaryIndustryId, "en")}><ArrowLeft size={18} /> Back to this industry's company files</a><p class="eyebrow">{industryLabels.en[company.industry]} / VERIFIED {company.reviewedAt}</p><h1>{company.name}</h1>{company.valueChainRole && <p class="company-role">{company.valueChainRole}</p>}<p>{company.positioning}</p></header>
+    <div class="detail-grid"><section><p class="eyebrow">PUBLIC PRODUCTS</p><h2>Public product lines</h2><ul>{company.products.map((item: string) => <li>{item}</li>)}</ul></section>{company.strengths && <section><p class="eyebrow">PUBLIC FOCUS</p><h2>Public focus</h2><ul>{company.strengths.map((item: string) => <li>{item}</li>)}</ul></section>}{company.fit && <section><p class="eyebrow">SCENARIO FIT</p><h2>Scenarios worth validating</h2><ul>{company.fit.map((item: string) => <li>{item}</li>)}</ul></section>}{company.verificationFocus && <section><p class="eyebrow">VERIFICATION</p><h2>Selection checks</h2><p>{company.verificationFocus}</p></section>}<section><p class="eyebrow">PRESALES QUESTIONS</p><h2>Questions to ask first</h2><ol>{company.presalesQuestions.map((item: string) => <li>{item}</li>)}</ol></section></div>
+    <section class="source-panel"><div class="source-panel-head"><div><p class="eyebrow">SOURCES</p><h2>Sources</h2></div></div><ol class="source-list">{refs.map((ref) => <li><span>{ref.sourceType}</span><a href={ref.url} target="_blank" rel="noreferrer">{ref.title} <ExternalLink size={14} /></a><small>{ref.publisher} · {ref.verifiedAt}</small></li>)}</ol></section>
+  </article>
+</BaseLayout>

@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: false
 tags: [触觉, 传感器, 控制]
 sourceIds: [ref-34, ref-35, ref-36, ref-37, ref-38]
-alternatePath: /en/industries/dexterous-hands
+alternatePath: /en/library/tactile-sensor-specs-need-test
 ---
 
 ## 观点

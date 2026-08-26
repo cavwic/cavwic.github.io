@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: false
 tags: [系统集成, 接口, 版本管理]
 sourceIds: []
-alternatePath: /en/industries
+alternatePath: /en/library/case-third-party-interface-version
 ---
 
 ## 背景与公开边界

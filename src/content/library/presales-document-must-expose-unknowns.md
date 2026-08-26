@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: false
 tags: [售前, 技术方案, 风险]
 sourceIds: []
-alternatePath: /en/industries
+alternatePath: /en/library/presales-document-must-expose-unknowns
 ---
 
 ## 观点

@@ -66,7 +66,7 @@ const navigation = getNavigation(locale);
 const homePath = localizePath(locale, "/");
 const aboutPath = localizePath(locale, "/about");
 const privacyPath = localizePath(locale, "/privacy");
-const industryNavActive = basePath.startsWith("/industries") || basePath.startsWith("/matrices") || basePath.startsWith("/companies");
+const industryNavActive = basePath.startsWith("/industries") || basePath.startsWith("/matrices") || basePath.startsWith("/companies") || basePath.startsWith("/glossary");
 const industryMenu = locale === "zh"
   ? {
       label: "行业与资料",
@@ -74,6 +74,7 @@ const industryMenu = locale === "zh"
       resources: "资料",
       matrices: "全部产品矩阵",
       companies: "全部公司档案",
+      glossary: "术语库",
       referenceCode: "REFERENCE",
     }
   : {
@@ -82,7 +83,8 @@ const industryMenu = locale === "zh"
       resources: "Reference library",
       matrices: "All product matrices",
       companies: "All company files",
-      referenceCode: "CHINESE LIBRARY",
+      glossary: "Glossary",
+      referenceCode: "REFERENCE",
     };
 ---
 
@@ -176,8 +178,9 @@ const industryMenu = locale === "zh"
                 </div>
                 <div class="nav-dropdown-resources">
                   <p>{industryMenu.resources}</p>
-                  <a href="/matrices"><strong>{industryMenu.matrices}</strong><span>{industryMenu.referenceCode}</span></a>
-                  <a href="/companies"><strong>{industryMenu.companies}</strong><span>{industryMenu.referenceCode}</span></a>
+                  <a href={`${locale === "en" ? "/en" : ""}/matrices`}><strong>{industryMenu.matrices}</strong><span>{industryMenu.referenceCode}</span></a>
+                  <a href={`${locale === "en" ? "/en" : ""}/companies`}><strong>{industryMenu.companies}</strong><span>{industryMenu.referenceCode}</span></a>
+                  <a href={`${locale === "en" ? "/en" : ""}/glossary`}><strong>{industryMenu.glossary}</strong><span>{industryMenu.referenceCode}</span></a>
                 </div>
               </div>
             </div>

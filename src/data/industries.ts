@@ -48,6 +48,6 @@ export function getPrimaryIndustry(id: PrimaryIndustryId) {
   return primaryIndustries.find((industry) => industry.id === id)!;
 }
 
-export const industryMatrixPath = (id: PrimaryIndustryId) => `/matrices/industry/${id}`;
-export const industryCompanyPath = (id: PrimaryIndustryId) => `/companies/industry/${id}`;
+export const industryMatrixPath = (id: PrimaryIndustryId, locale: "zh" | "en" = "zh") => `${locale === "en" ? "/en" : ""}/matrices/industry/${id}`;
+export const industryCompanyPath = (id: PrimaryIndustryId, locale: "zh" | "en" = "zh") => `${locale === "en" ? "/en" : ""}/companies/industry/${id}`;
 export const industryPagePath = (id: PrimaryIndustryId, locale: "zh" | "en" = "zh") => `${locale === "en" ? "/en" : ""}/industries/${id}`;

@@ -1,7 +1,10 @@
 ---
+import { getCollection } from "astro:content";
 import IndustryDirectoryNav from "../../../components/IndustryDirectoryNav.astro";
 import IndustryLandscape from "../../../components/IndustryLandscape.astro";
 import IndustrySectionRail from "../../../components/IndustrySectionRail.astro";
+import LibraryDirectory from "../../../components/LibraryDirectory.astro";
+import { isVisible } from "../../../data/content";
 import { industryPagePath, primaryIndustries, type IndustryDirectoryItem, type PrimaryIndustryId } from "../../../data/industries";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 
@@ -10,6 +13,7 @@ export function getStaticPaths() {
 }
 
 const { industry } = Astro.props as { industry: IndustryDirectoryItem };
+const entries = (await getCollection("library")).filter((entry) => entry.data.locale === "en" && entry.data.industry === industry.id && isVisible(entry));
 ---
 
 <BaseLayout
@@ -34,6 +38,7 @@ const { industry } = Astro.props as { industry: IndustryDirectoryItem };
         <strong>{industry.englishQuestion}</strong>
       </div>
       {(industry.id === "robotics" || industry.id === "dexterous-hands") && <IndustryLandscape industry={industry.id} locale="en" />}
+      <LibraryDirectory entries={entries} industry={industry.id as PrimaryIndustryId} locale="en" title={`${industry.englishName} material`} />
     </section>
   </div>
 </BaseLayout>

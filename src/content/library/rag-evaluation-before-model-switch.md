@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: false
 tags: [RAG, 检索, 评测]
 sourceIds: [ref-02, ref-07, ref-08, ref-10]
-alternatePath: /en/industries/ai
+alternatePath: /en/library/rag-evaluation-before-model-switch
 ---
 
 ## 观点

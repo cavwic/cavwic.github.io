@@ -15,9 +15,10 @@ const grouped = Object.entries(entries.reduce<Record<string, LibraryEntry[]>>((r
   (result[entry.data.kind] ??= []).push(entry);
   return result;
 }, {}));
-const industryName = industry ? getPrimaryIndustry(industry)?.name ?? "" : "";
-const matrixHref = industry ? industryMatrixPath(industry) : "/matrices";
-const companyHref = industry ? industryCompanyPath(industry) : "/companies";
+const industryEntry = industry ? getPrimaryIndustry(industry) : undefined;
+const industryName = industryEntry ? (locale === "zh" ? industryEntry.name : industryEntry.englishName) : "";
+const matrixHref = industry ? industryMatrixPath(industry, locale) : `${locale === "en" ? "/en" : ""}/matrices`;
+const companyHref = industry ? industryCompanyPath(industry, locale) : `${locale === "en" ? "/en" : ""}/companies`;
 const matrixLabel = locale === "zh" ? `${industryName} 产品矩阵` : `${industryName} product matrices`;
 const companyLabel = locale === "zh" ? `${industryName} 公司档案` : `${industryName} company files`;
 ---
@@ -28,7 +29,7 @@ const companyLabel = locale === "zh" ? `${industryName} 公司档案` : `${indus
       <div class="section-heading compact-heading">
         <div>
           <p class="eyebrow">{kind?.toUpperCase()}</p>
-          <h2>{kindLabels[kind as keyof typeof kindLabels]}</h2>
+          <h2>{kindLabels[locale][kind as keyof typeof kindLabels.zh]}</h2>
         </div>
       </div>
       <EntryList entries={(values ?? []).map((entry) => toEntry(entry))} locale={locale} />

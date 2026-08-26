@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: false
 tags: [灵巧手, 抓取测试, 个人实践]
 sourceIds: [ref-29, ref-30, ref-31, ref-32, ref-33, ref-34, ref-35, ref-36, ref-37, ref-38, ref-39, ref-40]
-alternatePath: /en/industries/dexterous-hands
+alternatePath: /en/library/practice-dexterous-hand-test
 ---
 
 ## 性质说明

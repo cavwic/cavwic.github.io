@@ -22,10 +22,11 @@ D:\Codex Project\cavwic-solutions-lab
 
 ## 新增白皮书、文章或案例
 
-在 `src/content/library/` 新建 Markdown 文件。文件名使用小写英文和连字符，例如：
+中文资料在 `src/content/library/` 新建 Markdown 文件，英文全文在 `src/content/library/en/` 建立同名文件。文件名使用小写英文和连字符，例如：
 
 ```text
 src/content/library/robot-service-readiness.md
+src/content/library/en/robot-service-readiness.md
 ```
 
 文件头示例：
@@ -58,9 +59,9 @@ alternatePath: /en/industries#robotics
 | `publicationStatus` | 审阅阶段保持 `draft`；明确批准后才改为 `published` |
 | `reviewedAt` | 最后一次逐条核对事实和链接的日期 |
 | `sourceIds` | 必须存在于 `src/data/sources.ts`；脱敏真实经历可为空 |
-| `alternatePath` | 没有英文全文时，指向相应英文行业摘要，不创建不存在的 `/en/...` |
+| `alternatePath` | 中文全文填写 `/en/library/<slug>`，英文全文填写 `/library/<slug>` |
 
-类型和必填项由 `src/content.config.ts` 校验。栏目页会按内容类型和行业自动归档，不再手工维护文章列表。
+中英文文件必须保持相同的 `kind`、`industry`、`evidence`、`publicationStatus`、日期和 `sourceIds`。`npm run audit` 会逐篇检查同名配对和替代路径。类型和必填项由 `src/content.config.ts` 校验，栏目页会按内容类型和行业自动归档，不再手工维护文章列表。
 
 ## 增加来源
 
@@ -75,6 +76,9 @@ alternatePath: /en/industries#robotics
 - 公司档案：`src/data/catalog.ts` 的 `companies`
 - 产品矩阵：`src/data/catalog.ts` 的 `matrices`
 - 术语库：`src/data/glossary.ts`
+- 公司档案和产品矩阵英文内容：`src/data/catalog-localization.ts`
+- 术语库英文定义：`src/data/glossary-en.ts`
+- 来源标题和发布方英文名称：`src/data/source-localization.ts`
 
 产品比较维度应随产品类型变化。不要用一个总分同时比较 AI 平台、机器人本体和末端执行器；不要给未知字段补平均值。
 
@@ -88,7 +92,7 @@ alternatePath: /en/industries#robotics
 
 只有首页根据浏览器语言自动进入中文或英文：系统语言以 `zh` 开头显示中文，否则显示英文。用户手动切换后，本机浏览器会记住选择。
 
-深层中文页面没有英文全文时，语言按钮返回英文行业摘要；不会跳转到不存在的 `/en/...` 页面。主题默认跟随系统，点击按钮后保存为手动选择。
+资料正文、行业页、公司档案、产品矩阵和术语库均提供中英文对应页面。语言按钮优先切换到当前内容的对应版本。主题默认跟随系统，点击按钮后保存为手动选择。
 
 ## 更新简历
 

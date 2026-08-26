@@ -1,0 +1,14 @@
+---
+import { ArrowUpRight } from "@lucide/astro";
+import { getCompanies } from "../../../data/catalog-localization";
+import { industryLabels } from "../../../data/content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const companies = getCompanies("en");
+const groups = (["ai", "robotics", "dexterous-hands"] as const).map((industry) => ({ industry, companies: companies.filter((company) => company.industry === industry) }));
+---
+
+<BaseLayout locale="en" title="Company Files | CAVWIC" description="Public-source company files for enterprise AI, embodied robotics, and dexterous hands." alternatePath="/companies">
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">COMPANY FILES / {String(companies.length).padStart(2, "0")}</p><h1>Company files</h1><p>Companies are organized by value-chain role, public products, likely validation scenarios, and presales questions. Specifications not found in public material remain open for confirmation.</p></div></header>
+  <div class="company-catalog" aria-label="Company files">{groups.map((group) => <section class="company-group"><header class="company-group-head"><p class="eyebrow">{group.industry.toUpperCase()} / {String(group.companies.length).padStart(2, "0")}</p><h2>{industryLabels.en[group.industry]}</h2></header><div class="profile-grid">{group.companies.map((company) => <a class="profile-row" href={`/en/companies/${company.slug}`}><span class="profile-index">{String(companies.indexOf(company) + 1).padStart(2, "0")}</span><div><p class="eyebrow">{company.valueChainRole ?? industryLabels.en[company.industry]}</p><h3>{company.name}</h3><p>{company.positioning}</p></div><ArrowUpRight size={20} /></a>)}</div></section>)}</div>
+</BaseLayout>

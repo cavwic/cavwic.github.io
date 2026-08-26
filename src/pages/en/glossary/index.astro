@@ -1,0 +1,26 @@
+---
+import { Search } from "@lucide/astro";
+import { industryLabels } from "../../../data/content";
+import { englishGlossary } from "../../../data/glossary-en";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout locale="en" title="Glossary | CAVWIC" description="Working terminology for enterprise AI, embodied robotics, and dexterous-hand presales." alternatePath="/glossary">
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">GLOSSARY / {englishGlossary.length}</p><h1>Glossary</h1><p>Each definition connects to a requirement, interface, test, or acceptance action. The terms are working language, not decoration.</p></div></header>
+  <section class="glossary-shell">
+    <div class="glossary-toolbar"><label><Search size={18} /><span class="sr-only">Search terms</span><input id="term-search" type="search" placeholder="Search terms or definitions" /></label><div class="filter-buttons" role="group" aria-label="Industry filter"><button class="active" data-filter="all">All</button><button data-filter="ai">AI</button><button data-filter="robotics">Robotics</button><button data-filter="dexterous-hands">Dexterous hands</button></div></div>
+    <div class="term-list">{englishGlossary.map((item, index) => <article class="term-row" data-industry={item.industry} data-search={`${item.term} ${item.definition}`.toLowerCase()}><span class="term-index">{String(index + 1).padStart(3, "0")}</span><div><p class="eyebrow">{industryLabels.en[item.industry]}</p><h2>{item.term}</h2></div><p>{item.definition}</p></article>)}</div>
+  </section>
+  <script is:inline>
+    const input = document.querySelector('#term-search');
+    const buttons = [...document.querySelectorAll('[data-filter]')];
+    const rows = [...document.querySelectorAll('.term-row')];
+    let filter = 'all';
+    const apply = () => {
+      const query = input?.value.trim().toLowerCase() ?? '';
+      rows.forEach((row) => { row.hidden = !((filter === 'all' || row.dataset.industry === filter) && (row.dataset.search ?? '').includes(query)); });
+    };
+    input?.addEventListener('input', apply);
+    buttons.forEach((button) => button.addEventListener('click', () => { filter = button.dataset.filter; buttons.forEach((item) => item.classList.toggle('active', item === button)); apply(); }));
+  </script>
+</BaseLayout>

@@ -4,7 +4,7 @@ import LibraryLayout from "../../layouts/LibraryLayout.astro";
 import { isVisible } from "../../data/content";
 
 export async function getStaticPaths() {
-  const entries = (await getCollection("library")).filter(isVisible);
+  const entries = (await getCollection("library")).filter((entry) => entry.data.locale === "zh" && isVisible(entry));
   return entries.map((entry) => ({ params: { slug: entry.id.replace(/\.mdx?$/, "") }, props: { entry } }));
 }
 

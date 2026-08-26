@@ -1,0 +1,22 @@
+---
+import { ArrowUpRight } from "@lucide/astro";
+import { getCompanies, getMatrices } from "../../../../data/catalog-localization";
+import { getPrimaryIndustry, industryMatrixPath, primaryIndustries, type PrimaryIndustryId } from "../../../../data/industries";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return primaryIndustries.map((industry) => ({ params: { industry: industry.id } }));
+}
+const industryId = Astro.params.industry as PrimaryIndustryId;
+const industry = getPrimaryIndustry(industryId);
+const companies = getCompanies("en");
+const matrices = getMatrices("en");
+const filteredCompanies = companies.filter((company) => company.industry === industryId);
+const matrixCount = matrices.filter((matrix) => matrix.industry === industryId).length;
+---
+
+<BaseLayout locale="en" title={`${industry.englishName} Company Files | CAVWIC`} description={`Public products, value-chain roles, and selection checks for ${industry.englishName.toLowerCase()} companies.`} alternatePath={`/companies/industry/${industry.id}`}>
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">{industry.code} / COMPANY FILES / {String(filteredCompanies.length).padStart(2, "0")}</p><h1>{industry.englishName} company files</h1><p>Only companies in this field are shown, organized by public products, value-chain position, likely validation scenarios, and project checks.</p></div></header>
+  <section class="profile-grid">{filteredCompanies.map((company, index) => <a class="profile-row" href={`/en/companies/${company.slug}`}><span class="profile-index">{String(index + 1).padStart(2, "0")}</span><div><p class="eyebrow">{company.valueChainRole ?? industry.englishName}</p><h2>{company.name}</h2><p>{company.positioning}</p></div><ArrowUpRight size={20} /></a>)}</section>
+  <section class="cross-links"><a href="/en/companies"><span>{String(companies.length).padStart(2, "0")} FILES</span><h2>All company files</h2><ArrowUpRight size={20}/></a><a href={industryMatrixPath(industry.id, "en")}><span>{String(matrixCount).padStart(2, "0")} MATRICES</span><h2>{industry.englishName} product matrices</h2><ArrowUpRight size={20}/></a></section>
+</BaseLayout>

@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: true
 tags: [AI, POC, 验收]
 sourceIds: [ref-02, ref-04, ref-41, ref-42, ref-43, job-10, job-12]
-alternatePath: /en/industries/ai
+alternatePath: /en/library/ai-poc-not-chat-window
 ---
 
 ## 观点

@@ -11,7 +11,7 @@ reviewedAt: 2026-08-14
 featured: true
 tags: [具身机器人, POC, 场景勘察, 安全, 交付]
 sourceIds: [ref-17, ref-18, ref-19, ref-22, ref-23, ref-24, ref-25, ref-26, ref-41, ref-45, ref-46, job-06, job-23, job-24, job-26, job-27, job-30, job-31]
-alternatePath: /en/industries/robotics
+alternatePath: /en/library/embodied-robotics-presales-delivery
 ---
 
 ## 演示顺利，不等于方案成立
