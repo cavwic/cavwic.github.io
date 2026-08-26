@@ -313,6 +313,17 @@ const dexterousHandCompanies: CompanyProfile[] = [
     sourceIds: ["ref-106", "ref-107"], reviewedAt: "2026-08-26",
   },
   {
+    slug: "synapx", name: "章鱼动力", englishName: "SynapX", industry: "dexterous-hands",
+    valueChainRole: "物理 AI、灵巧手与具身数据平台厂商",
+    positioning: "章鱼动力以 SYNWorld、OctoH-Hand 和 OctoSense 组成世界模型、灵巧执行与数据采集产品线。三项产品于 2026 世界机器人大会集中发布，当前更适合按新产品导入和联合验证项目评估。",
+    strengths: ["将世界模型、仿生绳驱灵巧手和多模态数据采集放在同一训练与执行链路中。"],
+    products: ["SYNWorld", "OctoH-Hand", "OctoSense", "OctoS-Ego / EgoBio / DexUMI"],
+    fit: ["灵巧操作研究、遥操作与示教数据采集、模型和本体协同验证。"],
+    verificationFocus: "产品可采购状态、灵巧手驱动与传感配置、控制接口、对象集成功率、耐久、数据权属和模型评测。",
+    presalesQuestions: ["当前可交付的是样机、开发套件还是量产版本？", "OctoH-Hand 的主动自由度、触觉力控和接口分别如何配置？", "OctoSense 数据如何进入 SYNWorld 训练，并如何约定数据权属和使用范围？"],
+    sourceIds: ["ref-108", "ref-109"], reviewedAt: "2026-08-26",
+  },
+  {
     slug: "theo-hand", name: "万拿机器人", englishName: "Theo Hand", industry: "dexterous-hands",
     valueChainRole: "多指灵巧手厂商",
     positioning: "公开页面展示 Theo Hand 代表产品和面向具身操作的定位，部分工程参数仍需询证。",
@@ -386,13 +397,14 @@ export const matrices: ProductMatrix[] = [
   {
     slug: "robot-model-software-compute", title: "机器人模型、软件与计算平台矩阵",
     description: "比较机器人基础模型、开发工具和端侧算力的职责边界，不把研究模型当作可直接交付的整机能力。", industry: "robotics",
-    dimensions: ["层级与职责", "支持本体", "数据与训练", "部署位置", "接口开放", "限制与评测"], reviewedAt: "2026-08-20",
+    dimensions: ["层级与职责", "支持本体", "数据与训练", "部署位置", "接口开放", "限制与评测"], reviewedAt: "2026-08-26",
     rows: [
       { product: "Isaac GR00T / Jetson Thor", company: "NVIDIA", type: "机器人模型、仿真与边缘计算平台", openness: "开发入口公开；模型、硬件与许可按版本核验", integration: "训练仿真、高层策略、视觉与端侧推理", verificationFocus: "支持本体、算子、延迟、功耗、许可和安全", sourceIds: ["ref-59", "ref-60"] },
       { product: "Gemini Robotics", company: "Google DeepMind", type: "具身推理与机器人模型系列", openness: "研究与模型卡公开；可用范围需按发布状态核验", integration: "多模态理解、任务规划与机器人控制", verificationFocus: "硬件支持、接口、延迟、数据政策和失败样本", sourceIds: ["ref-61", "ref-62"] },
       { product: "pi0", company: "Physical Intelligence", type: "跨本体通用机器人策略", openness: "研究公开；不视为即插即用交付产品", integration: "多机器人、多任务数据与连续动作策略", verificationFocus: "模型可获得性、后训练、推理硬件和安全边界", sourceIds: ["ref-63"] },
       { product: "AimDK", company: "智元机器人", type: "机器人开发工具链", openness: "开发文档入口公开", integration: "本体接口、应用开发与生态资源", verificationFocus: "支持型号、API 稳定性、许可和版本兼容", sourceIds: ["ref-55", "ref-56"] },
       { product: "RDK X5 / RDK S", company: "地瓜机器人", type: "机器人边缘计算与开发套件", openness: "硬件、算法和配件生态公开", integration: "视觉、导航、模型部署与多 I/O 原型", verificationFocus: "算子支持、端到端延迟、实时分工、功耗和供货", sourceIds: ["ref-67", "ref-68"] },
+      { product: "SYNWorld / OctoSense", company: "章鱼动力", type: "具身世界模型与全模态数据采集体系", openness: "发布信息公开；模型访问、数据格式和开发接口仍需厂商资料核验", integration: "视觉、肌电与外骨骼操作数据，连接世界模型和 OctoH-Hand", verificationFocus: "支持本体、模型可用性、数据许可、时延、训练闭环和任务评测", sourceIds: ["ref-108", "ref-109"] },
     ],
   },
   {
@@ -437,6 +449,7 @@ export const matrices: ProductMatrix[] = [
       { product: "SVH", company: "SCHUNK", type: "伺服电动五指机械手", openness: "产品与 ROS 驱动路径公开；生命周期状态需确认", integration: "集成电子系统、机器人接口和拟人轻载操作", verificationFocus: "驱动自由度、接口、指力、速度、备件和产品周期", sourceIds: ["ref-99"] },
       { product: "RH8D", company: "Seed Robotics", type: "自包含欠驱动多指机器人手", openness: "产品和知识库公开；触觉选件按版本确认", integration: "教学研究、遥操作、多指原型和对象集测试", verificationFocus: "驱动映射、触觉、接口、抓力、回差、耐久和备件", sourceIds: ["ref-100", "ref-101"] },
       { product: "Ability Hand", company: "PSYONIC", type: "由仿生假肢延伸的研究型机器人手", openness: "研究用户与机器人合作方向公开；非医疗用途配置需确认", integration: "遥操作、仿生控制、触觉反馈和机器人研究", verificationFocus: "机器人接口、负载、占空比、触觉数据、维修和支持", sourceIds: ["ref-102", "ref-103"] },
+      { product: "OctoH-Hand", company: "章鱼动力", type: "23+ 自由度仿生绳驱五指灵巧手", openness: "世界机器人大会发布信息公开；型号参数、接口和可采购版本待核验", integration: "与 SYNWorld 和 OctoSense 组成数据、模型与执行闭环", verificationFocus: "主动与被动自由度、驱动器布置、触觉力控、接口、精度、寿命和交付状态", sourceIds: ["ref-108", "ref-109"] },
     ],
   },
   {

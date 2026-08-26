@@ -157,6 +157,8 @@ export const referenceSources: SourceRef[] = [
   source("ref-105", "Force/Torque Sensor Catalog", "https://ati.novanta.com/product-category/force-torque-sensors/", "ATI Industrial Automation", "official", "力与力矩传感器型号目录。", "2026-08-26"),
   source("ref-106", "BioTac Brochure", "https://www.syntouchllc.com/Products/BioTac/_media/BioTac_Brochure.pdf", "SynTouch", "official", "BioTac 仿生指尖触觉传感器资料。", "2026-08-26"),
   source("ref-107", "BioTac Sensory Modalities", "https://www.syntouchllc.com/Products/BioTac/Sensory-Modalities/", "SynTouch", "official", "BioTac 压力、振动与温度感知说明。", "2026-08-26"),
+  source("ref-108", "北京章鱼灵动科技有限公司展商介绍", "https://www.worldrobotconference.com/expo/company/709.html", "世界机器人大会", "official", "章鱼动力（SynapX）的公司自述、产品体系与灵巧手展品介绍。", "2026-08-26"),
+  source("ref-109", "章鱼动力具身智能创新成果暨产品发布", "https://www.worldrobotconference.com/symposium/50.html", "世界机器人大会", "official", "SYNWorld、OctoH-Hand 与 OctoSense 的发布信息。", "2026-08-26"),
 ];
 
 export const sources: SourceRef[] = [...jobSources, ...referenceSources];

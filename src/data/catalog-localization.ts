@@ -276,6 +276,16 @@ const customCompanyEnglish: Record<string, CompanyCopy> = {
     verificationFocus: "Current purchasable model, sampling and interfaces, package durability, calibration, replacement parts, and software support.",
     presalesQuestions: ["Is the model described by the public material still deliverable?", "How are the sensing channels sampled and calibrated?", "How are the skin, fluid, and connectors maintained or replaced?"],
   },
+  synapx: {
+    name: "SynapX",
+    valueChainRole: "Physical AI, dexterous-hand, and embodied-data platform vendor",
+    positioning: "SynapX groups SYNWorld, OctoH-Hand, and OctoSense into a product line for world modeling, dexterous execution, and data collection. All three were launched at the 2026 World Robot Conference and should currently be evaluated through new-product introduction and joint validation.",
+    strengths: ["A single training and execution chain for a world model, tendon-driven dexterous hand, and multimodal data collection."],
+    products: ["SYNWorld", "OctoH-Hand", "OctoSense", "OctoS-Ego / EgoBio / DexUMI"],
+    fit: ["Dexterous-manipulation research, teleoperation and demonstration data collection, and model-to-body validation."],
+    verificationFocus: "Purchasing status, hand actuation and sensing, control interfaces, object-set success, durability, data rights, and model evaluation.",
+    presalesQuestions: ["Is the current deliverable a prototype, development kit, or production version?", "How are active DOF, tactile force control, and interfaces configured on OctoH-Hand?", "How does OctoSense data enter SYNWorld training, and how are data ownership and permitted use defined?"],
+  },
 };
 
 const sharedPresalesQuestions = [
@@ -360,6 +370,7 @@ const matrixEnglish: Record<string, MatrixCopy> = {
       { product: "pi0", company: "Physical Intelligence", type: "Cross-embodiment general robot policy", openness: "Research is public; it is not treated as a plug-and-play delivery product", integration: "Multi-robot, multi-task data and continuous-action policies", verificationFocus: "Model availability, post-training, inference hardware, and safety boundaries" },
       { product: "AimDK", company: "AgiBot", type: "Robot development toolchain", openness: "Developer documentation is public", integration: "Body interfaces, application development, and ecosystem resources", verificationFocus: "Supported models, API stability, licenses, and version compatibility" },
       { product: "RDK X5 / RDK S", company: "D-Robotics", type: "Robot edge-compute and development kits", openness: "Hardware, algorithms, and accessory ecosystem are public", integration: "Vision, navigation, model deployment, and multi-I/O prototypes", verificationFocus: "Operator support, end-to-end latency, real-time split, power, and supply" },
+      { product: "SYNWorld / OctoSense", company: "SynapX", type: "Embodied world model and multimodal data-collection system", openness: "Launch information is public; model access, data formats, and developer interfaces require vendor documentation", integration: "Vision, EMG, and exoskeleton operation data connected to the world model and OctoH-Hand", verificationFocus: "Supported bodies, model availability, data licensing, latency, training loop, and task evaluation" },
     ],
   },
   "robot-perception-components": {
@@ -404,6 +415,7 @@ const matrixEnglish: Record<string, MatrixCopy> = {
       { product: "SVH", company: "SCHUNK", type: "Servo-electric five-finger hand", openness: "Product and ROS driver paths are public; confirm lifecycle status", integration: "Integrated electronics, robot interfaces, and light anthropomorphic manipulation", verificationFocus: "Actuated DOF, interfaces, finger force, speed, spares, and product lifecycle" },
       { product: "RH8D", company: "Seed Robotics", type: "Self-contained underactuated multi-finger robot hand", openness: "Product and knowledge base are public; confirm tactile options by version", integration: "Education, teleoperation, multi-finger prototypes, and object-set tests", verificationFocus: "Actuation mapping, tactile sensing, interfaces, grip force, backlash, durability, and spares" },
       { product: "Ability Hand", company: "PSYONIC", type: "Research robot hand derived from a bionic prosthesis", openness: "Research-user and robotics paths are public; confirm non-medical configuration", integration: "Teleoperation, bionic control, tactile feedback, and robotics research", verificationFocus: "Robotics interfaces, payload, duty cycle, tactile data, repair, and support" },
+      { product: "OctoH-Hand", company: "SynapX", type: "23+ DOF anthropomorphic tendon-driven five-finger hand", openness: "World Robot Conference launch information is public; verify model specifications, interfaces, and purchasable version", integration: "Forms a data, model, and execution loop with SYNWorld and OctoSense", verificationFocus: "Active and passive DOF, actuator placement, tactile force control, interfaces, accuracy, life, and delivery status" },
     ],
   },
   "tactile-force-sensing": {

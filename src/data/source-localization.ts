@@ -60,6 +60,8 @@ const englishTitles: Record<string, string> = {
   "ref-79": "Harmonic Drive products",
   "ref-80": "Kinco robot-joint solution",
   "ref-81": "Changxing Power official website",
+  "ref-108": "Beijing Zhangyu Lingdong Technology exhibitor profile",
+  "ref-109": "SynapX embodied-intelligence product launch",
 };
 
 const englishPublishers: Record<string, string> = {
@@ -91,6 +93,7 @@ const englishPublishers: Record<string, string> = {
   "绿的谐波": "Leaderdrive",
   "步科": "Kinco",
   "长兴动力": "Changxing Power",
+  "世界机器人大会": "World Robot Conference",
 };
 
 export function localizeSource(ref: SourceRef, locale: Locale): SourceRef {
