@@ -59,6 +59,7 @@ const copy = locale === "zh"
 
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const currentPath = Astro.url.pathname;
+const isHomePage = currentPath === "/" || currentPath === "/en" || currentPath === "/en/";
 const basePath = getBasePath(currentPath);
 const alternateLocale: Locale = locale === "zh" ? "en" : "zh";
 const alternatePath = alternatePathProp ?? (locale === "zh" ? "/en/industries" : "/industries");
@@ -146,7 +147,7 @@ const industryMenu = locale === "zh"
       })();
     </script>
   </head>
-  <body>
+  <body class:list={{ "copy-protected": !isHomePage }}>
     <a class="skip-link" href="#main">{copy.skip}</a>
     <header class="site-header">
       <a class="brand" href={homePath} aria-label={copy.home}>
@@ -238,6 +239,31 @@ const industryMenu = locale === "zh"
       const backToTop = document.querySelector(".back-to-top");
       const themeMedia = window.matchMedia("(prefers-color-scheme: dark)");
       const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      const interactiveSelectionSelector = "a, button, input, textarea, select, option, label, summary, [role='button'], [contenteditable='true']";
+
+      const closestInteractive = (node) => {
+        const element = node instanceof Element ? node : node?.parentElement;
+        return element?.closest(interactiveSelectionSelector) ?? null;
+      };
+
+      if (document.body.classList.contains("copy-protected")) {
+        document.addEventListener("selectstart", (event) => {
+          if (!closestInteractive(event.target)) event.preventDefault();
+        });
+
+        document.addEventListener("copy", (event) => {
+          const selection = window.getSelection();
+          if (!selection || selection.isCollapsed || selection.rangeCount === 0) return;
+
+          const range = selection.getRangeAt(0);
+          const startInteractive = closestInteractive(range.startContainer);
+          const endInteractive = closestInteractive(range.endContainer);
+          if (!startInteractive || startInteractive !== endInteractive) {
+            event.preventDefault();
+            selection.removeAllRanges();
+          }
+        });
+      }
 
       navToggle?.addEventListener("click", () => {
         const isOpen = navToggle.getAttribute("aria-expanded") === "true";

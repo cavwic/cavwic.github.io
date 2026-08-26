@@ -1,0 +1,155 @@
+---
+import { ArrowLeft, ExternalLink } from "@lucide/astro";
+import type { CompanyProfile } from "../data/catalog";
+import type { SourceRef } from "../data/content";
+import { industryLabels } from "../data/content";
+import { industryCompanyPath, type PrimaryIndustryId } from "../data/industries";
+import type { Locale } from "../data/site";
+
+interface Props {
+  company: CompanyProfile;
+  locale: Locale;
+  refs: SourceRef[];
+}
+
+const { company, locale, refs } = Astro.props;
+const isZh = locale === "zh";
+const industryName = industryLabels[locale][company.industry];
+const role = company.valueChainRole ?? industryName;
+const strengths = company.strengths?.filter(Boolean) ?? [];
+const fit = company.fit?.filter(Boolean) ?? [];
+
+const copy = isZh
+  ? {
+      back: "返回当前行业公司档案",
+      overviewCode: "COMPANY OVERVIEW",
+      overview: "公司介绍",
+      overviewNote: `本资料库将其归入“${industryName}”，主要业务角色为${role}。以下内容根据公开资料整理，客户适配和交付范围仍需结合具体产品版本确认。`,
+      industry: "所属行业",
+      role: "业务角色",
+      reviewed: "资料复核",
+      sourceCount: "参考来源",
+      sourceUnit: "项",
+      businessCode: "BUSINESS AREAS",
+      business: "业务领域",
+      businessEmpty: "公开资料暂未形成可独立核验的业务领域清单。",
+      productsCode: "MAIN PRODUCTS",
+      products: "主营产品",
+      audienceCode: "CUSTOMERS & USE CASES",
+      audience: "客户群体与适用场景",
+      audienceIntro: "根据公开产品定位，优先评估以下客户类型或应用场景：",
+      audienceEmpty: "具体客户群体和应用边界需要在项目沟通中确认。",
+      verificationCode: "PROJECT VERIFICATION",
+      verification: "项目核验重点",
+      questionsCode: "PRESALES QUESTIONS",
+      questions: "售前沟通要点",
+      sources: "来源",
+    }
+  : {
+      back: "Back to this industry's company files",
+      overviewCode: "COMPANY OVERVIEW",
+      overview: "Company overview",
+      overviewNote: `This library classifies the company under ${industryName}, with a primary role in ${role}. The profile is based on public information; customer fit and delivery scope still need to be confirmed against the product version offered for a project.`,
+      industry: "Industry",
+      role: "Business role",
+      reviewed: "Reviewed",
+      sourceCount: "References",
+      sourceUnit: "items",
+      businessCode: "BUSINESS AREAS",
+      business: "Business areas",
+      businessEmpty: "Public material does not yet support a separately verifiable list of business areas.",
+      productsCode: "MAIN PRODUCTS",
+      products: "Main products",
+      audienceCode: "CUSTOMERS & USE CASES",
+      audience: "Customer groups and use cases",
+      audienceIntro: "Based on the public product positioning, the following customer types or use cases are the first to assess:",
+      audienceEmpty: "Customer groups and application boundaries require project-level confirmation.",
+      verificationCode: "PROJECT VERIFICATION",
+      verification: "Project verification",
+      questionsCode: "PRESALES QUESTIONS",
+      questions: "Questions to confirm in presales",
+      sources: "Sources",
+    };
+---
+
+<article class="company-profile">
+  <header class="company-profile-hero">
+    <div class="company-profile-hero-inner">
+      <a class="text-link back-link company-profile-back" href={industryCompanyPath(company.industry as PrimaryIndustryId, locale)}>
+        <ArrowLeft size={18} aria-hidden="true" />
+        <span>{copy.back}</span>
+      </a>
+
+      <div class="company-profile-heading">
+        <div class="company-profile-title">
+          <p class="eyebrow">{industryName} / VERIFIED {company.reviewedAt}</p>
+          <h1>{company.name}</h1>
+          {isZh && company.englishName && company.englishName !== company.name && <p class="english-name">{company.englishName}</p>}
+          <p class="company-role">{role}</p>
+        </div>
+
+        <div class="company-profile-overview">
+          <p class="eyebrow">{copy.overviewCode}</p>
+          <h2>{copy.overview}</h2>
+          <p>{company.positioning}</p>
+          <p class="company-profile-note">{copy.overviewNote}</p>
+        </div>
+      </div>
+
+      <dl class="company-profile-meta">
+        <div><dt>{copy.industry}</dt><dd>{industryName}</dd></div>
+        <div><dt>{copy.role}</dt><dd>{role}</dd></div>
+        <div><dt>{copy.reviewed}</dt><dd>{company.reviewedAt}</dd></div>
+        <div><dt>{copy.sourceCount}</dt><dd>{refs.length} {copy.sourceUnit}</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <div class="company-profile-sections">
+    <section id="business-areas" class="company-profile-section">
+      <p class="eyebrow">01 / {copy.businessCode}</p>
+      <h2>{copy.business}</h2>
+      {strengths.length > 0 ? <ul>{strengths.map((item) => <li>{item}</li>)}</ul> : <p>{copy.businessEmpty}</p>}
+    </section>
+
+    <section id="main-products" class="company-profile-section">
+      <p class="eyebrow">02 / {copy.productsCode}</p>
+      <h2>{copy.products}</h2>
+      <ul>{company.products.map((item) => <li>{item}</li>)}</ul>
+    </section>
+
+    <section id="customers" class="company-profile-section">
+      <p class="eyebrow">03 / {copy.audienceCode}</p>
+      <h2>{copy.audience}</h2>
+      <p class="company-profile-section-intro">{copy.audienceIntro}</p>
+      {fit.length > 0 ? <ul>{fit.map((item) => <li>{item}</li>)}</ul> : <p>{copy.audienceEmpty}</p>}
+    </section>
+
+    <section id="verification" class="company-profile-section">
+      <p class="eyebrow">04 / {copy.verificationCode}</p>
+      <h2>{copy.verification}</h2>
+      <p>{company.verificationFocus ?? copy.audienceEmpty}</p>
+    </section>
+
+    <section id="presales-questions" class="company-profile-section company-profile-section-wide">
+      <p class="eyebrow">05 / {copy.questionsCode}</p>
+      <h2>{copy.questions}</h2>
+      <ol>{company.presalesQuestions.map((item) => <li>{item}</li>)}</ol>
+    </section>
+  </div>
+
+  <section class="source-panel company-source-panel">
+    <div class="source-panel-head">
+      <div><p class="eyebrow">SOURCES</p><h2>{copy.sources}</h2></div>
+    </div>
+    <ol class="source-list">
+      {refs.map((ref) => (
+        <li>
+          <span>{ref.sourceType}</span>
+          <a href={ref.url} target="_blank" rel="noreferrer">{ref.title} <ExternalLink size={14} aria-hidden="true" /></a>
+          <small>{ref.publisher} · {ref.verifiedAt}</small>
+        </li>
+      ))}
+    </ol>
+  </section>
+</article>
