@@ -159,6 +159,13 @@ export const referenceSources: SourceRef[] = [
   source("ref-107", "BioTac Sensory Modalities", "https://www.syntouchllc.com/Products/BioTac/Sensory-Modalities/", "SynTouch", "official", "BioTac 压力、振动与温度感知说明。", "2026-08-26"),
   source("ref-108", "北京章鱼灵动科技有限公司展商介绍", "https://www.worldrobotconference.com/expo/company/709.html", "世界机器人大会", "official", "章鱼动力（SynapX）的公司自述、产品体系与灵巧手展品介绍。", "2026-08-26"),
   source("ref-109", "章鱼动力具身智能创新成果暨产品发布", "https://www.worldrobotconference.com/symposium/50.html", "世界机器人大会", "official", "SYNWorld、OctoH-Hand 与 OctoSense 的发布信息。", "2026-08-26"),
+  source("ref-110", "Dify official website", "https://dify.ai/", "LangGenius", "official", "Dify 产品、部署方式和公司信息入口。", "2026-08-27"),
+  source("ref-111", "RAGFlow official website", "https://ragflow.io/", "InfiniFlow", "official", "RAGFlow 产品与官方资料入口。", "2026-08-27"),
+  source("ref-112", "FastGPT official website", "https://fastgpt.io/", "Labring", "official", "FastGPT 产品与官方资料入口。", "2026-08-27"),
+  source("ref-113", "NVIDIA Isaac official website", "https://developer.nvidia.com/isaac", "NVIDIA", "official", "NVIDIA Isaac 机器人开发平台入口。", "2026-08-27"),
+  source("ref-114", "FAULHABER official website", "https://www.faulhaber.com/", "FAULHABER", "official", "FAULHABER 公司与驱动产品入口。", "2026-08-27"),
+  source("ref-115", "LinkerBot official website", "https://www.linkerbot.cn/", "灵心巧手", "official", "灵心巧手公司与产品入口。", "2026-08-27"),
+  source("ref-116", "Kinco official website", "https://www.kinco.cn/", "步科", "official", "步科公司、机器人核心部件与行业方案入口。", "2026-08-27"),
 ];
 
 export const sources: SourceRef[] = [...jobSources, ...referenceSources];

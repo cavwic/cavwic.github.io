@@ -1,6 +1,7 @@
 ---
-import { ArrowLeft, ExternalLink } from "@lucide/astro";
+import { ArrowLeft, ExternalLink, Globe } from "@lucide/astro";
 import type { CompanyProfile } from "../data/catalog";
+import { getCompanyOfficialLink } from "../data/company-official-links";
 import type { SourceRef } from "../data/content";
 import { industryLabels } from "../data/content";
 import { industryCompanyPath, type PrimaryIndustryId } from "../data/industries";
@@ -18,6 +19,7 @@ const industryName = industryLabels[locale][company.industry];
 const role = company.valueChainRole ?? industryName;
 const strengths = company.strengths?.filter(Boolean) ?? [];
 const fit = company.fit?.filter(Boolean) ?? [];
+const officialLink = getCompanyOfficialLink(company.slug, refs);
 
 const copy = isZh
   ? {
@@ -25,6 +27,13 @@ const copy = isZh
       overviewCode: "COMPANY OVERVIEW",
       overview: "公司介绍",
       overviewNote: `本资料库将其归入“${industryName}”，主要业务角色为${role}。以下内容根据公开资料整理，客户适配和交付范围仍需结合具体产品版本确认。`,
+      focusSummary: "公开业务重点",
+      productSummary: "公开产品范围",
+      audienceSummary: "适配对象与场景",
+      boundarySummary: "交付与核验边界",
+      unknown: "当前公开资料未单独说明",
+      website: "公司官网",
+      officialProfile: "官方公司资料",
       industry: "所属行业",
       role: "业务角色",
       reviewed: "资料复核",
@@ -36,11 +45,14 @@ const copy = isZh
       productsCode: "MAIN PRODUCTS",
       products: "主营产品",
       audienceCode: "CUSTOMERS & USE CASES",
-      audience: "客户群体与适用场景",
-      audienceIntro: "根据公开产品定位，优先评估以下客户类型或应用场景：",
+      audience: "潜在客户群体与适用场景",
+      audienceIntro: "根据公开产品定位，优先评估以下潜在客户类型或应用场景：",
+      audienceBoundary: "这里列出的是根据公开产品定位归纳的潜在对象与场景，不代表厂商已披露的签约客户名单或实际交付业绩。",
       audienceEmpty: "具体客户群体和应用边界需要在项目沟通中确认。",
       verificationCode: "PROJECT VERIFICATION",
       verification: "项目核验重点",
+      assessmentCode: "ANALYSIS JUDGMENT",
+      assessment: "资料库判断",
       questionsCode: "PRESALES QUESTIONS",
       questions: "售前沟通要点",
       sources: "来源",
@@ -50,6 +62,13 @@ const copy = isZh
       overviewCode: "COMPANY OVERVIEW",
       overview: "Company overview",
       overviewNote: `This library classifies the company under ${industryName}, with a primary role in ${role}. The profile is based on public information; customer fit and delivery scope still need to be confirmed against the product version offered for a project.`,
+      focusSummary: "Public business focus",
+      productSummary: "Public product scope",
+      audienceSummary: "Relevant users and use cases",
+      boundarySummary: "Delivery and verification boundary",
+      unknown: "Not stated separately in the current public material",
+      website: "Company website",
+      officialProfile: "Official company profile",
       industry: "Industry",
       role: "Business role",
       reviewed: "Reviewed",
@@ -61,15 +80,35 @@ const copy = isZh
       productsCode: "MAIN PRODUCTS",
       products: "Main products",
       audienceCode: "CUSTOMERS & USE CASES",
-      audience: "Customer groups and use cases",
-      audienceIntro: "Based on the public product positioning, the following customer types or use cases are the first to assess:",
+      audience: "Potential customer groups and use cases",
+      audienceIntro: "Based on the public product positioning, the following potential customer groups or use cases are the first to assess:",
+      audienceBoundary: "These are potential users and scenarios inferred from public product positioning. They are not a claim about disclosed customers, signed contracts, or completed deliveries.",
       audienceEmpty: "Customer groups and application boundaries require project-level confirmation.",
       verificationCode: "PROJECT VERIFICATION",
       verification: "Project verification",
+      assessmentCode: "ANALYSIS JUDGMENT",
+      assessment: "Library assessment",
       questionsCode: "PRESALES QUESTIONS",
       questions: "Questions to confirm in presales",
       sources: "Sources",
     };
+
+const cleanPhrase = (value: string) => value.trim().replace(/[。．.!！;；]+$/u, "");
+const joinPhrases = (items: string[]) => items.map(cleanPhrase).join(isZh ? "；" : "; ");
+const focusPhrase = joinPhrases(strengths) || (isZh ? "公开产品与业务定位" : "the public product and business positioning");
+const fitPhrase = joinPhrases(fit) || (isZh ? "与其公开产品定位相符的项目" : "projects that match its public product positioning");
+const verificationPhrase = cleanPhrase(company.verificationFocus ?? (isZh ? "当前产品版本、接口、交付范围和验收条件" : "the current product version, interfaces, delivery scope, and acceptance conditions"));
+const assessmentParagraphs = isZh
+  ? [
+      `从当前公开资料看，${company.name}的可评估重点包括：${focusPhrase}。对于以下需求方向，可以将其纳入候选范围：${fitPhrase}。这里的“候选”只表示值得继续核对需求、版本和现场条件，不表示已经满足某个具体项目。`,
+      `是否进入项目短名单，应重点核验${verificationPhrase}。产品页、发布材料和研究资料可以说明技术方向，但正式方案仍应以当前版本资料、报价文件、合同附件和验收证据为准。`,
+      "本档案不采用未经核验的市场份额、未披露客户名单、融资规模或缺少来源的行业排名，也不把发布演示、研究样机和批量交付能力视为同一类证据。内容仅用于行业研究与售前筛选，不构成采购、投资、法律或合规意见。",
+    ]
+  : [
+      `Current public evidence points to the following assessment focus for ${company.name}: ${focusPhrase}. The company can enter an initial candidate set for projects in these areas: ${fitPhrase}. Candidate status only means that requirements, versions, and operating conditions merit further review; it does not mean a specific project is already satisfied.`,
+      `Shortlisting should depend on ${verificationPhrase}. Product pages, launch material, and research publications can establish technical direction, but a formal proposal should still rely on current version documents, quotations, contract schedules, and acceptance evidence.`,
+      "This profile does not rely on unverified market-share claims, undisclosed customer lists, funding size, or unsourced rankings. It also treats launch demonstrations, research prototypes, and production delivery as different evidence. The assessment supports industry research and presales screening; it is not procurement, investment, legal, or compliance advice.",
+    ];
 ---
 
 <article class="company-profile">
@@ -86,12 +125,25 @@ const copy = isZh
           <h1>{company.name}</h1>
           {isZh && company.englishName && company.englishName !== company.name && <p class="english-name">{company.englishName}</p>}
           <p class="company-role">{role}</p>
+          {officialLink && (
+            <a class="company-official-link" href={officialLink.url} target="_blank" rel="noreferrer">
+              <Globe size={17} aria-hidden="true" />
+              <span>{officialLink.kind === "website" ? copy.website : copy.officialProfile}</span>
+              <ExternalLink size={14} aria-hidden="true" />
+            </a>
+          )}
         </div>
 
         <div class="company-profile-overview">
           <p class="eyebrow">{copy.overviewCode}</p>
           <h2>{copy.overview}</h2>
           <p>{company.positioning}</p>
+          <dl class="company-profile-summary">
+            <div><dt>{copy.focusSummary}</dt><dd>{strengths.join(" ") || copy.unknown}</dd></div>
+            <div><dt>{copy.productSummary}</dt><dd>{company.products.join(" · ")}</dd></div>
+            <div><dt>{copy.audienceSummary}</dt><dd>{fit.join(" ") || copy.unknown}</dd></div>
+            <div><dt>{copy.boundarySummary}</dt><dd>{company.verificationFocus ?? copy.unknown}</dd></div>
+          </dl>
           <p class="company-profile-note">{copy.overviewNote}</p>
         </div>
       </div>
@@ -123,6 +175,7 @@ const copy = isZh
       <h2>{copy.audience}</h2>
       <p class="company-profile-section-intro">{copy.audienceIntro}</p>
       {fit.length > 0 ? <ul>{fit.map((item) => <li>{item}</li>)}</ul> : <p>{copy.audienceEmpty}</p>}
+      <p class="company-profile-boundary">{copy.audienceBoundary}</p>
     </section>
 
     <section id="verification" class="company-profile-section">
@@ -131,8 +184,16 @@ const copy = isZh
       <p>{company.verificationFocus ?? copy.audienceEmpty}</p>
     </section>
 
+    <section id="assessment" class="company-profile-section company-profile-section-wide company-profile-assessment">
+      <p class="eyebrow">05 / {copy.assessmentCode}</p>
+      <h2>{copy.assessment}</h2>
+      <div class="company-profile-assessment-copy">
+        {assessmentParagraphs.map((paragraph, index) => <p class:list={{ "company-profile-disclaimer": index === assessmentParagraphs.length - 1 }}>{paragraph}</p>)}
+      </div>
+    </section>
+
     <section id="presales-questions" class="company-profile-section company-profile-section-wide">
-      <p class="eyebrow">05 / {copy.questionsCode}</p>
+      <p class="eyebrow">06 / {copy.questionsCode}</p>
       <h2>{copy.questions}</h2>
       <ol>{company.presalesQuestions.map((item) => <li>{item}</li>)}</ol>
     </section>
