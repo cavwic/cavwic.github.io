@@ -38,7 +38,7 @@ const entries = (await getCollection("library")).filter((entry) => entry.data.lo
         <strong>{industry.englishQuestion}</strong>
       </div>
       {(industry.id === "robotics" || industry.id === "dexterous-hands") && <IndustryLandscape industry={industry.id} locale="en" />}
-      <LibraryDirectory entries={entries} industry={industry.id as PrimaryIndustryId} locale="en" title={`${industry.englishName} material`} />
+      <LibraryDirectory entries={entries} locale="en" title={`${industry.englishName} material`} />
     </section>
   </div>
 </BaseLayout>

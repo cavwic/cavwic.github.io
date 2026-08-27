@@ -1,7 +1,7 @@
 ---
 import { ArrowRight, ArrowUpRight } from "@lucide/astro";
 import { companies, matrices } from "../data/catalog";
-import { industryPagePath, primaryIndustries, type PrimaryIndustryId } from "../data/industries";
+import { industryCompanyPath, industryMatrixPath, industryPagePath, primaryIndustries, type PrimaryIndustryId } from "../data/industries";
 import type { Locale } from "../data/site";
 
 const { locale = "zh", currentIndustry } = Astro.props as { locale?: Locale; currentIndustry?: PrimaryIndustryId };
@@ -13,6 +13,8 @@ const copy = locale === "zh"
       matrices: "全部产品矩阵",
       companies: "全部公司档案",
       glossary: "术语库",
+      industryMatrices: "产品矩阵",
+      industryCompanies: "公司档案",
       items: "项",
     }
   : {
@@ -22,22 +24,40 @@ const copy = locale === "zh"
       matrices: "All product matrices",
       companies: "All company files",
       glossary: "Glossary",
+      industryMatrices: "Product matrices",
+      industryCompanies: "Company files",
       items: "ITEMS",
     };
 ---
 
-<nav class="industry-directory" aria-label={copy.label}>
+<nav class:list={["industry-directory", { "industry-directory-index": !currentIndustry }]} aria-label={copy.label}>
   <div class="industry-directory-inner">
     <section class="directory-cluster directory-cluster-industries" aria-labelledby={`directory-industries-${locale}`}>
       <p id={`directory-industries-${locale}`} class="directory-cluster-label">{copy.industries}</p>
       <div class="directory-cluster-grid directory-industry-grid">
-        {primaryIndustries.map((industry) => (
-          <a class:list={["industry-tab", { active: currentIndustry === industry.id }]} href={industryPagePath(industry.id, locale)} aria-current={currentIndustry === industry.id ? "page" : undefined}>
-            <strong>{locale === "zh" ? industry.name : industry.englishName}</strong>
-            <ArrowRight size={18} />
-            <span>{industry.code}</span>
-          </a>
-        ))}
+        {primaryIndustries.map((industry) => {
+          const industryName = locale === "zh" ? industry.name : industry.englishName;
+          const active = currentIndustry === industry.id;
+          return (
+            <div class:list={["industry-tab-group", { active }]}>
+              <a class:list={["industry-tab", { active }]} href={industryPagePath(industry.id, locale)} aria-current={active ? "page" : undefined}>
+                <strong>{industryName}</strong>
+                <ArrowRight size={18} />
+                <span>{industry.code}</span>
+              </a>
+              <div class="industry-tab-subnav" aria-label={`${industryName} ${copy.resources}`}>
+                <a href={industryMatrixPath(industry.id, locale)} aria-label={`${industryName} ${copy.industryMatrices}`}>
+                  <strong>{copy.industryMatrices}</strong>
+                  <ArrowUpRight size={14} aria-hidden="true" />
+                </a>
+                <a href={industryCompanyPath(industry.id, locale)} aria-label={`${industryName} ${copy.industryCompanies}`}>
+                  <strong>{copy.industryCompanies}</strong>
+                  <ArrowUpRight size={14} aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
     <section class="directory-cluster directory-cluster-resources" aria-labelledby={`directory-resources-${locale}`}>

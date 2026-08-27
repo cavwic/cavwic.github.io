@@ -2,6 +2,7 @@
 import { ArrowLeft, ExternalLink, Globe } from "@lucide/astro";
 import type { CompanyProfile } from "../data/catalog";
 import { getCompanyOfficialLink } from "../data/company-official-links";
+import { getCompanyProfileVisual } from "../data/company-profile-visuals";
 import type { SourceRef } from "../data/content";
 import { industryLabels } from "../data/content";
 import { industryCompanyPath, type PrimaryIndustryId } from "../data/industries";
@@ -28,7 +29,6 @@ const copy = isZh
       overview: "公司介绍",
       overviewNote: `本资料库将其归入“${industryName}”，主要业务角色为${role}。以下内容根据公开资料整理，客户适配和交付范围仍需结合具体产品版本确认。`,
       focusSummary: "公开业务重点",
-      productSummary: "公开产品范围",
       audienceSummary: "适配对象与场景",
       boundarySummary: "交付与核验边界",
       unknown: "当前公开资料未单独说明",
@@ -53,9 +53,16 @@ const copy = isZh
       verification: "项目核验重点",
       assessmentCode: "ANALYSIS JUDGMENT",
       assessment: "资料库判断",
-      questionsCode: "PRESALES QUESTIONS",
-      questions: "售前沟通要点",
+      questionsCode: "VENDOR SELECTION CHECKS",
+      questions: "选型与厂商确认要点",
       sources: "来源",
+      storyCode: "PRODUCT PATH / LIBRARY VIEW",
+      storyTitle: "从公开产品到应用方向",
+      storyIntro: `以${company.name}的公开产品为起点，连接其能力重点与适用方向，便于快速判断是否值得进入项目级核验。`,
+      storyBoundary: "产品、能力和应用的三段结构由本站为便于阅读所作，不是厂商对产品架构或业务层级的正式命名。",
+      storyLabels: ["公开产品", "能力重点", "适用方向"],
+      conceptVisual: "技术方向概念视觉",
+      conceptVisualNote: `根据${company.name}的公开业务方向选用；不是该公司的产品照片、Logo、设计图或交付案例。`,
     }
   : {
       back: "Back to this industry's company files",
@@ -63,7 +70,6 @@ const copy = isZh
       overview: "Company overview",
       overviewNote: `This library classifies the company under ${industryName}, with a primary role in ${role}. The profile is based on public information; customer fit and delivery scope still need to be confirmed against the product version offered for a project.`,
       focusSummary: "Public business focus",
-      productSummary: "Public product scope",
       audienceSummary: "Relevant users and use cases",
       boundarySummary: "Delivery and verification boundary",
       unknown: "Not stated separately in the current public material",
@@ -88,9 +94,16 @@ const copy = isZh
       verification: "Project verification",
       assessmentCode: "ANALYSIS JUDGMENT",
       assessment: "Library assessment",
-      questionsCode: "PRESALES QUESTIONS",
-      questions: "Questions to confirm in presales",
+      questionsCode: "VENDOR SELECTION CHECKS",
+      questions: "Vendor checks before selection",
       sources: "Sources",
+      storyCode: "PRODUCT PATH / LIBRARY VIEW",
+      storyTitle: "From public products to application fit",
+      storyIntro: `The sequence starts with ${company.name}'s public products, then connects its capability focus and likely application fit for project-level screening.`,
+      storyBoundary: "The three-part product, capability, and application sequence is a library navigation aid, not the vendor's formal product architecture or business hierarchy.",
+      storyLabels: ["Public products", "Capability focus", "Application fit"],
+      conceptVisual: "Technical-direction concept visual",
+      conceptVisualNote: `Selected from ${company.name}'s public business direction. It is not a company product photograph, logo, design drawing, or delivery case.`,
     };
 
 const cleanPhrase = (value: string) => value.trim().replace(/[。．.!！;；]+$/u, "");
@@ -98,6 +111,12 @@ const joinPhrases = (items: string[]) => items.map(cleanPhrase).join(isZh ? "；
 const focusPhrase = joinPhrases(strengths) || (isZh ? "公开产品与业务定位" : "the public product and business positioning");
 const fitPhrase = joinPhrases(fit) || (isZh ? "与其公开产品定位相符的项目" : "projects that match its public product positioning");
 const verificationPhrase = cleanPhrase(company.verificationFocus ?? (isZh ? "当前产品版本、接口、交付范围和验收条件" : "the current product version, interfaces, delivery scope, and acceptance conditions"));
+const profileVisual = getCompanyProfileVisual(company.slug, company.industry);
+const storyItems = [
+  company.products.join(isZh ? "、" : ", ") || copy.unknown,
+  strengths.join(isZh ? "；" : "; ") || role,
+  fit.join(isZh ? "；" : "; ") || copy.unknown,
+];
 const assessmentParagraphs = isZh
   ? [
       `从当前公开资料看，${company.name}的可评估重点包括：${focusPhrase}。对于以下需求方向，可以将其纳入候选范围：${fitPhrase}。这里的“候选”只表示值得继续核对需求、版本和现场条件，不表示已经满足某个具体项目。`,
@@ -125,27 +144,17 @@ const assessmentParagraphs = isZh
           <h1>{company.name}</h1>
           {isZh && company.englishName && company.englishName !== company.name && <p class="english-name">{company.englishName}</p>}
           <p class="company-role">{role}</p>
-          {officialLink && (
+        </div>
+
+        {officialLink && (
+          <div class="company-profile-head-actions">
             <a class="company-official-link" href={officialLink.url} target="_blank" rel="noreferrer">
               <Globe size={17} aria-hidden="true" />
               <span>{officialLink.kind === "website" ? copy.website : copy.officialProfile}</span>
               <ExternalLink size={14} aria-hidden="true" />
             </a>
-          )}
-        </div>
-
-        <div class="company-profile-overview">
-          <p class="eyebrow">{copy.overviewCode}</p>
-          <h2>{copy.overview}</h2>
-          <p>{company.positioning}</p>
-          <dl class="company-profile-summary">
-            <div><dt>{copy.focusSummary}</dt><dd>{strengths.join(" ") || copy.unknown}</dd></div>
-            <div><dt>{copy.productSummary}</dt><dd>{company.products.join(" · ")}</dd></div>
-            <div><dt>{copy.audienceSummary}</dt><dd>{fit.join(" ") || copy.unknown}</dd></div>
-            <div><dt>{copy.boundarySummary}</dt><dd>{company.verificationFocus ?? copy.unknown}</dd></div>
-          </dl>
-          <p class="company-profile-note">{copy.overviewNote}</p>
-        </div>
+          </div>
+        )}
       </div>
 
       <dl class="company-profile-meta">
@@ -154,6 +163,45 @@ const assessmentParagraphs = isZh
         <div><dt>{copy.reviewed}</dt><dd>{company.reviewedAt}</dd></div>
         <div><dt>{copy.sourceCount}</dt><dd>{refs.length} {copy.sourceUnit}</dd></div>
       </dl>
+
+      <div class="company-profile-intro-grid">
+        <section class="company-product-story">
+          <p class="eyebrow">{copy.storyCode}</p>
+          <h2>{copy.storyTitle}</h2>
+          <figure class="company-product-story-visual">
+            <img src={profileVisual.src} alt={profileVisual.alt[locale]} loading="eager" decoding="async" />
+            <figcaption>
+              <strong>{copy.conceptVisual}</strong>
+              <span>{copy.conceptVisualNote}</span>
+            </figcaption>
+          </figure>
+          <p class="company-product-story-intro">{copy.storyIntro}</p>
+          <div class="company-product-story-steps">
+            {storyItems.map((item, index) => (
+              <article class="company-product-story-step">
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <small>{copy.storyLabels[index]}</small>
+                  <strong>{item}</strong>
+                </div>
+              </article>
+            ))}
+          </div>
+          <p class="company-product-story-boundary">{copy.storyBoundary}</p>
+        </section>
+
+        <div class="company-profile-overview">
+          <p class="eyebrow">{copy.overviewCode}</p>
+          <h2>{copy.overview}</h2>
+          <p>{company.positioning}</p>
+          <dl class="company-profile-summary">
+            <div><dt>{copy.focusSummary}</dt><dd>{strengths.join(" ") || copy.unknown}</dd></div>
+            <div><dt>{copy.audienceSummary}</dt><dd>{fit.join(" ") || copy.unknown}</dd></div>
+            <div><dt>{copy.boundarySummary}</dt><dd>{company.verificationFocus ?? copy.unknown}</dd></div>
+          </dl>
+          <p class="company-profile-note">{copy.overviewNote}</p>
+        </div>
+      </div>
     </div>
   </header>
 
