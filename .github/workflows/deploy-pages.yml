@@ -30,6 +30,7 @@ jobs:
       - run: npm run test:ai-delivery
       - run: npm run test:robotics-labs
       - run: npm run build
+      - run: npm run check:ai-publication
       - run: npm run check:pages-capacity
       - run: npm run check:links
       - uses: actions/upload-pages-artifact@v3

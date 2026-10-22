@@ -1,13 +1,17 @@
 ---
+import { getCollection } from "astro:content";
 import CollectionPage from "../../../components/CollectionPage.astro";
-import { collections } from "../../../data/site";
+import { isVisible, toEntry } from "../../../data/content";
+const entries = (await getCollection("library"))
+  .filter((entry) => entry.data.locale === "en" && ["whitepaper", "case-study"].includes(entry.data.kind) && isVisible(entry))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
 <CollectionPage
   eyebrow="SOLUTIONS"
   title="Solutions"
   intro="Problem boundaries, decision criteria, and implementation steps written to be reviewed and used."
-  entries={collections.en.solutions}
+  entries={entries.map((entry) => toEntry(entry))}
   locale="en"
   showMeta={false}
 />

@@ -8,6 +8,7 @@
     "build": "node --max-old-space-size=8192 ./node_modules/astro/bin/astro.mjs build --mode pages",
     "build:local": "astro build",
     "check:pages-capacity": "node scripts/check-pages-capacity.mjs",
+    "check:ai-publication": "node scripts/check-ai-publication.mjs",
     "build:review": "astro build --mode review",
     "check": "astro check",
     "test:ai-delivery": "node scripts/test-ai-delivery.mjs",
@@ -23,7 +24,7 @@
     "audit": "node scripts/audit-content.mjs",
     "audit:repository": "node scripts/audit-repository.mjs",
     "check:links": "node scripts/check-links.mjs",
-    "verify": "npm run check && npm run audit && node scripts/test-pages-publication.mjs && npm run test:ai-delivery && npm run test:robotics-labs && npm run build && npm run check:pages-capacity && npm run check:links",
+    "verify": "npm run check && npm run audit && node scripts/test-pages-publication.mjs && npm run test:ai-delivery && npm run test:robotics-labs && npm run build && npm run check:ai-publication && npm run check:pages-capacity && npm run check:links",
     "preview": "astro preview"
   },
   "dependencies": {
