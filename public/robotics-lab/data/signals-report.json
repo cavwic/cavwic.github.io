@@ -1,0 +1,86 @@
+{
+  "rows": 480,
+  "episodes": 4,
+  "validRows": 479,
+  "flaggedRows": 6,
+  "affectedRows": 6,
+  "affectedRate": 0.0125,
+  "issues": [
+    {
+      "row": 170,
+      "episode": "episode-2",
+      "code": "JUMP",
+      "value": 64.18734297459596,
+      "limit": 8,
+      "detail": "Finite-difference velocity exceeds configured bound / 差分速度越过设定阈值",
+      "severity": "high"
+    },
+    {
+      "row": 171,
+      "episode": "episode-2",
+      "code": "JUMP",
+      "value": 63.43977208090215,
+      "limit": 8,
+      "detail": "Finite-difference velocity exceeds configured bound / 差分速度越过设定阈值",
+      "severity": "high"
+    },
+    {
+      "row": 185,
+      "episode": "episode-2",
+      "code": "CURRENT",
+      "value": 3.2,
+      "limit": 2,
+      "detail": "Current exceeds configured bound / 电流越过设定阈值",
+      "severity": "high"
+    },
+    {
+      "row": 190,
+      "episode": "episode-2",
+      "code": "TEMPERATURE",
+      "value": 78,
+      "limit": 65,
+      "detail": "Temperature exceeds configured bound / 温度越过设定阈值",
+      "severity": "high"
+    },
+    {
+      "row": 195,
+      "episode": "?",
+      "code": "SCHEMA",
+      "value": null,
+      "limit": null,
+      "detail": "Missing, non-finite or mismatched fields / 字段缺失、非有限或维度不一致",
+      "severity": "high"
+    },
+    {
+      "row": 196,
+      "episode": "episode-2",
+      "code": "GAP",
+      "value": 40,
+      "limit": 36,
+      "detail": "Sampling gap; not proof of a lost video frame / 采样间隔异常，不等于已证实视频丢帧",
+      "severity": "medium"
+    }
+  ],
+  "rules": {
+    "periodMs": 20,
+    "maxSensorLagMs": 35,
+    "maxCommandLagMs": 50,
+    "maxVelocityRadS": 8,
+    "maxCurrentA": 2,
+    "maxTemperatureC": 65,
+    "maxPositionRad": 2
+  },
+  "provenance": "Synthetic fault-injection fixture; seed=42; no physical sensor / video measurements",
+  "splitCounts": {
+    "train": 239,
+    "validation": 120,
+    "test": 120
+  },
+  "codes": {
+    "JUMP": 2,
+    "CURRENT": 1,
+    "TEMPERATURE": 1,
+    "SCHEMA": 1,
+    "GAP": 1
+  }
+}

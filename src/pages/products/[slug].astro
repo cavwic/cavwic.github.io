@@ -1,0 +1,25 @@
+---
+import ProductProfilePage from "../../components/ProductProfilePage.astro";
+import { getStandaloneRepositoryProductRecords, repositoryProductSlug } from "../../data/repository";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { isPagesBuild } from "../../data/build-scope";
+
+export function getStaticPaths() {
+  if (isPagesBuild) return [];
+  return getStandaloneRepositoryProductRecords("zh")
+    .map((product) => ({
+      params: { slug: repositoryProductSlug(product.id) },
+      props: { product: { ...product, slug: repositoryProductSlug(product.id) } },
+    }));
+}
+
+const { product } = Astro.props;
+---
+
+<BaseLayout
+  title={`${product.product} | 产品档案 | 机灵仓`}
+  description={product.evidence?.overview?.[0] ?? product.integration}
+  alternatePath={`/en/products/${product.slug}`}
+>
+  <ProductProfilePage product={product} locale="zh" />
+</BaseLayout>

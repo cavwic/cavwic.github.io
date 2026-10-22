@@ -1,0 +1,327 @@
+---
+import { ArrowRight, Building2, PackageSearch, Search, X } from "@lucide/astro";
+import {
+  getStandaloneRepositoryCompanies,
+  getStandaloneRepositoryProductRecords,
+  getStandaloneRepositoryCompanyPath,
+  getStandaloneRepositoryProductPath,
+} from "../data/repository";
+import type { Locale } from "../data/site";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const isZh = locale === "zh";
+const companies = getStandaloneRepositoryCompanies(locale);
+const products = getStandaloneRepositoryProductRecords(locale);
+const productsByCompany = companies.map((company) => ({
+  company,
+  products: products.filter((item) => item.profile.slug === company.slug),
+}));
+const copy = isZh
+  ? {
+      code: "COMPANY & PRODUCT METADATA",
+      title: "元数据仓库",
+      intro: "公司与产品页面独立于个人网站的行业分类，按公司、产品和公开参数分别记录。",
+      directory: "公司目录",
+      searchLabel: "搜索元数据仓库",
+      searchPlaceholder: "搜索公司、品牌、产品或型号",
+      clearSearch: "清空搜索",
+      searchResults: "搜索结果",
+      resultUnit: "条记录",
+      noResults: "没有找到相关公司或产品，请尝试缩短关键词或使用型号名称。",
+      companyType: "公司",
+      productType: "产品",
+      companies: "公司记录",
+      products: "产品记录",
+      companyRecord: "公司档案",
+      productIndex: "产品索引",
+      productIndexIntro: "按公司整理产品、产品族和平台记录；补充详细元数据后，同一份记录会自动生成对应页面。",
+      fields: "项公开字段",
+      openCompany: "查看公司记录",
+      openProduct: "查看产品记录",
+    }
+  : {
+      code: "COMPANY & PRODUCT METADATA",
+      title: "Metadata Repository",
+      intro: "Company and product pages are independent from the personal site's industry structure, with companies, products, and public specifications as the primary record units.",
+      directory: "Company directory",
+      searchLabel: "Search metadata repository",
+      searchPlaceholder: "Search companies, brands, products, or models",
+      clearSearch: "Clear search",
+      searchResults: "Search results",
+      resultUnit: "records",
+      noResults: "No matching company or product was found. Try a shorter term or a model name.",
+      companyType: "Company",
+      productType: "Product",
+      companies: "Company records",
+      products: "Product records",
+      companyRecord: "Company file",
+      productIndex: "Product index",
+      productIndexIntro: "Product, family, and platform records organized by company. Each deep metadata entry automatically generates its corresponding page.",
+      fields: "published fields",
+      openCompany: "Open company record",
+      openProduct: "Open product record",
+    };
+---
+
+<div class="repository-index">
+  <header class="repository-index-hero">
+    <div>
+      <p class="eyebrow">{copy.code}</p>
+      <h1>{copy.title}</h1>
+      <p>{copy.intro}</p>
+    </div>
+    <dl>
+      <div><dt>{copy.companies}</dt><dd>{companies.length}</dd></div>
+      <div><dt>{copy.products}</dt><dd>{products.length}</dd></div>
+    </dl>
+  </header>
+
+  <section class="repository-search" aria-labelledby="repository-search-title" data-repository-search>
+    <h2 id="repository-search-title" class="sr-only">{copy.searchLabel}</h2>
+    <div class="repository-search-control">
+      <Search size={22} stroke-width={1.8} aria-hidden="true" />
+      <input
+        type="search"
+        name="repository-query"
+        placeholder={copy.searchPlaceholder}
+        aria-label={copy.searchLabel}
+        autocomplete="off"
+        data-repository-search-input
+      />
+      <button type="button" aria-label={copy.clearSearch} title={copy.clearSearch} data-repository-search-clear hidden>
+        <X size={20} aria-hidden="true" />
+      </button>
+    </div>
+    <div class="repository-search-results" data-repository-search-results hidden>
+      <header>
+        <h2>{copy.searchResults}</h2>
+        <p><strong data-repository-search-count>0</strong> {copy.resultUnit}</p>
+      </header>
+      <ol>
+        {companies.map((company) => (
+          <li
+            data-repository-search-item
+            data-search-text={[company.name, company.englishName, company.valueChainRole, company.positioning, ...(company.products ?? [])].filter(Boolean).join(" ").toLocaleLowerCase()}
+            hidden
+          >
+            <a href={getStandaloneRepositoryCompanyPath(company.slug, locale)}>
+              <span class="repository-search-kind"><Building2 size={17} aria-hidden="true" />{copy.companyType}</span>
+              <span><strong>{company.name}</strong><small>{company.valueChainRole ?? company.positioning}</small></span>
+              <ArrowRight size={18} aria-hidden="true" />
+            </a>
+          </li>
+        ))}
+        {products.map((product) => (
+          <li
+            data-repository-search-item
+            data-search-text={[product.product, product.company, product.type, product.integration, ...product.parameters.flatMap((item) => [item.label, item.value])].filter(Boolean).join(" ").toLocaleLowerCase()}
+            hidden
+          >
+            <a href={getStandaloneRepositoryProductPath(product.id, locale)}>
+              <span class="repository-search-kind"><PackageSearch size={17} aria-hidden="true" />{copy.productType}</span>
+              <span><strong>{product.product}</strong><small>{product.company} · {product.type}</small></span>
+              <ArrowRight size={18} aria-hidden="true" />
+            </a>
+          </li>
+        ))}
+      </ol>
+      <p class="repository-search-empty" data-repository-search-empty hidden>{copy.noResults}</p>
+    </div>
+  </section>
+
+  <div data-repository-browse>
+  <section class="repository-company-directory" aria-labelledby="repository-company-directory-title">
+    <header>
+      <p class="eyebrow">01 / COMPANY DIRECTORY</p>
+      <h2 id="repository-company-directory-title">{copy.directory}</h2>
+    </header>
+    <ol>
+      {companies.map((company, index) => (
+        <li>
+          <a href={getStandaloneRepositoryCompanyPath(company.slug, locale)} aria-label={`${copy.openCompany}: ${company.name}`}>
+            <span class="repository-company-number">{String(index + 1).padStart(2, "0")}</span>
+            <span class="repository-company-icon"><Building2 size={20} stroke-width={1.7} aria-hidden="true" /></span>
+            <span class="repository-company-name">
+              <strong>{company.name}</strong>
+              <small>{isZh && company.englishName ? company.englishName : company.positioning}</small>
+            </span>
+            <span class="repository-company-count">{productsByCompany[index].products.length} {copy.products}</span>
+            <ArrowRight size={18} aria-hidden="true" />
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="repository-product-index" aria-labelledby="repository-product-index-title">
+    <header>
+      <div>
+        <p class="eyebrow">02 / PRODUCT INDEX</p>
+        <h2 id="repository-product-index-title">{copy.productIndex}</h2>
+      </div>
+      <p>{copy.productIndexIntro}</p>
+    </header>
+    <div class="repository-product-groups">
+      {productsByCompany.map(({ company, products: companyProducts }, companyIndex) => (
+        <details open={companyIndex === 0}>
+          <summary>
+            <span>{String(companyIndex + 1).padStart(2, "0")}</span>
+            <strong>{company.name}</strong>
+            <small>{companyProducts.length} {copy.products}</small>
+          </summary>
+          <ol>
+            {companyProducts.map((product, index) => (
+              <li>
+                <a href={getStandaloneRepositoryProductPath(product.id, locale)} aria-label={`${copy.openProduct}: ${product.product}`}>
+                  <span class="repository-product-number">{String(index + 1).padStart(2, "0")}</span>
+                  <span class="repository-product-name"><strong>{product.product}</strong><small>{product.type}</small></span>
+                  <span class="repository-product-parameter"><PackageSearch size={16} aria-hidden="true" />{product.parameters.filter((item) => item.status !== "unknown").length} {copy.fields}</span>
+                  <ArrowRight size={18} aria-hidden="true" />
+                </a>
+              </li>
+            ))}
+          </ol>
+        </details>
+      ))}
+    </div>
+  </section>
+  </div>
+</div>
+
+<script is:inline>
+  document.querySelectorAll("[data-repository-search]").forEach((root) => {
+    const input = root.querySelector("[data-repository-search-input]");
+    const clear = root.querySelector("[data-repository-search-clear]");
+    const results = root.querySelector("[data-repository-search-results]");
+    const count = root.querySelector("[data-repository-search-count]");
+    const empty = root.querySelector("[data-repository-search-empty]");
+    const browse = root.parentElement?.querySelector("[data-repository-browse]");
+    const items = [...root.querySelectorAll("[data-repository-search-item]")];
+    if (!(input instanceof HTMLInputElement) || !(clear instanceof HTMLButtonElement) || !results || !count || !empty) return;
+
+    const normalize = (value) => value.normalize("NFKC").toLocaleLowerCase().trim();
+    const update = () => {
+      const query = normalize(input.value);
+      const terms = query.split(/\s+/).filter(Boolean);
+      let matches = 0;
+      items.forEach((item) => {
+        const haystack = normalize(item.getAttribute("data-search-text") ?? "");
+        const visible = terms.length > 0 && terms.every((term) => haystack.includes(term));
+        item.hidden = !visible;
+        if (visible) matches += 1;
+      });
+      const active = terms.length > 0;
+      results.hidden = !active;
+      clear.hidden = !active;
+      empty.hidden = !active || matches > 0;
+      count.textContent = String(matches);
+      if (browse instanceof HTMLElement) browse.hidden = active;
+    };
+
+    input.addEventListener("input", update);
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        input.value = "";
+        update();
+      }
+    });
+    clear.addEventListener("click", () => {
+      input.value = "";
+      update();
+      input.focus();
+    });
+  });
+</script>
+
+<style>
+  .repository-index { width: min(1800px, calc(100% - 48px)); margin: 0 auto; padding: 62px 0 96px; }
+  .repository-index-hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 56px; align-items: end; padding-bottom: 46px; border-bottom: 1px solid var(--ink); }
+  .repository-index-hero h1 { margin: 8px 0 16px; font-family: var(--display); font-size: 72px; line-height: .95; }
+  .repository-index-hero > div > p:last-child { max-width: 720px; margin: 0; color: var(--ink-soft); font-size: 17px; line-height: 1.75; }
+  .repository-index-hero dl { display: grid; grid-template-columns: repeat(2, 140px); margin: 0; border: 1px solid var(--line); }
+  .repository-index-hero dl div { display: grid; gap: 6px; padding: 20px; }
+  .repository-index-hero dl div + div { border-left: 1px solid var(--line); }
+  .repository-index-hero dt { color: var(--ink-soft); font-size: 12px; }
+  .repository-index-hero dd { order: -1; margin: 0; color: var(--signal); font-family: var(--display); font-size: 34px; line-height: 1; }
+  .repository-search { margin: 30px 0 0; }
+  .repository-search-control { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; align-items: center; min-height: 64px; padding: 0 10px 0 18px; border: 1px solid var(--ink); background: var(--paper); }
+  .repository-search-control > svg { color: var(--teal); }
+  .repository-search-control input { width: 100%; min-width: 0; height: 62px; padding: 0 14px; color: var(--ink); border: 0; outline: 0; background: transparent; font: 700 18px/1.2 var(--body); }
+  .repository-search-control input::placeholder { color: var(--ink-soft); opacity: 1; }
+  .repository-search-control button { display: grid; width: 40px; height: 40px; place-items: center; padding: 0; color: var(--ink); border: 1px solid var(--line); border-radius: 3px; background: transparent; cursor: pointer; }
+  .repository-search-control button[hidden] { display: none; }
+  .repository-search-control button:hover, .repository-search-control button:focus-visible { color: var(--on-signal); border-color: var(--signal); background: var(--signal); }
+  .repository-search-results { margin-top: 18px; border-top: 1px solid var(--ink); }
+  .repository-search-results > header { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 22px 4px 18px; border-bottom: 1px solid var(--line); }
+  .repository-search-results > header h2 { margin: 0; font-family: var(--display); font-size: 28px; }
+  .repository-search-results > header p { margin: 0; color: var(--ink-soft); font-family: var(--mono); font-size: 11px; }
+  .repository-search-results > header strong { color: var(--signal); font-size: 18px; }
+  .repository-search-results ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; padding: 0; border-left: 1px solid var(--line); list-style: none; }
+  .repository-search-results li { min-width: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .repository-search-results li a { display: grid; grid-template-columns: 88px minmax(0, 1fr) 20px; gap: 15px; align-items: center; min-height: 96px; padding: 16px; color: var(--ink); }
+  .repository-search-results li a:hover { background: var(--paper-deep); }
+  .repository-search-results li a > span:nth-child(2) { display: grid; min-width: 0; gap: 6px; }
+  .repository-search-results li strong { overflow: hidden; font-family: var(--display); font-size: 20px; line-height: 1.15; text-overflow: ellipsis; white-space: nowrap; }
+  .repository-search-results li small { overflow: hidden; color: var(--ink-soft); font-size: 12px; line-height: 1.4; text-overflow: ellipsis; white-space: nowrap; }
+  .repository-search-kind { display: inline-flex; align-items: center; gap: 7px; color: var(--teal); font-family: var(--mono); font-size: 10px; font-weight: 700; }
+  .repository-search-empty { margin: 0; padding: 46px 20px; color: var(--ink-soft); border: 1px solid var(--line); border-top: 0; text-align: center; }
+  [data-repository-browse][hidden] { display: none; }
+  .repository-company-directory { margin: 48px 0 72px; }
+  .repository-company-directory > header { margin-bottom: 22px; }
+  .repository-company-directory h2 { margin: 8px 0 0; font-family: var(--display); font-size: 38px; }
+  .repository-company-directory ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; padding: 0; border-top: 1px solid var(--ink); border-left: 1px solid var(--line); list-style: none; }
+  .repository-company-directory li { min-width: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .repository-company-directory li a { display: grid; grid-template-columns: 34px 40px minmax(0, 1fr) auto 20px; gap: 12px; align-items: center; min-height: 112px; padding: 18px; color: var(--ink); }
+  .repository-company-directory li a:hover { background: var(--paper-deep); }
+  .repository-company-number { color: var(--signal); font-family: var(--mono); font-size: 11px; }
+  .repository-company-icon { display: grid; width: 40px; height: 40px; place-items: center; color: var(--teal); border: 1px solid var(--line); }
+  .repository-company-name { display: grid; min-width: 0; gap: 6px; }
+  .repository-company-name strong { font-family: var(--display); font-size: 23px; line-height: 1.1; }
+  .repository-company-name small { overflow: hidden; color: var(--ink-soft); font-size: 12px; line-height: 1.45; text-overflow: ellipsis; white-space: nowrap; }
+  .repository-company-count { color: var(--teal); font-family: var(--mono); font-size: 10px; white-space: nowrap; }
+  .repository-product-index > header { display: grid; grid-template-columns: minmax(0, .75fr) minmax(280px, 1fr); gap: 48px; align-items: end; margin-bottom: 24px; }
+  .repository-product-index h2 { margin: 8px 0 0; font-family: var(--display); font-size: 38px; }
+  .repository-product-index > header > p { margin: 0; color: var(--ink-soft); line-height: 1.65; }
+  .repository-product-groups { border-top: 1px solid var(--ink); }
+  .repository-product-groups details { border-bottom: 1px solid var(--line); }
+  .repository-product-groups summary { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 16px; align-items: center; min-height: 68px; padding: 12px; color: var(--ink); cursor: pointer; list-style: none; }
+  .repository-product-groups summary::-webkit-details-marker { display: none; }
+  .repository-product-groups summary > span { color: var(--signal); font-family: var(--mono); font-size: 11px; }
+  .repository-product-groups summary > strong { font-family: var(--display); font-size: 22px; }
+  .repository-product-groups summary > small { color: var(--teal); font-family: var(--mono); font-size: 10px; }
+  .repository-product-groups details[open] > summary { background: var(--paper-deep); }
+  .repository-product-index ol { margin: 0 0 18px 44px; padding: 0; border-top: 1px solid var(--line); list-style: none; }
+  .repository-product-index li { border-bottom: 1px solid var(--line); }
+  .repository-product-index li a { display: grid; grid-template-columns: 50px minmax(0, 1fr) auto 24px; gap: 18px; align-items: center; min-height: 88px; padding: 14px 12px; color: var(--ink); }
+  .repository-product-index li a:hover { background: var(--paper-deep); }
+  .repository-product-number { color: var(--signal); font-family: var(--mono); font-size: 12px; }
+  .repository-product-name { display: grid; gap: 5px; }
+  .repository-product-name strong { font-family: var(--display); font-size: 21px; }
+  .repository-product-name small { color: var(--ink-soft); font-size: 13px; }
+  .repository-product-parameter { display: inline-flex; align-items: center; gap: 8px; color: var(--teal); font-family: var(--mono); font-size: 11px; }
+  @media (max-width: 820px) {
+    .repository-index { width: min(100% - 30px, 1800px); padding-top: 40px; }
+    .repository-index-hero { grid-template-columns: 1fr; gap: 28px; }
+    .repository-index-hero dl { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .repository-company-directory ol { grid-template-columns: 1fr; }
+    .repository-search-results ol { grid-template-columns: 1fr; }
+    .repository-product-index > header { grid-template-columns: 1fr; gap: 12px; }
+  }
+  @media (max-width: 560px) {
+    .repository-index { width: calc(100% - 24px); }
+    .repository-index-hero h1 { font-size: 44px; }
+    .repository-search-control { grid-template-columns: 24px minmax(0, 1fr) auto; min-height: 58px; padding-left: 12px; }
+    .repository-search-control input { height: 56px; padding: 0 10px; font-size: 16px; }
+    .repository-search-results li a { grid-template-columns: 70px minmax(0, 1fr) 18px; gap: 10px; padding: 14px 10px; }
+    .repository-company-directory li a { grid-template-columns: 30px 36px minmax(0, 1fr) 18px; gap: 9px; padding: 14px 10px; }
+    .repository-company-icon { width: 36px; height: 36px; }
+    .repository-company-count { display: none; }
+    .repository-product-index ol { margin-left: 0; }
+    .repository-product-index li a { grid-template-columns: 34px minmax(0, 1fr) 20px; gap: 10px; }
+    .repository-product-parameter { display: none; }
+  }
+</style>

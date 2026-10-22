@@ -1,0 +1,1063 @@
+{
+  "checkedAt": "2026-10-18",
+  "blocks": [
+    {
+      "companySlug": "agibot",
+      "product": "AGIBOT D1 Max",
+      "rows": [
+        {
+          "label": {
+            "zh": "本体状态灯表第1行",
+            "en": "Manual body status indicator row 1"
+          },
+          "value": {
+            "zh": "白色；慢闪；启动中",
+            "en": "White; Slow Flash; Startup in progress"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页12/印刷页10；Description of Light Effect / Status Indicator / row1；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp12 / printed pp10; Description of Light Effect / Status Indicator / row1; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体状态灯表第2行",
+            "en": "Manual body status indicator row 2"
+          },
+          "value": {
+            "zh": "白色；常亮；手动控制/机器工作状态",
+            "en": "White; Normally On; Manual Control/Machine Work State"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页12/印刷页10；Description of Light Effect / Status Indicator / row2；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp12 / printed pp10; Description of Light Effect / Status Indicator / row2; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体状态灯表第3行",
+            "en": "Manual body status indicator row 3"
+          },
+          "value": {
+            "zh": "白色；呼吸；待机",
+            "en": "White; Breathe; Standby"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页12/印刷页10；Description of Light Effect / Status Indicator / row3；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp12 / printed pp10; Description of Light Effect / Status Indicator / row3; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体状态灯表第4行",
+            "en": "Manual body status indicator row 4"
+          },
+          "value": {
+            "zh": "绿色；慢闪；定位/自动返回中",
+            "en": "Green; Slow Flash; Locating/Auto Return in Progress"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页12/印刷页10；Description of Light Effect / Status Indicator / row4；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp12 / printed pp10; Description of Light Effect / Status Indicator / row4; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体状态灯表第5行",
+            "en": "Manual body status indicator row 5"
+          },
+          "value": {
+            "zh": "绿色；常亮；自动任务执行中",
+            "en": "Green; Normally On; Auto Task Execution in Progress"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页12/印刷页10；Description of Light Effect / Status Indicator / row5；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp12 / printed pp10; Description of Light Effect / Status Indicator / row5; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体状态灯表第6行",
+            "en": "Manual body status indicator row 6"
+          },
+          "value": {
+            "zh": "黄色；快闪；报警状态",
+            "en": "Yellow; Quick Flash; Alarm State"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页12/印刷页10；Description of Light Effect / Status Indicator / row6；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp12 / printed pp10; Description of Light Effect / Status Indicator / row6; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体状态灯表第7行",
+            "en": "Manual body status indicator row 7"
+          },
+          "value": {
+            "zh": "黄色；常亮；低电量",
+            "en": "Yellow; Normally On; Low Battery"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页12/印刷页10；Description of Light Effect / Status Indicator / row7；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp12 / printed pp10; Description of Light Effect / Status Indicator / row7; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体状态灯表第8行",
+            "en": "Manual body status indicator row 8"
+          },
+          "value": {
+            "zh": "红色；快闪；故障状态",
+            "en": "Red; Quick Flash; Fault State"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页12/印刷页10；Description of Light Effect / Status Indicator / row8；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp12 / printed pp10; Description of Light Effect / Status Indicator / row8; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体状态灯表第9行",
+            "en": "Manual body status indicator row 9"
+          },
+          "value": {
+            "zh": "红色；常亮；软急停",
+            "en": "Red; Normally On; Soft Emergency Stop"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页12/印刷页10；Description of Light Effect / Status Indicator / row9；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp12 / printed pp10; Description of Light Effect / Status Indicator / row9; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。 本行写软急停，同页附注称硬急停时状态灯与硬急停按钮灯也为红色常亮；不把红色常亮当作软急停独有状态。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied. This row says soft emergency stop; the same-page note also states steady red status and button lights for hard emergency stop. Steady red is not exclusive to soft emergency stop."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体状态灯表第10行",
+            "en": "Manual body status indicator row 10"
+          },
+          "value": {
+            "zh": "蓝色；常亮；升级中",
+            "en": "Blue; Normally On; Upgrading"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页12/印刷页10；Description of Light Effect / Status Indicator / row10；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp12 / printed pp10; Description of Light Effect / Status Indicator / row10; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体状态灯表第11行",
+            "en": "Manual body status indicator row 11"
+          },
+          "value": {
+            "zh": "原表颜色栏为/；呼吸；充电（选配充电桩）",
+            "en": "/; Breathing State; Charging (Optional Charging Pile)"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页12/印刷页10；Description of Light Effect / Status Indicator / row11；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp12 / printed pp10; Description of Light Effect / Status Indicator / row11; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。 颜色栏为/，不从上行蓝色继承颜色；该充电状态以选配充电桩为条件。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied. Color cell is /, not inherited blue from the preceding row; this charging state requires the optional charging pile."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "前后状态灯方向条件",
+            "en": "Manual front and rear status-light direction condition"
+          },
+          "value": {
+            "zh": "主行进方向切换时对应方向的状态灯点亮，再执行表列灯效；除前后主方向切换状态外，前后灯一致",
+            "en": "On a main-direction switch, the corresponding direction light illuminates before the listed effect; front and rear lights otherwise agree"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页12/印刷页10；Status Indicator / warning notes；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp12 / printed pp10; Status Indicator / warning notes; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "硬急停双灯显示",
+            "en": "Manual hard-stop dual-light indication"
+          },
+          "value": {
+            "zh": "硬急停触发时，本体状态灯和硬急停按钮指示灯均为红色常亮",
+            "en": "With hard emergency stop triggered, both body status and hard-stop button indicators are steady red"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页12,13/印刷页10,11；Status Indicator hard-stop note; Emergency Stop Indicator；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp12,13 / printed pp10,11; Status Indicator hard-stop note; Emergency Stop Indicator; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。 只是两类灯的联合显示，不推定安全等级、断电路径或停止时间；软急停表行另保留。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied. Only the joint indication of two light types, not a safety rating, power-disconnection path or stop time; the separate soft-stop table row is retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体电池75-100%灯态",
+            "en": "Manual body battery 75-100% indication"
+          },
+          "value": {
+            "zh": "电量75-100%；LED1=常亮；LED2=常亮；LED3=常亮；LED4=常亮",
+            "en": "Battery level 75-100%; LED1=ON; LED2=ON; LED3=ON; LED4=ON"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页13/印刷页11；Battery Indicator Light / row1；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp13 / printed pp11; Battery Indicator Light / row1; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 按表中原区间转录；0%、25%、50%、75%边界重叠和0%单列闪烁行均保留，不推定开闭区间、取整或小数阈值。LED是显示位置，不是电芯数量或SOC测量精度。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Printed ranges are retained, including shared 0%, 25%, 50%, 75% boundaries and the separate flashing-at-0% row. No open/closed interval, rounding or fractional threshold is inferred. LEDs are display positions, not cell count or SOC measurement accuracy."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体电池50-75%灯态",
+            "en": "Manual body battery 50-75% indication"
+          },
+          "value": {
+            "zh": "电量50-75%；LED1=常亮；LED2=常亮；LED3=常亮；LED4=灭",
+            "en": "Battery level 50-75%; LED1=ON; LED2=ON; LED3=ON; LED4=OFF"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页13/印刷页11；Battery Indicator Light / row2；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp13 / printed pp11; Battery Indicator Light / row2; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 按表中原区间转录；0%、25%、50%、75%边界重叠和0%单列闪烁行均保留，不推定开闭区间、取整或小数阈值。LED是显示位置，不是电芯数量或SOC测量精度。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Printed ranges are retained, including shared 0%, 25%, 50%, 75% boundaries and the separate flashing-at-0% row. No open/closed interval, rounding or fractional threshold is inferred. LEDs are display positions, not cell count or SOC measurement accuracy."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体电池25-50%灯态",
+            "en": "Manual body battery 25-50% indication"
+          },
+          "value": {
+            "zh": "电量25-50%；LED1=常亮；LED2=常亮；LED3=灭；LED4=灭",
+            "en": "Battery level 25-50%; LED1=ON; LED2=ON; LED3=OFF; LED4=OFF"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页13/印刷页11；Battery Indicator Light / row3；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp13 / printed pp11; Battery Indicator Light / row3; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 按表中原区间转录；0%、25%、50%、75%边界重叠和0%单列闪烁行均保留，不推定开闭区间、取整或小数阈值。LED是显示位置，不是电芯数量或SOC测量精度。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Printed ranges are retained, including shared 0%, 25%, 50%, 75% boundaries and the separate flashing-at-0% row. No open/closed interval, rounding or fractional threshold is inferred. LEDs are display positions, not cell count or SOC measurement accuracy."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体电池0-25%灯态",
+            "en": "Manual body battery 0-25% indication"
+          },
+          "value": {
+            "zh": "电量0-25%；LED1=常亮；LED2=灭；LED3=灭；LED4=灭",
+            "en": "Battery level 0-25%; LED1=ON; LED2=OFF; LED3=OFF; LED4=OFF"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页13/印刷页11；Battery Indicator Light / row4；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp13 / printed pp11; Battery Indicator Light / row4; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 按表中原区间转录；0%、25%、50%、75%边界重叠和0%单列闪烁行均保留，不推定开闭区间、取整或小数阈值。LED是显示位置，不是电芯数量或SOC测量精度。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Printed ranges are retained, including shared 0%, 25%, 50%, 75% boundaries and the separate flashing-at-0% row. No open/closed interval, rounding or fractional threshold is inferred. LEDs are display positions, not cell count or SOC measurement accuracy."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体电池0%灯态",
+            "en": "Manual body battery 0% indication"
+          },
+          "value": {
+            "zh": "电量0%；LED1=闪烁；LED2=灭；LED3=灭；LED4=灭",
+            "en": "Battery level 0%; LED1=Flashing; LED2=OFF; LED3=OFF; LED4=OFF"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页13/印刷页11；Battery Indicator Light / row5；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp13 / printed pp11; Battery Indicator Light / row5; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 按表中原区间转录；0%、25%、50%、75%边界重叠和0%单列闪烁行均保留，不推定开闭区间、取整或小数阈值。LED是显示位置，不是电芯数量或SOC测量精度。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Printed ranges are retained, including shared 0%, 25%, 50%, 75% boundaries and the separate flashing-at-0% row. No open/closed interval, rounding or fractional threshold is inferred. LEDs are display positions, not cell count or SOC measurement accuracy."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体电池充电流动灯态",
+            "en": "Manual body battery charging-flow indication"
+          },
+          "value": {
+            "zh": "4个LED顺序点亮；原表描述为“Charging”，充满时4灯常亮",
+            "en": "Four LEDs illuminate in sequence; source description says Charging, with all four LEDs steady when fully charged"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页13/印刷页11；Battery Indicator Light / row6；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp13 / printed pp11; Battery Indicator Light / row6; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 按表中原区间转录；0%、25%、50%、75%边界重叠和0%单列闪烁行均保留，不推定开闭区间、取整或小数阈值。LED是显示位置，不是电芯数量或SOC测量精度。 本行没有各充电阶段SOC范围，也未给流动频率；不套用Ultra-W的分段表。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Printed ranges are retained, including shared 0%, 25%, 50%, 75% boundaries and the separate flashing-at-0% row. No open/closed interval, rounding or fractional threshold is inferred. LEDs are display positions, not cell count or SOC measurement accuracy. This row gives no SOC range per charging stage or sequence frequency; the Ultra-W segmented table is not transferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "急停按钮灯表第1行",
+            "en": "Manual emergency-stop button indicator row 1"
+          },
+          "value": {
+            "zh": "灯灭；硬急停未触发",
+            "en": "Light Off; Hard Emergency Stop Not Triggered"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页13/印刷页11；Emergency Stop Indicator / row1；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp13 / printed pp11; Emergency Stop Indicator / row1; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "急停按钮灯表第2行",
+            "en": "Manual emergency-stop button indicator row 2"
+          },
+          "value": {
+            "zh": "红色常亮；硬急停已触发",
+            "en": "Red Light Normally On; Hard Emergency Stop Triggered"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页13/印刷页11；Emergency Stop Indicator / row2；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp13 / printed pp11; Emergency Stop Indicator / row2; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 灯色/灯效与状态映射，不是闪烁频率、响应时间、诊断覆盖率或唯一故障判据；未披露阈值不补写。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Color/effect-to-state mapping, not flash frequency, response time, diagnostic coverage or an exclusive fault criterion; undisclosed thresholds are not supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池高温禁用警示口径",
+            "en": "Manual battery high-temperature warning scopes"
+          },
+          "value": {
+            "zh": "物理第4页以超过60摄氏度为极高温示例，禁止使用或放置；第5页另列禁止在高温环境（>80摄氏度）使用或存储",
+            "en": "Physical p4 uses over60 C as an extreme-temperature example prohibiting use/placement; p5 separately prohibits use/storage in high-temperature environments (>80 C)"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页4,5/印刷页2,3；Battery Application / high-temperature warnings；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp4,5 / printed pp2,3; Battery Application / high-temperature warnings; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 两处警示原值并列保留，不把80摄氏度解释为允许工作上限或可覆盖60摄氏度警示；不是电池充电温度或整机存储温度额定值。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Both warning values are preserved;80 C is not an allowed operating ceiling or an override of the60 C warning. These are not battery charging or whole-robot storage ratings."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池静电环境禁用值",
+            "en": "Manual battery electrostatic-environment prohibition"
+          },
+          "value": {
+            "zh": "禁止在静电放电超过1000 V的环境使用电池",
+            "en": "Battery use is prohibited in environments with electrostatic discharge over1000 V"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页5/印刷页3；Battery Application / electrostatic discharge warning；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp5 / printed pp3; Battery Application / electrostatic discharge warning; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 禁用环境阈值，不是已通过的ESD耐受等级；未给接触/空气放电、标准或测试次数。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Prohibited-environment threshold, not a verified ESD immunity rating; contact/air discharge, standard and test count are not specified."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "单电芯欠压保护状态",
+            "en": "Manual single-cell-undervoltage battery state"
+          },
+          "value": {
+            "zh": "检测到单电芯欠压后进入存储模式；电源按键无响应，指示灯灭；手册称充电后可退出该模式",
+            "en": "Single-cell undervoltage enters storage mode; power button is unresponsive and indicator off; the manual states charging can exit that mode"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页5/印刷页3；Battery Application / single-cell undervoltage mode；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp5 / printed pp3; Battery Application / single-cell undervoltage mode; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 未披露欠压阈值、延时、电芯数量或恢复电压；不是对损坏/过放电池的恢复操作建议，原文也警示长期过放电池继续使用有风险。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. No undervoltage threshold, delay, cell count or recovery voltage is disclosed. This is not advice to recover a damaged/over-discharged battery; the source also warns of risk from continued use after long-term over-discharge."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池休眠唤醒源",
+            "en": "Manual battery sleep wake sources"
+          },
+          "value": {
+            "zh": "经电池按键关机后进入休眠；通信、按键或充电可唤醒",
+            "en": "Battery-button shutdown enters sleep; communication, button or charging can wake it"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页5/印刷页3；Battery Application / sleep mode；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp5 / printed pp3; Battery Application / sleep mode; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 这是休眠模式，不能与欠压存储保护模式合并；不披露待机功耗、唤醒延迟或通信协议。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Sleep is distinct from undervoltage storage protection; standby power, wake latency and communication protocol are not disclosed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "单电池与双电池供电支持",
+            "en": "Manual single and dual battery supply modes"
+          },
+          "value": {
+            "zh": "双电池仓；支持单电池或双电池供电；插接接口为防误插设计",
+            "en": "Dual battery compartments support single- or dual-battery supply; mating interface has insertion-error prevention"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页18/印刷页16；Pre-start Preparation / battery supply modes；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp18 / printed pp16; Pre-start Preparation / battery supply modes; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 不推定两模式输出能力、续航折算或电池并联拓扑；不表示可在单电池带电状态直接拔除。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. No mode-specific output, runtime scaling or parallel topology is inferred; this does not permit removing the sole powered battery."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "双电池热插拔供电前提",
+            "en": "Manual battery hot-swap power-state boundary"
+          },
+          "value": {
+            "zh": "双电池供电时可更换其中一块，替换电池可为开或关；只有一块带电电池时禁止直接拔出该电池关机",
+            "en": "While both batteries supply power, one may be replaced by an ON or OFF battery; with only one powered battery, direct removal as shutdown is prohibited"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页21/印刷页19；Battery Swapping / power-state constraints；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp21 / printed pp19; Battery Swapping / power-state constraints; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 限定原文供电状态；不推定无电池维持时间、断电切换时间或可任意拔除两块电池。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Limited to the stated supply state; no battery-free hold-up time, switching interruption time or permission to remove both batteries is inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "充电座电源开关灯态",
+            "en": "Manual cradle mains-switch indication"
+          },
+          "value": {
+            "zh": "充电座翘板开关红灯常亮：已接电并开启",
+            "en": "Steady red on the cradle rocker switch: connected to power and switched on"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页24/印刷页22；Charging Preparation / rocker-switch indicator；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp24 / printed pp22; Charging Preparation / rocker-switch indicator; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 电源开关灯，不是电池充满灯、故障灯或MaxPro适配器LED1/LED2；不外推断电时的其他灯态。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Mains-switch light, not battery-full/fault indication or MaxPro adapter LED1/LED2; other power-off light states are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "充电座稳定充电灯态",
+            "en": "Manual cradle stable-charging indication"
+          },
+          "value": {
+            "zh": "与电池对应的充电座指示灯绿色常亮：稳定充电",
+            "en": "The cradle indicator corresponding to the battery is steady green: stable charging"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页25/印刷页23；Battery Charging / cradle green indicator；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp25 / printed pp23; Battery Charging / cradle green indicator; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 只保留D1 Max充电座原文；绿色在此不是充满判定，不移用MaxPro充电器的双色表。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Retains this D1 Max cradle statement only; green here does not mean fully charged and the MaxPro charger table is not transferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "充电期间本体电池LED含义",
+            "en": "Manual body-battery LED charging-segment meanings"
+          },
+          "value": {
+            "zh": "电池灯顺序显示进度；常亮表示对应段充满，快闪表示该段正在充电；充满后4灯常亮",
+            "en": "Battery LEDs show progress sequentially; steady means the corresponding segment is full, rapid flashing means that segment is charging; all four steady when fully charged"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页25/印刷页23；Battery Charging / battery LEDs；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp25 / printed pp23; Battery Charging / battery LEDs; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 按表中原区间转录；0%、25%、50%、75%边界重叠和0%单列闪烁行均保留，不推定开闭区间、取整或小数阈值。LED是显示位置，不是电芯数量或SOC测量精度。 这是电池自身LED，不是充电座绿色指示灯；充电分段的SOC数值未披露，不由四灯推成等分。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Printed ranges are retained, including shared 0%, 25%, 50%, 75% boundaries and the separate flashing-at-0% row. No open/closed interval, rounding or fractional threshold is inferred. LEDs are display positions, not cell count or SOC measurement accuracy. These are battery LEDs, not the cradle green indicator; charging-segment SOC values are undisclosed and are not inferred as four equal divisions."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "充电连接时长警示",
+            "en": "Manual battery charging-duration warning"
+          },
+          "value": {
+            "zh": "充满后及时断开电池或充电座电源；充电时间不应超过6 h",
+            "en": "Disconnect the battery or cradle power promptly after full charge; charging should not exceed6 h"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页25/印刷页23；Battery Charging / time warning；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp25 / printed pp23; Battery Charging / time warning; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 安全注意上限，不是从空到满的充电时间、恒流阶段时长或6小时续航；旧<1.5 h充电规格不改动。手册禁止第三方充电器/充电座。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Safety precaution, not empty-to-full charge time, constant-current duration or6-hour runtime; the historical<1.5h charge specification stays unchanged. The manual prohibits third-party chargers/cradles."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "遥控器电池充电灯态",
+            "en": "Manual remote battery charging indication"
+          },
+          "value": {
+            "zh": "指示灯顺序显示充电进度；常亮为该段充满，快闪为该段正在充电",
+            "en": "Indicators show charging progress sequentially; steady indicates a full segment and rapid flashing indicates the segment being charged"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页25/印刷页23；Remote Control Charging / LEDs；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp25 / printed pp23; Remote Control Charging / LEDs; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 仅遥控器电池显示；未列灯数、SOC分段、电池化学体系或容量，不能继承本体四灯表。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Remote battery display only; LED count, SOC segments, chemistry and capacity are not stated and cannot inherit the robot four-LED table."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "遥控器电池充电维护周期",
+            "en": "Manual remote battery charge-maintenance interval"
+          },
+          "value": {
+            "zh": "手册要求每月充满一次以保持电池状态",
+            "en": "The manual calls for one full charge per month to maintain battery condition"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页25/印刷页23；Remote Control Charging / battery upkeep interval；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp25 / printed pp23; Remote Control Charging / battery upkeep interval; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 附件维护周期，不是电池循环寿命、自放电率或连续工作时长；不提供充电操作步骤。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Accessory upkeep interval, not cycle life, self-discharge rate or continuous runtime; no charging procedure is expanded."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "整机存储环境温度",
+            "en": "Manual equipment storage ambient temperature"
+          },
+          "value": {
+            "zh": "存储环境-20至60摄氏度；干燥通风，远离强磁场和强振动",
+            "en": "Storage ambient -20 to60 C; dry and ventilated, away from strong magnetic fields and vibration"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页27/印刷页25；Storage / Environmental Preparation；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp27 / printed pp25; Storage / Environmental Preparation; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 存储环境，不是整机运行、充电座充电或电池独立存储额定范围；第5页电池另要求室温。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Storage environment, not robot operation, cradle charging or a standalone battery storage rating; p5 separately specifies room temperature for the battery."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池存储电量建议差异",
+            "en": "Manual battery storage-charge recommendations"
+          },
+          "value": {
+            "zh": "物理第5页：室温存储，电量30%-60%；第27页存储准备：电量50%-60%",
+            "en": "Physical p5:room-temperature storage at30%-60% charge; p27 storage preparation:50%-60% charge"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页5,27/印刷页3,25；Battery Application; Storage / Battery Power Regulation；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp5,27 / printed pp3,25; Battery Application; Storage / Battery Power Regulation; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 不同段落建议并列保留，不擅自统一下限或推定不同电池版本。第5页另有把容量百分比称为电压的措辞，不据此生成电压阈值。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Recommendations from different sections are retained without reconciling the lower bound or inferring different battery revisions. The p5 wording also calls a capacity percentage voltage; it is not used to create a voltage threshold."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池存储补电周期条件",
+            "en": "Manual battery storage-maintenance schedules"
+          },
+          "value": {
+            "zh": "第5页：每3个月补至50%；存储超过1年后建议每年完整充放电一次。第28页：短期存储1-3个月，低于40%补至50%-60%；长期超过3个月，每月先放至30%再充至60%",
+            "en": "P5:top up to50% every3 months; after storage over1 year, one full charge-discharge cycle annually is advised. P28:for1-3 months storage, below40% is topped up to50%-60%; for storage over3 months, monthly discharge to30% then charge to60%"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页5,28/印刷页3,26；Battery storage / interval and SOC conditions；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp5,28 / printed pp3,26; Battery storage / interval and SOC conditions; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 保留不同章节、存储时长和电量条件，不合并成统一周期或电池循环寿命；原文“防止记忆效应”理由未作为已验证电池性能导入。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Different sections, storage durations and charge conditions remain separate, not a unified interval or battery cycle life. The source rationale about preventing memory effect is not imported as verified battery performance."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "用户手册遥控器名称与SDK清单",
+            "en": "Manual remote reference versus SDK checklist"
+          },
+          "value": {
+            "zh": "用户手册要求参阅Genisom M1遥控器用户手册；已有SDK装箱单称G20 RC",
+            "en": "The user manual refers to the Genisom M1 Remote Controller User Manual; the retained SDK checklist says G20 RC"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页20,30/印刷页18,28；Operation Guide / named controller manual; remote drawing；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp20,30 / printed pp18,28; Operation Guide / named controller manual; remote drawing; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 仅本用户手册图示遥控器的标注，不从SDK的G20 RC名称推定同一硬件；不新增遥控器SKU、不补未列电气/射频/屏幕参数。 保留两名称，不确认别名、替代关系或统一版本；未获取独立Genisom M1手册。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Only the controller pictured in this user manual; identity with the SDK G20 RC is not inferred. No remote SKU or unlisted electrical/RF/display specification is created. Both names remain unresolved; no alias, substitution or common revision is confirmed. A separate Genisom M1 manual was not retrieved."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "遥控器天线标注",
+            "en": "Manual remote antenna label"
+          },
+          "value": {
+            "zh": "1：2.4G/5.8G天线",
+            "en": "1: 2.4G/5.8G Antenna"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页30/印刷页28；Remote control / Corresponding Functions / antenna label；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp30 / printed pp28; Remote control / Corresponding Functions / antenna label; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 仅本用户手册图示遥控器的标注，不从SDK的G20 RC名称推定同一硬件；不新增遥控器SKU、不补未列电气/射频/屏幕参数。 2.4G/5.8G为原表文字，不补精确带宽、发射功率、制式、并发双频或认证区域。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Only the controller pictured in this user manual; identity with the SDK G20 RC is not inferred. No remote SKU or unlisted electrical/RF/display specification is created. 2.4G/5.8G is literal source notation; exact bandwidth, transmitter power, protocol, simultaneous dual-band operation and certification region are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "遥控器物理接口",
+            "en": "Manual remote physical interfaces"
+          },
+          "value": {
+            "zh": "17：SIM卡槽；22：Type-C接口；23：USB接口",
+            "en": "17: SIM Card Slot; 22: Type-C Interface; 23: USB Interface"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页30/印刷页28；Remote control / Corresponding Functions / physical interfaces；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp30 / printed pp28; Remote control / Corresponding Functions / physical interfaces; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 仅本用户手册图示遥控器的标注，不从SDK的G20 RC名称推定同一硬件；不新增遥控器SKU、不补未列电气/射频/屏幕参数。 卡槽不证明蜂窝模块、SIM激活或数据套餐；Type-C/USB未列版本、电流、协议或PD支持。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Only the controller pictured in this user manual; identity with the SDK G20 RC is not inferred. No remote SKU or unlisted electrical/RF/display specification is created. The slot does not establish a cellular module, activated SIM or data plan; Type-C/USB version, current, protocol and PD support are unspecified."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "遥控器指示器标注",
+            "en": "Manual remote indicator labels"
+          },
+          "value": {
+            "zh": "14：遥控器电量指示器；15：配对指示灯",
+            "en": "14: Remote Control Battery Level Indicator; 15: Pairing Indicator Light"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页30/印刷页28；Remote control / Corresponding Functions / indicator labels；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp30 / printed pp28; Remote control / Corresponding Functions / indicator labels; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 仅本用户手册图示遥控器的标注，不从SDK的G20 RC名称推定同一硬件；不新增遥控器SKU、不补未列电气/射频/屏幕参数。 标注未给颜色、亮度、SOC精度或配对频率。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Only the controller pictured in this user manual; identity with the SDK G20 RC is not inferred. No remote SKU or unlisted electrical/RF/display specification is created. The labels give no color, brightness, SOC accuracy or pairing frequency."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "遥控器媒体及附属件",
+            "en": "Manual remote media and ancillary labels"
+          },
+          "value": {
+            "zh": "8：麦克风；20：补光灯；21：挂绳孔；24：拍照/录像",
+            "en": "8: Microphone; 20: Fill Light; 21: Lanyard Hole; 24: Shooting/Video Recording"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页30/印刷页28；Remote control / Corresponding Functions / media and ancillary labels；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp30 / printed pp28; Remote control / Corresponding Functions / media and ancillary labels; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 仅本用户手册图示遥控器的标注，不从SDK的G20 RC名称推定同一硬件；不新增遥控器SKU、不补未列电气/射频/屏幕参数。 图例名称不证明麦克风通道数、照度或相机像素/帧率。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Only the controller pictured in this user manual; identity with the SDK G20 RC is not inferred. No remote SKU or unlisted electrical/RF/display specification is created. Legend names do not establish microphone channels, illuminance or camera resolution/frame rate."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "遥控器控件名称",
+            "en": "Manual remote control names"
+          },
+          "value": {
+            "zh": "3：返回；4：左摇杆；5：H控件；6：L1控件；7：L2控件；9：R2控件；10：R1控件；11：电源开关；12：右摇杆；13：软急停；16：B2控件；18：B1控件；19：Pulsator（原文名称）",
+            "en": "3: Back; 4: Left Joystick; 5: H; 6: L1; 7: L2; 9: R2; 10: R1; 11: Power On/Off; 12: Right Joystick; 13: Soft Emergency Stop; 16: B2; 18: B1; 19: Pulsator"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页30/印刷页28；Remote control / Corresponding Functions / control names；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp30 / printed pp28; Remote control / Corresponding Functions / control names; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 仅本用户手册图示遥控器的标注，不从SDK的G20 RC名称推定同一硬件；不新增遥控器SKU、不补未列电气/射频/屏幕参数。 仅图中编号和控件名称；不导入下一页按键操作教程，也不推定轴数、编码器类型或安全认证。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Only the controller pictured in this user manual; identity with the SDK G20 RC is not inferred. No remote SKU or unlisted electrical/RF/display specification is created. Only callout numbers and control names; no next-page button-operation tutorial, axis count, encoder type or safety certification is imported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "遥控器未命名标注",
+            "en": "Manual remote unnamed callout"
+          },
+          "value": {
+            "zh": "2：/（未命名）",
+            "en": "2: /"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方用户手册：电源及附件硬件",
+            "en": "Official D1 Max user manual: power and accessory hardware"
+          },
+          "locator": {
+            "zh": "D1 Max ZYCXD125M；物理页30/印刷页28；Remote control / Corresponding Functions / unnamed callout；原始PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "D1 Max ZYCXD125M; physical pp30 / printed pp28; Remote control / Corresponding Functions / unnamed callout; origin PDF SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅D1 Max用户手册所指ZYCXD125M本体及图示附件；不外推MaxPro、Ultra-W或其他D1型号，不新增电池/遥控器独立身份。原文条件保留，非无条件整机额定值。 仅本用户手册图示遥控器的标注，不从SDK的G20 RC名称推定同一硬件；不新增遥控器SKU、不补未列电气/射频/屏幕参数。 原表2号写/，虽有图中引线也不猜测功能或控件型号。",
+            "en": "Only the ZYCXD125M D1 Max and pictured accessories in this user manual; not transferred to MaxPro, Ultra-W or other D1 models, and no separate battery/remote identity is created. Source conditions are retained, not unconditional whole-robot ratings. Only the controller pictured in this user manual; identity with the SDK G20 RC is not inferred. No remote SKU or unlisted electrical/RF/display specification is created. Callout2 says / in the table; its drawing leader does not justify guessing a function or component model."
+          },
+          "excludeFromNumericIndex": true
+        }
+      ]
+    }
+  ],
+  "reviewUpdates": [
+    {
+      "slug": "agibot",
+      "gaps": [
+        "C7 adds 43 conditional D1 Max user-manual power/accessory rows: complete11-state body status table, six battery-display rows, two hard-stop button rows, all24 remote legend positions grouped without tutorial inflation, and exact associated supply/charging/storage conditions. Twelve cached PDF pages were visually reviewed; previously imported electrical ratings are reused. No network download or new identity.",
+        "New source ambiguities remain unresolved: overlapping battery0/25/50/75% boundaries; charging status color/ rather than inferred blue; steady red shared by soft/hard-stop descriptions; room-temperature30-60% versus storage-preparation50-60% and distinct maintenance schedules; Genisom M1 user-manual reference versus retained SDK G20 RC. All historical C1-C6 fields/flags/corrections are unchanged.",
+        "Remaining D1 Max scope: separate remote-controller document and independent accessory ratings, other bounded model-manual specification gaps. MaxPro adapter input/output/current and battery-segment fields already exist; its p22 two-row charger LED/fan matrix, p19 status table and p20 mounting drawing remain separately reviewable. General operation/app/password/storage tutorials are not proposed as parameter expansion.",
+        "Block6 maps D1 Max SDK Development Guide V0.1.0 July2026 chapter1 hardware, physical pp6-26 / printed5-25: 86 scoped new rows. Equivalent pre-existing specification and expansion-port cells are referenced rather than duplicated. Pixel-reviewed tables include17 joint cells, all board-end pin maps, readable harness drawings/BOMs, serial connector requirements and finished-product tests. No separate accessory identity is created.",
+        "D1 Max SDK discrepancies remain explicit: Rated Stable Payload30kg does not resolve historical25/30kg; named joint limits are not assumed equivalent to historical Body/Thigh/Calf;120m detection range is not substituted for old diameter wording; rail text each14 versus drawing14 remains unresolved; power-harness BOM and pin-table color order differ. Historical values, conditions and numeric flags are unchanged; all new rows are excluded from numeric indexing.",
+        "This is a bounded readable hardware-chapter block, not full SDK/manual or company closure. Cropped harness-rating/title/dimension margins and the SDK temperature scale remain undisclosed/ambiguous. Chapters2-6, software/API/network/setup tutorials and factory acceptance procedures are outside this block. Other model documents remain separate.",
+        "Final block5 fallback covers only D1 Ultra-W manual physical p13 / printed11: both five-row battery SOC LED matrices and the adapter mains-input/indicator label. Eleven conditional rows added; no battery identity, operating tutorial or performance rating inferred. Other Ultra-W manual sections remain open.",
+        "G2 Appendix II remains inaccessible as an attachment: public manual text exposes the filename G02 Offline Data Collection Format Specification - rb235-EN.pdf without a clickable attachment reference in the web-tool result; two exact official-domain searches found no document and direct page fetch returned HTTP500. No schema or file URL was guessed, and no access block was bypassed.",
+        "G2 Appendix I complete 19-port service table and Appendix III radio declarations are now mapped: four Wi-Fi/Bluetooth EIRP entries, 14 LTE bands, 13 NR bands, three cellular-power rows and the antenna restriction. Port identifiers/regulatory values are not unconditional ratings; SIM activation is not inferred. Appendix II linked data-format document and other untouched sections remain open.",
+        "Parent-authorized wrapper corrections now cover exact G2 screen, Ultra-W whole-body DoF, Max payload, MaxPro energy/wading and same-model no-load speed source rows. Only exclusions/conditions changed; original data values and source evidence remain immutable. Different hardware ports and continuous-walking speed were not treated as conflicts.",
+        "D1 Max manual physical p11 complete 26-row table and p14 ports are mapped; MaxPro physical pp7-8 complete 33-row tables, pp9-15 electrical interfaces and pp22-23 battery details are mapped. Existing equivalent parameters are reused, not duplicated. This does not establish full manual or company completeness.",
+        "Remaining D1 work: cached Max/MaxPro other hardware accessory manuals and bounded remaining sections; Pro/Edu downloads timed out; Ultra/Ultra-W other chapters remain incomplete, including Ultra-W Turbo footnote clarification. Other AGIBOT model/component sources and prior conflicts remain open.",
+        "MaxPro communication-port scopes and connector electrical differences remain separately documented, not conflated across hardware ports. Full manufacturer/manual completeness is not claimed. Parent owns global validation and cache integration."
+      ]
+    }
+  ]
+}

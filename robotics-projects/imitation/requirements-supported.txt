@@ -1,0 +1,7 @@
+# Portable fresh environment suggestion, within LeRobot 0.6.1 declared ranges.
+# This is NOT the combination used for the included local evaluation artifacts.
+lerobot==0.6.1
+torch>=2.7,<2.12
+torchvision>=0.22,<0.27
+numpy>=2.0,<2.3
+packaging>=24.2,<26

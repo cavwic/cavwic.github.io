@@ -1,0 +1,15 @@
+---
+import RepositoryIndexPage from "../../../components/RepositoryIndexPage.astro";
+import RepositoryLayout from "../../../layouts/RepositoryLayout.astro";
+import { isPagesBuild } from "../../../data/build-scope";
+if (isPagesBuild) return Astro.redirect("/en/companies", 302);
+---
+
+<RepositoryLayout
+  locale="en"
+  title="Metadata Repository | Robotics Companies and Products"
+  description="Independently maintained metadata records for robotics companies, products, and public specifications."
+  alternatePath="/repository"
+>
+  <RepositoryIndexPage locale="en" />
+</RepositoryLayout>

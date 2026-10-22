@@ -26,7 +26,10 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm run audit
+      - run: node scripts/test-pages-publication.mjs
+      - run: npm run test:robotics-labs
       - run: npm run build
+      - run: npm run check:pages-capacity
       - run: npm run check:links
       - uses: actions/upload-pages-artifact@v3
         with:

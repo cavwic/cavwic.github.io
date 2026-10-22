@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {audit,makeFixture,parseDataset,quarantine,defaultRules} from '../src/features/robotics-lab/data/engine.ts';
+const clean=makeFixture('clean');assert.equal(audit(clean).issues.length,0);assert.equal(audit(clean).rows,480);
+assert.deepEqual(makeFixture(),makeFixture());
+const mixed=makeFixture(),before=JSON.stringify(mixed),report=audit(mixed);
+for(const code of ['CLOCK','GAP','SENSOR_TIME','COMMAND_TIME','DUPLICATE','JUMP','CURRENT','TEMPERATURE','SCHEMA','SPLIT_LEAK','CONTENT_LEAK'])assert(report.codes[code]>0,code);
+assert.equal(report.flaggedRows,new Set(report.issues.map(i=>i.row)).size);assert(report.affectedRows>=report.flaggedRows);assert(report.affectedRows<=report.rows);
+assert.equal(JSON.stringify(mixed),before,'Audit cannot mutate input');
+const result=quarantine(mixed,report);assert.equal(result.dataset.frames.length+result.removed,mixed.frames.length);assert.equal(JSON.stringify(mixed),before);
+assert.equal(report.affectedRows,result.removed,'Affected rows must include full flagged episodes');
+const leakage=makeFixture('leakage'),lr=audit(leakage);assert.equal(lr.flaggedRows,2);assert.equal(lr.affectedRows,241);assert.equal(quarantine(leakage,lr).removed,lr.affectedRows);
+assert.throws(()=>parseDataset('{"version":1,"frames":[]}'));assert.throws(()=>parseDataset('{"version":2,"frames":[{}]}'));
+assert.equal(audit(parseDataset('{"version":1,"frames":[{}]}')).codes.SCHEMA,1);
+assert.throws(()=>audit(clean,{...defaultRules,periodMs:NaN}));
+const hostile=parseDataset(JSON.stringify({version:1,provenance:'<img src=x onerror=alert(1)>',frames:clean.frames}));assert.equal(audit(hostile).issues.length,0);
+console.log(JSON.stringify({suite:'robot-data-audit',checks:20,fixtures:5,mixed:{rows:report.rows,affected:report.affectedRows,codes:report.codes}},null,2));

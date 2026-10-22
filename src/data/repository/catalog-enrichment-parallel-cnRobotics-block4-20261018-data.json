@@ -1,0 +1,1319 @@
+{
+  "checkedAt": "2026-10-18",
+  "blocks": [
+    {
+      "companySlug": "agibot",
+      "product": "AGIBOT G2",
+      "rows": [
+        {
+          "label": {
+            "zh": "附录服务端口22",
+            "en": "Appendix service port 22"
+          },
+          "value": {
+            "zh": "端口22；需开放栏：Yes；SSH安全远程维护、调试和操作",
+            "en": "Port 22; required-open column: Yes; SSH secure remote maintenance, debugging and operation"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1572；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1572; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口80",
+            "en": "Appendix service port 80"
+          },
+          "value": {
+            "zh": "端口80；需开放栏：Yes；HTTP服务：Web UI、API网关或静态资源",
+            "en": "Port 80; required-open column: Yes; HTTP for Web UI, API gateway or static resources"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1573；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1573; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口111",
+            "en": "Appendix service port 111"
+          },
+          "value": {
+            "zh": "端口111；需开放栏：Yes；NFS相关文件系统通信所需rpcbind服务",
+            "en": "Port 111; required-open column: Yes; rpcbind for NFS-related file-system communication"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1574；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1574; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口20048",
+            "en": "Appendix service port 20048"
+          },
+          "value": {
+            "zh": "端口20048；需开放栏：Yes；NFS挂载、远程文件系统访问与数据挂载",
+            "en": "Port 20048; required-open column: Yes; NFS mount service for remote file-system access and data mounting"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1575；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1575; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口2049",
+            "en": "Appendix service port 2049"
+          },
+          "value": {
+            "zh": "端口2049；需开放栏：Yes；NFS核心服务：文件共享、日志上传及数据存储",
+            "en": "Port 2049; required-open column: Yes; Core NFS file sharing, log upload and data storage"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1576；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1576; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口32765",
+            "en": "Appendix service port 32765"
+          },
+          "value": {
+            "zh": "端口32765；需开放栏：Yes；NFS状态监控rpc.statd",
+            "en": "Port 32765; required-open column: Yes; NFS status monitoring, rpc.statd"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1577；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1577; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口32767",
+            "en": "Appendix service port 32767"
+          },
+          "value": {
+            "zh": "端口32767；需开放栏：Yes；NFS文件锁服务lockd",
+            "en": "Port 32767; required-open column: Yes; NFS file locking, lockd"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1578；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1578; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口7000",
+            "en": "Appendix service port 7000"
+          },
+          "value": {
+            "zh": "端口7000；需开放栏：Yes；机器人驱动与调试的主运动控制通信",
+            "en": "Port 7000; required-open column: Yes; Core motion-control communication for robot actuation and debugging"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1579；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1579; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口7001",
+            "en": "Appendix service port 7001"
+          },
+          "value": {
+            "zh": "端口7001；需开放栏：Yes；次级运动控制通信",
+            "en": "Port 7001; required-open column: Yes; Secondary motion-control communication"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1580；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1580; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口8765",
+            "en": "Appendix service port 8765"
+          },
+          "value": {
+            "zh": "端口8765；需开放栏：Yes；数据流、采集与反馈链路",
+            "en": "Port 8765; required-open column: Yes; Data-link streaming, collection and feedback"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1581；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1581; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口8766",
+            "en": "Appendix service port 8766"
+          },
+          "value": {
+            "zh": "端口8766；需开放栏：Yes；数据流、采集与反馈链路",
+            "en": "Port 8766; required-open column: Yes; Data-link streaming, collection and feedback"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1582；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1582; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口8849",
+            "en": "Appendix service port 8849"
+          },
+          "value": {
+            "zh": "端口8849；需开放栏：Yes；二次开发与外部集成SDK HTTP接口",
+            "en": "Port 8849; required-open column: Yes; SDK HTTP for secondary development and external integration"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1583；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1583; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口8850",
+            "en": "Appendix service port 8850"
+          },
+          "value": {
+            "zh": "端口8850；需开放栏：Yes；二次开发与外部集成SDK HTTP接口",
+            "en": "Port 8850; required-open column: Yes; SDK HTTP for secondary development and external integration"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1584；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1584; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口12345",
+            "en": "Appendix service port 12345"
+          },
+          "value": {
+            "zh": "端口12345；需开放栏：Yes；临时或非标准服务，原文建议移除",
+            "en": "Port 12345; required-open column: Yes; Temporary or non-standard service; source recommends removal"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1585；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1585; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口11811",
+            "en": "Appendix service port 11811"
+          },
+          "value": {
+            "zh": "端口11811；需开放栏：Yes；DDS发现/LAN广播设备发现服务",
+            "en": "Port 11811; required-open column: Yes; Device discovery via DDS discovery / LAN broadcast"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1586；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1586; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口2379",
+            "en": "Appendix service port 2379"
+          },
+          "value": {
+            "zh": "端口2379；需开放栏：Yes；中间件/配置核心服务，例如etcd-like；并非确认运行etcd",
+            "en": "Port 2379; required-open column: Yes; Core middleware/configuration, for example an etcd-like service; not confirmation of an etcd deployment"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1587；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1587; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口25620",
+            "en": "Appendix service port 25620"
+          },
+          "value": {
+            "zh": "端口25620；需开放栏：Yes；外部设备接口，例如VR/Pico",
+            "en": "Port 25620; required-open column: Yes; External-device interface, for example VR/Pico"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1588；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1588; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口32012",
+            "en": "Appendix service port 32012"
+          },
+          "value": {
+            "zh": "端口32012；需开放栏：Yes；边缘/云端通信接口",
+            "en": "Port 32012; required-open column: Yes; Edge/cloud communication interface"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1589；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1589; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录服务端口8761",
+            "en": "Appendix service port 8761"
+          },
+          "value": {
+            "zh": "端口8761；需开放栏：Yes；OTA更新与系统升级服务",
+            "en": "Port 8761; required-open column: Yes; OTA update service for system upgrades"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录I / 设备开放端口；抓取文本L1590；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix I / Device Open Port; captured line L1590; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录I的服务端口文档，端口号不是硬件性能或数值额定值。保留“需开放”栏及功能说明，不推定未列出的TCP/UDP传输或公网暴露，也不执行网络配置。12345同时列Yes与建议移除，保留原文差异。",
+            "en": "G2 manual Appendix I service-port documentation; port numbers are identifiers, not hardware performance ratings. The required-open column and function are retained without inferring unspecified TCP/UDP transport or public exposure, and no network configuration is performed. Port 12345 retains both Yes and the removal recommendation."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录2.4 GHz Wi-Fi功率",
+            "en": "Appendix 2.4 GHz Wi-Fi EIRP"
+          },
+          "value": {
+            "zh": "2.4 GHz；20 dBm EIRP",
+            "en": "2.4 GHz; 20 dBm EIRP"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / Wi-Fi与Bluetooth；抓取文本L1599；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / Wi-Fi and Bluetooth; captured line L1599; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III的射频声明，按所列频段、方向、功率单位及地区条件限定；不是实测吞吐量、覆盖距离或无条件射频额定值。",
+            "en": "G2 manual Appendix III radio declaration, scoped to the stated band, direction, power unit and regional conditions; not measured throughput, coverage range or an unconditional RF rating."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录Bluetooth功率",
+            "en": "Appendix Bluetooth EIRP"
+          },
+          "value": {
+            "zh": "20 dBm EIRP；该行未单列Bluetooth频率范围",
+            "en": "20 dBm EIRP; this row does not separately specify a Bluetooth frequency range"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / Wi-Fi与Bluetooth；抓取文本L1601；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / Wi-Fi and Bluetooth; captured line L1601; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III的射频声明，按所列频段、方向、功率单位及地区条件限定；不是实测吞吐量、覆盖距离或无条件射频额定值。",
+            "en": "G2 manual Appendix III radio declaration, scoped to the stated band, direction, power unit and regional conditions; not measured throughput, coverage range or an unconditional RF rating."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录5 GHz Wi-Fi低频段功率",
+            "en": "Appendix 5 GHz Wi-Fi lower-band EIRP"
+          },
+          "value": {
+            "zh": "5150-5250 MHz；23 dBm EIRP",
+            "en": "5150-5250 MHz; 23 dBm EIRP"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / Wi-Fi与Bluetooth；抓取文本L1605；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / Wi-Fi and Bluetooth; captured line L1605; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III的射频声明，按所列频段、方向、功率单位及地区条件限定；不是实测吞吐量、覆盖距离或无条件射频额定值。 5150-5250 MHz在所有EU/EFTA成员及土耳其仅限室内使用（原文L1609）。",
+            "en": "G2 manual Appendix III radio declaration, scoped to the stated band, direction, power unit and regional conditions; not measured throughput, coverage range or an unconditional RF rating. 5150-5250 MHz is indoor-only in all EU/EFTA member states and Turkey (source L1609)."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录5 GHz Wi-Fi高频段功率",
+            "en": "Appendix 5 GHz Wi-Fi upper-band EIRP"
+          },
+          "value": {
+            "zh": "5725-5850 MHz；14 dBm EIRP",
+            "en": "5725-5850 MHz; 14 dBm EIRP"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / Wi-Fi与Bluetooth；抓取文本L1607；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / Wi-Fi and Bluetooth; captured line L1607; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III的射频声明，按所列频段、方向、功率单位及地区条件限定；不是实测吞吐量、覆盖距离或无条件射频额定值。",
+            "en": "G2 manual Appendix III radio declaration, scoped to the stated band, direction, power unit and regional conditions; not measured throughput, coverage range or an unconditional RF rating."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 1",
+            "en": "Appendix LTE Band 1"
+          },
+          "value": {
+            "zh": "上行：1920-1980 MHz；下行：2110-2170 MHz",
+            "en": "Uplink: 1920-1980 MHz; downlink: 2110-2170 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1613；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1613; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 3",
+            "en": "Appendix LTE Band 3"
+          },
+          "value": {
+            "zh": "上行：1710-1785 MHz；下行：1805-1880 MHz",
+            "en": "Uplink: 1710-1785 MHz; downlink: 1805-1880 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1614；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1614; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 7",
+            "en": "Appendix LTE Band 7"
+          },
+          "value": {
+            "zh": "上行：2500-2570 MHz；下行：2620-2690 MHz",
+            "en": "Uplink: 2500-2570 MHz; downlink: 2620-2690 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1616；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1616; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 8",
+            "en": "Appendix LTE Band 8"
+          },
+          "value": {
+            "zh": "上行：880-915 MHz；下行：925-960 MHz",
+            "en": "Uplink: 880-915 MHz; downlink: 925-960 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1618；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1618; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 20",
+            "en": "Appendix LTE Band 20"
+          },
+          "value": {
+            "zh": "上行：832-862 MHz；下行：791-821 MHz",
+            "en": "Uplink: 832-862 MHz; downlink: 791-821 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1620；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1620; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 28",
+            "en": "Appendix LTE Band 28"
+          },
+          "value": {
+            "zh": "上行：703-748 MHz；下行：758-803 MHz",
+            "en": "Uplink: 703-748 MHz; downlink: 758-803 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1622；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1622; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 32",
+            "en": "Appendix LTE Band 32"
+          },
+          "value": {
+            "zh": "仅下行：1452-1496 MHz",
+            "en": "Downlink only: 1452-1496 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1624；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1624; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 34",
+            "en": "Appendix LTE Band 34"
+          },
+          "value": {
+            "zh": "上行与下行：2010-2025 MHz",
+            "en": "Uplink and downlink: 2010-2025 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1626；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1626; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 38",
+            "en": "Appendix LTE Band 38"
+          },
+          "value": {
+            "zh": "上行与下行：2570-2620 MHz",
+            "en": "Uplink and downlink: 2570-2620 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1628；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1628; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 40",
+            "en": "Appendix LTE Band 40"
+          },
+          "value": {
+            "zh": "上行与下行：2300-2400 MHz",
+            "en": "Uplink and downlink: 2300-2400 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1630；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1630; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 41",
+            "en": "Appendix LTE Band 41"
+          },
+          "value": {
+            "zh": "上行与下行：2496-2690 MHz",
+            "en": "Uplink and downlink: 2496-2690 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1632；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1632; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 42",
+            "en": "Appendix LTE Band 42"
+          },
+          "value": {
+            "zh": "上行与下行：3400-3600 MHz",
+            "en": "Uplink and downlink: 3400-3600 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1633；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1633; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 43",
+            "en": "Appendix LTE Band 43"
+          },
+          "value": {
+            "zh": "上行与下行：3600-3800 MHz",
+            "en": "Uplink and downlink: 3600-3800 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1635；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1635; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE Band 46",
+            "en": "Appendix LTE Band 46"
+          },
+          "value": {
+            "zh": "仅下行：5150-5925 MHz",
+            "en": "Downlink only: 5150-5925 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / LTE频段；抓取文本L1637；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / LTE bands; captured line L1637; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR n1",
+            "en": "Appendix NR n1"
+          },
+          "value": {
+            "zh": "上行：1920-1980 MHz；下行：2110-2170 MHz",
+            "en": "Uplink: 1920-1980 MHz; downlink: 2110-2170 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 5G NR频段；抓取文本L1641；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / 5G NR bands; captured line L1641; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR n3",
+            "en": "Appendix NR n3"
+          },
+          "value": {
+            "zh": "上行：1710-1785 MHz；下行：1805-1880 MHz",
+            "en": "Uplink: 1710-1785 MHz; downlink: 1805-1880 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 5G NR频段；抓取文本L1643；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / 5G NR bands; captured line L1643; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR n7",
+            "en": "Appendix NR n7"
+          },
+          "value": {
+            "zh": "上行：2500-2570 MHz；下行：2620-2690 MHz",
+            "en": "Uplink: 2500-2570 MHz; downlink: 2620-2690 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 5G NR频段；抓取文本L1645；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / 5G NR bands; captured line L1645; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR n8",
+            "en": "Appendix NR n8"
+          },
+          "value": {
+            "zh": "上行：880-915 MHz；下行：925-960 MHz",
+            "en": "Uplink: 880-915 MHz; downlink: 925-960 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 5G NR频段；抓取文本L1647；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / 5G NR bands; captured line L1647; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR n20",
+            "en": "Appendix NR n20"
+          },
+          "value": {
+            "zh": "上行：832-862 MHz；下行：791-821 MHz",
+            "en": "Uplink: 832-862 MHz; downlink: 791-821 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 5G NR频段；抓取文本L1649；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / 5G NR bands; captured line L1649; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR n28",
+            "en": "Appendix NR n28"
+          },
+          "value": {
+            "zh": "上行：703-748 MHz；下行：758-803 MHz",
+            "en": "Uplink: 703-748 MHz; downlink: 758-803 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 5G NR频段；抓取文本L1651；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / 5G NR bands; captured line L1651; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR n38",
+            "en": "Appendix NR n38"
+          },
+          "value": {
+            "zh": "上行与下行：2570-2620 MHz",
+            "en": "Uplink and downlink: 2570-2620 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 5G NR频段；抓取文本L1653；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / 5G NR bands; captured line L1653; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR n40",
+            "en": "Appendix NR n40"
+          },
+          "value": {
+            "zh": "上行与下行：2300-2400 MHz",
+            "en": "Uplink and downlink: 2300-2400 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 5G NR频段；抓取文本L1654；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / 5G NR bands; captured line L1654; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR n41",
+            "en": "Appendix NR n41"
+          },
+          "value": {
+            "zh": "上行与下行：2496-2690 MHz",
+            "en": "Uplink and downlink: 2496-2690 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 5G NR频段；抓取文本L1656；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / 5G NR bands; captured line L1656; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR n75",
+            "en": "Appendix NR n75"
+          },
+          "value": {
+            "zh": "仅下行：1432-1517 MHz",
+            "en": "Downlink only: 1432-1517 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 5G NR频段；抓取文本L1658；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / 5G NR bands; captured line L1658; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR n76",
+            "en": "Appendix NR n76"
+          },
+          "value": {
+            "zh": "仅下行：1427-1432 MHz",
+            "en": "Downlink only: 1427-1432 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 5G NR频段；抓取文本L1660；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / 5G NR bands; captured line L1660; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR n77",
+            "en": "Appendix NR n77"
+          },
+          "value": {
+            "zh": "上行与下行：3300-4200 MHz",
+            "en": "Uplink and downlink: 3300-4200 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 5G NR频段；抓取文本L1662；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / 5G NR bands; captured line L1662; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR n78",
+            "en": "Appendix NR n78"
+          },
+          "value": {
+            "zh": "上行与下行：3300-3800 MHz",
+            "en": "Uplink and downlink: 3300-3800 MHz"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 5G NR频段；抓取文本L1664；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / 5G NR bands; captured line L1664; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录LTE功率声明",
+            "en": "Appendix LTE power declaration"
+          },
+          "value": {
+            "zh": "23 dBm，+2.0/-2.0 dB；原文未标EIRP，不套用到仅下行频段",
+            "en": "23 dBm, +2.0/-2.0 dB; source does not label this EIRP; not assigned to downlink-only bands"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 蜂窝功率声明；抓取文本L1668；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / Cellular power declarations; captured line L1668; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR功率等级3",
+            "en": "Appendix NR class 3 power"
+          },
+          "value": {
+            "zh": "23 dBm，+2.0/-2.0 dB；Power class 3；n1/3/7/8/20/28/38/40",
+            "en": "23 dBm, +2.0/-2.0 dB; power class 3; n1/3/7/8/20/28/38/40"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 蜂窝功率声明；抓取文本L1670；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / Cellular power declarations; captured line L1670; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录NR功率等级2",
+            "en": "Appendix NR class 2 power"
+          },
+          "value": {
+            "zh": "26 dBm，+3/-4 dB；Power class 2；n41/77/78",
+            "en": "26 dBm, +3/-4 dB; power class 2; n41/77/78"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 蜂窝功率声明；抓取文本L1672；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / Cellular power declarations; captured line L1672; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "G2手册附录III蜂窝声明；频段上下行方向与原文一致，未将仅下行频段分配发射功率，也未用这些声明证明无线终端SIM功能已启用。已存手册说明该SIM功能当前禁用；蜂窝模块标配/选配及具体运营商可用性不推定。",
+            "en": "G2 manual Appendix III cellular declaration. Uplink/downlink directions are retained; no transmit power is assigned to downlink-only bands. These declarations do not establish that the wireless-terminal SIM function is enabled; the retained manual says that function is currently disabled. Standard/optional modem fitment and operator availability are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "附录天线人体距离限制",
+            "en": "Appendix antenna separation restriction"
+          },
+          "value": {
+            "zh": "正常使用时人与天线距离至少20 cm；发射机不得与其他天线或发射机共址或联合运行（L1683-1685）",
+            "en": "At least 20 cm between a person and the antenna during normal operation; transmitter must not be co-located or operated with another antenna/transmitter (L1683-1685)"
+          },
+          "sourceUrl": "https://www.agibot.com/filepage/296.html",
+          "sourceLabel": {
+            "zh": "G2官方用户手册附录",
+            "en": "Official G2 user manual Appendix"
+          },
+          "locator": {
+            "zh": "G2用户手册；发布日期2026-07-30；附录III / 射频暴露；抓取文本L1681；缓存网页工具摘录（非原始HTML字节）SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34",
+            "en": "G2 User Manual; release 2026-07-30; Appendix III / RF exposure; captured line L1681; cached web-tool extract (not origin bytes) SHA256 4dc2980553679ba0de5424c3452e2ff3b801582fb79f6ab178e73b76cd8baa34"
+          },
+          "conditions": {
+            "zh": "制造商手册的射频暴露限制，非通信距离或安全认证的独立核验；保留原文正常操作及共址限制。",
+            "en": "Manufacturer-manual RF-exposure restriction, not communication range or independent certification verification; normal-operation and co-location conditions are retained."
+          },
+          "excludeFromNumericIndex": true
+        }
+      ]
+    }
+  ],
+  "reviewUpdates": [
+    {
+      "slug": "agibot",
+      "gaps": [
+        "G2 Appendix I complete 19-port service table and Appendix III radio declarations are now mapped: four Wi-Fi/Bluetooth EIRP entries, 14 LTE bands, 13 NR bands, three cellular-power rows and the antenna restriction. Port identifiers/regulatory values are not unconditional ratings; SIM activation is not inferred. Appendix II linked data-format document and other untouched sections remain open.",
+        "Parent-authorized wrapper corrections now cover exact G2 screen, Ultra-W whole-body DoF, Max payload, MaxPro energy/wading and same-model no-load speed source rows. Only exclusions/conditions changed; original data values and source evidence remain immutable. Different hardware ports and continuous-walking speed were not treated as conflicts.",
+        "D1 Max manual physical p11 complete 26-row table and p14 ports are mapped; MaxPro physical pp7-8 complete 33-row tables, pp9-15 electrical interfaces and pp22-23 battery details are mapped. Existing equivalent parameters are reused, not duplicated. This does not establish full manual or company completeness.",
+        "Remaining D1 work: cached Max/MaxPro other hardware accessory manuals and bounded remaining sections; Pro/Edu downloads timed out; Ultra/Ultra-W other chapters remain incomplete, including Ultra-W Turbo footnote clarification. Other AGIBOT model/component sources and prior conflicts remain open.",
+        "MaxPro communication-port scopes and connector electrical differences remain separately documented, not conflated across hardware ports. Full manufacturer/manual completeness is not claimed. Parent owns global validation and cache integration."
+      ]
+    }
+  ]
+}

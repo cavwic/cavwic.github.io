@@ -1,0 +1,826 @@
+{
+  "checkedAt": "2026-10-18",
+  "blocks": [
+    {
+      "companySlug": "agibot",
+      "product": "AGIBOT D1 MaxPro",
+      "rows": [
+        {
+          "label": {
+            "zh": "每腿电机与冷却部件标注",
+            "en": "Manual leg motors and cooling hardware"
+          },
+          "value": {
+            "zh": "概述：每腿3个电机；图示：Triple-Joint Motor（三关节电机）和Motor Cooling Fan（电机冷却风扇）",
+            "en": "Overview: three motors per leg; diagram: Triple-Joint Motor and Motor Cooling Fan"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页5,6/印刷页2,3；Product Overview; Product Details / drive hardware；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp5,6 / printed pp2,3; Product Overview; Product Details / drive hardware; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 图示名称及引线只确认标注内容，不推定部件型号、供货数量、性能或所有配置的标配状态。 不由图中名称推定集成三合一电机结构、风扇数量/转速/功率；旧整机12自由度及每腿3自由度原行不变。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Names and leaders establish the drawing labels only, not component model, supplied quantity, performance or standard fitment for every configuration. The label does not establish a three-in-one motor architecture or fan count/RPM/power; historical12 whole-body and3 per-leg DoF rows remain unchanged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "跌倒自起时间声明",
+            "en": "Manual self-righting time claim"
+          },
+          "value": {
+            "zh": "厂家概述称跌倒后可在20秒内自行恢复",
+            "en": "The manufacturer overview claims self-righting within20 seconds after a fall"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页5/印刷页2；Product Overview / Motion Performance；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp5 / printed pp2; Product Overview / Motion Performance; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 未披露载荷、地面、跌倒姿态、成功率或测试流程；不视为任意工况保证，也不是急停响应时间。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Load, surface, fall posture, success rate and test protocol are undisclosed; not a guarantee for arbitrary conditions or an emergency-stop response time."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "概述越障与工业楼梯适用描述",
+            "en": "Manual overview obstacle and industrial-stair scope"
+          },
+          "value": {
+            "zh": "概述称可越过最高30 cm障碍物，并可攀爬开放式工业楼梯",
+            "en": "The overview claims crossing obstacles up to30 cm high and climbing open-frame industrial stairs"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页5/印刷页2；Product Overview / Motion Performance / obstacle capability；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp5 / printed pp2; Product Overview / Motion Performance / obstacle capability; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 障碍物高度不同于旧连续爬阶高度；楼梯未另给踏面宽度、镂空比例或载荷测试条件。保留厂家声明，不把50 kg平地载荷外推到这些场景。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Obstacle height is distinct from the retained continuous stair-height metric; tread width, opening ratio and load-test conditions are not specified. Manufacturer claim only; the50 kg flat-terrain payload is not transferred to these scenarios."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "概述相对提升声明及未命名基准",
+            "en": "Manual relative-improvement claims and unnamed baselines"
+          },
+          "value": {
+            "zh": "原文称相较上一代负载能力“increased by 2.5 times”；另称负载续航延长28%",
+            "en": "The source says payload capability increased by2.5 times compared with the previous generation, and separately claims28% longer endurance under load"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页5/印刷页2；Product Overview / Payload Capacity and Endurance Assurance；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp5 / printed pp2; Product Overview / Payload Capacity and Endurance Assurance; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 负载比较未指明上一代型号，续航比较未列基准型号、时长或测试载荷；不计算倍数后的绝对值、不回填旧型号参数，也不把两项比较共用同一测试基准。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. The payload comparison does not name the previous model; the endurance comparison gives no baseline model, duration or test load. No absolute values or predecessor specifications are calculated, and a shared test baseline is not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体天线标注与蜂窝选配条件",
+            "en": "Manual body antenna labels and cellular-option boundary"
+          },
+          "value": {
+            "zh": "图示标注2.4G Antenna及4G (5G optional) + GPS antenna；参数表另称4G模块选配",
+            "en": "Drawing labels:2.4G Antenna and4G (5G optional) + GPS antenna; the parameter table separately calls the4G module optional"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页6,8/印刷页3,5；Product Details / antenna labels; Product Parameters / Communication Features；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp6,8 / printed pp3,5; Product Details / antenna labels; Product Parameters / Communication Features; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 图示名称及引线只确认标注内容，不推定部件型号、供货数量、性能或所有配置的标配状态。 保留图示天线与表内模块的不同口径；不据天线判定标配蜂窝模块、SIM激活、5G频段、GPS精度或RTK能力。旧Wi-Fi/蓝牙/72 dBm异常原行不变。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Names and leaders establish the drawing labels only, not component model, supplied quantity, performance or standard fitment for every configuration. Antenna labels and table module scope remain distinct; the antenna does not establish a standard cellular module, active SIM,5G bands, GPS accuracy or RTK capability. Existing Wi-Fi/Bluetooth and72 dBm anomaly rows remain unchanged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "跟随模块图示标注",
+            "en": "Manual following-module drawing label"
+          },
+          "value": {
+            "zh": "图中标注Following Module（跟随模块）",
+            "en": "The drawing labels a Following Module"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页6/印刷页3；Product Details / Following Module；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp6 / printed pp3; Product Details / Following Module; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 图示名称及引线只确认标注内容，不推定部件型号、供货数量、性能或所有配置的标配状态。 未给跟随距离、精度、传感原理或独立型号，不把图示存在等同于任何条件下自动跟随可用。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Names and leaders establish the drawing labels only, not component model, supplied quantity, performance or standard fitment for every configuration. Following distance, accuracy, sensing method and separate model are not given; a drawing label does not establish automatic-follow availability under all conditions."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体机械部件图例",
+            "en": "Manual body mechanical legend"
+          },
+          "value": {
+            "zh": "图例含Thigh Shield（大腿护罩）、Foot Cup（原文名称：足杯）、Thigh（大腿）、Lower Leg（小腿）、Foot Pad（足垫）",
+            "en": "Legend:Thigh Shield; Foot Cup; Thigh; Lower Leg; Foot Pad"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页6/印刷页3；Product Details / mechanical labels；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp6 / printed pp3; Product Details / mechanical labels; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 图示名称及引线只确认标注内容，不推定部件型号、供货数量、性能或所有配置的标配状态。 Foot Cup与Foot Pad为独立引线标注；不改名合并，也不从外观推算材料、尺寸或可替换零件号。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Names and leaders establish the drawing labels only, not component model, supplied quantity, performance or standard fitment for every configuration. Foot Cup and Foot Pad have separate leaders; they are not renamed/merged, and material, dimensions and replacement part numbers are not inferred from appearance."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池与状态指示器图例",
+            "en": "Manual battery and status indicator legend"
+          },
+          "value": {
+            "zh": "图中两处原文均写Battery Indicator；另标Battery Module及Status Indicator",
+            "en": "Two drawing leaders both say Battery Indicator; Battery Module and Status Indicator are also labeled"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页6/印刷页3；Product Details / battery and status indicators；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp6 / printed pp3; Product Details / battery and status indicators; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 图示名称及引线只确认标注内容，不推定部件型号、供货数量、性能或所有配置的标配状态。 重复指示器标注不证明两块电池或双电池供电；电池灯分段仍按已有五灯、每灯20%原行，状态灯另有表。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Names and leaders establish the drawing labels only, not component model, supplied quantity, performance or standard fitment for every configuration. Repeated indicator labels do not establish two batteries or dual-battery supply; the existing five LEDs/20% per segment row remains, and the body status light has a separate table."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "自动充电部位图示与选配桩边界",
+            "en": "Manual auto-charging callout and optional-dock boundary"
+          },
+          "value": {
+            "zh": "本体图另有Auto Charging（自动充电）引线；自动回充需要选配充电桩",
+            "en": "The body drawing separately labels Auto Charging; autonomous recharging requires the optional charging dock"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页6,8,25/印刷页3,5,22；Product Details / Auto Charging; optional dock applicability；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp6,8,25 / printed pp3,5,22; Product Details / Auto Charging; optional dock applicability; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 图示名称及引线只确认标注内容，不推定部件型号、供货数量、性能或所有配置的标配状态。 Auto Charging与对侧Foot Pad不是一个复合名称；不推定充电触点数量/极性、功率、位置尺寸或充电桩标配。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Names and leaders establish the drawing labels only, not component model, supplied quantity, performance or standard fitment for every configuration. Auto Charging and the opposite Foot Pad are not one compound label; contact count/polarity, power, mounting dimensions and standard dock fitment are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "上电至可控状态约需时间",
+            "en": "Manual approximate startup-to-controllable time"
+          },
+          "value": {
+            "zh": "手册上电段称约55秒后指示灯变绿，表示进入可控状态",
+            "en": "The power-on section states that after approximately55 seconds the indicator turns green, indicating a controllable state"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页16,19/印刷页13,16；Power On / controllable-state timing; Indicator Light Status；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp16,19 / printed pp13,16; Power On / controllable-state timing; Indicator Light Status; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 是所述启动过程的近似时间，未给软件版本、温度、载荷或最坏时延；不是按键按住时长、通信时延或安全响应时间。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. An approximate time for the described startup, without firmware, temperature, load or worst-case latency. Not button hold duration, communication latency or safety response time."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池开关机灯序",
+            "en": "Manual battery power-state LED sequences"
+          },
+          "value": {
+            "zh": "启动时电池LED从右向左依次点亮，原文写从红到绿；关机时从左向右依次熄灭，原文写从绿到红",
+            "en": "At startup, battery LEDs illuminate from right to left, described as red to green; at shutdown they extinguish from left to right, described as green to red"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页16/印刷页13；Power On / Power Off / battery indicator sequence；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp16 / printed pp13; Power On / Power Off / battery indicator sequence; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 只记电池显示顺序，不提供开关机按键步骤、不推定序列频率或与本体状态灯/SOC阈值的对应关系。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Battery display sequence only, without button procedures, sequence frequency or inferred correspondence to body status-light/SOC thresholds."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "遥控器模式与电源控件图例",
+            "en": "Manual remote mode and power control legend"
+          },
+          "value": {
+            "zh": "电源开关；站立/趴下；自主/手动；高速/普通/低速模式；卸力/无操作/阻尼模式",
+            "en": "Remote Control Power Switch; Stand / Prone; Autonomous / Manual; High-Speed Mode / General Mode / Low-Speed Mode; Unloading Mode / No Operation / Damping Mode"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页17/印刷页14；Controller Layout / mode and power controls；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp17 / printed pp14; Controller Layout / mode and power controls; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 仅图示遥控器标注，手册未在此给独立遥控器型号；不继承D1 Max的Genisom M1/G20 RC名称、射频或屏幕参数。 只记录图例控件名称，不提供拨杆位置或动作序列；No Operation保留为原图名称，未披露各档实际速度。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Only the pictured remote labels; no independent remote model is given here. D1 Max Genisom M1/G20 RC names, RF and screen parameters are not inherited. Control names only, without toggle positions or action sequences; No Operation is retained literally, and actual mode speeds are not disclosed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "遥控器方向与保留控件图例",
+            "en": "Manual remote directional and reserved legend"
+          },
+          "value": {
+            "zh": "左摇杆图示Forward/Backward/Left/Right；右摇杆图示Left Shift/Right Shift；两侧按钮均标Reserved（保留）",
+            "en": "Left joystick label:Forward / Backward / Left / Right; right joystick label:Left Shift / Right Shift; both side buttons are labeled Reserved"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页17/印刷页14；Controller Layout / joystick and reserved labels；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp17 / printed pp14; Controller Layout / joystick and reserved labels; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 仅图示遥控器标注，手册未在此给独立遥控器型号；不继承D1 Max的Genisom M1/G20 RC名称、射频或屏幕参数。 不把Left/Right擅改为旋转角速度，也不给保留按钮分配功能；未披露摇杆位数、轴精度或输出协议。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Only the pictured remote labels; no independent remote model is given here. D1 Max Genisom M1/G20 RC names, RF and screen parameters are not inherited. Left/Right is not rewritten as angular velocity, and no function is assigned to Reserved buttons; joystick resolution, axis accuracy and output protocol are undisclosed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "云台偏航俯仰控件附件前提",
+            "en": "Manual gimbal yaw and pitch accessory requirement"
+          },
+          "value": {
+            "zh": "图示Gimbal Yaw和Gimbal Pitch；附注要求额外安装云台支架",
+            "en": "The drawing labels Gimbal Yaw and Gimbal Pitch; the note requires an additional gimbal mount"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页17/印刷页14；Controller Layout / gimbal labels and note；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp17 / printed pp14; Controller Layout / gimbal labels and note; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 仅图示遥控器标注，手册未在此给独立遥控器型号；不继承D1 Max的Genisom M1/G20 RC名称、射频或屏幕参数。 不等同云台标配，不披露角度范围、速度、载荷或轴数；已有云台电气端口行保持原样。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Only the pictured remote labels; no independent remote model is given here. D1 Max Genisom M1/G20 RC names, RF and screen parameters are not inherited. Not standard gimbal fitment; angular range, speed, payload and axis count are not disclosed. Existing gimbal electrical-port rows remain unchanged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "遥控器充电期间的控制限制",
+            "en": "Manual robot-control restriction during remote charging"
+          },
+          "value": {
+            "zh": "手册明确：遥控器正在充电时，不能操作机器人",
+            "en": "The manual explicitly states that the robot cannot be operated while the remote controller is charging"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页17/印刷页14；Controller Layout / charging note；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp17 / printed pp14; Controller Layout / charging note; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 仅图示遥控器标注，手册未在此给独立遥控器型号；不继承D1 Max的Genisom M1/G20 RC名称、射频或屏幕参数。 条件是遥控器充电，不与本体充电的另一条限制合并；未披露限制实现方式或安全等级。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Only the pictured remote labels; no independent remote model is given here. D1 Max Genisom M1/G20 RC names, RF and screen parameters are not inherited. The condition is remote-controller charging, distinct from the separate robot-charging restriction; implementation and safety rating are not disclosed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体指示灯表第1行",
+            "en": "Manual body indicator state row 1"
+          },
+          "value": {
+            "zh": "绿色常亮；可控状态",
+            "en": "Solid Green; Controllable state"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页19/印刷页16；Indicator Light Status / row1；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp19 / printed pp16; Indicator Light Status / row1; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 保留原表状态含义，不视为唯一故障判据或完整故障诊断；未给过热温度、灯效频率、迟滞或优先级。“低于”不改为“低于或等于”，蓝/红SOC条件有重叠，不推定互斥区间。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Retains the source meanings, not exclusive fault criteria or exhaustive diagnostics; overheat temperature, flash frequency, hysteresis and priority are not given. Below is not changed to at-or-below; blue/red SOC conditions overlap and are not converted into exclusive bands."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体指示灯表第2行",
+            "en": "Manual body indicator state row 2"
+          },
+          "value": {
+            "zh": "蓝色常亮；电池SOC低于20%，或电机过热/警告/异常",
+            "en": "Solid Blue; Battery SOC below20%, or motor overheating / warning / anomaly"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页19/印刷页16；Indicator Light Status / row2；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp19 / printed pp16; Indicator Light Status / row2; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 保留原表状态含义，不视为唯一故障判据或完整故障诊断；未给过热温度、灯效频率、迟滞或优先级。“低于”不改为“低于或等于”，蓝/红SOC条件有重叠，不推定互斥区间。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Retains the source meanings, not exclusive fault criteria or exhaustive diagnostics; overheat temperature, flash frequency, hysteresis and priority are not given. Below is not changed to at-or-below; blue/red SOC conditions overlap and are not converted into exclusive bands."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体指示灯表第3行",
+            "en": "Manual body indicator state row 3"
+          },
+          "value": {
+            "zh": "红色常亮；电池SOC低于5%，或电机故障",
+            "en": "Solid Red; Battery SOC below5%, or motor fault"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页19/印刷页16；Indicator Light Status / row3；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp19 / printed pp16; Indicator Light Status / row3; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 保留原表状态含义，不视为唯一故障判据或完整故障诊断；未给过热温度、灯效频率、迟滞或优先级。“低于”不改为“低于或等于”，蓝/红SOC条件有重叠，不推定互斥区间。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Retains the source meanings, not exclusive fault criteria or exhaustive diagnostics; overheat temperature, flash frequency, hysteresis and priority are not given. Below is not changed to at-or-below; blue/red SOC conditions overlap and are not converted into exclusive bands."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体指示灯表第4行",
+            "en": "Manual body indicator state row 4"
+          },
+          "value": {
+            "zh": "灯灭；电路故障",
+            "en": "Off; Circuit malfunction"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页19/印刷页16；Indicator Light Status / row4；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp19 / printed pp16; Indicator Light Status / row4; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 保留原表状态含义，不视为唯一故障判据或完整故障诊断；未给过热温度、灯效频率、迟滞或优先级。“低于”不改为“低于或等于”，蓝/红SOC条件有重叠，不推定互斥区间。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Retains the source meanings, not exclusive fault criteria or exhaustive diagnostics; overheat temperature, flash frequency, hysteresis and priority are not given. Below is not changed to at-or-below; blue/red SOC conditions overlap and are not converted into exclusive bands."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "自适应负载范围",
+            "en": "Manual adaptive payload range"
+          },
+          "value": {
+            "zh": "载荷自适应功能支持0-50 kg范围；具有载荷质量估计功能",
+            "en": "Adaptive payload functionality supports0-50 kg and includes payload mass estimation"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页20,24/印刷页17,21；Payload Installation / adaptive range; Precautions / Adding Payload；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp20,24 / printed pp17,21; Payload Installation / adaptive range; Precautions / Adding Payload; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 载荷安装章节条件；手册要求趴下时固定载荷，再切换站立后识别，不推定动态称量精度、分辨率或传感器型号；旧50 kg平地持续负载/100 kg站立负载原行不变。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Payload-installation section conditions: the source requires securing the load while prone, then switching to standing for identification. No dynamic weighing accuracy, resolution or sensor model is inferred; historical50 kg flat-terrain continuous/100 kg standing payload rows remain unchanged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "负载识别约需时间",
+            "en": "Manual approximate payload-identification time"
+          },
+          "value": {
+            "zh": "按原文安装固定并切换站立后，自动识别载荷约需3秒",
+            "en": "After the stated mounting/fastening and switch to standing, automatic payload identification takes approximately3 seconds"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页20/印刷页17；Payload Installation / identification duration；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp20 / printed pp17; Payload Installation / identification duration; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 载荷安装章节条件；手册要求趴下时固定载荷，再切换站立后识别，不推定动态称量精度、分辨率或传感器型号；旧50 kg平地持续负载/100 kg站立负载原行不变。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Payload-installation section conditions: the source requires securing the load while prone, then switching to standing for identification. No dynamic weighing accuracy, resolution or sensor model is inferred; historical50 kg flat-terrain continuous/100 kg standing payload rows remain unchanged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "载荷安装孔螺纹图示",
+            "en": "Manual payload mounting thread callout"
+          },
+          "value": {
+            "zh": "图示螺纹孔标注12-M8",
+            "en": "Thread-hole drawing callout:12-M8"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页20/印刷页17；Payload Installation / mounting drawing / thread callout；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp20 / printed pp17; Payload Installation / mounting drawing / thread callout; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 仅安装图标注；图页未明示尺寸单位、通用公差、孔深、螺距或坐标原点，不补毫米、不按图比例推算，也不推导完整孔位坐标或紧固扭矩。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Drawing callouts only; the page does not state dimension units, general tolerance, hole depth, thread pitch or coordinate origin. No millimetres, scale-derived values, complete hole coordinates or fastening torque are supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "载荷安装图左上短水平尺寸",
+            "en": "Manual payload drawing upper-left short horizontal dimension"
+          },
+          "value": {
+            "zh": "图面标注40；该图未写尺寸单位",
+            "en": "Drawing callout:40; dimension unit unstated on this figure"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页20/印刷页17；Payload Installation / mounting drawing / upper-left short horizontal dimension；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp20 / printed pp17; Payload Installation / mounting drawing / upper-left short horizontal dimension; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 仅安装图标注；图页未明示尺寸单位、通用公差、孔深、螺距或坐标原点，不补毫米、不按图比例推算，也不推导完整孔位坐标或紧固扭矩。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Drawing callouts only; the page does not state dimension units, general tolerance, hole depth, thread pitch or coordinate origin. No millimetres, scale-derived values, complete hole coordinates or fastening torque are supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "载荷安装图最上长水平尺寸",
+            "en": "Manual payload drawing top long horizontal dimension"
+          },
+          "value": {
+            "zh": "图面标注443.5；该图未写尺寸单位",
+            "en": "Drawing callout:443.5; dimension unit unstated on this figure"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页20/印刷页17；Payload Installation / mounting drawing / top long horizontal dimension；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp20 / printed pp17; Payload Installation / mounting drawing / top long horizontal dimension; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 仅安装图标注；图页未明示尺寸单位、通用公差、孔深、螺距或坐标原点，不补毫米、不按图比例推算，也不推导完整孔位坐标或紧固扭矩。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Drawing callouts only; the page does not state dimension units, general tolerance, hole depth, thread pitch or coordinate origin. No millimetres, scale-derived values, complete hole coordinates or fastening torque are supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "载荷安装图中间水平尺寸",
+            "en": "Manual payload drawing middle horizontal dimension"
+          },
+          "value": {
+            "zh": "图面标注355.5；该图未写尺寸单位",
+            "en": "Drawing callout:355.5; dimension unit unstated on this figure"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页20/印刷页17；Payload Installation / mounting drawing / middle horizontal dimension；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp20 / printed pp17; Payload Installation / mounting drawing / middle horizontal dimension; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 仅安装图标注；图页未明示尺寸单位、通用公差、孔深、螺距或坐标原点，不补毫米、不按图比例推算，也不推导完整孔位坐标或紧固扭矩。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Drawing callouts only; the page does not state dimension units, general tolerance, hole depth, thread pitch or coordinate origin. No millimetres, scale-derived values, complete hole coordinates or fastening torque are supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "载荷安装图内侧水平尺寸",
+            "en": "Manual payload drawing inner horizontal dimension"
+          },
+          "value": {
+            "zh": "图面标注150；该图未写尺寸单位",
+            "en": "Drawing callout:150; dimension unit unstated on this figure"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页20/印刷页17；Payload Installation / mounting drawing / inner horizontal dimension；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp20 / printed pp17; Payload Installation / mounting drawing / inner horizontal dimension; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 仅安装图标注；图页未明示尺寸单位、通用公差、孔深、螺距或坐标原点，不补毫米、不按图比例推算，也不推导完整孔位坐标或紧固扭矩。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Drawing callouts only; the page does not state dimension units, general tolerance, hole depth, thread pitch or coordinate origin. No millimetres, scale-derived values, complete hole coordinates or fastening torque are supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "载荷安装图左侧竖直尺寸",
+            "en": "Manual payload drawing left vertical dimension"
+          },
+          "value": {
+            "zh": "图面标注230；该图未写尺寸单位",
+            "en": "Drawing callout:230; dimension unit unstated on this figure"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页20/印刷页17；Payload Installation / mounting drawing / left vertical dimension；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp20 / printed pp17; Payload Installation / mounting drawing / left vertical dimension; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 仅安装图标注；图页未明示尺寸单位、通用公差、孔深、螺距或坐标原点，不补毫米、不按图比例推算，也不推导完整孔位坐标或紧固扭矩。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Drawing callouts only; the page does not state dimension units, general tolerance, hole depth, thread pitch or coordinate origin. No millimetres, scale-derived values, complete hole coordinates or fastening torque are supplied."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "充电器正常充电灯与风扇状态",
+            "en": "Manual charger normal-charging indicators and fan"
+          },
+          "value": {
+            "zh": "正常充电：冷却风扇启动；LED1红色，LED2红色",
+            "en": "Normal Charging:cooling fan activated; LED1 Red, LED2 Red"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页22/印刷页19；Power Adapter Introduction / charger status table / row1；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp22 / printed pp19; Power Adapter Introduction / charger status table / row1; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 只限本手册适配器的两个LED与风扇状态，不套用D1 Max充电座绿色含义；LED2绿色包括充满或未充电，不是唯一100% SOC证明。风扇转速、功率和温控阈值未披露。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Only this manual adapter two-LED/fan states, not D1 Max cradle green semantics; LED2 green includes fully charged or not charging and is not exclusive proof of100% SOC. Fan RPM, power and thermal threshold are undisclosed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "充电器充满或未充电灯与风扇状态",
+            "en": "Manual charger full-or-not-charging indicators and fan"
+          },
+          "value": {
+            "zh": "充满或未充电：冷却风扇关闭；LED1红色，LED2绿色",
+            "en": "Fully Charged or Not Charging:cooling fan off; LED1 Red, LED2 Green"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页22/印刷页19；Power Adapter Introduction / charger status table / row2；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp22 / printed pp19; Power Adapter Introduction / charger status table / row2; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 只限本手册适配器的两个LED与风扇状态，不套用D1 Max充电座绿色含义；LED2绿色包括充满或未充电，不是唯一100% SOC证明。风扇转速、功率和温控阈值未披露。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Only this manual adapter two-LED/fan states, not D1 Max cradle green semantics; LED2 green includes fully charged or not charging and is not exclusive proof of100% SOC. Fan RPM, power and thermal threshold are undisclosed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本体充电上电及遥控限制",
+            "en": "Manual robot-charging electrical state and remote restriction"
+          },
+          "value": {
+            "zh": "充电器接入本体充电口后，电气系统自动上电；本体充电期间遥控器不能控制机器人",
+            "en": "Connecting the charger to the robot charging port automatically powers the electrical system; the remote cannot control the robot during robot charging"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页23/印刷页20；Battery / Charging / electrical system and remote restriction；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp23 / printed pp20; Battery / Charging / electrical system and remote restriction; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 自动电气上电不等同运动使能；不推定安全联锁结构或认证。与遥控器自身充电限制分开，端口图与旧版差异原样保留，不新增接线建议。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Automatic electrical power-on is not motion enablement; interlock architecture or certification is not inferred. Separate from remote-battery charging restrictions; the existing port-drawing discrepancy remains and no wiring advice is added."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "坡面角度与模式条件",
+            "en": "Manual slope-angle and mode conditions"
+          },
+          "value": {
+            "zh": "坡面坡度不超过45度；上坡和下坡均要求Normal模式",
+            "en": "Slope gradient should not exceed45 degrees; Normal mode is required for both ascending and descending"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页24/印刷页21；Terrain Mode Switching / Sloped Terrain；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp24 / printed pp21; Terrain Mode Switching / Sloped Terrain; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 保留注意事项的地形与模式条件，不替换旧最大爬坡角，也不默认满载、湿地或任意摩擦条件下都能达到。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Retains terrain/mode precautions without replacing the historical maximum climbing angle or assuming full load, wet surfaces or arbitrary friction."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "台阶高度楼梯角度与模式联合条件",
+            "en": "Manual combined stair geometry and mode conditions"
+          },
+          "value": {
+            "zh": "每级台阶高度不超过30 cm，整段楼梯角度不超过45度；上下楼梯用Normal模式，转到平地后用Eco模式",
+            "en": "Each step should not exceed30 cm and overall staircase angle should not exceed45 degrees; Normal mode for stairs and Eco mode after transition to flat ground"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页24/印刷页21；Terrain Mode Switching / Stairs and Steps；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp24 / printed pp21; Terrain Mode Switching / Stairs and Steps; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 两个几何上限及地形模式同时保留，不拆成无条件越障能力；未给台阶深度或该工况允许载荷，不继承50 kg平地额定负载。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Both geometry limits and terrain modes are retained together, not split into unconditional traversal capability; tread depth and permitted payload for this scenario are not given, and50 kg flat-ground payload is not inherited."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "选配充电桩回充初始距离与朝向",
+            "en": "Manual optional-dock initial distance and orientation"
+          },
+          "value": {
+            "zh": "需要选配充电桩；启动所述回充流程前，机头朝向桩，机器人与桩间距0.5-1 m",
+            "en": "Requires the optional charging dock; before the described auto-recharging sequence, the head faces the dock at a robot-to-dock distance of0.5-1 m"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "D1 MaxPro官方用户手册：剩余硬件表与图",
+            "en": "Official D1 MaxPro user manual: remaining hardware tables and diagrams"
+          },
+          "locator": {
+            "zh": "D1 MaxPro ZYCXD150M；物理页25/印刷页22；Auto Recharging / initial docking condition；原始PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "D1 MaxPro ZYCXD150M; physical pp25 / printed pp22; Auto Recharging / initial docking condition; origin PDF SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅本手册ZYCXD150M型D1 MaxPro及图示附件，不外推Max、Ultra-W或其他D1型号，不创建独立部件身份；保留来源条件，不作为无条件整机额定值。 这是所述流程的初始位置条件，不是最大自主返航距离、识别距离或对接精度；未给横向/角度容差、桩输出功率或对接时间。",
+            "en": "Only the ZYCXD150M D1 MaxPro and pictured accessories in this manual; not transferred to Max, Ultra-W or other D1 models, and no standalone component identity is created. Source conditions are retained, not unconditional whole-robot ratings. Initial-placement condition for the described sequence, not maximum autonomous-return/detection range or docking accuracy; lateral/angular tolerance, dock output power and docking time are undisclosed."
+          },
+          "excludeFromNumericIndex": true
+        }
+      ]
+    }
+  ],
+  "reviewUpdates": [
+    {
+      "slug": "agibot",
+      "gaps": [
+        "C8 completes the selected remaining cached MaxPro hardware source block with 33 conditional rows: all body-status and charger-state cells, all payload-drawing callouts, full body/remote legends grouped without operation tutorials, approximate startup/self-righting/identification times and precise load/terrain/charging/dock conditions. Existing33 main-table rows and electrical/pinout/battery mappings are reused from C3, not reimported.",
+        "MaxPro remaining external evidence needs: manufacturer clarification of unlabelled drawing units/tolerances/depths, 4G antenna versus optional module, unnamed comparative baselines, existing dimensions/energy/speed/wading/port/current/label conflicts, and independent accessory/SDK documents if legitimately accessible. This accepted cached user-manual hardware block is not a new tiny follow-up queue; no whole-company or full software-manual completeness claim.",
+        "Next substantive research should move to a different owned accessible exact-model/manual gap (for example the recorded Ultra/Ultra-W other hardware scope or a genuinely accessible Fourier robotic model/module document), not repeat blocked TARS/G2/Fourier/Pro/Edu/MaxPro-SDK downloads. Parent owns shared validation/cache/quota.",
+        "Historical checkpoint note (superseded where the C8 scope above closes it): C7 adds 43 conditional D1 Max user-manual power/accessory rows: complete11-state body status table, six battery-display rows, two hard-stop button rows, all24 remote legend positions grouped without tutorial inflation, and exact associated supply/charging/storage conditions. Twelve cached PDF pages were visually reviewed; previously imported electrical ratings are reused. No network download or new identity.",
+        "Historical checkpoint note (superseded where the C8 scope above closes it): New source ambiguities remain unresolved: overlapping battery0/25/50/75% boundaries; charging status color/ rather than inferred blue; steady red shared by soft/hard-stop descriptions; room-temperature30-60% versus storage-preparation50-60% and distinct maintenance schedules; Genisom M1 user-manual reference versus retained SDK G20 RC. All historical C1-C6 fields/flags/corrections are unchanged.",
+        "Historical checkpoint note (superseded where the C8 scope above closes it): Remaining D1 Max scope: separate remote-controller document and independent accessory ratings, other bounded model-manual specification gaps. MaxPro adapter input/output/current and battery-segment fields already exist; its p22 two-row charger LED/fan matrix, p19 status table and p20 mounting drawing remain separately reviewable. General operation/app/password/storage tutorials are not proposed as parameter expansion.",
+        "Historical checkpoint note (superseded where the C8 scope above closes it): Block6 maps D1 Max SDK Development Guide V0.1.0 July2026 chapter1 hardware, physical pp6-26 / printed5-25: 86 scoped new rows. Equivalent pre-existing specification and expansion-port cells are referenced rather than duplicated. Pixel-reviewed tables include17 joint cells, all board-end pin maps, readable harness drawings/BOMs, serial connector requirements and finished-product tests. No separate accessory identity is created.",
+        "Historical checkpoint note (superseded where the C8 scope above closes it): D1 Max SDK discrepancies remain explicit: Rated Stable Payload30kg does not resolve historical25/30kg; named joint limits are not assumed equivalent to historical Body/Thigh/Calf;120m detection range is not substituted for old diameter wording; rail text each14 versus drawing14 remains unresolved; power-harness BOM and pin-table color order differ. Historical values, conditions and numeric flags are unchanged; all new rows are excluded from numeric indexing.",
+        "Historical checkpoint note (superseded where the C8 scope above closes it): This is a bounded readable hardware-chapter block, not full SDK/manual or company closure. Cropped harness-rating/title/dimension margins and the SDK temperature scale remain undisclosed/ambiguous. Chapters2-6, software/API/network/setup tutorials and factory acceptance procedures are outside this block. Other model documents remain separate.",
+        "Historical checkpoint note (superseded where the C8 scope above closes it): Final block5 fallback covers only D1 Ultra-W manual physical p13 / printed11: both five-row battery SOC LED matrices and the adapter mains-input/indicator label. Eleven conditional rows added; no battery identity, operating tutorial or performance rating inferred. Other Ultra-W manual sections remain open.",
+        "Historical checkpoint note (superseded where the C8 scope above closes it): G2 Appendix II remains inaccessible as an attachment: public manual text exposes the filename G02 Offline Data Collection Format Specification - rb235-EN.pdf without a clickable attachment reference in the web-tool result; two exact official-domain searches found no document and direct page fetch returned HTTP500. No schema or file URL was guessed, and no access block was bypassed.",
+        "Historical checkpoint note (superseded where the C8 scope above closes it): G2 Appendix I complete 19-port service table and Appendix III radio declarations are now mapped: four Wi-Fi/Bluetooth EIRP entries, 14 LTE bands, 13 NR bands, three cellular-power rows and the antenna restriction. Port identifiers/regulatory values are not unconditional ratings; SIM activation is not inferred. Appendix II linked data-format document and other untouched sections remain open.",
+        "Historical checkpoint note (superseded where the C8 scope above closes it): Parent-authorized wrapper corrections now cover exact G2 screen, Ultra-W whole-body DoF, Max payload, MaxPro energy/wading and same-model no-load speed source rows. Only exclusions/conditions changed; original data values and source evidence remain immutable. Different hardware ports and continuous-walking speed were not treated as conflicts.",
+        "Historical checkpoint note (superseded where the C8 scope above closes it): D1 Max manual physical p11 complete 26-row table and p14 ports are mapped; MaxPro physical pp7-8 complete 33-row tables, pp9-15 electrical interfaces and pp22-23 battery details are mapped. Existing equivalent parameters are reused, not duplicated. This does not establish full manual or company completeness.",
+        "Historical checkpoint note (superseded where the C8 scope above closes it): Remaining D1 work: cached Max/MaxPro other hardware accessory manuals and bounded remaining sections; Pro/Edu downloads timed out; Ultra/Ultra-W other chapters remain incomplete, including Ultra-W Turbo footnote clarification. Other AGIBOT model/component sources and prior conflicts remain open.",
+        "Historical checkpoint note (superseded where the C8 scope above closes it): MaxPro communication-port scopes and connector electrical differences remain separately documented, not conflated across hardware ports. Full manufacturer/manual completeness is not claimed. Parent owns global validation and cache integration."
+      ]
+    }
+  ]
+}

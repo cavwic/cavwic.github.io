@@ -1,0 +1,23 @@
+---
+import {ExternalLink} from '@lucide/astro';
+import type {Locale} from '../data/site';
+import type {CompanyComponentRelation} from '../data/repository/supplier-relations';
+interface Props {relations:CompanyComponentRelation[];locale:Locale;}
+const {relations,locale} = Astro.props;
+const zh = locale === 'zh';
+---
+{relations.length > 0 && <div class="component-relations" data-component-relations>
+  <h3>{zh ? '公开部件关联' : 'Component references'}</h3>
+  <ul>
+    {relations.map(item=><li>
+      <div class="component-relation-heading"><a href={item.partnerPath}>{item.partnerName}</a><span>{item.relationshipType==='confirmed-supply' ? (zh ? '供货披露' : 'Supply disclosure') : (zh ? '手册配置' : 'Documented configuration')}</span></div>
+      <h4>{item.component}</h4>
+      <p>{item.summary}</p>
+      <p class="component-relation-boundary">{item.boundary}</p>
+      <div class="component-relation-links">
+        <a href={item.officialComponentUrl} target="_blank" rel="noreferrer">{zh ? '厂商资料' : 'Vendor material'} <ExternalLink size={14} aria-hidden="true" /></a>
+        <a href={item.sourceUrl} target="_blank" rel="noreferrer">{zh ? '关联依据' : 'Source'} <ExternalLink size={14} aria-hidden="true" /></a>
+      </div>
+    </li>)}
+  </ul>
+</div>}

@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import EntryList from "../components/EntryList.astro";
 import ResumeLink from "../components/ResumeLink.astro";
 import { isVisible, toEntry } from "../data/content";
+import { getLatestPublications } from "../data/latest-publications";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const library = (await getCollection("library"))
@@ -20,9 +21,9 @@ const library = (await getCollection("library"))
       <p class="hero-kicker">PRESALES / SOLUTIONS / INDUSTRY RESEARCH</p>
       <h1>陈文聪</h1>
       <p class="hero-role">AI · 具身智能 · 灵巧手</p>
-      <p class="hero-summary">把业务问题翻译成系统边界、POC 证据和可交付的技术方案。</p>
+      <p class="hero-summary">把业务问题转化为明确的系统边界、POC 验证依据和可交付的技术方案。</p>
       <div class="hero-actions">
-        <a class="button button-primary" href="#evidence">查看能力证据 <ArrowDown size={18} /></a>
+        <a class="button button-primary" href="#evidence">查看能力展示 <ArrowDown size={18} /></a>
         <ResumeLink className="button button-quiet" />
       </div>
     </div>
@@ -30,28 +31,28 @@ const library = (await getCollection("library"))
   </section>
 
   <section id="evidence" class="evidence-section">
-    <div class="section-heading"><div><p class="eyebrow">EVIDENCE CHAIN</p><h2>从需求到交付，不在演示结束处停住</h2></div><p>六年以上复杂软硬件 B2B 售前经历，当前将方法迁移到企业 AI、具身机器人和末端执行器场景。</p></div>
+    <div class="section-heading"><div><p class="eyebrow">EVIDENCE CHAIN</p><h2>从需求分析到方案交付</h2></div><p>六年以上复杂软硬件 B2B 售前经历，目前正将这些工作方法用于企业 AI、具身机器人和末端执行器场景。</p></div>
     <div class="capability-rail">
-      <article><FileSearch size={22} /><span>01</span><h3>需求澄清</h3><p>对象、流程、数据、现场、决策人与不可承诺边界。</p></article>
-      <article><Blocks size={22} /><span>02</span><h3>方案架构</h3><p>系统分层、接口、权限、资源依赖与替代路径。</p></article>
+      <article><FileSearch size={22} /><span>01</span><h3>需求澄清</h3><p>明确对象、流程、数据、现场条件、决策人及不能承诺的事项。</p></article>
+      <article><Blocks size={22} /><span>02</span><h3>方案架构</h3><p>系统分层、接口、权限、资源依赖与备选方案。</p></article>
       <article><ClipboardCheck size={22} /><span>03</span><h3>POC 验证</h3><p>先定义样本、指标、失败脚本和验收责任。</p></article>
       <article><Route size={22} /><span>04</span><h3>交付闭环</h3><p>部署、培训、版本协同、问题升级和验收移交。</p></article>
     </div>
   </section>
 
   <section class="deliverable-band">
-    <div class="section-heading"><div><p class="eyebrow">REPRESENTATIVE DELIVERABLES</p><h2>招聘方可以直接检查的交付物</h2></div><p>公开资料、分析判断、个人实践与真实经历分开标注；产品结论保留来源、核验日期和待确认条件。</p></div>
+    <div class="section-heading"><div><p class="eyebrow">REPRESENTATIVE DELIVERABLES</p><h2>方案与研究成果</h2></div><p>公开资料、分析判断、个人实践与真实经历分开标注；产品相关结论注明来源、公开口径和待确认条件。</p></div>
     <div class="deliverable-grid">
       <a href="/matrices/enterprise-ai-platforms"><span>01 / MATRIX</span><h3>企业 AI 平台对比</h3><p>Dify、RAGFlow、FastGPT、Coze Studio，按部署、知识、编排、扩展和评测比较。</p><ArrowUpRight size={18} /></a>
-      <a href="/matrices/embodied-robot-platforms"><span>02 / MATRIX</span><h3>具身机器人平台对比</h3><p>先分清科研、展示和任务执行，再谈本体与开发开放度。</p><ArrowUpRight size={18} /></a>
-      <a href="/matrices/dexterous-hand-selection"><span>03 / MATRIX</span><h3>灵巧手选型与验证</h3><p>自由度之外，检查触觉、接口、负载口径、温升、寿命和对象集。</p><ArrowUpRight size={18} /></a>
+      <a href="/matrices/embodied-robot-platforms"><span>02 / MATRIX</span><h3>具身机器人平台对比</h3><p>先区分科研、展示和任务执行，再比较本体与开发开放度。</p><ArrowUpRight size={18} /></a>
+      <a href="/matrices/dexterous-hand-selection"><span>03 / MATRIX</span><h3>灵巧手选型与验证</h3><p>除自由度外，还检查触觉、接口、负载定义、温升、寿命和测试对象范围。</p><ArrowUpRight size={18} /></a>
       <a href="/companies"><span>04 / COMPANY FILES</span><h3>公司与产业链档案</h3><p>按产业位置整理产品、擅长方向、适用场景和选型核验项。</p><ArrowUpRight size={18} /></a>
     </div>
   </section>
 
   <section class="latest-section">
-    <div class="section-heading"><div><p class="eyebrow">LATEST PUBLICATIONS</p><h2>近期发布</h2></div><p>围绕企业 AI、具身机器人与灵巧手，持续发布白皮书、技术文章和案例分析。每篇内容都会标明证据类型与核验日期；引用公开资料时，同时列出来源。</p></div>
-    <EntryList entries={library.map((entry) => toEntry(entry))} locale="zh" />
+    <div class="section-heading"><div><p class="eyebrow">LATEST PUBLICATIONS</p><h2>近期发布</h2></div><p>工具实践、技术文章与案例分析。保留来源、对照和失败结果，区分软件实验与真实硬件验证。</p></div>
+    <EntryList entries={getLatestPublications("zh", library.map((entry) => toEntry(entry)))} locale="zh" />
   </section>
 
   <section class="contact-strip"><div><p class="eyebrow">CONTACT</p><h2>技术售前、解决方案与行业研究</h2></div><a class="button button-primary" href="mailto:buct200831111@sina.com">邮件联系 <Mail size={18} /></a></section>

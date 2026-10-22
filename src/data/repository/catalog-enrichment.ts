@@ -1,0 +1,61 @@
+import type { Locale } from '../site';
+import type { CompanyProfile } from './catalog';
+import { cubemarsCatalogEnrichment } from './catalog-enrichment-cubemars';
+import { myactuatorCatalogEnrichment } from './catalog-enrichment-myactuator';
+import { hesaiCatalogEnrichment } from './catalog-enrichment-hesai';
+import { robosenseCatalogEnrichment } from './catalog-enrichment-robosense';
+import { mechMindCatalogEnrichment } from './catalog-enrichment-mech-mind';
+import { faulhaberCatalogEnrichment } from './catalog-enrichment-faulhaber';
+import { changxingCatalogEnrichment } from './catalog-enrichment-changxing';
+import { dRoboticsCatalogEnrichment } from './catalog-enrichment-d-robotics';
+import { softwareCatalogEnrichment } from './catalog-enrichment-software';
+import { foundationModelCatalogEnrichment } from './catalog-enrichment-foundation-models';
+import { nvidiaCatalogEnrichment } from './catalog-enrichment-nvidia';
+import { adlinkCatalogEnrichment } from './catalog-enrichment-adlink';
+import { nabtescoCatalogEnrichment } from './catalog-enrichment-nabtesco';
+import { harmonicCatalogEnrichment } from './catalog-enrichment-harmonic';
+import { kincoCatalogEnrichment } from './catalog-enrichment-kinco';
+import { robotisCatalogEnrichment } from './catalog-enrichment-robotis';
+import { leaderdriveCatalogEnrichment } from './catalog-enrichment-leaderdrive';
+import { nidecCatalogEnrichment } from './catalog-enrichment-nidec';
+import { beckhoffCatalogEnrichment } from './catalog-enrichment-beckhoff';
+import { maxonCatalogEnrichment } from './catalog-enrichment-maxon';
+import { boydCatalogEnrichment } from './catalog-enrichment-boyd';
+import { hmsCatalogEnrichment } from './catalog-enrichment-hms';
+import { thkCatalogEnrichment } from './catalog-enrichment-thk';
+import { hartingCatalogEnrichment } from './catalog-enrichment-harting';
+import { schunkCatalogEnrichment } from './catalog-enrichment-schunk';
+import { cnRoboticsCatalogEnrichment } from './catalog-enrichment-parallel-cnRobotics';
+import { globalRoboticsCatalogEnrichment } from './catalog-enrichment-parallel-globalRobotics';
+import { visionSensingCatalogEnrichment } from './catalog-enrichment-parallel-visionSensing';
+import { industrialCatalogEnrichment } from './catalog-enrichment-parallel-industrial';
+import { armsCatalogEnrichment } from './catalog-enrichment-parallel-arms';
+import { grippingCatalogEnrichment } from './catalog-enrichment-parallel-gripping';
+import { applyCatalogEnrichmentCompany, buildCatalogEnrichmentProducts } from './catalog-enrichment-runtime';
+import { profileDepthGrippingEnrichment } from './profile-depth-gripping-20261019';
+import { profileDepthMixedEnrichment } from './profile-depth-mixed-20261019';
+import { profileDepthSensingEnrichment } from './profile-depth-sensing-20261019';
+import { readyCnArmsProfiles } from './ready-work-20261019-CnArms';
+import { readyGlobalProfiles, readyGlobalNewProducts } from './ready-work-20261019-Global';
+import { readyGripBProfiles } from './ready-work-20261019-GripB';
+import { readySensingProfiles } from './ready-work-20261019-Sensing';
+
+const groups = [cubemarsCatalogEnrichment, myactuatorCatalogEnrichment, hesaiCatalogEnrichment, robosenseCatalogEnrichment, mechMindCatalogEnrichment, faulhaberCatalogEnrichment, changxingCatalogEnrichment, dRoboticsCatalogEnrichment, softwareCatalogEnrichment, foundationModelCatalogEnrichment, nvidiaCatalogEnrichment, adlinkCatalogEnrichment, nabtescoCatalogEnrichment, harmonicCatalogEnrichment, kincoCatalogEnrichment, robotisCatalogEnrichment, leaderdriveCatalogEnrichment, nidecCatalogEnrichment, beckhoffCatalogEnrichment, maxonCatalogEnrichment, boydCatalogEnrichment];
+groups.push(hmsCatalogEnrichment, thkCatalogEnrichment, hartingCatalogEnrichment, schunkCatalogEnrichment);
+groups.push(cnRoboticsCatalogEnrichment, globalRoboticsCatalogEnrichment, visionSensingCatalogEnrichment);
+groups.push(industrialCatalogEnrichment);
+groups.push(armsCatalogEnrichment);
+groups.push(grippingCatalogEnrichment);
+groups.push(profileDepthGrippingEnrichment, profileDepthMixedEnrichment, profileDepthSensingEnrichment);
+groups.push(readyCnArmsProfiles, readyGlobalProfiles, readyGripBProfiles, readySensingProfiles);
+groups.push({profiles:{kuka:{}},products:readyGlobalNewProducts,reviews:[]});
+export const catalogCompanyReviews = groups.flatMap(group => group.reviews);
+export const getCatalogCompanyTimeline = (slug: string, locale: Locale) => groups.flatMap(group => group.profiles[slug]?.timeline ?? []).map(event => ({
+  date:event.date,title:event.title[locale],detail:event.detail[locale],sourceUrl:event.sourceUrl,kind:event.kind,
+}));
+export const getCatalogCompanyFunding = (slug: string, locale: Locale) => groups.flatMap(group => group.profiles[slug]?.funding ?? []).map(round => ({
+  date:round.date,round:round.round[locale],amount:typeof round.amount==='string'?round.amount:round.amount[locale],investors:round.investors[locale],sourceUrl:round.sourceUrl,
+}));
+export const getCatalogCompanyInvestmentView = (slug: string, locale: Locale) => groups.flatMap(group => group.profiles[slug]?.investmentView ?? []).map(item => item[locale]);
+export const applyCatalogEnrichment = (company: CompanyProfile, locale: Locale) => groups.reduce((value, group) => applyCatalogEnrichmentCompany(value, locale, group), company);
+export const getCatalogEnrichmentProducts = (locale: Locale, companies: CompanyProfile[]) => groups.flatMap(group => buildCatalogEnrichmentProducts(locale, companies, group));

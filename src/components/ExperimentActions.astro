@@ -1,0 +1,27 @@
+---
+import { ArrowLeft, Undo2, Redo2 } from '@lucide/astro';
+const { locale = 'zh' } = Astro.props as { locale?: 'zh' | 'en' };
+const zh = locale === 'zh';
+---
+<div class="experiment-actions" data-history-toolbar title={zh ? '当前页面最多保留 50 步操作。可恢复设置与视图；不会撤回下载，也不会自动重启摄像头。' : 'Up to 50 steps on this page. Restores settings and views; does not undo downloads or restart the camera.'}>
+  <a class="experiment-action-back" data-experiment-back href={`${zh ? '' : '/en'}/tools/robotics-lab`} title={zh ? '返回实验台总览' : 'Return to the experiment overview'}><ArrowLeft size={17}/><span>{zh ? '返回上一级' : 'Back to experiments'}</span></a>
+  <span class="experiment-action-status" data-history-status role="status" aria-live="polite"></span>
+  <div class="experiment-action-buttons">
+    <button type="button" data-history-undo disabled title={zh ? '暂无可撤销操作' : 'Nothing to undo'}><Undo2 size={17}/><span>{zh ? '撤销' : 'Undo'}</span></button>
+    <button type="button" data-history-redo disabled title={zh ? '暂无可恢复操作' : 'Nothing to redo'}><Redo2 size={17}/><span>{zh ? '恢复' : 'Redo'}</span></button>
+  </div>
+</div>
+<script>
+  import { installHistoryUI } from '../features/robotics-lab/history';
+  installHistoryUI();
+</script>
+<style>
+  .experiment-actions { position:sticky;top:var(--experiment-header-height,0px);z-index:19;display:flex;align-items:center;gap:16px;padding:10px 12px;margin:0 0 18px;background:var(--surface,var(--rt-surface));border:1px solid var(--line,var(--rt-line));border-radius:5px;color:var(--ink,var(--rt-ink)); }
+  .experiment-actions a,.experiment-actions button { display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;border:1px solid var(--lab-control-line,var(--rt-control-line));border-radius:4px;padding:7px 12px;background:transparent;color:inherit;font:600 14px/1.5 var(--body,var(--rt-font));white-space:nowrap;text-decoration:none; }
+  .experiment-actions a:hover,.experiment-actions button:not(:disabled):hover { border-color:var(--lab-blue,var(--rt-blue)); }
+  .experiment-actions button:disabled { cursor:not-allowed;opacity:1;color:var(--ink-soft,var(--rt-muted));background:var(--paper,var(--rt-paper)); }
+  .experiment-action-buttons { display:flex;gap:7px;margin-left:auto; }
+  .experiment-action-status { min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:var(--ink-soft,var(--rt-muted)); }
+  .experiment-actions a:focus-visible,.experiment-actions button:focus-visible { outline:3px solid var(--lab-blue,var(--rt-blue));outline-offset:3px; }
+  @media(max-width:760px) { .experiment-actions { padding:8px;gap:8px; }.experiment-actions a,.experiment-actions button { padding:7px 9px;font-size:12px;gap:5px; }.experiment-action-status { position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%); }.experiment-action-buttons { gap:5px; } }
+</style>

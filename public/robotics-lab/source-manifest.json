@@ -1,0 +1,840 @@
+{
+  "schema": "robotics-source-v1",
+  "files": [
+    {
+      "path": "astro.hand-retargeting.config.mjs",
+      "bytes": 516,
+      "sha256": "cbf3e78141127c34979a1fa57b9d3763182e4dbfe914eb7658b439ba560d1e85"
+    },
+    {
+      "path": "astro.robotics-lab.config.mjs",
+      "bytes": 422,
+      "sha256": "9ced9c83d80b4d61fc8845e11cd7959ff85d9dd2a4b43e694e169e6f21585f75"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 196353,
+      "sha256": "d8193911e00bb4d5d852a4e0fee56420e7ff35c5c9e767f990afc6f535baf8b2"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1685,
+      "sha256": "339154327bff1151a7580278fa03c11589c532ebe90eb91cdacd1fb1ef440042"
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 405,
+      "sha256": "403e22abeebb64ba021eb0e0db109a0934e80607e3bc387dbe74109dfa2ea0b6"
+    },
+    {
+      "path": "public/hand-retargeting/METHODS.md",
+      "bytes": 13590,
+      "sha256": "af9bdb3a61c34d562876fb787f2b93383b2b9489c5c695f022b1b758b73b1f0b"
+    },
+    {
+      "path": "public/hand-retargeting/THIRD_PARTY.md",
+      "bytes": 1159,
+      "sha256": "046e01b000c9f9cd7c99642a44bcda30bf126269a151d70e765e4399ead6cfd0"
+    },
+    {
+      "path": "public/hand-retargeting/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "public/hand-retargeting/model.json",
+      "bytes": 2144,
+      "sha256": "38597073b5b96629e597c42d635e5833db40c995d23de6dbc83fbc960e31f400"
+    },
+    {
+      "path": "public/hand-retargeting/reference-benchmark.json",
+      "bytes": 5841,
+      "sha256": "96c9844dc0a3f3b5ec107951f4689739256e6efb2dd736777350b3607c44b65d"
+    },
+    {
+      "path": "public/hand-retargeting/sample-sequence.json",
+      "bytes": 121476,
+      "sha256": "f53dfeeb1b40386db2d74bc7c5ba4d1159d9bababfee3a927af1ce84dae05e65"
+    },
+    {
+      "path": "public/hand-retargeting/source/app.ts",
+      "bytes": 70820,
+      "sha256": "9bfae2ca00517ab7a2f521a2ad0fdd9b8589ba97e99fc928befb596e2383f131"
+    },
+    {
+      "path": "public/hand-retargeting/source/benchmark.worker.ts",
+      "bytes": 659,
+      "sha256": "b3f0125b458ef8b85f76657b1293f84882dbf420b54ed8f179d4daade48105ef"
+    },
+    {
+      "path": "public/hand-retargeting/source/calibration.ts",
+      "bytes": 25492,
+      "sha256": "f0c5069fa8859962a3148e423e2656393478c7f4852f330aae8a98203d08c33d"
+    },
+    {
+      "path": "public/hand-retargeting/source/copy.ts",
+      "bytes": 26481,
+      "sha256": "2e31a73d1f5f09a9df4dfb8347f9e1a05bf0da9f07c5e1f85565737f11069d85"
+    },
+    {
+      "path": "public/hand-retargeting/source/engine.ts",
+      "bytes": 32478,
+      "sha256": "891a95079b9808037ea1c98f8ba8371f7c15f66b389ad2562f0c9dc1635daf9b"
+    },
+    {
+      "path": "public/hand-retargeting/source/history-state.ts",
+      "bytes": 2145,
+      "sha256": "ed8de727e55aeff18272a24ced22c8393b62c51735d5a9164f6ca4979d4581f1"
+    },
+    {
+      "path": "public/hand-retargeting/source/robot-visual.ts",
+      "bytes": 19071,
+      "sha256": "407295cbb54fe7f2fe545827c163e4f2d65598a406c07e4ad7efa1021be6a024"
+    },
+    {
+      "path": "public/hand-retargeting/source/runtime.ts",
+      "bytes": 5802,
+      "sha256": "412269c598c56dab5954260d0f699248f1a41360914775779c9e584d60f081b9"
+    },
+    {
+      "path": "public/hand-retargeting/source/test-hand-calibration.mjs",
+      "bytes": 13987,
+      "sha256": "98c77262710c9dda731f961512ca9a622ac71a9ca73f1650d581f7b6366fd8ce"
+    },
+    {
+      "path": "public/hand-retargeting/source/test-hand-history-records.mjs",
+      "bytes": 3149,
+      "sha256": "68b7f80c642e3a07e1156fb3ea51ba5000fd818fe3a9f224b2a30359780466ac"
+    },
+    {
+      "path": "public/hand-retargeting/source/test-hand-retargeting.mjs",
+      "bytes": 17200,
+      "sha256": "769b8af075a0ac2e4f4b8065301b116010255feff1a09ba1787d252bc92e601e"
+    },
+    {
+      "path": "public/hand-retargeting/source/test-hand-runtime.mjs",
+      "bytes": 5504,
+      "sha256": "ddd1dc6c54cdf3a89c40643c41b726692998a2688d77ce642b08b175047b14cc"
+    },
+    {
+      "path": "public/hand-retargeting/source/test-hand-visual.mjs",
+      "bytes": 5747,
+      "sha256": "4841bd199051a0ec104b7c302ab1e1f55b5f4c19c5ba1c3cc3026d23a4a5f3ba"
+    },
+    {
+      "path": "public/hand-retargeting/source/vision.worker.ts",
+      "bytes": 1551,
+      "sha256": "1c6e0e314a887ff923cc12be9f75d1b0df1c66dfab0b825eb2ff217ed4d9340b"
+    },
+    {
+      "path": "public/hand-retargeting/source/visual-frame.ts",
+      "bytes": 2233,
+      "sha256": "7700ee8ee955a05c5529944e6629e53281e732d91298d218200c51161069caea"
+    },
+    {
+      "path": "public/models/hand_landmarker-v1.task",
+      "bytes": 7819105,
+      "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+    },
+    {
+      "path": "public/robotics-lab/control/METHODS.md",
+      "bytes": 1781,
+      "sha256": "37ce565e7f80d93f4eac23c3087ac1d3a7509b93d0c0b31d9930107abeadd169"
+    },
+    {
+      "path": "public/robotics-lab/data/clean-report.json",
+      "bytes": 506,
+      "sha256": "8096d8d03a77934bd653a23c79b2698f32f17dc14f822c1f63bf84e74a775d69"
+    },
+    {
+      "path": "public/robotics-lab/data/clean.json",
+      "bytes": 144386,
+      "sha256": "d55f43ecb3cb09d8fd87ca11465e6b8ea61f03962119c400a4781298b53240ad"
+    },
+    {
+      "path": "public/robotics-lab/data/leakage-report.json",
+      "bytes": 1629,
+      "sha256": "ae20d2bfb3a5a047f48aa7d1887e5c2fd2f676b8a3ef02e0d98ed6fda92623e3"
+    },
+    {
+      "path": "public/robotics-lab/data/leakage.json",
+      "bytes": 180919,
+      "sha256": "0fd39c35f871c6faa1e48eb44e82c09c279639a9a5e75c4d7aa08983b795da45"
+    },
+    {
+      "path": "public/robotics-lab/data/mixed-report.json",
+      "bytes": 11193,
+      "sha256": "9f641a205730f862163b265b6a90a4bcfdce2d3907c4b4e71c7b945e90754c4f"
+    },
+    {
+      "path": "public/robotics-lab/data/mixed.json",
+      "bytes": 180218,
+      "sha256": "fa47c3fc54923eae49f507c7acf1b79a8d47b1e73f6285a114ec0ccc179365be"
+    },
+    {
+      "path": "public/robotics-lab/data/signals-report.json",
+      "bytes": 2123,
+      "sha256": "b203b6ca86fcef2ba3c806e5e2e7c3b92853d44d52d3a1c0d9f9bba288bfbf4f"
+    },
+    {
+      "path": "public/robotics-lab/data/signals.json",
+      "bytes": 144301,
+      "sha256": "ace97d34a71e5028922c7d293d4c0020cb14ef74711d274d5544e49e4f5338a4"
+    },
+    {
+      "path": "public/robotics-lab/data/timing-report.json",
+      "bytes": 8566,
+      "sha256": "d18f06daef70f5900ba2858ce073e2b2926a9d62a398f56db49a6b8037747ae3"
+    },
+    {
+      "path": "public/robotics-lab/data/timing.json",
+      "bytes": 143800,
+      "sha256": "7b5265f44211d5bac2c4340d2c08a5823334e4bfff931c080164fbf1a48f95bb"
+    },
+    {
+      "path": "public/robotics-lab/grasp/README.md",
+      "bytes": 1580,
+      "sha256": "00b463add87e2cf49d7ef759ba9903106dba8f776482e7dfb2da751a772704cc"
+    },
+    {
+      "path": "public/robotics-lab/grasp/model.xml",
+      "bytes": 1804,
+      "sha256": "7358478fb596a628c9aaffa1aec4f262c22901683c3058222eb7339c4ff9f3d8"
+    },
+    {
+      "path": "public/robotics-lab/grasp/results.json",
+      "bytes": 7587162,
+      "sha256": "09fd8719ce9c05d62fda6502c023cf87c0e9ab59f2c9fc66c1684ce9a1605abe"
+    },
+    {
+      "path": "public/robotics-lab/grasp/trials.json",
+      "bytes": 58081,
+      "sha256": "2cfae9d41f7b4dce2491a208584f0a20fc313704db73fefaba690fe61dedf6a8"
+    },
+    {
+      "path": "public/robotics-lab/imitation/results.json",
+      "bytes": 2120071,
+      "sha256": "9281e8130d1490a5171f047b7021dfd4e641746c524e8b048679b6537b728552"
+    },
+    {
+      "path": "public/robotics-lab/randomization/README.md",
+      "bytes": 2153,
+      "sha256": "49bfd3504009bfc4b7eae2bfa9fc0f95edcc16208567d647a00de9ef3eab5a6c"
+    },
+    {
+      "path": "public/robotics-lab/randomization/results.json",
+      "bytes": 6442885,
+      "sha256": "1b62ea8c81309f2d6a5458ebc35dcae6d2d1f10e3f2198ced92d6ba020ef64b1"
+    },
+    {
+      "path": "public/robotics-lab/randomization/training-trials.json",
+      "bytes": 120777,
+      "sha256": "36d65a34fda2e8be161e785cbf125a407e27039fdc8887a8f48b871145f906a7"
+    },
+    {
+      "path": "public/robotics-lab/randomization/trials.json",
+      "bytes": 53925,
+      "sha256": "486335634b9ffe50b3a1da8bf509055f6b42ee5413dfab11cc1b42575437ce73"
+    },
+    {
+      "path": "public/robotics-lab/safety/METHODS.md",
+      "bytes": 2760,
+      "sha256": "d11dc3530f7e898bd804dd8b1a835178d2acba788d3d3484e6569843a4966480"
+    },
+    {
+      "path": "public/robotics-lab/tactile/cases-noisy-fixed.json",
+      "bytes": 1096665,
+      "sha256": "667f6abfb7fca207f615aaec1f3e1dd495d191d03d5daa8026140cf54b635a84"
+    },
+    {
+      "path": "public/robotics-lab/tactile/cases-noisy-learned.json",
+      "bytes": 1066007,
+      "sha256": "e0968fcb333c3e17e534ef2b5d0aba377740648a1d49cc036e48eed52d219700"
+    },
+    {
+      "path": "public/robotics-lab/tactile/cases-noisy-threshold.json",
+      "bytes": 1056532,
+      "sha256": "8c8594537af9eb66c5f24e1ee087cc7af2f37a770745c91818621d8e03f268ea"
+    },
+    {
+      "path": "public/robotics-lab/tactile/cases-nominal-fixed.json",
+      "bytes": 1141124,
+      "sha256": "4d7635f2e4058a6f2f5ee8ea7c99713c504e60da6263e29ceddf5a90cb33129f"
+    },
+    {
+      "path": "public/robotics-lab/tactile/cases-nominal-learned.json",
+      "bytes": 1089187,
+      "sha256": "102a74b721eb806011e54235dc65374b1f0dc1ae7b75b0da3c7e1f3c8eb09876"
+    },
+    {
+      "path": "public/robotics-lab/tactile/cases-nominal-threshold.json",
+      "bytes": 1090726,
+      "sha256": "75415b49ed4f003fd3902f7ceac020776eb58380c285ffa8028b8e0174f21351"
+    },
+    {
+      "path": "public/robotics-lab/tactile/cases-unseen-friction-fixed.json",
+      "bytes": 1185356,
+      "sha256": "5020862c97afde0ddc1a02165280d0bac1317fd6591ba024ffea1a251e8bc366"
+    },
+    {
+      "path": "public/robotics-lab/tactile/cases-unseen-friction-learned.json",
+      "bytes": 1156161,
+      "sha256": "2b2bf0af7f082758c85327be81281ec86aba741e477cf9358effa936e600e990"
+    },
+    {
+      "path": "public/robotics-lab/tactile/cases-unseen-friction-threshold.json",
+      "bytes": 1148867,
+      "sha256": "69ae298be3682fee78ce8ace619f0bb2f190986429414ae014ec20be9f893ca3"
+    },
+    {
+      "path": "public/robotics-lab/tactile/manifest.json",
+      "bytes": 346847,
+      "sha256": "e949131d3db1f7cd4546af684c5d25a5bf926d64e02096da9f96adfd495eb096"
+    },
+    {
+      "path": "public/robotics-lab/tactile/model.json",
+      "bytes": 589,
+      "sha256": "86e045338b308314c63d2e3cb7d93698133ec7a423b346c9339a6a0a3f1f993d"
+    },
+    {
+      "path": "public/robotics-lab/tactile/results.json",
+      "bytes": 10039979,
+      "sha256": "95aa7e85406602b06946d30b7f72fe5aaecc3bd98bd0360ddbce3b2e085ec318"
+    },
+    {
+      "path": "public/vendor/mediapipe/1.1.0/LICENSE",
+      "bytes": 12331,
+      "sha256": "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8"
+    },
+    {
+      "path": "public/vendor/mediapipe/1.1.0/wasm/vision_wasm_internal.js",
+      "bytes": 335393,
+      "sha256": "7c652617b5bef832f42878ce8c5f752b0724bca6054e4bc1013a37d4b1949723"
+    },
+    {
+      "path": "public/vendor/mediapipe/1.1.0/wasm/vision_wasm_internal.wasm",
+      "bytes": 12997248,
+      "sha256": "782eda3ec1f414fdb4f1d66a8b59093eb4d5ab437e06117796abf05962d68eef"
+    },
+    {
+      "path": "public/vendor/mediapipe/1.1.0/wasm/vision_wasm_module_internal.js",
+      "bytes": 335431,
+      "sha256": "70eff3956521b7de058d7173a4935c95e4a223c26ea624b9f5a936d3a043dcb0"
+    },
+    {
+      "path": "public/vendor/mediapipe/1.1.0/wasm/vision_wasm_module_internal.wasm",
+      "bytes": 12997272,
+      "sha256": "ee03b14a878e6c3c053a1bfa62e166dc45244be54dc0bbe61c578f710b771f6a"
+    },
+    {
+      "path": "public/vendor/mediapipe/1.1.0/wasm/vision_wasm_nosimd_internal.js",
+      "bytes": 335196,
+      "sha256": "510fc70a170eb8b46767a7abab2af89a7a8341fa5b3ebfb8a5de41a79b7fa9df"
+    },
+    {
+      "path": "public/vendor/mediapipe/1.1.0/wasm/vision_wasm_nosimd_internal.wasm",
+      "bytes": 12168316,
+      "sha256": "b802041d105876865d6a0806f2ff7c4419a7f1b80bc01340fe36e759c2030011"
+    },
+    {
+      "path": "robotics-projects/README.md",
+      "bytes": 6987,
+      "sha256": "dc5966ccd17fb9c08d0fb9718a1af476c3df242ead7039dfecba8adc51361ddb"
+    },
+    {
+      "path": "robotics-projects/VERIFICATION.md",
+      "bytes": 15752,
+      "sha256": "66d8283cd337088aed7a9eb73473399bed54663399ce0980d34bb1cc45fce0dc"
+    },
+    {
+      "path": "robotics-projects/control/README.md",
+      "bytes": 3166,
+      "sha256": "7e81b6e19675280545366591960992d113e249d575a8261d90baffae2c6d34bf"
+    },
+    {
+      "path": "robotics-projects/data/README.md",
+      "bytes": 5937,
+      "sha256": "92c8df653c9d04aa5e6fbd902c9c58be1947aedc22bcc22af273fe11a674d2cb"
+    },
+    {
+      "path": "robotics-projects/data/convert_rosbag.py",
+      "bytes": 15042,
+      "sha256": "8d2c6761de4b6cdf762910388a638bcd51feadda9e8d023c5b90c148c370d448"
+    },
+    {
+      "path": "robotics-projects/data/test_convert_rosbag.py",
+      "bytes": 6495,
+      "sha256": "2ebcbb772ee47318ee970a49d2b84a1d214ef1648b84001618b34fa44717e8f1"
+    },
+    {
+      "path": "robotics-projects/data/test_roundtrip.py",
+      "bytes": 8982,
+      "sha256": "b798c3767b9e288eea3dd382d5a270919181282bc27f13b0659357c564f8ece8"
+    },
+    {
+      "path": "robotics-projects/grasp/README.md",
+      "bytes": 6664,
+      "sha256": "d150bd041323ff3d0f73cce33e7a18d7f391953b5bf49660ad910ae26a6f5356"
+    },
+    {
+      "path": "robotics-projects/grasp/experiment.py",
+      "bytes": 17119,
+      "sha256": "2206d30c7c06e72ea7015da9a81c032e165fd41f86edfec633ae76c2ec5c8bf1"
+    },
+    {
+      "path": "robotics-projects/grasp/verify.py",
+      "bytes": 835,
+      "sha256": "1be9717f9d81d75a0b5a89ce4d9b61f34146dc7a605d0d5ad6c820c038dab788"
+    },
+    {
+      "path": "robotics-projects/imitation/README.md",
+      "bytes": 4449,
+      "sha256": "3803b9bbf80566a9b2e5ee223f046c46f51c9b39361557e7e166b661afae76ea"
+    },
+    {
+      "path": "robotics-projects/imitation/act_checkpoint.pt",
+      "bytes": 645509,
+      "sha256": "2d88a01fae3c0ef1878ab92942b954ec2f4df569ef777208a67801ba4feaab75"
+    },
+    {
+      "path": "robotics-projects/imitation/config.json",
+      "bytes": 426,
+      "sha256": "dd1120280fbbd9a62b38c0b1e47af89753fc546fc1a5c96bc4cca8d75f56af57"
+    },
+    {
+      "path": "robotics-projects/imitation/demonstrations.npz",
+      "bytes": 164143,
+      "sha256": "7b0b12b10389c0908f2247580947864c9503e790caff78baefc4981b3e489a5b"
+    },
+    {
+      "path": "robotics-projects/imitation/mlp_checkpoint.pt",
+      "bytes": 21205,
+      "sha256": "0cf7cce348c6d2e6cf0ab9a89b60be54c4844601d9b5550097690964a5c436bb"
+    },
+    {
+      "path": "robotics-projects/imitation/requirements-supported.txt",
+      "bytes": 251,
+      "sha256": "7a94ace9f9add1d084ea27a95e414f76e59c322c585be7b4fae4a49b961ea5a6"
+    },
+    {
+      "path": "robotics-projects/imitation/run.py",
+      "bytes": 13002,
+      "sha256": "fff0b3d365413c2617f3159b99d08781e66d8b5b6f73e64a3e6cb13841806cd2"
+    },
+    {
+      "path": "robotics-projects/ros2/safety_guard/README.md",
+      "bytes": 6345,
+      "sha256": "0789f6fe807e7debdf6b8078219dde00397b775008bbaeef8290558f8da5ee03"
+    },
+    {
+      "path": "robotics-projects/ros2/safety_guard/package.xml",
+      "bytes": 685,
+      "sha256": "c3eff53c3cc63f6eae6cdb281d52b6cb0666ad7f553c9854b8b0fa3bd92f9c85"
+    },
+    {
+      "path": "robotics-projects/ros2/safety_guard/resource/safety_guard",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "robotics-projects/ros2/safety_guard/safety_guard/__init__.py",
+      "bytes": 78,
+      "sha256": "0db3f7cd8f5549506db5ec2e5d280a7c3bae51fe913e3453756b3629a7c0eef1"
+    },
+    {
+      "path": "robotics-projects/ros2/safety_guard/safety_guard/core.py",
+      "bytes": 6490,
+      "sha256": "d9e401bf26605d27e9538af9bef638e1163860c4fe336de594b98b7f95e22bb4"
+    },
+    {
+      "path": "robotics-projects/ros2/safety_guard/safety_guard/mock_joint.py",
+      "bytes": 3808,
+      "sha256": "c2f65a2c8716a102c6f7e742ae3b92fd918025aaca860de95645cb893480b874"
+    },
+    {
+      "path": "robotics-projects/ros2/safety_guard/safety_guard/node.py",
+      "bytes": 6138,
+      "sha256": "8c5fc79468e3e1706d5770588a6c3ad84555def24a1ce432263ae2117f491701"
+    },
+    {
+      "path": "robotics-projects/ros2/safety_guard/setup.cfg",
+      "bytes": 93,
+      "sha256": "2c17cf6d3cf558d8fbb36722c83a4528fda596ba49a29f60d12ce0d83afcab9a"
+    },
+    {
+      "path": "robotics-projects/ros2/safety_guard/setup.py",
+      "bytes": 737,
+      "sha256": "3b4e344c01cb6673e6351bca89ceb425480722bcb7b8f021c0f3364f98d06f68"
+    },
+    {
+      "path": "robotics-projects/ros2/safety_guard/test/parity_trace.py",
+      "bytes": 878,
+      "sha256": "962aee23486c257db5f7901fded04082343db968600e4687cf9d5c0e3520b9ad"
+    },
+    {
+      "path": "robotics-projects/ros2/safety_guard/test/test_core.py",
+      "bytes": 4871,
+      "sha256": "5a79be3d1942907bdbc0c6a23867db5a6e5edb7427d207de293014ce36d312dc"
+    },
+    {
+      "path": "robotics-projects/tactile/README.md",
+      "bytes": 3180,
+      "sha256": "f96b6a2881a8266a3e00c9f4ba2a6f3f975a3f2f845e66ef77024a6339eb9f93"
+    },
+    {
+      "path": "robotics-projects/tactile/dataset.npz",
+      "bytes": 4336734,
+      "sha256": "a787902f2a379bcad838ccd4104db20938b6304ad54f7e808f3c524b6ba78e41"
+    },
+    {
+      "path": "robotics-projects/tactile/run.py",
+      "bytes": 9958,
+      "sha256": "eeb8739f069815edd4c115ed442f6c18b336fbf3f821616bb992dbecc7124561"
+    },
+    {
+      "path": "robotics-projects/打开实验台.cmd",
+      "bytes": 603,
+      "sha256": "6be9e62a98b00216ed1ab666149e6693adb28a8d632dddf0d36c0c5eebc8728c"
+    },
+    {
+      "path": "robotics-projects/技术面试演示操作指南.txt",
+      "bytes": 22525,
+      "sha256": "716596ca96f8df33af256434b8a807060106fd3f6163779dff0c19b1b3d8e81b"
+    },
+    {
+      "path": "scripts/build-robotics-labs.mjs",
+      "bytes": 1303,
+      "sha256": "e61a89a3b5e50689b59bef53ded77c7209ef15a09454e19433c59a6482dbe481"
+    },
+    {
+      "path": "scripts/export-hand-retargeting-evidence.mjs",
+      "bytes": 2839,
+      "sha256": "9bcef33f89134bd4583877db14af9b74e8093594026b61c236dc9542644ed91d"
+    },
+    {
+      "path": "scripts/export-robotics-data-fixtures.mjs",
+      "bytes": 643,
+      "sha256": "32673cdccd0cf5f88df61f72ce70e0bc0713f6ce9c7eec868bd3ad3a137149ed"
+    },
+    {
+      "path": "scripts/package-robotics-labs.mjs",
+      "bytes": 3543,
+      "sha256": "70243fbec1e2612e9d57b83ac009e598a25f30af67d8536b29afc8c4bf32b17d"
+    },
+    {
+      "path": "scripts/prepare-hand-retargeting-assets.mjs",
+      "bytes": 2325,
+      "sha256": "410f1da6b7131bf7bc66d80afbddfad602495dcf39e2a96f24b79268da632244"
+    },
+    {
+      "path": "scripts/prepare-hand-retargeting-fixtures.mjs",
+      "bytes": 2184,
+      "sha256": "e2b55246112e71c8930c1fd39ea4bb7d0e02709edfcf9376d07b84b0e1905c32"
+    },
+    {
+      "path": "scripts/stage-hand-retargeting-build.mjs",
+      "bytes": 2101,
+      "sha256": "6f3833dd5a959fd0d4861c5f057046036bf241c0f72a185486aa6cb8cfbfdd04"
+    },
+    {
+      "path": "scripts/test-hand-calibration.mjs",
+      "bytes": 13987,
+      "sha256": "98c77262710c9dda731f961512ca9a622ac71a9ca73f1650d581f7b6366fd8ce"
+    },
+    {
+      "path": "scripts/test-hand-history-records.mjs",
+      "bytes": 3149,
+      "sha256": "68b7f80c642e3a07e1156fb3ea51ba5000fd818fe3a9f224b2a30359780466ac"
+    },
+    {
+      "path": "scripts/test-hand-retargeting.mjs",
+      "bytes": 17200,
+      "sha256": "769b8af075a0ac2e4f4b8065301b116010255feff1a09ba1787d252bc92e601e"
+    },
+    {
+      "path": "scripts/test-hand-runtime.mjs",
+      "bytes": 5504,
+      "sha256": "ddd1dc6c54cdf3a89c40643c41b726692998a2688d77ce642b08b175047b14cc"
+    },
+    {
+      "path": "scripts/test-hand-visual.mjs",
+      "bytes": 5747,
+      "sha256": "4841bd199051a0ec104b7c302ab1e1f55b5f4c19c5ba1c3cc3026d23a4a5f3ba"
+    },
+    {
+      "path": "scripts/test-robotics-control.mjs",
+      "bytes": 6482,
+      "sha256": "859fddd0e88a1cd96cc391e7ec7da50b51f2b11cbeb46c4ddfe11256b7b181a1"
+    },
+    {
+      "path": "scripts/test-robotics-data.mjs",
+      "bytes": 1843,
+      "sha256": "2d1682860e91d4f21b78c9d295cfed8f3613385183974c38807b3676cebd0468"
+    },
+    {
+      "path": "scripts/test-robotics-grasp.mjs",
+      "bytes": 5373,
+      "sha256": "280c0a71b4b54263fe7d610e56622f3d63caf8f2f61285920100e649f870a486"
+    },
+    {
+      "path": "scripts/test-robotics-history.mjs",
+      "bytes": 20440,
+      "sha256": "a4d51ced84b0da113bf35b721eb8fedbcaa01e00ee8c520efc8eb01a8214f1f8"
+    },
+    {
+      "path": "scripts/test-robotics-labs.mjs",
+      "bytes": 649,
+      "sha256": "c5183a6e87cb25d57e7f7ae72c4d7ce3cdffe7f3dca02fc47abab9b4df89c004"
+    },
+    {
+      "path": "scripts/test-robotics-learning.mjs",
+      "bytes": 4764,
+      "sha256": "518fea9f32eb7a43ce380acb0a8ac21e9bb9e38c37d48cd133bce55e8e475c90"
+    },
+    {
+      "path": "scripts/test-robotics-orbit-history.mjs",
+      "bytes": 8341,
+      "sha256": "39cecbd2d6cd9c78267cb5ab36cf5699548901475a8745bb95debce2beb52537"
+    },
+    {
+      "path": "scripts/test-robotics-safety.mjs",
+      "bytes": 5921,
+      "sha256": "0316cfaa4e4d173a6243d931a0e2497f2e1e7c388b01d2e69cb75b60e081c8f3"
+    },
+    {
+      "path": "scripts/test-robotics-visuals.mjs",
+      "bytes": 18651,
+      "sha256": "33b45118509cf09d29942e620861b27543f3f512ea5aa1653f9867fa2c3bf50e"
+    },
+    {
+      "path": "scripts/verify-robotics-http.mjs",
+      "bytes": 7335,
+      "sha256": "a66a9bb97588a59be7d49327634659a26be2f73bafc94ceac18345b6efb33a98"
+    },
+    {
+      "path": "src/components/ExperimentActions.astro",
+      "bytes": 3004,
+      "sha256": "bb73746ed39a550e2a6f885b5c66eaa4b1d5b2a3980440fefff955c46c584348"
+    },
+    {
+      "path": "src/components/HandRetargetingLab.astro",
+      "bytes": 44410,
+      "sha256": "eb3e9150b4872246858736e037d9b5c8bd9987fedac4afdee7eb2d6414f3a597"
+    },
+    {
+      "path": "src/components/RoboticsLab.astro",
+      "bytes": 6765,
+      "sha256": "fcd3faf952fb18ee62331afa1dc833953a821678d220b7c7970e76919ff08d99"
+    },
+    {
+      "path": "src/components/RoboticsLabNav.astro",
+      "bytes": 1599,
+      "sha256": "320e418dd625b9e00fc04b70ab906ea03b2bde0280afef86c95796697818b42d"
+    },
+    {
+      "path": "src/features/hand-retargeting/app.ts",
+      "bytes": 70820,
+      "sha256": "9bfae2ca00517ab7a2f521a2ad0fdd9b8589ba97e99fc928befb596e2383f131"
+    },
+    {
+      "path": "src/features/hand-retargeting/benchmark.worker.ts",
+      "bytes": 659,
+      "sha256": "b3f0125b458ef8b85f76657b1293f84882dbf420b54ed8f179d4daade48105ef"
+    },
+    {
+      "path": "src/features/hand-retargeting/calibration.ts",
+      "bytes": 25492,
+      "sha256": "f0c5069fa8859962a3148e423e2656393478c7f4852f330aae8a98203d08c33d"
+    },
+    {
+      "path": "src/features/hand-retargeting/copy.ts",
+      "bytes": 26481,
+      "sha256": "2e31a73d1f5f09a9df4dfb8347f9e1a05bf0da9f07c5e1f85565737f11069d85"
+    },
+    {
+      "path": "src/features/hand-retargeting/engine.ts",
+      "bytes": 32478,
+      "sha256": "891a95079b9808037ea1c98f8ba8371f7c15f66b389ad2562f0c9dc1635daf9b"
+    },
+    {
+      "path": "src/features/hand-retargeting/history-state.ts",
+      "bytes": 2145,
+      "sha256": "ed8de727e55aeff18272a24ced22c8393b62c51735d5a9164f6ca4979d4581f1"
+    },
+    {
+      "path": "src/features/hand-retargeting/robot-visual.ts",
+      "bytes": 19071,
+      "sha256": "407295cbb54fe7f2fe545827c163e4f2d65598a406c07e4ad7efa1021be6a024"
+    },
+    {
+      "path": "src/features/hand-retargeting/runtime.ts",
+      "bytes": 5802,
+      "sha256": "412269c598c56dab5954260d0f699248f1a41360914775779c9e584d60f081b9"
+    },
+    {
+      "path": "src/features/hand-retargeting/vision.worker.ts",
+      "bytes": 1551,
+      "sha256": "1c6e0e314a887ff923cc12be9f75d1b0df1c66dfab0b825eb2ff217ed4d9340b"
+    },
+    {
+      "path": "src/features/hand-retargeting/visual-frame.ts",
+      "bytes": 2233,
+      "sha256": "7700ee8ee955a05c5529944e6629e53281e732d91298d218200c51161069caea"
+    },
+    {
+      "path": "src/features/robotics-lab/app.ts",
+      "bytes": 1716,
+      "sha256": "5bd1ddcbedd151eac320da684441f45584d114177ff8b5515d1cff066087ac93"
+    },
+    {
+      "path": "src/features/robotics-lab/catalog.ts",
+      "bytes": 3954,
+      "sha256": "512ee0fd6fde45fea17407863e8b4053b4c9decaab502f1467d1aedcfe4507b0"
+    },
+    {
+      "path": "src/features/robotics-lab/control/engine.ts",
+      "bytes": 10841,
+      "sha256": "081d076a812d226cf59a2a851d12ee956597b30fd8595b38fffab71fa31e404a"
+    },
+    {
+      "path": "src/features/robotics-lab/control/panel.ts",
+      "bytes": 17333,
+      "sha256": "618c1e1f948c0e2d836abaccb133ade3351638915762433f245e7de19e1f528d"
+    },
+    {
+      "path": "src/features/robotics-lab/data/engine.ts",
+      "bytes": 9775,
+      "sha256": "748b439a99494a71faaf257b21dd78e7da29b08af616c3656181277af5c4d9d4"
+    },
+    {
+      "path": "src/features/robotics-lab/data/panel.ts",
+      "bytes": 19426,
+      "sha256": "a71c56d806b59c9f457ab74c58824e5636cc1777e8e4c860ba88fa6dca1c5366"
+    },
+    {
+      "path": "src/features/robotics-lab/data/plot.ts",
+      "bytes": 1459,
+      "sha256": "1950da710e7187d6cb6693e0ab9bcc97c9895403f516ab32e7a3643c26497d3c"
+    },
+    {
+      "path": "src/features/robotics-lab/grasp/panel.ts",
+      "bytes": 159,
+      "sha256": "2242adb0d6d9b878dfbad2941339fe8b8e7abfd84ba0803180abb879d8803e56"
+    },
+    {
+      "path": "src/features/robotics-lab/grasp/player.ts",
+      "bytes": 24850,
+      "sha256": "e72c79c3b234330a4dc68b736ac10cfe2e8b3b127daf944426fdc851a4670012"
+    },
+    {
+      "path": "src/features/robotics-lab/grasp/scene.ts",
+      "bytes": 10549,
+      "sha256": "ece53c726e3b72a6353e1e0b2570fa28618cd4161c2393aeedf3dd0f6853122f"
+    },
+    {
+      "path": "src/features/robotics-lab/history-core.ts",
+      "bytes": 3829,
+      "sha256": "daa701273377bf1a2d0b91ada451d4b473fbe1bdc3c3a4a5d4a78d4f9c8dd6a5"
+    },
+    {
+      "path": "src/features/robotics-lab/history.ts",
+      "bytes": 9732,
+      "sha256": "abfa03d4f5ff326644fa29d2847e7ef50030d10e235a6ee982ecc0ec5e90af94"
+    },
+    {
+      "path": "src/features/robotics-lab/imitation/panel.ts",
+      "bytes": 17128,
+      "sha256": "fe4a15a72bf32b2fd3bc75df1129ec5daa6528dd0939387e7954427b7d83ed85"
+    },
+    {
+      "path": "src/features/robotics-lab/imitation/scene.ts",
+      "bytes": 6783,
+      "sha256": "71d810c94d85e2261f42cd700de3e5f6790e3795283c53b0a729beadbe7eef51"
+    },
+    {
+      "path": "src/features/robotics-lab/randomization/panel.ts",
+      "bytes": 174,
+      "sha256": "89ad970c29680aacb27417a780c9ab646bb5857f4e75fcb4a8471e0778f4ce9f"
+    },
+    {
+      "path": "src/features/robotics-lab/safety/engine.ts",
+      "bytes": 8032,
+      "sha256": "4c7009e0dfe66ab4ffbdec3a83aaf87bd03fa0763060231eb0d34f4c3ac448f3"
+    },
+    {
+      "path": "src/features/robotics-lab/safety/panel.ts",
+      "bytes": 15504,
+      "sha256": "19e3ca82453283cf4be0b84f4a3595fcbde8500f2afb86747a26869fc7ef69d9"
+    },
+    {
+      "path": "src/features/robotics-lab/style.css",
+      "bytes": 15351,
+      "sha256": "7718a39546ce2edf88267508bd49d03e186d48709d5be5d8b9066375398d7c4a"
+    },
+    {
+      "path": "src/features/robotics-lab/tactile/panel.ts",
+      "bytes": 18204,
+      "sha256": "a321254397cdbd1169686733d50c66d48873508c47f4a41263cf40c60f3fdb91"
+    },
+    {
+      "path": "src/features/robotics-lab/tactile/scene.ts",
+      "bytes": 5822,
+      "sha256": "7ad5d30e1fdf45228f19bbef5439929d92d2a15159a52fe5afb2e5b3b5f5e714"
+    },
+    {
+      "path": "src/features/robotics-lab/visuals/joint-model.ts",
+      "bytes": 8713,
+      "sha256": "08b37be79355c38ade2da0457aef0692b8cf3eb0265e61a7879da92e7f8c6a22"
+    },
+    {
+      "path": "src/features/robotics-lab/visuals/studio.ts",
+      "bytes": 12220,
+      "sha256": "1fbc47cdfea4e8383439b78d94b81a490b8c140400ce99b542ae36b2ade40d57"
+    },
+    {
+      "path": "src/pages/en/tools/hand-retargeting.astro",
+      "bytes": 134,
+      "sha256": "3e38dcb5e9a2edac1a17b575804681b5d7b4b7671465189a5acfe14b9d3b7762"
+    },
+    {
+      "path": "src/pages/en/tools/robotics-lab/[slug].astro",
+      "bytes": 304,
+      "sha256": "70f5fdd3c7fdea6899f37601eb124759b9bcd65a792449724ace1998b1a70754"
+    },
+    {
+      "path": "src/pages/en/tools/robotics-lab/hand-retargeting.astro",
+      "bytes": 137,
+      "sha256": "f9239dcab0365a228c1e60d7700348b80f49200f832f386845e3b2879666c003"
+    },
+    {
+      "path": "src/pages/en/tools/robotics-lab/index.astro",
+      "bytes": 104,
+      "sha256": "2a15eff578570bc38bcb19b96ce6cc089109bd3f4c271de50a1411f7c203c321"
+    },
+    {
+      "path": "src/pages/tools/hand-retargeting.astro",
+      "bytes": 131,
+      "sha256": "d34691e4acbc6394efa20265ee6e2b84b461d738ef270c32d78e0ab8a17086bf"
+    },
+    {
+      "path": "src/pages/tools/robotics-lab/[slug].astro",
+      "bytes": 298,
+      "sha256": "d5703d8575f7ebf47477cde71511f10a1c37413a4d37da703e39908370a702d8"
+    },
+    {
+      "path": "src/pages/tools/robotics-lab/hand-retargeting.astro",
+      "bytes": 134,
+      "sha256": "30822b7fee1f6b2c5ad7cbfcccfbf429104d9ef78ba5441e680724538aaa17d5"
+    },
+    {
+      "path": "src/pages/tools/robotics-lab/index.astro",
+      "bytes": 101,
+      "sha256": "ac7d794c1b2fb575bdcd1d8aeaa5c6c75c5b3db5e1046280665fc531383e6276"
+    },
+    {
+      "path": "src/styles/global.css",
+      "bytes": 82886,
+      "sha256": "cad0aca685a6cc37aefa7417b8d55f16db8f27761447652b0e116d179f4fbf28"
+    }
+  ]
+}

@@ -1,0 +1,692 @@
+---
+import {
+  ArrowRight,
+  BriefcaseBusiness,
+  Building2,
+  CircleAlert,
+  GitCompareArrows,
+  Radio,
+  RotateCcw,
+  Search,
+  Wrench,
+  X,
+} from "@lucide/astro";
+import { getCompanies, getMatrices } from "../data/catalog-localization";
+import {
+  getProductFinderExpansionRecords,
+  type FinderCategory,
+  type FinderOpenness,
+  type FinderUseCase,
+} from "../data/product-finder-demo";
+import type { Locale } from "../data/site";
+import ToolAppLayout from "../layouts/ToolAppLayout.astro";
+
+interface Props { locale?: Locale; }
+
+const { locale = "zh" } = Astro.props;
+const isZh = locale === "zh";
+const matrices = getMatrices(locale);
+const companies = getCompanies(locale);
+const companyByName = new Map<string, (typeof companies)[number]>();
+
+companies.forEach((company) => {
+  companyByName.set(company.name.toLocaleLowerCase(), company);
+  companyByName.set(company.englishName.toLocaleLowerCase(), company);
+});
+
+const categoryForMatrix = (slug: string): FinderCategory => ({
+  "enterprise-ai-platforms": "enterprise-ai",
+  "embodied-robot-platforms": "robot-platform",
+  "robot-model-software-compute": "model-software",
+  "robot-perception-components": "perception",
+  "robot-joint-drive-components": "motion",
+  "dexterous-hand-selection": "end-effector",
+  "tactile-force-sensing": "perception",
+}[slug] as FinderCategory ?? "robot-platform");
+
+const useCasesForCategory: Record<FinderCategory, FinderUseCase[]> = {
+  "robot-platform": ["research", "manufacturing", "logistics", "service"],
+  "end-effector": ["research", "manufacturing", "integration"],
+  perception: ["research", "manufacturing", "integration"],
+  motion: ["manufacturing", "integration"],
+  "model-software": ["research", "integration"],
+  "enterprise-ai": ["research", "integration", "service"],
+};
+
+const parameterLabels: Record<FinderCategory, string[]> = isZh ? {
+  "robot-platform": ["身高", "整机质量", "全身自由度", "负载", "续航", "移动速度"],
+  "end-effector": ["自由度 / 驱动数", "质量", "指尖力 / 夹力", "负载", "触觉配置", "控制接口"],
+  perception: ["测量维度", "量程", "分辨率", "采样率", "数据接口", "环境与耐久"],
+  motion: ["额定 / 峰值扭矩", "减速比", "回差", "质量", "控制接口", "连续工况"],
+  "model-software": ["模型 / 运行时", "支持本体", "训练框架", "部署位置", "接口", "许可证"],
+  "enterprise-ai": ["部署方式", "模型接入", "知识处理", "工作流", "API / 插件", "评测审计"],
+} : {
+  "robot-platform": ["Height", "Mass", "Full-body DoF", "Payload", "Endurance", "Travel speed"],
+  "end-effector": ["DoF / actuation", "Mass", "Fingertip / grip force", "Payload", "Tactile sensing", "Control interface"],
+  perception: ["Measured axes", "Range", "Resolution", "Sampling rate", "Data interface", "Environment and life"],
+  motion: ["Rated / peak torque", "Reduction ratio", "Backlash", "Mass", "Control interface", "Continuous duty"],
+  "model-software": ["Model / runtime", "Supported bodies", "Training framework", "Deployment", "Interfaces", "License"],
+  "enterprise-ai": ["Deployment", "Model access", "Knowledge processing", "Workflow", "API / plugins", "Evaluation and audit"],
+};
+
+const opennessLevelFor = (value: string): FinderOpenness => {
+  const normalized = value.toLocaleLowerCase();
+  if (/(open.source|开源|sdk|developer documentation|开发文档)/.test(normalized)) return "open";
+  if (/(confirm|待确认|按项目|not fully public|requires confirmation)/.test(normalized)) return "confirm";
+  return "documented";
+};
+
+const baseRecords = matrices.flatMap((matrix) => matrix.rows.map((row, index) => {
+  const profile = companyByName.get(row.company.toLocaleLowerCase());
+  const category = categoryForMatrix(matrix.slug);
+  return {
+    id: `${matrix.slug}-${index}`,
+    matrixSlug: matrix.slug,
+    matrixTitle: matrix.title,
+    industry: matrix.industry,
+    reviewedAt: matrix.reviewedAt,
+    ...row,
+    officialUrl: "",
+    category,
+    useCases: useCasesForCategory[category],
+    opennessLevel: opennessLevelFor(row.openness),
+    parameters: parameterLabels[category].map((label) => ({ label, value: isZh ? "待补充" : "Pending", status: "unknown" as const })),
+    profile: profile ? {
+      slug: profile.slug,
+      valueChainRole: profile.valueChainRole ?? "",
+      positioning: profile.positioning,
+      strengths: profile.strengths ?? [],
+      products: profile.products,
+      fit: profile.fit ?? [],
+      questions: profile.presalesQuestions,
+      sourceIds: profile.sourceIds,
+      reviewedAt: profile.reviewedAt,
+    } : null,
+  };
+}));
+
+const records = [...baseRecords, ...getProductFinderExpansionRecords(locale)];
+const productCount = records.length;
+const companyCount = new Set(records.map((record) => record.company.toLocaleLowerCase())).size;
+
+const copy = isZh ? {
+  title: "产业检索演示",
+  description: "用于公司研究和产品选型的机器人产业检索演示。",
+  eyebrow: "INDUSTRY FINDER / LOCAL DEMO",
+  heading: "你今天想查什么？",
+  intro: "先选择任务，页面只显示该任务所需的资料。",
+  local: "本地规则",
+  roles: [
+    { id: "investment", label: "研究公司", detail: "公司、融资、商业进展与政策影响" },
+    { id: "technical", label: "选择产品", detail: "参数、应用场景、客户与选型核验" },
+  ],
+  task: "当前任务",
+  searchLabels: {
+    investment: "搜索公司、赛道或投资问题",
+    technical: "描述产品功能、参数或应用场景",
+  },
+  placeholders: {
+    investment: "例如：具身机器人整机公司",
+    technical: "例如：带触觉的五指灵巧手，用于遥操作研究",
+  },
+  examples: {
+    investment: ["具身机器人整机公司", "灵巧手产业链公司", "上市公司与商业进展"],
+    technical: ["带触觉的五指灵巧手", "仓储拣选与移动", "开放接口与 ROS 集成"],
+  },
+  search: "查询", reset: "重置", filter: "筛选产品", catalogSummary: "当前演示收录",
+  all: "全部", industries: { ai: "企业 AI", robotics: "具身智能", "dexterous-hands": "灵巧手" },
+  categories: { "robot-platform": "整机与平台", "end-effector": "灵巧执行", perception: "感知与触觉", motion: "关节与驱动", "model-software": "模型与软件", "enterprise-ai": "企业 AI" },
+  useCase: "用途", useCases: { research: "科研开发", manufacturing: "制造作业", logistics: "仓储物流", service: "服务交互", integration: "部件集成" },
+  opennessFilter: "开放程度", opennessLevels: { open: "开发资料较完整", documented: "有公开资料", confirm: "需厂商确认" },
+  completeness: "参数完整度", completenessLevels: { quantified: "已有量化参数", partial: "部分参数已列明", pending: "参数待补充" },
+  companiesUnit: "家公司", productsUnit: "项产品", companyCandidates: "候选公司", productCandidates: "候选产品", groupedBy: "按产品类别分组",
+  companyResearch: "公司研究", productSelection: "产品选型",
+  empty: "没有找到相关记录，请减少限定条件或换一种描述。",
+  investmentHint: "公司资料来自站内档案；融资、行情与政策仅在接入可追溯来源后显示。",
+  technicalHint: "产品参数保留公开口径；未知字段不会自动判定为满足要求。",
+  valueChain: "产业链位置", business: "业务定位", products: "公开产品", fit: "适用场景与客户",
+  funding: "融资", market: "行情", policy: "政策影响", pending: "数据源待接入",
+  fundingNote: "轮次、金额、投资方与公告日期",
+  marketNote: "证券代码、价格、币种与行情时间",
+  policyNote: "发布部门、效力层级、适用范围与原文",
+  type: "产品类型", openness: "接口与开放度", integration: "集成与应用", verification: "选型核验",
+  parameters: "参数指标", matrixLevel: "所有产品均按类别设置了参数字段；待补充不等于不满足要求。",
+  coverage: "参数覆盖", manufacturer: "厂商公开", unknownParameter: "待补充", officialSource: "官方资料",
+  questions: "选型前要确认", evidence: "来源与时效", sources: "条来源",
+  companyFile: "公司档案", matrix: "产品矩阵",
+  select: "选择左侧结果查看详情",
+  compare: "比较", compareCount: "已选", compareAction: "对比产品", clear: "清空",
+  compareHelp: "选择 2–3 项产品，按公开参数并列核对。",
+  compareTitle: "产品参数对比", close: "关闭",
+  disclaimer: "这是本地交互演示，不构成投资或采购建议。实时融资、行情和政策数据尚未接入。",
+} : {
+  title: "Industry Finder Demo",
+  description: "A robotics industry finder demo for company research and product selection.",
+  eyebrow: "INDUSTRY FINDER / LOCAL DEMO",
+  heading: "What do you need today?",
+  intro: "Choose a task first. The page then shows only the material needed to complete it.",
+  local: "Local rules",
+  roles: [
+    { id: "investment", label: "Research companies", detail: "Companies, funding, commercial progress, and policy impact" },
+    { id: "technical", label: "Select products", detail: "Specifications, scenarios, users, and selection checks" },
+  ],
+  task: "Current task",
+  searchLabels: {
+    investment: "Search a company, segment, or investment question",
+    technical: "Describe a function, parameter, or application scenario",
+  },
+  placeholders: {
+    investment: "Example: embodied-robot body manufacturers",
+    technical: "Example: a tactile five-finger hand for teleoperation research",
+  },
+  examples: {
+    investment: ["Embodied-robot body companies", "Dexterous-hand value-chain companies", "Listed companies and commercial progress"],
+    technical: ["A tactile five-finger hand", "Warehouse picking and mobility", "Open interfaces and ROS integration"],
+  },
+  search: "Search", reset: "Reset", filter: "Filter products", catalogSummary: "Current demo catalog",
+  all: "All", industries: { ai: "Enterprise AI", robotics: "Embodied robotics", "dexterous-hands": "Dexterous hands" },
+  categories: { "robot-platform": "Robot platforms", "end-effector": "Dexterous execution", perception: "Perception and touch", motion: "Joints and drives", "model-software": "Models and software", "enterprise-ai": "Enterprise AI" },
+  useCase: "Use case", useCases: { research: "R&D", manufacturing: "Manufacturing", logistics: "Warehousing", service: "Service interaction", integration: "Component integration" },
+  opennessFilter: "Openness", opennessLevels: { open: "Developer material", documented: "Public documentation", confirm: "Vendor confirmation" },
+  completeness: "Parameter coverage", completenessLevels: { quantified: "Quantified", partial: "Partly parameterized", pending: "Parameters pending" },
+  companiesUnit: "companies", productsUnit: "products", companyCandidates: "Company candidates", productCandidates: "Product candidates", groupedBy: "Grouped by product category",
+  companyResearch: "Company research", productSelection: "Product selection",
+  empty: "No relevant records were found. Remove a constraint or rephrase the query.",
+  investmentHint: "Company material comes from site profiles. Funding, market, and policy fields appear only after traceable sources are connected.",
+  technicalHint: "Product parameters retain their public definitions. Unknown fields never become automatic matches.",
+  valueChain: "Value-chain role", business: "Business positioning", products: "Public products", fit: "Applicable scenarios and users",
+  funding: "Funding", market: "Market data", policy: "Policy impact", pending: "Data source not connected",
+  fundingNote: "Round, amount, investors, and announcement date",
+  marketNote: "Ticker, price, currency, and quote time",
+  policyNote: "Authority, legal level, scope, and original text",
+  type: "Product type", openness: "Interfaces and openness", integration: "Integration and use", verification: "Selection checks",
+  parameters: "Product metrics", matrixLevel: "Every product now has category-specific parameter slots. Pending does not mean non-compliant.",
+  coverage: "Coverage", manufacturer: "Manufacturer-published", unknownParameter: "Pending", officialSource: "Official material",
+  questions: "Confirm before selection", evidence: "Evidence and freshness", sources: "sources",
+  companyFile: "Company file", matrix: "Product matrix",
+  select: "Select a result on the left to view details",
+  compare: "Compare", compareCount: "Selected", compareAction: "Compare products", clear: "Clear",
+  compareHelp: "Select 2–3 products for side-by-side review of public fields.",
+  compareTitle: "Side-by-side product review", close: "Close",
+  disclaimer: "Local interaction demo. It is not investment or procurement advice. Live funding, market, and policy feeds are not connected.",
+};
+
+const dataJson = JSON.stringify(records).replace(/</g, "\\u003c");
+const alternatePath = isZh ? "/en/tools/product-finder-demo" : "/tools/product-finder-demo";
+---
+
+<ToolAppLayout title={`${copy.title} | CAVWIC`} description={copy.description} locale={locale} alternatePath={alternatePath}>
+  <div class="task-finder">
+    <header class="task-head">
+      <div>
+        <div class="task-kicker"><p>{copy.eyebrow}</p><span><Radio size={14} aria-hidden="true" /> {copy.local}</span></div>
+        <h1>{copy.heading}</h1>
+        <p>{copy.intro}</p>
+      </div>
+      <nav class="role-switch" aria-label={copy.task}>
+        {copy.roles.map((role, index) => (
+          <button type="button" class:list={[index === 1 && "active"]} data-role={role.id} aria-pressed={index === 1 ? "true" : "false"}>
+            {role.id === "investment" ? <BriefcaseBusiness size={23} aria-hidden="true" /> : <Wrench size={23} aria-hidden="true" />}
+            <span><small>{copy.task}</small><strong>{role.label}</strong><em>{role.detail}</em></span>
+            <ArrowRight size={19} aria-hidden="true" />
+          </button>
+        ))}
+      </nav>
+    </header>
+
+    <section class="search-shell">
+      <form id="finder-form">
+        <label id="finder-label" for="finder-input">{copy.searchLabels.technical}</label>
+        <div class="query-row">
+          <div class="query-input"><Search size={21} aria-hidden="true" /><input id="finder-input" type="search" autocomplete="off" placeholder={copy.placeholders.technical} /></div>
+          <button class="search-button" type="submit"><Search size={18} aria-hidden="true" /> {copy.search}</button>
+          <button class="reset-button" id="finder-reset" type="button" aria-label={copy.reset} title={copy.reset}><RotateCcw size={19} aria-hidden="true" /></button>
+        </div>
+        <div class="quick-queries" id="quick-queries"></div>
+      </form>
+      <div class="filter-panel">
+        <header>
+          <div><p class="section-code">FILTER</p><h2>{copy.filter}</h2></div>
+          <p>{copy.catalogSummary} <strong>{companyCount}</strong> {copy.companiesUnit} · <strong>{productCount}</strong> {copy.productsUnit}</p>
+        </header>
+        <div class="category-filter" role="group" aria-label={copy.filter}>
+          <button class="active" type="button" data-category="all" aria-pressed="true"><strong>{copy.all}</strong><span>{productCount}</span></button>
+          {Object.entries(copy.categories).map(([id, label]) => (
+            <button type="button" data-category={id} aria-pressed="false">
+              <strong>{label}</strong><span>{records.filter((record) => record.category === id).length}</span>
+            </button>
+          ))}
+        </div>
+        <div class="filter-fields">
+          <label><span>{isZh ? "行业" : "Industry"}</span><select id="industry-filter"><option value="all">{copy.all}</option>{Object.entries(copy.industries).map(([id, label]) => <option value={id}>{label}</option>)}</select></label>
+          <label><span>{copy.useCase}</span><select id="usecase-filter"><option value="all">{copy.all}</option>{Object.entries(copy.useCases).map(([id, label]) => <option value={id}>{label}</option>)}</select></label>
+          <label><span>{copy.opennessFilter}</span><select id="openness-filter"><option value="all">{copy.all}</option>{Object.entries(copy.opennessLevels).map(([id, label]) => <option value={id}>{label}</option>)}</select></label>
+          <label><span>{copy.completeness}</span><select id="completeness-filter"><option value="all">{copy.all}</option>{Object.entries(copy.completenessLevels).map(([id, label]) => <option value={id}>{label}</option>)}</select></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="finder-workspace">
+      <aside class="result-pane">
+        <header>
+          <div><p class="section-code" id="result-mode-label">{copy.groupedBy}</p><h2 id="result-heading">{copy.productCandidates}</h2></div>
+          <div class="result-count"><strong id="result-count">0</strong><span id="result-unit">{copy.productsUnit}</span></div>
+        </header>
+        <p class="role-hint" id="role-hint">{copy.technicalHint}</p>
+        <div class="result-scroll" id="result-list" tabindex="0"></div>
+        <div class="compare-dock" id="compare-dock" hidden>
+          <div><span>{copy.compareCount}</span><strong id="compare-number">0 / 3</strong></div>
+          <button id="compare-open" type="button" disabled><GitCompareArrows size={17} aria-hidden="true" /> {copy.compareAction}</button>
+          <button id="compare-clear" type="button">{copy.clear}</button>
+        </div>
+      </aside>
+
+      <article class="detail-pane" id="detail-pane">
+        <div class="detail-empty" id="detail-empty"><Building2 size={30} aria-hidden="true" /><p>{copy.select}</p></div>
+        <div id="detail-content" hidden>
+          <header class="detail-identity">
+            <div><p id="detail-industry"></p><h2 id="detail-title"></h2><strong id="detail-subtitle"></strong></div>
+          </header>
+          <div id="detail-body"></div>
+          <footer id="detail-links"></footer>
+        </div>
+      </article>
+    </section>
+
+    <p class="finder-disclaimer"><CircleAlert size={15} aria-hidden="true" /> {copy.disclaimer}</p>
+  </div>
+
+  <dialog class="compare-dialog" id="compare-dialog">
+    <div class="compare-shell">
+      <header><div><p class="section-code">COMPARE</p><h2>{copy.compareTitle}</h2><p>{copy.compareHelp}</p></div><button id="compare-close" type="button" aria-label={copy.close} title={copy.close}><X size={20} aria-hidden="true" /></button></header>
+      <div class="comparison-grid" id="comparison-grid"></div>
+    </div>
+  </dialog>
+  <script is:inline id="finder-data" type="application/json" set:html={dataJson}></script>
+</ToolAppLayout>
+
+<script is:inline define:vars={{ locale, clientCopy: copy }}>
+  const dataNode = document.querySelector("#finder-data");
+  if (dataNode) {
+    const records = JSON.parse(dataNode.textContent || "[]");
+    const form = document.querySelector("#finder-form");
+    const input = document.querySelector("#finder-input");
+    const inputLabel = document.querySelector("#finder-label");
+    const quickQueries = document.querySelector("#quick-queries");
+    const roleButtons = [...document.querySelectorAll("[data-role]")];
+    const categoryButtons = [...document.querySelectorAll("[data-category]")];
+    const industryFilter = document.querySelector("#industry-filter");
+    const useCaseFilter = document.querySelector("#usecase-filter");
+    const opennessFilter = document.querySelector("#openness-filter");
+    const completenessFilter = document.querySelector("#completeness-filter");
+    const resultList = document.querySelector("#result-list");
+    const resultCount = document.querySelector("#result-count");
+    const resultUnit = document.querySelector("#result-unit");
+    const resultModeLabel = document.querySelector("#result-mode-label");
+    const resultHeading = document.querySelector("#result-heading");
+    const roleHint = document.querySelector("#role-hint");
+    const detailPane = document.querySelector("#detail-pane");
+    const detailEmpty = document.querySelector("#detail-empty");
+    const detailContent = document.querySelector("#detail-content");
+    const compareDock = document.querySelector("#compare-dock");
+    const compareNumber = document.querySelector("#compare-number");
+    const compareOpen = document.querySelector("#compare-open");
+    const compareDialog = document.querySelector("#compare-dialog");
+    let role = "technical";
+    let category = "all";
+    let industry = "all";
+    let useCase = "all";
+    let openness = "all";
+    let completeness = "all";
+    let activeId = "";
+    let selected = [];
+
+    const escapeHtml = (value = "") => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
+    const normalize = (value = "") => String(value).toLocaleLowerCase(locale === "zh" ? "zh-CN" : "en").replace(/[，。；、/,_:：()（）-]/g, " ");
+    const ignored = ["融资", "股价", "行情", "商业", "政策", "投资", "funding", "stock", "market", "business", "policy", "investment", "公司", "company", "产品", "product"];
+    const concepts = [
+      ["具身智能", "具身机器人", "人形机器人", "机器人", "embodied", "humanoid", "robot"],
+      ["企业 ai", "人工智能", "大模型", "enterprise ai", "agent", "llm"],
+      ["触觉", "力反馈", "tactile", "force", "torque"],
+      ["五指", "多指", "灵巧手", "dexterous", "five finger", "hand"],
+      ["遥操作", "teleoperation", "模仿学习", "learning"],
+      ["移动", "导航", "仓储", "mobile", "navigation", "warehouse", "picking"],
+      ["视觉", "感知", "vision", "camera", "perception", "lidar"],
+      ["知识库", "检索", "rag", "knowledge", "retrieval", "workflow", "工作流"],
+      ["接口", "开放", "sdk", "api", "ros", "interface"],
+    ];
+    const termsFor = (query) => {
+      const text = normalize(query);
+      const base = text.split(/\s+/).filter((term) => term.length > 1 && term.length <= (locale === "zh" ? 8 : 32) && !ignored.includes(term));
+      const expanded = concepts.filter((group) => group.some((term) => text.includes(term))).flat();
+      return [...new Set([...base, ...expanded])];
+    };
+    const score = (record, query) => {
+      const terms = termsFor(query);
+      if (!terms.length) return 1;
+      const profile = record.profile || {};
+      const categoryField = clientCopy.categories[record.category] || record.category;
+      const useCaseFields = (record.useCases || []).map((item) => clientCopy.useCases[item] || item);
+      const parameterFields = (record.parameters || []).flatMap((item) => [item.label, item.value]);
+      const companyFields = [record.company, categoryField, profile.valueChainRole, profile.positioning, ...(profile.products || []), ...(profile.fit || [])];
+      const productFields = [record.product, record.type, categoryField, record.openness, record.integration, record.verificationFocus, record.matrixTitle, ...useCaseFields, ...parameterFields, ...(profile.fit || [])];
+      const fields = role === "investment" ? companyFields : productFields;
+      return terms.reduce((total, term) => total + fields.reduce((part, value, index) => part + (normalize(value).includes(term) ? Math.max(2, 10 - index) : 0), 0), 0);
+    };
+    const industryName = (id) => clientCopy.industries[id] || id;
+    const categoryName = (id) => clientCopy.categories[id] || id;
+    const coverageFor = (record) => {
+      const parameters = record.parameters || [];
+      const known = parameters.filter((item) => item.status !== "unknown").length;
+      const ratio = parameters.length ? known / parameters.length : 0;
+      return { known, total: parameters.length, ratio, level: ratio >= .8 ? "quantified" : ratio > 0 ? "partial" : "pending" };
+    };
+    const findRecord = (id) => records.find((record) => record.id === id);
+    const matrixHref = (record) => `${locale === "en" ? "/en" : ""}/matrices/${record.matrixSlug}`;
+    const companyHref = (record) => record.profile?.slug ? `${locale === "en" ? "/en" : ""}/companies/${record.profile.slug}` : "";
+    const chips = (items) => items?.length ? `<div class="detail-chips">${items.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>` : `<p class="muted">${escapeHtml(clientCopy.pending)}</p>`;
+
+    const renderQuickQueries = () => {
+      quickQueries.innerHTML = clientCopy.examples[role].map((query) => `<button type="button" data-query="${escapeHtml(query)}">${escapeHtml(query)}</button>`).join("");
+    };
+    const renderCompanyDetail = (record) => {
+      const profile = record.profile;
+      return `<section class="detail-section"><p class="section-code">${escapeHtml(clientCopy.companyResearch)}</p><dl class="company-facts"><div><dt>${escapeHtml(clientCopy.valueChain)}</dt><dd>${escapeHtml(profile?.valueChainRole || clientCopy.pending)}</dd></div><div><dt>${escapeHtml(clientCopy.business)}</dt><dd>${escapeHtml(profile?.positioning || clientCopy.pending)}</dd></div><div><dt>${escapeHtml(clientCopy.groupedBy)}</dt><dd>${escapeHtml(categoryName(record.category))}</dd></div></dl><h3>${escapeHtml(clientCopy.products)}</h3>${chips(profile?.products || [record.product])}<h3>${escapeHtml(clientCopy.fit)}</h3>${chips(profile?.fit || [])}</section><section class="signal-list"><article><div><span>${escapeHtml(clientCopy.funding)}</span><b>${escapeHtml(clientCopy.pending)}</b></div><p>${escapeHtml(clientCopy.fundingNote)}</p></article><article><div><span>${escapeHtml(clientCopy.market)}</span><b>${escapeHtml(clientCopy.pending)}</b></div><p>${escapeHtml(clientCopy.marketNote)}</p></article><article><div><span>${escapeHtml(clientCopy.policy)}</span><b>${escapeHtml(clientCopy.pending)}</b></div><p>${escapeHtml(clientCopy.policyNote)}</p></article></section>`;
+    };
+    const renderProductDetail = (record) => {
+      const questions = record.profile?.questions || [record.verificationFocus];
+      const coverage = coverageFor(record);
+      const metrics = (record.parameters || []).map((item) => `<article class="${item.status === "unknown" ? "pending" : ""}"><small>${escapeHtml(item.label)}</small><strong>${escapeHtml(item.value)}</strong><span>${escapeHtml(item.status === "unknown" ? clientCopy.unknownParameter : clientCopy.manufacturer)}</span></article>`).join("");
+      return `<section class="detail-section"><p class="section-code">${escapeHtml(clientCopy.productSelection)}</p><dl class="product-facts"><div><dt>${escapeHtml(clientCopy.type)}</dt><dd>${escapeHtml(record.type)}</dd></div><div><dt>${escapeHtml(clientCopy.openness)}</dt><dd>${escapeHtml(record.openness)}</dd></div><div><dt>${escapeHtml(clientCopy.integration)}</dt><dd>${escapeHtml(record.integration)}</dd></div><div><dt>${escapeHtml(clientCopy.verification)}</dt><dd>${escapeHtml(record.verificationFocus)}</dd></div></dl><h3>${escapeHtml(clientCopy.fit)}</h3>${chips(record.profile?.fit || [])}</section><section class="metric-section"><header><div><p class="section-code">METRICS</p><h3>${escapeHtml(clientCopy.parameters)}</h3></div><strong>${escapeHtml(clientCopy.coverage)} ${coverage.known}/${coverage.total}</strong></header><div class="metric-grid">${metrics}</div><p>${escapeHtml(clientCopy.matrixLevel)}</p></section><section class="question-list"><h3>${escapeHtml(clientCopy.questions)}</h3><ol>${questions.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol></section>`;
+    };
+    const showDetail = (record) => {
+      if (!record) { detailEmpty.hidden = false; detailContent.hidden = true; return; }
+      activeId = record.id;
+      detailEmpty.hidden = true;
+      detailContent.hidden = false;
+      document.querySelector("#detail-industry").textContent = industryName(record.industry);
+      document.querySelector("#detail-title").textContent = role === "investment" ? record.company : record.product;
+      document.querySelector("#detail-subtitle").textContent = role === "investment" ? record.profile?.valueChainRole || record.type : `${record.company} · ${record.type}`;
+      document.querySelector("#detail-body").innerHTML = role === "investment" ? renderCompanyDetail(record) : renderProductDetail(record);
+      document.querySelector("#detail-links").innerHTML = `${record.officialUrl ? `<a href="${escapeHtml(record.officialUrl)}" target="_blank" rel="noreferrer">${escapeHtml(clientCopy.officialSource)} ↗</a>` : ""}${companyHref(record) ? `<a href="${escapeHtml(companyHref(record))}">${escapeHtml(clientCopy.companyFile)} ↗</a>` : ""}${record.matrixSlug ? `<a href="${escapeHtml(matrixHref(record))}">${escapeHtml(clientCopy.matrix)} ↗</a>` : ""}`;
+      detailPane.scrollTop = 0;
+    };
+    const renderCompareDock = () => {
+      compareDock.hidden = role !== "technical" || selected.length === 0;
+      compareNumber.textContent = `${selected.length} / 3`;
+      compareOpen.disabled = selected.length < 2;
+    };
+    const renderResults = () => {
+      const query = input.value;
+      let found = records
+        .filter((record) => category === "all" || record.category === category)
+        .filter((record) => industry === "all" || record.industry === industry)
+        .filter((record) => useCase === "all" || record.useCases?.includes(useCase))
+        .filter((record) => openness === "all" || record.opennessLevel === openness)
+        .filter((record) => completeness === "all" || coverageFor(record).level === completeness)
+        .map((record) => ({ ...record, relevance: score(record, query) }))
+        .filter((record) => !query.trim() || record.relevance > 0)
+        .sort((a, b) => b.relevance - a.relevance || (role === "investment" ? a.company.localeCompare(b.company) : a.product.localeCompare(b.product)));
+      if (role === "investment") {
+        const seen = new Set();
+        found = found.filter((record) => { const key = record.profile?.slug || record.company; if (seen.has(key)) return false; seen.add(key); return true; });
+      }
+      resultCount.textContent = String(found.length);
+      resultUnit.textContent = role === "investment" ? clientCopy.companiesUnit : clientCopy.productsUnit;
+      resultModeLabel.textContent = clientCopy.groupedBy;
+      resultHeading.textContent = role === "investment" ? clientCopy.companyCandidates : clientCopy.productCandidates;
+      if (!found.length) { resultList.innerHTML = `<div class="no-results"><span>?</span><p>${escapeHtml(clientCopy.empty)}</p></div>`; showDetail(null); return; }
+      let resultIndex = 0;
+      resultList.innerHTML = Object.keys(clientCopy.categories).map((groupId) => {
+        const groupItems = found.filter((record) => record.category === groupId);
+        if (!groupItems.length) return "";
+        const rows = groupItems.map((record) => {
+          resultIndex += 1;
+          const title = role === "investment" ? record.company : record.product;
+          const subtitle = role === "investment" ? record.profile?.valueChainRole || record.type : record.company;
+          const checked = selected.includes(record.id);
+          const coverage = coverageFor(record);
+          return `<article class="result-row ${record.id === activeId ? "active" : ""}"><button class="result-open" type="button" data-open="${escapeHtml(record.id)}"><span class="result-index">${String(resultIndex).padStart(2, "0")}</span><span class="result-copy"><small>${escapeHtml(industryName(record.industry))} · ${escapeHtml(clientCopy.coverage)} ${coverage.known}/${coverage.total}</small><strong>${escapeHtml(title)}</strong><span>${escapeHtml(subtitle)}</span></span><span class="result-chevron" aria-hidden="true">›</span></button>${role === "technical" ? `<button class="compare-toggle ${checked ? "selected" : ""}" type="button" data-compare="${escapeHtml(record.id)}" aria-pressed="${String(checked)}" title="${escapeHtml(clientCopy.compare)}"><span>${checked ? "✓" : "+"}</span></button>` : ""}</article>`;
+        }).join("");
+        return `<section class="result-group"><header><strong>${escapeHtml(categoryName(groupId))}</strong><span>${groupItems.length}</span></header>${rows}</section>`;
+      }).join("");
+      const firstGroupedRecord = Object.keys(clientCopy.categories).map((groupId) => found.find((record) => record.category === groupId)).find(Boolean);
+      const current = found.find((record) => record.id === activeId) || firstGroupedRecord;
+      showDetail(current);
+    };
+    const setRole = (nextRole) => {
+      role = nextRole;
+      activeId = "";
+      selected = [];
+      roleButtons.forEach((button) => { const active = button.dataset.role === role; button.classList.toggle("active", active); button.setAttribute("aria-pressed", String(active)); });
+      input.value = "";
+      inputLabel.textContent = clientCopy.searchLabels[role];
+      input.placeholder = clientCopy.placeholders[role];
+      roleHint.textContent = role === "investment" ? clientCopy.investmentHint : clientCopy.technicalHint;
+      renderQuickQueries();
+      renderCompareDock();
+      renderResults();
+    };
+
+    roleButtons.forEach((button) => button.addEventListener("click", () => setRole(button.dataset.role || "technical")));
+    categoryButtons.forEach((button) => button.addEventListener("click", () => { category = button.dataset.category || "all"; activeId = ""; categoryButtons.forEach((candidate) => { const active = candidate === button; candidate.classList.toggle("active", active); candidate.setAttribute("aria-pressed", String(active)); }); renderResults(); }));
+    industryFilter.addEventListener("change", () => { industry = industryFilter.value; activeId = ""; renderResults(); });
+    useCaseFilter.addEventListener("change", () => { useCase = useCaseFilter.value; activeId = ""; renderResults(); });
+    opennessFilter.addEventListener("change", () => { openness = opennessFilter.value; activeId = ""; renderResults(); });
+    completenessFilter.addEventListener("change", () => { completeness = completenessFilter.value; activeId = ""; renderResults(); });
+    form.addEventListener("submit", (event) => { event.preventDefault(); activeId = ""; renderResults(); });
+    quickQueries.addEventListener("click", (event) => { const button = event.target.closest("[data-query]"); if (!button) return; input.value = button.dataset.query || ""; activeId = ""; renderResults(); });
+    document.querySelector("#finder-reset").addEventListener("click", () => {
+      input.value = "";
+      category = industry = useCase = openness = completeness = "all";
+      categoryButtons.forEach((button) => { const active = button.dataset.category === "all"; button.classList.toggle("active", active); button.setAttribute("aria-pressed", String(active)); });
+      [industryFilter, useCaseFilter, opennessFilter, completenessFilter].forEach((select) => { select.value = "all"; });
+      activeId = "";
+      renderResults();
+      input.focus();
+    });
+    resultList.addEventListener("click", (event) => {
+      const compareButton = event.target.closest("[data-compare]");
+      if (compareButton) { const id = compareButton.dataset.compare; if (selected.includes(id)) selected = selected.filter((item) => item !== id); else if (selected.length < 3) selected = [...selected, id]; renderCompareDock(); renderResults(); return; }
+      const openButton = event.target.closest("[data-open]");
+      if (!openButton) return;
+      activeId = openButton.dataset.open;
+      showDetail(findRecord(activeId));
+      [...resultList.querySelectorAll(".result-row")].forEach((row) => row.classList.toggle("active", row.querySelector("[data-open]")?.dataset.open === activeId));
+    });
+    document.querySelector("#compare-clear").addEventListener("click", () => { selected = []; renderCompareDock(); renderResults(); });
+    compareOpen.addEventListener("click", () => {
+      const chosen = selected.map(findRecord).filter(Boolean);
+      document.querySelector("#comparison-grid").innerHTML = chosen.map((record) => `<article><p>${escapeHtml(industryName(record.industry))}</p><h3>${escapeHtml(record.product)}</h3><strong>${escapeHtml(record.company)}</strong><dl><div><dt>${escapeHtml(clientCopy.type)}</dt><dd>${escapeHtml(record.type)}</dd></div><div><dt>${escapeHtml(clientCopy.openness)}</dt><dd>${escapeHtml(record.openness)}</dd></div><div><dt>${escapeHtml(clientCopy.integration)}</dt><dd>${escapeHtml(record.integration)}</dd></div><div><dt>${escapeHtml(clientCopy.verification)}</dt><dd>${escapeHtml(record.verificationFocus)}</dd></div></dl></article>`).join("");
+      compareDialog.showModal();
+    });
+    document.querySelector("#compare-close").addEventListener("click", () => compareDialog.close());
+    compareDialog.addEventListener("click", (event) => { if (event.target === compareDialog) compareDialog.close(); });
+    renderQuickQueries();
+    renderCompareDock();
+    renderResults();
+  }
+</script>
+
+<style is:global>
+  .task-finder { --soft-panel: color-mix(in srgb, var(--ink) 5%, var(--surface)); width: min(1240px, calc(100vw - 36px)); margin: 0 auto; padding: 30px 0 76px; }
+  .task-finder [hidden], .compare-dialog [hidden] { display: none !important; }
+  .task-head { display: grid; grid-template-columns: minmax(0, 1fr) 520px; gap: 44px; align-items: end; padding: 38px 0 34px; border-bottom: 1px solid var(--line); }
+  .task-kicker { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .task-kicker p, .section-code { margin: 0; color: var(--signal); font-family: var(--mono); font-size: 11px; font-weight: 700; text-transform: uppercase; }
+  .task-kicker span { display: inline-flex; gap: 7px; align-items: center; color: var(--teal); font-family: var(--mono); font-size: 11px; font-weight: 700; }
+  .task-head h1 { margin: 18px 0 8px; font-family: var(--display); font-size: 52px; line-height: 1.05; }
+  .task-head > div > p:last-child { margin: 0; color: var(--ink-soft); font-size: 15px; }
+  .role-switch { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .role-switch button { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; min-height: 108px; padding: 17px; color: var(--ink); border: 1px solid var(--line); border-radius: 3px; background: var(--surface); font: inherit; text-align: left; cursor: pointer; }
+  .role-switch button > svg:first-child { color: var(--teal); }
+  .role-switch button span { min-width: 0; }
+  .role-switch button :is(small, strong, em) { display: block; }
+  .role-switch small { color: var(--signal); font-family: var(--mono); font-size: 9px; font-style: normal; text-transform: uppercase; }
+  .role-switch strong { margin-top: 3px; font-family: var(--display); font-size: 19px; }
+  .role-switch em { margin-top: 5px; color: var(--ink-soft); font-size: 10px; font-style: normal; line-height: 1.4; }
+  .role-switch button:hover, .role-switch button.active { color: var(--on-teal); border-color: var(--teal); background: var(--teal); }
+  .role-switch button:hover :is(svg, small, em), .role-switch button.active :is(svg, small, em) { color: var(--on-teal); }
+  .search-shell { display: block; padding: 22px 0; }
+  #finder-form label { display: block; margin-bottom: 7px; color: var(--ink-soft); font-size: 11px; font-weight: 700; }
+  .query-row { display: grid; grid-template-columns: minmax(0, 1fr) auto 48px; gap: 7px; }
+  .query-input { display: flex; gap: 10px; align-items: center; min-width: 0; padding: 0 14px; border: 1px solid var(--line); background: var(--surface); }
+  .query-input:focus-within { border-color: var(--teal); box-shadow: 0 0 0 2px color-mix(in srgb, var(--teal) 16%, transparent); }
+  .query-input input { width: 100%; min-width: 0; height: 48px; padding: 0; color: var(--ink); border: 0; outline: 0; background: transparent; font: inherit; }
+  .search-button, .reset-button, .compare-dock button { display: inline-flex; gap: 7px; align-items: center; justify-content: center; min-height: 48px; padding: 0 17px; color: var(--on-signal); border: 1px solid var(--signal); border-radius: 3px; background: var(--signal); font: inherit; font-weight: 700; cursor: pointer; }
+  .reset-button { width: 48px; padding: 0; color: var(--ink); border-color: var(--line); background: transparent; }
+  .reset-button:hover { color: var(--on-teal); border-color: var(--teal); background: var(--teal); }
+  .quick-queries { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .quick-queries button { padding: 5px 10px; color: var(--ink-soft); border: 1px solid var(--line); border-radius: 2px; background: transparent; font: inherit; font-size: 12px; cursor: pointer; }
+  .quick-queries button:hover { color: var(--teal); border-color: var(--teal); }
+  .filter-panel { margin-top: 18px; border: 1px solid var(--line); background: var(--surface); }
+  .filter-panel > header { display: flex; align-items: end; justify-content: space-between; gap: 20px; padding: 16px 18px 12px; border-bottom: 1px solid var(--line); }
+  .filter-panel h2 { margin: 3px 0 0; font-family: var(--display); font-size: 20px; }
+  .filter-panel > header > p { margin: 0; color: var(--ink-soft); font-size: 12px; }
+  .filter-panel > header strong { color: var(--signal); font-family: var(--mono); }
+  .category-filter { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
+  .category-filter button { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; min-height: 48px; padding: 0 12px; color: var(--ink); border: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: transparent; font: inherit; cursor: pointer; }
+  .category-filter button:last-child { border-right: 0; }
+  .category-filter strong { overflow: hidden; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+  .category-filter span { color: var(--ink-soft); font-family: var(--mono); font-size: 10px; }
+  .category-filter button:hover, .category-filter button.active { color: var(--on-teal); background: var(--teal); }
+  .category-filter button:hover span, .category-filter button.active span { color: var(--on-teal); }
+  .filter-fields { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; padding: 13px 18px 16px; }
+  .filter-fields label { min-width: 0; }
+  .filter-fields label > span { display: block; margin-bottom: 5px; color: var(--ink-soft); font-size: 11px; font-weight: 700; }
+  .filter-fields select { width: 100%; height: 40px; padding: 0 34px 0 10px; color: var(--ink); border: 1px solid var(--line); border-radius: 2px; outline: 0; background: var(--paper); font: inherit; font-size: 12px; }
+  .filter-fields select:focus { border-color: var(--teal); box-shadow: 0 0 0 2px color-mix(in srgb, var(--teal) 15%, transparent); }
+  .finder-workspace { display: grid; grid-template-columns: 420px minmax(0, 1fr); height: min(720px, calc(100vh - 112px)); min-height: 600px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); }
+  .result-pane { display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; min-width: 0; min-height: 0; border-right: 1px solid var(--line); }
+  .result-pane > header { display: flex; align-items: end; justify-content: space-between; gap: 16px; padding: 22px 20px 12px; }
+  .finder-workspace .section-code { font-size: 12px; }
+  .result-pane h2 { margin: 3px 0 0; font-family: var(--display); font-size: 25px; }
+  .result-count { display: flex; align-items: baseline; gap: 4px; }
+  .result-count strong { color: var(--signal); font-family: var(--display); font-size: 28px; }
+  .result-count span { color: var(--ink-soft); font-size: 11px; }
+  .role-hint { margin: 0; padding: 0 20px 13px; color: var(--ink-soft); border-bottom: 1px solid var(--line); font-size: 12px; line-height: 1.55; }
+  .result-scroll { min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; }
+  .result-group > header { position: sticky; z-index: 2; top: 0; display: flex; align-items: center; justify-content: space-between; min-height: 34px; padding: 0 13px; color: var(--ink); border-bottom: 1px solid var(--line); background: var(--paper-deep); }
+  .result-group > header strong { font-size: 11px; }
+  .result-group > header span { color: var(--signal); font-family: var(--mono); font-size: 10px; }
+  .result-row { display: grid; grid-template-columns: minmax(0, 1fr) 42px; border-bottom: 1px solid var(--line); }
+  .result-row.active { background: var(--soft-panel); box-shadow: inset 3px 0 0 var(--teal); }
+  .result-open { display: grid; grid-template-columns: 31px minmax(0, 1fr) 18px; gap: 8px; align-items: center; min-width: 0; padding: 12px 13px; color: var(--ink); border: 0; background: transparent; font: inherit; text-align: left; cursor: pointer; }
+  .result-index { color: var(--signal); font-family: var(--mono); font-size: 11px; }
+  .result-copy { min-width: 0; }
+  .result-copy :is(small, strong, span) { display: block; }
+  .result-copy small { color: var(--teal); font-family: var(--mono); font-size: 10px; text-transform: uppercase; }
+  .result-copy strong { margin-top: 2px; overflow-wrap: anywhere; font-family: var(--display); font-size: 16px; line-height: 1.3; }
+  .result-copy span { margin-top: 3px; overflow: hidden; color: var(--ink-soft); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+  .result-chevron { color: var(--ink-soft); font-size: 20px; line-height: 1; }
+  .result-open:hover .result-chevron { color: var(--teal); }
+  .compare-toggle { padding: 0; color: var(--ink-soft); border: 0; border-left: 1px solid var(--line); background: transparent; font: inherit; cursor: pointer; }
+  .compare-toggle:hover, .compare-toggle.selected { color: var(--on-teal); background: var(--teal); }
+  .compare-toggle span { font-size: 18px; }
+  .no-results { display: grid; min-height: 300px; place-items: center; align-content: center; gap: 10px; padding: 30px; color: var(--ink-soft); text-align: center; }
+  .no-results > span { display: grid; width: 36px; height: 36px; place-items: center; border: 1px solid var(--line); border-radius: 50%; font-family: var(--mono); }
+  .compare-dock { display: grid; grid-template-columns: 70px minmax(0, 1fr) auto; gap: 7px; align-items: center; padding: 10px 12px; border-top: 1px solid var(--line); background: var(--paper-deep); }
+  .compare-dock > div :is(span, strong) { display: block; }
+  .compare-dock > div span { color: var(--ink-soft); font-size: 10px; }
+  .compare-dock > div strong { font-family: var(--mono); font-size: 12px; }
+  .compare-dock button { min-height: 38px; padding: 0 10px; color: var(--on-teal); border-color: var(--teal); background: var(--teal); font-size: 12px; }
+  .compare-dock button:disabled { color: var(--ink-soft); background: var(--paper); border-color: var(--control-line); border-style: dashed; opacity: 1; cursor: default; }
+  #compare-clear { color: var(--ink-soft); border-color: transparent; background: transparent; }
+  .detail-pane { min-width: 0; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; padding: 30px 34px; }
+  .detail-empty { display: grid; min-height: 100%; place-items: center; align-content: center; color: var(--ink-soft); text-align: center; }
+  .detail-identity { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; padding-bottom: 22px; border-bottom: 1px solid var(--line); }
+  .detail-identity p { margin: 0; color: var(--signal); font-family: var(--mono); font-size: 11px; text-transform: uppercase; }
+  .detail-identity h2 { margin: 5px 0 2px; font-family: var(--display); font-size: 34px; line-height: 1.12; }
+  .detail-identity strong { color: var(--teal); font-size: 14px; }
+  .detail-identity > span { flex: 0 0 auto; color: var(--ink-soft); font-family: var(--mono); font-size: 11px; }
+  .detail-section { padding: 24px 0; }
+  .detail-section h3, .question-list h3 { margin: 20px 0 8px; font-size: 14px; }
+  .company-facts, .product-facts { margin: 12px 0 0; }
+  .company-facts > div, .product-facts > div { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 20px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+  .company-facts dt, .product-facts dt { color: var(--signal); font-family: var(--mono); font-size: 11px; font-weight: 700; }
+  .company-facts dd, .product-facts dd { margin: 0; color: var(--ink-soft); font-size: 14px; line-height: 1.6; }
+  .detail-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+  .detail-chips span { padding: 5px 9px; border: 1px solid var(--line); border-radius: 2px; font-size: 12px; }
+  .muted { color: var(--ink-soft); font-size: 13px; }
+  .signal-list { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); }
+  .signal-list article { min-width: 0; padding: 15px; }
+  .signal-list article + article { border-left: 1px solid var(--line); }
+  .signal-list article > div { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .signal-list span { font-size: 13px; font-weight: 700; }
+  .signal-list b { color: var(--gold); font-family: var(--mono); font-size: 10px; }
+  .signal-list p { margin: 8px 0 0; color: var(--ink-soft); font-size: 12px; line-height: 1.5; }
+  .parameter-note { padding: 15px; border-left: 3px solid var(--gold); background: color-mix(in srgb, var(--gold) 8%, var(--surface)); }
+  .parameter-note > div { display: flex; gap: 7px; align-items: center; color: var(--gold); }
+  .parameter-note > div > span { display: grid; width: 18px; height: 18px; place-items: center; border: 1px solid currentColor; border-radius: 50%; font-family: var(--mono); font-size: 11px; }
+  .parameter-note p { margin: 6px 0 0; color: var(--ink-soft); font-size: 12px; }
+  .metric-section { padding: 20px 0; border-top: 1px solid var(--line); }
+  .metric-section > header { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 11px; }
+  .metric-section h3 { margin: 3px 0 0; font-size: 17px; }
+  .metric-section > header > strong { color: var(--teal); font-family: var(--mono); font-size: 11px; }
+  .metric-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+  .metric-grid article { min-width: 0; min-height: 100px; padding: 13px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .metric-grid article.pending { background: color-mix(in srgb, var(--ink) 3%, transparent); }
+  .metric-grid :is(small, strong, span) { display: block; overflow-wrap: anywhere; }
+  .metric-grid small { color: var(--signal); font-family: var(--mono); font-size: 10px; }
+  .metric-grid strong { margin-top: 8px; font-family: var(--display); font-size: 16px; line-height: 1.25; }
+  .metric-grid span { margin-top: 7px; color: var(--teal); font-size: 10px; }
+  .metric-grid .pending :is(strong, span) { color: var(--ink-soft); }
+  .metric-section > p { margin: 10px 0 0; color: var(--ink-soft); font-size: 11px; }
+  .question-list { padding: 20px 0; }
+  .question-list ol { margin: 0; padding-left: 23px; color: var(--ink-soft); font-size: 13px; line-height: 1.55; }
+  .question-list li + li { margin-top: 7px; }
+  #detail-links { display: flex; justify-content: flex-end; gap: 7px; padding-top: 16px; border-top: 1px solid var(--line); }
+  #detail-links a { padding: 8px 11px; color: var(--teal); border: 1px solid var(--line); font-size: 12px; font-weight: 700; }
+  #detail-links a:hover { color: var(--on-teal); border-color: var(--teal); background: var(--teal); }
+  .finder-disclaimer { display: flex; gap: 7px; justify-content: flex-end; margin: 14px 0 0; color: var(--ink-soft); font-family: var(--mono); font-size: 11px; text-align: right; }
+  .compare-dialog { width: min(1050px, calc(100vw - 28px)); max-height: calc(100vh - 28px); padding: 0; color: var(--ink); border: 1px solid var(--line); border-radius: 4px; background: var(--surface); }
+  .compare-dialog::backdrop { background: rgba(11, 24, 38, .72); backdrop-filter: blur(3px); }
+  .compare-shell { padding: 26px; }
+  .compare-shell > header { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+  .compare-shell h2 { margin: 4px 0; font-family: var(--display); font-size: 27px; }
+  .compare-shell header p:last-child { margin: 0; color: var(--ink-soft); font-size: 13px; }
+  #compare-close { display: grid; width: 40px; height: 40px; place-items: center; color: var(--ink); border: 1px solid var(--line); background: transparent; cursor: pointer; }
+  .comparison-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 22px; border: 1px solid var(--line); }
+  .comparison-grid article { min-width: 0; padding: 18px; }
+  .comparison-grid article + article { border-left: 1px solid var(--line); }
+  .comparison-grid article > p { margin: 0; color: var(--signal); font-family: var(--mono); font-size: 10px; }
+  .comparison-grid h3 { margin: 6px 0 2px; overflow-wrap: anywhere; font-family: var(--display); font-size: 20px; }
+  .comparison-grid article > strong { color: var(--teal); font-size: 12px; }
+  .comparison-grid dl > div { padding: 9px 0; border-bottom: 1px solid var(--line); }
+  .comparison-grid dt { color: var(--signal); font-family: var(--mono); font-size: 10px; font-weight: 700; }
+  .comparison-grid dd { margin: 3px 0 0; color: var(--ink-soft); font-size: 12px; line-height: 1.5; }
+  @media (max-width: 980px) {
+    .task-head { grid-template-columns: 1fr; gap: 26px; }
+    .category-filter { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .category-filter button:nth-child(4) { border-right: 0; }
+    .filter-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .finder-workspace { grid-template-columns: 340px minmax(0, 1fr); }
+    .signal-list { grid-template-columns: 1fr; }
+    .signal-list article + article { border-top: 1px solid var(--line); border-left: 0; }
+  }
+  @media (max-width: 680px) {
+    .task-finder { width: min(100% - 20px, 1240px); padding-top: 10px; }
+    .task-head h1 { font-size: 39px; }
+    .task-kicker { align-items: flex-start; flex-direction: column; }
+    .role-switch { grid-template-columns: 1fr; }
+    .role-switch button { min-height: 84px; }
+    .query-row { grid-template-columns: 1fr 48px; }
+    .query-input { grid-column: 1 / -1; }
+    .search-button { grid-column: 1; }
+    .reset-button { grid-column: 2; }
+    .filter-panel > header { align-items: flex-start; flex-direction: column; }
+    .category-filter { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .category-filter button, .category-filter button:nth-child(4) { border-right: 1px solid var(--line); }
+    .category-filter button:nth-child(even) { border-right: 0; }
+    .filter-fields { grid-template-columns: 1fr; }
+    .finder-workspace { display: block; height: auto; min-height: 0; overflow: visible; }
+    .result-pane { height: 540px; border-right: 0; border-bottom: 1px solid var(--line); }
+    .detail-pane { max-height: none; overflow: visible; padding: 26px 18px; }
+    .company-facts > div, .product-facts > div { grid-template-columns: 1fr; gap: 4px; }
+    .detail-identity { flex-direction: column; }
+    .detail-identity h2 { font-size: 28px; }
+    .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .comparison-grid { display: block; }
+    .comparison-grid article + article { border-top: 1px solid var(--line); border-left: 0; }
+  }
+</style>

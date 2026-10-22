@@ -1,5 +1,6 @@
 import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
+import { findPrivacyIssues } from "./privacy-text-checks.mjs";
 
 const root = process.cwd();
 const read = (file) => readFile(path.join(root, file), "utf8");
@@ -12,7 +13,7 @@ const listFiles = async (directory) => {
 };
 
 const sourcesText = await read("src/data/sources.ts");
-const catalogText = await read("src/data/catalog.ts");
+const catalogText = await read("src/data/repository/catalog.ts");
 const glossaryText = await read("src/data/glossary.ts");
 const contentFiles = (await listFiles("src/content/library")).filter((file) => /\.mdx?$/.test(file));
 const content = await Promise.all(contentFiles.map(async (file) => ({ file, text: await read(file) })));
@@ -89,13 +90,11 @@ for (const item of content) {
 }
 
 const routedFiles = (await listFiles("src")).filter((file) => /\.(astro|ts|md|mdx)$/.test(file));
-const routedText = (await Promise.all(routedFiles.map(read))).join("\n");
-const forbidden = [
-  [/1[3-9]\d{9}/g, "手机号"],
-  [/戴尔/g, "客户名称"],
-  [/合同金额|项目金额|原始标书|内部截图|联系人姓名/g, "敏感业务描述"],
-];
-for (const [pattern, label] of forbidden) assert(!pattern.test(routedText), `路由内容检测到${label}`);
+for (const file of routedFiles) {
+  for (const label of findPrivacyIssues(await read(file))) {
+    assert(false, `${file}: 检测到${label}`);
+  }
+}
 
 console.log(JSON.stringify({
   sources: ids.length,

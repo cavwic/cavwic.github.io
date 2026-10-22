@@ -1,0 +1,2637 @@
+{
+  "overviews": {
+    "onrobot": [
+      {
+        "zh": "OnRobot A/S 于 2018 年由 On Robot、OptoForce 与 Perception Robotics 合并成立，总部位于丹麦欧登塞。其业务面向工业机器人和协作机器人的硬件、软件与应用部署。",
+        "en": "OnRobot A/S was formed in 2018 by merging On Robot, OptoForce and Perception Robotics. Based in Odense, Denmark, it supplies hardware, software and application-deployment solutions for industrial and collaborative robots.",
+        "sourceUrl": "https://onrobot.com/en/about-us",
+        "locator": "The One Stop Shop; History / 2018",
+        "sha256": "4924079f6d002387c52aa43b9a53fa2e3b78c747f99c296476d3772569505a16"
+      },
+      {
+        "zh": "OnRobot 以统一的机械与电气连接体系组织末端工具产品，面向多个机器人品牌提供共同的集成平台。产品组合包括电动、真空、磁力及柔性夹持工具，并延伸到视觉、力/力矩感知、打磨和拧紧工具。",
+        "en": "A common mechanical and electrical interface connects the OnRobot tooling ecosystem across robot brands. Its portfolio includes electric, vacuum, magnetic and soft gripping, alongside vision, force/torque sensing, sanding and screwdriving tools.",
+        "sourceUrl": "https://onrobot.com/en/about-us",
+        "locator": "The One Stop Shop / unified mechanical and electrical system",
+        "sha256": "4924079f6d002387c52aa43b9a53fa2e3b78c747f99c296476d3772569505a16"
+      },
+      {
+        "zh": "应用层包括码垛用 LIFT100 升降轴与 Pallet Station 配套件、WebLytics 生产监测，以及 D:PLOY 应用部署平台。公司还通过集成合作伙伴提供由 D:PLOY 支持的成套应用方案，覆盖码垛、机床上下料等任务。",
+        "en": "Application products include the LIFT100 palletizing lift, Pallet Station accessories, WebLytics production monitoring and the D:PLOY deployment platform. Integration partners also deliver complete D:PLOY-powered solutions for tasks including palletizing and machine tending.",
+        "sourceUrl": "https://onrobot.com/en/about-us",
+        "locator": "History / 2021-2024",
+        "sha256": "4924079f6d002387c52aa43b9a53fa2e3b78c747f99c296476d3772569505a16"
+      },
+      {
+        "zh": "官网列示超过 700 家分销与系统集成合作伙伴，并提供在线培训和全球支持网络。其服务覆盖包装、抓取搬运、码垛、机床上下料、打磨与拧紧等制造工序。",
+        "en": "The company page lists more than 700 distribution and system-integration partners, supported by online training and a global support network. Applications include packaging, pick and place, palletizing, machine tending, sanding and screwdriving.",
+        "sourceUrl": "https://onrobot.com/en/about-us",
+        "locator": "The One Stop Shop / partners; online training",
+        "sha256": "4924079f6d002387c52aa43b9a53fa2e3b78c747f99c296476d3772569505a16"
+      }
+    ],
+    "robotiq": [
+      {
+        "zh": "Robotiq 围绕机器人抓取与接触作业开发自动化产品，业务目标是将重复性人工操作转移给机器人。公司强调使制造现场的搬运任务可靠运行，而非单纯复刻人手形态。",
+        "en": "Robotiq develops automation for robotic handling and contact tasks, aiming to transfer repetitive manual operations to robots. Its stated focus is reliable handling in manufacturing rather than reproducing the anatomy of a human hand.",
+        "sourceUrl": "https://robotiq.com/about",
+        "locator": "Why we exist",
+        "sha256": "3f0460acdefe6a444e6ce0084722981b06248f2b8b4dd99050bc72c74e1c5b01"
+      },
+      {
+        "zh": "官网将业务划分为组件、软件和工作站。组件包括自适应夹爪、真空夹具、力/力矩与触觉传感器以及腕部相机；工作站面向码垛、机床上下料和拧紧，软件产品包括 IQ 与 Contact Core。",
+        "en": "The website separates Components, Software and Workcells. Components include adaptive and vacuum grippers, force/torque and tactile sensing, and a wrist camera. Workcells address palletizing, machine tending and screwdriving; software includes IQ and Contact Core.",
+        "sourceUrl": "https://robotiq.com/about",
+        "locator": "What we do / Workcells; Components; Software",
+        "sha256": "3f0460acdefe6a444e6ce0084722981b06248f2b8b4dd99050bc72c74e1c5b01"
+      },
+      {
+        "zh": "Robotiq 将降低人工集成负担列为研发方向，提出 Automatic Integration，并将面向物理 AI 的接触层与未来工作站部署联系起来。这是公司公开的技术方向，不等同于所有型号已经具备同一套自主集成能力。",
+        "en": "Robotiq identifies reduced manual integration as a development priority through Automatic Integration and a contact layer for physical AI in future workcells. This is its stated technical direction, not a claim that every model already offers identical autonomous-integration capabilities.",
+        "sourceUrl": "https://robotiq.com/about",
+        "locator": "How we approach automation / Automatic Integration",
+        "sha256": "3f0460acdefe6a444e6ce0084722981b06248f2b8b4dd99050bc72c74e1c5b01"
+      },
+      {
+        "zh": "公司在北美和欧洲设有办公室，并通过跨地区团队、集成商和分销伙伴支持制造业客户。业务交付既包含可集成的独立组件，也包含围绕具体工序组织的工作站。",
+        "en": "The company reports offices in North America and Europe and serves manufacturers through regional teams, integrators and distribution partners. Its offering combines independently integrated components with workcells organized around specific production tasks.",
+        "sourceUrl": "https://robotiq.com/about",
+        "locator": "Global footprint, local expertise",
+        "sha256": "3f0460acdefe6a444e6ce0084722981b06248f2b8b4dd99050bc72c74e1c5b01"
+      }
+    ],
+    "sake-robotics": [
+      {
+        "zh": "SAKE Robotics 的公开产品以 EZGripper 机器人夹爪为核心。欠驱动手指在夹持较小物件时保持近似平行，在接触较大物体时可顺应外形包覆；位置与扭矩控制用于调节夹持动作和力度。",
+        "en": "SAKE Robotics centers its public product offering on EZGripper robotic grippers. Underactuated fingers remain approximately parallel for smaller objects and conform around larger objects; position and torque control regulate motion and grip effort.",
+        "sourceUrl": "https://sakerobotics.com/",
+        "locator": "EZGripper Robotic Grippers",
+        "sha256": "3cee9fd335811fdfc82c87092fcc5afd10220d239dff7a42bbf1e9e67d6b8a7e"
+      },
+      {
+        "zh": "EZGripper 的手指前后侧可安装附件或定制指垫。官网提供通用铝合金安装座，并说明双夹爪、三夹爪和定制安装方案，使抓取中心可与机器人腕部旋转轴对齐。",
+        "en": "EZGripper fingers accept attachments or custom pads on their front and rear faces. The website describes a universal aluminum mount, dual- and triple-gripper mounts and custom mounting options, including wrist-centered alignment of the grasp.",
+        "sourceUrl": "https://sakerobotics.com/",
+        "locator": "Product Features / EZGripper Fingers; Robot Mounts",
+        "sha256": "3cee9fd335811fdfc82c87092fcc5afd10220d239dff7a42bbf1e9e67d6b8a7e"
+      },
+      {
+        "zh": "针对 Unitree G1 的套件使用专用末端安装接口，并集成线缆与供电。官网说明其软件接入 Unitree DDS，提供 DEX1 兼容接口及遥操作支持；同时列示 ROS2、Python 等接口支持。",
+        "en": "The Unitree G1 package uses a dedicated end-of-arm mount with integrated cabling and power. The website describes Unitree DDS integration, a DEX1-compatible interface and teleoperation support, alongside ROS2, Python and other interfaces.",
+        "sourceUrl": "https://sakerobotics.com/",
+        "locator": "Announcing EZGripper package for Unitree G1; Easy-to-use Software",
+        "sha256": "3cee9fd335811fdfc82c87092fcc5afd10220d239dff7a42bbf1e9e67d6b8a7e"
+      },
+      {
+        "zh": "标准 EZGripper 的连接方式包括 USB 至 RS485 接口，并配套线缆和电源。官网区分包覆与指尖夹持的负载条件；通用夹爪本体、安装座与 G1 套件是不同配置层级，不能共用未经注明的质量或负载参数。",
+        "en": "Standard EZGripper connectivity includes a USB-to-RS485 interface with cables and power supply. The specification table distinguishes wrapping and pinch payload conditions; the gripper body, mount and G1 package are separate configuration levels rather than interchangeable mass or payload specifications.",
+        "sourceUrl": "https://sakerobotics.com/",
+        "locator": "Cables And Power Supply; Product Specifications",
+        "sha256": "3cee9fd335811fdfc82c87092fcc5afd10220d239dff7a42bbf1e9e67d6b8a7e"
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "verified-onrobot-rg2",
+      "companySlug": "onrobot",
+      "product": "RG2",
+      "pageUrl": "https://onrobot.com/en/products/rg2-finger-gripper",
+      "category": "end-effector",
+      "primary": "manipulator-end-effector",
+      "subclass": "gripper",
+      "useCases": [
+        "manufacturing",
+        "logistics",
+        "integration"
+      ],
+      "type": {
+        "zh": "110 mm 行程双指电动夹爪",
+        "en": "110 mm-stroke electric two-finger gripper"
+      },
+      "integration": {
+        "zh": "通过 OnRobot 统一机械、电气与软件接口接入适配的工业或协作机器人；具体法兰、控制器、Compute Box、快换、线缆和软件插件按机器人型号配置。",
+        "en": "Integrates with supported industrial or collaborative robots through OnRobot's common mechanical, electrical, and software interface; flange, controller, Compute Box, changer, cabling, and software plug-in depend on the robot model."
+      },
+      "verification": {
+        "zh": "按工件几何确认力闭合或形闭合负载，并验证加长指尖导致的夹力下降、重心、节拍和断电保持。",
+        "en": "Confirm force-fit versus form-fit payload by workpiece geometry and validate force reduction from fingertip extensions, center of gravity, cycle time, and power-loss holding."
+      },
+      "overview": [
+        {
+          "zh": "RG2 是 OnRobot 当前公开目录中的独立产品或变体，参数表按该型号保存，不向同系列其他型号扩展。",
+          "en": "RG2 is a distinct current OnRobot catalog product or variant. Its specification table is stored at model level and is not extended to adjacent models."
+        },
+        {
+          "zh": "公开数据表给出 2 kg 力闭合、5 kg 形闭合负载以及 3–40 N 可调夹力，适合尺寸变化较大的中小型工件。",
+          "en": "The datasheet specifies 2 kg force-fit and 5 kg form-fit payloads with 3–40 N adjustable force for varied small and medium workpieces."
+        }
+      ],
+      "applications": [
+        {
+          "zh": "装配、机床上下料和拾放",
+          "en": "Assembly, machine tending, and pick-and-place"
+        }
+      ],
+      "coverage": "official-partial",
+      "level": "model",
+      "rows": [
+        {
+          "label": {
+            "zh": "力闭合负载",
+            "en": "Force-fit payload"
+          },
+          "value": {
+            "zh": "2 kg",
+            "en": "2 kg"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          },
+          "conditions": {
+            "zh": "数值来自厂商公开数据表；负载、速度、寿命和精度会受安装、重心、加速度、工件、工具、环境与软件版本影响，采购前需按目标工况复核。",
+            "en": "Figures come from manufacturer datasheets. Payload, speed, life, and accuracy depend on mounting, center of gravity, acceleration, workpiece, tooling, environment, and software revision and require application-specific verification before purchase."
+          }
+        },
+        {
+          "label": {
+            "zh": "形闭合负载",
+            "en": "Form-fit payload"
+          },
+          "value": {
+            "zh": "5 kg",
+            "en": "5 kg"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          },
+          "conditions": {
+            "zh": "数值来自厂商公开数据表；负载、速度、寿命和精度会受安装、重心、加速度、工件、工具、环境与软件版本影响，采购前需按目标工况复核。",
+            "en": "Figures come from manufacturer datasheets. Payload, speed, life, and accuracy depend on mounting, center of gravity, acceleration, workpiece, tooling, environment, and software revision and require application-specific verification before purchase."
+          }
+        },
+        {
+          "label": {
+            "zh": "总行程（可调）",
+            "en": "Total stroke (adjustable)"
+          },
+          "value": {
+            "zh": "0–110 mm",
+            "en": "0–110 mm"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "手指位置分辨率",
+            "en": "Finger position resolution"
+          },
+          "value": {
+            "zh": "0.1 mm",
+            "en": "0.1 mm"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "重复精度",
+            "en": "Repetition accuracy"
+          },
+          "value": {
+            "zh": "典型 0.1 mm；最大 0.2 mm",
+            "en": "Typical 0.1 mm; maximum 0.2 mm"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "反向间隙",
+            "en": "Reversing backlash"
+          },
+          "value": {
+            "zh": "0.1–0.3 mm",
+            "en": "0.1–0.3 mm"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "夹持力（可调）",
+            "en": "Gripping force (adjustable)"
+          },
+          "value": {
+            "zh": "3–40 N",
+            "en": "3–40 N"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          },
+          "conditions": {
+            "zh": "数值来自厂商公开数据表；负载、速度、寿命和精度会受安装、重心、加速度、工件、工具、环境与软件版本影响，采购前需按目标工况复核。",
+            "en": "Figures come from manufacturer datasheets. Payload, speed, life, and accuracy depend on mounting, center of gravity, acceleration, workpiece, tooling, environment, and software revision and require application-specific verification before purchase."
+          }
+        },
+        {
+          "label": {
+            "zh": "夹持力偏差",
+            "en": "Gripping-force deviation"
+          },
+          "value": {
+            "zh": "±25%",
+            "en": "±25%"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "夹持速度",
+            "en": "Gripping speed"
+          },
+          "value": {
+            "zh": "38–127 mm/s",
+            "en": "38–127 mm/s"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          },
+          "conditions": {
+            "zh": "数值来自厂商公开数据表；负载、速度、寿命和精度会受安装、重心、加速度、工件、工具、环境与软件版本影响，采购前需按目标工况复核。",
+            "en": "Figures come from manufacturer datasheets. Payload, speed, life, and accuracy depend on mounting, center of gravity, acceleration, workpiece, tooling, environment, and software revision and require application-specific verification before purchase."
+          }
+        },
+        {
+          "label": {
+            "zh": "夹持时间",
+            "en": "Gripping time"
+          },
+          "value": {
+            "zh": "0.06–0.21 s",
+            "en": "0.06–0.21 s"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          },
+          "conditions": {
+            "zh": "按双指合计移动 8 mm 测得，速度与力设定相关。",
+            "en": "Based on 8 mm total movement between fingers; speed depends on force setting."
+          }
+        },
+        {
+          "label": {
+            "zh": "可调支架倾斜精度",
+            "en": "Adjustable-bracket tilting accuracy"
+          },
+          "value": {
+            "zh": "<1°",
+            "en": "<1°"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "断电保持工件",
+            "en": "Hold workpiece on power loss"
+          },
+          "value": {
+            "zh": "是",
+            "en": "Yes"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "电机",
+            "en": "Motor"
+          },
+          "value": {
+            "zh": "集成式电动 BLDC",
+            "en": "Integrated electric BLDC"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "防护等级",
+            "en": "IP classification"
+          },
+          "value": {
+            "zh": "IP54",
+            "en": "IP54"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "尺寸",
+            "en": "Dimensions"
+          },
+          "value": {
+            "zh": "213 × 149 × 36 mm",
+            "en": "213 × 149 × 36 mm"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "质量",
+            "en": "Weight"
+          },
+          "value": {
+            "zh": "0.78 kg",
+            "en": "0.78 kg"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "供电电压",
+            "en": "Power supply"
+          },
+          "value": {
+            "zh": "20 / 24 / 25 V",
+            "en": "20 / 24 / 25 V"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "电流消耗",
+            "en": "Current consumption"
+          },
+          "value": {
+            "zh": "70–600 mA；释放时可能出现最高 3 A、最长 6 ms 的尖峰",
+            "en": "70–600 mA；释放时可能出现最高 3 A、最长 6 ms 的尖峰"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "工作温度",
+            "en": "Operating temperature"
+          },
+          "value": {
+            "zh": "5–50 °C",
+            "en": "5–50 °C"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "存储温度",
+            "en": "Storage temperature"
+          },
+          "value": {
+            "zh": "0–60 °C",
+            "en": "0–60 °C"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "相对湿度",
+            "en": "Relative humidity"
+          },
+          "value": {
+            "zh": "0–95%，无凝露",
+            "en": "0–95%, non-condensing"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          }
+        },
+        {
+          "label": {
+            "zh": "保修口径",
+            "en": "Warranty basis"
+          },
+          "value": {
+            "zh": "3 年或 3,000,000 次循环，以先到者为准",
+            "en": "3 years or 3,000,000 cycles, whichever comes first"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "OnRobot 官方数据表",
+            "en": "OnRobot official datasheet"
+          },
+          "locator": {
+            "zh": "产品规格或能力说明",
+            "en": "Product specification or capability section"
+          },
+          "conditions": {
+            "zh": "一个循环按一次完整夹持与释放定义；以正式保修条款为准。",
+            "en": "One cycle is one complete grip-and-release sequence; the formal warranty terms remain authoritative."
+          }
+        },
+        {
+          "label": {
+            "zh": "长工件安全开关干涉条件",
+            "en": "Long-workpiece safety-switch interference"
+          },
+          "value": {
+            "zh": "最大工件高度随夹持宽度变化；按第 4 页 h-w 曲线检查",
+            "en": "Maximum workpiece height depends on gripping width; check the p.4 h-w curve"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 4 页；长工件安全开关干涉条件",
+            "en": "PDF p.4; Long-workpiece safety-switch interference"
+          },
+          "conditions": {
+            "zh": "Height is measured from the fingertip ends; no curve values are interpolated. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac",
+            "en": "Height is measured from the fingertip ends; no curve values are interpolated. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "标准指尖订货号",
+            "en": "Standard fingertip ordering number"
+          },
+          "value": {
+            "zh": "PN 100669",
+            "en": "PN 100669"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 6 页；标准指尖订货号",
+            "en": "PDF p.6; Standard fingertip ordering number"
+          },
+          "conditions": {
+            "zh": "RG2 Fingertip Set; an ordering identifier, not a performance value. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac",
+            "en": "RG2 Fingertip Set; an ordering identifier, not a performance value. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "标准指尖图示外廓",
+            "en": "Standard fingertip drawing envelope"
+          },
+          "value": {
+            "zh": "20.20 x 29.80 x 11.40 mm",
+            "en": "20.20 x 29.80 x 11.40 mm"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 6 页；标准指尖图示外廓",
+            "en": "PDF p.6; Standard fingertip drawing envelope"
+          },
+          "conditions": {
+            "zh": "Drawing of the standard pad only, not gripper overall dimensions. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac",
+            "en": "Drawing of the standard pad only, not gripper overall dimensions. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "X 形指尖订货号",
+            "en": "X-shaped fingertip ordering number"
+          },
+          "value": {
+            "zh": "PN 105871",
+            "en": "PN 105871"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 6 页；X 形指尖订货号",
+            "en": "PDF p.6; X-shaped fingertip ordering number"
+          },
+          "conditions": {
+            "zh": "Separately purchased RG2 X-Shape fingertips. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac",
+            "en": "Separately purchased RG2 X-Shape fingertips. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "X 形指尖凹槽夹角",
+            "en": "X-shaped fingertip groove angle"
+          },
+          "value": {
+            "zh": "150 degrees",
+            "en": "150 degrees"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 6 页；X 形指尖凹槽夹角",
+            "en": "PDF p.6; X-shaped fingertip groove angle"
+          },
+          "conditions": {
+            "zh": "Angle explicitly dimensioned in the X-shaped fingertip drawing. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac",
+            "en": "Angle explicitly dimensioned in the X-shaped fingertip drawing. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "50 mm 指尖延长件订货号",
+            "en": "Fifty-millimeter extension ordering number"
+          },
+          "value": {
+            "zh": "PN 106959",
+            "en": "PN 106959"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 7 页；50 mm 指尖延长件订货号",
+            "en": "PDF p.7; Fifty-millimeter extension ordering number"
+          },
+          "conditions": {
+            "zh": "Separately purchased RG2 fingertip extension, nominal extension 50 mm. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac",
+            "en": "Separately purchased RG2 fingertip extension, nominal extension 50 mm. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "100 mm 指尖延长件订货号",
+            "en": "Hundred-millimeter extension ordering number"
+          },
+          "value": {
+            "zh": "PN 106960",
+            "en": "PN 106960"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 7 页；100 mm 指尖延长件订货号",
+            "en": "PDF p.7; Hundred-millimeter extension ordering number"
+          },
+          "conditions": {
+            "zh": "Separately purchased RG2 fingertip extension, nominal extension 100 mm. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac",
+            "en": "Separately purchased RG2 fingertip extension, nominal extension 100 mm. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "50 mm 延长件剩余目标夹持力",
+            "en": "Fifty-millimeter extension retained target gripping force"
+          },
+          "value": {
+            "zh": "66.67%",
+            "en": "66.67%"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 7 页；50 mm 延长件剩余目标夹持力",
+            "en": "PDF p.7; Fifty-millimeter extension retained target gripping force"
+          },
+          "conditions": {
+            "zh": "Retained percentage of target gripping force, not force loss or nominal bare-gripper force. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac",
+            "en": "Retained percentage of target gripping force, not force loss or nominal bare-gripper force. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "100 mm 延长件剩余目标夹持力",
+            "en": "Hundred-millimeter extension retained target gripping force"
+          },
+          "value": {
+            "zh": "50.00%",
+            "en": "50.00%"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 7 页；100 mm 延长件剩余目标夹持力",
+            "en": "PDF p.7; Hundred-millimeter extension retained target gripping force"
+          },
+          "conditions": {
+            "zh": "Retained percentage of target gripping force; applies only with the specified extension. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac",
+            "en": "Retained percentage of target gripping force; applies only with the specified extension. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "50 mm 延长件图示总长",
+            "en": "Fifty-millimeter extension drawing overall length"
+          },
+          "value": {
+            "zh": "74.20 mm",
+            "en": "74.20 mm"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 7 页；50 mm 延长件图示总长",
+            "en": "PDF p.7; Fifty-millimeter extension drawing overall length"
+          },
+          "conditions": {
+            "zh": "Overall accessory length in the drawing; nominal extension remains 50 mm. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac",
+            "en": "Overall accessory length in the drawing; nominal extension remains 50 mm. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "100 mm 延长件图示总长",
+            "en": "Hundred-millimeter extension drawing overall length"
+          },
+          "value": {
+            "zh": "124.20 mm",
+            "en": "124.20 mm"
+          },
+          "sourceUrl": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 7 页；100 mm 延长件图示总长",
+            "en": "PDF p.7; Hundred-millimeter extension drawing overall length"
+          },
+          "conditions": {
+            "zh": "Overall accessory length in the drawing; nominal extension remains 100 mm. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac",
+            "en": "Overall accessory length in the drawing; nominal extension remains 100 mm. SHA-256: f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac"
+          },
+          "excludeFromNumericIndex": true
+        }
+      ]
+    },
+    {
+      "id": "verified-robotiq-powerpick-multi",
+      "companySlug": "robotiq",
+      "product": "PowerPick Multi",
+      "pageUrl": "https://robotiq.com/products/vacuum-grippers",
+      "category": "end-effector",
+      "primary": "manipulator-end-effector",
+      "subclass": "vacuum-gripper",
+      "useCases": [
+        "manufacturing",
+        "logistics",
+        "integration"
+      ],
+      "type": {
+        "zh": "真空抓具",
+        "en": "Vacuum gripper"
+      },
+      "integration": {
+        "zh": "通过 Robotiq 控制与安装生态接入支持的协作机器人；气动型号还需核对洁净压缩空气、管径、流量、泄漏和排气条件。",
+        "en": "Integrates with supported cobots through Robotiq controls and mounting. Pneumatic models also require clean compressed air, tubing, airflow, leakage, and exhaust checks."
+      },
+      "verification": {
+        "zh": "通过配置器确认吸盘布局、独立通道、工件泄漏率、气源余量、机器人和紧急停止工况。",
+        "en": "Use the configurator to confirm cup layout, independent channels, part leakage, air-supply margin, robot, and emergency-stop case."
+      },
+      "overview": [
+        {
+          "zh": "PowerPick Multi 是双真空通道、多吸盘阵列抓具，面向高负载箱体与不规则阵列搬运。",
+          "en": "PowerPick Multi is a dual-channel multi-cup vacuum tool for higher-payload cases and irregular arrays."
+        },
+        {
+          "zh": "30 kg 是产品级上限，不等于任意吸盘布局都可达到；工件表面、加速度、重心和机器人负载图共同限制实际结果。",
+          "en": "The 30 kg product limit does not apply to every cup layout; part surface, acceleration, center of gravity, and the robot load diagram jointly limit actual performance."
+        }
+      ],
+      "applications": [
+        {
+          "zh": "箱体、袋装、板材与多件阵列搬运",
+          "en": "Handling cases, bags, sheets, and multi-item arrays"
+        },
+        {
+          "zh": "码垛、拆码垛、包装和机床上下料",
+          "en": "Palletizing, depalletizing, packaging, and machine tending"
+        }
+      ],
+      "coverage": "official-partial",
+      "level": "model",
+      "rows": [
+        {
+          "label": {
+            "zh": "驱动方式",
+            "en": "Actuation"
+          },
+          "value": {
+            "zh": "压缩空气",
+            "en": "Compressed air"
+          },
+          "sourceUrl": "https://robotiq.com/products/vacuum-grippers",
+          "sourceLabel": {
+            "zh": "Robotiq 官方产品页",
+            "en": "Robotiq official product page"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "最大额定负载",
+            "en": "Maximum rated payload"
+          },
+          "value": {
+            "zh": "30 kg",
+            "en": "30 kg"
+          },
+          "sourceUrl": "https://robotiq.com/products/vacuum-grippers",
+          "sourceLabel": {
+            "zh": "Robotiq 官方产品页",
+            "en": "Robotiq official product page"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          },
+          "conditions": {
+            "zh": "公开数值不能脱离工件、抓取方式、机器人、安装件、重心、加速度、环境和软件版本使用；采购与安全验收仍需以当前交付文档和实物测试为准。",
+            "en": "Published figures cannot be separated from workpiece, grasp type, robot, mounting, center of gravity, acceleration, environment, and software revision. Procurement and safety acceptance still require current delivery documents and physical testing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "工具质量",
+            "en": "Tool mass"
+          },
+          "value": {
+            "zh": "4.2 kg",
+            "en": "4.2 kg"
+          },
+          "sourceUrl": "https://robotiq.com/products/vacuum-grippers",
+          "sourceLabel": {
+            "zh": "Robotiq 官方产品页",
+            "en": "Robotiq official product page"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "公开配置数量",
+            "en": "Published configuration count"
+          },
+          "value": {
+            "zh": "6 种",
+            "en": "6"
+          },
+          "sourceUrl": "https://robotiq.com/products/vacuum-grippers",
+          "sourceLabel": {
+            "zh": "Robotiq 官方产品页",
+            "en": "Robotiq official product page"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "真空通道",
+            "en": "Vacuum channels"
+          },
+          "value": {
+            "zh": "双通道独立控制",
+            "en": "Two independently controlled channels"
+          },
+          "sourceUrl": "https://robotiq.com/products/vacuum-grippers",
+          "sourceLabel": {
+            "zh": "Robotiq 官方产品页",
+            "en": "Robotiq official product page"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "最大真空度",
+            "en": "Maximum vacuum"
+          },
+          "value": {
+            "zh": "92%",
+            "en": "92%"
+          },
+          "sourceUrl": "https://robotiq.com/products/vacuum-grippers",
+          "sourceLabel": {
+            "zh": "Robotiq 官方产品页",
+            "en": "Robotiq official product page"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "最大真空流量",
+            "en": "Maximum vacuum airflow"
+          },
+          "value": {
+            "zh": "392 L/min",
+            "en": "392 L/min"
+          },
+          "sourceUrl": "https://robotiq.com/products/vacuum-grippers",
+          "sourceLabel": {
+            "zh": "Robotiq 官方产品页",
+            "en": "Robotiq official product page"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "典型抓取时间",
+            "en": "Typical grip time"
+          },
+          "value": {
+            "zh": "0.14 s",
+            "en": "0.14 s"
+          },
+          "sourceUrl": "https://robotiq.com/products/vacuum-grippers",
+          "sourceLabel": {
+            "zh": "Robotiq 官方产品页",
+            "en": "Robotiq official product page"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "压缩空气质量",
+            "en": "Compressed-air quality"
+          },
+          "value": {
+            "zh": "ISO 8573-1 等级 7-4-4",
+            "en": "ISO 8573-1 class 7-4-4"
+          },
+          "sourceUrl": "https://robotiq.com/products/vacuum-grippers",
+          "sourceLabel": {
+            "zh": "Robotiq 官方产品页",
+            "en": "Robotiq official product page"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "工作温度",
+            "en": "Operating temperature"
+          },
+          "value": {
+            "zh": "10–50 °C",
+            "en": "10–50 °C"
+          },
+          "sourceUrl": "https://robotiq.com/products/vacuum-grippers",
+          "sourceLabel": {
+            "zh": "Robotiq 官方产品页",
+            "en": "Robotiq official product page"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "吸盘数量",
+            "en": "Cup count"
+          },
+          "value": {
+            "zh": "24",
+            "en": "24"
+          },
+          "sourceUrl": "https://robotiq.com/products/vacuum-grippers",
+          "sourceLabel": {
+            "zh": "Robotiq 官方产品页",
+            "en": "Robotiq official product page"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "当前机器人兼容范围",
+            "en": "Current robot compatibility"
+          },
+          "value": {
+            "zh": "Universal Robots",
+            "en": "Universal Robots"
+          },
+          "sourceUrl": "https://robotiq.com/products/vacuum-grippers",
+          "sourceLabel": {
+            "zh": "Robotiq 官方产品页",
+            "en": "Robotiq official product page"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "典型释放时间",
+            "en": "Typical release time"
+          },
+          "value": {
+            "zh": "0.04 s",
+            "en": "0.04 s"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "Robotiq 官方技术手册",
+            "en": "Robotiq official technical manual"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "允许供气压力",
+            "en": "Permissible feed pressure"
+          },
+          "value": {
+            "zh": "3–8 bar",
+            "en": "3–8 bar"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "Robotiq 官方技术手册",
+            "en": "Robotiq official technical manual"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "6.5 bar 时耗气量",
+            "en": "Air consumption at 6.5 bar"
+          },
+          "value": {
+            "zh": "476 L/min",
+            "en": "476 L/min"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "Robotiq 官方技术手册",
+            "en": "Robotiq official technical manual"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "3 bar 时耗气量",
+            "en": "Air consumption at 3 bar"
+          },
+          "value": {
+            "zh": "276 L/min",
+            "en": "276 L/min"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "Robotiq 官方技术手册",
+            "en": "Robotiq official technical manual"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "8 bar 时耗气量",
+            "en": "Air consumption at 8 bar"
+          },
+          "value": {
+            "zh": "542 L/min",
+            "en": "542 L/min"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "Robotiq 官方技术手册",
+            "en": "Robotiq official technical manual"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          }
+        },
+        {
+          "label": {
+            "zh": "正常运行最大加速度",
+            "en": "Maximum normal-operation acceleration"
+          },
+          "value": {
+            "zh": "1.5 G",
+            "en": "1.5 G"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "Robotiq 官方技术手册",
+            "en": "Robotiq official technical manual"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          },
+          "conditions": {
+            "zh": "公开数值不能脱离工件、抓取方式、机器人、安装件、重心、加速度、环境和软件版本使用；采购与安全验收仍需以当前交付文档和实物测试为准。",
+            "en": "Published figures cannot be separated from workpiece, grasp type, robot, mounting, center of gravity, acceleration, environment, and software revision. Procurement and safety acceptance still require current delivery documents and physical testing."
+          }
+        },
+        {
+          "label": {
+            "zh": "紧急停止加速度校核值",
+            "en": "Emergency-stop acceleration check"
+          },
+          "value": {
+            "zh": "3.5 G",
+            "en": "3.5 G"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "Robotiq 官方技术手册",
+            "en": "Robotiq official technical manual"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          },
+          "conditions": {
+            "zh": "公开数值不能脱离工件、抓取方式、机器人、安装件、重心、加速度、环境和软件版本使用；采购与安全验收仍需以当前交付文档和实物测试为准。",
+            "en": "Published figures cannot be separated from workpiece, grasp type, robot, mounting, center of gravity, acceleration, environment, and software revision. Procurement and safety acceptance still require current delivery documents and physical testing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "适配机器人负载代际",
+            "en": "Supported robot payload generations"
+          },
+          "value": {
+            "zh": "UR20 / UR30；实际负载按配置器",
+            "en": "UR20 / UR30; actual payload per configurator"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "Robotiq 官方技术手册",
+            "en": "Robotiq official technical manual"
+          },
+          "locator": {
+            "zh": "规格表",
+            "en": "Specification table"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "真空发生器工作温度",
+            "en": "Vacuum-generator operating temperature"
+          },
+          "value": {
+            "zh": "0 to 50 deg C",
+            "en": "0 to 50 deg C"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 16 页；真空发生器工作温度",
+            "en": "PDF p.16; Vacuum-generator operating temperature"
+          },
+          "conditions": {
+            "zh": "Table 3-1; generator component only. Existing 10-50 C suction-cup/application range is retained. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 3-1; generator component only. Existing 10-50 C suction-cup/application range is retained. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "储存温度",
+            "en": "Storage temperature"
+          },
+          "value": {
+            "zh": "-20 to 70 deg C",
+            "en": "-20 to 70 deg C"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 16 页；储存温度",
+            "en": "PDF p.16; Storage temperature"
+          },
+          "conditions": {
+            "zh": "Table 3-1; storage, not operation. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 3-1; storage, not operation. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "非冷凝湿度",
+            "en": "Non-condensing humidity"
+          },
+          "value": {
+            "zh": "35 to 85% RH",
+            "en": "35 to 85% RH"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 16 页；非冷凝湿度",
+            "en": "PDF p.16; Non-condensing humidity"
+          },
+          "conditions": {
+            "zh": "Table 3-1; non-condensing. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 3-1; non-condensing. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          }
+        },
+        {
+          "label": {
+            "zh": "防护等级",
+            "en": "IP rating"
+          },
+          "value": {
+            "zh": "IP2X",
+            "en": "IP2X"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 16 页；防护等级",
+            "en": "PDF p.16; IP rating"
+          },
+          "conditions": {
+            "zh": "Table 3-1; no water-protection digit is disclosed. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 3-1; no water-protection digit is disclosed. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "列示不支持的环境",
+            "en": "Listed unsupported environments"
+          },
+          "value": {
+            "zh": "食品、洁净室、本质安全、腐蚀性及爆炸性液体或气体",
+            "en": "Food, clean room, intrinsic safety, corrosive and explosive liquids or gases"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 16 页；列示不支持的环境",
+            "en": "PDF p.16; Listed unsupported environments"
+          },
+          "conditions": {
+            "zh": "Table 3-1 merged No cell visually verified; not a certification claim. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 3-1 merged No cell visually verified; not a certification claim. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "过滤减压器进气管外径",
+            "en": "Filter-regulator air tube outside diameter"
+          },
+          "value": {
+            "zh": "12 mm",
+            "en": "12 mm"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 53 页；过滤减压器进气管外径",
+            "en": "PDF p.53; Filter-regulator air tube outside diameter"
+          },
+          "conditions": {
+            "zh": "Chart 5-1; tube OD, not inner diameter. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Chart 5-1; tube OD, not inner diameter. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "夹具进气管外径",
+            "en": "Gripper air tube outside diameter"
+          },
+          "value": {
+            "zh": "12 mm",
+            "en": "12 mm"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 53 页；夹具进气管外径",
+            "en": "PDF p.53; Gripper air tube outside diameter"
+          },
+          "conditions": {
+            "zh": "Chart 5-1; tube OD. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Chart 5-1; tube OD. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "吸盘接口螺纹",
+            "en": "Suction-cup thread"
+          },
+          "value": {
+            "zh": "G 1/4; 1/4-19 BSPP",
+            "en": "G 1/4; 1/4-19 BSPP"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 53 页；吸盘接口螺纹",
+            "en": "PDF p.53; Suction-cup thread"
+          },
+          "conditions": {
+            "zh": "Chart 5-1; retain both printed thread designations. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Chart 5-1; retain both printed thread designations. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "最佳供气压力",
+            "en": "Optimal feed pressure"
+          },
+          "value": {
+            "zh": "6.5 bar",
+            "en": "6.5 bar"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 53 页；最佳供气压力",
+            "en": "PDF p.53; Optimal feed pressure"
+          },
+          "conditions": {
+            "zh": "Chart 5-1; optimum specifically for compressed-air consumption. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Chart 5-1; optimum specifically for compressed-air consumption. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          }
+        },
+        {
+          "label": {
+            "zh": "默认双波纹吸盘载荷细表",
+            "en": "Default double-bellow cup payload in detailed table"
+          },
+          "value": {
+            "zh": "UR20: 20.72 kg; UR30: 21 kg",
+            "en": "UR20: 20.72 kg; UR30: 21 kg"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 53 页；默认双波纹吸盘载荷细表",
+            "en": "PDF p.53; Default double-bellow cup payload in detailed table"
+          },
+          "conditions": {
+            "zh": "Chart 5-1; p.40 gives UR20 20.7 kg. Precision discrepancy retained; not universal 30 kg payload. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Chart 5-1; p.40 gives UR20 20.7 kg. Precision discrepancy retained; not universal 30 kg payload. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "选配单波纹吸盘载荷细表",
+            "en": "Optional single-bellow cup payload in detailed table"
+          },
+          "value": {
+            "zh": "UR20: 20.87 kg; UR30: 30 kg",
+            "en": "UR20: 20.87 kg; UR30: 30 kg"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 53 页；选配单波纹吸盘载荷细表",
+            "en": "PDF p.53; Optional single-bellow cup payload in detailed table"
+          },
+          "conditions": {
+            "zh": "Chart 5-1; p.40 gives UR20 20.8 kg. Both source precisions retained and excluded from numeric index. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Chart 5-1; p.40 gives UR20 20.8 kg. Both source precisions retained and excluded from numeric index. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "最佳压力下噪声",
+            "en": "Noise at optimal pressure"
+          },
+          "value": {
+            "zh": "79 dBA",
+            "en": "79 dBA"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 54 页；最佳压力下噪声",
+            "en": "PDF p.54; Noise at optimal pressure"
+          },
+          "conditions": {
+            "zh": "Chart 5-1; at optimal supply pressure. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Chart 5-1; at optimal supply pressure. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          }
+        },
+        {
+          "label": {
+            "zh": "标称供电电压",
+            "en": "Nominal supply voltage"
+          },
+          "value": {
+            "zh": "24 VDC +/-10%",
+            "en": "24 VDC +/-10%"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 56 页；标称供电电压",
+            "en": "PDF p.56; Nominal supply voltage"
+          },
+          "conditions": {
+            "zh": "Table 5-3. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-3. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          }
+        },
+        {
+          "label": {
+            "zh": "静态功耗",
+            "en": "Quiescent power"
+          },
+          "value": {
+            "zh": "0.7 W",
+            "en": "0.7 W"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 56 页；静态功耗",
+            "en": "PDF p.56; Quiescent power"
+          },
+          "conditions": {
+            "zh": "Table 5-3; minimum power consumption, not maximum power. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-3; minimum power consumption, not maximum power. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          }
+        },
+        {
+          "label": {
+            "zh": "峰值电流",
+            "en": "Peak current"
+          },
+          "value": {
+            "zh": "200 mA",
+            "en": "200 mA"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 56 页；峰值电流",
+            "en": "PDF p.56; Peak current"
+          },
+          "conditions": {
+            "zh": "Table 5-3; peak, not continuous current. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-3; peak, not continuous current. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "热插拔",
+            "en": "Hot swappable"
+          },
+          "value": {
+            "zh": "是",
+            "en": "Yes"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 56 页；热插拔",
+            "en": "PDF p.56; Hot swappable"
+          },
+          "conditions": {
+            "zh": "Table 5-3 manufacturer specification. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-3 manufacturer specification. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "ESD 安全",
+            "en": "ESD safe"
+          },
+          "value": {
+            "zh": "否",
+            "en": "No"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 56 页；ESD 安全",
+            "en": "PDF p.56; ESD safe"
+          },
+          "conditions": {
+            "zh": "Table 5-3 manufacturer specification. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-3 manufacturer specification. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电气接头",
+            "en": "Electrical connector"
+          },
+          "value": {
+            "zh": "12 芯 M12 母座",
+            "en": "12-pole female M12"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 56 页；电气接头",
+            "en": "PDF p.56; Electrical connector"
+          },
+          "conditions": {
+            "zh": "Table 5-3; connector designation, not numeric performance. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-3; connector designation, not numeric performance. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "通信协议",
+            "en": "Communication protocol"
+          },
+          "value": {
+            "zh": "数字 I/O",
+            "en": "Digital I/O"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 56 页；通信协议",
+            "en": "PDF p.56; Communication protocol"
+          },
+          "conditions": {
+            "zh": "Table 5-4. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-4. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "真空度反馈电压",
+            "en": "Vacuum-level feedback voltage"
+          },
+          "value": {
+            "zh": "1 to 5 V analog",
+            "en": "1 to 5 V analog"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 56 页；真空度反馈电压",
+            "en": "PDF p.56; Vacuum-level feedback voltage"
+          },
+          "conditions": {
+            "zh": "Table 5-4; feedback signal, not supply voltage. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-4; feedback signal, not supply voltage. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "物体检测方式",
+            "en": "Object detection method"
+          },
+          "value": {
+            "zh": "通过真空度检测夹持",
+            "en": "Grip check via vacuum level"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 56 页；物体检测方式",
+            "en": "PDF p.56; Object detection method"
+          },
+          "conditions": {
+            "zh": "Table 5-4. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-4. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "码垛配置 1; X=0; no wrist extension 载荷",
+            "en": "Palletizing configuration 1; X=0; no wrist extension payload"
+          },
+          "value": {
+            "zh": "20.7 / 21 / 20.8 / 30 kg",
+            "en": "20.7 / 21 / 20.8 / 30 kg"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 40 页；码垛配置 1; X=0; no wrist extension 载荷",
+            "en": "PDF p.40; Palletizing configuration 1; X=0; no wrist extension payload"
+          },
+          "conditions": {
+            "zh": "Table 3-4; ordered values: double-bellow UR20, double-bellow UR30, single-bellow UR20, single-bellow UR30. Palletizing only; robot recommendations and configurator apply. Default UR20 precision differs on p.53. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 3-4; ordered values: double-bellow UR20, double-bellow UR30, single-bellow UR20, single-bellow UR30. Palletizing only; robot recommendations and configurator apply. Default UR20 precision differs on p.53. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "码垛配置 2; X=0; wrist extension Z=100 mm 载荷",
+            "en": "Palletizing configuration 2; X=0; wrist extension Z=100 mm payload"
+          },
+          "value": {
+            "zh": "20.2 / 21 / 20.3 / 30 kg",
+            "en": "20.2 / 21 / 20.3 / 30 kg"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 40 页；码垛配置 2; X=0; wrist extension Z=100 mm 载荷",
+            "en": "PDF p.40; Palletizing configuration 2; X=0; wrist extension Z=100 mm payload"
+          },
+          "conditions": {
+            "zh": "Table 3-4; ordered values: double-bellow UR20, double-bellow UR30, single-bellow UR20, single-bellow UR30. Palletizing only; robot recommendations and configurator apply. Default UR20 precision differs on p.53. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 3-4; ordered values: double-bellow UR20, double-bellow UR30, single-bellow UR20, single-bellow UR30. Palletizing only; robot recommendations and configurator apply. Default UR20 precision differs on p.53. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "码垛配置 3; X=100 mm; no wrist extension 载荷",
+            "en": "Palletizing configuration 3; X=100 mm; no wrist extension payload"
+          },
+          "value": {
+            "zh": "20.2 / 21 / 20.3 / 30 kg",
+            "en": "20.2 / 21 / 20.3 / 30 kg"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 40 页；码垛配置 3; X=100 mm; no wrist extension 载荷",
+            "en": "PDF p.40; Palletizing configuration 3; X=100 mm; no wrist extension payload"
+          },
+          "conditions": {
+            "zh": "Table 3-4; ordered values: double-bellow UR20, double-bellow UR30, single-bellow UR20, single-bellow UR30. Palletizing only; robot recommendations and configurator apply. Default UR20 precision differs on p.53. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 3-4; ordered values: double-bellow UR20, double-bellow UR30, single-bellow UR20, single-bellow UR30. Palletizing only; robot recommendations and configurator apply. Default UR20 precision differs on p.53. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "码垛配置 4; X=100 mm; wrist extension Z=100 mm 载荷",
+            "en": "Palletizing configuration 4; X=100 mm; wrist extension Z=100 mm payload"
+          },
+          "value": {
+            "zh": "19.7 / 21 / 19.8 / 29.8 kg",
+            "en": "19.7 / 21 / 19.8 / 29.8 kg"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 40 页；码垛配置 4; X=100 mm; wrist extension Z=100 mm 载荷",
+            "en": "PDF p.40; Palletizing configuration 4; X=100 mm; wrist extension Z=100 mm payload"
+          },
+          "conditions": {
+            "zh": "Table 3-4; ordered values: double-bellow UR20, double-bellow UR30, single-bellow UR20, single-bellow UR30. Palletizing only; robot recommendations and configurator apply. Default UR20 precision differs on p.53. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 3-4; ordered values: double-bellow UR20, double-bellow UR30, single-bellow UR20, single-bellow UR30. Palletizing only; robot recommendations and configurator apply. Default UR20 precision differs on p.53. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "码垛配置 5; X=200 mm; no wrist extension 载荷",
+            "en": "Palletizing configuration 5; X=200 mm; no wrist extension payload"
+          },
+          "value": {
+            "zh": "20.1 / 21 / 20.2 / 30 kg",
+            "en": "20.1 / 21 / 20.2 / 30 kg"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 40 页；码垛配置 5; X=200 mm; no wrist extension 载荷",
+            "en": "PDF p.40; Palletizing configuration 5; X=200 mm; no wrist extension payload"
+          },
+          "conditions": {
+            "zh": "Table 3-4; ordered values: double-bellow UR20, double-bellow UR30, single-bellow UR20, single-bellow UR30. Palletizing only; robot recommendations and configurator apply. Default UR20 precision differs on p.53. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 3-4; ordered values: double-bellow UR20, double-bellow UR30, single-bellow UR20, single-bellow UR30. Palletizing only; robot recommendations and configurator apply. Default UR20 precision differs on p.53. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "码垛配置 6; X=200 mm; wrist extension Z=100 mm 载荷",
+            "en": "Palletizing configuration 6; X=200 mm; wrist extension Z=100 mm payload"
+          },
+          "value": {
+            "zh": "19.6 / 21 / 19.7 / 29.7 kg",
+            "en": "19.6 / 21 / 19.7 / 29.7 kg"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 41 页；码垛配置 6; X=200 mm; wrist extension Z=100 mm 载荷",
+            "en": "PDF p.41; Palletizing configuration 6; X=200 mm; wrist extension Z=100 mm payload"
+          },
+          "conditions": {
+            "zh": "Table 3-4; ordered values: double-bellow UR20, double-bellow UR30, single-bellow UR20, single-bellow UR30. Palletizing only; robot recommendations and configurator apply. Default UR20 precision differs on p.53. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 3-4; ordered values: double-bellow UR20, double-bellow UR30, single-bellow UR20, single-bellow UR30. Palletizing only; robot recommendations and configurator apply. Default UR20 precision differs on p.53. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册配置 X=0 mm; wrist extension No 质心/TCP/质量",
+            "en": "Manual configuration X=0 mm; wrist extension No COM/TCP/mass"
+          },
+          "value": {
+            "zh": "COM (0,-5,82) mm; TCP (0,0,155) mm; mass 4277 g",
+            "en": "COM (0,-5,82) mm; TCP (0,0,155) mm; mass 4277 g"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 54 页；手册配置 X=0 mm; wrist extension No 质心/TCP/质量",
+            "en": "PDF p.54; Manual configuration X=0 mm; wrist extension No COM/TCP/mass"
+          },
+          "conditions": {
+            "zh": "Table 5-2 under PowerPick Multi heading, but caption says PowerPick20. Identity/caption conflict retained; not assigned to PowerPick20. Webpage 4.2 kg mass retained separately and excluded. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-2 under PowerPick Multi heading, but caption says PowerPick20. Identity/caption conflict retained; not assigned to PowerPick20. Webpage 4.2 kg mass retained separately and excluded. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册配置 X=0 mm; wrist extension Yes 质心/TCP/质量",
+            "en": "Manual configuration X=0 mm; wrist extension Yes COM/TCP/mass"
+          },
+          "value": {
+            "zh": "COM (0,-5,165) mm; TCP (0,0,255) mm; mass 4773 g",
+            "en": "COM (0,-5,165) mm; TCP (0,0,255) mm; mass 4773 g"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 54 页；手册配置 X=0 mm; wrist extension Yes 质心/TCP/质量",
+            "en": "PDF p.54; Manual configuration X=0 mm; wrist extension Yes COM/TCP/mass"
+          },
+          "conditions": {
+            "zh": "Table 5-2 under PowerPick Multi heading, but caption says PowerPick20. Identity/caption conflict retained; not assigned to PowerPick20. Webpage 4.2 kg mass retained separately and excluded. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-2 under PowerPick Multi heading, but caption says PowerPick20. Identity/caption conflict retained; not assigned to PowerPick20. Webpage 4.2 kg mass retained separately and excluded. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册配置 X=100 mm; wrist extension No 质心/TCP/质量",
+            "en": "Manual configuration X=100 mm; wrist extension No COM/TCP/mass"
+          },
+          "value": {
+            "zh": "COM (87,-4,120) mm; TCP (100,0,205) mm; mass 4795 g",
+            "en": "COM (87,-4,120) mm; TCP (100,0,205) mm; mass 4795 g"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 54 页；手册配置 X=100 mm; wrist extension No 质心/TCP/质量",
+            "en": "PDF p.54; Manual configuration X=100 mm; wrist extension No COM/TCP/mass"
+          },
+          "conditions": {
+            "zh": "Table 5-2 under PowerPick Multi heading, but caption says PowerPick20. Identity/caption conflict retained; not assigned to PowerPick20. Webpage 4.2 kg mass retained separately and excluded. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-2 under PowerPick Multi heading, but caption says PowerPick20. Identity/caption conflict retained; not assigned to PowerPick20. Webpage 4.2 kg mass retained separately and excluded. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册配置 X=100 mm; wrist extension Yes 质心/TCP/质量",
+            "en": "Manual configuration X=100 mm; wrist extension Yes COM/TCP/mass"
+          },
+          "value": {
+            "zh": "COM (79,-4,201) mm; TCP (100,0,305) mm; mass 5277 g",
+            "en": "COM (79,-4,201) mm; TCP (100,0,305) mm; mass 5277 g"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 54 页；手册配置 X=100 mm; wrist extension Yes 质心/TCP/质量",
+            "en": "PDF p.54; Manual configuration X=100 mm; wrist extension Yes COM/TCP/mass"
+          },
+          "conditions": {
+            "zh": "Table 5-2 under PowerPick Multi heading, but caption says PowerPick20. Identity/caption conflict retained; not assigned to PowerPick20. Webpage 4.2 kg mass retained separately and excluded. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-2 under PowerPick Multi heading, but caption says PowerPick20. Identity/caption conflict retained; not assigned to PowerPick20. Webpage 4.2 kg mass retained separately and excluded. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册配置 X=200 mm; wrist extension No 质心/TCP/质量",
+            "en": "Manual configuration X=200 mm; wrist extension No COM/TCP/mass"
+          },
+          "value": {
+            "zh": "COM (173,-4,119) mm; TCP (200,0,205) mm; mass 4902 g",
+            "en": "COM (173,-4,119) mm; TCP (200,0,205) mm; mass 4902 g"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 54 页；手册配置 X=200 mm; wrist extension No 质心/TCP/质量",
+            "en": "PDF p.54; Manual configuration X=200 mm; wrist extension No COM/TCP/mass"
+          },
+          "conditions": {
+            "zh": "Table 5-2 under PowerPick Multi heading, but caption says PowerPick20. Identity/caption conflict retained; not assigned to PowerPick20. Webpage 4.2 kg mass retained separately and excluded. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-2 under PowerPick Multi heading, but caption says PowerPick20. Identity/caption conflict retained; not assigned to PowerPick20. Webpage 4.2 kg mass retained separately and excluded. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册配置 X=200 mm; wrist extension Yes 质心/TCP/质量",
+            "en": "Manual configuration X=200 mm; wrist extension Yes COM/TCP/mass"
+          },
+          "value": {
+            "zh": "COM (157,-4,200) mm; TCP (200,0,305) mm; mass 5384 g",
+            "en": "COM (157,-4,200) mm; TCP (200,0,305) mm; mass 5384 g"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 55 页；手册配置 X=200 mm; wrist extension Yes 质心/TCP/质量",
+            "en": "PDF p.55; Manual configuration X=200 mm; wrist extension Yes COM/TCP/mass"
+          },
+          "conditions": {
+            "zh": "Table 5-2 under PowerPick Multi heading, but caption says PowerPick20. Identity/caption conflict retained; not assigned to PowerPick20. Webpage 4.2 kg mass retained separately and excluded. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-2 under PowerPick Multi heading, but caption says PowerPick20. Identity/caption conflict retained; not assigned to PowerPick20. Webpage 4.2 kg mass retained separately and excluded. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "运动稳定器质量与 TCP 增量",
+            "en": "Motion stabilizer mass and TCP increments"
+          },
+          "value": {
+            "zh": "+410 g; TCP Z +3 mm",
+            "en": "+410 g; TCP Z +3 mm"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 55 页；运动稳定器质量与 TCP 增量",
+            "en": "PDF p.55; Motion stabilizer mass and TCP increments"
+          },
+          "conditions": {
+            "zh": "Table 5-2 footnote; same caption identity conflict, no combined mass calculated. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-2 footnote; same caption identity conflict, no combined mass calculated. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "三件抓取稳定器质量与 TCP 增量",
+            "en": "Triple-pick stabilizer mass and TCP increments"
+          },
+          "value": {
+            "zh": "+489 g; TCP Z +4 mm",
+            "en": "+489 g; TCP Z +4 mm"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 55 页；三件抓取稳定器质量与 TCP 增量",
+            "en": "PDF p.55; Triple-pick stabilizer mass and TCP increments"
+          },
+          "conditions": {
+            "zh": "Table 5-2 footnote; same caption identity conflict, no order combination synthesized. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-2 footnote; same caption identity conflict, no order combination synthesized. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "单波纹吸盘质量与 TCP 变化",
+            "en": "Single-bellow cup mass and TCP changes"
+          },
+          "value": {
+            "zh": "-150 g; TCP Z -10 mm",
+            "en": "-150 g; TCP Z -10 mm"
+          },
+          "sourceUrl": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 55 页；单波纹吸盘质量与 TCP 变化",
+            "en": "PDF p.55; Single-bellow cup mass and TCP changes"
+          },
+          "conditions": {
+            "zh": "Table 5-2 footnote; relative changes only, same caption identity conflict. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+            "en": "Table 5-2 footnote; relative changes only, same caption identity conflict. SHA-256: 1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14"
+          },
+          "excludeFromNumericIndex": true
+        }
+      ]
+    },
+    {
+      "id": "sake-robotics-ezgripper-gen2",
+      "companySlug": "sake-robotics",
+      "product": "EZGripper Gen2",
+      "pageUrl": "https://sakerobotics.com/",
+      "category": "end-effector",
+      "primary": "manipulator-end-effector",
+      "subclass": "gripper",
+      "useCases": [
+        "research",
+        "integration"
+      ],
+      "type": {
+        "zh": "灵巧手与末端执行器",
+        "en": "Dexterous hand / end effector"
+      },
+      "integration": {
+        "zh": "接口、主机和选件按下列型号规格确认。",
+        "en": "Confirm interfaces, host requirements and options against the model-specific fields below."
+      },
+      "verification": {
+        "zh": "参数仅适用于引用来源的型号和配置；未知值不作满足筛选条件处理。",
+        "en": "Values apply only to the cited model and configuration; unknown values do not satisfy numeric filters."
+      },
+      "rows": [
+        {
+          "sourceUrl": "https://sakerobotics.com/",
+          "sourceLabel": {
+            "zh": "EZGripper Gen2 厂商资料",
+            "en": "EZGripper Gen2 manufacturer material"
+          },
+          "locator": {
+            "zh": "Official product specifications",
+            "en": "Official product specifications"
+          },
+          "label": {
+            "zh": "开口宽度",
+            "en": "Opening width"
+          },
+          "value": {
+            "zh": "145 mm",
+            "en": "145 mm"
+          }
+        },
+        {
+          "sourceUrl": "https://sakerobotics.com/",
+          "sourceLabel": {
+            "zh": "EZGripper Gen2 厂商资料",
+            "en": "EZGripper Gen2 manufacturer material"
+          },
+          "locator": {
+            "zh": "Official product specifications",
+            "en": "Official product specifications"
+          },
+          "label": {
+            "zh": "包络负载",
+            "en": "Enveloping payload"
+          },
+          "value": {
+            "zh": "5 kg on 90 mm pipe",
+            "en": "5 kg on 90 mm pipe"
+          }
+        },
+        {
+          "sourceUrl": "https://sakerobotics.com/",
+          "sourceLabel": {
+            "zh": "EZGripper Gen2 厂商资料",
+            "en": "EZGripper Gen2 manufacturer material"
+          },
+          "locator": {
+            "zh": "Official product specifications",
+            "en": "Official product specifications"
+          },
+          "label": {
+            "zh": "夹持负载",
+            "en": "Pinch payload"
+          },
+          "value": {
+            "zh": "2.5 kg on 90 mm pipe",
+            "en": "2.5 kg on 90 mm pipe"
+          }
+        },
+        {
+          "sourceUrl": "https://sakerobotics.com/",
+          "sourceLabel": {
+            "zh": "EZGripper Gen2 厂商资料",
+            "en": "EZGripper Gen2 manufacturer material"
+          },
+          "locator": {
+            "zh": "Official product specifications",
+            "en": "Official product specifications"
+          },
+          "label": {
+            "zh": "质量",
+            "en": "Mass"
+          },
+          "value": {
+            "zh": "365 g; mount 35 g",
+            "en": "365 g; mount 35 g"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "sourceUrl": "https://sakerobotics.com/",
+          "sourceLabel": {
+            "zh": "EZGripper Gen2 厂商资料",
+            "en": "EZGripper Gen2 manufacturer material"
+          },
+          "locator": {
+            "zh": "Official product specifications",
+            "en": "Official product specifications"
+          },
+          "label": {
+            "zh": "夹持力",
+            "en": "Grip force"
+          },
+          "value": {
+            "zh": "35 N",
+            "en": "35 N"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "sourceUrl": "https://sakerobotics.com/",
+          "sourceLabel": {
+            "zh": "EZGripper Gen2 厂商资料",
+            "en": "EZGripper Gen2 manufacturer material"
+          },
+          "locator": {
+            "zh": "Official product specifications",
+            "en": "Official product specifications"
+          },
+          "label": {
+            "zh": "执行器",
+            "en": "Actuator"
+          },
+          "value": {
+            "zh": "ROBOTIS MX64AR",
+            "en": "ROBOTIS MX64AR"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "sourceUrl": "https://sakerobotics.com/",
+          "sourceLabel": {
+            "zh": "EZGripper Gen2 厂商资料",
+            "en": "EZGripper Gen2 manufacturer material"
+          },
+          "locator": {
+            "zh": "Official product specifications",
+            "en": "Official product specifications"
+          },
+          "label": {
+            "zh": "电压",
+            "en": "Voltage"
+          },
+          "value": {
+            "zh": "12 V",
+            "en": "12 V"
+          }
+        },
+        {
+          "sourceUrl": "https://sakerobotics.com/",
+          "sourceLabel": {
+            "zh": "EZGripper Gen2 厂商资料",
+            "en": "EZGripper Gen2 manufacturer material"
+          },
+          "locator": {
+            "zh": "Official product specifications",
+            "en": "Official product specifications"
+          },
+          "label": {
+            "zh": "接口",
+            "en": "Interfaces"
+          },
+          "value": {
+            "zh": "RS485; USB adapter",
+            "en": "RS485; USB adapter"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "sourceUrl": "https://sakerobotics.com/",
+          "sourceLabel": {
+            "zh": "EZGripper Gen2 厂商资料",
+            "en": "EZGripper Gen2 manufacturer material"
+          },
+          "locator": {
+            "zh": "Official product specifications",
+            "en": "Official product specifications"
+          },
+          "label": {
+            "zh": "接触垫尺寸",
+            "en": "Pad dimensions"
+          },
+          "value": {
+            "zh": "30 x 50 mm",
+            "en": "30 x 50 mm"
+          }
+        },
+        {
+          "sourceUrl": "https://sakerobotics.com/",
+          "sourceLabel": {
+            "zh": "EZGripper Gen2 厂商资料",
+            "en": "EZGripper Gen2 manufacturer material"
+          },
+          "locator": {
+            "zh": "Official product specifications",
+            "en": "Official product specifications"
+          },
+          "label": {
+            "zh": "软件",
+            "en": "Software"
+          },
+          "value": {
+            "zh": "ROS 2; Python; C#; MuJoCo; URCaps",
+            "en": "ROS 2; Python; C#; MuJoCo; URCaps"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "宣传册夹持力范围",
+            "en": "Brochure gripping-force range"
+          },
+          "value": {
+            "zh": "0 to 35 N",
+            "en": "0 to 35 N"
+          },
+          "sourceUrl": "https://sakerobotics.com/?wpdmdl=543",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 2 页；宣传册夹持力范围",
+            "en": "PDF p.2; Brochure gripping-force range"
+          },
+          "conditions": {
+            "zh": "Brochure table shows zero, not letter O. Existing homepage-derived 35 N is retained; range versus unqualified value is excluded pending revision reconciliation. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193",
+            "en": "Brochure table shows zero, not letter O. Existing homepage-derived 35 N is retained; range versus unqualified value is excluded pending revision reconciliation. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "位置控制指令范围",
+            "en": "Position command range"
+          },
+          "value": {
+            "zh": "0 to 100",
+            "en": "0 to 100"
+          },
+          "sourceUrl": "https://sakerobotics.com/?wpdmdl=543",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 3 页；位置控制指令范围",
+            "en": "PDF p.3; Position command range"
+          },
+          "conditions": {
+            "zh": "EZGripperApp command scale, not millimeters or physical position resolution. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193",
+            "en": "EZGripperApp command scale, not millimeters or physical position resolution. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "力度控制指令范围",
+            "en": "Force command range"
+          },
+          "value": {
+            "zh": "0 to 100",
+            "en": "0 to 100"
+          },
+          "sourceUrl": "https://sakerobotics.com/?wpdmdl=543",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 3 页；力度控制指令范围",
+            "en": "PDF p.3; Force command range"
+          },
+          "conditions": {
+            "zh": "EZGripperApp command scale, not newtons or measured force accuracy. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193",
+            "en": "EZGripperApp command scale, not newtons or measured force accuracy. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "外壳材料与工艺",
+            "en": "Housing material and process"
+          },
+          "value": {
+            "zh": "注塑 PC/ABS",
+            "en": "Injection-molded PC/ABS"
+          },
+          "sourceUrl": "https://sakerobotics.com/?wpdmdl=543",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 4 页；外壳材料与工艺",
+            "en": "PDF p.4; Housing material and process"
+          },
+          "conditions": {
+            "zh": "Core Architecture / Super Durable Components. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193",
+            "en": "Core Architecture / Super Durable Components. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "腱绳组件描述",
+            "en": "Tendon component description"
+          },
+          "value": {
+            "zh": "360 kg 标记；12 编织 Dyneema 腱绳",
+            "en": "360 kg marking; 12-braid Dyneema tendon"
+          },
+          "sourceUrl": "https://sakerobotics.com/?wpdmdl=543",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 4 页；腱绳组件描述",
+            "en": "PDF p.4; Tendon component description"
+          },
+          "conditions": {
+            "zh": "Component wording in brochure; not gripper payload, proof load or validated lifetime. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193",
+            "en": "Component wording in brochure; not gripper payload, proof load or validated lifetime. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "关节腱绳导向",
+            "en": "Joint tendon guides"
+          },
+          "value": {
+            "zh": "氧化铝陶瓷孔眼；双列深沟凹面轴承",
+            "en": "Aluminum-oxide ceramic eyelets; double-row deep-groove concave bearings"
+          },
+          "sourceUrl": "https://sakerobotics.com/?wpdmdl=543",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 4 页；关节腱绳导向",
+            "en": "PDF p.4; Joint tendon guides"
+          },
+          "conditions": {
+            "zh": "Core Architecture / Ceramic Tendon Technology; descriptive architecture. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193",
+            "en": "Core Architecture / Ceramic Tendon Technology; descriptive architecture. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "弹簧与传动结构材料",
+            "en": "Spring and transmission materials"
+          },
+          "value": {
+            "zh": "17/7 不锈钢扭簧；不锈钢销；铝绞盘及板件",
+            "en": "17/7 stainless-steel torsion springs; stainless-steel pins; aluminum winch and plates"
+          },
+          "sourceUrl": "https://sakerobotics.com/?wpdmdl=543",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 4 页；弹簧与传动结构材料",
+            "en": "PDF p.4; Spring and transmission materials"
+          },
+          "conditions": {
+            "zh": "Super Durable Components; material designations are not numeric metrics. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193",
+            "en": "Super Durable Components; material designations are not numeric metrics. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "柔顺条件",
+            "en": "Compliance condition"
+          },
+          "value": {
+            "zh": "空载或轻载时手指向内柔顺；抓持时保持刚度",
+            "en": "Inward finger compliance under no or light load; stiffness during grasping"
+          },
+          "sourceUrl": "https://sakerobotics.com/?wpdmdl=543",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 4 页；柔顺条件",
+            "en": "PDF p.4; Compliance condition"
+          },
+          "conditions": {
+            "zh": "Compliance AND Stiffness; no stiffness or accuracy magnitude disclosed. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193",
+            "en": "Compliance AND Stiffness; no stiffness or accuracy magnitude disclosed. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193"
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "宣传册列示 UR 平台",
+            "en": "UR platforms listed in brochure"
+          },
+          "value": {
+            "zh": "UR3 / UR5 / UR10；PolyScope / Python",
+            "en": "UR3 / UR5 / UR10; PolyScope / Python"
+          },
+          "sourceUrl": "https://sakerobotics.com/?wpdmdl=543",
+          "sourceLabel": {
+            "zh": "官方 PDF 手册/图纸",
+            "en": "Official PDF manual/drawing"
+          },
+          "locator": {
+            "zh": "PDF 第 5 页；宣传册列示 UR 平台",
+            "en": "PDF p.5; UR platforms listed in brochure"
+          },
+          "conditions": {
+            "zh": "Historical brochure compatibility only; no inference to e-Series, G1 or current software releases. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193",
+            "en": "Historical brochure compatibility only; no inference to e-Series, G1 or current software releases. SHA-256: 0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193"
+          },
+          "excludeFromNumericIndex": true
+        }
+      ],
+      "overview": [
+        {
+          "zh": "欠驱动柔顺夹爪；负载为官网特定管状工件口径，不代表任意物体。",
+          "en": "Underactuated adaptive gripper; payload figures refer to the stated pipe, not arbitrary objects."
+        }
+      ],
+      "applications": [
+        {
+          "zh": "按所列测量、操作或开发能力评估目标任务，确认安装、环境和数据链路后再集成。",
+          "en": "Evaluate the target task against the stated sensing, manipulation or development capabilities; confirm mounting, environment and data integration."
+        }
+      ],
+      "coverage": "official-complete"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onrobot.com/en/about-us",
+      "sha256": "4924079f6d002387c52aa43b9a53fa2e3b78c747f99c296476d3772569505a16",
+      "cachePath": "review/parallel-gripping/sources/e341305261c09e18.html"
+    },
+    {
+      "url": "https://robotiq.com/about",
+      "sha256": "3f0460acdefe6a444e6ce0084722981b06248f2b8b4dd99050bc72c74e1c5b01",
+      "cachePath": "review/parallel-gripping/sources/6c8dd04ca035a3bc.html"
+    },
+    {
+      "url": "https://sakerobotics.com/",
+      "sha256": "3cee9fd335811fdfc82c87092fcc5afd10220d239dff7a42bbf1e9e67d6b8a7e",
+      "cachePath": "review/parallel-gripping/sources/0181c17959a78c1a.html"
+    },
+    {
+      "url": "https://onrobot.com/storage/datasheets/rg2/datasheet_rg2_v1.8_en.pdf",
+      "sha256": "f9a5fb15fba873b4c4ca645fb5627dcce1f8f8b87102d77bbf873f7a6688dfac",
+      "cachePath": "review/parallel-gripping/sources/192b5e370cfff203.pdf"
+    },
+    {
+      "url": "https://blog.robotiq.com/hubfs/support-files/PowerPickMulti_User_Manual_2026-03-20.pdf",
+      "sha256": "1d01fd56c20f7dd05aba6a5acb496d70d5b6773c8d0e168601c4250fe0bc5a14",
+      "cachePath": "review/parallel-gripping/sources/7e18d42d6d00a05b.pdf"
+    },
+    {
+      "url": "https://sakerobotics.com/?wpdmdl=543",
+      "sha256": "0ff1c43d42efd861d9fdb8e742ba458748c2b34291bf2c07a44c177094a94193",
+      "cachePath": "review/parallel-gripping/sources/d51b1a65eba3b4ff.pdf"
+    }
+  ]
+}

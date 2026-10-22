@@ -85,7 +85,7 @@ export const industries: Record<Locale, Industry[]> = {
       entries: [
         {
           title: "AI 工作流与应用记录",
-          description: "后续发布模型选型、本地工作流和项目落地过程中的具体判断。",
+          description: "后续发布关于模型选型、本地工作流和项目落地的具体判断。",
           status: "building",
         },
       ],
@@ -165,7 +165,7 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
     solutions: [
       {
         title: "个人知识与作品分发站点",
-        description: "本地写作与维护，GitHub 保存版本，静态托管平台负责持续在线。",
+        description: "在本地写作和维护，通过 GitHub 管理版本，由静态托管平台持续提供在线访问。",
         status: "building",
         date: "2026.08",
         href: "/articles/local-edit-static-hosting",

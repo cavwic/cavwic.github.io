@@ -1,0 +1,29 @@
+---
+import CompanyProfilePage from "../../../../components/CompanyProfilePage.astro";
+import { getStandaloneRepositoryCompanies } from "../../../../data/repository";
+import { localizeSource } from "../../../../data/source-localization";
+import { sourcesById } from "../../../../data/sources";
+import RepositoryLayout from "../../../../layouts/RepositoryLayout.astro";
+import { isPagesBuild } from "../../../../data/build-scope";
+
+export function getStaticPaths() {
+  if (isPagesBuild) return [];
+  return getStandaloneRepositoryCompanies("en")
+    .map((company) => ({ params: { slug: company.slug }, props: { company } }));
+}
+
+const { company } = Astro.props;
+const refs = company.sourceIds.flatMap((id: string) => {
+  const ref = sourcesById.get(id);
+  return ref ? [localizeSource(ref, "en")] : [];
+});
+---
+
+<RepositoryLayout
+  locale="en"
+  title={`${company.name} | Company Metadata Record`}
+  description={company.positioning}
+  alternatePath={`/repository/companies/${company.slug}`}
+>
+  <CompanyProfilePage company={company} locale="en" refs={refs} navigationContext="repository" />
+</RepositoryLayout>

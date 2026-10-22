@@ -1,7 +1,10 @@
 ---
 import CollectionPage from "../../../components/CollectionPage.astro";
+import { isPagesBuild } from "../../../data/build-scope";
 const labUrl = import.meta.env.DEV ? "http://127.0.0.1:43202/cavwic-solutions-lab" : "https://cavwic.github.io/cavwic-solutions-lab";
 const entries = [
+  { title: "Dexterous Manipulation Labs", description: "Eight software experiments covering control, hand motion retargeting, safety, contact grasping, slip detection, data diagnostics, imitation learning and simulation robustness.", status: "published" as const, href: "/en/tools/robotics-lab", external: false },
+  ...(!isPagesBuild ? [{ title: "Jeeling", description: "A robot and dexterous-hand research repository for companies, models, component metrics, funding, and policy sources.", status: "building" as const, href: "/en/tools/product-finder-demo", external: true }] : []),
   { title: "Solution Project Workbench", description: "Manage presales communication, tender analysis, and bid document preparation with a local workspace, model generation, and Codex task output.", status: "published" as const, href: labUrl, external: !import.meta.env.DEV },
 ];
 ---
@@ -9,7 +12,7 @@ const entries = [
 <CollectionPage
   eyebrow="TOOLS"
   title="Tools"
-  intro="The Solution Project Workbench is the only tool currently published. Project materials are processed in the browser and user-authorized local folders."
+  intro="Robotics software experiments and the solution project workbench."
   entries={entries}
   locale="en"
   showMeta={false}

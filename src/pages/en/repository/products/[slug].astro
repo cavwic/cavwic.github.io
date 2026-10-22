@@ -1,0 +1,26 @@
+---
+import ProductProfilePage from "../../../../components/ProductProfilePage.astro";
+import { getStandaloneRepositoryProductRecords, repositoryProductSlug } from "../../../../data/repository";
+import RepositoryLayout from "../../../../layouts/RepositoryLayout.astro";
+import { isPagesBuild } from "../../../../data/build-scope";
+
+export function getStaticPaths() {
+  if (isPagesBuild) return [];
+  return getStandaloneRepositoryProductRecords("en")
+    .map((product) => ({
+      params: { slug: repositoryProductSlug(product.id) },
+      props: { product: { ...product, slug: repositoryProductSlug(product.id) } },
+    }));
+}
+
+const { product } = Astro.props;
+---
+
+<RepositoryLayout
+  locale="en"
+  title={`${product.product} | Product Metadata Record`}
+  description={product.evidence?.overview?.[0] ?? product.integration}
+  alternatePath={`/repository/products/${product.slug}`}
+>
+  <ProductProfilePage product={product} locale="en" navigationContext="repository" />
+</RepositoryLayout>

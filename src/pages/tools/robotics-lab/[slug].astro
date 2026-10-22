@@ -1,0 +1,6 @@
+---
+import RoboticsLab from '../../../components/RoboticsLab.astro';
+import { projects } from '../../../features/robotics-lab/catalog';
+export const getStaticPaths = () => projects.filter(p => p.id !== 2).map(p => ({params:{slug:p.slug}}));
+---
+<RoboticsLab locale="zh" slug={Astro.params.slug} />

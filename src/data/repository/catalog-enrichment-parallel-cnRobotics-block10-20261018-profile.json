@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-18",
+  "scope": "One bounded company-profile block only; preserve all99products/2249rows and previous source corrections",
+  "profiles": [
+    {
+      "slug": "aheadform",
+      "overview": [
+        {
+          "zh": "首形将表情、眼球与语音动作的协调，以及视觉、语音和对话记忆集成到Origin F1的交互方案中。该产品支持发型、妆容与服饰定制，并提供开发接口用于二次开发和算法优化，使同一桌面形态能够承载不同角色与交互内容。",
+          "en": "AheadForm combines coordinated facial, eye and speech behavior with vision, voice and conversational memory in Origin F1. Hairstyle, makeup and clothing customization, together with development interfaces for secondary development and algorithm optimization, support different characters and interaction content on the desktop form."
+        },
+        {
+          "zh": "其场景定位包括品牌展示、接待服务、舞台表演和展馆展演。精灵·璇2.0资料说明可通过妆造调整适配不同品牌活动、主题展会和IP设定；官网合作页则开放经销商与渠道代理、供应商，以及媒体、品牌和科研合作对接。",
+          "en": "Its stated applications include brand displays, reception, stage performances and exhibitions. Elf Xuan 2.0 material describes styling changes for different brand events, themed exhibitions and IP settings; the official contact page invites distributors and channel agents, suppliers, and media, brand and research collaborations."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2024",
+          "kind": "product",
+          "title": {
+            "zh": "“精灵”计划起步",
+            "en": "Elf project begins"
+          },
+          "detail": {
+            "zh": "官网将“精灵”计划的起点记为2024年，并描述从原型机探索仿生实体的研发过程；此节点指项目起点。",
+            "en": "The official page dates the Elf project to 2024 and describes development from a prototype toward a bionic embodiment; this is a project milestone."
+          },
+          "sourceUrl": "https://www.aheadform.com/zh/elf-xuan/"
+        },
+        {
+          "date": "2026",
+          "kind": "business",
+          "title": {
+            "zh": "精灵·璇参与机器人奇妙夜演出",
+            "en": "Elf Xuan performs at Robot Wonderful Night"
+          },
+          "detail": {
+            "zh": "官方产品页记录精灵·璇在2026年机器人奇妙夜晚会演唱《未定义的关系》，展示其角色化表演与交互方向。",
+            "en": "The official product page records Elf Xuan performing Undefined Relationship at the 2026 Robot Wonderful Night gala, illustrating its character-performance and interaction direction."
+          },
+          "sourceUrl": "https://www.aheadform.com/zh/elf-xuan/"
+        }
+      ]
+    }
+  ]
+}

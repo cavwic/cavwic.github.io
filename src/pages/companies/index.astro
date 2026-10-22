@@ -10,7 +10,7 @@ const groups = (["ai", "robotics", "dexterous-hands"] as const).map((industry) =
 ---
 
 <BaseLayout title="公司档案 | CAVWIC" description="企业 AI、具身机器人与灵巧手公司的公开资料档案。" alternatePath="/en/companies">
-  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">COMPANY FILES / {String(companies.length).padStart(2, "0")}</p><h1>公司档案</h1><p>按产业位置整理公开产品、擅长方向、适用场景和选型核验项。未公开的参数仍保留为待询证。</p></div></header>
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">COMPANY FILES / {String(companies.length).padStart(2, "0")}</p><h1>公司档案</h1><p>按产业链位置整理公开产品、擅长方向、适用场景和选型核验项。未公开的参数仍标为待询证。</p></div></header>
   <div class="company-catalog" aria-label="公司档案">
     {groups.map((group) => (
       <section class="company-group">

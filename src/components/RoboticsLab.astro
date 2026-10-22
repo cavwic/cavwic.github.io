@@ -1,0 +1,55 @@
+---
+import { ArrowLeft, Languages, Moon, Sun, ArrowUpRight, Download } from '@lucide/astro';
+import { projects, pick, type Locale } from '../features/robotics-lab/catalog';
+import RoboticsLabNav from './RoboticsLabNav.astro';
+import ExperimentActions from './ExperimentActions.astro';
+import '../features/robotics-lab/style.css';
+const { locale = 'zh', slug } = Astro.props as {locale?: Locale; slug?: string};
+const project = projects.find(p => p.slug === slug);
+const prefix = locale === 'zh' ? '' : '/en';
+const alternate = `${locale === 'zh' ? '/en' : ''}/tools/robotics-lab${slug ? '/' + slug : ''}`;
+const zh = locale === 'zh';
+const title = project ? pick(project.title, locale) : zh ? '灵巧操作实验台' : 'Dexterous manipulation labs';
+---
+<!doctype html>
+<html lang={zh ? 'zh-CN' : 'en'} data-locale={locale} data-theme="light">
+  <head>
+    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · Cavwic</title>
+    <meta name="description" content={project ? pick(project.summary, locale) : zh ? '八个机器人学习实验，涵盖控制、动作重定向、仿真和数据处理，可查看实现与结果。' : 'Eight inspectable robotics control, motion retargeting, simulation, data and learning experiments.'} />
+    <link rel="icon" href="/favicon.svg" />
+    <script is:inline>try { const t=localStorage.getItem('cavwic-theme');document.documentElement.dataset.theme=t==='dark'||t==='light'?t:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.preference=t||'system'; } catch {}</script>
+  </head>
+  <body class="robotics-body">
+    <a class="lab-skip" href="#main">{zh ? '跳到实验' : 'Skip to experiment'}</a>
+    <header class="robotics-bar">
+      <a class="robotics-brand" href={`${prefix}/tools/robotics-lab`}><div>{zh ? '灵巧操作实验台' : 'Manipulation labs'}<small>CAVWIC · ROBOTICS WORKBENCH</small></div></a>
+      <nav aria-label={zh ? '页面控制' : 'Page controls'}>
+        <a class="lab-button lab-back" href={`${prefix}/tools`}><ArrowLeft size={17}/><span>{zh ? '工具' : 'Tools'}</span></a>
+        <a class="lab-icon" href={alternate} aria-label={zh ? 'Switch to English' : '切换到中文'}><Languages size={20}/><span>{zh ? 'EN' : '中'}</span></a>
+        <button class="lab-icon" id="robotics-theme" aria-label={zh ? '切换深浅色' : 'Toggle theme'}><Moon class="moon" size={20}/><Sun class="sun" size={20}/></button>
+      </nav>
+    </header>
+    <main id="main" class="robotics-main">
+      <div class="robotics-breadcrumb"><a href={`${prefix}/tools/robotics-lab`}>{zh ? '实验总览' : 'All experiments'}</a><span>/</span><span>{project ? `${String(project.id).padStart(2,'0')} · ${pick(project.title,locale)}` : zh ? '控制 / 重定向 / 仿真 / 数据 / 学习' : 'Control / retargeting / simulation / data / learning'}</span></div>
+      <section class="robotics-heading">
+        <div><p class="lab-eyebrow">{project ? `EXPERIMENT ${String(project.id).padStart(2,'0')} / ${project.key.toUpperCase()}` : 'ROBOTICS / EXPERIMENT COLLECTION'}</p><h1>{title}</h1><p>{project ? pick(project.summary,locale) : zh ? '包含单指控制、人手重定向、接触仿真、数据诊断和学习评测。按 01—08 浏览，查看实现与实验结果。' : 'From finger control and hand retargeting to contact simulation, data diagnostics and learning evaluation. Browse experiments 01–08 and inspect their evidence.'}</p></div>
+        <div class="lab-scope"><span></span>{project ? pick(project.tag,locale) : zh ? '八项独立实验' : 'Eight separate experiments'}<small>{zh ? '未连接实体硬件 · 不能代表真机性能' : 'No physical hardware connected · not hardware validation'}</small></div>
+      </section>
+      {project ? <>
+        <ExperimentActions locale={locale} />
+        <RoboticsLabNav locale={locale} activeSlug={slug} />
+        <section id="robotics-panel" class="lab-panel" data-project={project.key} aria-label={title}><p class="lab-loading" role="status">{zh ? '正在加载本地实验…' : 'Loading local experiment…'}</p></section>
+        <section class="lab-evidence"><div><h2>{zh ? '查看实现与复现材料' : 'Inspect and reproduce'}</h2><p>{zh ? '可下载源代码、实验配置和结果。离线学习与仿真结果不能代表真实设备性能；各项目说明中列出了尚未验证的部分。' : 'Download source, configurations and results. Offline learning and simulation do not establish real-device performance; unexecuted steps are documented separately.'}</p></div><a class="lab-button" href="/robotics-lab/robotics-projects-source.zip" download><Download size={17}/>{zh ? '完整复现包' : 'Reproduction bundle'}</a></section>
+      </> : <>
+        <div class="lab-system-map" aria-label={zh ? '实验技术链' : 'Experimental workflow'}><span>{zh ? '控制与重定向' : 'Control & retargeting'}<small>01 / 02</small></span><i>→</i><span>{zh ? '驱动与安全' : 'Driver & safety'}<small>03</small></span><i>→</i><span>{zh ? '接触与感知' : 'Contact & sensing'}<small>04 / 05</small></span><i>→</i><span>{zh ? '数据与学习' : 'Data & learning'}<small>06 / 07</small></span><i>→</i><span>{zh ? '鲁棒性验证' : 'Robustness'}<small>08</small></span></div>
+        <div class="lab-collection">{projects.map(p=><a class="lab-project-card" href={`${prefix}/tools/robotics-lab/${p.slug}`}><div class="card-meta"><span>EXPERIMENT {String(p.id).padStart(2,'0')}</span><ArrowUpRight size={23}/></div><h2>{pick(p.title,locale)}</h2><p>{pick(p.summary,locale)}</p><div class="card-foot"><span>{pick(p.tag,locale)}</span><small>{pick(p.detail,locale)}</small></div></a>)}</div>
+        <section class="lab-evidence"><div><h2>{zh ? '实验范围与限制' : 'Know the evidence boundary'}</h2><p>{zh ? '各项目分别标明浏览器数值计算、MuJoCo 物理仿真、合成数据训练或 ROS2 源码。采购、实体传感、真机控制和虚拟机联调尚未验证。' : 'Browser computation, MuJoCo simulation, synthetic-data training and ROS2 source are labeled separately. Procurement, physical sensing, hardware control and VM integration are not verified results.'}</p></div><a class="lab-button" href="/robotics-lab/robotics-projects-source.zip" download><Download size={17}/>{zh ? '完整复现包' : 'Reproduction bundle'}</a></section>
+      </>}
+    </main>
+    <footer class="robotics-footer">CAVWIC / {zh ? '个人学习实验；项目实现不等于已掌握相关岗位的全部技能。' : 'Learning projects and implementations, not a claim of complete professional competence.'}</footer>
+    <script>
+      import '../features/robotics-lab/app';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1605 @@
+{
+  "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+  "sourceSha256": "31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+  "editions": [
+    {
+      "edition": "Community Edition",
+      "rows": [
+        {
+          "label": {
+            "zh": "工作流编排",
+            "en": "Workflow orchestration"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第3行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 3 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "分享链接与API",
+            "en": "Share links and API"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第4行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 4 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "应用发布安全配置",
+            "en": "App publishing security config"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第5行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 5 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "第三方发布（飞书、微信公众号）",
+            "en": "Third-party publishing (Lark, WeChat Official Account)"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第6行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 6 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "运行日志看板",
+            "en": "Run log dashboard"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第7行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 7 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "应用评测",
+            "en": "App evaluation"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第8行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 8 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "Agent与Skill辅助生成",
+            "en": "Agent and Skill assisted generation"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第9行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 9 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "系统工具远程调试",
+            "en": "System tool remote debugging"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第10行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 10 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "知识库",
+            "en": "Dataset"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第12行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 12 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "第三方知识库定时同步",
+            "en": "Third-party Dataset scheduled sync"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第13行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 13 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "知识库索引增强",
+            "en": "Dataset index enhancement"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第14行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 14 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "网站同步",
+            "en": "Website sync"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第15行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 15 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "图片知识库",
+            "en": "Image Dataset"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第16行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 16 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "多模型配置",
+            "en": "Multi-model configuration"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第18行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 18 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "模型日志看板",
+            "en": "Model log dashboard"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第19行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 19 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "模型内容审查",
+            "en": "Model content moderation"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第20行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 20 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "自定义品牌",
+            "en": "Custom branding"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第22行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 22 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "多租户与计费",
+            "en": "Multi-tenancy & billing"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第23行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 23 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "团队空间与权限",
+            "en": "Team spaces & permissions"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第24行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 24 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "管理后台",
+            "en": "Admin dashboard"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第25行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 25 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "单点登录",
+            "en": "SSO login"
+          },
+          "value": {
+            "zh": "不包含",
+            "en": "Not included"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第26行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 26 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "商业许可",
+            "en": "Commercial license"
+          },
+          "value": {
+            "zh": "按FastGPT开源许可及附加条件",
+            "en": "FastGPT source license and additional conditions"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第27行 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 27 / Community Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Community Edition。设计中不视为已支持。",
+            "en": "Applies to Community Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        }
+      ]
+    },
+    {
+      "edition": "Commercial Edition",
+      "rows": [
+        {
+          "label": {
+            "zh": "工作流编排",
+            "en": "Workflow orchestration"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第3行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 3 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "分享链接与API",
+            "en": "Share links and API"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第4行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 4 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "应用发布安全配置",
+            "en": "App publishing security config"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第5行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 5 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "第三方发布（飞书、微信公众号）",
+            "en": "Third-party publishing (Lark, WeChat Official Account)"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第6行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 6 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "运行日志看板",
+            "en": "Run log dashboard"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第7行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 7 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "应用评测",
+            "en": "App evaluation"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第8行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 8 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "Agent与Skill辅助生成",
+            "en": "Agent and Skill assisted generation"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第9行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 9 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "系统工具远程调试",
+            "en": "System tool remote debugging"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第10行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 10 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "知识库",
+            "en": "Dataset"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第12行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 12 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "第三方知识库定时同步",
+            "en": "Third-party Dataset scheduled sync"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第13行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 13 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "知识库索引增强",
+            "en": "Dataset index enhancement"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第14行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 14 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "网站同步",
+            "en": "Website sync"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第15行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 15 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "图片知识库",
+            "en": "Image Dataset"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第16行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 16 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "多模型配置",
+            "en": "Multi-model configuration"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第18行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 18 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "模型日志看板",
+            "en": "Model log dashboard"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第19行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 19 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "模型内容审查",
+            "en": "Model content moderation"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第20行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 20 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "自定义品牌",
+            "en": "Custom branding"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第22行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 22 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "多租户与计费",
+            "en": "Multi-tenancy & billing"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第23行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 23 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "团队空间与权限",
+            "en": "Team spaces & permissions"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第24行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 24 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "管理后台",
+            "en": "Admin dashboard"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第25行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 25 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "单点登录",
+            "en": "SSO login"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第26行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 26 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "商业许可",
+            "en": "Commercial license"
+          },
+          "value": {
+            "zh": "完整商业许可（以协议为准）",
+            "en": "Full commercial license, subject to terms"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第27行 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 27 / Commercial Edition; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Commercial Edition。设计中不视为已支持。",
+            "en": "Applies to Commercial Edition. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        }
+      ]
+    },
+    {
+      "edition": "Cloud Service",
+      "rows": [
+        {
+          "label": {
+            "zh": "工作流编排",
+            "en": "Workflow orchestration"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第3行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 3 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "分享链接与API",
+            "en": "Share links and API"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第4行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 4 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "应用发布安全配置",
+            "en": "App publishing security config"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第5行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 5 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "第三方发布（飞书、微信公众号）",
+            "en": "Third-party publishing (Lark, WeChat Official Account)"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第6行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 6 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "运行日志看板",
+            "en": "Run log dashboard"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第7行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 7 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "应用评测",
+            "en": "App evaluation"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第8行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 8 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "Agent与Skill辅助生成",
+            "en": "Agent and Skill assisted generation"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第9行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 9 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "系统工具远程调试",
+            "en": "System tool remote debugging"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第10行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 10 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "知识库",
+            "en": "Dataset"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第12行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 12 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "第三方知识库定时同步",
+            "en": "Third-party Dataset scheduled sync"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第13行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 13 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "知识库索引增强",
+            "en": "Dataset index enhancement"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第14行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 14 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "网站同步",
+            "en": "Website sync"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第15行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 15 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "图片知识库",
+            "en": "Image Dataset"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第16行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 16 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "多模型配置",
+            "en": "Multi-model configuration"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第18行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 18 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "模型日志看板",
+            "en": "Model log dashboard"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第19行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 19 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "模型内容审查",
+            "en": "Model content moderation"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第20行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 20 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "自定义品牌",
+            "en": "Custom branding"
+          },
+          "value": {
+            "zh": "设计中，尚非已交付功能",
+            "en": "In design, not a shipped feature"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第22行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 22 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "多租户与计费",
+            "en": "Multi-tenancy & billing"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第23行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 23 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "团队空间与权限",
+            "en": "Team spaces & permissions"
+          },
+          "value": {
+            "zh": "支持",
+            "en": "Supported"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第24行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 24 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "管理后台",
+            "en": "Admin dashboard"
+          },
+          "value": {
+            "zh": "官方标记为不需要",
+            "en": "Not needed per provider"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第25行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 25 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "单点登录",
+            "en": "SSO login"
+          },
+          "value": {
+            "zh": "设计中，尚非已交付功能",
+            "en": "In design, not a shipped feature"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第26行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 26 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "商业许可",
+            "en": "Commercial license"
+          },
+          "value": {
+            "zh": "完整商业许可（以协议为准）",
+            "en": "Full commercial license, subject to terms"
+          },
+          "sourceUrl": "https://doc.fastgpt.io/en/guide/version/commercial",
+          "sourceLabel": {
+            "zh": "官方版本功能对照表",
+            "en": "Official edition comparison"
+          },
+          "locator": {
+            "zh": "Feature Comparison / 第27行 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16",
+            "en": "Feature Comparison / row 27 / Cloud Service; SHA-256 31b55feaa5b9540c269e0717a322de2b51331ed85a05bd1339ac90147c3fcd16"
+          },
+          "conditions": {
+            "zh": "适用版本：Cloud Service。设计中不视为已支持。",
+            "en": "Applies to Cloud Service. Planned features are not treated as supported."
+          },
+          "excludeFromNumericIndex": true
+        }
+      ]
+    }
+  ]
+}

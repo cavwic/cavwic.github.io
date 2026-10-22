@@ -1,0 +1,2092 @@
+{
+  "checkedAt": "2026-10-18",
+  "blocks": [
+    {
+      "companySlug": "agibot",
+      "product": "AGIBOT D1 Max",
+      "rows": [
+        {
+          "label": {
+            "zh": "每腿电机组成",
+            "en": "SDK per-leg motor composition"
+          },
+          "value": {
+            "zh": "每腿3个关节电机及1个轮毂电机",
+            "en": "Three joint motors and one hub motor per leg"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页6/印刷页5；1.1 Product Overview；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp6 / printed pp5; 1.1 Product Overview; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 部件构成说明；不生成电机SKU或改写旧12+4自由度行。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Component composition only; no motor SKU or replacement of the historical 12+4 DoF row."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "本版随箱清单",
+            "en": "SDK revision packing checklist"
+          },
+          "value": {
+            "zh": "本体x1（该清单项不含电池）；G20 RC遥控器x1；电池x2；电源线x5；双电池充电座x1；航空接插件线缆套装x1；带内衬航空运输箱x1；用户手册、装箱单、合格证、维护工具包各x1",
+            "en": "Robot body x1 (batteries excluded from this checklist item); G20 RC remote x1; batteries x2; power cords x5; dual-battery charging dock x1; aviation connector cable set x1; lined aviation-grade carrying case x1; user manual, packing list, conformity certificate and maintenance toolkit x1 each"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页7,10/印刷页6,9；1.2 Product Checklist; 1.3 shipping case；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp7,10 / printed pp6,9; 1.2 Product Checklist; 1.3 shipping case; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅本版图示清单；电池另列两块，不解释成整套交付不含电池；不推定地区配置或独立销售SKU。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Checklist pictured in this revision only. Two batteries are listed separately, not absent from the complete package; no regional configuration or separately sold SKU is inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK表温度单位缺项",
+            "en": "SDK temperature scale omission"
+          },
+          "value": {
+            "zh": "-20至55度；原单元格未写温标",
+            "en": "-20 to 55 degrees; scale omitted in the source cell"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页7,10/印刷页6,9；1.3 Operating Temperature；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp7,10 / printed pp6,9; 1.3 Operating Temperature; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 规格表附注称为实验室测试数据，实际表现随环境与使用方式变化。 旧型号资料的摄氏温度行保留；本SDK单元格仅显示度符号，不由上下文补成摄氏或华氏。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The specification-table note identifies laboratory test data; actual performance varies with environment and use. The older model-source Celsius row is retained; this SDK cell shows degree signs only, with no Celsius/Fahrenheit scale inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK额定稳定负载口径",
+            "en": "SDK rated stable payload wording"
+          },
+          "value": {
+            "zh": "Rated Stable Payload：30 kg",
+            "en": "Rated Stable Payload: 30 kg"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页8,10/印刷页7,9；1.3 Rated Stable Payload；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp8,10 / printed pp7,9; 1.3 Rated Stable Payload; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 规格表附注称为实验室测试数据，实际表现随环境与使用方式变化。 旧网页Rated payload为25 kg，用户手册Effective Payload为30 kg；本版新增Rated Stable Payload措辞，不解决旧25/30 kg冲突或推定新配置。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The specification-table note identifies laboratory test data; actual performance varies with environment and use. The historical webpage Rated payload is25kg and user-manual Effective Payload is30kg. This revision adds the wording Rated Stable Payload, without resolving the25/30kg conflict or inferring a new configuration."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK最大跨沟宽度",
+            "en": "SDK maximum gap crossing width"
+          },
+          "value": {
+            "zh": "最大80 cm",
+            "en": "Maximum80 cm"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页8,10/印刷页7,9；1.3 Maximum Gap Crossing Width；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp8,10 / printed pp7,9; 1.3 Maximum Gap Crossing Width; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 规格表附注称为实验室测试数据，实际表现随环境与使用方式变化。 跨沟宽度，不是障碍高度或通行宽度。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The specification-table note identifies laboratory test data; actual performance varies with environment and use. Gap width, not obstacle height or passage width."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK最小通行宽度",
+            "en": "SDK minimum passage width"
+          },
+          "value": {
+            "zh": "最小50 cm",
+            "en": "Minimum50 cm"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页8,10/印刷页7,9；1.3 Minimum Passage Width；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp8,10 / printed pp7,9; 1.3 Minimum Passage Width; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 规格表附注称为实验室测试数据，实际表现随环境与使用方式变化。 通行宽度，不是转弯宽度或载荷跨越高度。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The specification-table note identifies laboratory test data; actual performance varies with environment and use. Passage width, not turning width or payload crossing height."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK Airy雷达及距离口径",
+            "en": "SDK Airy lidar and range wording"
+          },
+          "value": {
+            "zh": "前后各1个Airy 96通道雷达；覆盖360 x90度；探测距离120 m",
+            "en": "One Airy96-channel lidar each front/rear;360 x90 degree coverage;120m detection range"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页8,10/印刷页7,9；1.3 LiDAR；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp8,10 / printed pp7,9; 1.3 LiDAR; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 规格表附注称为实验室测试数据，实际表现随环境与使用方式变化。 旧资料为120 m探测直径，本表为detection range；保留差异，不换算半径/直径或判断版本。Airy是本体所配传感器名称，不新增独立SKU。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The specification-table note identifies laboratory test data; actual performance varies with environment and use. The older source states120m detection diameter, while this table says detection range. The distinction is retained without radius/diameter conversion or a revision inference. Airy names the fitted sensor, not a new catalog SKU."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK车规级IMU配置",
+            "en": "SDK automotive-grade IMU configuration"
+          },
+          "value": {
+            "zh": "车规级IMUx1",
+            "en": "Automotive-grade IMU x1"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页8,10/印刷页7,9；1.3 IMU；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp8,10 / printed pp7,9; 1.3 IMU; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 规格表附注称为实验室测试数据，实际表现随环境与使用方式变化。 表中一项配置，不根据后文架构图再推算整机IMU总数。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The specification-table note identifies laboratory test data; actual performance varies with environment and use. One table configuration; the later architecture blocks are not used to infer a total physical IMU count."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK麦克风和扬声器版本条件",
+            "en": "SDK microphone and speaker version condition"
+          },
+          "value": {
+            "zh": "仅部分版本支持",
+            "en": "Supported on select versions"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页9,10/印刷页8,9；1.3 Microphone and speaker；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp9,10 / printed pp8,9; 1.3 Microphone and speaker; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 规格表附注称为实验室测试数据，实际表现随环境与使用方式变化。 未列这些版本的名称或代码；不能当作全部D1 Max标配，也不创造变体。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The specification-table note identifies laboratory test data; actual performance varies with environment and use. The versions are not named or coded; not standard equipment for every D1 Max and no variants are created."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK环境光传感器版本条件",
+            "en": "SDK ambient light sensor version condition"
+          },
+          "value": {
+            "zh": "仅部分版本支持",
+            "en": "Supported on select versions"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页9,10/印刷页8,9；1.3 Ambient light sensor；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp9,10 / printed pp8,9; 1.3 Ambient light sensor; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 规格表附注称为实验室测试数据，实际表现随环境与使用方式变化。 未列这些版本的名称或代码；不能当作全部D1 Max标配，也不创造变体。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The specification-table note identifies laboratory test data; actual performance varies with environment and use. The versions are not named or coded; not standard equipment for every D1 Max and no variants are created."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK地形范围",
+            "en": "SDK named terrain scope"
+          },
+          "value": {
+            "zh": "砂石、沥青、草地、沙土、林地地表和碎石瓦砾",
+            "en": "Gravel, asphalt, grass, sandy soil, forest floor and rubble"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页9,10/印刷页8,9；1.3 Locomotion Performance terrain；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp9,10 / printed pp8,9; 1.3 Locomotion Performance terrain; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 规格表附注称为实验室测试数据，实际表现随环境与使用方式变化。 能力描述未给各地形速度/坡度/载荷协议，不推成数值额定能力。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The specification-table note identifies laboratory test data; actual performance varies with environment and use. Capability text gives no per-terrain speed/slope/payload protocol and is not a numeric rating."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK OTA升级支持",
+            "en": "SDK OTA support"
+          },
+          "value": {
+            "zh": "支持OTA升级",
+            "en": "OTA upgrades supported"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页9,10/印刷页8,9；1.3 OTA Upgrades；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp9,10 / printed pp8,9; 1.3 OTA Upgrades; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 规格表附注称为实验室测试数据，实际表现随环境与使用方式变化。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The specification-table note identifies laboratory test data; actual performance varies with environment and use."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK物理串口与总线数量",
+            "en": "SDK physical serial connector and buses"
+          },
+          "value": {
+            "zh": "物理串口接插件x1：RS232x1、RS485x1、SBUSx2、PPSx1；另有千兆以太网x2、USB3.0x2",
+            "en": "One physical serial connector:RS232x1,RS485x1,SBUSx2,PPSx1; plus Gigabit Ethernet x2 and USB3.0x2"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页9,15/印刷页8,14；1.3 Communication Interface;1.5 No.5；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp9,15 / printed pp8,14; 1.3 Communication Interface;1.5 No.5; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。 物理接插件数与其总线/信号数不是同一指标；未推定带宽、波特率或电平。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts. Physical connector count differs from its bus/signal count; bandwidth, baud rate and logic levels are not inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK射频通信支持",
+            "en": "SDK RF communication support"
+          },
+          "value": {
+            "zh": "支持射频通信",
+            "en": "RF communication supported"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页9,10/印刷页8,9；1.3 RF Communication；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp9,10 / printed pp8,9; 1.3 RF Communication; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 规格表附注称为实验室测试数据，实际表现随环境与使用方式变化。 该行不披露频段、发射功率或独立射频模块型号。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The specification-table note identifies laboratory test data; actual performance varies with environment and use. This row does not disclose frequency bands, transmitter power or a separate RF-module model."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK髋横滚最大扭矩",
+            "en": "SDK Hip Roll maximum torque"
+          },
+          "value": {
+            "zh": "髋横滚：150 N m",
+            "en": "Hip Roll: 150 N m"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Hip Roll / maximum torque；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Hip Roll / maximum torque; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Hip Roll部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Hip Roll component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK髋横滚最高转速",
+            "en": "SDK Hip Roll maximum speed"
+          },
+          "value": {
+            "zh": "髋横滚：190 RPM",
+            "en": "Hip Roll: 190 RPM"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Hip Roll / maximum speed；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Hip Roll / maximum speed; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Hip Roll部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Hip Roll component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK髋横滚部件质量",
+            "en": "SDK Hip Roll component mass"
+          },
+          "value": {
+            "zh": "髋横滚：0.93 kg",
+            "en": "Hip Roll: 0.93 kg"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Hip Roll / component mass；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Hip Roll / component mass; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Hip Roll部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Hip Roll component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK髋横滚关节限位",
+            "en": "SDK Hip Roll joint limits"
+          },
+          "value": {
+            "zh": "髋横滚：-39.9 to30 degrees",
+            "en": "Hip Roll: -39.9 to30 degrees"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Hip Roll / joint limits；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Hip Roll / joint limits; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Hip Roll部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。 保留本表英文关节名及角度方向；旧Body/Thigh/Calf行不改动，关节对应关系和限位差异未解决，不擅自视为同一指标并修改旧旗标。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Hip Roll component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque. English joint names and angle signs are retained. Historical Body/Thigh/Calf rows remain unchanged; joint mapping and limit differences are unresolved, so old flags are not altered by assuming equivalence."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK髋俯仰最大扭矩",
+            "en": "SDK Hip Pitch maximum torque"
+          },
+          "value": {
+            "zh": "髋俯仰：150 N m",
+            "en": "Hip Pitch: 150 N m"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Hip Pitch / maximum torque；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Hip Pitch / maximum torque; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Hip Pitch部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Hip Pitch component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK髋俯仰最高转速",
+            "en": "SDK Hip Pitch maximum speed"
+          },
+          "value": {
+            "zh": "髋俯仰：190 RPM",
+            "en": "Hip Pitch: 190 RPM"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Hip Pitch / maximum speed；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Hip Pitch / maximum speed; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Hip Pitch部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Hip Pitch component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK髋俯仰部件质量",
+            "en": "SDK Hip Pitch component mass"
+          },
+          "value": {
+            "zh": "髋俯仰：0.93 kg",
+            "en": "Hip Pitch: 0.93 kg"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Hip Pitch / component mass；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Hip Pitch / component mass; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Hip Pitch部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Hip Pitch component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK髋俯仰关节限位",
+            "en": "SDK Hip Pitch joint limits"
+          },
+          "value": {
+            "zh": "髋俯仰：-140 to140 degrees",
+            "en": "Hip Pitch: -140 to140 degrees"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Hip Pitch / joint limits；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Hip Pitch / joint limits; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Hip Pitch部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。 保留本表英文关节名及角度方向；旧Body/Thigh/Calf行不改动，关节对应关系和限位差异未解决，不擅自视为同一指标并修改旧旗标。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Hip Pitch component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque. English joint names and angle signs are retained. Historical Body/Thigh/Calf rows remain unchanged; joint mapping and limit differences are unresolved, so old flags are not altered by assuming equivalence."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK膝俯仰最大扭矩",
+            "en": "SDK Knee Pitch maximum torque"
+          },
+          "value": {
+            "zh": "膝俯仰：150 N m",
+            "en": "Knee Pitch: 150 N m"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Knee Pitch / maximum torque；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Knee Pitch / maximum torque; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Knee Pitch部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Knee Pitch component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK膝俯仰最高转速",
+            "en": "SDK Knee Pitch maximum speed"
+          },
+          "value": {
+            "zh": "膝俯仰：190 RPM",
+            "en": "Knee Pitch: 190 RPM"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Knee Pitch / maximum speed；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Knee Pitch / maximum speed; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Knee Pitch部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Knee Pitch component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK膝俯仰部件质量",
+            "en": "SDK Knee Pitch component mass"
+          },
+          "value": {
+            "zh": "膝俯仰：0.93 kg",
+            "en": "Knee Pitch: 0.93 kg"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Knee Pitch / component mass；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Knee Pitch / component mass; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Knee Pitch部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Knee Pitch component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK膝俯仰关节限位",
+            "en": "SDK Knee Pitch joint limits"
+          },
+          "value": {
+            "zh": "膝俯仰：-160 to160 degrees",
+            "en": "Knee Pitch: -160 to160 degrees"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Knee Pitch / joint limits；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Knee Pitch / joint limits; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Knee Pitch部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。 保留本表英文关节名及角度方向；旧Body/Thigh/Calf行不改动，关节对应关系和限位差异未解决，不擅自视为同一指标并修改旧旗标。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Knee Pitch component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque. English joint names and angle signs are retained. Historical Body/Thigh/Calf rows remain unchanged; joint mapping and limit differences are unresolved, so old flags are not altered by assuming equivalence."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK足部最大扭矩",
+            "en": "SDK Foot maximum torque"
+          },
+          "value": {
+            "zh": "足部：33 N m",
+            "en": "Foot: 33 N m"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Foot / maximum torque；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Foot / maximum torque; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Foot部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Foot component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK足部最高转速",
+            "en": "SDK Foot maximum speed"
+          },
+          "value": {
+            "zh": "足部：1200 RPM",
+            "en": "Foot: 1200 RPM"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Foot / maximum speed；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Foot / maximum speed; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Foot部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Foot component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK足部部件质量",
+            "en": "SDK Foot component mass"
+          },
+          "value": {
+            "zh": "足部：1.275 kg",
+            "en": "Foot: 1.275 kg"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Foot / component mass；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Foot / component mass; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Foot部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Foot component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK足部关节限位",
+            "en": "SDK Foot joint limits"
+          },
+          "value": {
+            "zh": "足部：-180 to180 degrees",
+            "en": "Foot: -180 to180 degrees"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Foot / joint limits；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Foot / joint limits; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅表中Foot部件，不把部件重量或转速当作整机重量或移动速度；最大扭矩不是连续额定扭矩。 保留本表英文关节名及角度方向；旧Body/Thigh/Calf行不改动，关节对应关系和限位差异未解决，不擅自视为同一指标并修改旧旗标。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the table's Foot component; component mass or RPM is not robot mass or locomotion speed. Maximum torque is not continuous rated torque. English joint names and angle signs are retained. Historical Body/Thigh/Calf rows remain unchanged; joint mapping and limit differences are unresolved, so old flags are not altered by assuming equivalence."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK足部半径",
+            "en": "SDK Foot radius"
+          },
+          "value": {
+            "zh": "Foot部件半径9 cm",
+            "en": "Foot component radius9 cm"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页12/印刷页11；Joint Parameters / Foot / Radius；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp12 / printed pp11; Joint Parameters / Foot / Radius; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 部件半径，不替换旧8英寸车轮规格，也不推算直径或将两者确认为相同测量对象。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Component radius, not a replacement for the older8-inch wheel specification; no diameter conversion or identical measurement target is inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK导轨孔数文字与图示",
+            "en": "SDK rail-hole text and drawing distinction"
+          },
+          "value": {
+            "zh": "文字：两根导轨，每根14个M4孔；同页图标14xM4T6",
+            "en": "Text:two guide rails, each with14 M4 holes; same-page drawing labels14xM4T6"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页13/印刷页12；1.4.1 Payload Mounting Hole Layout text；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp13 / printed pp12; 1.4.1 Payload Mounting Hole Layout text; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 原文each与图中14总标注口径未解释，不推导总计28孔；已有导轨尺寸行不改动。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The text says each but the drawing has one14-count callout without explaining its scope; no total28 holes is inferred and the existing drawing row is unchanged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK背部载荷及模式条件",
+            "en": "SDK back payload and mode restrictions"
+          },
+          "value": {
+            "zh": "背部载荷25-30 kg；安装载荷后仅基本移动模式，不使用高平台模式",
+            "en": "Back payload25-30 kg; only basic locomotion with a payload, not high-platform mode"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页13/印刷页12；1.4.1 payload capacity and mode restriction；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp13 / printed pp12; 1.4.1 payload capacity and mode restriction; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 安装前按原文咨询售后；背部载荷可影响运动表现。区间不消除旧25/30 kg来源冲突，也不是动态、极限或全姿态额定值。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The source calls for after-sales consultation before mounting; payload can affect locomotion. The range does not resolve the historical25/30kg source conflict and is not a dynamic, ultimate or all-posture rating."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK推荐载荷安装包络",
+            "en": "SDK recommended payload mounting envelope"
+          },
+          "value": {
+            "zh": "长40 x宽22 x高24 cm；以背部中心布置",
+            "en": "40cm L x22cm W x24cm H; centered on the back"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页14/印刷页13；1.4.2 Center-of-Gravity Constraints；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp14 / printed pp13; 1.4.2 Center-of-Gravity Constraints; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 推荐安装空间用于避免腿部碰撞/干涉，不是所允许重心的三轴坐标、载荷体积额定值或硬性外形上限。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Recommended mounting space for avoiding leg collision/interference, not three-axis permissible center-of-gravity coordinates, rated volume or a hard overall-size limit."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK扩展供电合计和防护条件",
+            "en": "SDK expansion aggregate power and protection conditions"
+          },
+          "value": {
+            "zh": "全部电源接口合计<=480 W；未用航空接插件需盖好保护盖以达到IP67；扩展舱按钮控制接口供电",
+            "en": "All power interfaces combined<=480 W; unused aviation connectors require fitted caps for IP67; expansion-bay button controls interface power"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页15/印刷页14；1.5 expansion-interface notes；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp15 / printed pp14; 1.5 expansion-interface notes; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK RS232设备路径",
+            "en": "SDK RS232 device path"
+          },
+          "value": {
+            "zh": "RS232设备：/dev/ttyCH9344USB4",
+            "en": "RS232 device: /dev/ttyCH9344USB4"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页15/印刷页14；1.5 Device Name/Device Path / RS232；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp15 / printed pp14; 1.5 Device Name/Device Path / RS232; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 本版设备节点标识，不是USB物理端口序号、速度或硬件等级。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Revision-specific device-node identifier, not a physical USB-port number, speed or hardware rating."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK RS485设备路径",
+            "en": "SDK RS485 device path"
+          },
+          "value": {
+            "zh": "RS485设备：/dev/ttyCH9344USB5",
+            "en": "RS485 device: /dev/ttyCH9344USB5"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页15/印刷页14；1.5 Device Name/Device Path / RS485；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp15 / printed pp14; 1.5 Device Name/Device Path / RS485; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 本版设备节点标识，不是USB物理端口序号、速度或硬件等级。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Revision-specific device-node identifier, not a physical USB-port number, speed or hardware rating."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK SBUS1设备路径",
+            "en": "SDK SBUS1 device path"
+          },
+          "value": {
+            "zh": "SBUS1设备：/dev/ttyCH9344USB2",
+            "en": "SBUS1 device: /dev/ttyCH9344USB2"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页15/印刷页14；1.5 Device Name/Device Path / SBUS1；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp15 / printed pp14; 1.5 Device Name/Device Path / SBUS1; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 本版设备节点标识，不是USB物理端口序号、速度或硬件等级。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Revision-specific device-node identifier, not a physical USB-port number, speed or hardware rating."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK SBUS2设备路径",
+            "en": "SDK SBUS2 device path"
+          },
+          "value": {
+            "zh": "SBUS2设备：/dev/ttyCH9344USB3",
+            "en": "SBUS2 device: /dev/ttyCH9344USB3"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页15/印刷页14；1.5 Device Name/Device Path / SBUS2；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp15 / printed pp14; 1.5 Device Name/Device Path / SBUS2; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 本版设备节点标识，不是USB物理端口序号、速度或硬件等级。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Revision-specific device-node identifier, not a physical USB-port number, speed or hardware rating."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "48V电源板端接插件型号",
+            "en": "SDK 48V power board-end connector"
+          },
+          "value": {
+            "zh": "48 V/10 A端口；M12-S4S-GPFM16-135-CS24044",
+            "en": "48V/10A port;M12-S4S-GPFM16-135-CS24044"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页16/印刷页15；1.5 power48V female connector；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp16 / printed pp15; 1.5 power48V female connector; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "48V电源引脚及颜色",
+            "en": "SDK 48V power pin map"
+          },
+          "value": {
+            "zh": "1棕=GND；2红=48V；3蓝=48V；4黄绿=GND",
+            "en": "1 Brown=GND;2 Red=48V;3 Blue=48V;4 Yellow-Green=GND"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页16/印刷页15；1.5 power48V Pin Assignment；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp16 / printed pp15; 1.5 power48V Pin Assignment; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。 依据板端Pin Assignment表；图中4/PE文字不据此改写成保护接地，线束BOM颜色顺序差异另存。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts. From the board-end Pin Assignment table; the drawing label4/PE is not substituted as protective earth, and the harness BOM color-order discrepancy is retained separately."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "24V电源板端接插件型号",
+            "en": "SDK 24V power board-end connector"
+          },
+          "value": {
+            "zh": "24 V/20 A端口；M12-S4S-GPFM16-135-CS24044",
+            "en": "24V/20A port;M12-S4S-GPFM16-135-CS24044"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页18/印刷页17；1.5 power24V female connector；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp18 / printed pp17; 1.5 power24V female connector; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "24V电源引脚及颜色",
+            "en": "SDK 24V power pin map"
+          },
+          "value": {
+            "zh": "1棕=GND；2红=24V；3蓝=24V；4黄绿=GND",
+            "en": "1 Brown=GND;2 Red=24V;3 Blue=24V;4 Yellow-Green=GND"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页18/印刷页17；1.5 power24V Pin Assignment；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp18 / printed pp17; 1.5 power24V Pin Assignment; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。 依据板端Pin Assignment表；图中4/PE文字不据此改写成保护接地，线束BOM颜色顺序差异另存。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts. From the board-end Pin Assignment table; the drawing label4/PE is not substituted as protective earth, and the harness BOM color-order discrepancy is retained separately."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK电源接插件视图方向",
+            "en": "SDK power connector face-view distinction"
+          },
+          "value": {
+            "zh": "板端母座View A：上4/PE、右1、下2、左3；配对线束View A：上4/PE、左1、下2、右3",
+            "en": "Board-end female View A:top4/PE,right1,bottom2,left3; mating-harness View A:top4/PE,left1,bottom2,right3"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页16,17,18,19/印刷页15,16,17,18；1.5 power connector VIEW A；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp16,17,18,19 / printed pp15,16,17,18; 1.5 power connector VIEW A; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。 正视方向不同，不左右镜像后重派引脚；功能仍以各表为准。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts. Different face views, not a reason to mirror and reassign pin functions; retain the respective tables."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK电源线束长度标注",
+            "en": "SDK power harness length callout"
+          },
+          "value": {
+            "zh": "图示线长1000+/-20（不含前方45.6段）；端部展开30+/-5、剥线端3+/-1；镀锡3.0 mm",
+            "en": "Drawn cable-length segment1000+/-20 (after the forward45.6 segment); breakout30+/-5,tip3+/-1; tinning3.0 mm"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页17,19/印刷页16,18；1.5.1/1.5.2 mating cable harness dimensions；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp17,19 / printed pp16,18; 1.5.1/1.5.2 mating cable harness dimensions; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK电源线束接头标注",
+            "en": "SDK power harness plug callouts"
+          },
+          "value": {
+            "zh": "接头横向45.6+/-1、竖向43.7+/-1；螺纹M12x1；直径16.5",
+            "en": "Plug horizontal45.6+/-1,vertical43.7+/-1;threadM12x1;diameter16.5"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页17,19/印刷页16,18；1.5.1/1.5.2 mating plug dimensions；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp17,19 / printed pp16,18; 1.5.1/1.5.2 mating plug dimensions; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK电源线束材料表",
+            "en": "SDK power harness BOM"
+          },
+          "value": {
+            "zh": "YY07.04.0150；4C*1.5 mm²（15AWG）+无纺布；内芯PVC OD2.8；黑色PVC外被OD9.0；柔性电源电缆4C1.5-002；黑色PVC包胶",
+            "en": "YY07.04.0150;4C*1.5mm2(15AWG)+nonwoven;inner PVC OD2.8;black PVC jacket OD9.0;flexible power cable4C1.5-002;black PVC overmold"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页17,19/印刷页16,18；1.5.1/1.5.2 harness BOM；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp17,19 / printed pp16,18; 1.5.1/1.5.2 harness BOM; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。 仅两电源端口配套图BOM；线规不推导载流量或供电电压。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness. BOM pictured for the two power ports only; wire gauge is not used to derive ampacity or voltage."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK电源线束插头半成品",
+            "en": "SDK power harness connector subassembly"
+          },
+          "value": {
+            "zh": "CS24-M12-P4S-SF01C；4芯S编码针型；原文3+PE款",
+            "en": "CS24-M12-P4S-SF01C;4-contact S-coded male;source says3+PE type"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页17,19/印刷页16,18；1.5.1/1.5.2 harness BOM connector；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp17,19 / printed pp16,18; 1.5.1/1.5.2 harness BOM connector; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。 BOM部件码，不是新增可订购产品；不据3+PE替换板端表的GND分配。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness. BOM subassembly code, not a new orderable product;3+PE does not replace GND assignments in the board-end table."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK电源线束颜色顺序差异",
+            "en": "SDK power harness color-order discrepancy"
+          },
+          "value": {
+            "zh": "接线表：1棕、2红、3蓝、4黄绿，Shell=NA；BOM文字：1棕、2红、3黄绿、4蓝",
+            "en": "Wire Diagram:1 Brown,2 Red,3 Blue,4 Yellow-Green,Shell=NA;BOM text:1 Brown,2 Red,3 Yellow-Green,4 Blue"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页17,19/印刷页16,18；1.5.1/1.5.2 Wire Diagram versus BOM colors；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp17,19 / printed pp16,18; 1.5.1/1.5.2 Wire Diagram versus BOM colors; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 同图颜色顺序差异保持未解决，不按BOM改写接线表或提供自行接线结论；需厂商确认。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Same-drawing color-order discrepancy remains unresolved; the BOM does not overwrite the wire table or establish a wiring instruction. Manufacturer confirmation is needed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK电源线束图一般公差",
+            "en": "SDK power harness drawing general tolerances"
+          },
+          "value": {
+            "zh": "未注公差：X +/-0.50；X.X +/-0.30；X.XX +/-0.20；X.XXX +/-0.15",
+            "en": "Unless specified:X +/-0.50;X.X +/-0.30;X.XX +/-0.20;X.XXX +/-0.15"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页17,19/印刷页16,18；1.5.1/1.5.2 GENERAL TOLERANCE；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp17,19 / printed pp16,18; 1.5.1/1.5.2 GENERAL TOLERANCE; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK以太网24V板端型号",
+            "en": "SDK Ethernet 24V board-end connector"
+          },
+          "value": {
+            "zh": "以太网+24V；M12-P12A-GPFM12",
+            "en": "Ethernet+24V;M12-P12A-GPFM12"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页19,20/印刷页18,19；1.5 Ethernet24V board-end connector；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp19,20 / printed pp18,19; 1.5 Ethernet24V board-end connector; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK以太网24V十二针分配",
+            "en": "SDK Ethernet 24V twelve-pin map"
+          },
+          "value": {
+            "zh": "1棕=GND；2蓝=24V；3白=24V；4绿=Ethernet A+；5粉=Ethernet A-；6黄=Ethernet B+；7黑=Ethernet B-；8灰=Ethernet C+；9红=Ethernet C-；10紫=GND；11橙=Ethernet D+；12浅绿=Ethernet D-",
+            "en": "1 Brown=GND;2 Blue=24V;3 White=24V;4 Green=Ethernet A+;5 Pink=Ethernet A-;6 Yellow=Ethernet B+;7 Black=Ethernet B-;8 Gray=Ethernet C+;9 Red=Ethernet C-;10 Purple=GND;11 Orange=Ethernet D+;12 Light Green=Ethernet D-"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页19,20/印刷页18,19；1.5 Ethernet24V Pin Assignment；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp19,20 / printed pp18,19; 1.5 Ethernet24V Pin Assignment; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK以太网12V板端型号",
+            "en": "SDK Ethernet 12V board-end connector"
+          },
+          "value": {
+            "zh": "以太网+12V；M12-P12A-GPFM12",
+            "en": "Ethernet+12V;M12-P12A-GPFM12"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页22,23/印刷页21,22；1.5 Ethernet12V board-end connector；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp22,23 / printed pp21,22; 1.5 Ethernet12V board-end connector; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK以太网12V十二针分配",
+            "en": "SDK Ethernet 12V twelve-pin map"
+          },
+          "value": {
+            "zh": "1棕=GND；2蓝=12V；3白=12V；4绿=Ethernet A+；5粉=Ethernet A-；6黄=Ethernet B+；7黑=Ethernet B-；8灰=Ethernet C+；9红=Ethernet C-；10紫=GND；11橙=Ethernet D+；12浅绿=Ethernet D-",
+            "en": "1 Brown=GND;2 Blue=12V;3 White=12V;4 Green=Ethernet A+;5 Pink=Ethernet A-;6 Yellow=Ethernet B+;7 Black=Ethernet B-;8 Gray=Ethernet C+;9 Red=Ethernet C-;10 Purple=GND;11 Orange=Ethernet D+;12 Light Green=Ethernet D-"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页22,23/印刷页21,22；1.5 Ethernet12V Pin Assignment；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp22,23 / printed pp21,22; 1.5 Ethernet12V Pin Assignment; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK以太网线束长度标注",
+            "en": "SDK Ethernet harness length callout"
+          },
+          "value": {
+            "zh": "图示线长2000+/-30（从插头前端起）；展开30+/-5、剥线端3+/-1；镀锡3.0 mm",
+            "en": "Drawn length2000+/-30 from plug front;breakout30+/-5,tip3+/-1;tinning3.0 mm"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页21,23/印刷页20,22；1.5.3/1.5.4 mating cable harness dimensions；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp21,23 / printed pp20,22; 1.5.3/1.5.4 mating cable harness dimensions; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK以太网线束接头标注",
+            "en": "SDK Ethernet harness plug callouts"
+          },
+          "value": {
+            "zh": "接头横向35.5+/-1、竖向31+/-1；螺纹M12x1；直径14.5",
+            "en": "Plug horizontal35.5+/-1,vertical31+/-1;threadM12x1;diameter14.5"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页21,23/印刷页20,22；1.5.3/1.5.4 mating plug dimensions；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp21,23 / printed pp20,22; 1.5.3/1.5.4 mating plug dimensions; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK以太网线束材料表",
+            "en": "SDK Ethernet harness BOM"
+          },
+          "value": {
+            "zh": "UL2464 26AWG*12C（7/0.16TS）；内芯PVC OD1.0；黑色半亮面PVC外被OD6.0；非屏蔽PVC电缆SD-140328-014（12C26-002）；黑色PVC包胶",
+            "en": "UL2464 26AWG*12C(7/0.16TS);inner PVC OD1.0;black semi-gloss PVC jacket OD6.0;unshielded PVC cable SD-140328-014(12C26-002);black PVC overmold"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页21,23/印刷页20,22；1.5.3/1.5.4 harness BOM；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp21,23 / printed pp20,22; 1.5.3/1.5.4 harness BOM; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK以太网线束插头半成品",
+            "en": "SDK Ethernet harness connector subassembly"
+          },
+          "value": {
+            "zh": "12芯孔型带倒角半成品CS24-M12-S12A-SFC",
+            "en": "12-contact chamfered female subassembly CS24-M12-S12A-SFC"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页21,23/印刷页20,22；1.5.3/1.5.4 harness connector BOM；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp21,23 / printed pp20,22; 1.5.3/1.5.4 harness connector BOM; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。 相同图在12V和24V章节出现；只记录此部件码，不据相同接头推定跨端口互换或补全被裁切的成品线束代码。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness. The same drawing appears under12V and24V. This component code does not establish cross-port interchangeability or complete the cropped finished-harness code."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK以太网配对线束颜色表",
+            "en": "SDK Ethernet mating-harness color map"
+          },
+          "value": {
+            "zh": "1棕、2蓝、3白、4绿、5粉、6黄、7黑、8灰、9红、10紫、11橙、12浅绿",
+            "en": "1 Brown;2 Blue;3 White;4 Green;5 Pink;6 Yellow;7 Black;8 Gray;9 Red;10 Violet;11 Orange;12 Light Green"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页21,23/印刷页20,22；1.5.3/1.5.4 Wire Diagram；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp21,23 / printed pp20,22; 1.5.3/1.5.4 Wire Diagram; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 线束颜色表称Violet，板端表称Purple；保留术语，仅对应上述12针编号，不新增电气能力。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The harness table says Violet while the board-end table says Purple. Wording and twelve pin numbers are retained, without new electrical ratings."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK以太网线束图一般公差",
+            "en": "SDK Ethernet harness drawing general tolerances"
+          },
+          "value": {
+            "zh": "未注公差：X +/-0.50；X.X +/-0.30；X.XX +/-0.20；X.XXX +/-0.15；角度+/-3度",
+            "en": "Unless specified:X +/-0.50;X.X +/-0.30;X.XX +/-0.20;X.XXX +/-0.15;angle+/-3 degrees"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页21,23/印刷页20,22；1.5.3/1.5.4 GENERAL TOLERANCE；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp21,23 / printed pp20,22; 1.5.3/1.5.4 GENERAL TOLERANCE; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口板端型号",
+            "en": "SDK serial board-end connector"
+          },
+          "value": {
+            "zh": "M12-P8A-GPFM12；RS232、RS485、SBUSx2、PPS",
+            "en": "M12-P8A-GPFM12;RS232,RS485,SBUSx2,PPS"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页24/印刷页23；1.5.5 Serial Port board-end connector；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp24 / printed pp23; 1.5.5 Serial Port board-end connector; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口八针功能和线色",
+            "en": "SDK serial eight-pin functions and colors"
+          },
+          "value": {
+            "zh": "1白=PPS；2棕=SBUS1；3绿=SBUS2；4黄=RS485A；5灰=RS485B；6粉=RS232_TX；7蓝=RS232_RX；8红=GND",
+            "en": "1 White=PPS;2 Brown=SBUS1;3 Green=SBUS2;4 Yellow=RS485A;5 Gray=RS485B;6 Pink=RS232_TX;7 Blue=RS232_RX;8 Red=GND"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页24,25/印刷页23,24；1.5.5 Pin Assignment; mating Wire Diagram；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp24,25 / printed pp23,24; 1.5.5 Pin Assignment; mating Wire Diagram; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。 板端功能表与线束颜色表对应，不将器件额定30V当作串口逻辑电平。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts. Board-end functions match the harness color table; the connector30V rating is not a serial logic level."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口线束可读尺寸",
+            "en": "SDK serial harness readable dimensions"
+          },
+          "value": {
+            "zh": "接头竖向31+/-1；M12x1；直径14.5；展开30+/-5；剥线端3+/-1；镀锡3.0 mm",
+            "en": "Plug vertical31+/-1;M12x1;diameter14.5;breakout30+/-5;tip3+/-1;tinning3.0 mm"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 mating harness visible dimensions；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 mating harness visible dimensions; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口线束材料及图号",
+            "en": "SDK serial harness BOM and drawing code"
+          },
+          "value": {
+            "zh": "图名M12-S8A-MWD-5PV；半成品CS24-M12-S8A-SFC；UL2464 24AWG*8C（7/0.2TS）；内芯PVC OD1.1；黑色半亮面PVC外被OD6.0；非屏蔽电缆SD-140326-013（8C24-001）；黑色PVC包胶；三项BOM各1件",
+            "en": "Drawing title M12-S8A-MWD-5PV;subassembly CS24-M12-S8A-SFC;UL2464 24AWG*8C(7/0.2TS);inner PVC OD1.1;black semi-gloss PVC jacket OD6.0;unshielded cable SD-140326-013(8C24-001);black PVC overmold;each of three BOM items quantity1"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 harness BOM and title；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 harness BOM and title; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。 图号不作为独立商品ID；不从后缀5推算裁切的线长。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness. Drawing code is not a separate product ID; suffix5 is not used to infer the cropped cable length."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口线束图一般公差",
+            "en": "SDK serial harness drawing general tolerances"
+          },
+          "value": {
+            "zh": "未注公差：X +/-0.50；X.X +/-0.30；X.XX +/-0.20；X.XXX +/-0.15；角度+/-3度",
+            "en": "Unless specified:X +/-0.50;X.X +/-0.30;X.XX +/-0.20;X.XXX +/-0.15;angle+/-3 degrees"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 GENERAL TOLERANCE；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 GENERAL TOLERANCE; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口插头连接方式",
+            "en": "SDK serial connector connection"
+          },
+          "value": {
+            "zh": "螺纹连接",
+            "en": "Threaded connection"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 connector technical requirements / connection；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 connector technical requirements / connection; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口插头接线方式",
+            "en": "SDK serial connector termination"
+          },
+          "value": {
+            "zh": "焊接",
+            "en": "Solder termination"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 connector technical requirements / termination；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 connector technical requirements / termination; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口插头温度范围",
+            "en": "SDK serial connector temperature"
+          },
+          "value": {
+            "zh": "-40至+80摄氏度",
+            "en": "-40 to+80 C"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 connector technical requirements / temperature；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 connector technical requirements / temperature; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口插头污染程度",
+            "en": "SDK serial connector pollution degree"
+          },
+          "value": {
+            "zh": "污染等级3",
+            "en": "Pollution degree3"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 connector technical requirements / pollution degree；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 connector technical requirements / pollution degree; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口插头防护等级",
+            "en": "SDK serial connector protection"
+          },
+          "value": {
+            "zh": "IP67（紧锁状态）",
+            "en": "IP67 in locked state"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 connector technical requirements / protection；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 connector technical requirements / protection; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口插头接插次数",
+            "en": "SDK serial connector mating cycles"
+          },
+          "value": {
+            "zh": "不少于500次",
+            "en": ">=500 cycles"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 connector technical requirements / mating cycles；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 connector technical requirements / mating cycles; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口插头额定电压",
+            "en": "SDK serial connector rated voltage"
+          },
+          "value": {
+            "zh": "30 V AC/DC",
+            "en": "30 V AC/DC"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 connector technical requirements / rated voltage；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 connector technical requirements / rated voltage; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口插头额定电流",
+            "en": "SDK serial connector rated current"
+          },
+          "value": {
+            "zh": "2 A",
+            "en": "2 A"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 connector technical requirements / rated current；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 connector technical requirements / rated current; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口插头接触电阻",
+            "en": "SDK serial connector contact resistance"
+          },
+          "value": {
+            "zh": "不大于5毫欧",
+            "en": "<=5 mOhm"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 connector technical requirements / contact resistance；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 connector technical requirements / contact resistance; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口插头绝缘电阻",
+            "en": "SDK serial connector insulation resistance"
+          },
+          "value": {
+            "zh": "不小于100兆欧",
+            "en": ">=100 MOhm"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 connector technical requirements / insulation resistance；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 connector technical requirements / insulation resistance; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口插头质量标准",
+            "en": "SDK serial connector quality standard"
+          },
+          "value": {
+            "zh": "质量标准IPC-A-620",
+            "en": "IPC-A-620"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 connector technical requirements / quality standard；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 connector technical requirements / quality standard; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口线束耐压测试",
+            "en": "SDK serial harness high-voltage test"
+          },
+          "value": {
+            "zh": "直流300 V，0.01秒",
+            "en": "DC300 V /0.01 s"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 finished-product electrical tests / high-voltage test；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 finished-product electrical tests / high-voltage test; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。 成品电气测试要求，耐压值不是可连续运行电压，也不是供电输出。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict. Finished-product electrical test requirement; test voltage is not continuous operating voltage or a power output."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口线束绝缘测试",
+            "en": "SDK serial harness insulation test"
+          },
+          "value": {
+            "zh": "绝缘电阻最低10兆欧",
+            "en": "Insulation resistance10 MOhm MIN"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 finished-product electrical tests / insulation test；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 finished-product electrical tests / insulation test; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。 成品电气测试要求，耐压值不是可连续运行电压，也不是供电输出。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict. Finished-product electrical test requirement; test voltage is not continuous operating voltage or a power output."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK串口线束导体电阻测试",
+            "en": "SDK serial harness continuity test"
+          },
+          "value": {
+            "zh": "导体电阻最高3欧",
+            "en": "Conductor resistance3 Ohm MAX"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.5 finished-product electrical tests / continuity test；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.5 finished-product electrical tests / continuity test; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅串口线束图的插头技术要求；不是整机或其他端口的额定值。接插件绝缘电阻与下方成品电气测试是不同测量口径，不作冲突归并。 成品电气测试要求，耐压值不是可连续运行电压，也不是供电输出。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the serial-harness drawing connector requirements, not robot or other-port ratings. Connector insulation resistance and the separate finished-product electrical tests are different scopes, not a merged conflict. Finished-product electrical test requirement; test voltage is not continuous operating voltage or a power output."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK USB板端型号及引脚未披露",
+            "en": "SDK USB board-end model and undisclosed pins"
+          },
+          "value": {
+            "zh": "USB3.0+5V（x2）；板端E10B-FT3-PPF；Pin Assignment栏为None",
+            "en": "USB3.0+5V(x2);board-end E10B-FT3-PPF;Pin Assignment cell says None"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页25/印刷页24；1.5.6 USB female connector table；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp25 / printed pp24; 1.5.6 USB female connector table; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅限所指物理端口；所有电源接口合计不超过480 W。未用航空接插件须正确盖好保护盖才满足所述IP67；接线前关闭扩展舱电源。不同端口电压/电流不是来源冲突。 None表示本表未提供针脚分配，不是无针脚；不依据插孔外观推断Type-C、PD或电流分配。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the named physical port; all power interfaces together must not exceed 480 W. Unused aviation connectors require correctly fitted caps for the stated IP67; switch off expansion power before wiring. Different port voltages/currents are not source conflicts. None means this table provides no pin assignment, not that there are no pins. Type-C, PD and current allocation are not inferred from the socket image."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK USB线束尺寸标注",
+            "en": "SDK USB harness drawing callouts"
+          },
+          "value": {
+            "zh": "总长1000+/-20；左端40.1、37、19、12.5及直径10；线缆直径4.5；右端直径6.5、4.8、20、6.65+/-0.1",
+            "en": "Overall1000+/-20;left40.1,37,19,12.5 and diameter10;cable diameter4.5;right diameter6.5,4.8,20,6.65+/-0.1"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页26/印刷页25；1.5.6 USB mating cable drawing；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp26 / printed pp25; 1.5.6 USB mating cable drawing; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图中标注原样转录；未见统一尺寸单位的数值不擅加mm，也不通过比例测量、图形外观或其他线束补全。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Callouts are retained as drawn; numbers without a visible general dimensional unit are not assigned mm, measured from scale, or completed from appearance or another harness."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK运动控制板开发边界",
+            "en": "SDK motion-board development boundary"
+          },
+          "value": {
+            "zh": "主控RK3588负责四足运动控制；不支持在此板开发或部署",
+            "en": "Main RK3588 board handles quadruped motion control;development/deployment on it is not supported"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页26/印刷页25；1.6 control-board note；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp26 / printed pp25; 1.6 control-board note; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 仅原文板卡职责和支持边界，不把RK3588算力与Orin NX相加。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Only the stated board role/support boundary; RK3588 compute is not added to Orin NX."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK感知计算板开发边界",
+            "en": "SDK perception-board development boundary"
+          },
+          "value": {
+            "zh": "Orin NX负责感知与控制；支持开发和部署",
+            "en": "Orin NX handles perception/control;development/deployment supported"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页26/印刷页25；1.6 compute-board note；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp26 / printed pp25; 1.6 compute-board note; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 原文要求备份，刷机或OTA可能覆盖系统；不提供执行命令或更改用户设备。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. The source requires backups because flashing or OTA can overwrite the system; no commands are supplied or user devices changed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK架构图传感器连接",
+            "en": "SDK architecture sensor connections"
+          },
+          "value": {
+            "zh": "RK3588连接光学相机x2、IMU和Wi-Fi模块；Orin NX连接车规级IMU、两个Airy雷达、超声x2及RTK",
+            "en": "RK3588 links optical camerasx2,IMU and Wi-Fi;Orin NX links automotive-grade IMU,two Airy lidars,ultrasonicx2 and RTK"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页26/印刷页25；1.6 hardware architecture sensor blocks；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp26 / printed pp25; 1.6 hardware architecture sensor blocks; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 按图的功能块和连接记录；两处IMU文字不据此证明两个独立实物IMU，也不扩增外设SKU。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Functional blocks and links as drawn; the two IMU labels do not establish two distinct physical IMUs or additional peripheral SKUs."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK架构图辅助部件",
+            "en": "SDK architecture auxiliary components"
+          },
+          "value": {
+            "zh": "MCU连接指示灯x2、环境光传感器x1、风扇x3、补光灯x4和硬急停；POWER连接电池x2、BLE模块及电机x16；网络交换机连接Video及遥控器块",
+            "en": "MCU links indicatorsx2,ambient-light sensorx1,fansx3,fill lightsx4 and hard emergency stop;POWER links batteriesx2,BLE and motorsx16;network switch links Video and remote-controller blocks"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页26/印刷页25；1.6 MCU and power blocks；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp26 / printed pp25; 1.6 MCU and power blocks; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 环境光传感器仍受物理第9页“部分版本”限定；图中数量是所示架构，不是所有版本强制BOM。未给风扇型号、转速或功耗。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Ambient light sensor remains conditional on select versions at physicalp9. Counts describe the illustrated architecture, not a mandatory all-version BOM. Fan model, speed and power are not disclosed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "SDK架构图参考地址",
+            "en": "SDK architecture reference addresses"
+          },
+          "value": {
+            "zh": "RK3588：192.168.168.16；Wi-Fi：192.168.234.1；Orin NX：192.168.168.10；Airy雷达：192.168.1.102及192.168.2.102",
+            "en": "RK3588:192.168.168.16;Wi-Fi:192.168.234.1;Orin NX:192.168.168.10;Airy lidars:192.168.1.102 and192.168.2.102"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787638086429168.pdf",
+          "sourceLabel": {
+            "zh": "D1 Max官方SDK开发指南V0.1.0硬件章节",
+            "en": "Official D1 Max SDK Development Guide V0.1.0 hardware chapter"
+          },
+          "locator": {
+            "zh": "D1 Max；物理页26/印刷页25；1.6 reference addresses；原始PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841",
+            "en": "D1 Max; physical pp26 / printed pp25; 1.6 reference addresses; origin PDF SHA256 7ceda5ebef79a252c3986b48e5e812b0ff30cc7f9e9e5c817f01bff5537e8841"
+          },
+          "conditions": {
+            "zh": "仅限D1 Max SDK开发指南V0.1.0（2026年7月）硬件章节及所指部件/端口；不外推MaxPro或其他D1型号，不建立独立附件型号。保留本版来源口径，不作为整机无条件额定值。 公开手册的示例架构地址，不是在线设备发现、访问授权或性能数字；未尝试连接。",
+            "en": "Only the D1 Max SDK Development Guide V0.1.0 (July 2026) hardware chapter and the named component/port; not transferred to MaxPro or other D1 models and no separate accessory identity is created. This revision-specific source statement is not an unconditional whole-robot rating. Public-manual reference architecture addresses, not discovered live devices, access authorization or performance numbers; no connection was attempted."
+          },
+          "excludeFromNumericIndex": true
+        }
+      ]
+    }
+  ],
+  "reviewUpdates": [
+    {
+      "slug": "agibot",
+      "gaps": [
+        "Block6 maps D1 Max SDK Development Guide V0.1.0 July2026 chapter1 hardware, physical pp6-26 / printed5-25: 86 scoped new rows. Equivalent pre-existing specification and expansion-port cells are referenced rather than duplicated. Pixel-reviewed tables include17 joint cells, all board-end pin maps, readable harness drawings/BOMs, serial connector requirements and finished-product tests. No separate accessory identity is created.",
+        "D1 Max SDK discrepancies remain explicit: Rated Stable Payload30kg does not resolve historical25/30kg; named joint limits are not assumed equivalent to historical Body/Thigh/Calf;120m detection range is not substituted for old diameter wording; rail text each14 versus drawing14 remains unresolved; power-harness BOM and pin-table color order differ. Historical values, conditions and numeric flags are unchanged; all new rows are excluded from numeric indexing.",
+        "This is a bounded readable hardware-chapter block, not full SDK/manual or company closure. Cropped harness-rating/title/dimension margins and the SDK temperature scale remain undisclosed/ambiguous. Chapters2-6, software/API/network/setup tutorials and factory acceptance procedures are outside this block. Other model documents remain separate.",
+        "Final block5 fallback covers only D1 Ultra-W manual physical p13 / printed11: both five-row battery SOC LED matrices and the adapter mains-input/indicator label. Eleven conditional rows added; no battery identity, operating tutorial or performance rating inferred. Other Ultra-W manual sections remain open.",
+        "G2 Appendix II remains inaccessible as an attachment: public manual text exposes the filename G02 Offline Data Collection Format Specification - rb235-EN.pdf without a clickable attachment reference in the web-tool result; two exact official-domain searches found no document and direct page fetch returned HTTP500. No schema or file URL was guessed, and no access block was bypassed.",
+        "G2 Appendix I complete 19-port service table and Appendix III radio declarations are now mapped: four Wi-Fi/Bluetooth EIRP entries, 14 LTE bands, 13 NR bands, three cellular-power rows and the antenna restriction. Port identifiers/regulatory values are not unconditional ratings; SIM activation is not inferred. Appendix II linked data-format document and other untouched sections remain open.",
+        "Parent-authorized wrapper corrections now cover exact G2 screen, Ultra-W whole-body DoF, Max payload, MaxPro energy/wading and same-model no-load speed source rows. Only exclusions/conditions changed; original data values and source evidence remain immutable. Different hardware ports and continuous-walking speed were not treated as conflicts.",
+        "D1 Max manual physical p11 complete 26-row table and p14 ports are mapped; MaxPro physical pp7-8 complete 33-row tables, pp9-15 electrical interfaces and pp22-23 battery details are mapped. Existing equivalent parameters are reused, not duplicated. This does not establish full manual or company completeness.",
+        "Remaining D1 work: cached Max/MaxPro other hardware accessory manuals and bounded remaining sections; Pro/Edu downloads timed out; Ultra/Ultra-W other chapters remain incomplete, including Ultra-W Turbo footnote clarification. Other AGIBOT model/component sources and prior conflicts remain open.",
+        "MaxPro communication-port scopes and connector electrical differences remain separately documented, not conflated across hardware ports. Full manufacturer/manual completeness is not claimed. Parent owns global validation and cache integration."
+      ]
+    }
+  ]
+}

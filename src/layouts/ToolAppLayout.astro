@@ -1,0 +1,127 @@
+---
+import { ArrowLeft, ArrowUp, Languages, Moon, Sun } from "@lucide/astro";
+import Analytics from "../components/Analytics.astro";
+import type { Locale } from "../data/site";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  locale?: Locale;
+  alternatePath: string;
+}
+
+const { title, description, locale = "zh", alternatePath } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const copy = locale === "zh"
+  ? { app: "机灵仓", code: "JEELING", back: "返回工具页", language: "Switch to English", dark: "切换为深色模式", light: "切换为浅色模式", skip: "跳到正文", top: "回到顶部" }
+  : { app: "Jeeling", code: "JEELING", back: "Back to tools", language: "切换到中文", dark: "Switch to dark mode", light: "Switch to light mode", skip: "Skip to content", top: "Back to top" };
+---
+
+<!doctype html>
+<html lang={locale === "zh" ? "zh-CN" : "en"} data-theme="light" data-locale={locale} data-alternate-locale={locale === "zh" ? "en" : "zh"}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#edf2f7" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang={locale === "zh" ? "en" : "zh-CN"} href={new URL(alternatePath, Astro.site)} />
+    <title>{title}</title>
+    <script is:inline>
+      (() => {
+        try {
+          const saved = localStorage.getItem("cavwic-theme");
+          const darkSystem = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = saved === "dark" || saved === "light" ? saved : darkSystem ? "dark" : "light";
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.dataset.themePreference = saved ?? "system";
+          document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#102031" : "#edf2f7");
+        } catch {}
+      })();
+    </script>
+  </head>
+  <body class="tool-app-body">
+    <a class="skip-link" href="#main">{copy.skip}</a>
+    <header class="tool-app-bar">
+      <div class="tool-app-identity">
+        <span aria-hidden="true">JL</span>
+        <div><small>{copy.code}</small><strong>{copy.app}</strong></div>
+      </div>
+      <nav aria-label={locale === "zh" ? "工具控制" : "Tool controls"}>
+        <a class="tool-app-back" href={locale === "zh" ? "/tools" : "/en/tools"}>
+          <ArrowLeft size={17} stroke-width={1.8} aria-hidden="true" />
+          <span>{copy.back}</span>
+        </a>
+        <button class="utility-button theme-toggle" type="button" aria-label={copy.dark} title={copy.dark} data-dark-label={copy.dark} data-light-label={copy.light}>
+          <Moon class="theme-icon-moon" size={18} stroke-width={1.8} aria-hidden="true" />
+          <Sun class="theme-icon-sun" size={18} stroke-width={1.8} aria-hidden="true" />
+        </button>
+        <a class="utility-button language-toggle" href={alternatePath} aria-label={copy.language} title={copy.language}>
+          <Languages size={18} stroke-width={1.8} aria-hidden="true" />
+          <span>{locale === "zh" ? "EN" : "中"}</span>
+        </a>
+      </nav>
+    </header>
+    <main id="main"><slot /></main>
+    <button class="back-to-top" type="button" aria-label={copy.top} title={copy.top} hidden>
+      <ArrowUp size={21} stroke-width={1.8} aria-hidden="true" />
+    </button>
+    <script is:inline>
+      const themeToggle = document.querySelector(".theme-toggle");
+      const languageToggle = document.querySelector(".language-toggle");
+      const backToTop = document.querySelector(".back-to-top");
+      const themeMedia = window.matchMedia("(prefers-color-scheme: dark)");
+      const applyTheme = (theme) => {
+        document.documentElement.dataset.theme = theme;
+        themeToggle?.setAttribute("aria-label", theme === "dark" ? themeToggle.dataset.lightLabel : themeToggle.dataset.darkLabel);
+        themeToggle?.setAttribute("title", theme === "dark" ? themeToggle.dataset.lightLabel : themeToggle.dataset.darkLabel);
+        document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#102031" : "#edf2f7");
+      };
+      applyTheme(document.documentElement.dataset.theme);
+      themeToggle?.addEventListener("click", () => {
+        const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        document.documentElement.dataset.themePreference = nextTheme;
+        try { localStorage.setItem("cavwic-theme", nextTheme); } catch {}
+        applyTheme(nextTheme);
+      });
+      themeMedia.addEventListener("change", (event) => {
+        if (document.documentElement.dataset.themePreference === "system") applyTheme(event.matches ? "dark" : "light");
+      });
+      languageToggle?.addEventListener("click", () => {
+        const nextLocale = document.documentElement.dataset.alternateLocale;
+        try { localStorage.setItem("cavwic-locale", nextLocale); } catch {}
+      });
+      const syncBackToTop = () => { if (backToTop) backToTop.hidden = window.scrollY < 560; };
+      window.addEventListener("scroll", syncBackToTop, { passive: true });
+      backToTop?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }));
+      syncBackToTop();
+    </script>
+    <Analytics />
+  </body>
+</html>
+
+<style is:global>
+  .tool-app-body { min-height: 100vh; }
+  .tool-app-bar { position: sticky; z-index: 30; top: 0; display: flex; min-height: 64px; align-items: center; justify-content: space-between; gap: 24px; padding: 0 max(24px, calc((100vw - 1800px) / 2)); color: var(--ink); border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 94%, transparent); backdrop-filter: blur(12px); }
+  .tool-app-identity { display: flex; min-width: 0; align-items: center; gap: 11px; }
+  .tool-app-identity > span { display: grid; width: 38px; height: 38px; flex: 0 0 auto; place-items: center; color: var(--on-teal); border-radius: 3px; background: var(--teal); font-family: var(--mono); font-size: 12px; font-weight: 800; }
+  .tool-app-identity div { display: grid; min-width: 0; line-height: 1.18; }
+  .tool-app-identity small { color: var(--signal); font-family: var(--mono); font-size: 10px; font-weight: 700; }
+  .tool-app-identity strong { overflow: hidden; font-family: var(--display); font-size: 18px; text-overflow: ellipsis; white-space: nowrap; }
+  .tool-app-bar nav { display: flex; flex: 0 0 auto; align-items: center; gap: 8px; }
+  .tool-app-back { display: inline-flex; min-height: 38px; align-items: center; justify-content: center; gap: 8px; padding: 0 12px; color: var(--ink-soft); border: 1px solid var(--line); border-radius: 4px; font-size: 13px; font-weight: 700; }
+  .tool-app-back:hover { color: var(--on-teal); border-color: var(--teal); background: var(--teal); }
+  @media (min-width: 761px) {
+    .tool-app-body .back-to-top { right: 0; bottom: 18px; width: 48px; height: 48px; border-right: 0; border-radius: 4px 0 0 4px; }
+  }
+  @media (max-width: 760px) {
+    .tool-app-bar { min-height: 56px; gap: 10px; padding: 7px 10px; }
+    .tool-app-identity > span { width: 34px; height: 34px; }
+    .tool-app-identity small { display: none; }
+    .tool-app-identity strong { font-size: 17px; }
+    .tool-app-back { width: 36px; min-height: 36px; padding: 0; }
+    .tool-app-back span { display: none; }
+  }
+</style>

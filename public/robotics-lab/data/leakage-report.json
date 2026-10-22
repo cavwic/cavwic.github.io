@@ -1,0 +1,67 @@
+{
+  "rows": 601,
+  "episodes": 5,
+  "validRows": 601,
+  "flaggedRows": 2,
+  "affectedRows": 241,
+  "affectedRate": 0.40099833610648916,
+  "issues": [
+    {
+      "row": 600,
+      "episode": "episode-1",
+      "code": "SPLIT_LEAK",
+      "value": null,
+      "limit": null,
+      "detail": "Same episode ID occurs in multiple splits / 同一 episode 跨数据划分",
+      "severity": "high"
+    },
+    {
+      "row": 600,
+      "episode": "episode-1",
+      "code": "DUPLICATE",
+      "value": 40,
+      "limit": null,
+      "detail": "Duplicate episode / timestamp key / 重复复合主键",
+      "severity": "high"
+    },
+    {
+      "row": 600,
+      "episode": "episode-1",
+      "code": "CLOCK",
+      "value": -2340,
+      "limit": 0,
+      "detail": "Non-increasing sample timestamp / 采样时间不递增",
+      "severity": "high"
+    },
+    {
+      "row": 480,
+      "episode": "episode-copy",
+      "code": "CONTENT_LEAK",
+      "value": null,
+      "limit": null,
+      "detail": "Identical quantized trajectory across splits; possible duplicate of episode-3 / 跨划分轨迹完全相同，疑似重复",
+      "severity": "high"
+    }
+  ],
+  "rules": {
+    "periodMs": 20,
+    "maxSensorLagMs": 35,
+    "maxCommandLagMs": 50,
+    "maxVelocityRadS": 8,
+    "maxCurrentA": 2,
+    "maxTemperatureC": 65,
+    "maxPositionRad": 2
+  },
+  "provenance": "Synthetic fault-injection fixture; seed=42; no physical sensor / video measurements",
+  "splitCounts": {
+    "train": 240,
+    "validation": 120,
+    "test": 241
+  },
+  "codes": {
+    "SPLIT_LEAK": 1,
+    "DUPLICATE": 1,
+    "CLOCK": 1,
+    "CONTENT_LEAK": 1
+  }
+}

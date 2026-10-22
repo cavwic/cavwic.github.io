@@ -1,0 +1,97 @@
+---
+import { ChevronLeft } from "@lucide/astro";
+import type { Locale } from "../data/site";
+
+type RailItem = { id: string; label: string };
+
+interface Props {
+  items: RailItem[];
+  locale?: Locale;
+  label?: string;
+  railId?: string;
+}
+
+const { items, locale = "zh", label, railId = `section-rail-${locale}` } = Astro.props;
+const copy = locale === "zh"
+  ? { nav: label ?? "页面章节导航", current: "当前位置", sections: "页面章节" }
+  : { nav: label ?? "Page section navigation", current: "Current section", sections: "Page sections" };
+---
+
+<nav class="section-rail" aria-label={copy.nav} data-section-rail>
+  <button class="section-rail-current" type="button" aria-label={copy.nav} aria-expanded="false" aria-controls={railId}>
+    <span>{copy.current}</span>
+    <strong data-section-rail-current>{items[0]?.label}</strong>
+    <ChevronLeft size={17} aria-hidden="true" />
+  </button>
+  <div id={railId} class="section-rail-panel">
+    <p>{copy.sections}</p>
+    <div>
+      {items.map((item, index) => (
+        <a href={`#${item.id}`} class:list={{ active: index === 0 }} data-section-id={item.id} data-section-label={item.label}>
+          <span>{String(index + 1).padStart(2, "0")}</span>
+          <strong>{item.label}</strong>
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-section-rail]").forEach((rail) => {
+    const toggle = rail.querySelector<HTMLButtonElement>(".section-rail-current");
+    const current = rail.querySelector<HTMLElement>("[data-section-rail-current]");
+    const links = [...rail.querySelectorAll<HTMLAnchorElement>("[data-section-id]")];
+    const sections = links
+      .map((link) => ({ link, section: document.getElementById(link.dataset.sectionId ?? "") }))
+      .filter((item): item is { link: HTMLAnchorElement; section: HTMLElement } => Boolean(item.section));
+
+    const setActive = (id: string) => {
+      const active = links.find((link) => link.dataset.sectionId === id);
+      if (!active) return;
+      links.forEach((link) => link.classList.toggle("active", link === active));
+      if (current) current.textContent = active.dataset.sectionLabel ?? active.textContent?.trim() ?? "";
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+      if (visible?.target.id) setActive(visible.target.id);
+    }, { rootMargin: "-22% 0px -62%", threshold: [0, 0.05, 0.2] });
+    sections.forEach(({ section }) => observer.observe(section));
+
+    links.forEach((link) => link.addEventListener("click", () => {
+      setActive(link.dataset.sectionId ?? "");
+      rail.classList.remove("open");
+      toggle?.setAttribute("aria-expanded", "false");
+    }));
+    toggle?.addEventListener("click", () => {
+      const open = rail.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(open));
+    });
+    rail.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape") return;
+      rail.classList.remove("open");
+      toggle?.setAttribute("aria-expanded", "false");
+      toggle?.focus();
+    });
+  });
+</script>
+
+<style>
+  .section-rail { position: fixed; z-index: 18; top: 50%; right: 0; width: 50px; transform: translateY(-42%); }
+  .section-rail-current { display: grid; width: 50px; min-height: 184px; place-items: center; align-content: center; gap: 10px; padding: 14px 0; color: var(--white); border: 0; border-left: 3px solid var(--inverse-accent); background: var(--panel-inverse); box-shadow: 0 12px 32px rgba(11, 24, 38, .2); cursor: pointer; transition: opacity 140ms ease, transform 140ms ease; }
+  .section-rail-current :is(span, strong) { writing-mode: vertical-rl; }
+  .section-rail-current span { color: var(--inverse-muted); font-family: var(--mono); font-size: 9px; font-weight: 600; }
+  .section-rail-current strong { max-height: 112px; overflow: hidden; font-family: var(--display); font-size: 15px; text-overflow: ellipsis; white-space: nowrap; }
+  .section-rail-panel { position: absolute; top: 50%; right: 0; width: 250px; max-height: calc(100vh - 112px); padding: 17px; overflow-y: auto; color: var(--ink); border: 1px solid var(--line); border-right: 0; border-radius: 4px 0 0 4px; background: var(--surface); box-shadow: 0 18px 48px rgba(11, 24, 38, .22); opacity: 0; visibility: hidden; transform: translate(12px, -50%); transition: opacity 150ms ease, transform 150ms ease, visibility 150ms ease; pointer-events: none; }
+  .section-rail-panel > p { margin: 0 0 8px; color: var(--ink-soft); font-family: var(--mono); font-size: 10px; font-weight: 700; text-transform: uppercase; }
+  .section-rail-panel > div { display: grid; gap: 3px; }
+  .section-rail-panel a { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 8px; align-items: center; min-height: 44px; padding: 8px 10px; border-radius: 2px; }
+  .section-rail-panel a span { color: var(--signal); font-family: var(--mono); font-size: 9px; }
+  .section-rail-panel a strong { font-family: var(--display); font-size: 14px; line-height: 1.25; }
+  .section-rail-panel a:is(:hover, :focus-visible, .active) { background: var(--paper-deep); box-shadow: inset 3px 0 0 var(--signal); }
+  .section-rail:is(:hover, :focus-within, .open) .section-rail-current { opacity: 0; transform: translateX(8px); }
+  .section-rail:is(:hover, :focus-within, .open) .section-rail-panel { opacity: 1; visibility: visible; transform: translate(0, -50%); pointer-events: auto; }
+  @media (max-width: 1220px) { .section-rail { display: none; } }
+</style>

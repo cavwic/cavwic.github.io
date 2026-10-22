@@ -60,6 +60,8 @@ const copy = locale === "zh"
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const currentPath = Astro.url.pathname;
 const isHomePage = currentPath === "/" || currentPath === "/en" || currentPath === "/en/";
+// Keep the implementation available for later, but leave selection and copying enabled while the site is still being built.
+const copyProtectionEnabled = false;
 const basePath = getBasePath(currentPath);
 const alternateLocale: Locale = locale === "zh" ? "en" : "zh";
 const alternatePath = alternatePathProp ?? (locale === "zh" ? "/en/industries" : "/industries");
@@ -102,7 +104,7 @@ const industryMenu = locale === "zh"
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#f1f4ef" />
+    <meta name="theme-color" content="#edf2f7" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang={locale === "zh" ? "en" : "zh-CN"} href={new URL(alternatePath, Astro.site)} />
@@ -142,12 +144,12 @@ const industryMenu = locale === "zh"
           const theme = saved === "dark" || saved === "light" ? saved : darkSystem ? "dark" : "light";
           root.dataset.theme = theme;
           root.dataset.themePreference = saved ?? "system";
-          document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#181c1b" : "#f1f4ef");
+          document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#102031" : "#edf2f7");
         } catch {}
       })();
     </script>
   </head>
-  <body class:list={{ "copy-protected": !isHomePage }}>
+  <body class:list={{ "copy-protected": copyProtectionEnabled && !isHomePage }}>
     <a class="skip-link" href="#main">{copy.skip}</a>
     <header class="site-header">
       <a class="brand" href={homePath} aria-label={copy.home}>
@@ -277,7 +279,7 @@ const industryMenu = locale === "zh"
         themeToggle?.setAttribute("aria-label", theme === "dark" ? themeToggle.dataset.lightLabel : themeToggle.dataset.darkLabel);
         themeToggle?.setAttribute("title", theme === "dark" ? themeToggle.dataset.lightLabel : themeToggle.dataset.darkLabel);
         themeToggle?.setAttribute("aria-pressed", String(theme === "dark"));
-        document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#181c1b" : "#f1f4ef");
+        document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#102031" : "#edf2f7");
       };
 
       applyTheme(document.documentElement.dataset.theme);

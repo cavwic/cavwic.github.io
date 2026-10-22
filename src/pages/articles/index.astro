@@ -6,4 +6,4 @@ const entries = (await getCollection("library"))
   .filter((entry) => entry.data.locale === "zh" && entry.data.kind === "article" && isVisible(entry))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
-<CollectionPage eyebrow="ARTICLES" title="文章" intro="每篇先给出能被反驳的观点，再交代证据、反例和实施影响。" entries={entries.map((entry) => toEntry(entry))} locale="zh" showMeta={false} />
+<CollectionPage eyebrow="ARTICLES" title="文章" intro="先提出可供质疑和反驳的观点，再说明证据、反例及对实施的影响。" entries={entries.map((entry) => toEntry(entry))} locale="zh" showMeta={false} />

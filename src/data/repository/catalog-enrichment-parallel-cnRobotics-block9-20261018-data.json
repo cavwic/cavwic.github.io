@@ -1,0 +1,1051 @@
+{
+  "checkedAt": "2026-10-18",
+  "scope": "C9 cached Ultra and Ultra-W remaining hardware, no identities or historical changes",
+  "blocks": [
+    {
+      "companySlug": "agibot",
+      "product": "AGIBOT D1 Ultra",
+      "rows": [
+        {
+          "label": {
+            "zh": "手册前后防碰撞部件图示",
+            "en": "Manual head and tail impact-protection legend"
+          },
+          "value": {
+            "zh": "图示标注前部防碰撞件和尾部防碰撞件",
+            "en": "Drawing labels Anti-Collision Head Hammer and Anti-Collision Tail Hammer"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页11，印刷页9；Component Introduction / Body diagram；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 11, printed pages 9; Component Introduction / Body diagram; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。仅为实体部件名称；不代表避障传感器、碰撞力限值或安全认证。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Physical component names only; no obstacle sensor, impact-force limit or safety certification is established."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册防护条与橡胶垫图示",
+            "en": "Manual protective strip and rubber-pad legend"
+          },
+          "value": {
+            "zh": "防护条；防护橡胶垫；另一个防护橡胶垫引线，原文注明重复且可能位于不同位置",
+            "en": "Protective Strip; Protective Rubber Pad; another Protective Rubber Pad leader, explicitly marked duplicate and possibly at different positions"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页11，印刷页9；Component Introduction / Body diagram；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 11, printed pages 9; Component Introduction / Body diagram; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。保留原图重复引线，不据此推定完整BOM数量、橡胶材质等级或冲击性能。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. The duplicate leader is retained; no complete BOM quantity, rubber grade or impact performance is inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册腿部结构图示",
+            "en": "Manual leg structure legend"
+          },
+          "value": {
+            "zh": "大腿、小腿及关节",
+            "en": "Thigh, Shin (Lower Leg) and Joint"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页11，印刷页9；Component Introduction / Body diagram；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 11, printed pages 9; Component Introduction / Body diagram; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。结构名称不是独立可订购关节型号；不从插图推算尺寸或自由度。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Structure names are not independently orderable joint models; no dimensions or DoF are inferred from the illustration."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册FPV相机图示",
+            "en": "Manual FPV camera legend"
+          },
+          "value": {
+            "zh": "机身前部图示标注FPV相机",
+            "en": "The body drawing labels an FPV Camera at the front"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页11，印刷页9；Component Introduction / Body diagram；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 11, printed pages 9; Component Introduction / Body diagram; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。此图未给传感器型号、分辨率、视场角或深度功能；不从其他D1型号转填。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. This diagram does not state a sensor model, resolution, field of view or depth capability; values from other D1 models are not transferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册可更换电池与面板图示",
+            "en": "Manual replaceable battery and panel legend"
+          },
+          "value": {
+            "zh": "机身标注可更换电池；电池面板标注电源开关和指示灯",
+            "en": "Body label: Replaceable Battery; battery panel labels: power switch and pilot lamp"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页11,13，印刷页9,11；Body and Power Supply Introduction / battery drawings；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 11,13, printed pages 9,11; Body and Power Supply Introduction / battery drawings; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。可更换不等于支持带电热插拔；未给独立电池订单号、开关电气额定值或指示灯测量精度。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Replaceable does not mean hot-swappable; no separate battery order code, switch electrical rating or indicator measurement accuracy is disclosed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册防滑脚垫图示",
+            "en": "Manual anti-slip foot-pad legend"
+          },
+          "value": {
+            "zh": "脚端图示标注防滑脚垫",
+            "en": "Foot-end drawing label: Anti-Slip Foot Pads"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页11，印刷页9；Component Introduction / Body diagram；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 11, printed pages 9; Component Introduction / Body diagram; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。没有摩擦系数、磨耗寿命、脚垫数量或配件料号；不转填轮式型号轮径。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. No friction coefficient, wear life, foot-pad quantity or accessory part number is disclosed; wheeled-model tire diameter is not transferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册遥控器实体控件图示",
+            "en": "Manual remote hardware legend"
+          },
+          "value": {
+            "zh": "方向键、显示屏、左摇杆、功能键、右摇杆、电源开关及锁屏按钮",
+            "en": "Direction Keys, Display Screen, Left Joystick, Function Keys, Right Joystick, Power On/Off & Screen Lock Button"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页14，印刷页12；Remote Controller Introduction / annotated front and top views；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 14, printed pages 12; Remote Controller Introduction / annotated front and top views; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。合并记录图中实体控件，不导入按键操作教程；未公开遥控器型号、屏幕尺寸、分辨率、电池或射频额定值。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. The physical controls are grouped without button-operation tutorials; controller model, screen size, resolution, battery and RF ratings are not disclosed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册急停软停止行为",
+            "en": "Manual emergency-stop soft-stop behavior"
+          },
+          "value": {
+            "zh": "异常行为时的Emergency Stop软停止模式会使机器人自动趴下",
+            "en": "For abnormal behavior, Emergency Stop activates a soft-stop mode in which the robot automatically lies down"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页4，印刷页2；Usage Restrictions / emergency-stop soft-stop behavior；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 4, printed pages 2; Usage Restrictions / emergency-stop soft-stop behavior; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。厂商行为描述，不证明硬接线急停、断电、STO或任何安全完整性等级；未给响应时间或停止距离。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Manufacturer behavior description, not proof of a hardwired emergency stop, power removal, STO or any safety integrity level; response time and stopping distance are undisclosed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册平地速度与参数表差异",
+            "en": "Manual flat-surface speed and parameter-table discrepancy"
+          },
+          "value": {
+            "zh": "注意事项称平地最高3.5 m/s；参数表最大速度为3.7 m/s",
+            "en": "Notes state up to3.5 m/s on flat surfaces; the parameter table states maximum speed3.7 m/s"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页5,22，印刷页3,20；Notes (9) versus Product Parameter / maximum speed；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 5,22, printed pages 3,20; Notes (9) versus Product Parameter / maximum speed; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。保留两处表述；第22物理页表注为实验室测试数据，性能随环境和操作变化。注意事项排除复杂、湿滑、杂乱、超限坡面及尖锐物附近环境。不推定软件限速、版本或舍入关系，旧速度行及旗标不变。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Both statements are retained; physical p22 attributes its table to Laboratory test data, varying with environment and operation. Notes exclude complex, slippery, cluttered, beyond-specification slopes and areas near sharp objects. No software cap, revision or rounding relation is inferred; old speed rows and flags remain unchanged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册充电持续时间限制",
+            "en": "Manual charging-duration restriction"
+          },
+          "value": {
+            "zh": "电池充电时间不应超过24小时",
+            "en": "Battery charging time should not exceed24 hours"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页7，印刷页5；Battery and Charging Precautions (7) / charging-duration ceiling；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 7, printed pages 5; Battery and Charging Precautions (7) / charging-duration ceiling; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。充电注意事项上限，不是充满时间或续航；不替换已保留的10%至90%约1小时充电条件，也不证明24小时自动截止定时器。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. A precautionary duration ceiling, not full-charge time or runtime; it does not replace the retained approximately1-hour10%-90% condition or establish a24-hour automatic cutoff timer."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池空闲及放电SOC 0-14%指示",
+            "en": "Battery idle-discharge SOC 0-14% indication"
+          },
+          "value": {
+            "zh": "SOC 0-14%；LED1=闪烁；LED2=熄灭；LED3=熄灭；LED4=熄灭",
+            "en": "SOC 0-14%; LED1=Flashing; LED2=OFF; LED3=OFF; LED4=OFF"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页13，印刷页11；Power Supply Introduction / idle-discharge table row1；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 13, printed pages 11; Power Supply Introduction / idle-discharge table row1; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。按原表整数区间和LED1至LED4次序记录；不推定小数边界、闪烁频率、荷电测量精度或报警阈值。空闲/放电与充电状态不可合并。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Original integer bands and LED1-to-LED4 order are retained; fractional boundaries, blink frequency, SOC measurement accuracy and alarm thresholds are not inferred. Idle/discharge and charging states must not be merged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池空闲及放电SOC 15-24%指示",
+            "en": "Battery idle-discharge SOC 15-24% indication"
+          },
+          "value": {
+            "zh": "SOC 15-24%；LED1=常亮；LED2=熄灭；LED3=熄灭；LED4=熄灭",
+            "en": "SOC 15-24%; LED1=ON; LED2=OFF; LED3=OFF; LED4=OFF"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页13，印刷页11；Power Supply Introduction / idle-discharge table row2；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 13, printed pages 11; Power Supply Introduction / idle-discharge table row2; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。按原表整数区间和LED1至LED4次序记录；不推定小数边界、闪烁频率、荷电测量精度或报警阈值。空闲/放电与充电状态不可合并。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Original integer bands and LED1-to-LED4 order are retained; fractional boundaries, blink frequency, SOC measurement accuracy and alarm thresholds are not inferred. Idle/discharge and charging states must not be merged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池空闲及放电SOC 25-49%指示",
+            "en": "Battery idle-discharge SOC 25-49% indication"
+          },
+          "value": {
+            "zh": "SOC 25-49%；LED1=常亮；LED2=常亮；LED3=熄灭；LED4=熄灭",
+            "en": "SOC 25-49%; LED1=ON; LED2=ON; LED3=OFF; LED4=OFF"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页13，印刷页11；Power Supply Introduction / idle-discharge table row3；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 13, printed pages 11; Power Supply Introduction / idle-discharge table row3; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。按原表整数区间和LED1至LED4次序记录；不推定小数边界、闪烁频率、荷电测量精度或报警阈值。空闲/放电与充电状态不可合并。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Original integer bands and LED1-to-LED4 order are retained; fractional boundaries, blink frequency, SOC measurement accuracy and alarm thresholds are not inferred. Idle/discharge and charging states must not be merged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池空闲及放电SOC 50-74%指示",
+            "en": "Battery idle-discharge SOC 50-74% indication"
+          },
+          "value": {
+            "zh": "SOC 50-74%；LED1=常亮；LED2=常亮；LED3=常亮；LED4=熄灭",
+            "en": "SOC 50-74%; LED1=ON; LED2=ON; LED3=ON; LED4=OFF"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页13，印刷页11；Power Supply Introduction / idle-discharge table row4；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 13, printed pages 11; Power Supply Introduction / idle-discharge table row4; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。按原表整数区间和LED1至LED4次序记录；不推定小数边界、闪烁频率、荷电测量精度或报警阈值。空闲/放电与充电状态不可合并。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Original integer bands and LED1-to-LED4 order are retained; fractional boundaries, blink frequency, SOC measurement accuracy and alarm thresholds are not inferred. Idle/discharge and charging states must not be merged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池空闲及放电SOC 75-100%指示",
+            "en": "Battery idle-discharge SOC 75-100% indication"
+          },
+          "value": {
+            "zh": "SOC 75-100%；LED1=常亮；LED2=常亮；LED3=常亮；LED4=常亮",
+            "en": "SOC 75-100%; LED1=ON; LED2=ON; LED3=ON; LED4=ON"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页13，印刷页11；Power Supply Introduction / idle-discharge table row5；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 13, printed pages 11; Power Supply Introduction / idle-discharge table row5; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。按原表整数区间和LED1至LED4次序记录；不推定小数边界、闪烁频率、荷电测量精度或报警阈值。空闲/放电与充电状态不可合并。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Original integer bands and LED1-to-LED4 order are retained; fractional boundaries, blink frequency, SOC measurement accuracy and alarm thresholds are not inferred. Idle/discharge and charging states must not be merged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池充电SOC 0-24%指示",
+            "en": "Battery charging SOC 0-24% indication"
+          },
+          "value": {
+            "zh": "SOC 0-24%；LED1=闪烁；LED2=熄灭；LED3=熄灭；LED4=熄灭",
+            "en": "SOC 0-24%; LED1=Flashing; LED2=OFF; LED3=OFF; LED4=OFF"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页13，印刷页11；Power Supply Introduction / charging table row1；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 13, printed pages 11; Power Supply Introduction / charging table row1; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。按原表整数区间和LED1至LED4次序记录；不推定小数边界、闪烁频率、荷电测量精度或报警阈值。空闲/放电与充电状态不可合并。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Original integer bands and LED1-to-LED4 order are retained; fractional boundaries, blink frequency, SOC measurement accuracy and alarm thresholds are not inferred. Idle/discharge and charging states must not be merged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池充电SOC 25-49%指示",
+            "en": "Battery charging SOC 25-49% indication"
+          },
+          "value": {
+            "zh": "SOC 25-49%；LED1=常亮；LED2=闪烁；LED3=熄灭；LED4=熄灭",
+            "en": "SOC 25-49%; LED1=ON; LED2=Flashing; LED3=OFF; LED4=OFF"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页13，印刷页11；Power Supply Introduction / charging table row2；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 13, printed pages 11; Power Supply Introduction / charging table row2; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。按原表整数区间和LED1至LED4次序记录；不推定小数边界、闪烁频率、荷电测量精度或报警阈值。空闲/放电与充电状态不可合并。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Original integer bands and LED1-to-LED4 order are retained; fractional boundaries, blink frequency, SOC measurement accuracy and alarm thresholds are not inferred. Idle/discharge and charging states must not be merged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池充电SOC 50-74%指示",
+            "en": "Battery charging SOC 50-74% indication"
+          },
+          "value": {
+            "zh": "SOC 50-74%；LED1=常亮；LED2=常亮；LED3=闪烁；LED4=熄灭",
+            "en": "SOC 50-74%; LED1=ON; LED2=ON; LED3=Flashing; LED4=OFF"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页13，印刷页11；Power Supply Introduction / charging table row3；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 13, printed pages 11; Power Supply Introduction / charging table row3; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。按原表整数区间和LED1至LED4次序记录；不推定小数边界、闪烁频率、荷电测量精度或报警阈值。空闲/放电与充电状态不可合并。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Original integer bands and LED1-to-LED4 order are retained; fractional boundaries, blink frequency, SOC measurement accuracy and alarm thresholds are not inferred. Idle/discharge and charging states must not be merged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池充电SOC 75-99%指示",
+            "en": "Battery charging SOC 75-99% indication"
+          },
+          "value": {
+            "zh": "SOC 75-99%；LED1=常亮；LED2=常亮；LED3=常亮；LED4=闪烁",
+            "en": "SOC 75-99%; LED1=ON; LED2=ON; LED3=ON; LED4=Flashing"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页13，印刷页11；Power Supply Introduction / charging table row4；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 13, printed pages 11; Power Supply Introduction / charging table row4; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。按原表整数区间和LED1至LED4次序记录；不推定小数边界、闪烁频率、荷电测量精度或报警阈值。空闲/放电与充电状态不可合并。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Original integer bands and LED1-to-LED4 order are retained; fractional boundaries, blink frequency, SOC measurement accuracy and alarm thresholds are not inferred. Idle/discharge and charging states must not be merged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池充电SOC 100%指示",
+            "en": "Battery charging SOC 100% indication"
+          },
+          "value": {
+            "zh": "SOC 100%；LED1=常亮；LED2=常亮；LED3=常亮；LED4=常亮",
+            "en": "SOC 100%; LED1=ON; LED2=ON; LED3=ON; LED4=ON"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页13，印刷页11；Power Supply Introduction / charging table row5；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 13, printed pages 11; Power Supply Introduction / charging table row5; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。按原表整数区间和LED1至LED4次序记录；不推定小数边界、闪烁频率、荷电测量精度或报警阈值。空闲/放电与充电状态不可合并。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Original integer bands and LED1-to-LED4 order are retained; fractional boundaries, blink frequency, SOC measurement accuracy and alarm thresholds are not inferred. Idle/discharge and charging states must not be merged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电源适配器市电输入及指示灯",
+            "en": "Adapter mains input and power indication"
+          },
+          "value": {
+            "zh": "市电输入100-240 V；灯灭：无电源；灯亮：已连接市电",
+            "en": "Mains input100-240 V; light off: no power; light on: mains connected"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页13，印刷页11；Power adapter / two indicator rows；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 13, printed pages 11; Power adapter / two indicator rows; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。此处为市电输入与供电指示，不是电池电压、充满指示或充电器输出；没有电源频率、功率或电流数值。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. This is mains input and supply indication, not battery voltage, full-charge indication or charger output; supply frequency, power and current are not given."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册包装箱尺寸",
+            "en": "Manual packaging-box dimensions"
+          },
+          "value": {
+            "zh": "包装箱80 x45 x25 cm",
+            "en": "Packing box80 x45 x25 cm"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页24，印刷页22；Transportation and Storage (1) / packaging size；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 24, printed pages 22; Transportation and Storage (1) / packaging size; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。包装箱而非机器人外形尺寸；原文未标轴名、内外尺寸或公差。运输段要求从机身取出电池并保持箱体正面朝上。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Packaging rather than robot dimensions; axis names, inside/outside dimensions and tolerances are unstated. The transport paragraph requires removing the battery from the body and keeping the front of the box upward."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册储存推荐温度及禁止边界",
+            "en": "Manual storage temperature recommendation and prohibitions"
+          },
+          "value": {
+            "zh": "电源适配器及整机推荐储存20-25 C；禁止在高于60 C或低于-10 C环境储存",
+            "en": "Power adapter and entire unit: recommended storage20-25 C; do not store above60 C or below-10 C"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页24，印刷页22；Transportation and Storage (2) / temperature recommendation and prohibitions；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 24, printed pages 22; Transportation and Storage (2) / temperature recommendation and prohibitions; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。仅为储存条件，不是工作温度、环境认证或保证寿命。原文储存建议不自行统一为操作额定值。干燥阴凉并避开直射阳光、火源和强电磁场；不将-10至60 C改写为连续合格储存额定范围。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Storage conditions only, not operating temperature, environmental certification or guaranteed lifetime. Source recommendations are not unified into an operating rating. Dry and cool, away from direct sunlight, fire and strong electromagnetic fields; -10 to60 C is not restated as a continuously qualified storage range."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册长期储存温湿度与电量组合条件",
+            "en": "Manual coupled long-term storage conditions"
+          },
+          "value": {
+            "zh": "长期储存建议20-25 C、相对湿度0%-60% RH，电池总电量低于50%",
+            "en": "Long-term storage recommendation:20-25 C, relative humidity0%-60% RH, total battery charge below50%"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页24，印刷页22；Transportation and Storage (2) / combined long-term conditions；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 24, printed pages 22; Transportation and Storage (2) / combined long-term conditions; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。仅为储存条件，不是工作温度、环境认证或保证寿命。原文储存建议不自行统一为操作额定值。同页第(3)节另称电量低于20%时充至40%-60%用于储存；与长期低于50%的表述分别保留，不推定统一推荐区间或优先级。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Storage conditions only, not operating temperature, environmental certification or guaranteed lifetime. Source recommendations are not unified into an operating rating. Section(3) on the same page separately says to charge to40%-60% for storage when below20%; this and the long-term below50% statement remain separate, with no inferred unified range or precedence."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册低电量储存补电条件",
+            "en": "Manual low-charge storage replenishment condition"
+          },
+          "value": {
+            "zh": "若电量低于20%，及时充至40%-60%用于储存",
+            "en": "If charge is below20%, recharge to40%-60% for storage"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页24，印刷页22；Transportation and Storage (3) / low-charge storage recommendation；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 24, printed pages 22; Transportation and Storage (3) / low-charge storage recommendation; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。同页第(3)节另称电量低于20%时充至40%-60%用于储存；与长期低于50%的表述分别保留，不推定统一推荐区间或优先级。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Section(3) on the same page separately says to charge to40%-60% for storage when below20%; this and the long-term below50% statement remain separate, with no inferred unified range or precedence."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册储存电池维护周期",
+            "en": "Manual stored-battery maintenance interval"
+          },
+          "value": {
+            "zh": "定期检查电量；每3个月充放电一次以保持电池活性",
+            "en": "Check charge regularly; charge and discharge every3 months to maintain battery activity"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页24，印刷页22；Transportation and Storage (3) / charge-discharge interval；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 24, printed pages 22; Transportation and Storage (3) / charge-discharge interval; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。厂商储存维护建议，非3个月续航、循环寿命或保修；该段没有给每次维护充放电深度。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Manufacturer storage-maintenance recommendation, not3-month runtime, cycle life or warranty; the paragraph does not specify charge/discharge depth per maintenance event."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册充满停止充电描述",
+            "en": "Manual full-charge termination statement"
+          },
+          "value": {
+            "zh": "电池充满时自动停止充电；仍建议断开连接以维持电池状态",
+            "en": "The battery stops charging automatically when full; disconnecting is still recommended to maintain battery condition"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114774395970.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra官方用户手册",
+            "en": "AGIBOT D1 Ultra official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105U；物理页24，印刷页22；Transportation and Storage (3) / full-charge termination；原PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72",
+            "en": "Model ZYCXD105U; physical pages 24, printed pages 22; Transportation and Storage (3) / full-charge termination; original PDF SHA256:5a35fabf819dd45c11a46f8dac88c5ec9038f2cd917e8946c4d5a3764ce26f72"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105U，不转用于其他D1型号。未给截止电压、电流、恢复阈值、冗余电路或安全等级；不能据此推定热插拔或无限期接电。",
+            "en": "Only ZYCXD105U in this cached manual; not transferred to other D1 models. Cutoff voltage, current, restart threshold, redundant circuitry and safety rating are undisclosed; hot swapping or indefinite connection is not inferred."
+          },
+          "excludeFromNumericIndex": true
+        }
+      ]
+    },
+    {
+      "companySlug": "agibot",
+      "product": "AGIBOT D1 Ultra-W",
+      "rows": [
+        {
+          "label": {
+            "zh": "手册前后防碰撞部件图示",
+            "en": "Manual head and tail impact-protection legend"
+          },
+          "value": {
+            "zh": "图示标注前部防碰撞件和尾部防碰撞件",
+            "en": "Drawing labels Anti-Collision Head Hammer and Anti-Collision Tail Hammer"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页11，印刷页9；Component Introduction / Body diagram；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 11, printed pages 9; Component Introduction / Body diagram; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。仅为实体部件名称；不代表避障传感器、碰撞力限值或安全认证。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. Physical component names only; no obstacle sensor, impact-force limit or safety certification is established."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册防护条与橡胶垫图示",
+            "en": "Manual protective strip and rubber-pad legend"
+          },
+          "value": {
+            "zh": "防护条；防护橡胶垫；另一个防护橡胶垫引线，原文注明重复且可能位于不同位置",
+            "en": "Protective Strip; Protective Rubber Pad; another Protective Rubber Pad leader, explicitly marked duplicate and possibly at different positions"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页11，印刷页9；Component Introduction / Body diagram；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 11, printed pages 9; Component Introduction / Body diagram; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。保留原图重复引线，不据此推定完整BOM数量、橡胶材质等级或冲击性能。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. The duplicate leader is retained; no complete BOM quantity, rubber grade or impact performance is inferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册腿部结构图示",
+            "en": "Manual leg structure legend"
+          },
+          "value": {
+            "zh": "大腿、小腿及关节",
+            "en": "Thigh, Shin (Lower Leg) and Joint"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页11，印刷页9；Component Introduction / Body diagram；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 11, printed pages 9; Component Introduction / Body diagram; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。结构名称不是独立可订购关节型号；不从插图推算尺寸或自由度。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. Structure names are not independently orderable joint models; no dimensions or DoF are inferred from the illustration."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册FPV相机图示",
+            "en": "Manual FPV camera legend"
+          },
+          "value": {
+            "zh": "机身前部图示标注FPV相机",
+            "en": "The body drawing labels an FPV Camera at the front"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页11，印刷页9；Component Introduction / Body diagram；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 11, printed pages 9; Component Introduction / Body diagram; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。此图未给传感器型号、分辨率、视场角或深度功能；不从其他D1型号转填。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. This diagram does not state a sensor model, resolution, field of view or depth capability; values from other D1 models are not transferred."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册可更换电池与面板图示",
+            "en": "Manual replaceable battery and panel legend"
+          },
+          "value": {
+            "zh": "机身标注可更换电池；电池面板标注电源开关和指示灯",
+            "en": "Body label: Replaceable Battery; battery panel labels: power switch and pilot lamp"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页11,13，印刷页9,11；Body and Power Supply Introduction / battery drawings；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 11,13, printed pages 9,11; Body and Power Supply Introduction / battery drawings; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。可更换不等于支持带电热插拔；未给独立电池订单号、开关电气额定值或指示灯测量精度。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. Replaceable does not mean hot-swappable; no separate battery order code, switch electrical rating or indicator measurement accuracy is disclosed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册遥控器实体控件图示",
+            "en": "Manual remote hardware legend"
+          },
+          "value": {
+            "zh": "方向键、显示屏、左摇杆、功能键、右摇杆、电源开关及锁屏按钮",
+            "en": "Direction Keys, Display Screen, Left Joystick, Function Keys, Right Joystick, Power On/Off & Screen Lock Button"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页14，印刷页12；Remote Controller Introduction / annotated front and top views；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 14, printed pages 12; Remote Controller Introduction / annotated front and top views; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。合并记录图中实体控件，不导入按键操作教程；未公开遥控器型号、屏幕尺寸、分辨率、电池或射频额定值。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. The physical controls are grouped without button-operation tutorials; controller model, screen size, resolution, battery and RF ratings are not disclosed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册急停软停止行为",
+            "en": "Manual emergency-stop soft-stop behavior"
+          },
+          "value": {
+            "zh": "异常行为时的Emergency Stop软停止模式会使机器人自动趴下",
+            "en": "For abnormal behavior, Emergency Stop activates a soft-stop mode in which the robot automatically lies down"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页4，印刷页2；Usage Restrictions / emergency-stop soft-stop behavior；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 4, printed pages 2; Usage Restrictions / emergency-stop soft-stop behavior; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。厂商行为描述，不证明硬接线急停、断电、STO或任何安全完整性等级；未给响应时间或停止距离。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. Manufacturer behavior description, not proof of a hardwired emergency stop, power removal, STO or any safety integrity level; response time and stopping distance are undisclosed."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册平地速度与参数表差异",
+            "en": "Manual flat-surface speed and parameter-table discrepancy"
+          },
+          "value": {
+            "zh": "注意事项称平地最高3.5 m/s；参数表最大速度为3.7 m/s",
+            "en": "Notes state up to3.5 m/s on flat surfaces; the parameter table states maximum speed3.7 m/s"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页5,22，印刷页3,20；Notes (9) versus Product Parameter / maximum speed；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 5,22, printed pages 3,20; Notes (9) versus Product Parameter / maximum speed; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。保留两处表述；第22物理页表注为Turbo测试数据，性能随环境和操作变化。注意事项排除复杂、湿滑、杂乱、超限坡面及尖锐物附近环境。不推定软件限速、版本或舍入关系，旧速度行及旗标不变。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. Both statements are retained; physical p22 attributes its table to Turbo test data, varying with environment and operation. Notes exclude complex, slippery, cluttered, beyond-specification slopes and areas near sharp objects. No software cap, revision or rounding relation is inferred; old speed rows and flags remain unchanged."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册充电持续时间限制",
+            "en": "Manual charging-duration restriction"
+          },
+          "value": {
+            "zh": "电池充电时间不应超过24小时",
+            "en": "Battery charging time should not exceed24 hours"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页7，印刷页5；Battery and Charging Precautions (7) / charging-duration ceiling；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 7, printed pages 5; Battery and Charging Precautions (7) / charging-duration ceiling; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。充电注意事项上限，不是充满时间或续航；不替换已保留的10%至90%约1小时充电条件，也不证明24小时自动截止定时器。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. A precautionary duration ceiling, not full-charge time or runtime; it does not replace the retained approximately1-hour10%-90% condition or establish a24-hour automatic cutoff timer."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册包装箱尺寸",
+            "en": "Manual packaging-box dimensions"
+          },
+          "value": {
+            "zh": "包装箱80 x45 x25 cm",
+            "en": "Packing box80 x45 x25 cm"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页24，印刷页22；Transportation and Storage (1) / packaging size；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 24, printed pages 22; Transportation and Storage (1) / packaging size; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。包装箱而非机器人外形尺寸；原文未标轴名、内外尺寸或公差。运输段要求从机身取出电池并保持箱体正面朝上。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. Packaging rather than robot dimensions; axis names, inside/outside dimensions and tolerances are unstated. The transport paragraph requires removing the battery from the body and keeping the front of the box upward."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册含包装毛重",
+            "en": "Manual gross mass including packaging"
+          },
+          "value": {
+            "zh": "产品含包装毛重29 kg",
+            "en": "Product gross weight including packaging29 kg"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页24，印刷页22；Transportation and Storage (1) / gross weight；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 24, printed pages 22; Transportation and Storage (1) / gross weight; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。不是22 kg含电池整机重量，也不是载荷；没有包装清单或各附件质量，不能相减推定包装净质量。此数值不得转填Ultra。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. Not the22 kg battery-inclusive robot mass or payload; no packing list or individual accessory masses are provided, so packaging mass must not be inferred by subtraction. This value must not be transferred to Ultra."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册储存推荐温度及禁止边界",
+            "en": "Manual storage temperature recommendation and prohibitions"
+          },
+          "value": {
+            "zh": "电源适配器及整机推荐储存20-25 C；禁止在高于60 C或低于-10 C环境储存",
+            "en": "Power adapter and entire unit: recommended storage20-25 C; do not store above60 C or below-10 C"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页24，印刷页22；Transportation and Storage (2) / temperature recommendation and prohibitions；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 24, printed pages 22; Transportation and Storage (2) / temperature recommendation and prohibitions; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。仅为储存条件，不是工作温度、环境认证或保证寿命。原文储存建议不自行统一为操作额定值。干燥阴凉并避开直射阳光、火源和强电磁场；不将-10至60 C改写为连续合格储存额定范围。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. Storage conditions only, not operating temperature, environmental certification or guaranteed lifetime. Source recommendations are not unified into an operating rating. Dry and cool, away from direct sunlight, fire and strong electromagnetic fields; -10 to60 C is not restated as a continuously qualified storage range."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册长期储存温湿度与电量组合条件",
+            "en": "Manual coupled long-term storage conditions"
+          },
+          "value": {
+            "zh": "长期储存建议20-25 C、相对湿度0%-60% RH，电池总电量低于50%",
+            "en": "Long-term storage recommendation:20-25 C, relative humidity0%-60% RH, total battery charge below50%"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页24，印刷页22；Transportation and Storage (2) / combined long-term conditions；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 24, printed pages 22; Transportation and Storage (2) / combined long-term conditions; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。仅为储存条件，不是工作温度、环境认证或保证寿命。原文储存建议不自行统一为操作额定值。同页第(3)节另称电量低于20%时充至40%-60%用于储存；与长期低于50%的表述分别保留，不推定统一推荐区间或优先级。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. Storage conditions only, not operating temperature, environmental certification or guaranteed lifetime. Source recommendations are not unified into an operating rating. Section(3) on the same page separately says to charge to40%-60% for storage when below20%; this and the long-term below50% statement remain separate, with no inferred unified range or precedence."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册低电量储存补电条件",
+            "en": "Manual low-charge storage replenishment condition"
+          },
+          "value": {
+            "zh": "若电量低于20%，及时充至40%-60%用于储存",
+            "en": "If charge is below20%, recharge to40%-60% for storage"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页24，印刷页22；Transportation and Storage (3) / low-charge storage recommendation；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 24, printed pages 22; Transportation and Storage (3) / low-charge storage recommendation; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。同页第(3)节另称电量低于20%时充至40%-60%用于储存；与长期低于50%的表述分别保留，不推定统一推荐区间或优先级。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. Section(3) on the same page separately says to charge to40%-60% for storage when below20%; this and the long-term below50% statement remain separate, with no inferred unified range or precedence."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册储存电池维护周期",
+            "en": "Manual stored-battery maintenance interval"
+          },
+          "value": {
+            "zh": "定期检查电量；每3个月充放电一次以保持电池活性",
+            "en": "Check charge regularly; charge and discharge every3 months to maintain battery activity"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页24，印刷页22；Transportation and Storage (3) / charge-discharge interval；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 24, printed pages 22; Transportation and Storage (3) / charge-discharge interval; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。厂商储存维护建议，非3个月续航、循环寿命或保修；该段没有给每次维护充放电深度。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. Manufacturer storage-maintenance recommendation, not3-month runtime, cycle life or warranty; the paragraph does not specify charge/discharge depth per maintenance event."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册充满停止充电描述",
+            "en": "Manual full-charge termination statement"
+          },
+          "value": {
+            "zh": "电池充满时自动停止充电；仍建议断开连接以维持电池状态",
+            "en": "The battery stops charging automatically when full; disconnecting is still recommended to maintain battery condition"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260911/1789114813366034.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Ultra-W官方用户手册",
+            "en": "AGIBOT D1 Ultra-W official user manual"
+          },
+          "locator": {
+            "zh": "型号ZYCXD105UW；物理页24，印刷页22；Transportation and Storage (3) / full-charge termination；原PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8",
+            "en": "Model ZYCXD105UW; physical pages 24, printed pages 22; Transportation and Storage (3) / full-charge termination; original PDF SHA256:b9a942c8adfd747fc1c0866bc7ec9ff9b7c2ea7b9d1d4618645bc72a99a875f8"
+          },
+          "conditions": {
+            "zh": "仅适用于此缓存手册的ZYCXD105UW，不转用于其他D1型号。未给截止电压、电流、恢复阈值、冗余电路或安全等级；不能据此推定热插拔或无限期接电。",
+            "en": "Only ZYCXD105UW in this cached manual; not transferred to other D1 models. Cutoff voltage, current, restart threshold, redundant circuitry and safety rating are undisclosed; hot swapping or indefinite connection is not inferred."
+          },
+          "excludeFromNumericIndex": true
+        }
+      ]
+    }
+  ],
+  "reviewUpdates": []
+}

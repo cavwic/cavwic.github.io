@@ -1,4 +1,8 @@
 node_modules/
+robotics-projects/.venv/
+robotics-projects/.training-venv/
+robotics-projects/**/__pycache__/
+robotics-projects/**/.pytest_cache/
 dist/
 .astro/
 .DS_Store
@@ -6,5 +10,7 @@ npm-debug.log*
 *.log
 review/rendered-resume/
 review/
+tmp/
+research/
 scripts/create_public_resume_candidate.py
 src/陈文聪简历.pdf

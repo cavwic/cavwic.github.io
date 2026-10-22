@@ -9,12 +9,15 @@ npm install
 npm run dev
 ```
 
-本地审阅与生产构建：
+公开发布构建（不包含本地机灵仓整库）：
 
 ```powershell
-npm run verify
-npm run build:review
+npm run check
+npm run audit
+npm run test:robotics-labs
 npm run build
+npm run check:pages-capacity
+npm run check:links
 npm run preview
 ```
 
@@ -32,9 +35,17 @@ npm run preview
 
 ## 发布顺序
 
-1. 本地修改内容并运行 `npm run verify`；`draft` 只进入 review 构建。
+1. 本地修改并运行上述检查；`draft` 不进入公开构建。
 2. 提交并推送到 GitHub 的 `main` 分支。
 3. GitHub Actions 自动构建并发布 GitHub Pages。
 4. 先验证 `https://cavwic.github.io`。
 5. 确认域名服务支持 A、AAAA、CNAME 或 NS 记录后，再绑定 `cavwic.top`。
 6. Skills 和其他下载文件使用 GitHub Releases 分发。
+
+## 发布范围与容量
+
+`npm run build` 使用 `pages` 模式，发布个人主页、文章、行业公司简介和中英文灵巧操作实验台。机灵仓、完整元数据目录、逐型号产品页和检索数据分片不进入公开站点；旧入口分别跳转到工具页或公司简介目录。供应商关联链接仍可在行业公司简介之间访问。
+
+完整数据和功能继续保留在本地 `npm run dev`。确需全量静态导出时才使用 `npm run build:local` 或 `npm run build:review`，它们不适用于当前 GitHub Pages 容量。
+
+发布流程在上传前检查所有文件总大小，设置 900 MiB 安全预算，并检查本地整库和 localhost 链接没有混入产物。实验台不重新训练或修改原始结果，摄像头仅在用户主动授权后启用；软件演示不代表真实硬件验证。

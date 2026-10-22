@@ -1,0 +1,2318 @@
+{
+  "checkedAt": "2026-09-06",
+  "sources": [
+    {
+      "url": "https://www.xpeng.com/pressroom/news/01a03797fccda01e0de68a02a256006a",
+      "sha256": "647a8d1eec6961acf2c750f7327738d8e8f5658b432bebd0732fd47adcd67508"
+    },
+    {
+      "url": "https://www.xpeng.com/",
+      "sha256": "ed8a71a15d0a224f53da3c1f9bc60570e6b3494e6c4b79b4bd556383297c97a0"
+    },
+    {
+      "url": "https://www.aheadform.com/",
+      "sha256": "41ac8fde1f0bba75e2a92d0cd696972f661674fdb6f61ae0c358bb8401fe002d"
+    },
+    {
+      "url": "https://www.aheadform.com/origin-f1",
+      "sha256": "77dd6e979d32db73adec0619b285c87ebc974314c8e78bf9d71053d723a29ff7"
+    },
+    {
+      "url": "https://www.aheadform.com/products",
+      "sha256": "5c7e156a6cc0b90abf0bfff96de072a21790c28a26b165cfcd8e4b2276cdec94"
+    },
+    {
+      "url": "https://www.aheadform.com/origin-m1",
+      "sha256": "c61fcb0be119ba02817908a757d22e29390ed6c199742d040982357d933cc614"
+    },
+    {
+      "url": "https://www.aheadform.com/elf-xuan",
+      "sha256": "fdf2bf56db76f0cf8de8356bb69764539e4165d46eab29237040f978ef6d3715"
+    },
+    {
+      "url": "https://www.galbot.com/s1/",
+      "sha256": "1ee35deb9348dc4a39307822e22ae1982172b19c35665daa459bbd4fc8a03668"
+    },
+    {
+      "url": "https://developer.galbot.com/docs/g1/2.2.4/zh/g1/",
+      "sha256": "fb6b805ca3849079e0dbff1110337e657262d959134a0af237ca19ef1d209c8c"
+    },
+    {
+      "url": "https://developer.galbot.com/docs/tm01/1.4.0/zh/tm01/",
+      "sha256": "7d21056500b8bbaa07172904ce54fe92501a1578cf1a281d28590aefc1e69e51"
+    },
+    {
+      "url": "https://www.gotokepler.com/",
+      "sha256": "517c86249ab6ee1d5b9dec53c9ec59906f7d8a58025d147c18756259c8fa3db6"
+    },
+    {
+      "url": "https://www.galbot.com/",
+      "sha256": "0309a12fee2eab008400dcadc69088e824c1bf57dde45db0e665022ca7a1b2c4"
+    },
+    {
+      "url": "https://www.galbot.com/et1/",
+      "sha256": "f31db2c2261e39a46e2ac6c8fb3c78928eb03b7a482d27251f1757e33a0a7033"
+    },
+    {
+      "url": "https://www.gotokepler.com/productDetailK2?id=2",
+      "sha256": "517c86249ab6ee1d5b9dec53c9ec59906f7d8a58025d147c18756259c8fa3db6"
+    },
+    {
+      "url": "https://www.synapxdynamics.ai/products/octoh-hand",
+      "sha256": "af0f2edec0ea151258a6b08fe20dc998f4000de52b6ef8e223bd507a25d79204"
+    },
+    {
+      "url": "https://www.synapxdynamics.ai/about",
+      "sha256": "ad85f1b7376dfb58bcf90fc2281003ca767d2fc5ddef76a9b263de23c01ae403"
+    },
+    {
+      "url": "https://gotokepler.com/productDetailK1",
+      "sha256": "8f23541a9f727560319eed26cfd7ff2d4f943a4f0df4f320cc0b152172b5a31a"
+    },
+    {
+      "url": "https://www.synapxdynamics.ai/products/octosense",
+      "sha256": "071184f8a61105ad156a877b8deeac12a549b9fa675652bd2c38eb86c95386b3"
+    },
+    {
+      "url": "https://www.synapxdynamics.ai/products/octomind",
+      "sha256": "69a470a6f03850b8933ad5ff7b8ce5bdfa8331d5a810fbe8b1d722cafb2577c3"
+    },
+    {
+      "url": "https://www.worldrobotconference.com/expo/company/709.html",
+      "sha256": "207d71f7b27e97535d4fe511e84f0a276ac8d8703a89bc1d4efee593b2b86c76"
+    },
+    {
+      "url": "https://theo-hand.com/hand/details/Eco12",
+      "sha256": "d161cfb6f058994e1b6b51fd5be56ef5c05ae9ee1616ba5482f5810e4f85b688"
+    },
+    {
+      "url": "https://theo-hand.com/hand/details/NewStd16A",
+      "sha256": "d161cfb6f058994e1b6b51fd5be56ef5c05ae9ee1616ba5482f5810e4f85b688"
+    },
+    {
+      "url": "https://theo-hand.com/hand",
+      "sha256": "d161cfb6f058994e1b6b51fd5be56ef5c05ae9ee1616ba5482f5810e4f85b688"
+    },
+    {
+      "url": "https://theo-hand.com/hand/details/Pro20A",
+      "sha256": "d161cfb6f058994e1b6b51fd5be56ef5c05ae9ee1616ba5482f5810e4f85b688"
+    },
+    {
+      "url": "https://en.engineai.com.cn/product-t800.html",
+      "sha256": "42dbacd5bc6819618e495a1645c92e60cd487df8c5b6b0af43865b452d22d917"
+    },
+    {
+      "url": "https://en.engineai.com.cn/",
+      "sha256": "4cbfaea330582a5b926d004b4b0841ae82f8dd1fef54b0114fea9bdd25fbb115"
+    },
+    {
+      "url": "https://en.engineai.com.cn/product-pm01",
+      "sha256": "090f60d93c3fa943c36d6c4b531a6aa8a6518db1f523687225f98044ecd448fa"
+    },
+    {
+      "url": "https://www.engineai.com.cn/product-js01.html",
+      "sha256": "8d82b43b98a70346009893ec1e7891daadbb6b7d0e42b89292a63623cc4319db"
+    },
+    {
+      "url": "https://www.engineai.com.cn/sitemap.html",
+      "sha256": "e3594bae112a9254e836c5e039b14488191b3f2849043a571022c4f44316adbe"
+    },
+    {
+      "url": "https://www.engineai.com.cn/product-sa01.html",
+      "sha256": "5ea95253b7df055617f0055941c61fc8beeb25953f51193751959453269e737f"
+    },
+    {
+      "url": "https://www.engineai.com.cn/product-se01.html",
+      "sha256": "b62b571639f3c90b967c0eb71b64da143a3f0c8d90d4a3e644c08bcfad6e15d0"
+    },
+    {
+      "url": "https://www.engineai.com.cn/product-s2.html",
+      "sha256": "2651f80751ab6b42716f269920c293ddfe2de4da480c3888db6098cad9a588d1"
+    },
+    {
+      "url": "https://www.limxdynamics.com/en/products/tron1/spec",
+      "sha256": "00e15ca12b48653e2c691f9d256bcbdcf2b17233bcf68bb91a320c01417188a7"
+    },
+    {
+      "url": "https://www.limxdynamics.com/en/products/oli/spec",
+      "sha256": "c39845ac1528e40289e7aafdd63762dbbf9a8cb5d283036c9b2cb27bc9397bc7"
+    },
+    {
+      "url": "https://www.limxdynamics.com/en/products/luna/spec",
+      "sha256": "ab0daaff30d305d1645152bbafa4c17f8c827ce449819dabc0cd4787f7f726a8"
+    },
+    {
+      "url": "https://www.limxdynamics.com/en/products/tron2/spec",
+      "sha256": "6ddcc469507c8792f262ac979a7d5d8e80ceb8ed5ffcca1408f3729ef23e95b6"
+    },
+    {
+      "url": "https://www.limxdynamics.com/en/products/fluxvla",
+      "sha256": "2e62ce2740c3b1e7e729c9a0d52015fe53a131fc18c159588af8c81407ea8976"
+    },
+    {
+      "url": "https://www.limxdynamics.com/",
+      "sha256": "9043aab16d57bcff553159893e13cdf0ff48fc8688badee8ece0ea9c3dc4a8f1"
+    },
+    {
+      "url": "https://huggingface.co/tars-robotics",
+      "sha256": "b1af31bc3207e86806fad5a4b584e8938c4367c3688f08221eb342821f1161d6"
+    },
+    {
+      "url": "https://flux.limxdynamics.com/",
+      "sha256": "a7e81de4ea5fe020fe4a8f68adea67dbdac06fe581a7158cbe37562f133bbfb8"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/humanoid/products/walker",
+      "sha256": "b02c27046cbac3a92984e3ab8fc567c9bcde733c709e0b69ba4b609e3a978cc5"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/humanoid/products/walker-x",
+      "sha256": "3eeba08e9144792cca9690aceaf68a0750c33601c7f06d13deb4bfe182a58d69"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/",
+      "sha256": "ac7f149962037055df105404149ab7f854077465370eb433d9e07469fff86eee"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s2",
+      "sha256": "584f19b0f988c404573b50c4501859ae7c8bbd52050d60951433b220cb3d1052"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s1",
+      "sha256": "2f0da4e2462e7139ba93a9e0528c9c1e516de02c7eb32d383987e68b6ad6103f"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s",
+      "sha256": "80dfdc34d8b19e784d5dfd8afd8c377dcfb42ec6ac824f31cfb52e12ad5c1171"
+    },
+    {
+      "url": "https://wiyh.tars-ai.com/",
+      "sha256": "217ddb467475506574ef5a19ecb978128e881f13542fa3452ec7331595c5d839"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/humanoid/products/walker-c1/",
+      "sha256": "5afeee5ce27bf27a4655593a62ef970a16af96b77490522ef8f25e35573ca971"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/ai-education/products/ugot",
+      "sha256": "d32fed9400bd94a65d88f4002044626c22f2c26ffd1e6a1fd0b26881d255d367"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/ai-education",
+      "sha256": "b563d3211c0f1257593fbfa74767258ac8c859d48e1ade15ad4216bbd653015e"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/ai-education/products/ukit-explore",
+      "sha256": "734fc7cc1270c868c373523906acc819a8d552ae3ac8ddff7083a7c7e46c4b02"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/ai-education/products/yanshee",
+      "sha256": "de7e0aebaaf4076297d150114b26cc343016a1cb6f40f5c537854b2823aac77d"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/about/company-profile",
+      "sha256": "5eec4e1d87ef6c2876476654ca11b7a1cb6e5a532c850d862a5fcfc3a0c7833c"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/ai-education/products/ukit-ai",
+      "sha256": "8d2c97dd0e8b8d033bc1216506345341ec9e7da8fa8a77042088ed9532b404c0"
+    },
+    {
+      "url": "https://www.robotera.com/en/",
+      "sha256": "51769cd554f41eeb4477c1732b4f4031f812cfaa76a9133937ce2728606c4d0e"
+    },
+    {
+      "url": "https://www.robotera.com/en/product/L7",
+      "sha256": "51769cd554f41eeb4477c1732b4f4031f812cfaa76a9133937ce2728606c4d0e"
+    },
+    {
+      "url": "https://www.robotera.com/en/product/Q5",
+      "sha256": "51769cd554f41eeb4477c1732b4f4031f812cfaa76a9133937ce2728606c4d0e"
+    },
+    {
+      "url": "https://www.robotera.com/en/product/M7",
+      "sha256": "51769cd554f41eeb4477c1732b4f4031f812cfaa76a9133937ce2728606c4d0e"
+    },
+    {
+      "url": "https://www.robotera.com/en/product/Lite",
+      "sha256": "51769cd554f41eeb4477c1732b4f4031f812cfaa76a9133937ce2728606c4d0e"
+    },
+    {
+      "url": "https://www.robotera.com/en/product/PRO",
+      "sha256": "51769cd554f41eeb4477c1732b4f4031f812cfaa76a9133937ce2728606c4d0e"
+    },
+    {
+      "url": "https://www.robotera.com/en/model",
+      "sha256": "51769cd554f41eeb4477c1732b4f4031f812cfaa76a9133937ce2728606c4d0e"
+    },
+    {
+      "url": "https://www.robotera.com/en/product/XHAND",
+      "sha256": "51769cd554f41eeb4477c1732b4f4031f812cfaa76a9133937ce2728606c4d0e"
+    },
+    {
+      "url": "https://www.noetixrobotics.com/",
+      "sha256": "4af6abc99beee233d8bee68c42a4a3ec6dec4373541936040e401d2d754777cc"
+    },
+    {
+      "url": "https://web.noetixrobotics.com/docs/",
+      "sha256": "eccbea2b476f8d9744773759c4e2a91fbe2c51bd9492c7a8a761a2aabd026a78"
+    },
+    {
+      "url": "https://web.noetixrobotics.com/docs/%E9%80%9A%E7%94%A8%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/N2%20SDK%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/",
+      "sha256": "6983235281d0725d993743b5575c6a4eb9106e6eee270b426616c5528ff61f7a"
+    },
+    {
+      "url": "https://www.noetixrobotics.com/mobile/detail/XY",
+      "sha256": "f3f5467c52fb53bebb6eb15cc6e917a2656957662cf8189cd4e9a6a6fdc665d4"
+    },
+    {
+      "url": "https://www.noetixrobotics.com/detail/E1",
+      "sha256": "4af6abc99beee233d8bee68c42a4a3ec6dec4373541936040e401d2d754777cc"
+    },
+    {
+      "url": "https://www.noetixrobotics.com/mobile/detail/XN",
+      "sha256": "f3f5467c52fb53bebb6eb15cc6e917a2656957662cf8189cd4e9a6a6fdc665d4"
+    },
+    {
+      "url": "https://www.noetixrobotics.com/mobile/detail/W1",
+      "sha256": "f3f5467c52fb53bebb6eb15cc6e917a2656957662cf8189cd4e9a6a6fdc665d4"
+    },
+    {
+      "url": "https://www.fftai.cn/",
+      "sha256": "3f6d193c4cccdcb9c5c9fdaec847abd244606e690c6d06dcefacc8df5a209bc2"
+    },
+    {
+      "url": "https://www.fftai.cn/products-gr3c",
+      "sha256": "3f6d193c4cccdcb9c5c9fdaec847abd244606e690c6d06dcefacc8df5a209bc2"
+    },
+    {
+      "url": "https://www.fftai.cn/ecosystem/n1",
+      "sha256": "3f6d193c4cccdcb9c5c9fdaec847abd244606e690c6d06dcefacc8df5a209bc2"
+    },
+    {
+      "url": "https://www.fftai.cn/grx/gr3",
+      "sha256": "3f6d193c4cccdcb9c5c9fdaec847abd244606e690c6d06dcefacc8df5a209bc2"
+    },
+    {
+      "url": "https://www.fftai.cn/products-fdh6",
+      "sha256": "3f6d193c4cccdcb9c5c9fdaec847abd244606e690c6d06dcefacc8df5a209bc2"
+    },
+    {
+      "url": "https://support-old.fftai.com/docs/GR-X-Humanoid-Robot/GR2/GR-2_Introduction/",
+      "sha256": "151390591a348b3a200b3c2a9810bd04210398ba82769e255f072091c3d44599"
+    },
+    {
+      "url": "https://support-old.fftai.com/docs/GR-X-Humanoid-Robot/GR1/GR-1_Introduction/",
+      "sha256": "bfb52bef20357a8050ee929c514965c76fd3801d88d49e75d57684ac1f1ca520"
+    },
+    {
+      "url": "https://www.fftai.cn/products-galileo",
+      "sha256": "3f6d193c4cccdcb9c5c9fdaec847abd244606e690c6d06dcefacc8df5a209bc2"
+    },
+    {
+      "url": "https://www.fftai.cn/open-source/17",
+      "sha256": "3f6d193c4cccdcb9c5c9fdaec847abd244606e690c6d06dcefacc8df5a209bc2"
+    },
+    {
+      "url": "https://fftai.com/en/grw",
+      "sha256": "3f6d193c4cccdcb9c5c9fdaec847abd244606e690c6d06dcefacc8df5a209bc2"
+    },
+    {
+      "url": "https://www.fftai.cn/rehab/solution",
+      "sha256": "3f6d193c4cccdcb9c5c9fdaec847abd244606e690c6d06dcefacc8df5a209bc2"
+    },
+    {
+      "url": "https://www.booster.tech/booster-k1/",
+      "sha256": "852e9ab41ddfb135bf7e6437109193015ce16893ff2411d172187b21751f7dd2"
+    },
+    {
+      "url": "https://www.booster.tech/booster-t1/",
+      "sha256": "b97889c69897ab24dfa04eb76143a1a175e9df8bc1c3044afec14b4e685504f2"
+    },
+    {
+      "url": "https://www.booster.tech/booster-t2/",
+      "sha256": "305db7f9013eb88f5407ab518a2720815d3084ed93f1dde273814bcf5457d119"
+    },
+    {
+      "url": "https://www.booster.tech/",
+      "sha256": "b6c6b6d4e6e886798c34f4fccd8160c36a82974dcd435a796c2c6c4447504222"
+    },
+    {
+      "url": "https://paxini.com/cn/",
+      "sha256": "78fd8b24c5385c899e51cffe9dc7e70cd4dfb0d65bbe320a21b0642326e52d9a"
+    },
+    {
+      "url": "https://paxini.com/cn/ax/6d",
+      "sha256": "492623244cf42b7a05c663e8be67a93134826a91e98bb30ff2206c83087e7550"
+    },
+    {
+      "url": "https://paxini.com/cn/ax/gen4",
+      "sha256": "a93f4fc71b981b7d11569de1fcf4d80f21eaef19bd9f73b169312651326df8f5"
+    },
+    {
+      "url": "https://paxini.com/cn/ax/gen3",
+      "sha256": "099a0a1193891dd1bf0c478474e20424ee87bb97c393bf4fd5c429edf9e22eb7"
+    },
+    {
+      "url": "https://paxini.com/cn/ax/footrix",
+      "sha256": "199940cda02e1d8ceb773bcbafafa74c9852f696f578ab094f48bc749eb116ec"
+    },
+    {
+      "url": "https://paxini.com/cn/dex/gen2",
+      "sha256": "5c0321a68b617924c46602a03cf8fea8fe30247c4ccb1136336ca88d85d4609f"
+    },
+    {
+      "url": "https://paxini.com/cn/dex/gen3",
+      "sha256": "87c28eb60c96e39ddd423d9d6f931638327fd57f93a4748b081b0a1d87f072f1"
+    },
+    {
+      "url": "https://paxini.com/cn/robot",
+      "sha256": "a6d8bf9e3af6a15ae1f4469cd49511296ff9ed8c1797376f35d03bd654e265ac"
+    },
+    {
+      "url": "https://paxini.com/cn/ax/torque",
+      "sha256": "d9a30815b414e463ed0a06a77be5734af0e19a555ba45139cbb12337c145eb35"
+    },
+    {
+      "url": "https://paxini.com/cn/robot/doubleOne",
+      "sha256": "685c45fb6e7a122f7fcd32e699ac9bdc0addc04f8a298f9e82a8a4770a25b12c"
+    },
+    {
+      "url": "https://paxini.com/cn/ax/pxcap3",
+      "sha256": "93feeb4d5c65527242f30746096a5c35b14f4a0de4f732e6966548f9345a8775"
+    },
+    {
+      "url": "https://paxini.com/cn/ax/pxdex3",
+      "sha256": "c01985aff759b635a6dc0b0ae0a959021580fa3da71655c3e7727814a805d1a3"
+    },
+    {
+      "url": "https://paxini.com/cn/ax/pxcapProp",
+      "sha256": "1771ae168520e26c02c1626899bef51f709d34464b0904a2828aabbea87f2948"
+    },
+    {
+      "url": "https://omnisharingdb.paxini.com/home",
+      "sha256": "2a5812ff2e3e8724f3e3822f0adaa308ddab8760f3d59653903367fe49a8ade9"
+    },
+    {
+      "url": "https://www.linkerbot.cn/",
+      "sha256": "6347584167ed4437f515d23184d96b2d59a227151fe41b2944b969190b0c657c"
+    },
+    {
+      "url": "https://www.linkerbot.cn/details/LinkerHandL6/",
+      "sha256": "a612e5bac26af7290f5948346240e571a44127acaf903e9676ff0f8413958ed8"
+    },
+    {
+      "url": "https://www.linkerbot.cn/details/LinkerHandO6/",
+      "sha256": "a66d8c2d33b9016951e07d3184209c0d65d45adcb14aecd4f28db3b2b8218a96"
+    },
+    {
+      "url": "https://www.linkerbot.cn/details/LinkerHandL20/",
+      "sha256": "c63b8c9cf5347c3089e555d4d3345447b34cbf36b4b998e5198494c5c907bf41"
+    },
+    {
+      "url": "https://www.linkerbot.cn/details/LinkerHandL20Lite/",
+      "sha256": "98c35b06e7a57289914825bd76490c993b36f39bfe39e6141c4871b8e1f67c6a"
+    },
+    {
+      "url": "https://www.linkerbot.cn/details/LinkerHandL30/",
+      "sha256": "a6d09129db5ef3dd2a15bec3969aafa144ee02d949ffb2aa991edc8b8e83441b"
+    },
+    {
+      "url": "https://www.linkerbot.cn/details/LinkerHandO30/",
+      "sha256": "22457807c2124d52aabdcac17d001bf69af833ffd566ebdf116c78733eff902c"
+    },
+    {
+      "url": "https://www.linkerbot.cn/details/LinkerArm/",
+      "sha256": "a19208c601bd4bb56f77ee828e2c48e73abc215bd8cdc62614c71cbb03f59e00"
+    },
+    {
+      "url": "https://www.linkerbot.cn/details/LinkerHumanoid/",
+      "sha256": "2c1c5aa895ce6773fe0f59233e54deac2e2719f8c8cf79b8c23acb96d622e6cc"
+    },
+    {
+      "url": "https://www.linkerbot.cn/details/LinkerMCG/",
+      "sha256": "dee529a543102f543e3e2c87715a88356790792826b8ef841f82f14218be7cf5"
+    },
+    {
+      "url": "https://www.linkerbot.cn/details/LinkerTA/",
+      "sha256": "26007270a237a7ab7b0e0e52c71eab09b4773441a8f77a685598f471b198d9d7"
+    },
+    {
+      "url": "https://www.linkerbot.cn/details/LinkerFFG/",
+      "sha256": "cd273f78af843c24b3b7774f9ee4bcc9531137fe2ad59275b33b1629338244c3"
+    },
+    {
+      "url": "https://www.linkerbot.cn/data/",
+      "sha256": "9385b3b80071291abb654e43522c36b963807792d0389388a18c37b1a1b600e1"
+    },
+    {
+      "url": "https://www.linkerbot.cn/details/LinkerEG/",
+      "sha256": "31426922b2284721862163800066ae40924b0a59c7545e2690ac9360ca4c59a0"
+    },
+    {
+      "url": "https://www.unitree.com/cn/As2/",
+      "sha256": "00e3fcd3145f3fbe389313597cfb05ba1f57e15ab018ec177496aec176aced50"
+    },
+    {
+      "url": "https://www.unitree.com/cn/go2-w/",
+      "sha256": "5008e7f4321eb2ca8952b8014eb6fc0560913839fd4883d1003e29b80d56a32c"
+    },
+    {
+      "url": "https://www.unitree.com/cn/",
+      "sha256": "e9a8a4ac9e7f4b61bfb10614c6ce58a6c0596357304f5a46568af84ff23a4f20"
+    },
+    {
+      "url": "https://www.unitree.com/cn/go2/",
+      "sha256": "bb42f2a9225af3a46103def2a7f083cb981ff8be932508a78f8babe185d9706a"
+    },
+    {
+      "url": "https://www.unitree.com/cn/go1/",
+      "sha256": "d349a5251fed108e8da2f4d9919168e8827b1ff173137c724221bc3233b25dc3"
+    },
+    {
+      "url": "https://www.unitree.com/cn/As2-W/",
+      "sha256": "250bccd118a0b70206ac24a358c1b331c0939fcf9c9f9c9704771b9c67a91128"
+    },
+    {
+      "url": "https://www.unitree.com/cn/A2/",
+      "sha256": "ea636f6f02d841ded5aaa3e2aac641efb9d9a45b1ecd297972b216bf98932635"
+    },
+    {
+      "url": "https://www.unitree.com/cn/b2-w/",
+      "sha256": "9524d7846f24a72b3630028caabaf5b75b9a6296da35851db0dcfca9cb9cbfaa"
+    },
+    {
+      "url": "https://www.unitree.com/cn/a1/",
+      "sha256": "b8b0f4e8cc0292096504d4215d8520ce6816905f2d979a43cd094aac6bdc5a55"
+    },
+    {
+      "url": "https://www.unitree.com/cn/A2-W/",
+      "sha256": "ac6a15eb9b2f02a3faa741d73567afe868258dc7b344bddee97d1e03f7d29e2d"
+    },
+    {
+      "url": "https://www.unitree.com/cn/b2/",
+      "sha256": "e2f1b6106f52674af1f9a70d8e4529cd9bc8530bc6cdef9c8d49f08f745fbc63"
+    },
+    {
+      "url": "https://www.unitree.com/cn/b1/",
+      "sha256": "f48e69b96d0b28ca052df9248574b56ff0d51a3a5063278727cb5281142bba60"
+    },
+    {
+      "url": "https://www.unitree.com/cn/H2/",
+      "sha256": "f0ba49e7faad33f442d6b629a04b916843f7cb433a7ef1af0d8b950ec8b422cc"
+    },
+    {
+      "url": "https://www.unitree.com/cn/R1/",
+      "sha256": "3645ec6e9408a6528256b7d43e903e81f0b41200aa48817e360ad7c73f02f2eb"
+    },
+    {
+      "url": "https://www.unitree.com/cn/g1/",
+      "sha256": "0e581a2af0381c94d5cf5bb91e7ea402a2abd88ecf1d11b9426a3d75dc51b8cc"
+    },
+    {
+      "url": "https://www.unitree.com/h1/",
+      "sha256": "a15589bbf8c7347b532c3656dc3642a48025bb07e33a6bcb97f419203a4b3cbc"
+    },
+    {
+      "url": "https://www.unitree.com/cn/aliengo/",
+      "sha256": "21d55363cba007079fee4a1f9bc0a2b8b1f66ba72745222fcab3631693be1216"
+    },
+    {
+      "url": "https://www.unitree.com/cn/H2plus/",
+      "sha256": "05471cca9dadef6a58ffa379e35c37de217c0015069956d7bcfbbf26a9cf5520"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/G1-D/",
+      "sha256": "7b63d9d6fe65f67829b72be9c353c6c912b13112911764d8b881bfd6c125fed0"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/robocup/",
+      "sha256": "bc20bbf11fac4fea570f11e4585b43b570537d482d6d952e18da0fc041532eb6"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/R1-D/",
+      "sha256": "10d97a1d1a431815f66b29efc78ce490e320d7dbad58238cadb669fb8817d177"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/Dex1-1/",
+      "sha256": "eac8c18dfb4f5b14bef84dc6454a8f90a57023ddefeab2448f359f2d1171fd68"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/Dex2-5/",
+      "sha256": "666a0e08136281b80da1b37fc0fc6cf3d520722bad057df585e11e05283edc3c"
+    },
+    {
+      "url": "https://www.unitree.com/cn/z1/",
+      "sha256": "9747f582f82f2f3c124e618e774bb6c42fb168846546ff01efb4caeb3ed8e938"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/Dex3-1/",
+      "sha256": "fd9190bd308a679109beb5b4519de8e98d07dc746627bdbbeea1feb3badb0d5b"
+    },
+    {
+      "url": "https://www.unitree.com/cn/LiDAR/",
+      "sha256": "0238c665825c12fa20d92168db927a4ddee330d386ab15fe7f268375118f1a18"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/SV1-25/",
+      "sha256": "678b2b30c6ea67039a444198cd666318a04f30508affb72b9edfa88c9a9634a7"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/IM6014/",
+      "sha256": "cc036be2418b4a662b65d67fa4f3c8e973b65b272c74db2d6230706732609ed8"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/DigitalServo/",
+      "sha256": "79d234497b198e8f2b5461ee3e79be9debc8920dcb8e1fbb5b1e05224fa5040c"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/Dex5-1/",
+      "sha256": "d87d0c10a1805e79e03a6dbda952b6f74c4dd0ce02147c1e9645bcc8feff926f"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/b1-16/",
+      "sha256": "5716a0914e719da6cf9d6ece51a7e98a255c3ae115925e83f45400c0dcade0eb"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/boxing/",
+      "sha256": "db8ee3b50500a1d2beed42ea9e59f4b4da23fbe7cc331903bc6aa70a65730666"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/H2-D/",
+      "sha256": "ddabfecbae3566a25a043009cf54a98625c13de918197b0e97cfdc09c636440c"
+    },
+    {
+      "url": "https://www.unitree.com/cn/L2/",
+      "sha256": "63eb8cfdb6bd1f505dca65c27d888b4a79a08d6e6a90a650ae222ef27ca07611"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/R1-ARM/",
+      "sha256": "7ad59ddd7f8dcaffbdfcc5bb6413d37f508061d776d2e5d05b2ff32823674eab"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/go1/motor/",
+      "sha256": "363081322b87f7c1f75348201b6d2aaf8e413a5e0533812687bcbc2bc420164e"
+    },
+    {
+      "url": "https://www.unitree.com/cn/D1-T/",
+      "sha256": "8439d232076f0f23d26b788fd8715154a6826354700d4f767a3ec0f6760343e5"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/R1/battery/",
+      "sha256": "f5dcf8579fa0167a159b893007bdf72735e8f602cbe47087332d6f4a3a2403a9"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/A1/motor/",
+      "sha256": "713007ea0aa423eb66f5f944a363a6edf6b293311bba5372195df81c036c6f03"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/go2/battery/",
+      "sha256": "04fab41d915c4d9bc48647a09581d664294179bb3e2a490b270bd0a865957ec5"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/go2/charger/",
+      "sha256": "e199daf1b10c45026669f15c881d3e7fc82ae5a041b76e27ead04ad6a0915e5a"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/go2/control/",
+      "sha256": "a5bd5cfdd1efa38957c85af817d45e6559c98b5833244848eb5ae0c927a9a036"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/go2/foot/",
+      "sha256": "ea6cf6fa2ec198f2a25d2df4098b490ed9ceaed50291b49fdae13119a8acb5e7"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/go1/battery/",
+      "sha256": "6b49618a326d19518c0ff80f6bed2acd62d4e4b7e7dd7939ea3dc89c2142bdcb"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/aliengo/battery/",
+      "sha256": "6b98ad6d4e80ad246bbde5c6b3130df7ba910f63cb36830097c4edf36d9136d5"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/A1/battery/",
+      "sha256": "c6f5db67f524128c084640e16c3f547ff547adfbbd317f84dc9fe2f9db45f892"
+    },
+    {
+      "url": "https://www.synapxdynamics.ai/news",
+      "sha256": "c7d2b4a3f70cbf08816bc1fc615dba752054f5a5fc0395336454237a2ce48872"
+    },
+    {
+      "url": "https://www.booster.tech/about-us/",
+      "sha256": "7f4cab6e4166f273ef97e12c9b3db4c9fdbdb1aef10136faac6a84205f11e9e8"
+    },
+    {
+      "url": "https://www.limxdynamics.com/en/news/BK000055",
+      "sha256": "6eb05803d0306d4050d604f42d9cf495221bf13fefe42681a6fdce73331b7f52"
+    },
+    {
+      "url": "https://www.limxdynamics.com/en/news/BK000064",
+      "sha256": "910489abeac96e50a4f480211233f826bc7cde2c2f36f9a6db66c2cde97ece27"
+    },
+    {
+      "url": "https://www.limxdynamics.com/en/news/BK000042",
+      "sha256": "db933ef44c8feda946ec282cf42e02e9f912e2da9fd7db4a2e73be1eb72af805"
+    },
+    {
+      "url": "https://www.limxdynamics.com/en/news/BK000044",
+      "sha256": "4036b3d82610bd1cbcdcca8b2200795a292e653d1c4be85e23b4bd72c3c411c7"
+    },
+    {
+      "url": "https://www.unitree.com/cn/investor/",
+      "sha256": "213cecec97a34fe1d9a78e7e5ca8f2c00bf6f1eaf8746dc604cc85d658a96c87"
+    },
+    {
+      "url": "https://www.galbot.com/about/",
+      "sha256": "58416f13ccd1b9057960cc51587205edfc16386fcba933e69aaa1984c19f317d"
+    },
+    {
+      "url": "https://paxini.com/cn/itpu",
+      "sha256": "c5239770b5536242adbc65c67964cc8bcb6801bc2b53825dd0ebd6d1d53d1c4c"
+    },
+    {
+      "url": "https://www.noetixrobotics.com/en/mobile/",
+      "sha256": "f3f5467c52fb53bebb6eb15cc6e917a2656957662cf8189cd4e9a6a6fdc665d4"
+    },
+    {
+      "url": "https://www.robotera.com/news",
+      "sha256": "51769cd554f41eeb4477c1732b4f4031f812cfaa76a9133937ce2728606c4d0e"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/file/2026/04/21/797179114676293.pdf",
+      "sha256": "f5736f8d7b3794d92f69d2ad04cba8fe1607734c507e853b6109581b4224024d"
+    },
+    {
+      "url": "https://www.engineai.com.cn/product-pm01",
+      "sha256": "1d923d53bb3977a4b57b4d5bba70df377339871eda589722d0cf3c073928ee6e"
+    },
+    {
+      "url": "https://www.engineai.com.cn/about-news-media/55.html",
+      "sha256": "9d7460e7dfef5941d5226d1aa29e59f5e9eda19e807bd3f1348acb6c0c5ad8e4"
+    },
+    {
+      "url": "https://github.com/BoosterRobotics/booster_assets",
+      "sha256": "1f0bef980a5f10c46768c3c803bf5aae0a6541c531b993e2e48fb9a7c76aeaf8"
+    },
+    {
+      "url": "https://www.synapxdynamics.ai/news/46",
+      "sha256": "ffa13dc255c186ad3ac9bef394b037ccd531c8151ae4d312fe7307935b2290e0"
+    },
+    {
+      "url": "https://github.com/BoosterRobotics/booster_gym",
+      "sha256": "5d79ab5d7f07a40d073cdb4beb125d5a8575b86d058630aa6f55317955c340f8"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/humanoid/products/cruzr-y1",
+      "sha256": "df9df74cc5876def1cd578d122d7d0127a8a5c0221af81b8f19d2250415014c4"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/commercial/products/cruzr-1s",
+      "sha256": "cc7bed1613e58e702288ba99000cbf43fd8b7f1278736511607f6a3e68138cc1"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/commercial/products/cadebot",
+      "sha256": "a42d2fbf69445f81bf4c81af9dbb6bacdf38b4b37e94dfc7e2a4d95b6b90b8d0"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/humanoid/products/cruzr-s2/",
+      "sha256": "e727fe035973c5745ca9062c2f2634cfbea48546384e4d390c428f363c5569eb"
+    },
+    {
+      "url": "https://www.unitree.com/disclosure/listedinfo/announcement/%E5%AE%87%E6%A0%91%E7%A7%91%E6%8A%80%20%E5%85%B3%E4%BA%8E%E5%8F%98%E6%9B%B4%E6%B3%A8%E5%86%8C%E8%B5%84%E6%9C%AC%E3%80%81%E5%85%AC%E5%8F%B8%E7%B1%BB%E5%9E%8B%E5%8F%8A%E4%BF%AE%E8%AE%A2%E3%80%8A%E5%85%AC%E5%8F%B8%E7%AB%A0%E7%A8%8B%E3%80%8B%E5%B9%B6%E5%8A%9E%E7%90%86%E5%B7%A5%E5%95%86%E5%8F%98%E6%9B%B4%E7%99%BB%E8%AE%B0%E7%9A%84%E5%85%AC%E5%91%8A.pdf",
+      "sha256": "971f866bc4a23bba04461903c58d61371897bb66962bce2ec50aa9594c029e2f"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/humanoid/products/panda-robot",
+      "sha256": "12f02cbe56732f000edf7b6d95ee94900e8181a475b0c0a63e4431a5f1215b99"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/humanoid/products/walker-c",
+      "sha256": "691cb942e1c18a5c004395c794bf63f7080f306afb35c24f3b6646236e44668f"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/ai-education/products/walker-tienkung",
+      "sha256": "2a50b5621ccff790e54cc40dae08f236b14864fe63c68a60c64024845e2d4741"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/ai-education/products/ugot/",
+      "sha256": "81db8c7160ea5bd613568a873a4e360c259264ba398fbb907a2bc5061192d0e0"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/consumer/humanoid-robots/alpha-series/alpha-1e",
+      "sha256": "01414ef295c6ffc74ba62d245f6937b1af1be201c23a8221ad2f0bfc73a7ec39"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/consumer/humanoid-robots/alpha-series/alpha-mini",
+      "sha256": "42bfadd3fc12224a276e2e46ad396234c64e8aa51867b97349f5a82b84e94ac1"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/humanoid/products/walker-c1",
+      "sha256": "ebedec8c7a14d0181e75895f58bdc43408f0e05e3034d949118613f17930ac3f"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/support/downloads",
+      "sha256": "743c5201bd41cbf101de9f852a406da745d84b367160ac2781f61e1ea21994a9"
+    },
+    {
+      "url": "https://yandev.ubtrobot.com/#/en",
+      "sha256": "eef6eb6a658af758c63cb788a7bbdfdce33df7f2fba08f874935b97205a97a62"
+    },
+    {
+      "url": "https://www.unitree.com/mobile/benben",
+      "sha256": "a06811dbe1acba876ba1d79697a42dce7132fe1b0d453e203209c402c1b3a429"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/image/2026/06/18/817671944933445.png",
+      "sha256": "96bb0b3b34f0e21f0dfe6970d2f94ca9392ff66c02c43408920c03e6b8d9c501"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/image/2024/10/14/601089298387013.png",
+      "sha256": "b4144326d80d5f99b6eadf4d8a4fcf3a49ba0e6fba9e6aa148282d31a4e23412"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/image/2026/08/25/841740214788165.png",
+      "sha256": "e187b3396d023c98368c4f52e106e021bdc895da984f15d1ee6db5bc7373cb25"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/image/2025/11/26/745479417122885.png",
+      "sha256": "4bdd67b611e7672eeb96ca22ad02a22d708563885416acd91c01de42896e7fd5"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/image/2025/08/29/714023027445829.png",
+      "sha256": "b36e1ad8cd266f6aa9e6051adcf453b5ee948ea8433aa146aabc58cf2536b216"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/image/2025/12/18/753205215010885.png",
+      "sha256": "b36450672db9625b82614f71f00d4560ef7e0dac2bea7025844bc2055f3474f2"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/image/2025/09/25/723611625238597.png",
+      "sha256": "58e7581b9d0a31f56bccd38498d899d1e3b5af899805516c78616e0539eae2a1"
+    },
+    {
+      "url": "https://www.noetixrobotics.com/mobile/assets/index-D1888-SO.js",
+      "sha256": "ea470b15c8fd8253b2d6fc46a1424e503ea1012fc3bd246b7f26037439ff97e5"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/image/2026/06/22/819033805799493.png",
+      "sha256": "22e2100a206e7b86096d30709d266c7f7571e4c140dfff96ffb03e49a146fdc2"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/image/2026/06/22/819088659456069.jpg",
+      "sha256": "8c971dc1969f501510cf5f71c4b9ea3d86247213abb49642de3eb2e161b87e87"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/image/2026/06/22/819033432338501.png",
+      "sha256": "63d54fcfd0942d181d568e3889f75771f46628e3183583268d6cbcb8f700babf"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/image/2026/06/22/819103170334789.jpg",
+      "sha256": "15df694a8ce4ee38a9851a734cbaf5fcb75a45a97beca1deef74ff6065dbe8f5"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/image/2025/04/25/669354597961797.jpg",
+      "sha256": "45aefe0908fa55be1a6b5c1215b9a1b20060fac5882f0bb0dd88c92297d90565"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/image/2026/08/25/841740323065925.png",
+      "sha256": "bf9127c477992d5e46163031cdc4baef88e296ecc3ea113cd314a905f902a9a8"
+    },
+    {
+      "url": "https://www.noetixrobotics.com/spec/XY",
+      "sha256": "4af6abc99beee233d8bee68c42a4a3ec6dec4373541936040e401d2d754777cc"
+    },
+    {
+      "url": "https://www.noetixrobotics.com/detail/XY",
+      "sha256": "4af6abc99beee233d8bee68c42a4a3ec6dec4373541936040e401d2d754777cc"
+    },
+    {
+      "url": "https://www.booster.tech/store",
+      "sha256": "ac9a52fd99c6d8b3fefb24838e8951914ce6a285fb87da271953ca3a50b1c52d"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/product-brochure",
+      "sha256": "6759ec65771401fb70db90850fdb6c1b3d50f1408f7368663eaaed3fc6d89ff9"
+    },
+    {
+      "url": "https://docs.booster.tech/",
+      "sha256": "40f231af7d04e58483e737e0e5705df6c09bf4f71a83e137d4e3a1e713df3aef"
+    },
+    {
+      "url": "https://noetixrobotics.feishu.cn/wiki/B9oCwy2i9i6H6KkCYf2cpeSNnWe",
+      "sha256": "e504489d76c51fc42477ed98acd649150f46b9f5b01dba18c9a83b25aa2050bc"
+    },
+    {
+      "url": "https://docs.booster.tech/docs/product-manual/k1/getting-started/overview/",
+      "sha256": "f9a52043cdce7ba92c7fb991b6cfb25757b2817a0973ece7e07547c1ce38be6e"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/file/2024/01/23/507373823860805.pdf",
+      "sha256": "bdf32700ff47eba256bb907c9c159f0b0cb8e51f80aa3a808e508a6d9053776b"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/file/2024/01/22/506977836163141.pdf",
+      "sha256": "8984bffa7bb6abcc8911de4cf09631b68968515b103d6768fd1b9d3ba52b106c"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/file/2025/01/08/631478613794885.pdf",
+      "sha256": "b5f677fbf3f8c65a06aa9e33b65db99e9051bb4b4751213478b456f1e71bc17b"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/file/2025/01/08/631547386331205.pdf",
+      "sha256": "c82dec9a3f42708fde4aab79bd160d11ed3f7e2d6874616f1ec1e21685ab691e"
+    },
+    {
+      "url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0%26lang=EN%26market=SEHK%26stockId=1000208870",
+      "sha256": "0fc94be9c22fb4373e71f06208e9bd83d8affdfff457d7c7028b11883d37e3e1"
+    },
+    {
+      "url": "https://www.ubtrobot.com/en/announce",
+      "sha256": "62e9b1fb7d5b070aaada068405caa27ac18dd5db183ac2840975f9e5e5f9eb49"
+    },
+    {
+      "url": "https://www.booster.tech/store/",
+      "sha256": "ac9a52fd99c6d8b3fefb24838e8951914ce6a285fb87da271953ca3a50b1c52d"
+    },
+    {
+      "url": "https://docs.booster.tech/docs/product-manual/k1/getting-started/specifications/",
+      "sha256": "b3af60f68ba9182f09cc028fa228d4d95d7af74277a80941e8e8b5744cc39b0b"
+    },
+    {
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/file/2026/04/15/795097683329093.pdf",
+      "sha256": "f5736f8d7b3794d92f69d2ad04cba8fe1607734c507e853b6109581b4224024d"
+    },
+    {
+      "url": "https://www.synapxdynamics.ai/news/9",
+      "sha256": "ea5460ada7b78203eb5b16b139916ee6054e96033f67575d02235da351e9098f"
+    },
+    {
+      "url": "https://www.hongshan.com/companies/%E5%AE%83%E7%9F%B3%E6%99%BA%E8%88%AA/",
+      "sha256": "fd11dc46370eefc68f18a654d46239d3dfad49d56ed3f8bf473d175b76e40484"
+    }
+  ],
+  "inventory": [
+    {
+      "slug": "xpeng-robotics",
+      "url": "https://www.xpeng.com/",
+      "products": [
+        {
+          "id": "xpeng-iron-current",
+          "name": "IRON",
+          "url": "https://www.xpeng.com/pressroom/news/01a03797fccda01e0de68a02a256006a",
+          "fields": 8
+        }
+      ]
+    },
+    {
+      "slug": "zsibot",
+      "url": "https://zsibot.com/",
+      "products": [
+        {
+          "id": "zsibot-l1",
+          "name": "钢镚 L1",
+          "url": "https://zsibot.com/L1",
+          "fields": 0
+        },
+        {
+          "id": "zsibot-l1-w",
+          "name": "钢镚 L1-W",
+          "url": "https://zsibot.com/L1W",
+          "fields": 17
+        },
+        {
+          "id": "zsibot-m1",
+          "name": "铜锤 M1",
+          "url": "https://zsibot.com/M1",
+          "fields": 17
+        }
+      ]
+    },
+    {
+      "slug": "aheadform",
+      "url": "https://www.aheadform.com/",
+      "products": [
+        {
+          "id": "aheadform-origin-f1",
+          "name": "Origin F1",
+          "url": "https://www.aheadform.com/origin-f1",
+          "fields": 4
+        },
+        {
+          "id": "aheadform-origin-m1",
+          "name": "Origin M1",
+          "url": "https://www.aheadform.com/origin-m1",
+          "fields": 5
+        },
+        {
+          "id": "aheadform-iris",
+          "name": "精灵·铱 Iris",
+          "url": "https://www.aheadform.com/products",
+          "fields": 0
+        },
+        {
+          "id": "aheadform-xuan",
+          "name": "精灵·璇 Xuan",
+          "url": "https://www.aheadform.com/elf-xuan",
+          "fields": 3
+        },
+        {
+          "id": "aheadform-xuan-2",
+          "name": "精灵·璇 2.0",
+          "url": "https://www.aheadform.com/products",
+          "fields": 0
+        },
+        {
+          "id": "aheadform-tang-sanzang",
+          "name": "唐三藏 Tang Sanzang",
+          "url": "https://www.aheadform.com/products",
+          "fields": 0
+        },
+        {
+          "id": "aheadform-chappie",
+          "name": "查派 Chappie",
+          "url": "https://www.aheadform.com/products",
+          "fields": 0
+        }
+      ]
+    },
+    {
+      "slug": "galbot",
+      "url": "https://www.galbot.com/",
+      "products": [
+        {
+          "id": "deep-galbot-g1",
+          "name": "Galbot G1",
+          "url": "https://developer.galbot.com/docs/g1/2.2.4/zh/g1/",
+          "fields": 28
+        },
+        {
+          "id": "deep-galbot-s1",
+          "name": "Galbot S1",
+          "url": "https://www.galbot.com/s1/",
+          "fields": 25
+        },
+        {
+          "id": "deep-galbot-et1",
+          "name": "星仔 ET-1",
+          "url": "https://www.galbot.com/et1/",
+          "fields": 6
+        },
+        {
+          "id": "deep-galbot-tm01",
+          "name": "TM01",
+          "url": "https://developer.galbot.com/docs/tm01/1.4.0/zh/tm01/",
+          "fields": 13
+        }
+      ]
+    },
+    {
+      "slug": "kepler",
+      "url": "https://www.gotokepler.com/",
+      "products": [
+        {
+          "id": "kepler-k1",
+          "name": "Forerunner K1",
+          "url": "https://gotokepler.com/productDetailK1",
+          "fields": 7
+        },
+        {
+          "id": "kepler-k2-biped",
+          "name": "Forerunner K2 双足开发版",
+          "url": "https://www.gotokepler.com/productDetailK2?id=2",
+          "fields": 17
+        },
+        {
+          "id": "kepler-k2-wheeled",
+          "name": "Forerunner K2 轮式开发版",
+          "url": "https://www.gotokepler.com/productDetailK2?id=2",
+          "fields": 17
+        },
+        {
+          "id": "kepler-k2-base",
+          "name": "Forerunner K2 基础版",
+          "url": "https://www.gotokepler.com/productDetailK2?id=2",
+          "fields": 17
+        }
+      ]
+    },
+    {
+      "slug": "synapx",
+      "url": "https://www.synapxdynamics.ai/about",
+      "products": [
+        {
+          "id": "robot-model-software-compute-5",
+          "name": "SYNWorld / OctoSense",
+          "url": "https://www.worldrobotconference.com/expo/company/709.html",
+          "fields": 6
+        },
+        {
+          "id": "synapx-octoh-hand",
+          "name": "OctoH-Hand",
+          "url": "https://www.synapxdynamics.ai/products/octoh-hand",
+          "fields": 12
+        },
+        {
+          "id": "synapx-octos-band",
+          "name": "OctoS-Band",
+          "url": "https://www.synapxdynamics.ai/products/octosense",
+          "fields": 6
+        },
+        {
+          "id": "synapx-octos-glove",
+          "name": "OctoS-Glove",
+          "url": "https://www.synapxdynamics.ai/products/octosense",
+          "fields": 10
+        },
+        {
+          "id": "synapx-octos-ego",
+          "name": "OctoS-Ego",
+          "url": "https://www.synapxdynamics.ai/products/octosense",
+          "fields": 8
+        },
+        {
+          "id": "synapx-synworld",
+          "name": "SYNWorld",
+          "url": "https://www.synapxdynamics.ai/products/octomind",
+          "fields": 1
+        },
+        {
+          "id": "synapx-synaction",
+          "name": "SYNAction",
+          "url": "https://www.synapxdynamics.ai/products/octomind",
+          "fields": 1
+        },
+        {
+          "id": "synapx-syneval",
+          "name": "SYNEval",
+          "url": "https://www.synapxdynamics.ai/products/octomind",
+          "fields": 1
+        },
+        {
+          "id": "synapx-octos-forge",
+          "name": "OctoS-Forge",
+          "url": "https://www.synapxdynamics.ai/products/octosense",
+          "fields": 1
+        }
+      ]
+    },
+    {
+      "slug": "theo-hand",
+      "url": "https://theo-hand.com/hand",
+      "products": [
+        {
+          "id": "dexterous-hand-selection-5",
+          "name": "Theo Hand",
+          "url": "https://theo-hand.com/hand",
+          "fields": 6
+        },
+        {
+          "id": "theo-hand-eco12-standard",
+          "name": "Eco12 Standard",
+          "url": "https://theo-hand.com/hand/details/Eco12",
+          "fields": 20
+        },
+        {
+          "id": "theo-hand-eco12-tactile",
+          "name": "Eco12 Tactile",
+          "url": "https://theo-hand.com/hand/details/Eco12",
+          "fields": 20
+        },
+        {
+          "id": "theo-hand-std16a-standard",
+          "name": "Std16A Standard",
+          "url": "https://theo-hand.com/hand/details/NewStd16A",
+          "fields": 20
+        },
+        {
+          "id": "theo-hand-std16a-tactile",
+          "name": "Std16A Tactile",
+          "url": "https://theo-hand.com/hand/details/NewStd16A",
+          "fields": 20
+        },
+        {
+          "id": "theo-hand-pro20a",
+          "name": "Pro20A",
+          "url": "https://theo-hand.com/hand/details/Pro20A",
+          "fields": 11
+        }
+      ]
+    },
+    {
+      "slug": "engineai",
+      "url": "https://en.engineai.com.cn/",
+      "products": [
+        {
+          "id": "engineai-pm01-business",
+          "name": "PM01 商务版",
+          "url": "https://en.engineai.com.cn/product-pm01",
+          "fields": 15
+        },
+        {
+          "id": "engineai-pm01-education",
+          "name": "PM01 教育版",
+          "url": "https://en.engineai.com.cn/product-pm01",
+          "fields": 15
+        },
+        {
+          "id": "engineai-t800",
+          "name": "T800",
+          "url": "https://en.engineai.com.cn/product-t800.html",
+          "fields": 13
+        },
+        {
+          "id": "engineai-t800-armor",
+          "name": "T800 护甲配件",
+          "url": "https://www.engineai.com.cn/sitemap.html",
+          "fields": 0
+        },
+        {
+          "id": "engineai-js01",
+          "name": "JS01",
+          "url": "https://www.engineai.com.cn/product-js01.html",
+          "fields": 1
+        },
+        {
+          "id": "engineai-sa01",
+          "name": "SA01",
+          "url": "https://www.engineai.com.cn/product-sa01.html",
+          "fields": 9
+        },
+        {
+          "id": "engineai-se01",
+          "name": "SE01",
+          "url": "https://www.engineai.com.cn/product-se01.html",
+          "fields": 6
+        },
+        {
+          "id": "engineai-s2",
+          "name": "S2",
+          "url": "https://www.engineai.com.cn/product-s2.html",
+          "fields": 0
+        }
+      ]
+    },
+    {
+      "slug": "limx-dynamics",
+      "url": "https://www.limxdynamics.com/",
+      "products": [
+        {
+          "id": "exp-limx-tron1",
+          "name": "TRON 1",
+          "url": "https://www.limxdynamics.com/en/products/tron1/spec",
+          "fields": 47
+        },
+        {
+          "id": "exp-limx-oli",
+          "name": "Oli",
+          "url": "https://www.limxdynamics.com/en/products/oli/spec",
+          "fields": 59
+        },
+        {
+          "id": "exp-limx-luna",
+          "name": "Luna",
+          "url": "https://www.limxdynamics.com/en/products/luna/spec",
+          "fields": 46
+        },
+        {
+          "id": "exp-limx-tron2",
+          "name": "TRON 2",
+          "url": "https://www.limxdynamics.com/en/products/tron2/spec",
+          "fields": 50
+        },
+        {
+          "id": "verified-limx-fluxvla",
+          "name": "FluxVLA Engine",
+          "url": "https://www.limxdynamics.com/en/products/fluxvla",
+          "fields": 7
+        },
+        {
+          "id": "verified-limx-fluxtraining",
+          "name": "FluxTraining",
+          "url": "https://flux.limxdynamics.com/",
+          "fields": 6
+        }
+      ]
+    },
+    {
+      "slug": "tars-robotics",
+      "url": "https://www.tars-ai.com/",
+      "products": [
+        {
+          "id": "deep-tars-t1",
+          "name": "T1",
+          "url": "https://www.tars-ai.com/",
+          "fields": 4
+        },
+        {
+          "id": "deep-tars-a1",
+          "name": "A1",
+          "url": "https://www.tars-ai.com/",
+          "fields": 4
+        },
+        {
+          "id": "deep-tars-awe3",
+          "name": "AWE 3.0",
+          "url": "https://www.tars-ai.com/",
+          "fields": 6
+        },
+        {
+          "id": "deep-tars-omnivta",
+          "name": "OmniVTA",
+          "url": "https://huggingface.co/tars-robotics",
+          "fields": 6
+        },
+        {
+          "id": "deep-tars-sensehub",
+          "name": "SenseHub",
+          "url": "https://wiyh.tars-ai.com/",
+          "fields": 11
+        },
+        {
+          "id": "deep-tars-effector-1",
+          "name": "21 自由度灵巧手",
+          "url": "https://www.tars-ai.com/",
+          "fields": 4
+        },
+        {
+          "id": "deep-tars-effector-2",
+          "name": "两指末端执行器",
+          "url": "https://www.tars-ai.com/",
+          "fields": 4
+        },
+        {
+          "id": "deep-tars-effector-3",
+          "name": "三指末端执行器",
+          "url": "https://www.tars-ai.com/",
+          "fields": 4
+        }
+      ]
+    },
+    {
+      "slug": "ubtech",
+      "url": "https://www.ubtrobot.com/en/",
+      "products": [
+        {
+          "id": "ubtech-walker",
+          "name": "Walker",
+          "url": "https://www.ubtrobot.com/en/humanoid/products/walker",
+          "fields": 18
+        },
+        {
+          "id": "ubtech-walker-x",
+          "name": "Walker X",
+          "url": "https://www.ubtrobot.com/en/humanoid/products/walker-x",
+          "fields": 11
+        },
+        {
+          "id": "ubtech-walker-s2",
+          "name": "Walker S2",
+          "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s2",
+          "fields": 7
+        },
+        {
+          "id": "ubtech-walker-s",
+          "name": "Walker S",
+          "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s",
+          "fields": 3
+        },
+        {
+          "id": "ubtech-walker-s1",
+          "name": "Walker S1",
+          "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s1",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-walker-c1",
+          "name": "Walker C1",
+          "url": "https://www.ubtrobot.com/en/humanoid/products/walker-c1/",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-walker-c",
+          "name": "Walker C",
+          "url": "https://www.ubtrobot.com/en/",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-cruzr-y1",
+          "name": "Cruzr Y1",
+          "url": "https://www.ubtrobot.com/en/",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-cruzr-s2",
+          "name": "Cruzr S2",
+          "url": "https://www.ubtrobot.com/en/",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-panda",
+          "name": "Panda Robot",
+          "url": "https://www.ubtrobot.com/en/",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-walker-tienkung",
+          "name": "Walker Tienkung",
+          "url": "https://www.ubtrobot.com/en/ai-education",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-ugot",
+          "name": "UGOT",
+          "url": "https://www.ubtrobot.com/en/ai-education/products/ugot",
+          "fields": 13
+        },
+        {
+          "id": "ubtech-ukit-ai",
+          "name": "uKit AI",
+          "url": "https://www.ubtrobot.com/en/ai-education/products/ukit-ai",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-ukit-explore",
+          "name": "uKit Explore",
+          "url": "https://www.ubtrobot.com/en/ai-education/products/ukit-explore",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-yanshee",
+          "name": "Yanshee",
+          "url": "https://www.ubtrobot.com/en/ai-education/products/yanshee",
+          "fields": 4
+        },
+        {
+          "id": "ubtech-cruzr-1s",
+          "name": "Cruzr 1S",
+          "url": "https://www.ubtrobot.com/en/",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-cadebot-l100",
+          "name": "CADEBOT L100",
+          "url": "https://www.ubtrobot.com/en/",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-uworld-u1",
+          "name": "UWORLD U1",
+          "url": "https://www.ubtrobot.com/en/about/company-profile",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-alpha-mini",
+          "name": "Alpha Mini",
+          "url": "https://www.ubtrobot.com/en/",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-alpha-1e",
+          "name": "Alpha 1E",
+          "url": "https://www.ubtrobot.com/en/",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-airrobo-pc10",
+          "name": "AIRROBO PC10",
+          "url": "https://www.ubtrobot.com/en/",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-airrobo-pc20",
+          "name": "AIRROBO PC20",
+          "url": "https://www.ubtrobot.com/en/",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-airrobo-pc200",
+          "name": "AIRROBO PC200",
+          "url": "https://www.ubtrobot.com/en/",
+          "fields": 0
+        },
+        {
+          "id": "ubtech-airrobo-pc200lite",
+          "name": "AIRROBO PC200Lite",
+          "url": "https://www.ubtrobot.com/en/",
+          "fields": 0
+        }
+      ]
+    },
+    {
+      "slug": "robotera",
+      "url": "https://www.robotera.com/en/",
+      "products": [
+        {
+          "id": "exp-robotera-l7",
+          "name": "L7",
+          "url": "https://www.robotera.com/en/product/L7",
+          "fields": 21
+        },
+        {
+          "id": "exp-robotera-q5",
+          "name": "Q5",
+          "url": "https://www.robotera.com/en/product/Q5",
+          "fields": 20
+        },
+        {
+          "id": "exp-robotera-m7",
+          "name": "M7",
+          "url": "https://www.robotera.com/en/product/M7",
+          "fields": 14
+        },
+        {
+          "id": "exp-robotera-xhand1",
+          "name": "XHAND 1",
+          "url": "https://www.robotera.com/en/product/XHAND",
+          "fields": 37
+        },
+        {
+          "id": "exp-robotera-xhand1-lite",
+          "name": "XHAND 1 Lite",
+          "url": "https://www.robotera.com/en/product/Lite",
+          "fields": 20
+        },
+        {
+          "id": "exp-robotera-xhand1-pro",
+          "name": "XHAND 1 PRO",
+          "url": "https://www.robotera.com/en/product/PRO",
+          "fields": 27
+        },
+        {
+          "id": "verified-robotera-era-42",
+          "name": "ERA-42",
+          "url": "https://www.robotera.com/en/model",
+          "fields": 4
+        }
+      ]
+    },
+    {
+      "slug": "noetix-robotics",
+      "url": "https://www.noetixrobotics.com/",
+      "products": [
+        {
+          "id": "noetix-bumi-standard",
+          "name": "Bumi Standard",
+          "url": "https://web.noetixrobotics.com/docs/",
+          "fields": 46
+        },
+        {
+          "id": "noetix-bumi-education",
+          "name": "Bumi Education",
+          "url": "https://web.noetixrobotics.com/docs/",
+          "fields": 48
+        },
+        {
+          "id": "noetix-n2-standard",
+          "name": "N2 Standard",
+          "url": "https://web.noetixrobotics.com/docs/%E9%80%9A%E7%94%A8%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/N2%20SDK%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/",
+          "fields": 39
+        },
+        {
+          "id": "noetix-n2-education",
+          "name": "N2 Education",
+          "url": "https://web.noetixrobotics.com/docs/%E9%80%9A%E7%94%A8%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/N2%20SDK%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/",
+          "fields": 39
+        },
+        {
+          "id": "noetix-e1-standard",
+          "name": "E1 Standard",
+          "url": "https://www.noetixrobotics.com/detail/E1",
+          "fields": 47
+        },
+        {
+          "id": "noetix-e1-education",
+          "name": "E1 Education",
+          "url": "https://www.noetixrobotics.com/detail/E1",
+          "fields": 47
+        },
+        {
+          "id": "noetix-xiaoyue",
+          "name": "Xiaoyue",
+          "url": "https://www.noetixrobotics.com/mobile/detail/XY",
+          "fields": 0
+        },
+        {
+          "id": "noetix-xiaonuo-3",
+          "name": "Xiaonuo 3.0",
+          "url": "https://www.noetixrobotics.com/mobile/detail/XN",
+          "fields": 8
+        },
+        {
+          "id": "noetix-hobbs-w1",
+          "name": "Hobbs W1",
+          "url": "https://www.noetixrobotics.com/mobile/detail/W1",
+          "fields": 40
+        }
+      ]
+    },
+    {
+      "slug": "agibot",
+      "url": "https://www.agibot.com/",
+      "products": [
+        {
+          "id": "agibot-a3",
+          "name": "AGIBOT A3",
+          "url": "https://www.agibot.com/products/A3",
+          "fields": 12
+        },
+        {
+          "id": "agibot-a2-ultra",
+          "name": "AGIBOT A2 Ultra",
+          "url": "https://www.agibot.com/products/A2_Ultra",
+          "fields": 26
+        },
+        {
+          "id": "agibot-a2-lite",
+          "name": "AGIBOT A2 Lite",
+          "url": "https://www.agibot.com/products/A2_Pro",
+          "fields": 26
+        },
+        {
+          "id": "agibot-a2-w",
+          "name": "AGIBOT A2-W",
+          "url": "https://www.agibot.com/products/A2_W",
+          "fields": 0
+        },
+        {
+          "id": "agibot-a2-max-2",
+          "name": "AGIBOT A2 Max 2",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 0
+        },
+        {
+          "id": "agibot-x1",
+          "name": "AGIBOT X1",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 0
+        },
+        {
+          "id": "agibot-x2",
+          "name": "AGIBOT X2",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 0
+        },
+        {
+          "id": "agibot-g2",
+          "name": "AGIBOT G2",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 0
+        },
+        {
+          "id": "agibot-g1",
+          "name": "AGIBOT G1",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 0
+        },
+        {
+          "id": "agibot-d1-pro-edu",
+          "name": "AGIBOT D1 Pro/Edu",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 0
+        },
+        {
+          "id": "agibot-d1-ultra",
+          "name": "AGIBOT D1 Ultra",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 0
+        },
+        {
+          "id": "agibot-d1-max",
+          "name": "AGIBOT D1 Max",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 0
+        },
+        {
+          "id": "agibot-d1-maxpro",
+          "name": "AGIBOT D1 MaxPro",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 0
+        },
+        {
+          "id": "agibot-c5",
+          "name": "AGIBOT C5",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 0
+        },
+        {
+          "id": "agibot-omnihand-2025",
+          "name": "OmniHand 2025",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 0
+        },
+        {
+          "id": "agibot-omnihand-pro-2025",
+          "name": "OmniHand Pro 2025",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 0
+        },
+        {
+          "id": "agibot-vr-teleoperation",
+          "name": "VR Teleoperation Kit",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 0
+        },
+        {
+          "id": "agibot-powerflow-r86-3",
+          "name": "PowerFlow R86-3",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 7
+        },
+        {
+          "id": "agibot-powerflow-r86-2",
+          "name": "PowerFlow R86-2",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 7
+        },
+        {
+          "id": "agibot-powerflow-r52",
+          "name": "PowerFlow R52",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 7
+        },
+        {
+          "id": "agibot-powerflow-l28",
+          "name": "PowerFlow L28",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 5
+        },
+        {
+          "id": "agibot-dcu",
+          "name": "Domain Controller DCU",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 7
+        },
+        {
+          "id": "agibot-omnipicker",
+          "name": "OmniPicker",
+          "url": "https://www.agibot.com/qzproduct/*.htm",
+          "fields": 6
+        }
+      ]
+    },
+    {
+      "slug": "fourier-intelligence",
+      "url": "https://www.fftai.cn/",
+      "products": [
+        {
+          "id": "fourier-gr1l",
+          "name": "GR-1L",
+          "url": "https://support-old.fftai.com/docs/GR-X-Humanoid-Robot/GR1/GR-1_Introduction/",
+          "fields": 58
+        },
+        {
+          "id": "fourier-gr1",
+          "name": "GR-1",
+          "url": "https://support-old.fftai.com/docs/GR-X-Humanoid-Robot/GR1/GR-1_Introduction/",
+          "fields": 58
+        },
+        {
+          "id": "fourier-gr1l-pro",
+          "name": "GR-1L Pro",
+          "url": "https://support-old.fftai.com/docs/GR-X-Humanoid-Robot/GR1/GR-1_Introduction/",
+          "fields": 58
+        },
+        {
+          "id": "fourier-gr1-pro",
+          "name": "GR-1 Pro",
+          "url": "https://support-old.fftai.com/docs/GR-X-Humanoid-Robot/GR1/GR-1_Introduction/",
+          "fields": 58
+        },
+        {
+          "id": "fourier-gr2",
+          "name": "GR-2",
+          "url": "https://support-old.fftai.com/docs/GR-X-Humanoid-Robot/GR2/GR-2_Introduction/",
+          "fields": 170
+        },
+        {
+          "id": "fourier-gr3",
+          "name": "GR-3",
+          "url": "https://www.fftai.cn/grx/gr3",
+          "fields": 193
+        },
+        {
+          "id": "fourier-gr3c",
+          "name": "GR-3C",
+          "url": "https://www.fftai.cn/products-gr3c",
+          "fields": 186
+        },
+        {
+          "id": "fourier-n1",
+          "name": "Fourier N1",
+          "url": "https://www.fftai.cn/ecosystem/n1",
+          "fields": 143
+        },
+        {
+          "id": "fourier-grw",
+          "name": "GRW",
+          "url": "https://fftai.com/en/grw",
+          "fields": 16
+        },
+        {
+          "id": "fourier-fdh6",
+          "name": "FDH-6",
+          "url": "https://www.fftai.cn/products-fdh6",
+          "fields": 7
+        },
+        {
+          "id": "fourier-galileo",
+          "name": "Galileo",
+          "url": "https://www.fftai.cn/products-galileo",
+          "fields": 0
+        },
+        {
+          "id": "fourier-actionnet",
+          "name": "Fourier ActionNet",
+          "url": "https://www.fftai.cn/open-source/17",
+          "fields": 0
+        },
+        {
+          "id": "fourier-rehabhub",
+          "name": "RehabHub",
+          "url": "https://www.fftai.cn/rehab/solution",
+          "fields": 0
+        }
+      ]
+    },
+    {
+      "slug": "booster-robotics",
+      "url": "https://www.booster.tech/",
+      "products": [
+        {
+          "id": "booster-k1-geek",
+          "name": "Booster K1 Geek",
+          "url": "https://www.booster.tech/booster-k1/",
+          "fields": 54
+        },
+        {
+          "id": "booster-k1-education",
+          "name": "Booster K1 Education",
+          "url": "https://www.booster.tech/booster-k1/",
+          "fields": 54
+        },
+        {
+          "id": "booster-k1-professional",
+          "name": "Booster K1 Professional",
+          "url": "https://www.booster.tech/booster-k1/",
+          "fields": 54
+        },
+        {
+          "id": "booster-t1-basic",
+          "name": "Booster T1 Basic",
+          "url": "https://www.booster.tech/booster-t1/",
+          "fields": 32
+        },
+        {
+          "id": "booster-t1-standard",
+          "name": "Booster T1 Standard",
+          "url": "https://www.booster.tech/booster-t1/",
+          "fields": 32
+        },
+        {
+          "id": "booster-t1-customized",
+          "name": "Booster T1 Customized",
+          "url": "https://www.booster.tech/booster-t1/",
+          "fields": 32
+        },
+        {
+          "id": "booster-t2-education-e1",
+          "name": "Booster T2 Education E1",
+          "url": "https://www.booster.tech/booster-t2/",
+          "fields": 62
+        },
+        {
+          "id": "booster-t2-education-e2",
+          "name": "Booster T2 Education E2",
+          "url": "https://www.booster.tech/booster-t2/",
+          "fields": 62
+        },
+        {
+          "id": "booster-t2-education-e3",
+          "name": "Booster T2 Education E3",
+          "url": "https://www.booster.tech/booster-t2/",
+          "fields": 62
+        },
+        {
+          "id": "booster-t2-professional-p1",
+          "name": "Booster T2 Professional P1",
+          "url": "https://www.booster.tech/booster-t2/",
+          "fields": 62
+        },
+        {
+          "id": "booster-t2-professional-p2",
+          "name": "Booster T2 Professional P2",
+          "url": "https://www.booster.tech/booster-t2/",
+          "fields": 62
+        },
+        {
+          "id": "booster-t2-professional-p3",
+          "name": "Booster T2 Professional P3",
+          "url": "https://www.booster.tech/booster-t2/",
+          "fields": 62
+        }
+      ]
+    },
+    {
+      "slug": "paxini",
+      "url": "https://paxini.com/cn/",
+      "products": [
+        {
+          "id": "deep-paxini-gen4",
+          "name": "PX6AX GEN4",
+          "url": "https://paxini.com/cn/ax/gen4",
+          "fields": 22
+        },
+        {
+          "id": "deep-paxini-gen3",
+          "name": "PX-6AX-GEN3",
+          "url": "https://paxini.com/cn/ax/gen3",
+          "fields": 20
+        },
+        {
+          "id": "deep-paxini-px3q",
+          "name": "PX3Q",
+          "url": "https://paxini.com/cn/ax/torque",
+          "fields": 14
+        },
+        {
+          "id": "deep-paxini-px6d",
+          "name": "PX6D",
+          "url": "https://paxini.com/cn/ax/6d",
+          "fields": 14
+        },
+        {
+          "id": "deep-paxini-footrix",
+          "name": "PX-FOOTRIX",
+          "url": "https://paxini.com/cn/ax/footrix",
+          "fields": 10
+        },
+        {
+          "id": "deep-paxini-dexh13",
+          "name": "DexH13",
+          "url": "https://paxini.com/cn/dex/gen2",
+          "fields": 13
+        },
+        {
+          "id": "deep-paxini-gmh18",
+          "name": "GMH18",
+          "url": "https://paxini.com/cn/dex/gen3",
+          "fields": 11
+        },
+        {
+          "id": "deep-paxini-tora-one",
+          "name": "TORA-ONE",
+          "url": "https://paxini.com/cn/robot",
+          "fields": 17
+        },
+        {
+          "id": "deep-paxini-tora-double",
+          "name": "TORA-DOUBLE ONE",
+          "url": "https://paxini.com/cn/robot/doubleOne",
+          "fields": 7
+        },
+        {
+          "id": "deep-paxini-data-1",
+          "name": "PXCap III",
+          "url": "https://paxini.com/cn/ax/pxcap3",
+          "fields": 18
+        },
+        {
+          "id": "deep-paxini-data-2",
+          "name": "PXDex III",
+          "url": "https://paxini.com/cn/ax/pxdex3",
+          "fields": 18
+        },
+        {
+          "id": "deep-paxini-data-3",
+          "name": "PXCap Pro",
+          "url": "https://paxini.com/cn/ax/pxcapProp",
+          "fields": 17
+        },
+        {
+          "id": "deep-paxini-data-4",
+          "name": "OmniSharing DB",
+          "url": "https://omnisharingdb.paxini.com/home",
+          "fields": 8
+        }
+      ]
+    },
+    {
+      "slug": "linkerbot",
+      "url": "https://www.linkerbot.cn/",
+      "products": [
+        {
+          "id": "deep-linker-hand-1",
+          "name": "Linker Hand O6",
+          "url": "https://www.linkerbot.cn/details/LinkerHandO6/",
+          "fields": 16
+        },
+        {
+          "id": "deep-linker-hand-2",
+          "name": "Linker Hand L6",
+          "url": "https://www.linkerbot.cn/details/LinkerHandL6/",
+          "fields": 18
+        },
+        {
+          "id": "deep-linker-hand-3",
+          "name": "Linker Hand L20 Lite",
+          "url": "https://www.linkerbot.cn/details/LinkerHandL20Lite/",
+          "fields": 20
+        },
+        {
+          "id": "deep-linker-hand-4",
+          "name": "Linker Hand L20",
+          "url": "https://www.linkerbot.cn/details/LinkerHandL20/",
+          "fields": 20
+        },
+        {
+          "id": "deep-linker-hand-5",
+          "name": "Linker Hand O30",
+          "url": "https://www.linkerbot.cn/details/LinkerHandO30/",
+          "fields": 21
+        },
+        {
+          "id": "deep-linker-hand-6",
+          "name": "Linker Hand L30",
+          "url": "https://www.linkerbot.cn/details/LinkerHandL30/",
+          "fields": 21
+        },
+        {
+          "id": "deep-linker-platform-1",
+          "name": "Linker Arm P7",
+          "url": "https://www.linkerbot.cn/details/LinkerArm/",
+          "fields": 13
+        },
+        {
+          "id": "deep-linker-platform-2",
+          "name": "Linker Humanoid",
+          "url": "https://www.linkerbot.cn/details/LinkerHumanoid/",
+          "fields": 18
+        },
+        {
+          "id": "deep-linker-platform-3",
+          "name": "Linker MCG",
+          "url": "https://www.linkerbot.cn/details/LinkerMCG/",
+          "fields": 12
+        },
+        {
+          "id": "deep-linker-platform-4",
+          "name": "Linker FFG",
+          "url": "https://www.linkerbot.cn/details/LinkerFFG/",
+          "fields": 10
+        },
+        {
+          "id": "deep-linker-platform-5",
+          "name": "Linker TA",
+          "url": "https://www.linkerbot.cn/details/LinkerTA/",
+          "fields": 11
+        },
+        {
+          "id": "deep-linker-platform-6",
+          "name": "LinkerSkillStore",
+          "url": "https://www.linkerbot.cn/data/",
+          "fields": 4
+        },
+        {
+          "id": "deep-linker-hand-o20",
+          "name": "Linker Hand O20",
+          "url": "https://www.linkerbot.cn/",
+          "fields": 20
+        },
+        {
+          "id": "deep-linker-eg",
+          "name": "Linker EG",
+          "url": "https://www.linkerbot.cn/details/LinkerEG/",
+          "fields": 16
+        },
+        {
+          "id": "deep-linker-open-teledex",
+          "name": "Linker Open TeleDex",
+          "url": "https://www.linkerbot.cn/data/",
+          "fields": 5
+        },
+        {
+          "id": "deep-linker-genesis",
+          "name": "Linker Genesis",
+          "url": "https://www.linkerbot.cn/data/",
+          "fields": 3
+        }
+      ]
+    },
+    {
+      "slug": "unitree",
+      "url": "https://www.unitree.com/cn/",
+      "products": [
+        {
+          "id": "deep-unitree-quadruped-1",
+          "name": "As2-W",
+          "url": "https://www.unitree.com/cn/As2-W/",
+          "fields": 47
+        },
+        {
+          "id": "deep-unitree-quadruped-2",
+          "name": "As2",
+          "url": "https://www.unitree.com/cn/As2/",
+          "fields": 22
+        },
+        {
+          "id": "deep-unitree-quadruped-3",
+          "name": "Go2-W",
+          "url": "https://www.unitree.com/cn/go2-w/",
+          "fields": 21
+        },
+        {
+          "id": "deep-unitree-quadruped-4",
+          "name": "Go2",
+          "url": "https://www.unitree.com/cn/go2/",
+          "fields": 22
+        },
+        {
+          "id": "deep-unitree-quadruped-5",
+          "name": "Go1",
+          "url": "https://www.unitree.com/cn/go1/",
+          "fields": 18
+        },
+        {
+          "id": "deep-unitree-quadruped-6",
+          "name": "A1",
+          "url": "https://www.unitree.com/cn/a1/",
+          "fields": 16
+        },
+        {
+          "id": "deep-unitree-quadruped-7",
+          "name": "A2-W",
+          "url": "https://www.unitree.com/cn/A2-W/",
+          "fields": 18
+        },
+        {
+          "id": "deep-unitree-quadruped-8",
+          "name": "A2",
+          "url": "https://www.unitree.com/cn/A2/",
+          "fields": 18
+        },
+        {
+          "id": "deep-unitree-quadruped-9",
+          "name": "B2-W",
+          "url": "https://www.unitree.com/cn/b2-w/",
+          "fields": 17
+        },
+        {
+          "id": "deep-unitree-quadruped-10",
+          "name": "B2",
+          "url": "https://www.unitree.com/cn/b2/",
+          "fields": 19
+        },
+        {
+          "id": "deep-unitree-quadruped-11",
+          "name": "B1",
+          "url": "https://www.unitree.com/cn/b1/",
+          "fields": 19
+        },
+        {
+          "id": "deep-unitree-quadruped-12",
+          "name": "AlienGo",
+          "url": "https://www.unitree.com/cn/aliengo/",
+          "fields": 14
+        },
+        {
+          "id": "deep-unitree-humanoid-1",
+          "name": "H2 Plus",
+          "url": "https://www.unitree.com/cn/H2plus/",
+          "fields": 38
+        },
+        {
+          "id": "deep-unitree-humanoid-2",
+          "name": "H2",
+          "url": "https://www.unitree.com/cn/H2/",
+          "fields": 22
+        },
+        {
+          "id": "deep-unitree-humanoid-3",
+          "name": "R1",
+          "url": "https://www.unitree.com/cn/R1/",
+          "fields": 23
+        },
+        {
+          "id": "deep-unitree-humanoid-4",
+          "name": "G1",
+          "url": "https://www.unitree.com/cn/g1/",
+          "fields": 22
+        },
+        {
+          "id": "deep-unitree-humanoid-5",
+          "name": "H1 / H1-2",
+          "url": "https://www.unitree.com/h1/",
+          "fields": 17
+        },
+        {
+          "id": "deep-unitree-humanoid-6",
+          "name": "R1-A / R1-A-D",
+          "url": "https://www.unitree.com/mobile/R1-D/",
+          "fields": 18
+        },
+        {
+          "id": "deep-unitree-humanoid-7",
+          "name": "G1-D",
+          "url": "https://www.unitree.com/mobile/G1-D/",
+          "fields": 23
+        },
+        {
+          "id": "deep-unitree-humanoid-8",
+          "name": "G1-Comp",
+          "url": "https://www.unitree.com/mobile/robocup/",
+          "fields": 14
+        },
+        {
+          "id": "deep-unitree-manipulator-1",
+          "name": "Dex2/5",
+          "url": "https://www.unitree.com/mobile/Dex2-5/",
+          "fields": 18
+        },
+        {
+          "id": "deep-unitree-manipulator-2",
+          "name": "Dex1-1",
+          "url": "https://www.unitree.com/mobile/Dex1-1/",
+          "fields": 21
+        },
+        {
+          "id": "deep-unitree-manipulator-3",
+          "name": "Dex5-1",
+          "url": "https://www.unitree.com/mobile/Dex5-1/",
+          "fields": 17
+        },
+        {
+          "id": "deep-unitree-manipulator-4",
+          "name": "Dex3-1",
+          "url": "https://www.unitree.com/mobile/Dex3-1/",
+          "fields": 23
+        },
+        {
+          "id": "deep-unitree-manipulator-5",
+          "name": "Z1",
+          "url": "https://www.unitree.com/cn/z1/",
+          "fields": 19
+        },
+        {
+          "id": "deep-unitree-component-1",
+          "name": "4D LiDAR L1",
+          "url": "https://www.unitree.com/cn/LiDAR/",
+          "fields": 19
+        },
+        {
+          "id": "deep-unitree-component-2",
+          "name": "SV1-25",
+          "url": "https://www.unitree.com/mobile/SV1-25/",
+          "fields": 15
+        },
+        {
+          "id": "deep-unitree-component-3",
+          "name": "IM6014 / N6014B-12.6",
+          "url": "https://www.unitree.com/mobile/IM6014/",
+          "fields": 22
+        },
+        {
+          "id": "deep-unitree-component-4",
+          "name": "Brushless Digital Servo J288 / S288",
+          "url": "https://www.unitree.com/mobile/DigitalServo/",
+          "fields": 23
+        },
+        {
+          "id": "deep-unitree-component-5",
+          "name": "GO-M8010-6",
+          "url": "https://www.unitree.com/mobile/go1/motor/",
+          "fields": 14
+        },
+        {
+          "id": "deep-unitree-component-6",
+          "name": "B1-16",
+          "url": "https://www.unitree.com/mobile/b1-16/",
+          "fields": 9
+        },
+        {
+          "id": "deep-unitree-humanoid-h2-d",
+          "name": "H2-D",
+          "url": "https://www.unitree.com/mobile/H2-D/",
+          "fields": 24
+        },
+        {
+          "id": "deep-unitree-humanoid-boxing",
+          "name": "铁甲拳王",
+          "url": "https://www.unitree.com/mobile/boxing/",
+          "fields": 5
+        },
+        {
+          "id": "deep-unitree-arm-r1",
+          "name": "R1 Arm",
+          "url": "https://www.unitree.com/mobile/R1-ARM/",
+          "fields": 11
+        },
+        {
+          "id": "deep-unitree-arm-d1-t",
+          "name": "D1-T",
+          "url": "https://www.unitree.com/cn/D1-T/",
+          "fields": 9
+        },
+        {
+          "id": "deep-unitree-lidar-l2",
+          "name": "4D LiDAR L2",
+          "url": "https://www.unitree.com/cn/L2/",
+          "fields": 20
+        },
+        {
+          "id": "deep-unitree-component-a1-motor",
+          "name": "A1 Motor",
+          "url": "https://www.unitree.com/mobile/A1/motor/",
+          "fields": 10
+        },
+        {
+          "id": "deep-unitree-accessory-r1-battery",
+          "name": "R1 Battery",
+          "url": "https://www.unitree.com/mobile/R1/battery/",
+          "fields": 7
+        },
+        {
+          "id": "deep-unitree-accessory-go2-battery",
+          "name": "Go2 Battery",
+          "url": "https://www.unitree.com/mobile/go2/battery/",
+          "fields": 8
+        },
+        {
+          "id": "deep-unitree-accessory-go2-charger",
+          "name": "Go2 Charger",
+          "url": "https://www.unitree.com/mobile/go2/charger/",
+          "fields": 6
+        },
+        {
+          "id": "deep-unitree-accessory-r3-controller",
+          "name": "R3 Controller",
+          "url": "https://www.unitree.com/mobile/go2/control/",
+          "fields": 8
+        },
+        {
+          "id": "deep-unitree-accessory-go2-foot",
+          "name": "Go2 Foot End",
+          "url": "https://www.unitree.com/mobile/go2/foot/",
+          "fields": 4
+        },
+        {
+          "id": "deep-unitree-accessory-go1-battery",
+          "name": "Go1 Battery",
+          "url": "https://www.unitree.com/mobile/go1/battery/",
+          "fields": 8
+        },
+        {
+          "id": "deep-unitree-accessory-a1-battery",
+          "name": "A1 Battery",
+          "url": "https://www.unitree.com/mobile/A1/battery/",
+          "fields": 10
+        },
+        {
+          "id": "deep-unitree-accessory-aliengo-battery",
+          "name": "AlienGo Battery",
+          "url": "https://www.unitree.com/mobile/aliengo/battery/",
+          "fields": 11
+        }
+      ]
+    }
+  ],
+  "unitreeDisclosureUrl": "https://www.unitree.com/disclosure/listedinfo/announcement/%E5%AE%87%E6%A0%91%E7%A7%91%E6%8A%80%20%E5%85%B3%E4%BA%8E%E5%8F%98%E6%9B%B4%E6%B3%A8%E5%86%8C%E8%B5%84%E6%9C%AC%E3%80%81%E5%85%AC%E5%8F%B8%E7%B1%BB%E5%9E%8B%E5%8F%8A%E4%BF%AE%E8%AE%A2%E3%80%8A%E5%85%AC%E5%8F%B8%E7%AB%A0%E7%A8%8B%E3%80%8B%E5%B9%B6%E5%8A%9E%E7%90%86%E5%B7%A5%E5%95%86%E5%8F%98%E6%9B%B4%E7%99%BB%E8%AE%B0%E7%9A%84%E5%85%AC%E5%91%8A.pdf"
+}

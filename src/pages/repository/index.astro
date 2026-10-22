@@ -1,0 +1,14 @@
+---
+import RepositoryIndexPage from "../../components/RepositoryIndexPage.astro";
+import RepositoryLayout from "../../layouts/RepositoryLayout.astro";
+import { isPagesBuild } from "../../data/build-scope";
+if (isPagesBuild) return Astro.redirect("/companies", 302);
+---
+
+<RepositoryLayout
+  title="元数据仓库 | 机器人公司与产品记录"
+  description="独立维护的机器人公司、产品与公开参数元数据记录。"
+  alternatePath="/en/repository"
+>
+  <RepositoryIndexPage locale="zh" />
+</RepositoryLayout>

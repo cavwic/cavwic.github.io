@@ -1,12 +1,12 @@
 ---
-import { ArrowUpRight, ChevronDown } from "@lucide/astro";
+import { ArrowUpRight, BookOpenText, ChevronDown } from "@lucide/astro";
 import {
   industryLandscapes,
   landscapeCompanies,
   pickText,
   type LandscapeIndustryId,
   type LandscapeLocale,
-} from "../data/industry-landscape";
+} from "../data/repository/industry-landscape";
 
 interface Props {
   industry: LandscapeIndustryId;
@@ -21,17 +21,28 @@ const labels = locale === "zh" ? {
   companies: "代表公司档案",
   position: "产业角色",
   expand: "展开档案",
-  fields: { strengths: "公开侧重", products: "产品类别", fit: "适合进入验证的场景", verify: "项目中先确认" },
+  fields: { strengths: "公开业务重点", products: "产品类别", fit: "适合进一步验证的场景", verify: "项目中需先确认" },
   verified: "核验",
   source: "官方来源",
+  profile: "查看完整公司档案",
 } : {
   route: "Browse by value-chain layer",
   companies: "Representative company files",
   position: "Value-chain role",
   expand: "Open file",
   fields: { strengths: "Public focus", products: "Product categories", fit: "Scenarios worth validating", verify: "Confirm before selection" },
-  verified: "VERIFIED",
   source: "Official source",
+  profile: "Open full company file",
+};
+const companyPageSlugs: Record<string, string> = {
+  unitree: "unitree", booster: "booster-robotics", galbot: "galbot", noetix: "noetix-robotics",
+  ubtech: "ubtech", agibot: "agibot", fourier: "fourier-intelligence", nvidia: "nvidia-robotics",
+  deepmind: "google-deepmind", physicalintelligence: "physical-intelligence", orbbec: "orbbec", livox: "livox",
+  drobotics: "d-robotics", maxon: "maxon", faulhaber: "faulhaber", leaderdrive: "leaderdrive",
+  harmonicdrive: "harmonic-drive", kinco: "kinco", changxing: "changxing-power", mechmind: "mech-mind",
+  linkerbot: "linkerbot", inspire: "inspire-robots", paxini: "paxini", dhrobotics: "dh-robotics",
+  shadow: "shadow-robot", kunwei: "kunwei-technology", xela: "xela-robotics", gelsight: "gelsight",
+  aheadform: "aheadform",
 };
 ---
 
@@ -77,6 +88,8 @@ const labels = locale === "zh" ? {
           <p class="landscape-company-count"><span>{String(chapter.companyIds.length).padStart(2, "0")}</span>{labels.companies}</p>
           {chapter.companyIds.map((companyId, companyIndex) => {
             const profile = landscapeCompanies[companyId];
+            const companySlug = companyPageSlugs[companyId];
+            const companyPath = companySlug ? `${locale === "en" ? "/en" : ""}/companies/${companySlug}` : "";
             return (
               <details class="company-dossier" open={chapterIndex === 0 && companyIndex === 0}>
                 <summary>
@@ -104,8 +117,12 @@ const labels = locale === "zh" ? {
                     <div><dt>{labels.fields.verify}</dt><dd>{t(profile.verify)}</dd></div>
                   </dl>
                   <footer class="dossier-source">
-                    <span>{labels.verified} {profile.reviewedAt}</span>
                     <div>
+                      {companyPath && (
+                        <a class="dossier-profile-link" href={companyPath}>
+                          <BookOpenText size={16} aria-hidden="true" />{labels.profile}<ArrowUpRight size={16} aria-hidden="true" />
+                        </a>
+                      )}
                       {profile.sources.map((source) => (
                         <a href={source.url} target="_blank" rel="noreferrer">
                           {labels.source}: {t(source.label)}<ArrowUpRight size={16} />

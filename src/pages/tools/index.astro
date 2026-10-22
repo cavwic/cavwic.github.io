@@ -1,8 +1,11 @@
 ---
 import CollectionPage from "../../components/CollectionPage.astro";
+import { isPagesBuild } from "../../data/build-scope";
 const labUrl = import.meta.env.DEV ? "http://127.0.0.1:43202/cavwic-solutions-lab" : "https://cavwic.github.io/cavwic-solutions-lab";
 const entries = [
+  { title: "灵巧操作实验台", description: "八项机器人软件实验：单指控制、动作重定向、安全控制、接触抓取、滑移检测、数据诊断、模仿学习与仿真鲁棒性。", status: "published" as const, href: "/tools/robotics-lab", external: false },
+  ...(!isPagesBuild ? [{ title: "机灵仓", description: "面向投资研究与技术选型的机器人及灵巧手资料仓，检索公司、型号、零部件参数、融资与政策等公开资料。", status: "building" as const, href: "/tools/product-finder-demo", external: true }] : []),
   { title: "解决方案项目工作台", description: "围绕售前沟通、招标文件分析和投标文件编制管理项目资料，支持本地工作区、模型生成与 Codex 任务输出。", status: "published" as const, href: labUrl, external: !import.meta.env.DEV },
 ];
 ---
-<CollectionPage eyebrow="SOLUTIONS LAB" title="工具" intro="当前发布解决方案项目工作台。项目资料在浏览器和用户授权的本地目录中处理。" entries={entries} locale="zh" showMeta={false} />
+<CollectionPage eyebrow="SOLUTIONS LAB" title="工具" intro="机器人软件实验与解决方案项目工作台。" entries={entries} locale="zh" showMeta={false} />

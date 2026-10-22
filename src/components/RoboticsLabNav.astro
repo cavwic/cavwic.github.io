@@ -1,0 +1,17 @@
+---
+import { projects, pick, type Locale } from '../features/robotics-lab/catalog';
+const { locale = 'zh', activeSlug } = Astro.props as { locale?: Locale; activeSlug?: string };
+const prefix = locale === 'zh' ? '' : '/en';
+---
+<nav class="workbench-project-nav" aria-label={locale === 'zh' ? '切换实验' : 'Experiments'}>
+  {projects.map(p => <a class:list={{selected:p.slug === activeSlug}} href={`${prefix}/tools/robotics-lab/${p.slug}`} aria-current={p.slug === activeSlug ? 'page' : undefined} data-experiment-id={p.id}><span>{String(p.id).padStart(2,'0')}</span>{pick(p.title,locale)}</a>)}
+</nav>
+<style>
+  .workbench-project-nav { display:flex;flex-wrap:wrap;gap:6px;margin:0 0 24px; }
+  .workbench-project-nav a { display:inline-flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid transparent;border-radius:4px;font-size:13px;line-height:1.5;color:var(--ink-soft,var(--rt-muted));text-decoration:none; }
+  .workbench-project-nav a span { font:11px var(--mono,var(--rt-mono));color:var(--lab-blue,var(--rt-blue)); }
+  .workbench-project-nav a:hover { border-color:var(--line,var(--rt-line)); }
+  .workbench-project-nav a.selected { border-color:var(--line,var(--rt-line));background:var(--surface,var(--rt-surface));color:var(--ink,var(--rt-ink));font-weight:700; }
+  .workbench-project-nav a:focus-visible { outline:3px solid var(--lab-blue,var(--rt-blue));outline-offset:3px; }
+  @media(max-width:760px) { .workbench-project-nav { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px; }.workbench-project-nav a { padding:8px 6px;font-size:12px; } }
+</style>

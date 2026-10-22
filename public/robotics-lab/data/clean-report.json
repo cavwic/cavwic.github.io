@@ -1,0 +1,25 @@
+{
+  "rows": 480,
+  "episodes": 4,
+  "validRows": 480,
+  "flaggedRows": 0,
+  "affectedRows": 0,
+  "affectedRate": 0,
+  "issues": [],
+  "rules": {
+    "periodMs": 20,
+    "maxSensorLagMs": 35,
+    "maxCommandLagMs": 50,
+    "maxVelocityRadS": 8,
+    "maxCurrentA": 2,
+    "maxTemperatureC": 65,
+    "maxPositionRad": 2
+  },
+  "provenance": "Synthetic deterministic fixture; seed=42; 50 Hz; no physical sensors",
+  "splitCounts": {
+    "train": 240,
+    "validation": 120,
+    "test": 120
+  },
+  "codes": {}
+}

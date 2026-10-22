@@ -1,5 +1,5 @@
 ---
-import { ArrowLeft, CalendarDays, ExternalLink, ShieldCheck } from "@lucide/astro";
+import { ArrowLeft, ExternalLink, ShieldCheck } from "@lucide/astro";
 import { evidenceLabels, kindLabels, industryLabels } from "../data/content";
 import type { LibraryEntry, SourceRef } from "../data/content";
 import { localizeSource } from "../data/source-localization";
@@ -12,8 +12,6 @@ const refs = entry.data.sourceIds
   .map((id: string) => sourcesById.get(id))
   .filter((ref): ref is SourceRef => Boolean(ref));
 const localizedRefs = refs.map((ref) => localizeSource(ref, locale));
-const reviewedAt = entry.data.reviewedAt.toISOString().slice(0, 10);
-const age = Math.floor((Date.now() - entry.data.reviewedAt.getTime()) / 86_400_000);
 ---
 
 <BaseLayout
@@ -47,11 +45,8 @@ const age = Math.floor((Date.now() - entry.data.reviewedAt.getTime()) / 86_400_0
       <div class="source-panel-head">
         <div>
           <p class="eyebrow">SOURCE TRACE</p>
-          <h2>{entry.data.locale === "zh" ? "来源与复核" : "Sources and review"}</h2>
+          <h2>{entry.data.locale === "zh" ? "资料来源" : "Sources"}</h2>
         </div>
-        <p class:list={["review-date", { stale: age > 90 }]}>
-          <CalendarDays size={16} /> {reviewedAt}{age > 90 ? (locale === "zh" ? " · 待复核" : " · REVIEW DUE") : ""}
-        </p>
       </div>
       {localizedRefs.length > 0 ? (
         <ol class="source-list">
@@ -59,12 +54,12 @@ const age = Math.floor((Date.now() - entry.data.reviewedAt.getTime()) / 86_400_0
             <li id={ref.id}>
               <span>{ref.sourceType}</span>
               <a href={ref.url} target="_blank" rel="noreferrer">{ref.title} <ExternalLink size={14} /></a>
-              <small>{ref.publisher} · {locale === "zh" ? "核验" : "Reviewed"} {ref.verifiedAt}</small>
+              <small>{ref.publisher}</small>
             </li>
           ))}
         </ol>
       ) : (
-        <p class="source-empty"><ShieldCheck size={18} /> {entry.data.locale === "zh" ? "本页仅陈述已脱敏的个人工作方法，不含外部产品参数。" : "This page contains a redacted account of personal working methods."}</p>
+        <p class="source-empty"><ShieldCheck size={18} /> {entry.data.locale === "zh" ? "本页仅介绍已脱敏的个人工作方法，不含外部产品参数。" : "This page contains a redacted account of personal working methods."}</p>
       )}
     </footer>
   </article>

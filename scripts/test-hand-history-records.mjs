@@ -1,0 +1,54 @@
+import assert from 'node:assert/strict';
+import { RecordingHistory } from '../src/features/hand-retargeting/history-state.ts';
+
+const records = [], chart = [];
+const recording = new RecordingHistory(records, chart);
+const synthetic = { source: 'synthetic', profile: { name: 'Synthetic only' } };
+recording.start(synthetic);
+const first = { source: 'synthetic', frame: 1 };
+records.push(first); chart.push({ value: 1 });
+const beforeSetting = recording.snapshot();
+const second = { source: 'synthetic', frame: 2 };
+records.push(second); chart.push({ value: 2 });
+recording.restore(beforeSetting);
+assert.deepEqual(records, [first, second], 'same-revision undo must retain newer automatic samples');
+assert.equal(recording.snapshot().metadata, synthetic);
+
+recording.clear();
+const cameraId = recording.id;
+const emptyCamera = recording.snapshot();
+const cameraProfile = { name: 'Actual camera calibration', provenance: 'camera' };
+const camera = { source: 'camera', profile: cameraProfile };
+recording.start(camera);
+const actualFrame = { source: 'camera', frame: 3 };
+records.push(actualFrame); chart.push({ value: 3 });
+recording.restore(beforeSetting);
+assert.deepEqual(records, [first, second], 'clear followed by undo restores the latest original run');
+assert.equal(recording.snapshot().metadata.source, 'synthetic');
+assert.equal(recording.backups().length, 1);
+assert.equal(recording.backups()[0].records[0], actualFrame, 'camera frames survive a cross-revision undo');
+assert.equal(recording.backups()[0].metadata, camera, 'backup retains source and calibration identity');
+
+recording.restore(emptyCamera);
+assert.deepEqual(records, [actualFrame], 'redo must recover later camera samples, not the stale empty snapshot');
+assert.equal(recording.snapshot().metadata.profile, cameraProfile);
+recording.start({ source: 'imported', provenance: 'A later UI selection must not relabel existing samples' });
+assert.equal(recording.snapshot().metadata.source, 'camera', 'later page state cannot relabel an existing run');
+recording.restore(beforeSetting);
+recording.restore(emptyCamera);
+assert.equal(recording.backups().length, 1, 'undo/redo must not duplicate archived runs');
+assert.equal(recording.id, cameraId);
+
+recording.restore(beforeSetting);
+recording.clear();
+const importedId = recording.id;
+assert(importedId > cameraId, 'clearing after undo must allocate a new, non-colliding ID');
+recording.start({ source: 'imported', provenance: 'User sequence A' });
+const importedFrame = { source: 'imported', frame: 4 };
+records.push(importedFrame);
+recording.restore(beforeSetting);
+assert.equal(recording.backups().length, 2, 'unexported camera and imported runs must both survive');
+assert.deepEqual(new Set(recording.backups().map(run => run.metadata.source)), new Set(['camera', 'imported']));
+assert.equal(beforeSetting.records.length, 1, 'old shallow snapshots remain isolated from appends');
+assert.equal(beforeSetting.records[0], first, 'immutable frame objects are shared without deep copying');
+console.log('PASS: recording lifecycle retention, same-run append protection, source metadata, undo/redo deduplication and monotonic IDs.');

@@ -1,0 +1,380 @@
+{
+  "rows": 599,
+  "episodes": 5,
+  "validRows": 598,
+  "flaggedRows": 33,
+  "affectedRows": 245,
+  "affectedRate": 0.4090150250417362,
+  "issues": [
+    {
+      "row": 15,
+      "episode": "episode-1",
+      "code": "DUPLICATE",
+      "value": 280,
+      "limit": null,
+      "detail": "Duplicate episode / timestamp key / 重复复合主键",
+      "severity": "high"
+    },
+    {
+      "row": 15,
+      "episode": "episode-1",
+      "code": "CLOCK",
+      "value": 0,
+      "limit": 0,
+      "detail": "Non-increasing sample timestamp / 采样时间不递增",
+      "severity": "high"
+    },
+    {
+      "row": 41,
+      "episode": "episode-1",
+      "code": "CLOCK",
+      "value": -5,
+      "limit": 0,
+      "detail": "Non-increasing sample timestamp / 采样时间不递增",
+      "severity": "high"
+    },
+    {
+      "row": 41,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": -15.326713747344911,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 41,
+      "episode": "episode-1",
+      "code": "COMMAND_TIME",
+      "value": -20,
+      "limit": 50,
+      "detail": "Command timestamp offset, not measured network latency / 指令时间偏移，不直接代表网络延迟",
+      "severity": "high"
+    },
+    {
+      "row": 42,
+      "episode": "episode-1",
+      "code": "GAP",
+      "value": 45,
+      "limit": 36,
+      "detail": "Sampling gap; not proof of a lost video frame / 采样间隔异常，不等于已证实视频丢帧",
+      "severity": "medium"
+    },
+    {
+      "row": 61,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 74.1298125879839,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 62,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 76.89923715777695,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 63,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 74.44550659041852,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 64,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 76.66201924532652,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 65,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 75.62137609813362,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 66,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 74.1099717002362,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 67,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 73.4130285969004,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 68,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 76.11346097663045,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 69,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 74.16662580985576,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 70,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 74.41678255237639,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 71,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 76.01455477904528,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 72,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 76.21112082898617,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 73,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 76.52379670087248,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 74,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 75.06572436355054,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 75,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 74.74963023420423,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 76,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 73.91016752645373,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 77,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 75.68246224988252,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 78,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 74.9988509286195,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 79,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 73.57948524039239,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 80,
+      "episode": "episode-1",
+      "code": "SENSOR_TIME",
+      "value": 76.87092421203852,
+      "limit": 35,
+      "detail": "Sensor timestamp offset; clock synchronization not established / 传感时间偏移，需确认时钟同步",
+      "severity": "high"
+    },
+    {
+      "row": 91,
+      "episode": "episode-1",
+      "code": "GAP",
+      "value": 80,
+      "limit": 36,
+      "detail": "Sampling gap; not proof of a lost video frame / 采样间隔异常，不等于已证实视频丢帧",
+      "severity": "medium"
+    },
+    {
+      "row": 98,
+      "episode": "episode-1",
+      "code": "COMMAND_TIME",
+      "value": 95,
+      "limit": 50,
+      "detail": "Command timestamp offset, not measured network latency / 指令时间偏移，不直接代表网络延迟",
+      "severity": "high"
+    },
+    {
+      "row": 170,
+      "episode": "episode-2",
+      "code": "JUMP",
+      "value": 63.43977208090215,
+      "limit": 8,
+      "detail": "Finite-difference velocity exceeds configured bound / 差分速度越过设定阈值",
+      "severity": "high"
+    },
+    {
+      "row": 171,
+      "episode": "episode-2",
+      "code": "JUMP",
+      "value": 62.69610094445509,
+      "limit": 8,
+      "detail": "Finite-difference velocity exceeds configured bound / 差分速度越过设定阈值",
+      "severity": "high"
+    },
+    {
+      "row": 185,
+      "episode": "episode-2",
+      "code": "CURRENT",
+      "value": 3.2,
+      "limit": 2,
+      "detail": "Current exceeds configured bound / 电流越过设定阈值",
+      "severity": "high"
+    },
+    {
+      "row": 190,
+      "episode": "episode-2",
+      "code": "TEMPERATURE",
+      "value": 78,
+      "limit": 65,
+      "detail": "Temperature exceeds configured bound / 温度越过设定阈值",
+      "severity": "high"
+    },
+    {
+      "row": 195,
+      "episode": "?",
+      "code": "SCHEMA",
+      "value": null,
+      "limit": null,
+      "detail": "Missing, non-finite or mismatched fields / 字段缺失、非有限或维度不一致",
+      "severity": "high"
+    },
+    {
+      "row": 196,
+      "episode": "episode-2",
+      "code": "GAP",
+      "value": 40,
+      "limit": 36,
+      "detail": "Sampling gap; not proof of a lost video frame / 采样间隔异常，不等于已证实视频丢帧",
+      "severity": "medium"
+    },
+    {
+      "row": 598,
+      "episode": "episode-1",
+      "code": "SPLIT_LEAK",
+      "value": null,
+      "limit": null,
+      "detail": "Same episode ID occurs in multiple splits / 同一 episode 跨数据划分",
+      "severity": "high"
+    },
+    {
+      "row": 598,
+      "episode": "episode-1",
+      "code": "DUPLICATE",
+      "value": 40,
+      "limit": null,
+      "detail": "Duplicate episode / timestamp key / 重复复合主键",
+      "severity": "high"
+    },
+    {
+      "row": 598,
+      "episode": "episode-1",
+      "code": "CLOCK",
+      "value": -2340,
+      "limit": 0,
+      "detail": "Non-increasing sample timestamp / 采样时间不递增",
+      "severity": "high"
+    },
+    {
+      "row": 478,
+      "episode": "episode-copy",
+      "code": "CONTENT_LEAK",
+      "value": null,
+      "limit": null,
+      "detail": "Identical quantized trajectory across splits; possible duplicate of episode-3 / 跨划分轨迹完全相同，疑似重复",
+      "severity": "high"
+    }
+  ],
+  "rules": {
+    "periodMs": 20,
+    "maxSensorLagMs": 35,
+    "maxCommandLagMs": 50,
+    "maxVelocityRadS": 8,
+    "maxCurrentA": 2,
+    "maxTemperatureC": 65,
+    "maxPositionRad": 2
+  },
+  "provenance": "Synthetic fault-injection fixture; seed=42; no physical sensor / video measurements",
+  "splitCounts": {
+    "train": 237,
+    "validation": 120,
+    "test": 241
+  },
+  "codes": {
+    "DUPLICATE": 2,
+    "CLOCK": 3,
+    "SENSOR_TIME": 21,
+    "COMMAND_TIME": 2,
+    "GAP": 3,
+    "JUMP": 2,
+    "CURRENT": 1,
+    "TEMPERATURE": 1,
+    "SCHEMA": 1,
+    "SPLIT_LEAK": 1,
+    "CONTENT_LEAK": 1
+  }
+}

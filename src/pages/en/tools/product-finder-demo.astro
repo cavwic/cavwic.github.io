@@ -1,0 +1,7 @@
+---
+import RoboDict from "../../../components/RoboDict.astro";
+import { isPagesBuild } from "../../../data/build-scope";
+if (isPagesBuild) return Astro.redirect("/en/tools", 302);
+---
+
+<RoboDict locale="en" />

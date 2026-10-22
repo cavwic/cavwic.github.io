@@ -1,0 +1,27 @@
+---
+import CompanyProfilePage from "../../../components/CompanyProfilePage.astro";
+import { getStandaloneRepositoryCompanies } from "../../../data/repository";
+import { sourcesById } from "../../../data/sources";
+import RepositoryLayout from "../../../layouts/RepositoryLayout.astro";
+import { isPagesBuild } from "../../../data/build-scope";
+
+export function getStaticPaths() {
+  if (isPagesBuild) return [];
+  return getStandaloneRepositoryCompanies("zh")
+    .map((company) => ({ params: { slug: company.slug }, props: { company } }));
+}
+
+const { company } = Astro.props;
+const refs = company.sourceIds.flatMap((id: string) => {
+  const ref = sourcesById.get(id);
+  return ref ? [ref] : [];
+});
+---
+
+<RepositoryLayout
+  title={`${company.name} | 公司元数据记录`}
+  description={company.positioning}
+  alternatePath={`/en/repository/companies/${company.slug}`}
+>
+  <CompanyProfilePage company={company} locale="zh" refs={refs} navigationContext="repository" />
+</RepositoryLayout>

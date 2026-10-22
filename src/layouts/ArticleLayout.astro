@@ -16,7 +16,7 @@ const { frontmatter } = Astro.props;
 const locale = frontmatter.locale ?? "zh";
 const alternatePath = locale === "zh" ? `/en${Astro.url.pathname}` : Astro.url.pathname.replace(/^\/en/, "") || "/";
 const copy = locale === "zh"
-  ? { back: "返回文章", published: "已发布" }
+  ? { back: "返回文章列表", published: "已发布" }
   : { back: "Back to articles", published: "Published" };
 ---
 

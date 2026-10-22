@@ -6,10 +6,10 @@ interface Props {
 const { locale = "zh" } = Astro.props;
 const copy = locale === "zh"
   ? {
-      status: "当前浏览器的统计状态",
+      status: "此浏览器的访问统计状态",
       enabled: "已启用",
       disabled: "已停用",
-      disable: "在此浏览器停用统计",
+      disable: "在此浏览器中停用统计",
       enable: "重新启用",
     }
   : {

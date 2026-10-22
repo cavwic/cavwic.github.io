@@ -1,0 +1,1224 @@
+{
+  "checkedAt": "2026-10-18",
+  "mode": "all",
+  "blocks": [
+    {
+      "companySlug": "agibot",
+      "product": "AGIBOT D1 Max",
+      "sourceLinks": [
+        {
+          "label": {
+            "zh": "Max官方型号手册",
+            "en": "Max official model manual"
+          },
+          "url": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf"
+        }
+      ],
+      "rows": [
+        {
+          "label": {
+            "zh": "手册本体代码",
+            "en": "Manual body code"
+          },
+          "value": {
+            "zh": "ZYCXD125M",
+            "en": "ZYCXD125M"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); 手册本体代码; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); Manual body code; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "单块电池质量",
+            "en": "Manual battery mass per pack"
+          },
+          "value": {
+            "zh": "3.3 kg/块",
+            "en": "3.3 kg per pack"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); 单块电池质量; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); Manual battery mass per pack; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "车轮尺寸",
+            "en": "Manual wheel size"
+          },
+          "value": {
+            "zh": "8英寸",
+            "en": "8 inches"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); 车轮尺寸; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); Manual wheel size; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册有效负载差异",
+            "en": "Manual effective payload discrepancy"
+          },
+          "value": {
+            "zh": "手册30 kg；旧网页额定负载25 kg，口径未解决，不推定新版",
+            "en": "Manual 30 kg; retained webpage rated payload 25 kg. Scope unresolved; no new revision inferred"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); 手册有效负载差异; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); Manual effective payload discrepancy; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册负载跨距原标注",
+            "en": "Manual load-bearing span wording"
+          },
+          "value": {
+            "zh": "50 cm；原表标题Load-bearing span，不等同旧技术表负载越障高度",
+            "en": "50 cm; source heading is Load-bearing span, not equated to the retained load-carrying clearance-height field"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); 手册负载跨距原标注; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); Manual load-bearing span wording; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池充电座输入",
+            "en": "Manual battery charging-cradle input"
+          },
+          "value": {
+            "zh": "AC 220 V",
+            "en": "AC 220 V"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); 电池充电座输入; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); Manual battery charging-cradle input; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池充电座输出",
+            "en": "Manual battery charging-cradle output"
+          },
+          "value": {
+            "zh": "DC 63 V；最大充电电流10 A；不是电池额定电压",
+            "en": "DC 63 V; maximum charging current 10 A; not nominal battery voltage"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); 电池充电座输出; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p11, printed p09 / Core Specification table, all 26 rows; Notes (1)-(3); Manual battery charging-cradle output; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "扩展口1",
+            "en": "Manual expansion port 1"
+          },
+          "value": {
+            "zh": "48 V/10 A x1",
+            "en": "48 V/10 A x1"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; 扩展口1; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; Manual expansion port 1; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅对应Max手册物理第14页所示扩展口。所有电源接口总供电不超过480 W，不把各端口电流相加；IP67要求航空插头及防护盖，连接部件前关闭扩展仓供电。",
+            "en": "Only the Max expansion ports shown on physical p14. Combined power across all power interfaces is at most 480 W; port currents are not additive. IP67 requires aviation connectors and protective caps; switch off expansion-bay power before connection."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "扩展口2",
+            "en": "Manual expansion port 2"
+          },
+          "value": {
+            "zh": "24 V/20 A x1",
+            "en": "24 V/20 A x1"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; 扩展口2; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; Manual expansion port 2; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅对应Max手册物理第14页所示扩展口。所有电源接口总供电不超过480 W，不把各端口电流相加；IP67要求航空插头及防护盖，连接部件前关闭扩展仓供电。",
+            "en": "Only the Max expansion ports shown on physical p14. Combined power across all power interfaces is at most 480 W; port currents are not additive. IP67 requires aviation connectors and protective caps; switch off expansion-bay power before connection."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "扩展口3",
+            "en": "Manual expansion port 3"
+          },
+          "value": {
+            "zh": "24 V/3 A与以太网口x1",
+            "en": "24 V/3 A and one Ethernet port"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; 扩展口3; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; Manual expansion port 3; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅对应Max手册物理第14页所示扩展口。所有电源接口总供电不超过480 W，不把各端口电流相加；IP67要求航空插头及防护盖，连接部件前关闭扩展仓供电。",
+            "en": "Only the Max expansion ports shown on physical p14. Combined power across all power interfaces is at most 480 W; port currents are not additive. IP67 requires aviation connectors and protective caps; switch off expansion-bay power before connection."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "扩展口4",
+            "en": "Manual expansion port 4"
+          },
+          "value": {
+            "zh": "12 V/5 A与以太网口x1",
+            "en": "12 V/5 A and one Ethernet port"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; 扩展口4; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; Manual expansion port 4; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅对应Max手册物理第14页所示扩展口。所有电源接口总供电不超过480 W，不把各端口电流相加；IP67要求航空插头及防护盖，连接部件前关闭扩展仓供电。",
+            "en": "Only the Max expansion ports shown on physical p14. Combined power across all power interfaces is at most 480 W; port currents are not additive. IP67 requires aviation connectors and protective caps; switch off expansion-bay power before connection."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "扩展口6和7",
+            "en": "Manual expansion ports 6 and 7"
+          },
+          "value": {
+            "zh": "USB 3.0 x2；原表供电5 V、1 A，未说明总计或每口",
+            "en": "USB 3.0 x2; source lists 5 V and 1 A without specifying combined or per-port current"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; 扩展口6和7; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; Manual expansion ports 6 and 7; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅对应Max手册物理第14页所示扩展口。所有电源接口总供电不超过480 W，不把各端口电流相加；IP67要求航空插头及防护盖，连接部件前关闭扩展仓供电。",
+            "en": "Only the Max expansion ports shown on physical p14. Combined power across all power interfaces is at most 480 W; port currents are not additive. IP67 requires aviation connectors and protective caps; switch off expansion-bay power before connection."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "扩展口8",
+            "en": "Manual expansion port 8"
+          },
+          "value": {
+            "zh": "RTK接口；未给该口电气额定值",
+            "en": "RTK interface; no electrical rating supplied for this port"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; 扩展口8; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; Manual expansion port 8; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅对应Max手册物理第14页所示扩展口。所有电源接口总供电不超过480 W，不把各端口电流相加；IP67要求航空插头及防护盖，连接部件前关闭扩展仓供电。",
+            "en": "Only the Max expansion ports shown on physical p14. Combined power across all power interfaces is at most 480 W; port currents are not additive. IP67 requires aviation connectors and protective caps; switch off expansion-bay power before connection."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "扩展口9",
+            "en": "Manual expansion port 9"
+          },
+          "value": {
+            "zh": "扩展仓供电控制按钮",
+            "en": "Expansion-bay power-control button"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; 扩展口9; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p14, printed p12 / Expansion Interface table and numbered drawing; shared <=480 W warning; Manual expansion port 9; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅对应Max手册物理第14页所示扩展口。所有电源接口总供电不超过480 W，不把各端口电流相加；IP67要求航空插头及防护盖，连接部件前关闭扩展仓供电。",
+            "en": "Only the Max expansion ports shown on physical p14. Combined power across all power interfaces is at most 480 W; port currents are not additive. IP67 requires aviation connectors and protective caps; switch off expansion-bay power before connection."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池充电温度",
+            "en": "Manual battery charging temperature"
+          },
+          "value": {
+            "zh": "0至57 C；电池充电限制，不是充电座环境温度",
+            "en": "0 to 57 C; battery charging limit, not charging-cradle ambient temperature"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p5, printed p03 / Battery Application / charging-temperature paragraph; 电池充电温度; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p5, printed p03 / Battery Application / charging-temperature paragraph; Manual battery charging temperature; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "充电座环境温度",
+            "en": "Manual charging-cradle ambient temperature"
+          },
+          "value": {
+            "zh": "0至50 C；与电池0至57 C限制分别保留",
+            "en": "0 to 50 C; separate from the battery charging limit of 0 to 57 C"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p24, printed p22 / Charging Preparation and Battery Charging; 充电座环境温度; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p24, printed p22 / Charging Preparation and Battery Charging; Manual charging-cradle ambient temperature; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "充电座电池数量",
+            "en": "Manual charging-cradle pack support"
+          },
+          "value": {
+            "zh": "支持单块或双块电池充电",
+            "en": "Supports single-pack and dual-pack charging"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p24, printed p22 / Charging Preparation and Battery Charging; 充电座电池数量; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p24, printed p22 / Charging Preparation and Battery Charging; Manual charging-cradle pack support; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "遥控器充电输入与连接",
+            "en": "Manual remote-controller charging input"
+          },
+          "value": {
+            "zh": "AC 100至240 V输入原装USB充电器，经USB Type-C连接遥控器；不是机器人充电座输入",
+            "en": "AC 100 to 240 V input to the original USB charger, with USB Type-C to the remote; not the robot battery-cradle input"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p25, printed p23 / Remote Control Charging diagram; 遥控器充电输入与连接; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p25, printed p23 / Remote Control Charging diagram; Manual remote-controller charging input; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "背部导轨安装尺寸",
+            "en": "Manual payload rail mounting drawing"
+          },
+          "value": {
+            "zh": "14 x M4，深度6；纵向连续6段60 mm；两排间距154 mm；不外推总长或螺钉长度",
+            "en": "14 x M4, depth 6; six consecutive 60 mm longitudinal intervals; 154 mm between rows. Overall rail length and screw length are not inferred"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260825/1787637877608670.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 Max官方用户手册",
+            "en": "AGIBOT D1 Max official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 Max; physical PDF p23, printed p21 / Payload Expansion / dimensioned rail drawing; 背部导轨安装尺寸; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615",
+            "en": "AGIBOT D1 Max; physical PDF p23, printed p21 / Payload Expansion / dimensioned rail drawing; Manual payload rail mounting drawing; cached source SHA256 0eb9590abdca1a8a0eb89512ed226305ca9525c7cbdfd8339b85be48577c7615"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        }
+      ]
+    },
+    {
+      "companySlug": "agibot",
+      "product": "AGIBOT D1 MaxPro",
+      "sourceLinks": [
+        {
+          "label": {
+            "zh": "MaxPro官方型号手册",
+            "en": "MaxPro official model manual"
+          },
+          "url": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf"
+        }
+      ],
+      "rows": [
+        {
+          "label": {
+            "zh": "手册扩展通信口差异",
+            "en": "Manual communication-port discrepancy"
+          },
+          "value": {
+            "zh": "USB 3.0 x2、百兆以太网100 Mbps x3及串口；旧技术表为千兆x3另加百兆x1；保留差异。12/24/48 V、总720 W和电池直充与旧行相同",
+            "en": "USB 3.0 x2, Fast Ethernet 100 Mbps x3 and serial port; retained technical sheet lists Gigabit x3 plus Fast Ethernet x1. Difference retained. 12/24/48 V, total 720 W and direct battery charging match existing rows"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p8, printed p05 / Product Parameters table, all 12 rows; Notes (1)-(5); 手册扩展通信口差异; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p8, printed p05 / Product Parameters table, all 12 rows; Notes (1)-(5); Manual communication-port discrepancy; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "双光云台接口总表",
+            "en": "Manual gimbal connector overview"
+          },
+          "value": {
+            "zh": "M12A-8P母座x1配公头；通信及12 V、24 V/1.5 A；第10页引脚表为24 V/2 A，口径不同",
+            "en": "M12A-8P female x1, mating male; communication and 12 V, 24 V/1.5 A. Physical p10 pin table instead states 24 V/2 A"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p9, printed p06 / Rear Interface Layout Definition / complete five-row connector table; 双光云台接口总表; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p9, printed p06 / Rear Interface Layout Definition / complete five-row connector table; Manual gimbal connector overview; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "雷达接口总表",
+            "en": "Manual lidar connector overview"
+          },
+          "value": {
+            "zh": "M12A-8P母座x1配公头；上装雷达通信，24 V/2 A",
+            "en": "M12A-8P female x1, mating male; upper-mounted lidar communication, 24 V/2 A"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p9, printed p06 / Rear Interface Layout Definition / complete five-row connector table; 雷达接口总表; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p9, printed p06 / Rear Interface Layout Definition / complete five-row connector table; Manual lidar connector overview; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "扩展网络接口总表",
+            "en": "Manual network connector overview"
+          },
+          "value": {
+            "zh": "M12A-17P母座x1配公头；扩展网络，12/24/48 V、1.5 A",
+            "en": "M12A-17P female x1, mating male; expansion network, 12/24/48 V and 1.5 A"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p9, printed p06 / Rear Interface Layout Definition / complete five-row connector table; 扩展网络接口总表; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p9, printed p06 / Rear Interface Layout Definition / complete five-row connector table; Manual network connector overview; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "扩展Type-C接口",
+            "en": "Manual expansion Type-C connector"
+          },
+          "value": {
+            "zh": "防水Type-C母座x1配USB Type-C；USB 3.1、10 Gbps；不改写第8页USB 3.0口径",
+            "en": "Waterproof Type-C socket x1, mating USB Type-C; USB 3.1, 10 Gbps; does not rewrite physical p8 USB 3.0 wording"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p9, printed p06 / Rear Interface Layout Definition / complete five-row connector table; 扩展Type-C接口; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p9, printed p06 / Rear Interface Layout Definition / complete five-row connector table; Manual expansion Type-C connector; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "M12K电源总表电流差异",
+            "en": "Manual M12K overview current discrepancy"
+          },
+          "value": {
+            "zh": "M12K母座x1配公头；标题12/24/48 V、15 A，功能栏及第13页引脚表为10 A，未解决",
+            "en": "M12K female x1, mating male; heading says 12/24/48 V and 15 A, while the function column and physical p13 pin table state 10 A; unresolved"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p9, printed p06 / Rear Interface Layout Definition / complete five-row connector table; M12K电源总表电流差异; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p9, printed p06 / Rear Interface Layout Definition / complete five-row connector table; Manual M12K overview current discrepancy; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "云台M12A-8P供电针",
+            "en": "Manual gimbal M12A-8P power pins"
+          },
+          "value": {
+            "zh": "针1=24 V+，针8=24 V-；电流列合并标2 A；不解释为每个信号针电流",
+            "en": "Pin 1=24 V+, pin 8=24 V-; merged current column states 2 A, not a per-signal-pin current rating"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p10, printed p07 / Head Junction Box / M12A-8P female gimbal full pin table and connector-face drawing; 云台M12A-8P供电针; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p10, printed p07 / Head Junction Box / M12A-8P female gimbal full pin table and connector-face drawing; Manual gimbal M12A-8P power pins; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "云台M12A-8P网络针",
+            "en": "Manual gimbal M12A-8P Ethernet pins"
+          },
+          "value": {
+            "zh": "针2=RX+接RJ45-1；针3=RX-接RJ45-2；针4=TX+接RJ45-3；针5=TX-接RJ45-6；针6、7=NC",
+            "en": "Pin 2=RX+ to RJ45-1; pin 3=RX- to RJ45-2; pin 4=TX+ to RJ45-3; pin 5=TX- to RJ45-6; pins 6 and 7=NC"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p10, printed p07 / Head Junction Box / M12A-8P female gimbal full pin table and connector-face drawing; 云台M12A-8P网络针; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p10, printed p07 / Head Junction Box / M12A-8P female gimbal full pin table and connector-face drawing; Manual gimbal M12A-8P Ethernet pins; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "雷达M12A-8P供电针",
+            "en": "Manual lidar M12A-8P power pins"
+          },
+          "value": {
+            "zh": "针1=24 V+，针8=24 V-；电流列合并标2 A；不解释为每个信号针电流",
+            "en": "Pin 1=24 V+, pin 8=24 V-; merged current column states 2 A, not a per-signal-pin current rating"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p11, printed p08 / Head Junction Box / M12A-8P female lidar full pin table and connector-face drawing; 雷达M12A-8P供电针; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p11, printed p08 / Head Junction Box / M12A-8P female lidar full pin table and connector-face drawing; Manual lidar M12A-8P power pins; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "雷达M12A-8P网络针",
+            "en": "Manual lidar M12A-8P Ethernet pins"
+          },
+          "value": {
+            "zh": "针2=RX+接RJ45-1；针3=RX-接RJ45-2；针4=TX+接RJ45-3；针5=TX-接RJ45-6；针6、7=NC",
+            "en": "Pin 2=RX+ to RJ45-1; pin 3=RX- to RJ45-2; pin 4=TX+ to RJ45-3; pin 5=TX- to RJ45-6; pins 6 and 7=NC"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p11, printed p08 / Head Junction Box / M12A-8P female lidar full pin table and connector-face drawing; 雷达M12A-8P网络针; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p11, printed p08 / Head Junction Box / M12A-8P female lidar full pin table and connector-face drawing; Manual lidar M12A-8P Ethernet pins; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "M12A-17P网络针",
+            "en": "Manual M12A-17P Ethernet pins"
+          },
+          "value": {
+            "zh": "针2=RX+接RJ45-1；针3=RX-接RJ45-2；针4=TX+接RJ45-3；针5=TX-接RJ45-6",
+            "en": "Pin 2=RX+ to RJ45-1; pin 3=RX- to RJ45-2; pin 4=TX+ to RJ45-3; pin 5=TX- to RJ45-6"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p12, printed p09 / Tail Junction Box / M12A-17P female full 17-pin table and connector-face drawing; M12A-17P网络针; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p12, printed p09 / Tail Junction Box / M12A-17P female full 17-pin table and connector-face drawing; Manual M12A-17P Ethernet pins; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "M12A-17P电源针",
+            "en": "Manual M12A-17P power pins"
+          },
+          "value": {
+            "zh": "48 V+：1、14、16；48 V-：15、17；12 V+：6、8；12 V-：7、9；24 V+：10、12；24 V-：11、13；合并电流列1.5 A，不推定每针独立供电",
+            "en": "48 V+: pins 1,14,16; 48 V-: 15,17; 12 V+: 6,8; 12 V-: 7,9; 24 V+: 10,12; 24 V-: 11,13. Merged current column 1.5 A; independent per-pin supply is not inferred"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p12, printed p09 / Tail Junction Box / M12A-17P female full 17-pin table and connector-face drawing; M12A-17P电源针; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p12, printed p09 / Tail Junction Box / M12A-17P female full 17-pin table and connector-face drawing; Manual M12A-17P power pins; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "M12K针定义及异常标注",
+            "en": "Manual M12K pin definitions and anomalous labels"
+          },
+          "value": {
+            "zh": "针1=48 V+；2=48 V-；3=24 V+；4定义为12/24 V-但功能栏写24 V负极；PE被原表标成12 V+，不当作接地说明；电流合并列10 A",
+            "en": "Pin 1=48 V+; 2=48 V-; 3=24 V+; 4 defined as 12/24 V- but function says 24 V negative; PE is labelled 12 V+ in the source, not treated as a grounding instruction. Merged current column 10 A"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p13, printed p10 / Tail Power M12K Interface Definition / all five pin rows; M12K针定义及异常标注; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p13, printed p10 / Tail Power M12K Interface Definition / all five pin rows; Manual M12K pin definitions and anomalous labels; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "左侧调试接口",
+            "en": "Manual left debug connector"
+          },
+          "value": {
+            "zh": "DB15母座x1；电机CAN诊断、电池CAN诊断、调试急停",
+            "en": "DB15 female x1; motor CAN diagnosis, battery CAN diagnosis and debug emergency stop"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p14, printed p11 / Left-Side Interface Layout Definition / all five table rows; 左侧调试接口; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p14, printed p11 / Left-Side Interface Layout Definition / all five table rows; Manual left debug connector; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "左侧气压平衡阀",
+            "en": "Manual left pressure-balance valve"
+          },
+          "value": {
+            "zh": "M12 x1；平衡内外气压",
+            "en": "M12 x1; balances internal and external pressure"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p14, printed p11 / Left-Side Interface Layout Definition / all five table rows; 左侧气压平衡阀; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p14, printed p11 / Left-Side Interface Layout Definition / all five table rows; Manual left pressure-balance valve; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "左侧Type-C型号",
+            "en": "Manual left Type-C model"
+          },
+          "value": {
+            "zh": "E10T-FT3-PWF / MT3-NWA-xxFPC，x1；主控板通信，xx占位符原样保留",
+            "en": "E10T-FT3-PWF / MT3-NWA-xxFPC, x1; main-control-board communication; xx placeholder retained"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p14, printed p11 / Left-Side Interface Layout Definition / all five table rows; 左侧Type-C型号; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p14, printed p11 / Left-Side Interface Layout Definition / all five table rows; Manual left Type-C model; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "左侧充电接口型号",
+            "en": "Manual left charging-port model"
+          },
+          "value": {
+            "zh": "E13T-P2B-PPF-01；48 V；本行数量栏空白，不推定数量",
+            "en": "E13T-P2B-PPF-01; 48 V; quantity cell is blank, so no count is inferred"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p14, printed p11 / Left-Side Interface Layout Definition / all five table rows; 左侧充电接口型号; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p14, printed p11 / Left-Side Interface Layout Definition / all five table rows; Manual left charging-port model; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "左侧网络接口型号",
+            "en": "Manual left network-port model"
+          },
+          "value": {
+            "zh": "E13T-FR5-PRF-180；100M以太网/调试网口；本行数量栏空白",
+            "en": "E13T-FR5-PRF-180; 100M Ethernet/debug port; quantity cell is blank"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p14, printed p11 / Left-Side Interface Layout Definition / all five table rows; 左侧网络接口型号; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p14, printed p11 / Left-Side Interface Layout Definition / all five table rows; Manual left network-port model; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "DB15调试图针位",
+            "en": "Manual DB15 debug face diagram"
+          },
+          "value": {
+            "zh": "按图正视：上排从左至右CAN4-H、CAN3-H、CAN2-H、CAN1-H、CAN0-H；中排CAN4-L至CAN0-L；下排前两孔STOP+、STOP-，后三孔无标注；原图未给针号",
+            "en": "As drawn, front view: top row left-to-right CAN4-H, CAN3-H, CAN2-H, CAN1-H, CAN0-H; middle row CAN4-L through CAN0-L; bottom row first two positions STOP+ and STOP-, last three unlabelled. No pin numbers supplied"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p15, printed p12 / Debug and Charging Port Interface Definition / image-only face diagrams; DB15调试图针位; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p15, printed p12 / Debug and Charging Port Interface Definition / image-only face diagrams; Manual DB15 debug face diagram; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "充电接口图极性",
+            "en": "Manual charging connector face diagram"
+          },
+          "value": {
+            "zh": "按图正视左针48 V，右针0 V；与第14、23页接口位置图口径分别保留，不推定机械兼容",
+            "en": "As drawn, front view: left pin 48 V, right pin 0 V. Physical pp14 and 23 show different port-layout depictions; mechanical compatibility is not inferred"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p15, printed p12 / Debug and Charging Port Interface Definition / image-only face diagrams; 充电接口图极性; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p15, printed p12 / Debug and Charging Port Interface Definition / image-only face diagrams; Manual charging connector face diagram; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "MaxPro手册接口原文，按所列物理页、接口和观察方向限定。总表与引脚表存在电压/电流差异，不能选取较大值作为额定能力；电流合并单元格不解释为每信号针载流量。接线前需厂家确认，保留原标注且不更改历史数据。",
+            "en": "MaxPro manual interface text, scoped to the stated physical page, connector and viewing direction. Voltage/current differences between overview and pin tables are unresolved; do not select the larger value as a rating. Merged current cells are not interpreted as a current rating for each signal pin. Manufacturer confirmation is needed before wiring; original labels and historical data are retained."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "充电适配器输入",
+            "en": "Manual charging-adapter input"
+          },
+          "value": {
+            "zh": "AC 100至240 V",
+            "en": "AC 100 to 240 V"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p22, printed p19 / Power Adapter Introduction / three-row electrical table; 充电适配器输入; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p22, printed p19 / Power Adapter Introduction / three-row electrical table; Manual charging-adapter input; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "充电适配器输出",
+            "en": "Manual charging-adapter output"
+          },
+          "value": {
+            "zh": "DC 54.6 V；不是48 +/-2 V电池额定值",
+            "en": "DC 54.6 V; not the nominal battery value of 48 +/-2 V"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p22, printed p19 / Power Adapter Introduction / three-row electrical table; 充电适配器输出; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p22, printed p19 / Power Adapter Introduction / three-row electrical table; Manual charging-adapter output; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "适配器充电电流",
+            "en": "Manual charging-adapter current"
+          },
+          "value": {
+            "zh": "10 A",
+            "en": "10 A"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p22, printed p19 / Power Adapter Introduction / three-row electrical table; 适配器充电电流; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p22, printed p19 / Power Adapter Introduction / three-row electrical table; Manual charging-adapter current; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池化学体系与插头",
+            "en": "Manual battery chemistry and plugs"
+          },
+          "value": {
+            "zh": "三元锂电池；原配充电器电源侧三针、机器人侧两针；直插充电",
+            "en": "Ternary lithium battery; supplied charger has a three-pin mains plug and a two-pin robot plug; direct plug-in charging"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p23, printed p20 / Battery / Charging and Checking Battery Level; 电池化学体系与插头; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p23, printed p20 / Battery / Charging and Checking Battery Level; Manual battery chemistry and plugs; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "电池电量指示分段",
+            "en": "Manual battery level segments"
+          },
+          "value": {
+            "zh": "5个LED，每个代表20%电量；显示分段不是容量精度",
+            "en": "Five LEDs, each representing 20% state of charge; display segmentation, not capacity accuracy"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p23, printed p20 / Battery / Charging and Checking Battery Level; 电池电量指示分段; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p23, printed p20 / Battery / Charging and Checking Battery Level; Manual battery level segments; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "手册本体代码",
+            "en": "Manual body code"
+          },
+          "value": {
+            "zh": "ZYCXD150M；不创建型号别名记录",
+            "en": "ZYCXD150M; no separate alias record created"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p5, printed p02 / Product Overview / model code and conflicting numerical claims; 手册本体代码; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p5, printed p02 / Product Overview / model code and conflicting numerical claims; Manual body code; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "概述电池能量差异",
+            "en": "Manual overview battery-energy discrepancy"
+          },
+          "value": {
+            "zh": "概述2123 Wh；同手册第7页及旧参数2081 Wh；不推定新电池版本",
+            "en": "Overview 2123 Wh versus 2081 Wh on physical p7 and in retained specifications; no battery revision inferred"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p5, printed p02 / Product Overview / model code and conflicting numerical claims; 概述电池能量差异; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p5, printed p02 / Product Overview / model code and conflicting numerical claims; Manual overview battery-energy discrepancy; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "概述速度差异",
+            "en": "Manual overview speed discrepancy"
+          },
+          "value": {
+            "zh": "概述空载2.5 m/s、高速版3.5 m/s；规格表实验室3 m/s且注释软件限2 m/s；未给高速版独立型号",
+            "en": "Overview no-load 2.5 m/s, high-speed version 3.5 m/s; table laboratory 3 m/s with software limit 2 m/s. No distinct high-speed model code supplied"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p5, printed p02 / Product Overview / model code and conflicting numerical claims; 概述速度差异; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p5, printed p02 / Product Overview / model code and conflicting numerical claims; Manual overview speed discrepancy; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "概述涉水深度差异",
+            "en": "Manual overview wading-depth discrepancy"
+          },
+          "value": {
+            "zh": "概述30 cm；已存资料20 cm；版本条件未解决",
+            "en": "Overview 30 cm versus retained 20 cm; revision conditions unresolved"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p5, printed p02 / Product Overview / model code and conflicting numerical claims; 概述涉水深度差异; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p5, printed p02 / Product Overview / model code and conflicting numerical claims; Manual overview wading-depth discrepancy; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        },
+        {
+          "label": {
+            "zh": "概述静止负载与持续负载条件",
+            "en": "Manual overview standing and continuous payload conditions"
+          },
+          "value": {
+            "zh": "站立负载最高100 kg；平地持续负载最高50 kg，不含爬阶、碎石或陡梯等非典型情况",
+            "en": "Standing load up to 100 kg; continuous flat-terrain load up to 50 kg, excluding atypical stair, rubble and steep-ladder scenarios"
+          },
+          "sourceUrl": "https://www.agibot.com/file/ueditor/php/upload/file/20260924/1790221504950299.pdf",
+          "sourceLabel": {
+            "zh": "AGIBOT D1 MaxPro官方用户手册",
+            "en": "AGIBOT D1 MaxPro official user manual"
+          },
+          "locator": {
+            "zh": "AGIBOT D1 MaxPro; physical PDF p5, printed p02 / Product Overview / model code and conflicting numerical claims; 概述静止负载与持续负载条件; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277",
+            "en": "AGIBOT D1 MaxPro; physical PDF p5, printed p02 / Product Overview / model code and conflicting numerical claims; Manual overview standing and continuous payload conditions; cached source SHA256 e57bdeadd8aeccede4cf010339745a465552cd5d80fc1f66d0684d76cfd69277"
+          },
+          "conditions": {
+            "zh": "仅适用于所引型号手册、页码及部件；参数表注明实验室工况。电气值仅对应指定端口，不能相加为整机额定功率；图示编号、型号代码、上限与冲突值不进入数值索引。",
+            "en": "Applies only to the cited model manual, page and component; parameter tables specify laboratory conditions. Electrical values belong to the named port and must not be summed into a robot rating. Diagram numbers, model codes, limits and conflicting values are excluded from numeric indexing."
+          },
+          "excludeFromNumericIndex": true
+        }
+      ]
+    }
+  ],
+  "reviewUpdates": [
+    {
+      "slug": "agibot",
+      "gaps": [
+        "G2 operation/software sections 3.4-3.6 and 4-14 remain partially mapped; section 15 maintenance and Appendix interfaces/radio bands remain separate source blocks.",
+        "Parent-authorized wrapper correction excludes both G2 6.3/6.36-inch head-screen source rows and both Ultra-W 16/12 whole-body DoF source rows from numeric indexing. Original values, locators and historical JSON remain unchanged.",
+        "D1 Max manual physical p11 complete 26-row table and p14 ports are mapped; MaxPro physical pp7-8 complete 33-row tables, pp9-15 electrical interfaces and pp22-23 battery details are mapped. Existing equivalent parameters are reused, not duplicated. This does not establish full manual or company completeness.",
+        "New source conflicts remain explicit: Max effective payload 30 kg versus retained rated 25 kg; MaxPro communication-port speeds/counts, gimbal and M12K electrical values, overview 2123/2081 Wh, 2.5/3.5 versus 3/2 m/s, and 30/20 cm wading. Only the two separately authorized historical conflict metrics were changed.",
+        "Remaining D1 work: cached Max/MaxPro other hardware accessory manuals and bounded remaining sections; Pro/Edu downloads timed out; Ultra/Ultra-W other chapters remain incomplete, including Ultra-W Turbo footnote clarification. Other AGIBOT model/component sources and prior conflicts remain open."
+      ]
+    }
+  ]
+}

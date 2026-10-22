@@ -1,0 +1,370 @@
+---
+import { ArrowLeft, ExternalLink, Factory, Gauge, Globe, Layers } from "@lucide/astro";
+import type { FinderExpansionRecord } from "../data/repository/product-finder-demo";
+import { getStandaloneRepositoryCompanyPath } from "../data/repository";
+import type { Locale } from "../data/site";
+import SectionRail from "./SectionRail.astro";
+
+interface Props {
+  product: FinderExpansionRecord & { slug: string };
+  locale: Locale;
+  navigationContext?: "site" | "repository";
+}
+
+const { product, locale, navigationContext = "site" } = Astro.props;
+const isZh = locale === "zh";
+const isRepository = navigationContext === "repository";
+const evidence = product.evidence;
+const companyPath = isRepository
+  ? getStandaloneRepositoryCompanyPath(product.profile.slug, locale)
+  : `${isZh ? "" : "/en"}/companies/${product.profile.slug}`;
+const knownParameters = product.parameters.filter((item) => item.status !== "unknown");
+const pendingParameters = product.parameters.filter((item) => item.status === "unknown");
+const sources = [...new Map([
+  { label: isZh ? "产品官方资料" : "Official product material", url: product.officialUrl },
+  ...(evidence?.sourceLinks ?? []),
+].filter((item) => item.url).map((item) => [item.url, item])).values()];
+
+const copy = isZh ? {
+  back: `返回${product.company}公司档案`,
+  code: isRepository ? "METADATA REPOSITORY / PRODUCT RECORD" : "JEELING / PRODUCT RECORD",
+  company: "制造商",
+  level: "资料层级",
+  model: "型号级",
+  family: "产品系列级",
+  platform: "平台级",
+  publicParameters: "已公开参数",
+  publicCapabilities: "已公开能力信息",
+  coverageStatus: "参数收录情况",
+  coverageLabels: {
+    "official-complete": "官方规格表已完整转录",
+    "official-partial": "已收录部分官方参数",
+    "family-summary": "产品系列摘要",
+    "capability-only": "能力介绍资料",
+    "source-blocked": "暂时无法读取官方来源",
+  },
+  overview: "产品概览",
+  overviewCode: "PRODUCT OVERVIEW",
+  highlights: "核心能力",
+  highlightsCode: "CORE CAPABILITIES",
+  specifications: "规格参数",
+  capabilities: "公开能力",
+  specificationsCode: "PUBLIC SPECIFICATIONS",
+  capabilitiesCode: "PUBLISHED CAPABILITIES",
+  variants: "型号与尺寸",
+  variantsCode: "MODELS & DIMENSIONS",
+  variantSeries: "系列",
+  variantModel: "型号",
+  variantForm: "形态",
+  variantDimensions: "尺寸（长×宽×高）",
+  applications: "功能与应用",
+  applicationsCode: "FUNCTION & APPLICATION",
+  integration: "集成与选型确认",
+  integrationCode: "INTEGRATION & SELECTION",
+  sources: "来源与披露边界",
+  sourcesCode: "SOURCES & BOUNDARY",
+  publicValue: "厂商公开口径",
+  parameterSource: "参数来源",
+  pending: "当前公开资料未披露",
+  useCases: "适用任务",
+  interface: "集成说明",
+  verify: "选型核验重点",
+  questions: "向厂商确认",
+  official: "查看官方产品资料",
+  boundary: "资料边界",
+  imageSource: "图片来源",
+  noImage: "当前未使用经核验的产品图片",
+} : {
+  back: `Back to ${product.company} company file`,
+  code: isRepository ? "METADATA REPOSITORY / PRODUCT RECORD" : "JEELING / PRODUCT RECORD",
+  company: "Manufacturer",
+  level: "Evidence level",
+  model: "Model level",
+  family: "Product-family level",
+  platform: "Platform level",
+  publicParameters: "Public parameters",
+  publicCapabilities: "Published capability fields",
+  coverageStatus: "Specification coverage",
+  coverageLabels: {
+    "official-complete": "Official specification table transcribed",
+    "official-partial": "Official specifications partially indexed",
+    "family-summary": "Product-family summary",
+    "capability-only": "Capability-level material",
+    "source-blocked": "Official source temporarily inaccessible",
+  },
+  overview: "Product overview",
+  overviewCode: "PRODUCT OVERVIEW",
+  highlights: "Core capabilities",
+  highlightsCode: "CORE CAPABILITIES",
+  specifications: "Specifications",
+  capabilities: "Published capabilities",
+  specificationsCode: "PUBLIC SPECIFICATIONS",
+  capabilitiesCode: "PUBLISHED CAPABILITIES",
+  variants: "Models and dimensions",
+  variantsCode: "MODELS & DIMENSIONS",
+  variantSeries: "Series",
+  variantModel: "Model",
+  variantForm: "Form",
+  variantDimensions: "Dimensions (L×W×H)",
+  applications: "Functions and applications",
+  applicationsCode: "FUNCTION & APPLICATION",
+  integration: "Integration and selection checks",
+  integrationCode: "INTEGRATION & SELECTION",
+  sources: "Sources and disclosure boundary",
+  sourcesCode: "SOURCES & BOUNDARY",
+  publicValue: "Manufacturer-published",
+  parameterSource: "Parameter source",
+  pending: "Not disclosed in current public material",
+  useCases: "Relevant tasks",
+  interface: "Integration notes",
+  verify: "Selection focus",
+  questions: "Confirm with the vendor",
+  official: "Open official product material",
+  boundary: "Evidence boundary",
+  imageSource: "Image source",
+  noImage: "No verified product image is used on this record",
+};
+
+const levelLabel = evidence?.level === "model" ? copy.model : evidence?.level === "platform" ? copy.platform : copy.family;
+const coverageStatus = evidence?.specificationCoverage ?? "official-partial";
+const coverageLabel = copy.coverageLabels[coverageStatus];
+const usesCapabilityFields = evidence?.specificationKind === "capabilities";
+const publicFieldLabel = usesCapabilityFields ? copy.publicCapabilities : copy.publicParameters;
+const specificationsLabel = usesCapabilityFields ? copy.capabilities : copy.specifications;
+const specificationsCode = usesCapabilityFields ? copy.capabilitiesCode : copy.specificationsCode;
+const overview = evidence?.overview?.length ? evidence.overview : [product.integration];
+const highlights = evidence?.highlights ?? [];
+const variants = evidence?.variants ?? [];
+const applications = evidence?.applications?.length ? evidence.applications : product.profile.fit;
+const contentSections = [
+  ...(highlights.length ? [{ id: "product-highlights", label: copy.highlights, code: copy.highlightsCode }] : []),
+  { id: "product-specifications", label: specificationsLabel, code: specificationsCode },
+  ...(variants.length ? [{ id: "product-variants", label: copy.variants, code: copy.variantsCode }] : []),
+  { id: "product-applications", label: copy.applications, code: copy.applicationsCode },
+  { id: "product-integration", label: copy.integration, code: copy.integrationCode },
+  { id: "product-sources", label: copy.sources, code: copy.sourcesCode },
+];
+const railItems = [{ id: "product-overview", label: copy.overview }, ...contentSections.map(({ id, label }) => ({ id, label }))];
+const sectionNumber = (id: string) => String(contentSections.findIndex((item) => item.id === id) + 1).padStart(2, "0");
+---
+
+<article class="repository-product">
+  <header class="repository-product-hero" id="product-overview">
+    <div class="repository-product-shell">
+      <a class="text-link repository-product-back" href={companyPath} data-history-back>
+        <ArrowLeft size={18} aria-hidden="true" />
+        <span>{copy.back}</span>
+      </a>
+
+      <div class="repository-product-heading">
+        <div>
+          <p class="eyebrow">{copy.code}</p>
+          <h1>{product.product}</h1>
+          <p>{product.type}</p>
+        </div>
+        <a class="repository-product-official" href={product.officialUrl} target="_blank" rel="noreferrer">
+          <Globe size={17} aria-hidden="true" />
+          <span>{copy.official}</span>
+          <ExternalLink size={14} aria-hidden="true" />
+        </a>
+      </div>
+
+      <div class:list={["repository-product-lead", !evidence?.imageUrl && "without-image"]}>
+        {evidence?.imageUrl && (
+          <figure>
+            <a href={evidence.imageSourceUrl ?? product.officialUrl} target="_blank" rel="noreferrer">
+              <img src={evidence.imageUrl} alt={evidence.imageAlt ?? `${product.product} ${product.type}`} loading="eager" decoding="async" />
+            </a>
+            <figcaption><strong>{copy.imageSource}</strong><span>{evidence.imageCredit ?? product.company}</span></figcaption>
+          </figure>
+        )}
+        <div class="repository-product-summary">
+          <div class="repository-product-overview-copy">
+            {overview.map((paragraph) => <p>{paragraph}</p>)}
+          </div>
+          <dl>
+            <div><dt><Factory size={16} aria-hidden="true" />{copy.company}</dt><dd><a href={companyPath}>{product.company}</a></dd></div>
+            <div><dt><Layers size={16} aria-hidden="true" />{copy.level}</dt><dd>{levelLabel}</dd></div>
+            <div><dt><Gauge size={16} aria-hidden="true" />{publicFieldLabel}</dt><dd>{knownParameters.length}</dd></div>
+            <div><dt><Gauge size={16} aria-hidden="true" />{copy.coverageStatus}</dt><dd>{coverageLabel}</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="repository-product-body">
+    {highlights.length > 0 && (
+      <section id="product-highlights" class="repository-product-section">
+        <header><p class="eyebrow">{sectionNumber("product-highlights")} / {copy.highlightsCode}</p><h2>{copy.highlights}</h2></header>
+        <div class="repository-highlight-list">
+          {highlights.map((item, index) => (
+            <article><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{item.title}</h3><p>{item.detail}</p></div></article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section id="product-specifications" class="repository-product-section">
+      <header><p class="eyebrow">{sectionNumber("product-specifications")} / {specificationsCode}</p><h2>{specificationsLabel}</h2></header>
+      <div class="repository-spec-grid">
+        {knownParameters.map((item) => (
+          <article>
+            <small>{item.label}</small>
+            <strong>{item.value}</strong>
+            <span>{copy.publicValue}</span>
+            {item.conditions && <p>{item.conditions}</p>}
+            {item.sourceUrl && <a class="repository-spec-source" href={item.sourceUrl} target="_blank" rel="noreferrer">{item.sourceLabel ?? copy.parameterSource}<ExternalLink size={12} aria-hidden="true" /></a>}
+          </article>
+        ))}
+        {pendingParameters.map((item) => (
+          <article class="pending"><small>{item.label}</small><strong>{copy.pending}</strong></article>
+        ))}
+      </div>
+    </section>
+
+    {variants.length > 0 && (
+      <section id="product-variants" class="repository-product-section">
+        <header><p class="eyebrow">{sectionNumber("product-variants")} / {copy.variantsCode}</p><h2>{copy.variants}</h2></header>
+        <div class="repository-variant-table-wrap">
+          <table class="repository-variant-table">
+            <thead><tr><th>{copy.variantSeries}</th><th>{copy.variantModel}</th><th>{copy.variantForm}</th><th>{copy.variantDimensions}</th></tr></thead>
+            <tbody>
+              {variants.map((item) => <tr><td>{item.series}</td><td>{item.model}</td><td>{item.form}</td><td>{item.dimensions}</td></tr>)}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    <section id="product-applications" class="repository-product-section repository-product-split">
+      <header><p class="eyebrow">{sectionNumber("product-applications")} / {copy.applicationsCode}</p><h2>{copy.applications}</h2></header>
+      <div>
+        <h3>{copy.useCases}</h3>
+        <ul>{applications.map((item) => <li>{item}</li>)}</ul>
+      </div>
+    </section>
+
+    <section id="product-integration" class="repository-product-section repository-product-split">
+      <header><p class="eyebrow">{sectionNumber("product-integration")} / {copy.integrationCode}</p><h2>{copy.integration}</h2></header>
+      <div class="repository-selection-copy">
+        <article><h3>{copy.interface}</h3><p>{product.integration}</p></article>
+        <article><h3>{copy.verify}</h3><p>{product.verificationFocus}</p></article>
+        <article><h3>{copy.questions}</h3><ol>{product.profile.questions.map((item) => <li>{item}</li>)}</ol></article>
+      </div>
+    </section>
+
+    <section id="product-sources" class="repository-product-section repository-product-sources">
+      <header><p class="eyebrow">{sectionNumber("product-sources")} / {copy.sourcesCode}</p><h2>{copy.sources}</h2></header>
+      <div>
+        <p><strong>{copy.coverageStatus}</strong>{coverageLabel}. {evidence?.specificationCoverageNote}</p>
+        <p><strong>{copy.boundary}</strong>{evidence?.disclosureBoundary ?? product.verificationFocus}</p>
+        <ol>
+          {sources.map((source, index) => (
+            <li><span>{String(index + 1).padStart(2, "0")}</span><a href={source.url} target="_blank" rel="noreferrer">{source.label}<ExternalLink size={14} aria-hidden="true" /></a></li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  </div>
+
+  <SectionRail items={railItems} locale={locale} railId={`product-sections-${product.slug}-${locale}`} />
+</article>
+
+<script is:inline>
+  document.querySelectorAll("[data-history-back]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      try {
+        const referrer = document.referrer ? new URL(document.referrer) : null;
+        if (referrer?.origin === window.location.origin && window.history.length > 1) {
+          event.preventDefault();
+          window.history.back();
+        }
+      } catch {}
+    });
+  });
+</script>
+
+<style>
+  .repository-product { color: var(--ink); }
+  .repository-product-hero { scroll-margin-top: 88px; border-bottom: 1px solid var(--ink); background: var(--paper); }
+  .repository-product-shell, .repository-product-body { width: min(1120px, calc(100% - 48px)); margin: 0 auto; }
+  .repository-product-shell { padding: 30px 0 72px; }
+  .repository-product-back { display: inline-flex; align-items: center; gap: 8px; }
+  .repository-product-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-top: 56px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+  .repository-product-heading h1 { max-width: 820px; margin: 8px 0 12px; font-family: var(--display); font-size: 78px; line-height: .95; overflow-wrap: anywhere; }
+  .repository-product-heading > div > p:last-child { margin: 0; color: var(--teal); font-size: 18px; font-weight: 700; }
+  .repository-product-official { display: inline-flex; min-height: 42px; flex: 0 0 auto; align-items: center; gap: 8px; padding: 0 13px; color: var(--ink); border: 1px solid var(--line); border-radius: 3px; font-size: 12px; font-weight: 700; }
+  .repository-product-official:hover { color: var(--on-teal); border-color: var(--teal); background: var(--teal); }
+  .repository-product-lead { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(320px, .7fr); gap: 54px; padding-top: 38px; }
+  .repository-product-lead.without-image { grid-template-columns: 1fr; }
+  .repository-product-lead figure { margin: 0; min-width: 0; border: 1px solid var(--line); background: var(--paper-deep); }
+  .repository-product-lead figure a { display: block; }
+  .repository-product-lead img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: contain; }
+  .repository-product-lead figcaption { display: flex; justify-content: space-between; gap: 16px; padding: 10px 12px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 11px; }
+  .repository-product-lead figcaption strong { color: var(--signal); font-family: var(--mono); font-size: 9px; text-transform: uppercase; }
+  .repository-product-overview-copy { display: grid; gap: 12px; }
+  .repository-product-overview-copy p { margin: 0; color: var(--ink-soft); font-size: 16px; line-height: 1.75; }
+  .repository-product-summary dl { margin: 25px 0 0; border-top: 1px solid var(--line); }
+  .repository-product-summary dl > div { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .repository-product-summary dt { display: flex; align-items: center; gap: 7px; color: var(--signal); font-family: var(--mono); font-size: 10px; font-weight: 700; }
+  .repository-product-summary dd { margin: 0; font-size: 13px; line-height: 1.5; }
+  .repository-product-summary dd a { color: var(--teal); font-weight: 700; }
+  .repository-product-body { padding: 76px 0 96px; }
+  .repository-product-section { scroll-margin-top: 88px; padding: 54px 0; border-bottom: 1px solid var(--line); }
+  .repository-product-section:first-child { padding-top: 0; }
+  .repository-product-section > header h2 { margin: 8px 0 0; font-family: var(--display); font-size: 34px; }
+  .repository-spec-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 28px; border-top: 1px solid var(--ink); border-left: 1px solid var(--line); }
+  .repository-spec-grid article { min-height: 128px; padding: 18px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .repository-spec-grid :is(small, strong, span) { display: block; overflow-wrap: anywhere; }
+  .repository-spec-grid small { color: var(--signal); font-family: var(--mono); font-size: 10px; }
+  .repository-spec-grid strong { margin-top: 12px; font-family: var(--display); font-size: 19px; line-height: 1.35; }
+  .repository-spec-grid span { margin-top: 10px; color: var(--teal); font-size: 10px; }
+  .repository-spec-grid p { margin: 8px 0 0; color: var(--ink-soft); font-size: 11px; line-height: 1.5; }
+  .repository-spec-source { display: inline-flex; align-items: center; gap: 5px; margin-top: 8px; color: var(--ink-soft); font-family: var(--mono); font-size: 9px; text-decoration: underline; text-underline-offset: 3px; }
+  .repository-spec-source:hover { color: var(--signal); }
+  .repository-spec-grid article.pending { background: color-mix(in srgb, var(--ink) 3%, transparent); }
+  .repository-spec-grid article.pending strong { color: var(--ink-soft); font-size: 15px; }
+  .repository-highlight-list { margin-top: 28px; border-top: 1px solid var(--ink); }
+  .repository-highlight-list article { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .repository-highlight-list article > span { color: var(--signal); font-family: var(--mono); font-size: 12px; font-weight: 700; }
+  .repository-highlight-list h3 { margin: 0 0 8px; font-size: 19px; }
+  .repository-highlight-list p { max-width: 860px; margin: 0; color: var(--ink-soft); font-size: 15px; line-height: 1.75; }
+  .repository-variant-table-wrap { margin-top: 28px; overflow-x: auto; border-top: 1px solid var(--ink); }
+  .repository-variant-table { width: 100%; min-width: 760px; border-collapse: collapse; text-align: left; }
+  .repository-variant-table th, .repository-variant-table td { padding: 13px 14px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .repository-variant-table th:first-child, .repository-variant-table td:first-child { border-left: 1px solid var(--line); }
+  .repository-variant-table th { color: var(--signal); font-family: var(--mono); font-size: 10px; }
+  .repository-variant-table td { font-size: 13px; line-height: 1.5; }
+  .repository-variant-table td:nth-child(2) { color: var(--teal); font-family: var(--mono); font-weight: 700; }
+  .repository-product-split { display: grid; grid-template-columns: minmax(250px, .7fr) minmax(0, 1.3fr); gap: 64px; }
+  .repository-product-split > div { padding-top: 20px; }
+  .repository-product-split h3, .repository-selection-copy h3 { margin: 0 0 12px; font-size: 15px; }
+  .repository-product-split ul, .repository-selection-copy ol { margin: 0; padding-left: 1.3em; color: var(--ink-soft); line-height: 1.7; }
+  .repository-product-split li + li { margin-top: 8px; }
+  .repository-selection-copy { display: grid; gap: 24px; }
+  .repository-selection-copy article { padding-bottom: 22px; border-bottom: 1px solid var(--line); }
+  .repository-selection-copy p { margin: 0; color: var(--ink-soft); line-height: 1.7; }
+  .repository-product-sources > div { display: grid; grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr); gap: 52px; margin-top: 28px; }
+  .repository-product-sources p { margin: 0; color: var(--ink-soft); line-height: 1.7; }
+  .repository-product-sources p + p { margin-top: 20px; }
+  .repository-product-sources p strong { display: block; margin-bottom: 8px; color: var(--signal); font-family: var(--mono); font-size: 10px; }
+  .repository-product-sources ol { margin: 0; padding: 0; border-top: 1px solid var(--ink); list-style: none; }
+  .repository-product-sources li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; align-items: center; padding: 13px 0; border-bottom: 1px solid var(--line); }
+  .repository-product-sources li > span { color: var(--signal); font-family: var(--mono); font-size: 10px; }
+  .repository-product-sources a { display: inline-flex; align-items: center; justify-content: space-between; gap: 14px; font-weight: 700; }
+  @media (max-width: 820px) {
+    .repository-product-shell, .repository-product-body { width: min(100% - 30px, 1120px); }
+    .repository-product-heading { align-items: flex-start; flex-direction: column; margin-top: 40px; }
+    .repository-product-heading h1 { font-size: 48px; }
+    .repository-product-lead, .repository-product-split, .repository-product-sources > div { grid-template-columns: 1fr; gap: 28px; }
+    .repository-spec-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 500px) {
+    .repository-product-shell { padding-bottom: 48px; }
+    .repository-product-heading h1 { font-size: 39px; }
+    .repository-product-official { width: 100%; justify-content: center; }
+    .repository-spec-grid { grid-template-columns: 1fr; }
+    .repository-product-summary dl > div { grid-template-columns: 1fr; gap: 5px; }
+  }
+</style>

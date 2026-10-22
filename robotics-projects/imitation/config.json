@@ -1,0 +1,18 @@
+{
+  "training_steps": 1000,
+  "batch_size": 64,
+  "chunk_size": 8,
+  "execution_steps": 4,
+  "dt": 0.1,
+  "rollout_steps": 60,
+  "dim_model": 64,
+  "use_vae": true,
+  "kl_weight": 0.01,
+  "success_radius": 0.06,
+  "success_final_steps": 5,
+  "best_validation_l1": 0.011125109512303959,
+  "training_seconds": 8.862017199999173,
+  "state_dimensions": 2,
+  "environment_dimensions": 2,
+  "action_dimensions": 2
+}

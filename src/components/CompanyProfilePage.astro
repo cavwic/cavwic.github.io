@@ -1,74 +1,146 @@
 ---
 import { ArrowLeft, ExternalLink, Globe } from "@lucide/astro";
-import type { CompanyProfile } from "../data/catalog";
-import { getCompanyOfficialLink } from "../data/company-official-links";
-import { getCompanyProfileVisual } from "../data/company-profile-visuals";
+import type { CompanyProfile } from "../data/repository/catalog";
+import { isPagesBuild } from "../data/build-scope";
+import { getCompanyOfficialLink } from "../data/repository/company-official-links";
+import { getCompanyProfileVisual } from "../data/repository/company-profile-visuals";
 import type { SourceRef } from "../data/content";
 import { industryLabels } from "../data/content";
 import { industryCompanyPath, type PrimaryIndustryId } from "../data/industries";
+import {
+  getCompanyFinancialDisclosure,
+  getRepositoryCompanyResearchEvidence,
+  hasStandaloneRepositoryCompany,
+  getStandaloneRepositoryCompanyProductRecords,
+  getRepositoryProductPath,
+  getStandaloneRepositoryPath,
+  getStandaloneRepositoryProductPath,
+} from "../data/repository";
+import { getDeepResearchCompany } from "../data/repository/robodict-deep-research";
 import type { Locale } from "../data/site";
+import SectionRail from "./SectionRail.astro";
+import CompanyComponentRelations from "./CompanyComponentRelations.astro";
+import {getCompanyComponentRelations} from "../data/repository/supplier-relations";
 
 interface Props {
   company: CompanyProfile;
   locale: Locale;
   refs: SourceRef[];
+  navigationContext?: "industry" | "repository";
 }
 
-const { company, locale, refs } = Astro.props;
+const { company, locale, refs, navigationContext = "industry" } = Astro.props;
 const isZh = locale === "zh";
+const isRepository = navigationContext === "repository";
 const industryName = industryLabels[locale][company.industry];
 const role = company.valueChainRole ?? industryName;
 const strengths = company.strengths?.filter(Boolean) ?? [];
 const fit = company.fit?.filter(Boolean) ?? [];
-const officialLink = getCompanyOfficialLink(company.slug, refs);
+const officialLink = company.officialUrl
+  ? { url: company.officialUrl, kind: "website" as const }
+  : getCompanyOfficialLink(company.slug, refs);
+const overviewParagraphs = company.overview?.filter(Boolean) ?? [company.positioning];
+const businessAreas = company.businessAreas?.filter(Boolean) ?? strengths;
+const customerGroups = company.customerGroups?.filter(Boolean) ?? fit;
+const deepResearch = getDeepResearchCompany(company.slug, locale);
+const companyResearch: ReturnType<typeof getRepositoryCompanyResearchEvidence> = isPagesBuild ? {} : getRepositoryCompanyResearchEvidence(company.slug, locale);
+const componentRelations = getCompanyComponentRelations(company.slug, locale);
+const hasLocalProductPages = !isPagesBuild && hasStandaloneRepositoryCompany(company.slug);
+const standaloneProducts = hasLocalProductPages
+  ? getStandaloneRepositoryCompanyProductRecords(company.slug, locale)
+  : [];
+const productCards = standaloneProducts.length > 0 ? standaloneProducts.map((product) => ({
+  id: product.id,
+  name: product.product,
+  type: product.type,
+  summary: product.evidence?.overview?.[0] ?? product.integration,
+  officialUrl: product.officialUrl,
+  imageUrl: product.evidence?.imageUrl,
+  imageAlt: product.evidence?.imageAlt ?? `${product.product} - ${product.type}`,
+  imageSourceUrl: product.evidence?.imageSourceUrl,
+  imageCredit: product.evidence?.imageCredit,
+  parameterCount: product.parameters.filter((item) => item.status !== "unknown").length,
+})) : deepResearch?.products ?? [];
 
 const copy = isZh
   ? {
-      back: "返回当前行业公司档案",
+      back: "返回本行业公司档案",
+      repositoryBack: "返回元数据仓库",
       overviewCode: "COMPANY OVERVIEW",
       overview: "公司介绍",
-      overviewNote: `本资料库将其归入“${industryName}”，主要业务角色为${role}。以下内容根据公开资料整理，客户适配和交付范围仍需结合具体产品版本确认。`,
+      overviewNote: `本资料库将其归入“${industryName}”，主要业务角色为${role}。以下内容根据公开资料整理，是否适合客户需求、交付范围如何，仍需结合具体产品版本确认。`,
+      repositoryOverviewNote: "本记录根据可追溯的公开资料整理，行业分类用于检索，不限制公司的实际业务范围。是否适合客户需求、当前产品版本和交付范围，仍需在项目中逐项确认。",
       focusSummary: "公开业务重点",
-      audienceSummary: "适配对象与场景",
+      audienceSummary: "适用对象与场景",
       boundarySummary: "交付与核验边界",
       unknown: "当前公开资料未单独说明",
       website: "公司官网",
       officialProfile: "官方公司资料",
       industry: "所属行业",
       role: "业务角色",
-      reviewed: "资料复核",
       sourceCount: "参考来源",
       sourceUnit: "项",
+      legalName: "公司全称",
+      country: "国家 / 地区",
+      headquarters: "总部",
+      founded: "成立时间",
+      catalogCoverage: "产品目录覆盖",
+      catalogScope: "收录边界",
+      coverageLabels: { "family-complete": "官网产品系列已覆盖", "model-partial": "系列已覆盖，型号参数补充中", "pending-review": "目录待复核" },
       businessCode: "BUSINESS AREAS",
       business: "业务领域",
-      businessEmpty: "公开资料暂未形成可独立核验的业务领域清单。",
-      productsCode: "MAIN PRODUCTS",
-      products: "主营产品",
+      businessEmpty: "公开资料暂不足以列出可独立核验的业务领域清单。",
+      productsCode: "COMPANY PRODUCTS",
+      products: "公司产品",
       audienceCode: "CUSTOMERS & USE CASES",
       audience: "潜在客户群体与适用场景",
       audienceIntro: "根据公开产品定位，优先评估以下潜在客户类型或应用场景：",
-      audienceBoundary: "这里列出的是根据公开产品定位归纳的潜在对象与场景，不代表厂商已披露的签约客户名单或实际交付业绩。",
+      audienceBoundary: "以下潜在客户类型和场景根据公开产品定位归纳，不代表厂商已披露的签约客户名单或实际交付业绩。",
       audienceEmpty: "具体客户群体和应用边界需要在项目沟通中确认。",
       verificationCode: "PROJECT VERIFICATION",
       verification: "项目核验重点",
       assessmentCode: "ANALYSIS JUDGMENT",
       assessment: "资料库判断",
       questionsCode: "VENDOR SELECTION CHECKS",
-      questions: "选型与厂商确认要点",
+      questions: "选型与确认",
       sources: "来源",
       storyCode: "PRODUCT PATH / LIBRARY VIEW",
       storyTitle: "从公开产品到应用方向",
-      storyIntro: `以${company.name}的公开产品为起点，连接其能力重点与适用方向，便于快速判断是否值得进入项目级核验。`,
-      storyBoundary: "产品、能力和应用的三段结构由本站为便于阅读所作，不是厂商对产品架构或业务层级的正式命名。",
+      storyIntro: `结合${company.name}的公开产品，梳理其能力重点和适用方向，便于快速判断是否值得在具体项目中进一步核验。`,
+      storyBoundary: "本站按产品、能力和应用三部分整理，便于阅读；这不是厂商对产品架构或业务层级的正式命名。",
       storyLabels: ["公开产品", "能力重点", "适用方向"],
-      conceptVisual: "技术方向概念视觉",
-      conceptVisualNote: `根据${company.name}的公开业务方向选用；不是该公司的产品照片、Logo、设计图或交付案例。`,
+      conceptVisual: "技术方向概念图",
+      conceptVisualNote: `根据${company.name}的公开业务方向选用；并非该公司的产品照片、Logo、设计图或交付案例。`,
+      imageSource: "图片来源",
+      productCatalogCode: "PUBLIC PRODUCT CATALOG",
+      productCatalog: "公司产品",
+      productCatalogIntro: "公开系列、具体型号和官网明确列出的订货变体均单独记录；不根据可能的配置组合生成未披露型号。",
+      parameterCount: "项公开参数",
+      openProduct: "查看产品档案",
+      productSource: "产品资料",
+      timelineCode: "COMPANY TIMELINE",
+      timeline: "发展历程",
+      timelineIntro: "按时间展示初创、产品发布和融资事件。选择事件类型后，仍保留完整时间线，只突出相关事件。",
+      timelineFilters: { all: "全部", founding: "初创", product: "产品发布", funding: "融资", business: "经营进展" },
+      databaseLabel: "机灵仓公司数据库",
+      repositoryLabel: "元数据公司记录",
+      fundingCode: "FUNDING HISTORY",
+      funding: "公开融资记录",
+      fundingBoundary: "融资信息按公开披露口径记录，不代表审计口径估值、收入或商业化质量。",
+      investmentCode: "NEUTRAL ASSESSMENT",
+      investment: "投资研究观察",
+      financialCode: "FINANCIAL DISCLOSURE",
+      financial: "公开财务报告",
+      financialOpen: "打开报告",
+      timelineEmpty: "当前公开资料尚不足以形成可核验的发展历程。",
     }
   : {
       back: "Back to this industry's company files",
+      repositoryBack: "Back to metadata repository",
       overviewCode: "COMPANY OVERVIEW",
       overview: "Company overview",
       overviewNote: `This library classifies the company under ${industryName}, with a primary role in ${role}. The profile is based on public information; customer fit and delivery scope still need to be confirmed against the product version offered for a project.`,
+      repositoryOverviewNote: "This record is built from traceable public material. Industry labels support retrieval but do not define the full boundary of the company's business. Customer fit, current product versions, and delivery scope still require project-level confirmation.",
       focusSummary: "Public business focus",
       audienceSummary: "Relevant users and use cases",
       boundarySummary: "Delivery and verification boundary",
@@ -77,14 +149,20 @@ const copy = isZh
       officialProfile: "Official company profile",
       industry: "Industry",
       role: "Business role",
-      reviewed: "Reviewed",
       sourceCount: "References",
       sourceUnit: "items",
+      legalName: "Legal name",
+      country: "Country / region",
+      headquarters: "Headquarters",
+      founded: "Founded",
+      catalogCoverage: "Catalog coverage",
+      catalogScope: "Catalog scope",
+      coverageLabels: { "family-complete": "Official product families covered", "model-partial": "Families covered; model data in progress", "pending-review": "Catalog pending review" },
       businessCode: "BUSINESS AREAS",
       business: "Business areas",
       businessEmpty: "Public material does not yet support a separately verifiable list of business areas.",
-      productsCode: "MAIN PRODUCTS",
-      products: "Main products",
+      productsCode: "COMPANY PRODUCTS",
+      products: "Company products",
       audienceCode: "CUSTOMERS & USE CASES",
       audience: "Potential customer groups and use cases",
       audienceIntro: "Based on the public product positioning, the following potential customer groups or use cases are the first to assess:",
@@ -95,7 +173,7 @@ const copy = isZh
       assessmentCode: "ANALYSIS JUDGMENT",
       assessment: "Library assessment",
       questionsCode: "VENDOR SELECTION CHECKS",
-      questions: "Vendor checks before selection",
+      questions: "Selection and confirmation",
       sources: "Sources",
       storyCode: "PRODUCT PATH / LIBRARY VIEW",
       storyTitle: "From public products to application fit",
@@ -104,6 +182,28 @@ const copy = isZh
       storyLabels: ["Public products", "Capability focus", "Application fit"],
       conceptVisual: "Technical-direction concept visual",
       conceptVisualNote: `Selected from ${company.name}'s public business direction. It is not a company product photograph, logo, design drawing, or delivery case.`,
+      imageSource: "Image source",
+      productCatalogCode: "PUBLIC PRODUCT CATALOG",
+      productCatalog: "Company products",
+      productCatalogIntro: "Public families, models and explicitly listed ordering variants retain their own identities. Undocumented configurations are not generated from possible combinations.",
+      parameterCount: "public parameters",
+      openProduct: "Open product record",
+      productSource: "Product source",
+      timelineCode: "COMPANY TIMELINE",
+      timeline: "Company timeline",
+      timelineIntro: "A chronological view of formation, product launches, and funding. Select a type to emphasize it while retaining the full context.",
+      timelineFilters: { all: "All", founding: "Formation", product: "Product launches", funding: "Funding", business: "Business milestones" },
+      databaseLabel: "JEELING COMPANY DATABASE",
+      repositoryLabel: "METADATA COMPANY RECORD",
+      fundingCode: "FUNDING HISTORY",
+      funding: "Public funding history",
+      fundingBoundary: "Funding follows public disclosures and is not evidence of audited valuation, revenue, or commercialization quality.",
+      investmentCode: "NEUTRAL ASSESSMENT",
+      investment: "Investment research view",
+      financialCode: "FINANCIAL DISCLOSURE",
+      financial: "Public financial reports",
+      financialOpen: "Open report",
+      timelineEmpty: "Current public material is not sufficient for a verifiable company timeline.",
     };
 
 const cleanPhrase = (value: string) => value.trim().replace(/[。．.!！;；]+$/u, "");
@@ -112,35 +212,87 @@ const focusPhrase = joinPhrases(strengths) || (isZh ? "公开产品与业务定�
 const fitPhrase = joinPhrases(fit) || (isZh ? "与其公开产品定位相符的项目" : "projects that match its public product positioning");
 const verificationPhrase = cleanPhrase(company.verificationFocus ?? (isZh ? "当前产品版本、接口、交付范围和验收条件" : "the current product version, interfaces, delivery scope, and acceptance conditions"));
 const profileVisual = getCompanyProfileVisual(company.slug, company.industry);
+const storyVisual = profileVisual.sourceUrl
+  ? {src:profileVisual.src,alt:profileVisual.alt[locale],sourceUrl:profileVisual.sourceUrl,credit:profileVisual.credit,objectFit:profileVisual.objectFit}
+  : deepResearch
+  ? {
+      src: deepResearch.heroImage,
+      alt: deepResearch.heroImageAlt,
+      sourceUrl: deepResearch.heroImageSourceUrl,
+      credit: deepResearch.heroImageCredit,
+      objectFit: undefined,
+    }
+  : {
+      src: profileVisual.src,
+      alt: profileVisual.alt[locale],
+      sourceUrl: undefined,
+      credit: copy.conceptVisualNote,
+      objectFit: undefined,
+    };
 const storyItems = [
   company.products.join(isZh ? "、" : ", ") || copy.unknown,
   strengths.join(isZh ? "；" : "; ") || role,
   fit.join(isZh ? "；" : "; ") || copy.unknown,
 ];
-const assessmentParagraphs = isZh
+const genericAssessmentParagraphs = isZh
   ? [
-      `从当前公开资料看，${company.name}的可评估重点包括：${focusPhrase}。对于以下需求方向，可以将其纳入候选范围：${fitPhrase}。这里的“候选”只表示值得继续核对需求、版本和现场条件，不表示已经满足某个具体项目。`,
-      `是否进入项目短名单，应重点核验${verificationPhrase}。产品页、发布材料和研究资料可以说明技术方向，但正式方案仍应以当前版本资料、报价文件、合同附件和验收证据为准。`,
-      "本档案不采用未经核验的市场份额、未披露客户名单、融资规模或缺少来源的行业排名，也不把发布演示、研究样机和批量交付能力视为同一类证据。内容仅用于行业研究与售前筛选，不构成采购、投资、法律或合规意见。",
+      `从当前公开资料看，评估${company.name}时可重点关注：${focusPhrase}。以下需求方向可将其列为候选：${fitPhrase}。列为候选只表示值得继续核对需求、版本和现场条件，不表示已经满足某个具体项目。`,
+      `是否列入项目入围名单，应重点核验${verificationPhrase}。产品页、发布材料和研究资料可以说明技术方向，但正式方案仍应以当前版本资料、报价文件、合同附件和验收证据为准。`,
+      "以上判断不以未经核验的市场份额、未披露的客户名单、融资规模或缺少来源的行业排名为依据，也不把发布演示、研究样机和批量交付能力视为同一类证据。内容仅用于行业研究与售前筛选，不构成采购、投资、法律或合规意见。",
     ]
   : [
       `Current public evidence points to the following assessment focus for ${company.name}: ${focusPhrase}. The company can enter an initial candidate set for projects in these areas: ${fitPhrase}. Candidate status only means that requirements, versions, and operating conditions merit further review; it does not mean a specific project is already satisfied.`,
       `Shortlisting should depend on ${verificationPhrase}. Product pages, launch material, and research publications can establish technical direction, but a formal proposal should still rely on current version documents, quotations, contract schedules, and acceptance evidence.`,
       "This profile does not rely on unverified market-share claims, undisclosed customer lists, funding size, or unsourced rankings. It also treats launch demonstrations, research prototypes, and production delivery as different evidence. The assessment supports industry research and presales screening; it is not procurement, investment, legal, or compliance advice.",
     ];
+const sourcedAssessment = companyResearch.investmentView?.length ? companyResearch.investmentView : deepResearch?.investmentView;
+const assessmentParagraphs = sourcedAssessment?.length
+  ? [
+      ...sourcedAssessment,
+      isZh
+        ? "本页只整理可追溯的公开信息，并将事实与本站判断分开。内容用于行业研究和前期筛选，不构成投资、采购、法律或合规意见。"
+        : "This page uses traceable public information and separates sourced facts from library judgment. It supports industry research and early screening, not investment, procurement, legal, or compliance advice.",
+    ]
+  : genericAssessmentParagraphs;
+const sourcedHistory = companyResearch.companyTimeline ?? [];
+const isCompanyDatabaseSample = Boolean(deepResearch || sourcedHistory.length);
+const historyEvents = sourcedHistory.length ? sourcedHistory : (deepResearch?.historyEvents ?? company.milestones?.map((item) => ({
+  date: item.date,
+  title: item.event,
+  detail: "",
+  sourceUrl: company.officialUrl ?? officialLink?.url ?? "",
+  kind: "product" as const,
+})) ?? []);
+const historyFilters = (["all", "founding", "product", "funding", "business"] as const).map((kind) => ({
+  kind,
+  label: copy.timelineFilters[kind],
+  count: kind === "all" ? historyEvents.length : historyEvents.filter((item) => item.kind === kind).length,
+}));
+const financialDisclosure = getCompanyFinancialDisclosure(company.slug, locale);
+const backPath = isRepository
+  ? getStandaloneRepositoryPath(locale)
+  : industryCompanyPath(company.industry as PrimaryIndustryId, locale);
+const backLabel = isRepository ? copy.repositoryBack : copy.back;
+const railItems = [
+  { id: "company-overview", label: copy.overview },
+  { id: "company-products", label: copy.productCatalog },
+  { id: "business-areas", label: copy.business },
+  { id: "company-timeline", label: copy.timeline },
+  { id: "presales-questions", label: copy.questions },
+];
 ---
 
 <article class="company-profile">
   <header class="company-profile-hero">
     <div class="company-profile-hero-inner">
-      <a class="text-link back-link company-profile-back" href={industryCompanyPath(company.industry as PrimaryIndustryId, locale)}>
+      <a class="text-link back-link company-profile-back" href={backPath} data-history-back>
         <ArrowLeft size={18} aria-hidden="true" />
-        <span>{copy.back}</span>
+        <span>{backLabel}</span>
       </a>
 
       <div class="company-profile-heading">
         <div class="company-profile-title">
-          <p class="eyebrow">{industryName} / VERIFIED {company.reviewedAt}</p>
+          <p class="eyebrow">{isRepository ? copy.repositoryLabel : isCompanyDatabaseSample ? copy.databaseLabel : industryName}</p>
           <h1>{company.name}</h1>
           {isZh && company.englishName && company.englishName !== company.name && <p class="english-name">{company.englishName}</p>}
           <p class="company-role">{role}</p>
@@ -160,8 +312,7 @@ const assessmentParagraphs = isZh
       <dl class="company-profile-meta">
         <div><dt>{copy.industry}</dt><dd>{industryName}</dd></div>
         <div><dt>{copy.role}</dt><dd>{role}</dd></div>
-        <div><dt>{copy.reviewed}</dt><dd>{company.reviewedAt}</dd></div>
-        <div><dt>{copy.sourceCount}</dt><dd>{refs.length} {copy.sourceUnit}</dd></div>
+        <div><dt>{copy.sourceCount}</dt><dd>{refs.length + (company.officialUrl ? 1 : 0)} {copy.sourceUnit}</dd></div>
       </dl>
 
       <div class="company-profile-intro-grid">
@@ -169,10 +320,16 @@ const assessmentParagraphs = isZh
           <p class="eyebrow">{copy.storyCode}</p>
           <h2>{copy.storyTitle}</h2>
           <figure class="company-product-story-visual">
-            <img src={profileVisual.src} alt={profileVisual.alt[locale]} loading="eager" decoding="async" />
+            {storyVisual.sourceUrl ? (
+              <a href={storyVisual.sourceUrl} target="_blank" rel="noreferrer" aria-label={`${copy.imageSource}: ${company.name}`}>
+                <img src={storyVisual.src} alt={storyVisual.alt} style={storyVisual.objectFit ? {objectFit:storyVisual.objectFit} : undefined} loading="eager" decoding="async" />
+              </a>
+            ) : (
+              <img src={storyVisual.src} alt={storyVisual.alt} loading="eager" decoding="async" />
+            )}
             <figcaption>
-              <strong>{copy.conceptVisual}</strong>
-              <span>{copy.conceptVisualNote}</span>
+              <strong>{storyVisual.sourceUrl ? copy.imageSource : copy.conceptVisual}</strong>
+              <span>{storyVisual.credit}</span>
             </figcaption>
           </figure>
           <p class="company-product-story-intro">{copy.storyIntro}</p>
@@ -190,59 +347,179 @@ const assessmentParagraphs = isZh
           <p class="company-product-story-boundary">{copy.storyBoundary}</p>
         </section>
 
-        <div class="company-profile-overview">
+        <div class="company-profile-overview" id="company-overview">
           <p class="eyebrow">{copy.overviewCode}</p>
           <h2>{copy.overview}</h2>
-          <p>{company.positioning}</p>
+          <div class="company-profile-overview-copy">
+            {overviewParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+          </div>
+          <dl class="company-profile-identity">
+            <div><dt>{copy.legalName}</dt><dd>{company.legalName ?? copy.unknown}</dd></div>
+            <div><dt>{copy.country}</dt><dd>{company.country ?? copy.unknown}</dd></div>
+            <div><dt>{copy.headquarters}</dt><dd>{company.headquarters ?? copy.unknown}</dd></div>
+            <div><dt>{copy.founded}</dt><dd>{company.founded ?? copy.unknown}</dd></div>
+            <div><dt>{copy.catalogCoverage}</dt><dd>{company.catalogCoverage ? copy.coverageLabels[company.catalogCoverage] : copy.unknown}</dd></div>
+            <div><dt>{copy.catalogScope}</dt><dd>{company.catalogScope ?? copy.unknown}</dd></div>
+          </dl>
           <dl class="company-profile-summary">
             <div><dt>{copy.focusSummary}</dt><dd>{strengths.join(" ") || copy.unknown}</dd></div>
             <div><dt>{copy.audienceSummary}</dt><dd>{fit.join(" ") || copy.unknown}</dd></div>
             <div><dt>{copy.boundarySummary}</dt><dd>{company.verificationFocus ?? copy.unknown}</dd></div>
           </dl>
-          <p class="company-profile-note">{copy.overviewNote}</p>
+          <section class="company-financial-disclosure" aria-labelledby={`financial-${company.slug}-${locale}`}>
+            <div>
+              <p class="eyebrow">{copy.financialCode}</p>
+              <h3 id={`financial-${company.slug}-${locale}`}>{copy.financial}</h3>
+            </div>
+            <p>{financialDisclosure.note}</p>
+            {financialDisclosure.reports.length > 0 && (
+              <ul>
+                {financialDisclosure.reports.map((report) => (
+                  <li>
+                    <span>{report.period}</span>
+                    <a href={report.url} target="_blank" rel="noreferrer">{report.title}<ExternalLink size={13} aria-hidden="true" /></a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+          <p class="company-profile-note">{isRepository ? copy.repositoryOverviewNote : copy.overviewNote}</p>
         </div>
       </div>
     </div>
   </header>
 
   <div class="company-profile-sections">
-    <section id="business-areas" class="company-profile-section">
-      <p class="eyebrow">01 / {copy.businessCode}</p>
+    <section id="company-products" class="company-profile-section company-profile-section-wide deep-product-catalog">
+      <div class="deep-section-heading">
+        <div>
+          <p class="eyebrow">01 / {copy.productCatalogCode}</p>
+          <h2>{copy.productCatalog}</h2>
+        </div>
+        <p>{copy.productCatalogIntro}</p>
+      </div>
+      <CompanyComponentRelations relations={componentRelations} locale={locale} />
+      {productCards.length > 0 ? (
+        <div class="deep-product-list">
+          {productCards.map((product, index) => {
+            const localProductPath = hasLocalProductPages
+              ? isRepository
+                ? getStandaloneRepositoryProductPath(product.id, locale)
+                : getRepositoryProductPath(product.id, locale)
+              : "";
+            return (
+              <article class="deep-product-row">
+                <span class="deep-product-index">{String(index + 1).padStart(2, "0")}</span>
+                {product.imageUrl ? (
+                  <a class="deep-product-image" href={localProductPath || product.imageSourceUrl || product.officialUrl} target={localProductPath ? undefined : "_blank"} rel={localProductPath ? undefined : "noreferrer"}>
+                    <img src={product.imageUrl} alt={product.imageAlt} loading="lazy" decoding="async" />
+                  </a>
+                ) : localProductPath ? (
+                  <a class="deep-product-image deep-product-image-placeholder" href={localProductPath} aria-label={`${copy.openProduct}: ${product.name}`}>{product.name.slice(0, 1)}</a>
+                ) : <span class="deep-product-image deep-product-image-placeholder" aria-hidden="true">{product.name.slice(0, 1)}</span>}
+                <div class="deep-product-copy">
+                  <small>{product.type}</small>
+                  {localProductPath ? <h3><a href={localProductPath}>{product.name}</a></h3> : <h3>{product.name}</h3>}
+                  <p>{product.summary}</p>
+                </div>
+                <div class="deep-product-actions">
+                  <span>{product.parameterCount} {copy.parameterCount}</span>
+                  {localProductPath && <a href={localProductPath}>{copy.openProduct}</a>}
+                  <a href={product.officialUrl} target="_blank" rel="noreferrer">{copy.productSource} <ExternalLink size={14} aria-hidden="true" /></a>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      ) : (
+        <ol class="company-product-plain-list">
+          {company.products.map((item, index) => <li><span>{String(index + 1).padStart(2, "0")}</span><strong>{item}</strong></li>)}
+        </ol>
+      )}
+    </section>
+
+    <section id="business-areas" class="company-profile-section company-profile-section-wide company-business-section">
+      <p class="eyebrow">02 / {copy.businessCode}</p>
       <h2>{copy.business}</h2>
-      {strengths.length > 0 ? <ul>{strengths.map((item) => <li>{item}</li>)}</ul> : <p>{copy.businessEmpty}</p>}
-    </section>
-
-    <section id="main-products" class="company-profile-section">
-      <p class="eyebrow">02 / {copy.productsCode}</p>
-      <h2>{copy.products}</h2>
-      <ul>{company.products.map((item) => <li>{item}</li>)}</ul>
-    </section>
-
-    <section id="customers" class="company-profile-section">
-      <p class="eyebrow">03 / {copy.audienceCode}</p>
-      <h2>{copy.audience}</h2>
-      <p class="company-profile-section-intro">{copy.audienceIntro}</p>
-      {fit.length > 0 ? <ul>{fit.map((item) => <li>{item}</li>)}</ul> : <p>{copy.audienceEmpty}</p>}
-      <p class="company-profile-boundary">{copy.audienceBoundary}</p>
-    </section>
-
-    <section id="verification" class="company-profile-section">
-      <p class="eyebrow">04 / {copy.verificationCode}</p>
-      <h2>{copy.verification}</h2>
-      <p>{company.verificationFocus ?? copy.audienceEmpty}</p>
-    </section>
-
-    <section id="assessment" class="company-profile-section company-profile-section-wide company-profile-assessment">
-      <p class="eyebrow">05 / {copy.assessmentCode}</p>
-      <h2>{copy.assessment}</h2>
-      <div class="company-profile-assessment-copy">
-        {assessmentParagraphs.map((paragraph, index) => <p class:list={{ "company-profile-disclaimer": index === assessmentParagraphs.length - 1 }}>{paragraph}</p>)}
+      <div class="company-business-grid">
+        <div>
+          <h3>{copy.business}</h3>
+          {businessAreas.length > 0 ? <ul>{businessAreas.map((item) => <li>{item}</li>)}</ul> : <p>{copy.businessEmpty}</p>}
+        </div>
+        <div>
+          <h3>{copy.audience}</h3>
+          <p class="company-profile-section-intro">{copy.audienceIntro}</p>
+          {customerGroups.length > 0 ? <ul>{customerGroups.map((item) => <li>{item}</li>)}</ul> : <p>{copy.audienceEmpty}</p>}
+          <p class="company-profile-boundary">{copy.audienceBoundary}</p>
+        </div>
       </div>
     </section>
 
+    <section
+      id="company-timeline"
+      class:list={["company-profile-section", "company-profile-section-wide", "deep-research-section", isCompanyDatabaseSample && "company-history-prototype"]}
+      data-company-history={isCompanyDatabaseSample ? "true" : undefined}
+      data-active-kind={isCompanyDatabaseSample ? "all" : undefined}
+    >
+        <p class="eyebrow">03 / {copy.timelineCode}</p>
+        <div class="company-history-heading">
+          <div><h2>{copy.timeline}</h2><p>{copy.timelineIntro}</p></div>
+          {isCompanyDatabaseSample && (
+            <div class="company-history-filters" role="group" aria-label={copy.timeline}>
+              {historyFilters.map((filter) => (
+                <button type="button" data-history-filter={filter.kind} aria-pressed={filter.kind === "all" ? "true" : "false"}>
+                  <span>{filter.label}</span><strong>{filter.count}</strong>
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+        {historyEvents.length > 0 ? (
+          <ol class:list={["deep-timeline", isCompanyDatabaseSample && "company-history-track"]}>
+            {historyEvents.map((item) => (
+              <li data-history-kind={isCompanyDatabaseSample ? item.kind : undefined}>
+                <time>{item.date}</time>
+                <div>
+                  {isCompanyDatabaseSample && item.kind && <small>{copy.timelineFilters[item.kind]}</small>}
+                  <strong>{item.title}</strong>{item.detail && item.detail !== item.title && <p>{item.detail}</p>}
+                </div>
+                {item.sourceUrl && <a href={item.sourceUrl} target="_blank" rel="noreferrer" aria-label={`${item.title} - ${copy.sources}`}><ExternalLink size={15} aria-hidden="true" /></a>}
+              </li>
+            ))}
+          </ol>
+        ) : <p class="company-timeline-empty">{copy.timelineEmpty}</p>}
+    </section>
+
+    {deepResearch && !isCompanyDatabaseSample && deepResearch.fundingRounds.length > 0 && (
+      <section id="funding-history" class="company-profile-section company-profile-section-wide deep-research-section deep-funding-section">
+        <p class="eyebrow">03B / {copy.fundingCode}</p>
+        <h2>{copy.funding}</h2>
+        <div class="deep-funding-list">
+          {deepResearch.fundingRounds.map((item) => (
+            <article>
+              <time>{item.date}</time>
+              <h3>{item.round}</h3>
+              <strong>{item.amount}</strong>
+              <p>{item.investors}</p>
+              <a href={item.sourceUrl} target="_blank" rel="noreferrer">{copy.sources} <ExternalLink size={14} aria-hidden="true" /></a>
+            </article>
+          ))}
+        </div>
+        <p class="company-profile-boundary">{copy.fundingBoundary}</p>
+      </section>
+    )}
+
     <section id="presales-questions" class="company-profile-section company-profile-section-wide">
-      <p class="eyebrow">06 / {copy.questionsCode}</p>
+      <p class="eyebrow">04 / {copy.questionsCode}</p>
       <h2>{copy.questions}</h2>
+      <div class="company-selection-summary">
+        <h3>{deepResearch ? copy.investment : copy.assessment}</h3>
+        <div class="company-profile-assessment-copy">
+          {assessmentParagraphs.map((paragraph, index) => <p class:list={{ "company-profile-disclaimer": index === assessmentParagraphs.length - 1 }}>{paragraph}</p>)}
+        </div>
+        <h3>{copy.verification}</h3>
+        <p>{company.verificationFocus ?? copy.audienceEmpty}</p>
+      </div>
       <ol>{company.presalesQuestions.map((item) => <li>{item}</li>)}</ol>
     </section>
   </div>
@@ -252,13 +529,54 @@ const assessmentParagraphs = isZh
       <div><p class="eyebrow">SOURCES</p><h2>{copy.sources}</h2></div>
     </div>
     <ol class="source-list">
+      {company.officialUrl && (
+        <li>
+          <span>official</span>
+          <a href={company.officialUrl} target="_blank" rel="noreferrer">{copy.website} <ExternalLink size={14} aria-hidden="true" /></a>
+          <small>{company.name}</small>
+        </li>
+      )}
       {refs.map((ref) => (
         <li>
           <span>{ref.sourceType}</span>
           <a href={ref.url} target="_blank" rel="noreferrer">{ref.title} <ExternalLink size={14} aria-hidden="true" /></a>
-          <small>{ref.publisher} · {ref.verifiedAt}</small>
+          <small>{ref.publisher}</small>
+        </li>
+      ))}
+      {deepResearch?.sourceLinks.map((ref) => (
+        <li>
+          <span>research</span>
+          <a href={ref.url} target="_blank" rel="noreferrer">{ref.label} <ExternalLink size={14} aria-hidden="true" /></a>
+          <small>{company.name}</small>
         </li>
       ))}
     </ol>
   </section>
+  <SectionRail items={railItems} locale={locale} railId={`company-sections-${company.slug}-${locale}`} />
 </article>
+
+<script is:inline>
+  document.querySelectorAll("[data-history-back]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      try {
+        const referrer = document.referrer ? new URL(document.referrer) : null;
+        if (referrer?.origin === window.location.origin && window.history.length > 1) {
+          event.preventDefault();
+          window.history.back();
+        }
+      } catch {}
+    });
+  });
+
+  document.querySelectorAll("[data-company-history]").forEach((history) => {
+    history.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-history-filter]");
+      if (!(button instanceof HTMLButtonElement)) return;
+      const kind = button.dataset.historyFilter || "all";
+      history.dataset.activeKind = kind;
+      history.querySelectorAll("[data-history-filter]").forEach((item) => {
+        item.setAttribute("aria-pressed", String(item === button));
+      });
+    });
+  });
+</script>

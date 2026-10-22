@@ -1,0 +1,2345 @@
+[
+  {
+    "product": "Helios H16",
+    "pageUrl": "https://store.robosense.ai/products/helios-series",
+    "rows": [
+      {
+        "label": {
+          "zh": "型号",
+          "en": "Model"
+        },
+        "value": {
+          "zh": "H16",
+          "en": "H16"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Model; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Model; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "线数",
+          "en": "# of Lines"
+        },
+        "value": {
+          "zh": "16",
+          "en": "16"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / # of Lines; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / # of Lines; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "激光波长",
+          "en": "Laser Wavelength"
+        },
+        "value": {
+          "zh": "905nm",
+          "en": "905nm"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Laser Wavelength; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Laser Wavelength; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "激光安全等级",
+          "en": "Laser Safety"
+        },
+        "value": {
+          "zh": "Class 1 Eye Safey",
+          "en": "Class 1 Eye Safey"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Laser Safety; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Laser Safety; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "测距",
+          "en": "Range"
+        },
+        "value": {
+          "zh": "150m (110m@10% NIST)",
+          "en": "150m (110m@10% NIST)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Range; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Range; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "近距盲区",
+          "en": "Blind Spot"
+        },
+        "value": {
+          "zh": "≤0.2m",
+          "en": "≤0.2m"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Blind Spot; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Blind Spot; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "典型测距精密度",
+          "en": "Range Precision (Typical)"
+        },
+        "value": {
+          "zh": "1cm",
+          "en": "1cm"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Range Precision (Typical); SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Range Precision (Typical); SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "50% NIST 漫反射目标；受温度、距离和环境影响，不能等同于所有通道、所有工况的保证值。",
+          "en": "50% NIST diffuse target; temperature, distance and environment affect results. Not a guarantee for every channel or condition."
+        }
+      },
+      {
+        "label": {
+          "zh": "水平视场角",
+          "en": "Horizontal FOV"
+        },
+        "value": {
+          "zh": "360°",
+          "en": "360°"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Horizontal FOV; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Horizontal FOV; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "垂直视场角",
+          "en": "Vertical FOV"
+        },
+        "value": {
+          "zh": "30° (-15°~+15°)",
+          "en": "30° (-15°~+15°)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Vertical FOV; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Vertical FOV; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "水平角分辨率",
+          "en": "Horizontal Angular Resolution"
+        },
+        "value": {
+          "zh": "0.1°/0.2°/0.4°",
+          "en": "0.1°/0.2°/0.4°"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Horizontal Angular Resolution; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Horizontal Angular Resolution; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "垂直角分辨率",
+          "en": "Vertical Angular Resolution"
+        },
+        "value": {
+          "zh": "2°",
+          "en": "2°"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Vertical Angular Resolution; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Vertical Angular Resolution; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "帧率",
+          "en": "Frame Rate"
+        },
+        "value": {
+          "zh": "5Hz/10Hz/20Hz",
+          "en": "5Hz/10Hz/20Hz"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Frame Rate; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Frame Rate; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "转速",
+          "en": "Rotation Speed"
+        },
+        "value": {
+          "zh": "300/600/1200rpm(5/10/20Hz)",
+          "en": "300/600/1200rpm(5/10/20Hz)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Rotation Speed; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Rotation Speed; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "每秒点数",
+          "en": "Points Per Second"
+        },
+        "value": {
+          "zh": "288,000pts/s (Single Return)576,000pts/s (Dual Return)",
+          "en": "288,000pts/s (Single Return)576,000pts/s (Dual Return)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Points Per Second; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Points Per Second; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "以太网接口",
+          "en": "Ethernet Connection"
+        },
+        "value": {
+          "zh": "100Base-T1",
+          "en": "100Base-T1"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Ethernet Connection; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Ethernet Connection; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "输出协议",
+          "en": "Output"
+        },
+        "value": {
+          "zh": "UDP Packets over Ethernet",
+          "en": "UDP Packets over Ethernet"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Output; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Output; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "UDP 数据内容",
+          "en": "UDP Packet Include"
+        },
+        "value": {
+          "zh": "Spatial Coordinates, Intensity, Timestamp, etc.",
+          "en": "Spatial Coordinates, Intensity, Timestamp, etc."
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / UDP Packet Include; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / UDP Packet Include; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "工作电压",
+          "en": "Operating Voltage"
+        },
+        "value": {
+          "zh": "9-32V",
+          "en": "9-32V"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Operating Voltage; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Operating Voltage; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "功耗",
+          "en": "Power Consumption"
+        },
+        "value": {
+          "zh": "11W",
+          "en": "11W"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Power Consumption; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Power Consumption; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "10 Hz 测试；环境、距离和目标反射率影响结果。",
+          "en": "Tested at 10 Hz; environment, range and target reflectivity apply."
+        }
+      },
+      {
+        "label": {
+          "zh": "质量",
+          "en": "Weight"
+        },
+        "value": {
+          "zh": "1000g±50g",
+          "en": "1000g±50g"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Weight; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Weight; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "外形尺寸",
+          "en": "Dimension"
+        },
+        "value": {
+          "zh": "φ100mm * H100 mm",
+          "en": "φ100mm * H100 mm"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Dimension; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Dimension; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "工作温度",
+          "en": "Operating Temperature"
+        },
+        "value": {
+          "zh": "-40°C ~ +60°C",
+          "en": "-40°C ~ +60°C"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Operating Temperature; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Operating Temperature; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "储存温度",
+          "en": "Storage Temperature"
+        },
+        "value": {
+          "zh": "-40°C ~ +85°C",
+          "en": "-40°C ~ +85°C"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Storage Temperature; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Storage Temperature; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "时间同步",
+          "en": "Time Synchronization"
+        },
+        "value": {
+          "zh": "$GPRMC with 1PPS,PTP&gPTP",
+          "en": "$GPRMC with 1PPS,PTP&gPTP"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Time Synchronization; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Time Synchronization; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "防护等级",
+          "en": "Ingress Protection"
+        },
+        "value": {
+          "zh": "IP67, IP6K9K",
+          "en": "IP67, IP6K9K"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Ingress Protection; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Ingress Protection; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      }
+    ]
+  },
+  {
+    "product": "Helios H32F70",
+    "pageUrl": "https://store.robosense.ai/products/helios-series",
+    "rows": [
+      {
+        "label": {
+          "zh": "型号",
+          "en": "Model"
+        },
+        "value": {
+          "zh": "H32F70",
+          "en": "H32F70"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Model; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Model; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "视场配置",
+          "en": "Type"
+        },
+        "value": {
+          "zh": "70° FOV",
+          "en": "70° FOV"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Type; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Type; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "线数",
+          "en": "# of Lines"
+        },
+        "value": {
+          "zh": "32",
+          "en": "32"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / # of Lines; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / # of Lines; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "激光波长",
+          "en": "Laser Wavelength"
+        },
+        "value": {
+          "zh": "905nm",
+          "en": "905nm"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Laser Wavelength; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Laser Wavelength; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "激光安全等级",
+          "en": "Laser Safety"
+        },
+        "value": {
+          "zh": "Class 1 Eye Safey",
+          "en": "Class 1 Eye Safey"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Laser Safety; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Laser Safety; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "测距",
+          "en": "Range"
+        },
+        "value": {
+          "zh": "150m (110m@10% NIST)",
+          "en": "150m (110m@10% NIST)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Range; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Range; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "近距盲区",
+          "en": "Blind Spot"
+        },
+        "value": {
+          "zh": "≤0.2m",
+          "en": "≤0.2m"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Blind Spot; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Blind Spot; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "典型测距精密度",
+          "en": "Range Precision (Typical)"
+        },
+        "value": {
+          "zh": "1cm",
+          "en": "1cm"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Range Precision (Typical); SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Range Precision (Typical); SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "50% NIST 漫反射目标；受温度、距离和环境影响，不能等同于所有通道、所有工况的保证值。",
+          "en": "50% NIST diffuse target; temperature, distance and environment affect results. Not a guarantee for every channel or condition."
+        }
+      },
+      {
+        "label": {
+          "zh": "水平视场角",
+          "en": "Horizontal FOV"
+        },
+        "value": {
+          "zh": "360°",
+          "en": "360°"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Horizontal FOV; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Horizontal FOV; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "垂直视场角",
+          "en": "Vertical FOV"
+        },
+        "value": {
+          "zh": "70° (-55 °~+15°)",
+          "en": "70° (-55 °~+15°)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Vertical FOV; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Vertical FOV; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "水平角分辨率",
+          "en": "Horizontal Angular Resolution"
+        },
+        "value": {
+          "zh": "0.1°/0.2°/0.4°",
+          "en": "0.1°/0.2°/0.4°"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Horizontal Angular Resolution; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Horizontal Angular Resolution; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "垂直角分辨率",
+          "en": "Vertical Angular Resolution"
+        },
+        "value": {
+          "zh": "Up to 1.33°",
+          "en": "Up to 1.33°"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Vertical Angular Resolution; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Vertical Angular Resolution; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "帧率",
+          "en": "Frame Rate"
+        },
+        "value": {
+          "zh": "5Hz/10Hz/20Hz",
+          "en": "5Hz/10Hz/20Hz"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Frame Rate; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Frame Rate; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "转速",
+          "en": "Rotation Speed"
+        },
+        "value": {
+          "zh": "300/600/1200rpm(5/10/20Hz)",
+          "en": "300/600/1200rpm(5/10/20Hz)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Rotation Speed; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Rotation Speed; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "每秒点数",
+          "en": "Points Per Second"
+        },
+        "value": {
+          "zh": "576,000pts/s (Single Return)1,152,000pts/s (Dual Return)",
+          "en": "576,000pts/s (Single Return)1,152,000pts/s (Dual Return)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Points Per Second; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Points Per Second; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "以太网接口",
+          "en": "Ethernet Connection"
+        },
+        "value": {
+          "zh": "100Base-T1",
+          "en": "100Base-T1"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Ethernet Connection; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Ethernet Connection; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "输出协议",
+          "en": "Output"
+        },
+        "value": {
+          "zh": "UDP Packets over Ethernet",
+          "en": "UDP Packets over Ethernet"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Output; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Output; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "UDP 数据内容",
+          "en": "UDP Packet Include"
+        },
+        "value": {
+          "zh": "Spatial Coordinates, Intensity, Timestamp, etc.",
+          "en": "Spatial Coordinates, Intensity, Timestamp, etc."
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / UDP Packet Include; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / UDP Packet Include; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "工作电压",
+          "en": "Operating Voltage"
+        },
+        "value": {
+          "zh": "9-32V",
+          "en": "9-32V"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Operating Voltage; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Operating Voltage; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "功耗",
+          "en": "Power Consumption"
+        },
+        "value": {
+          "zh": "12W",
+          "en": "12W"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Power Consumption; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Power Consumption; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "10 Hz 测试；环境、距离和目标反射率影响结果。",
+          "en": "Tested at 10 Hz; environment, range and target reflectivity apply."
+        }
+      },
+      {
+        "label": {
+          "zh": "质量",
+          "en": "Weight"
+        },
+        "value": {
+          "zh": "1000g±50g",
+          "en": "1000g±50g"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Weight; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Weight; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "外形尺寸",
+          "en": "Dimension"
+        },
+        "value": {
+          "zh": "φ100mm * H100 mm",
+          "en": "φ100mm * H100 mm"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Dimension; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Dimension; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "工作温度",
+          "en": "Operating Temperature"
+        },
+        "value": {
+          "zh": "-40°C ~ +60°C",
+          "en": "-40°C ~ +60°C"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Operating Temperature; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Operating Temperature; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "储存温度",
+          "en": "Storage Temperature"
+        },
+        "value": {
+          "zh": "-40°C ~ +85°C",
+          "en": "-40°C ~ +85°C"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Storage Temperature; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Storage Temperature; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "时间同步",
+          "en": "Time Synchronization"
+        },
+        "value": {
+          "zh": "$GPRMC with 1PPS,PTP&gPTP",
+          "en": "$GPRMC with 1PPS,PTP&gPTP"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Time Synchronization; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Time Synchronization; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "防护等级",
+          "en": "Ingress Protection"
+        },
+        "value": {
+          "zh": "IP67, IP6K9K",
+          "en": "IP67, IP6K9K"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Ingress Protection; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Ingress Protection; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      }
+    ]
+  },
+  {
+    "product": "Helios H32F26",
+    "pageUrl": "https://store.robosense.ai/products/helios-series",
+    "rows": [
+      {
+        "label": {
+          "zh": "型号",
+          "en": "Model"
+        },
+        "value": {
+          "zh": "H32F26",
+          "en": "H32F26"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Model; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Model; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "视场配置",
+          "en": "Type"
+        },
+        "value": {
+          "zh": "26° FOV",
+          "en": "26° FOV"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Type; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Type; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "线数",
+          "en": "# of Lines"
+        },
+        "value": {
+          "zh": "32",
+          "en": "32"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / # of Lines; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / # of Lines; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "激光波长",
+          "en": "Laser Wavelength"
+        },
+        "value": {
+          "zh": "905nm",
+          "en": "905nm"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Laser Wavelength; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Laser Wavelength; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "激光安全等级",
+          "en": "Laser Safety"
+        },
+        "value": {
+          "zh": "Class 1 Eye Safey",
+          "en": "Class 1 Eye Safey"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Laser Safety; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Laser Safety; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "测距",
+          "en": "Range"
+        },
+        "value": {
+          "zh": "150m (110m@10% NIST)",
+          "en": "150m (110m@10% NIST)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Range; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Range; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "近距盲区",
+          "en": "Blind Spot"
+        },
+        "value": {
+          "zh": "≤0.2m",
+          "en": "≤0.2m"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Blind Spot; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Blind Spot; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "典型测距精密度",
+          "en": "Range Precision (Typical)"
+        },
+        "value": {
+          "zh": "1cm",
+          "en": "1cm"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Range Precision (Typical); SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Range Precision (Typical); SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "50% NIST 漫反射目标；受温度、距离和环境影响，不能等同于所有通道、所有工况的保证值。",
+          "en": "50% NIST diffuse target; temperature, distance and environment affect results. Not a guarantee for every channel or condition."
+        }
+      },
+      {
+        "label": {
+          "zh": "水平视场角",
+          "en": "Horizontal FOV"
+        },
+        "value": {
+          "zh": "360°",
+          "en": "360°"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Horizontal FOV; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Horizontal FOV; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "垂直视场角",
+          "en": "Vertical FOV"
+        },
+        "value": {
+          "zh": "26° (-16 °~+10°)",
+          "en": "26° (-16 °~+10°)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Vertical FOV; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Vertical FOV; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "水平角分辨率",
+          "en": "Horizontal Angular Resolution"
+        },
+        "value": {
+          "zh": "0.1°/0.2°/0.4°",
+          "en": "0.1°/0.2°/0.4°"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Horizontal Angular Resolution; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Horizontal Angular Resolution; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "垂直角分辨率",
+          "en": "Vertical Angular Resolution"
+        },
+        "value": {
+          "zh": "Up to 0.5°",
+          "en": "Up to 0.5°"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Vertical Angular Resolution; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Vertical Angular Resolution; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "帧率",
+          "en": "Frame Rate"
+        },
+        "value": {
+          "zh": "5Hz/10Hz/20Hz",
+          "en": "5Hz/10Hz/20Hz"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Frame Rate; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Frame Rate; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "转速",
+          "en": "Rotation Speed"
+        },
+        "value": {
+          "zh": "300/600/1200rpm(5/10/20Hz)",
+          "en": "300/600/1200rpm(5/10/20Hz)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Rotation Speed; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Rotation Speed; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "每秒点数",
+          "en": "Points Per Second"
+        },
+        "value": {
+          "zh": "576,000pts/s (Single Return)1,152,000pts/s (Dual Return)",
+          "en": "576,000pts/s (Single Return)1,152,000pts/s (Dual Return)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Points Per Second; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Points Per Second; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "以太网接口",
+          "en": "Ethernet Connection"
+        },
+        "value": {
+          "zh": "100Base-T1",
+          "en": "100Base-T1"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Ethernet Connection; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Ethernet Connection; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "输出协议",
+          "en": "Output"
+        },
+        "value": {
+          "zh": "UDP Packets over Ethernet",
+          "en": "UDP Packets over Ethernet"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Output; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Output; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "UDP 数据内容",
+          "en": "UDP Packet Include"
+        },
+        "value": {
+          "zh": "Spatial Coordinates, Intensity, Timestamp, etc.",
+          "en": "Spatial Coordinates, Intensity, Timestamp, etc."
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / UDP Packet Include; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / UDP Packet Include; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "工作电压",
+          "en": "Operating Voltage"
+        },
+        "value": {
+          "zh": "9-32V",
+          "en": "9-32V"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Operating Voltage; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Operating Voltage; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "功耗",
+          "en": "Power Consumption"
+        },
+        "value": {
+          "zh": "12W",
+          "en": "12W"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Power Consumption; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Power Consumption; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "10 Hz 测试；环境、距离和目标反射率影响结果。",
+          "en": "Tested at 10 Hz; environment, range and target reflectivity apply."
+        }
+      },
+      {
+        "label": {
+          "zh": "质量",
+          "en": "Weight"
+        },
+        "value": {
+          "zh": "1000g±50g",
+          "en": "1000g±50g"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Weight; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Weight; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "外形尺寸",
+          "en": "Dimension"
+        },
+        "value": {
+          "zh": "φ100mm * H100 mm",
+          "en": "φ100mm * H100 mm"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Dimension; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Dimension; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "工作温度",
+          "en": "Operating Temperature"
+        },
+        "value": {
+          "zh": "-40°C ~ +60°C",
+          "en": "-40°C ~ +60°C"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Operating Temperature; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Operating Temperature; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "储存温度",
+          "en": "Storage Temperature"
+        },
+        "value": {
+          "zh": "-40°C ~ +85°C",
+          "en": "-40°C ~ +85°C"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Storage Temperature; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Storage Temperature; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "时间同步",
+          "en": "Time Synchronization"
+        },
+        "value": {
+          "zh": "$GPRMC with 1PPS,PTP&gPTP",
+          "en": "$GPRMC with 1PPS,PTP&gPTP"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Time Synchronization; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Time Synchronization; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "防护等级",
+          "en": "Ingress Protection"
+        },
+        "value": {
+          "zh": "IP67, IP6K9K",
+          "en": "IP67, IP6K9K"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/helios-series",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Ingress Protection; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b",
+          "en": "Product Specifications / Ingress Protection; SHA-256 eb9d5dd7fdb2e6fa20c532a6aa0b7d5cf1dc5cdc2fdbc0faf6371d948790ca1b"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      }
+    ]
+  },
+  {
+    "product": "M1 Plus 12V",
+    "pageUrl": "https://store.robosense.ai/products/m1-plus",
+    "rows": [
+      {
+        "label": {
+          "zh": "水平视场角",
+          "en": "Horizontal FOV"
+        },
+        "value": {
+          "zh": "120°",
+          "en": "120°"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Horizontal FOV; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Horizontal FOV; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "激光波长",
+          "en": "Laser Wavelength"
+        },
+        "value": {
+          "zh": "905 nm",
+          "en": "905 nm"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Laser Wavelength; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Laser Wavelength; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "垂直视场角",
+          "en": "Vertical FOV"
+        },
+        "value": {
+          "zh": "25°",
+          "en": "25°"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Vertical FOV; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Vertical FOV; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "激光安全等级",
+          "en": "Laser Safety"
+        },
+        "value": {
+          "zh": "Class 1 Eye Safety",
+          "en": "Class 1 Eye Safety"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Laser Safety; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Laser Safety; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "水平角分辨率",
+          "en": "Horizontal Angular Resolution"
+        },
+        "value": {
+          "zh": "Average 0.2°",
+          "en": "Average 0.2°"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Horizontal Angular Resolution; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Horizontal Angular Resolution; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "测距",
+          "en": "Range"
+        },
+        "value": {
+          "zh": "200m (180m@10% NIST)",
+          "en": "200m (180m@10% NIST)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Range; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Range; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "垂直角分辨率",
+          "en": "Vertical Angular Resolution"
+        },
+        "value": {
+          "zh": "Average 0.2°(ROI: Average 0.1° )",
+          "en": "Average 0.2°(ROI: Average 0.1° )"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Vertical Angular Resolution; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Vertical Angular Resolution; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "近距盲区",
+          "en": "Blind Spot"
+        },
+        "value": {
+          "zh": "≤0.5 m",
+          "en": "≤0.5 m"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Blind Spot; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Blind Spot; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "帧率",
+          "en": "Frame Rate"
+        },
+        "value": {
+          "zh": "10Hz",
+          "en": "10Hz"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Frame Rate; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Frame Rate; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "典型测距精密度",
+          "en": "Range Precision (Typical)"
+        },
+        "value": {
+          "zh": "5 cm",
+          "en": "5 cm"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Range Precision (Typical); SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Range Precision (Typical); SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "50% NIST 漫反射目标；受温度、距离和环境影响，不能等同于所有通道、所有工况的保证值。",
+          "en": "50% NIST diffuse target; temperature, distance and environment affect results. Not a guarantee for every channel or condition."
+        }
+      },
+      {
+        "label": {
+          "zh": "测距准确度",
+          "en": "Range Accuracy"
+        },
+        "value": {
+          "zh": "±5cm",
+          "en": "±5cm"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Range Accuracy; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Range Accuracy; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "50% NIST 漫反射目标；受温度、距离和环境影响，不能等同于所有通道、所有工况的保证值。",
+          "en": "50% NIST diffuse target; temperature, distance and environment affect results. Not a guarantee for every channel or condition."
+        }
+      },
+      {
+        "label": {
+          "zh": "每秒点数",
+          "en": "Points Per Second"
+        },
+        "value": {
+          "zh": "787,500pts/s (Single Return Mode) 1,575,000pts/s (Dual Return Mode)",
+          "en": "787,500pts/s (Single Return Mode) 1,575,000pts/s (Dual Return Mode)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Points Per Second; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Points Per Second; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        },
+        "excludeFromNumericIndex": true
+      },
+      {
+        "label": {
+          "zh": "以太网接口",
+          "en": "Ethernet Connection"
+        },
+        "value": {
+          "zh": "1000Base-T1",
+          "en": "1000Base-T1"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Ethernet Connection; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Ethernet Connection; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "输出协议",
+          "en": "Output"
+        },
+        "value": {
+          "zh": "UDP Packets over Ethernet",
+          "en": "UDP Packets over Ethernet"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Output; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Output; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "UDP 数据内容",
+          "en": "UDP Packet Include"
+        },
+        "value": {
+          "zh": "Spatial Coordinates, Intensity, Timestamp, etc.",
+          "en": "Spatial Coordinates, Intensity, Timestamp, etc."
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / UDP Packet Include; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / UDP Packet Include; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "工作电压",
+          "en": "Operating Voltage"
+        },
+        "value": {
+          "zh": "9 - 16V",
+          "en": "9 - 16V"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Operating Voltage; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Operating Voltage; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "尺寸（不含连接器）",
+          "en": "Dimension (Without connector)"
+        },
+        "value": {
+          "zh": "111mm(D) x 110mm(W) x 45mm(H)",
+          "en": "111mm(D) x 110mm(W) x 45mm(H)"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Dimension (Without connector); SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Dimension (Without connector); SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "功耗",
+          "en": "Power Consumption"
+        },
+        "value": {
+          "zh": "15 W",
+          "en": "15 W"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Power Consumption; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Power Consumption; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "10 Hz、100米以内测试；环境和目标条件影响结果。",
+          "en": "Tested at 10 Hz within 100 m; environment and target conditions apply."
+        }
+      },
+      {
+        "label": {
+          "zh": "工作温度",
+          "en": "Operating Temperature"
+        },
+        "value": {
+          "zh": "-40 °C ~ +85 °C",
+          "en": "-40 °C ~ +85 °C"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Operating Temperature; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Operating Temperature; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "质量（不含线缆）",
+          "en": "Weight (Without Cabling)"
+        },
+        "value": {
+          "zh": "690g ± 20g",
+          "en": "690g ± 20g"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Weight (Without Cabling); SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Weight (Without Cabling); SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "储存温度",
+          "en": "Storage Temperature"
+        },
+        "value": {
+          "zh": "-40 °C ~ +105 °C",
+          "en": "-40 °C ~ +105 °C"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Storage Temperature; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Storage Temperature; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "时间同步",
+          "en": "Time Synchronization"
+        },
+        "value": {
+          "zh": "gPTP",
+          "en": "gPTP"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Time Synchronization; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Time Synchronization; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      },
+      {
+        "label": {
+          "zh": "防护等级",
+          "en": "Ingress Protection"
+        },
+        "value": {
+          "zh": "IP67, IP6K9K",
+          "en": "IP67, IP6K9K"
+        },
+        "sourceUrl": "https://store.robosense.ai/products/m1-plus",
+        "sourceLabel": {
+          "zh": "速腾聚创官方商城规格表",
+          "en": "RoboSense official store specifications"
+        },
+        "locator": {
+          "zh": "Product Specifications / Ingress Protection; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f",
+          "en": "Product Specifications / Ingress Protection; SHA-256 56bb79916381397d499799fe5097b0addf331913a4a932af8a83b1659cc76e2f"
+        },
+        "conditions": {
+          "zh": "仅对应官方表格中的量产型号，不适用于样机；角分辨率、帧率及回波模式需对应使用。",
+          "en": "Only the production configuration in this table, not prototypes. Angular resolution, frame rate and return mode must be matched."
+        }
+      }
+    ]
+  }
+]
