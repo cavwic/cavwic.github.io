@@ -1,5 +1,5 @@
 ---
-import CollectionPage from "../../components/CollectionPage.astro";
+import SkillsDirectory from "../../components/SkillsDirectory.astro";
 const skills = [
   ["presales-discovery", "把模糊需求梳理为对象、流程、数据、现场、相关方、约束和后续验证步骤。"],
   ["solution-architecture-pack", "整理边界清晰的架构资料：系统分层、接口、权限、依赖、风险和替代方案。"],
@@ -16,4 +16,4 @@ const entries = skills.map(([title, description]) => ({
   external: true,
 }));
 ---
-<CollectionPage eyebrow="AGENT SKILLS" title="Skills" intro="五个 Skill 提供标准 SKILL.md、模板、示例、检查脚本和适用边界，可从公开仓库查看与下载。" entries={entries} locale="zh" />
+<SkillsDirectory locale="zh" generalSkills={entries} />

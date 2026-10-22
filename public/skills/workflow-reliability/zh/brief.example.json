@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "mode": "workflow",
+  "title": "工单分流与草稿审批",
+  "objective": "收到脱敏服务请求后建议分类；审批后才创建测试工单。",
+  "data": "测试来信、稳定事件 ID、测试系统最小权限凭据。",
+  "output": "分类、答复草稿、审批结果、目标记录 ID 与回执。",
+  "owner": "服务主管 / 测试接口负责人",
+  "acceptance": "重放相同事件只创建一张工单；模拟响应丢失先对账；拒绝审批不写入。",
+  "recovery": "超时先查询目标；状态未知转人工；最多两次有条件重试，禁止盲目重建。",
+  "excluded": "不连接正式工单系统，不自动发送邮件。",
+  "sensitive": false,
+  "external": false,
+  "steps": [
+    {
+      "name": "校验事件与业务主键",
+      "kind": "read",
+      "approval": false
+    },
+    {
+      "name": "分类并生成草稿",
+      "kind": "model",
+      "approval": false
+    },
+    {
+      "name": "校验字段与目标状态",
+      "kind": "check",
+      "approval": false
+    },
+    {
+      "name": "审批执行动作",
+      "kind": "human",
+      "approval": false
+    },
+    {
+      "name": "创建测试工单并保存回执",
+      "kind": "write",
+      "approval": true
+    }
+  ]
+}

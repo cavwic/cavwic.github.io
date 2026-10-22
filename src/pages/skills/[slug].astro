@@ -1,0 +1,7 @@
+---
+import { aiSkills } from "../../data/ai-delivery";
+import AiSkillPage from "../../components/AiSkillPage.astro";
+export const getStaticPaths = () => aiSkills.map(s => ({ params: { slug: s.slug } }));
+const { slug } = Astro.params;
+---
+<AiSkillPage slug={slug!} locale="zh" />

@@ -1,0 +1,38 @@
+---
+import { ArrowUpRight } from "@lucide/astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { aiSkills } from "../data/ai-delivery";
+import type { Entry, Locale } from "../data/site";
+interface Props { locale: Locale; generalSkills: Entry[] }
+const { locale, generalSkills } = Astro.props;
+const zh = locale === "zh";
+const base = zh ? "" : "/en";
+const intro = zh ? "按任务选择：企业 AI 立项、工作流恢复、编码交付，以及通用售前方法。" : "Choose by task: enterprise AI discovery, workflow recovery, coding delivery or general presales.";
+---
+<BaseLayout title="Skills | CAVWIC" description={intro} locale={locale} alternatePath={zh ? "/en/skills" : "/skills"}>
+  <header class="page-head"><div class="page-head-inner"><p class="eyebrow">AGENT SKILLS</p><h1>Skills</h1><p>{intro}</p></div></header>
+  <div class="skills-directory">
+    <section aria-labelledby="ai-skills-heading"><h2 id="ai-skills-heading">{zh ? "AI 专项" : "AI-specific Skills"}</h2>
+      {aiSkills.map(skill => <article class="skill-directory-row"><div><p class="skill-phase">{skill.phase[locale]}</p><h3><a href={`${base}/skills/${skill.slug}`}>{skill.title[locale]}<ArrowUpRight size={19} aria-hidden="true" /></a></h3></div><div><p>{skill.description[locale]}</p><p class="skill-deliverable"><span>{zh ? "首要产出" : "Primary deliverable"}</span>{skill.outputs[locale][0]}</p></div></article>)}
+    </section>
+    <section aria-labelledby="general-skills-heading"><h2 id="general-skills-heading">{zh ? "通用方案与售前" : "General solutions and presales"}</h2>
+      {generalSkills.map(skill => <article class="skill-directory-row skill-general-row"><h3><a href={skill.href} target={skill.external ? "_blank" : undefined} rel={skill.external ? "noreferrer" : undefined}>{skill.title}<ArrowUpRight size={19} aria-hidden="true" /></a></h3><p>{skill.description}</p></article>)}
+    </section>
+  </div>
+</BaseLayout>
+<style>
+  .skills-directory{width:var(--content);margin:0 auto 70px}
+  .skills-directory section{margin-bottom:54px}
+  .skills-directory section>h2{font-size:18px;color:var(--ink-soft);font-weight:600;margin:0 0 18px}
+  .skill-directory-row{display:grid;grid-template-columns:minmax(0, .9fr) minmax(0, 1.6fr);gap:42px;padding:30px 0;border-top:1px solid var(--line)}
+  .skill-directory-row h3{font:700 27px/1.4 var(--display);margin:0;overflow-wrap:anywhere}
+  .skill-directory-row h3 a{display:inline-flex;align-items:baseline;gap:12px}
+  .skill-directory-row h3 a:hover{color:var(--teal)}
+  .skill-directory-row h3 svg{flex-shrink:0}
+  .skill-directory-row p{margin:0;font-size:17px;line-height:1.85;color:var(--ink-soft)}
+  .skill-directory-row .skill-phase{font-size:14px;color:var(--teal);margin-bottom:9px;font-weight:700}
+  .skill-directory-row .skill-deliverable{font-size:15px;margin-top:14px;color:var(--ink)}
+  .skill-deliverable span{display:inline-block;margin-right:12px;color:var(--ink-soft)}
+  .skill-general-row h3{font-size:23px}
+  @media(max-width:760px){.skill-directory-row{grid-template-columns:minmax(0,1fr);gap:14px;padding:25px 0}.skill-directory-row h3{font-size:25px}.skill-general-row h3{font-size:23px}}
+</style>

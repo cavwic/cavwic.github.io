@@ -9,9 +9,12 @@ interface Props {
   description: string;
   locale?: Locale;
   alternatePath: string;
+  appName?: string;
+  appCode?: string;
+  appMark?: string;
 }
 
-const { title, description, locale = "zh", alternatePath } = Astro.props;
+const { title, description, locale = "zh", alternatePath, appName, appCode, appMark = "JL" } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const copy = locale === "zh"
   ? { app: "机灵仓", code: "JEELING", back: "返回工具页", language: "Switch to English", dark: "切换为深色模式", light: "切换为浅色模式", skip: "跳到正文", top: "回到顶部" }
@@ -46,22 +49,22 @@ const copy = locale === "zh"
     <a class="skip-link" href="#main">{copy.skip}</a>
     <header class="tool-app-bar">
       <div class="tool-app-identity">
-        <span aria-hidden="true">JL</span>
-        <div><small>{copy.code}</small><strong>{copy.app}</strong></div>
+        <span aria-hidden="true">{appMark}</span>
+        <div><small>{appCode ?? copy.code}</small><strong>{appName ?? copy.app}</strong></div>
       </div>
       <nav aria-label={locale === "zh" ? "工具控制" : "Tool controls"}>
         <a class="tool-app-back" href={locale === "zh" ? "/tools" : "/en/tools"}>
           <ArrowLeft size={17} stroke-width={1.8} aria-hidden="true" />
           <span>{copy.back}</span>
         </a>
-        <button class="utility-button theme-toggle" type="button" aria-label={copy.dark} title={copy.dark} data-dark-label={copy.dark} data-light-label={copy.light}>
-          <Moon class="theme-icon-moon" size={18} stroke-width={1.8} aria-hidden="true" />
-          <Sun class="theme-icon-sun" size={18} stroke-width={1.8} aria-hidden="true" />
-        </button>
         <a class="utility-button language-toggle" href={alternatePath} aria-label={copy.language} title={copy.language}>
           <Languages size={18} stroke-width={1.8} aria-hidden="true" />
           <span>{locale === "zh" ? "EN" : "中"}</span>
         </a>
+        <button class="utility-button theme-toggle" type="button" aria-label={copy.dark} title={copy.dark} data-dark-label={copy.dark} data-light-label={copy.light}>
+          <Moon class="theme-icon-moon" size={18} stroke-width={1.8} aria-hidden="true" />
+          <Sun class="theme-icon-sun" size={18} stroke-width={1.8} aria-hidden="true" />
+        </button>
       </nav>
     </header>
     <main id="main"><slot /></main>

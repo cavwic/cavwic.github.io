@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "mode": "workflow",
+  "title": "Ticket routing and draft approval",
+  "objective": "Suggest a category for a redacted request; create a test ticket only after approval.",
+  "data": "Test messages, stable event IDs and least-privilege test credentials.",
+  "output": "Category, draft, approval, destination record ID and receipt.",
+  "owner": "Service supervisor / test API owner",
+  "acceptance": "Replay an event without duplicate tickets; reconcile a lost response; rejected approval creates nothing.",
+  "recovery": "Query the destination after timeout; escalate unknown outcomes; allow at most two conditional retries.",
+  "excluded": "No production ticket system or automatic emails.",
+  "sensitive": false,
+  "external": false,
+  "steps": [
+    {
+      "name": "Validate event and business key",
+      "kind": "read",
+      "approval": false
+    },
+    {
+      "name": "Classify and draft",
+      "kind": "model",
+      "approval": false
+    },
+    {
+      "name": "Check fields and destination state",
+      "kind": "check",
+      "approval": false
+    },
+    {
+      "name": "Approve the action",
+      "kind": "human",
+      "approval": false
+    },
+    {
+      "name": "Create test ticket and retain receipt",
+      "kind": "write",
+      "approval": true
+    }
+  ]
+}

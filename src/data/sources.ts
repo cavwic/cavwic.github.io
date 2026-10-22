@@ -166,6 +166,11 @@ export const referenceSources: SourceRef[] = [
   source("ref-114", "FAULHABER official website", "https://www.faulhaber.com/", "FAULHABER", "official", "FAULHABER 公司与驱动产品入口。", "2026-08-27"),
   source("ref-115", "LinkerBot official website", "https://www.linkerbot.cn/", "灵心巧手", "official", "灵心巧手公司与产品入口。", "2026-08-27"),
   source("ref-116", "Kinco official website", "https://www.kinco.cn/", "步科", "official", "步科公司、机器人核心部件与行业方案入口。", "2026-08-27"),
+  source("ref-117", "Handle errors gracefully", "https://docs.n8n.io/build/flow-logic/handle-errors-gracefully", "n8n", "official", "工作流错误处理与失败执行记录。", "2026-10-22"),
+  source("ref-118", "Building effective agents", "https://www.anthropic.com/research/building-effective-agents", "Anthropic", "official", "区分固定工作流与模型动态决策；作为架构模式参考，不作为当前平台选型排名。", "2026-10-22"),
+  source("ref-119", "About protected branches", "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches", "GitHub", "official", "代码审查、必需状态检查与分支保护。", "2026-10-22"),
+  source("ref-120", "RAG in Azure AI Search", "https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview", "Microsoft", "official", "检索增强生成的内容、检索与访问控制边界。", "2026-10-22"),
+  source("ref-121", "LLM01:2025 Prompt Injection", "https://genai.owasp.org/llmrisk/llm01-prompt-injection/", "OWASP", "official", "提示注入风险与最小权限防护。", "2026-10-22"),
 ];
 
 export const sources: SourceRef[] = [...jobSources, ...referenceSources];

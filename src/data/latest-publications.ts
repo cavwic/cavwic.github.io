@@ -14,5 +14,16 @@ export function getLatestPublications(locale: Locale, articles: Entry[]): Entry[
     status: "published",
     date: "2026.10",
   };
-  return [lab, ...articles.filter(entry => entry.href !== lab.href).slice(0, 3)];
+  const ai: Entry = locale === "zh" ? {
+    title: "AI 交付工作台与配套方案、Skills",
+    description: "企业应用、可恢复工作流与 AI 辅助开发：任务书、验收清单、交接提示词与三个可下载 Skill 包。",
+    href: "/tools/ai-delivery-workbench", status: "published", date: "2026.10",
+  } : {
+    title: "AI delivery workbench, solutions and Skills",
+    description: "Enterprise AI, recoverable workflows and AI-assisted coding: task briefs, acceptance checklists, handoff prompts and three downloadable Skill packages.",
+    href: "/en/tools/ai-delivery-workbench", status: "published", date: "2026.10",
+  };
+  const seen = new Set([ai.href, lab.href]);
+  const rest = articles.filter(entry => { if (seen.has(entry.href)) return false; seen.add(entry.href); return true; });
+  return [ai, lab, ...rest.slice(0, 2)];
 }

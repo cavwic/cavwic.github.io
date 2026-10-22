@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "mode": "coding",
+  "title": "Local CSV checker",
+  "objective": "Import a redacted CSV, identify missing columns and duplicate rows, and export errors without modifying the source.",
+  "data": "Public CSV fixtures; inspect existing code, tests and lockfiles.",
+  "output": "Working import, validation, results and export with a change note and actual test results.",
+  "owner": "Maintainer / code reviewer",
+  "acceptance": "Test valid, empty, missing-column, duplicate and cancellation cases; inspect desktop and narrow layouts; list unrun checks.",
+  "recovery": "Preserve original data; record changed files and last passing commands; revert only this change; approve release separately.",
+  "excluded": "No framework replacement, unknown dependencies, commits, pushes or deployment.",
+  "sensitive": false,
+  "external": false,
+  "steps": [
+    {
+      "name": "Read code and existing tests",
+      "kind": "read",
+      "approval": false
+    },
+    {
+      "name": "Implement a vertical slice",
+      "kind": "model",
+      "approval": false
+    },
+    {
+      "name": "Run tests and build",
+      "kind": "check",
+      "approval": false
+    },
+    {
+      "name": "Review changes and hand off",
+      "kind": "human",
+      "approval": false
+    }
+  ]
+}

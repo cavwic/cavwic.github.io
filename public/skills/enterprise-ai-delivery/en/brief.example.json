@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "mode": "enterprise",
+  "title": "Maintenance knowledge pilot",
+  "objective": "Prepare a sourced response draft for service engineers; never send it automatically.",
+  "data": "Redacted manuals; owner-approved versions; engineer-role access controls.",
+  "output": "Draft, document version and source location; abstain without evidence.",
+  "owner": "Knowledge owner / duty engineer",
+  "acceptance": "Include ordinary, unanswerable, version-conflict and unauthorized samples; review facts and citations; disclose no unauthorized content.",
+  "recovery": "Version sources and prompts; route failures to review; restore the last verified version.",
+  "excluded": "No production tickets, access changes or automatic customer commitments.",
+  "sensitive": false,
+  "external": false,
+  "steps": [
+    {
+      "name": "Retrieve authorized sources",
+      "kind": "read",
+      "approval": false
+    },
+    {
+      "name": "Draft with citations",
+      "kind": "model",
+      "approval": false
+    },
+    {
+      "name": "Check facts and citations",
+      "kind": "check",
+      "approval": false
+    },
+    {
+      "name": "Human review",
+      "kind": "human",
+      "approval": false
+    }
+  ]
+}

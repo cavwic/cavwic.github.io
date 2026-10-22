@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "mode": "coding",
+  "title": "本地 CSV 检查器",
+  "objective": "导入脱敏 CSV，显示缺列和重复行，导出错误清单，不修改原文件。",
+  "data": "公开样例 CSV；读取现有项目结构、测试与依赖锁文件。",
+  "output": "可运行的导入、校验、结果与导出；附变更说明和实测记录。",
+  "owner": "工具维护人 / 代码审查人",
+  "acceptance": "正常、空文件、缺列、重复行和取消操作均有测试；检查桌面和窄屏；记录未执行项。",
+  "recovery": "保留原数据；记录改动文件及最后通过的命令；仅回退本次改动，发布另行批准。",
+  "excluded": "不替换框架，不安装未知依赖，不提交、推送或部署。",
+  "sensitive": false,
+  "external": false,
+  "steps": [
+    {
+      "name": "阅读代码与现有测试",
+      "kind": "read",
+      "approval": false
+    },
+    {
+      "name": "实现一个最小切片",
+      "kind": "model",
+      "approval": false
+    },
+    {
+      "name": "执行测试与构建",
+      "kind": "check",
+      "approval": false
+    },
+    {
+      "name": "审查变更并记录交接",
+      "kind": "human",
+      "approval": false
+    }
+  ]
+}

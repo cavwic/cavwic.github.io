@@ -47,9 +47,9 @@ assert((glossaryText.match(/^  \["/gm) ?? []).length >= 120, "术语数量不足
 
 const countKind = (kind, locale) => contentRecords.filter((item) => item.locale === locale && frontmatterValue(item.text, "kind") === kind).length;
 for (const locale of ["zh", "en"]) {
-  assert(countKind("whitepaper", locale) === 3, `${locale} 白皮书数量应为 3，当前 ${countKind("whitepaper", locale)}`);
-  assert(countKind("article", locale) === 9, `${locale} 技术文章数量应为 9，当前 ${countKind("article", locale)}`);
-  assert(countKind("case-study", locale) === 6, `${locale} 案例数量应为 6，当前 ${countKind("case-study", locale)}`);
+  for (const [kind, minimum] of [["whitepaper", 5], ["article", 12], ["case-study", 6]]) {
+    assert(countKind(kind, locale) >= minimum, `${locale} ${kind} 少于现有基线 ${minimum}，当前 ${countKind(kind, locale)}`);
+  }
 }
 
 const zhContent = contentRecords.filter((item) => item.locale === "zh");
@@ -85,7 +85,7 @@ for (const enItem of enContent) {
 const requiredFields = ["title:", "description:", "locale:", "kind:", "industry:", "evidence:", "publicationStatus:", "reviewedAt:", "sourceIds:"];
 for (const item of content) {
   for (const field of requiredFields) assert(item.text.includes(field), `${item.file} 缺少 ${field}`);
-  const references = item.text.match(/(?:job|ref)-\d{2}/g) ?? [];
+  const references = item.text.match(/(?:job|ref)-\d{2,}/g) ?? [];
   for (const id of references) assert(ids.includes(id), `${item.file} 引用了不存在的来源 ${id}`);
 }
 

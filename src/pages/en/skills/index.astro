@@ -1,5 +1,5 @@
 ---
-import CollectionPage from "../../../components/CollectionPage.astro";
+import SkillsDirectory from "../../../components/SkillsDirectory.astro";
 const repository = "https://github.com/cavwic/cavwic-solutions-lab/tree/main/skills";
 const skills = [
   ["presales-discovery", "Turn an ambiguous request into objects, workflows, data, site conditions, stakeholders, constraints, and verification steps."],
@@ -11,10 +11,4 @@ const skills = [
 const entries = skills.map(([title, description]) => ({ title, description, status: "published" as const, href: `${repository}/${title}`, external: true }));
 ---
 
-<CollectionPage
-  eyebrow="SKILLS"
-  title="Skills"
-  intro="Five reusable skills with SKILL.md instructions, templates, examples, validation scripts, and explicit operating boundaries."
-  entries={entries}
-  locale="en"
-/>
+<SkillsDirectory locale="en" generalSkills={entries} />
