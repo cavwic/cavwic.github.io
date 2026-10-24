@@ -3,7 +3,7 @@ import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { aiSkills } from '../src/data/ai-delivery.ts';
 import { siteFeatures } from '../src/data/site-features.ts';
-import { solutionsLabUrl, solutionsLabDownloadUrl } from '../src/data/site.ts';
+import { presalesPlatform, solutionsLabUrl, solutionsLabDownloadUrl } from '../src/data/site.ts';
 
 const root = path.resolve(process.argv[2] || 'dist');
 let checkedLinks = 0;
@@ -21,6 +21,7 @@ async function checkDirectory(route, targets) {
 }
 
 for (const prefix of ['', '/en']) {
+  const locale = prefix ? 'en' : 'zh';
   await checkDirectory(`${prefix}/solutions`, [...new Set(aiSkills.map((skill) => `${prefix}/library/${skill.solution}`))]);
   await checkDirectory(`${prefix}/articles`, aiSkills.map((skill) => `${prefix}/library/${skill.article}`));
   await checkDirectory(`${prefix}/skills`, aiSkills.map((skill) => `${prefix}/skills/${skill.slug}`));
@@ -29,6 +30,11 @@ for (const prefix of ['', '/en']) {
   assert.ok(dialog, `${prefix}/tools is missing the web/desktop version dialog`);
   assert.ok(dialog.includes(`href="${solutionsLabUrl}"`), 'The existing web app destination changed');
   assert.ok(dialog.includes(`href="${solutionsLabDownloadUrl}"`), 'The desktop download destination is missing');
+  assert.ok(dialog.includes(presalesPlatform[locale].title), 'The version dialog has the old platform name');
+  assert.ok(dialog.includes(presalesPlatform[locale].versionPicker.downloadDescription), 'The desktop capability summary is missing');
+  const home = await readFile(path.join(root, prefix.slice(1), 'index.html'), 'utf8');
+  assert.ok(home.includes(presalesPlatform[locale].title), 'Homepage is missing the renamed presales platform');
+  assert.ok(!/解决方案项目工作台|Solution Project Workbench/.test(tools + home), 'Old platform name remains in published entries');
   if (!siteFeatures.aiDeliveryWorkbench) {
     const redirect = await readFile(path.join(root, prefix.slice(1), 'tools/ai-delivery-workbench/index.html'), 'utf8');
     assert.match(redirect, /<meta\b[^>]*http-equiv=["']refresh["']/i);

@@ -1,4 +1,4 @@
-import type { Entry, Locale } from "./site";
+import { presalesPlatform, type Entry, type Locale } from "./site.ts";
 import { siteFeatures } from "./site-features.ts";
 
 export function getLatestPublications(locale: Locale, articles: Entry[]): Entry[] {
@@ -34,7 +34,8 @@ export function getLatestPublications(locale: Locale, articles: Entry[]): Entry[
     href: "/en/library/enterprise-ai-workflow-delivery", status: "published", date: "2026.10",
   };
   const ai = siteFeatures.aiDeliveryWorkbench ? aiWorkbench : aiDocs;
-  const seen = new Set([ai.href, lab.href]);
+  const platform: Entry = { ...presalesPlatform[locale], date: "2026.10" };
+  const seen = new Set([platform.href, ai.href, lab.href]);
   const rest = articles.filter(entry => { if ((!siteFeatures.aiDeliveryWorkbench && entry.href?.includes("/tools/ai-delivery-workbench")) || seen.has(entry.href)) return false; seen.add(entry.href); return true; });
-  return [ai, lab, ...rest.slice(0, 2)];
+  return [platform, ai, lab, ...rest.slice(0, 1)];
 }

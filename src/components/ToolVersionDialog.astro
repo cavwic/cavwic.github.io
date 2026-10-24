@@ -8,9 +8,11 @@ interface Props {
   webHref: string;
   webExternal?: boolean;
   downloadHref: string;
+  webDescription?: string;
+  downloadDescription?: string;
   locale: Locale;
 }
-const { id, title, webHref, webExternal = false, downloadHref, locale } = Astro.props;
+const { id, title, webHref, webExternal = false, downloadHref, webDescription, downloadDescription, locale } = Astro.props;
 const text = locale === "zh" ? {
   choose: "选择版本", close: "关闭", web: "网页版", webAction: "在线打开",
   desktop: "本地版", download: "前往 GitHub 下载",
@@ -34,12 +36,14 @@ const text = locale === "zh" ? {
     <a class="version-option" href={webHref} target={webExternal ? "_blank" : undefined} rel={webExternal ? "noopener noreferrer" : undefined} autofocus>
       <Globe size={28} aria-hidden="true" />
       <strong>{text.web}</strong>
+      {webDescription && <p>{webDescription}</p>}
       <span>{text.webAction}</span>
       <ArrowUpRight class="version-arrow" size={20} aria-hidden="true" />
     </a>
     <a class="version-option" href={downloadHref} target="_blank" rel="noopener noreferrer">
       <Download size={28} aria-hidden="true" />
       <strong>{text.desktop}</strong>
+      {downloadDescription && <p>{downloadDescription}</p>}
       <span>{text.download}</span>
       <ArrowUpRight class="version-arrow" size={20} aria-hidden="true" />
     </a>
@@ -75,6 +79,7 @@ const text = locale === "zh" ? {
   .version-option { position: relative; display: grid; align-content: start; gap: 12px; padding: 22px; border: 1px solid var(--control-line); border-radius: 6px; text-decoration: none; color: var(--ink); }
   .version-option > svg { color: var(--teal); }
   .version-option strong { font-size: 22px; line-height: 1.4; }
+  .version-option p { margin: 0; font-size: 16px; line-height: 1.6; color: var(--ink-soft); overflow-wrap: anywhere; }
   .version-option span { font-size: 16px; line-height: 1.6; color: var(--ink-soft); overflow-wrap: anywhere; }
   .version-option .version-arrow { position: absolute; top: 24px; right: 22px; color: var(--ink-soft); }
   a.version-option:hover { border-color: var(--signal); background: var(--paper); }

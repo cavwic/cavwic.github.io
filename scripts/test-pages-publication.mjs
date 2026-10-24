@@ -2,21 +2,28 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { getLatestPublications } from '../src/data/latest-publications.ts';
 import { siteFeatures } from '../src/data/site-features.ts';
+import { presalesPlatform, solutionsLabUrl, solutionsLabDownloadUrl } from '../src/data/site.ts';
 import { findPrivacyIssues } from './privacy-text-checks.mjs';
 
-test('recent releases include localized AI and lab tools without duplicate links', () => {
+test('recent releases include the renamed presales platform, retained AI content and labs without duplicate links', () => {
   for (const locale of ['zh', 'en']) {
     const href = `${locale === 'zh' ? '' : '/en'}/tools/robotics-lab`;
     const old = Array.from({ length: 6 }, (_, index) => ({ title: `Article ${index}`, description: 'Existing published article', status: 'published', href: `/library/${index}` }));
     const pausedHref = `${locale === 'zh' ? '' : '/en'}/tools/ai-delivery-workbench`;
-    const entries = getLatestPublications(locale, [{ ...old[0], href }, { ...old[0], href: pausedHref }, ...old]);
+    const entries = getLatestPublications(locale, [{ ...old[0], href }, { ...old[0], href: solutionsLabUrl }, { ...old[0], href: pausedHref }, ...old]);
     assert.equal(entries.length, 4);
-    assert.equal(entries[0].href, siteFeatures.aiDeliveryWorkbench ? pausedHref : `${locale === 'zh' ? '' : '/en'}/library/enterprise-ai-workflow-delivery`);
+    assert.equal(entries[0].title, presalesPlatform[locale].title);
+    assert.equal(entries[0].href, solutionsLabUrl);
+    assert.ok(entries[0].versionPicker);
+    assert.equal(entries[0].versionPicker.downloadHref, solutionsLabDownloadUrl);
+    assert.match(entries[0].versionPicker.downloadDescription, /Windows x64/);
+    assert.equal(entries.filter(entry => entry.href === solutionsLabUrl).length, 1);
+    assert.equal(entries[1].href, siteFeatures.aiDeliveryWorkbench ? pausedHref : `${locale === 'zh' ? '' : '/en'}/library/enterprise-ai-workflow-delivery`);
     if (!siteFeatures.aiDeliveryWorkbench) assert.equal(entries.some(entry => entry.href === pausedHref), false);
-    assert.equal(entries[1].href, href);
+    assert.equal(entries[2].href, href);
     assert.equal(entries.filter(entry => entry.href === href).length, 1);
     assert.equal(entries[0].status, 'published');
-    assert.match(entries[1].description, locale === 'zh' ? /不等于真机/ : /not hardware validation/);
+    assert.match(entries[2].description, locale === 'zh' ? /不等于真机/ : /not hardware validation/);
   }
 });
 

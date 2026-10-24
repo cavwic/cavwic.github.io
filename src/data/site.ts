@@ -8,7 +8,7 @@ export type Entry = {
   date?: string;
   href?: string;
   external?: boolean;
-  versionPicker?: { downloadHref: string };
+  versionPicker?: { downloadHref: string; webDescription?: string; downloadDescription?: string };
 };
 
 export type Industry = {
@@ -23,6 +23,33 @@ export const githubUrl = "https://github.com/cavwic";
 export const solutionsLabUrl = "https://cavwic.github.io/cavwic-solutions-lab";
 export const solutionsLabRepositoryUrl = "https://github.com/cavwic/cavwic-solutions-lab";
 export const solutionsLabDownloadUrl = "https://github.com/cavwic/presales-solution-tool/releases/latest";
+
+export const presalesPlatform = {
+  zh: {
+    title: "售前解决方案平台",
+    description: "覆盖客户需求梳理、招标文件分析、技术方案与投标文档编制及中标交底，统一管理资料、依据和模板。提供网页版与 Windows 本地版，生成内容需人工复核。",
+    status: "published",
+    href: solutionsLabUrl,
+    external: true,
+    versionPicker: {
+      downloadHref: solutionsLabDownloadUrl,
+      webDescription: "在浏览器中整理项目资料与售前流程。",
+      downloadDescription: "Windows x64 便携版，支持本地模型、授权套餐接口、API、混合模式与共享 Skills。",
+    },
+  },
+  en: {
+    title: "Presales Solution Platform",
+    description: "Organize customer requirements, review tender documents, prepare technical proposals and bid documents, and track post-award handover. Choose the web or Windows desktop app; review generated content before use.",
+    status: "published",
+    href: solutionsLabUrl,
+    external: true,
+    versionPicker: {
+      downloadHref: solutionsLabDownloadUrl,
+      webDescription: "Manage project materials and presales workflows in your browser.",
+      downloadDescription: "Portable Windows x64 app with local models, authorized subscription access, API and hybrid modes, and shared Skills.",
+    },
+  },
+} satisfies Record<Locale, Entry>;
 
 export const resume = {
   zh: {
@@ -183,13 +210,7 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
       },
     ],
     tools: [
-      {
-        title: "解决方案项目工作台",
-        description: "覆盖售前沟通、招标文件分析和投标文件编制，支持本地工作区、模型生成与 Codex 任务输出。",
-        status: "published",
-        href: solutionsLabUrl,
-        external: true,
-      },
+      presalesPlatform.zh,
     ],
     skills: [
       {
@@ -221,13 +242,7 @@ export const collections: Record<Locale, Record<string, Entry[]>> = {
       },
     ],
     tools: [
-      {
-        title: "Solution Project Workbench",
-        description: "Presales communication, tender analysis, and bid document preparation with local project storage and model-assisted generation.",
-        status: "published",
-        href: solutionsLabUrl,
-        external: true,
-      },
+      presalesPlatform.en,
     ],
     skills: [
       {

@@ -47,6 +47,8 @@ const { entries, locale = "zh", showMeta = true } = Astro.props;
           webHref={entry.href}
           webExternal={entry.external}
           downloadHref={entry.versionPicker.downloadHref}
+          webDescription={entry.versionPicker.webDescription}
+          downloadDescription={entry.versionPicker.downloadDescription}
           locale={locale}
         />
       )}
