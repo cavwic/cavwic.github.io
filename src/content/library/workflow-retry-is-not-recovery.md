@@ -42,4 +42,5 @@ alternatePath: /en/library/workflow-retry-is-not-recovery
 
 在测试环境重放相同事件、模拟响应丢失、从审批前后分别中断，再验证目标记录数量、回执和审计链。设置最大尝试次数和截止时间，禁止无限循环。恢复后保留失败与修复记录，不把重新跑通当成从未失败。
 
-我的判断是：一个只展示成功路径的工作流，还没有证明它可交付。先用 [工作流恢复设计 Skill](/skills/workflow-reliability) 写出状态契约，再把它接入选定平台；[AI 交付工作台](/tools/ai-delivery-workbench) 可以保存这份交接材料，但本身不执行外部写入。
+<!-- AI_WORKBENCH_PAUSED: [AI 交付工作台](/tools/ai-delivery-workbench) 可以保存这份交接材料，但本身不执行外部写入。 -->
+我的判断是：一个只展示成功路径的工作流，还没有证明它可交付。先用 [工作流恢复设计 Skill](/skills/workflow-reliability) 写出状态契约，再把它接入选定平台。

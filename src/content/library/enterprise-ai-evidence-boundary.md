@@ -42,4 +42,5 @@ alternatePath: /en/library/enterprise-ai-evidence-boundary
 
 先选一个任务和一个授权数据域，做能被业务人员重复执行的测试，再决定是否扩展。不要因为平台拥有 Agent 或工作流画布，就假定它已经解决权限和异常。文档中的恶意指令也可能影响模型行为；提示词防护不能替代程序侧的权限控制。[OWASP 说明](https://genai.owasp.org/llmrisk/llm01-prompt-injection/)
 
-可用 [AI 交付工作台](/tools/ai-delivery-workbench) 整理第一版任务边界。需要完整方法时，参阅 [企业 AI 应用与工作流方案](/library/enterprise-ai-workflow-delivery)。本文不提供未经实测的平台排名。
+<!-- AI_WORKBENCH_PAUSED: 可用 [AI 交付工作台](/tools/ai-delivery-workbench) 整理第一版任务边界。 -->
+需要完整方法时，参阅 [企业 AI 应用与工作流方案](/library/enterprise-ai-workflow-delivery)。本文不提供未经实测的平台排名。

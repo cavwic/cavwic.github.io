@@ -1,15 +1,18 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { getLatestPublications } from '../src/data/latest-publications.ts';
+import { siteFeatures } from '../src/data/site-features.ts';
 import { findPrivacyIssues } from './privacy-text-checks.mjs';
 
 test('recent releases include localized AI and lab tools without duplicate links', () => {
   for (const locale of ['zh', 'en']) {
     const href = `${locale === 'zh' ? '' : '/en'}/tools/robotics-lab`;
     const old = Array.from({ length: 6 }, (_, index) => ({ title: `Article ${index}`, description: 'Existing published article', status: 'published', href: `/library/${index}` }));
-    const entries = getLatestPublications(locale, [{ ...old[0], href }, ...old]);
+    const pausedHref = `${locale === 'zh' ? '' : '/en'}/tools/ai-delivery-workbench`;
+    const entries = getLatestPublications(locale, [{ ...old[0], href }, { ...old[0], href: pausedHref }, ...old]);
     assert.equal(entries.length, 4);
-    assert.equal(entries[0].href, `${locale === 'zh' ? '' : '/en'}/tools/ai-delivery-workbench`);
+    assert.equal(entries[0].href, siteFeatures.aiDeliveryWorkbench ? pausedHref : `${locale === 'zh' ? '' : '/en'}/library/enterprise-ai-workflow-delivery`);
+    if (!siteFeatures.aiDeliveryWorkbench) assert.equal(entries.some(entry => entry.href === pausedHref), false);
     assert.equal(entries[1].href, href);
     assert.equal(entries.filter(entry => entry.href === href).length, 1);
     assert.equal(entries[0].status, 'published');

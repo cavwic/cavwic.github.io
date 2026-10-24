@@ -1,12 +1,15 @@
 ---
 import CollectionPage from "../../components/CollectionPage.astro";
 import { isPagesBuild } from "../../data/build-scope";
+import { solutionsLabDownloadUrl } from "../../data/site";
+import { siteFeatures } from "../../data/site-features";
 const labUrl = import.meta.env.DEV ? "http://127.0.0.1:43202/cavwic-solutions-lab" : "https://cavwic.github.io/cavwic-solutions-lab";
 const entries = [
-  { title: "AI 交付工作台", description: "整理企业 AI、工作流和 AI 辅助开发的任务边界、审批步骤与验收，导出任务书和交接提示词。数据在本机处理，不调用模型。", status: "published" as const, href: "/tools/ai-delivery-workbench", external: false },
+  // Retained behind the switch for a future workbench revision.
+  ...(siteFeatures.aiDeliveryWorkbench ? [{ title: "AI 交付工作台", description: "整理企业 AI、工作流和 AI 辅助开发的任务边界、审批步骤与验收，导出任务书和交接提示词。数据在本机处理，不调用模型。", status: "published" as const, href: "/tools/ai-delivery-workbench", external: false }] : []),
   { title: "灵巧操作实验台", description: "八项机器人软件实验：单指控制、动作重定向、安全控制、接触抓取、滑移检测、数据诊断、模仿学习与仿真鲁棒性。", status: "published" as const, href: "/tools/robotics-lab", external: false },
   ...(!isPagesBuild ? [{ title: "机灵仓", description: "面向投资研究与技术选型的机器人及灵巧手资料仓，检索公司、型号、零部件参数、融资与政策等公开资料。", status: "building" as const, href: "/tools/product-finder-demo", external: true }] : []),
-  { title: "解决方案项目工作台", description: "围绕售前沟通、招标文件分析和投标文件编制管理项目资料，支持本地工作区、模型生成与 Codex 任务输出。", status: "published" as const, href: labUrl, external: !import.meta.env.DEV },
+  { title: "解决方案项目工作台", description: "围绕售前沟通、招标文件分析和投标文件编制管理项目资料，支持本地工作区、模型生成与 Codex 任务输出。", status: "published" as const, href: labUrl, external: !import.meta.env.DEV, versionPicker: { downloadHref: solutionsLabDownloadUrl } },
 ];
 ---
-<CollectionPage eyebrow="SOLUTIONS LAB" title="工具" intro="AI 交付、机器人软件实验与解决方案项目工作台。" entries={entries} locale="zh" showMeta={false} />
+<CollectionPage eyebrow="SOLUTIONS LAB" title="工具" intro={siteFeatures.aiDeliveryWorkbench ? "AI 交付、机器人软件实验与解决方案项目工作台。" : "机器人软件实验与售前解决方案工具。"} entries={entries} locale="zh" showMeta={false} />

@@ -1,19 +1,22 @@
 ---
 import CollectionPage from "../../../components/CollectionPage.astro";
 import { isPagesBuild } from "../../../data/build-scope";
+import { solutionsLabDownloadUrl } from "../../../data/site";
+import { siteFeatures } from "../../../data/site-features";
 const labUrl = import.meta.env.DEV ? "http://127.0.0.1:43202/cavwic-solutions-lab" : "https://cavwic.github.io/cavwic-solutions-lab";
 const entries = [
-  { title: "AI delivery workbench", description: "Define scope, approvals and acceptance for enterprise AI, workflows and AI-assisted coding. Export briefs and handoff prompts on your device, without model calls.", status: "published" as const, href: "/en/tools/ai-delivery-workbench", external: false },
+  // Retained behind the switch for a future workbench revision.
+  ...(siteFeatures.aiDeliveryWorkbench ? [{ title: "AI delivery workbench", description: "Define scope, approvals and acceptance for enterprise AI, workflows and AI-assisted coding. Export briefs and handoff prompts on your device, without model calls.", status: "published" as const, href: "/en/tools/ai-delivery-workbench", external: false }] : []),
   { title: "Dexterous Manipulation Labs", description: "Eight software experiments covering control, hand motion retargeting, safety, contact grasping, slip detection, data diagnostics, imitation learning and simulation robustness.", status: "published" as const, href: "/en/tools/robotics-lab", external: false },
   ...(!isPagesBuild ? [{ title: "Jeeling", description: "A robot and dexterous-hand research repository for companies, models, component metrics, funding, and policy sources.", status: "building" as const, href: "/en/tools/product-finder-demo", external: true }] : []),
-  { title: "Solution Project Workbench", description: "Manage presales communication, tender analysis, and bid document preparation with a local workspace, model generation, and Codex task output.", status: "published" as const, href: labUrl, external: !import.meta.env.DEV },
+  { title: "Solution Project Workbench", description: "Manage presales communication, tender analysis, and bid document preparation with a local workspace, model generation, and Codex task output.", status: "published" as const, href: labUrl, external: !import.meta.env.DEV, versionPicker: { downloadHref: solutionsLabDownloadUrl } },
 ];
 ---
 
 <CollectionPage
   eyebrow="TOOLS"
   title="Tools"
-  intro="AI delivery, robotics software experiments and the solution project workbench."
+  intro={siteFeatures.aiDeliveryWorkbench ? "AI delivery, robotics software experiments and the solution project workbench." : "Robotics software experiments and presales solution tools."}
   entries={entries}
   locale="en"
   showMeta={false}

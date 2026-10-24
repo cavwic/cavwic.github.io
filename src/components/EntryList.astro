@@ -1,6 +1,7 @@
 ﻿---
 import { ArrowUpRight } from "@lucide/astro";
 import { statusLabels, type Entry, type Locale } from "../data/site";
+import ToolVersionDialog from "./ToolVersionDialog.astro";
 
 interface Props {
   entries: Entry[];
@@ -12,7 +13,7 @@ const { entries, locale = "zh", showMeta = true } = Astro.props;
 ---
 
 <div class="entry-list">
-  {entries.map((entry) => (
+  {entries.map((entry, index) => (
     <article class:list={["entry-row", !showMeta && "entry-row-plain"]}>
       {showMeta && (
         <div class="entry-meta">
@@ -28,6 +29,9 @@ const { entries, locale = "zh", showMeta = true } = Astro.props;
               href={entry.href}
               target={entry.external ? "_blank" : undefined}
               rel={entry.external ? "noreferrer" : undefined}
+              data-tool-version-open={entry.versionPicker ? `tool-version-${locale}-${index}` : undefined}
+              aria-haspopup={entry.versionPicker ? "dialog" : undefined}
+              aria-controls={entry.versionPicker ? `tool-version-${locale}-${index}` : undefined}
             >
               {entry.title}
               <ArrowUpRight size={18} stroke-width={1.8} aria-hidden="true" />
@@ -36,6 +40,16 @@ const { entries, locale = "zh", showMeta = true } = Astro.props;
         </h2>
         <p>{entry.description}</p>
       </div>
+      {entry.href && entry.versionPicker && (
+        <ToolVersionDialog
+          id={`tool-version-${locale}-${index}`}
+          title={entry.title}
+          webHref={entry.href}
+          webExternal={entry.external}
+          downloadHref={entry.versionPicker.downloadHref}
+          locale={locale}
+        />
+      )}
     </article>
   ))}
 </div>

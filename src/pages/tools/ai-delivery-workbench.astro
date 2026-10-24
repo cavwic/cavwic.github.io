@@ -1,6 +1,8 @@
 ---
 import ToolAppLayout from "../../layouts/ToolAppLayout.astro";
 import AiDeliveryWorkbench from "../../components/AiDeliveryWorkbench.astro";
+import { siteFeatures } from "../../data/site-features";
+if (!siteFeatures.aiDeliveryWorkbench) return Astro.redirect("/tools", 302);
 ---
 <ToolAppLayout title="AI 交付工作台 | CAVWIC" description="本地整理企业 AI、工作流和 AI 辅助开发的任务边界、步骤与验收。" appName="AI 交付工作台" appCode="AI DELIVERY" appMark="AI" locale="zh" alternatePath="/en/tools/ai-delivery-workbench">
   <AiDeliveryWorkbench locale="zh" />

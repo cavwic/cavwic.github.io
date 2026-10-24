@@ -1,0 +1,90 @@
+---
+import { ArrowUpRight, Download, Globe, X } from "@lucide/astro";
+import type { Locale } from "../data/site";
+
+interface Props {
+  id: string;
+  title: string;
+  webHref: string;
+  webExternal?: boolean;
+  downloadHref: string;
+  locale: Locale;
+}
+const { id, title, webHref, webExternal = false, downloadHref, locale } = Astro.props;
+const text = locale === "zh" ? {
+  choose: "选择版本", close: "关闭", web: "网页版", webAction: "在线打开",
+  desktop: "本地版", download: "前往 GitHub 下载",
+} : {
+  choose: "Choose a version", close: "Close", web: "Web app", webAction: "Open in your browser",
+  desktop: "Desktop app", download: "Download on GitHub",
+};
+---
+
+<dialog id={id} class="tool-version-dialog" aria-labelledby={`${id}-title`} data-tool-version-dialog>
+  <header class="version-header">
+    <div>
+      <p>{text.choose}</p>
+      <h2 id={`${id}-title`}>{title}</h2>
+    </div>
+    <button type="button" class="version-close" aria-label={text.close} title={text.close} data-tool-version-close>
+      <X size={22} aria-hidden="true" />
+    </button>
+  </header>
+  <div class="version-options">
+    <a class="version-option" href={webHref} target={webExternal ? "_blank" : undefined} rel={webExternal ? "noopener noreferrer" : undefined} autofocus>
+      <Globe size={28} aria-hidden="true" />
+      <strong>{text.web}</strong>
+      <span>{text.webAction}</span>
+      <ArrowUpRight class="version-arrow" size={20} aria-hidden="true" />
+    </a>
+    <a class="version-option" href={downloadHref} target="_blank" rel="noopener noreferrer">
+      <Download size={28} aria-hidden="true" />
+      <strong>{text.desktop}</strong>
+      <span>{text.download}</span>
+      <ArrowUpRight class="version-arrow" size={20} aria-hidden="true" />
+    </a>
+  </div>
+</dialog>
+
+<script>
+  for (const trigger of document.querySelectorAll<HTMLAnchorElement>("[data-tool-version-open]")) {
+    const dialog = document.getElementById(trigger.dataset.toolVersionOpen ?? "");
+    if (!(dialog instanceof HTMLDialogElement)) continue;
+    trigger.addEventListener("click", (event) => {
+      if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      dialog.showModal();
+    });
+    dialog.querySelector("[data-tool-version-close]")?.addEventListener("click", () => dialog.close());
+    dialog.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => dialog.close()));
+    dialog.addEventListener("click", (event) => {
+      const bounds = dialog.getBoundingClientRect();
+      if (event.target === dialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) dialog.close();
+    });
+  }
+</script>
+
+<style>
+  .tool-version-dialog { width: min(620px, calc(100% - 32px)); max-height: calc(100dvh - 32px); margin: auto; padding: 28px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); box-shadow: 0 20px 80px #0005; }
+  .tool-version-dialog::backdrop { background: #0008; }
+  .version-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; margin-bottom: 26px; }
+  .version-header p { margin: 0 0 8px; font-size: 16px; color: var(--ink-soft); }
+  .version-header h2 { margin: 0; font-family: var(--display); font-size: 26px; line-height: 1.4; overflow-wrap: anywhere; }
+  .version-close { display: grid; flex: 0 0 38px; place-items: center; width: 38px; height: 38px; padding: 0; border: 1px solid var(--line); border-radius: 4px; background: transparent; color: var(--ink); cursor: pointer; }
+  .version-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .version-option { position: relative; display: grid; align-content: start; gap: 12px; padding: 22px; border: 1px solid var(--control-line); border-radius: 6px; text-decoration: none; color: var(--ink); }
+  .version-option > svg { color: var(--teal); }
+  .version-option strong { font-size: 22px; line-height: 1.4; }
+  .version-option span { font-size: 16px; line-height: 1.6; color: var(--ink-soft); overflow-wrap: anywhere; }
+  .version-option .version-arrow { position: absolute; top: 24px; right: 22px; color: var(--ink-soft); }
+  a.version-option:hover { border-color: var(--signal); background: var(--paper); }
+  .version-close:hover { background: var(--paper); }
+  .version-option:focus-visible, .version-close:focus-visible { outline: 2px solid var(--signal); outline-offset: 4px; }
+  @media (max-width: 520px) {
+    .tool-version-dialog { padding: 22px; }
+    .version-header h2 { font-size: 24px; }
+    .version-options { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+    .version-option { padding: 18px; gap: 8px; }
+    .version-option .version-arrow { top: 20px; right: 18px; }
+  }
+</style>

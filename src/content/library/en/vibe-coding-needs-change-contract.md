@@ -42,4 +42,5 @@ Reviews and automated status checks can gate merging. GitHub provides branch-pro
 
 Record the current entry point, completed work, last verified step, preserved user state and next action. Conversation length is not a task register. Recovery should not repeat installations or overwrite existing results.
 
-Draft the contract in the [AI delivery workbench](/en/tools/ai-delivery-workbench), paired with the [AI coding delivery Skill](/en/skills/ai-coding-delivery). The [AI-assisted coding solution](/en/library/ai-assisted-coding-delivery) gives the full method. An exported plan is not evidence that its tasks have run.
+<!-- AI_WORKBENCH_PAUSED: Draft the contract in the [AI delivery workbench](/en/tools/ai-delivery-workbench), paired with the [AI coding delivery Skill](/en/skills/ai-coding-delivery). -->
+Use the [AI coding delivery Skill](/en/skills/ai-coding-delivery) to structure the contract. The [AI-assisted coding solution](/en/library/ai-assisted-coding-delivery) gives the full method. A written plan is not evidence that its tasks have run.

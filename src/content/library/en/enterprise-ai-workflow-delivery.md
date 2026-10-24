@@ -68,4 +68,5 @@ My recommendation: without a data owner, exception owner or reproducible samples
 
 ## Companion resources
 
-Use the [AI delivery workbench](/en/tools/ai-delivery-workbench) to define scope, steps and acceptance checks, then export a task brief. The [enterprise AI delivery Skill](/en/skills/enterprise-ai-delivery) and [workflow reliability Skill](/en/skills/workflow-reliability) provide reusable design instructions. Neither configures a platform nor authorizes deployment.
+<!-- AI_WORKBENCH_PAUSED: Use the [AI delivery workbench](/en/tools/ai-delivery-workbench) to define scope, steps and acceptance checks, then export a task brief. -->
+The [enterprise AI delivery Skill](/en/skills/enterprise-ai-delivery) and [workflow reliability Skill](/en/skills/workflow-reliability) provide reusable design instructions. Neither configures a platform nor authorizes deployment.

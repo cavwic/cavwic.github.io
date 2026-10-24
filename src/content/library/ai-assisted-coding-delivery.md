@@ -58,4 +58,5 @@ alternatePath: /en/library/ai-assisted-coding-delivery
 
 ## 配套工作流
 
-在 [AI 交付工作台](/tools/ai-delivery-workbench) 中选择“AI 辅助开发”，填写范围、验收和恢复方式，导出开发任务书。配套 [AI 编码交付 Skill](/skills/ai-coding-delivery) 聚焦代码库阅读、变更、验证与交接，不绑定模型品牌，也不自动安装到本机。
+<!-- AI_WORKBENCH_PAUSED: 在 [AI 交付工作台](/tools/ai-delivery-workbench) 中选择“AI 辅助开发”，填写范围、验收和恢复方式，导出开发任务书。 -->
+配套 [AI 编码交付 Skill](/skills/ai-coding-delivery) 聚焦代码库阅读、变更、验证与交接，不绑定模型品牌，也不自动安装到本机。

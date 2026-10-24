@@ -42,4 +42,5 @@ alternatePath: /en/library/vibe-coding-needs-change-contract
 
 交接材料只需说明：当前入口在哪里、做完了什么、最后验证到哪一步、保留了什么用户状态、下一步是什么。不要用聊天长度代替任务记录，也不要在恢复时重复安装或覆盖已有结果。
 
-可以在 [AI 交付工作台](/tools/ai-delivery-workbench) 生成这份任务契约，再配合 [AI 编码交付 Skill](/skills/ai-coding-delivery)。更完整的方法见 [AI 辅助开发方案](/library/ai-assisted-coding-delivery)。工具导出的内容是待执行计划，不是已经运行的证据。
+<!-- AI_WORKBENCH_PAUSED: 可以在 [AI 交付工作台](/tools/ai-delivery-workbench) 生成这份任务契约，再配合 [AI 编码交付 Skill](/skills/ai-coding-delivery)。工具导出的内容是待执行计划，不是已经运行的证据。 -->
+可配合 [AI 编码交付 Skill](/skills/ai-coding-delivery) 整理任务契约，更完整的方法见 [AI 辅助开发方案](/library/ai-assisted-coding-delivery)。任务书是待执行计划，不是已经运行的证据。

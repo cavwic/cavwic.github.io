@@ -2,6 +2,7 @@
 import { ArrowLeft, ArrowRight, Download, FileText, Play } from "@lucide/astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { aiSkills } from "../data/ai-delivery";
+import { siteFeatures } from "../data/site-features";
 import type { Locale } from "../data/site";
 interface Props { slug: string; locale: Locale }
 const { slug, locale } = Astro.props;
@@ -14,7 +15,7 @@ const workbench = `${base}/tools/ai-delivery-workbench?mode=${skill.mode}&exampl
 <BaseLayout title={`${skill.title[locale]} | CAVWIC`} description={skill.description[locale]} locale={locale} alternatePath={`${zh ? "/en" : ""}/skills/${slug}`}>
   <article class="article-shell ai-skill-page">
     <header class="article-head"><a class="back-link" href={`${base}/skills`}><ArrowLeft size={18} />{zh ? "返回 Skills" : "Back to Skills"}</a><p class="eyebrow">{skill.phase[locale]}</p><h1>{skill.title[locale]}</h1><p>{skill.description[locale]}</p></header>
-    <div class="ai-skill-links"><a href={workbench}><Play size={20} />{zh ? "载入此 Skill 示例" : "Open this Skill's example"}</a><a href={`${fileBase}/${slug}.zip`} download><Download size={20} />{zh ? "下载 Skill 包" : "Download Skill package"}</a><a href={`${fileBase}/SKILL.md`}><FileText size={20} />SKILL.md</a></div>
+    <div class="ai-skill-links">{siteFeatures.aiDeliveryWorkbench && <a href={workbench}><Play size={20} />{zh ? "载入此 Skill 示例" : "Open this Skill's example"}</a>}<a href={`${fileBase}/${slug}.zip`} download><Download size={20} />{zh ? "下载 Skill 包" : "Download Skill package"}</a><a href={`${fileBase}/SKILL.md`}><FileText size={20} />SKILL.md</a></div>
     <div class="prose">
       <section class="ai-skill-purpose"><h2>{skill.question[locale]}</h2><p>{skill.useWhen[locale]}</p></section>
       <div class="ai-skill-contract"><section><h2>{zh ? "需要提供" : "Bring these inputs"}</h2><ul>{skill.inputs[locale].map(p => <li>{p}</li>)}</ul></section><section><h2>{zh ? "应当交付" : "Expected deliverables"}</h2><ul>{skill.outputs[locale].map(p => <li>{p}</li>)}</ul></section></div>

@@ -68,4 +68,5 @@ alternatePath: /en/library/enterprise-ai-workflow-delivery
 
 ## 可直接使用的配套资料
 
-打开 [AI 交付工作台](/tools/ai-delivery-workbench)，选择“企业应用”或“工作流”，整理边界、步骤和验收项，再导出任务书。配套 [企业 AI 发现与验收 Skill](/skills/enterprise-ai-delivery) 和 [工作流恢复设计 Skill](/skills/workflow-reliability) 可交给支持 Skill 的助手使用。它们提供设计约束，不代替平台配置或上线审批。
+<!-- AI_WORKBENCH_PAUSED: 打开 [AI 交付工作台](/tools/ai-delivery-workbench)，选择“企业应用”或“工作流”，整理边界、步骤和验收项，再导出任务书。 -->
+配套 [企业 AI 发现与验收 Skill](/skills/enterprise-ai-delivery) 和 [工作流恢复设计 Skill](/skills/workflow-reliability) 可交给支持 Skill 的助手使用。它们提供设计约束，不代替平台配置或上线审批。

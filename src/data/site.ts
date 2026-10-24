@@ -8,6 +8,7 @@ export type Entry = {
   date?: string;
   href?: string;
   external?: boolean;
+  versionPicker?: { downloadHref: string };
 };
 
 export type Industry = {
@@ -21,6 +22,7 @@ export type Industry = {
 export const githubUrl = "https://github.com/cavwic";
 export const solutionsLabUrl = "https://cavwic.github.io/cavwic-solutions-lab";
 export const solutionsLabRepositoryUrl = "https://github.com/cavwic/cavwic-solutions-lab";
+export const solutionsLabDownloadUrl = "https://github.com/cavwic/presales-solution-tool/releases/latest";
 
 export const resume = {
   zh: {

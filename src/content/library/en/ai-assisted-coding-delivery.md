@@ -58,4 +58,5 @@ Temporary workspaces can reduce risk, but starting over must not overwrite the u
 
 ## Companion workflow
 
-Choose “AI-assisted coding” in the [AI delivery workbench](/en/tools/ai-delivery-workbench), define scope, acceptance and recovery, then export a task brief. The [AI coding delivery Skill](/en/skills/ai-coding-delivery) covers repository discovery, implementation, verification and handoff. It is model-neutral and is not installed automatically.
+<!-- AI_WORKBENCH_PAUSED: Choose “AI-assisted coding” in the [AI delivery workbench](/en/tools/ai-delivery-workbench), define scope, acceptance and recovery, then export a task brief. -->
+The [AI coding delivery Skill](/en/skills/ai-coding-delivery) covers repository discovery, implementation, verification and handoff. It is model-neutral and is not installed automatically.

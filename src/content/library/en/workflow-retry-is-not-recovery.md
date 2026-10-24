@@ -42,4 +42,5 @@ Compensation is not simply deleting the last record. Another system may already 
 
 In a test environment, replay the same event, simulate a lost response, and interrupt before and after approval. Inspect destination counts, receipts and the audit chain. Bound attempts and elapsed time. Keep failure and recovery evidence instead of presenting a successful rerun as if nothing failed.
 
-My conclusion: a success-only demonstration does not establish deliverability. Use the [workflow reliability Skill](/en/skills/workflow-reliability) to define the state contract. The [AI delivery workbench](/en/tools/ai-delivery-workbench) helps preserve the brief; it does not execute external writes.
+<!-- AI_WORKBENCH_PAUSED: The [AI delivery workbench](/en/tools/ai-delivery-workbench) helps preserve the brief; it does not execute external writes. -->
+My conclusion: a success-only demonstration does not establish deliverability. Use the [workflow reliability Skill](/en/skills/workflow-reliability) to define the state contract.

@@ -42,4 +42,5 @@ For answers, test evidence, version selection and abstention. For extraction, te
 
 Start with one task and one authorized data domain. Run tests business users can repeat before expanding. An agent feature or workflow canvas does not establish correct authorization or recovery. Malicious source instructions remain a risk; prompt wording cannot replace application-enforced permissions. [OWASP reference](https://genai.owasp.org/llmrisk/llm01-prompt-injection/)
 
-Use the [AI delivery workbench](/en/tools/ai-delivery-workbench) to draft the task boundary, or read the [enterprise workflow solution](/en/library/enterprise-ai-workflow-delivery) for the full method. This article does not rank platforms without comparative testing.
+<!-- AI_WORKBENCH_PAUSED: Use the [AI delivery workbench](/en/tools/ai-delivery-workbench) to draft the task boundary. -->
+Read the [enterprise workflow solution](/en/library/enterprise-ai-workflow-delivery) for the full method. This article does not rank platforms without comparative testing.
