@@ -4,6 +4,7 @@ import Analytics from "../components/Analytics.astro";
 import { industryPagePath, primaryIndustries } from "../data/industries";
 import { getBasePath, getNavigation, githubUrl, localizePath, type Locale } from "../data/site";
 import "../styles/global.css";
+import "../styles/site-refresh.css";
 
 interface Props {
   title?: string;
@@ -99,12 +100,14 @@ const industryMenu = locale === "zh"
   data-alternate-path={alternatePath}
   data-auto-detect-locale={autoDetectLocale ? "true" : "false"}
   data-theme="light"
+  data-site-design="fieldnotes"
 >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#edf2f7" />
+    <meta name="theme-color" content="#f7f9fc" />
+    <link rel="preload" href="/fonts/Manrope-Variable.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang={locale === "zh" ? "en" : "zh-CN"} href={new URL(alternatePath, Astro.site)} />
@@ -144,12 +147,15 @@ const industryMenu = locale === "zh"
           const theme = saved === "dark" || saved === "light" ? saved : darkSystem ? "dark" : "light";
           root.dataset.theme = theme;
           root.dataset.themePreference = saved ?? "system";
-          document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#102031" : "#edf2f7");
+          if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            root.dataset.motionReady = "true";
+          }
+          document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#181818" : "#f7f9fc");
         } catch {}
       })();
     </script>
   </head>
-  <body class:list={{ "copy-protected": copyProtectionEnabled && !isHomePage }}>
+  <body class:list={["site-redesign", { "copy-protected": copyProtectionEnabled && !isHomePage }]}>
     <a class="skip-link" href="#main">{copy.skip}</a>
     <header class="site-header">
       <a class="brand" href={homePath} aria-label={copy.home}>
@@ -188,7 +194,7 @@ const industryMenu = locale === "zh"
               </div>
             </div>
           ) : (
-            <a class:list={["nav-link", { active: item.basePath === "/" ? basePath === "/" : basePath.startsWith(item.basePath) }]} href={item.href}>
+            <a class:list={["nav-link", { active: item.basePath === "/" ? basePath === "/" : basePath.startsWith(item.basePath) }]} href={item.href} aria-current={(item.basePath === "/" ? basePath === "/" : basePath.startsWith(item.basePath)) ? "page" : undefined}>
               {item.label}
             </a>
           ))}
@@ -267,19 +273,34 @@ const industryMenu = locale === "zh"
         });
       }
 
-      navToggle?.addEventListener("click", () => {
-        const isOpen = navToggle.getAttribute("aria-expanded") === "true";
-        navToggle.setAttribute("aria-expanded", String(!isOpen));
-        navToggle.setAttribute("aria-label", isOpen ? navToggle.dataset.openLabel : navToggle.dataset.closeLabel);
-        siteNav?.classList.toggle("open", !isOpen);
+      const setNavigationOpen = (open) => {
+        navToggle?.setAttribute("aria-expanded", String(open));
+        navToggle?.setAttribute("aria-label", open ? navToggle.dataset.closeLabel : navToggle.dataset.openLabel);
+        siteNav?.classList.toggle("open", open);
+        document.body.classList.toggle("nav-open", open);
+        for (const element of document.querySelectorAll("main, .site-footer")) element.inert = open;
+      };
+      navToggle?.addEventListener("click", () => setNavigationOpen(navToggle.getAttribute("aria-expanded") !== "true"));
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && navToggle?.getAttribute("aria-expanded") === "true") {
+          setNavigationOpen(false);
+          navToggle.focus();
+        }
       });
+      document.addEventListener("click", (event) => {
+        if (navToggle?.getAttribute("aria-expanded") === "true" && !event.target.closest(".site-header")) setNavigationOpen(false);
+      });
+      siteNav?.addEventListener("click", (event) => {
+        if (event.target.closest("a")) setNavigationOpen(false);
+      });
+      window.matchMedia("(min-width: 1041px)").addEventListener("change", (event) => { if (event.matches) setNavigationOpen(false); });
 
       const applyTheme = (theme) => {
         document.documentElement.dataset.theme = theme;
         themeToggle?.setAttribute("aria-label", theme === "dark" ? themeToggle.dataset.lightLabel : themeToggle.dataset.darkLabel);
         themeToggle?.setAttribute("title", theme === "dark" ? themeToggle.dataset.lightLabel : themeToggle.dataset.darkLabel);
         themeToggle?.setAttribute("aria-pressed", String(theme === "dark"));
-        document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#102031" : "#edf2f7");
+        document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#181818" : "#f7f9fc");
       };
 
       applyTheme(document.documentElement.dataset.theme);
@@ -311,8 +332,32 @@ const industryMenu = locale === "zh"
         window.scrollTo({ top: 0, behavior: reducedMotion.matches ? "auto" : "smooth" });
       });
 
-      window.addEventListener("scroll", updateBackToTop, { passive: true });
+      let backToTopFrame = 0;
+      window.addEventListener("scroll", () => {
+        if (backToTopFrame) return;
+        backToTopFrame = requestAnimationFrame(() => { updateBackToTop(); backToTopFrame = 0; });
+      }, { passive: true });
       updateBackToTop();
+
+      if ("IntersectionObserver" in window && !reducedMotion.matches) {
+        const revealSection = (element) => {
+          element.classList.add("site-visible");
+          sectionObserver.unobserve(element);
+        };
+        const sectionObserver = new IntersectionObserver((entries) => {
+          for (const entry of entries) if (entry.isIntersecting) revealSection(entry.target);
+        }, { rootMargin: "0px 0px -32px 0px", threshold: 0 });
+        document.querySelectorAll("[data-site-reveal]:not(.site-visible)").forEach(element => sectionObserver.observe(element));
+        document.addEventListener("focusin", (event) => {
+          const section = event.target instanceof Element ? event.target.closest("[data-site-reveal]") : null;
+          if (section) revealSection(section);
+        });
+        const wordObserver = new IntersectionObserver((entries) => {
+          for (const entry of entries) if (entry.isIntersecting) { entry.target.classList.add("word-visible"); wordObserver.unobserve(entry.target); }
+        }, { rootMargin: "0px 0px -20% 0px", threshold: 1 });
+        document.querySelectorAll("[data-reveal-word]").forEach((element, index) => { element.style.transitionDelay = `${Math.min(index * 60, 400)}ms`; wordObserver.observe(element); });
+        document.documentElement.dataset.motionReady = "true";
+      }
     </script>
     <Analytics />
   </body>

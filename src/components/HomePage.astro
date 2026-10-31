@@ -1,0 +1,122 @@
+---
+import { ArrowDown, ArrowRight, ArrowUpRight, Blocks, ClipboardCheck, FileSearch, Mail, Route } from "@lucide/astro";
+import { getCollection } from "astro:content";
+import EntryList from "./EntryList.astro";
+import ResumeLink from "./ResumeLink.astro";
+import { isVisible, toEntry } from "../data/content";
+import { getLatestPublications } from "../data/latest-publications";
+import { presalesPlatform, solutionsLabUrl, type Locale } from "../data/site";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+interface Props { locale?: Locale; }
+const { locale = "zh" } = Astro.props;
+const en = locale === "en";
+const path = (value: string) => `${en ? "/en" : ""}${value}`;
+const library = (await getCollection("library"))
+  .filter(entry => entry.data.locale === locale && entry.data.featured && isVisible(entry))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).slice(0, 4);
+const text = en ? {
+  title: "Chen Wencong | AI · Embodied Robotics · Dexterous Hands",
+  description: "Presales solutions, industry research and practical tools for enterprise AI, embodied robotics and dexterous hands.",
+  name: "Chen Wencong", kicker: "Technical presales & solution engineering",
+  role: "AI · Embodied robotics · Dexterous hands",
+  summary: "I translate business problems into system boundaries, POC evidence and deliverable technical plans.",
+  explore: "Explore my work", process: ["Discovery", "Architecture", "Validation", "Delivery"],
+  workEyebrow: "Selected work", workTitle: "Ideas, with something to inspect.",
+  workIntro: "Practical tools and source backed research across three connected fields.",
+  platformType: "A working tool", platformTitle: presalesPlatform.en.title,
+  platformBody: "From customer conversations and tender review to proposal preparation and technical handover.",
+  platformAction: "Open the platform", ai: "Enterprise AI", aiBody: "Compare knowledge, orchestration, deployment and evaluation across AI platforms.",
+  robotics: "Embodied robotics", roboticsBody: "Compare platforms by task, development access and operating conditions.",
+  hands: "Dexterous hands", handsBody: "Look beyond DoF: touch, payload, interfaces and test evidence.",
+  archive: "Follow the products back to the companies.", archiveLink: "Company files", matrix: "Product matrices",
+  methodEyebrow: "How I work", tagline: ["Start with the business problem.", "Keep the evidence with the solution."],
+  methodBody: "Over six years in complex B2B hardware and software presales. These methods now inform my work in enterprise AI, robotics and end effectors.",
+  recentEyebrow: "Field notes", recentTitle: "Recent work", recentIntro: "Tools, technical writing and experiments. Sources, baselines and failure cases stay visible.",
+  allArticles: "All articles", contactKicker: "Continue the conversation", contactTitle: "Where business meets engineering.",
+  contactBody: "Technical presales, solution engineering and industry research.", contactAction: "Get in touch", about: "About me",
+} : {
+  title: "陈文聪 | AI · 具身智能 · 灵巧手",
+  description: "陈文聪的企业 AI、具身机器人与灵巧手售前解决方案、行业研究与实践工具。",
+  name: "陈文聪", kicker: "技术售前与解决方案",
+  role: "AI · 具身智能 · 灵巧手",
+  summary: "把业务问题转化为明确的系统边界、POC 验证依据和可交付的技术方案。",
+  explore: "查看方案与实践", process: ["需求澄清", "方案架构", "验证依据", "交付闭环"],
+  workEyebrow: "方案与实践", workTitle: "研究有依据，方案有落点。",
+  workIntro: "三个相互关联的方向，以及可以直接打开、查看和使用的成果。",
+  platformType: "可用工具", platformTitle: presalesPlatform.zh.title,
+  platformBody: "从客户沟通、招标分析到技术文件编制与中标交底，让资料和工作过程留在同一条线上。",
+  platformAction: "打开平台", ai: "企业 AI", aiBody: "从知识、编排、部署和评测出发，比较平台与应用边界。",
+  robotics: "具身智能", roboticsBody: "先明确任务与现场，再比较本体能力、开发接口和验证条件。",
+  hands: "灵巧手", handsBody: "不止看自由度，也看触觉、接口、负载定义与测试依据。",
+  archive: "从产品，进一步了解公司与产业链。", archiveLink: "公司档案", matrix: "产品矩阵",
+  methodEyebrow: "工作方法", tagline: ["从业务问题出发，", "让技术方案有据可循。"],
+  methodBody: "六年以上复杂软硬件 B2B 售前经历，目前正将这些工作方法用于企业 AI、具身机器人和末端执行器场景。",
+  recentEyebrow: "持续记录", recentTitle: "近期发布", recentIntro: "工具实践、技术文章与案例分析。保留来源、对照和失败结果，区分软件实验与真实硬件验证。",
+  allArticles: "全部文章", contactKicker: "交流与联系", contactTitle: "在技术与业务之间，找到可行的路径。",
+  contactBody: "技术售前、解决方案与行业研究。", contactAction: "邮件联系", about: "关于我",
+};
+const steps = en ? [
+  { title: "Discovery", body: "Clarify the process, data, site conditions, decision owners and limits.", icon: FileSearch },
+  { title: "Architecture", body: "Define system layers, interfaces, access control, dependencies and alternatives.", icon: Blocks },
+  { title: "POC validation", body: "Set samples, metrics, failure cases and acceptance owners before building.", icon: ClipboardCheck },
+  { title: "Delivery", body: "Connect deployment, training, version coordination, escalation and handover.", icon: Route },
+] : [
+  { title: "需求澄清", body: "明确对象、流程、数据、现场条件、决策人及不能承诺的事项。", icon: FileSearch },
+  { title: "方案架构", body: "梳理系统分层、接口、权限、资源依赖与备选方案。", icon: Blocks },
+  { title: "POC 验证", body: "先定义样本、指标、失败脚本和验收责任。", icon: ClipboardCheck },
+  { title: "交付闭环", body: "串联部署、培训、版本协同、问题升级和验收移交。", icon: Route },
+];
+const segmenter = new Intl.Segmenter(en ? "en" : "zh-CN", { granularity: "word" });
+---
+
+<BaseLayout title={text.title} description={text.description} locale={locale} autoDetectLocale={true} alternatePath={en ? "/" : "/en"}>
+  <section class="portfolio-hero" aria-labelledby="profile-name">
+    <img class="portfolio-hero-image" src="/images/workbench-hero.webp" alt={en ? "Code, drawings, calipers and a robotic hand on a technical workbench" : "机械手、技术图纸、卡尺与代码组成的工作台"} fetchpriority="high" />
+    <div class="portfolio-hero-scrim" aria-hidden="true"></div>
+    <div class="portfolio-hero-inner">
+      <p class="portfolio-kicker"><span aria-hidden="true"></span>{text.kicker}</p>
+      <h1 id="profile-name">{text.name}</h1>
+      <p class="portfolio-role">{text.role}</p>
+      <p class="portfolio-summary">{text.summary}</p>
+      <div class="portfolio-actions">
+        <a class="button button-primary" href="#selected-work">{text.explore}<ArrowDown size={18} /></a>
+        <ResumeLink className="portfolio-resume" locale={locale} />
+      </div>
+    </div>
+    <div class="portfolio-hero-footer" aria-hidden="true"><span>CAVWIC / {en ? "Research & practice" : "研究与实践"}</span><span>{text.process.join(" → ")}</span></div>
+  </section>
+
+  <section class="portfolio-section portfolio-work" id="selected-work">
+    <div class="portfolio-section-head" data-site-reveal>
+      <div><p class="eyebrow">{text.workEyebrow}</p><h2>{text.workTitle}</h2></div>
+      <p>{text.workIntro}</p>
+    </div>
+    <div class="portfolio-work-grid">
+      <article class="portfolio-feature" data-site-reveal>
+        <a class="portfolio-feature-image" href={solutionsLabUrl} target="_blank" rel="noreferrer" aria-label={text.platformTitle}><img src="/images/presales-platform-preview.jpg" alt={en ? "The actual Presales Solution Platform interface with project boundaries and five workflow stages" : "售前解决方案平台真实界面：项目边界与五阶段工作流程"} loading="lazy" width="1280" height="720" /><span class="portfolio-image-arrow"><ArrowUpRight size={24}/></span></a>
+        <div class="portfolio-feature-copy"><p class="eyebrow">{text.platformType}</p><h3><a href={solutionsLabUrl} target="_blank" rel="noreferrer">{text.platformTitle}</a></h3><p>{text.platformBody}</p><a class="portfolio-text-link" href={solutionsLabUrl} target="_blank" rel="noreferrer">{text.platformAction}<ArrowUpRight size={18}/></a></div>
+      </article>
+      <div class="portfolio-research">
+        <a class="portfolio-research-row" href={path("/matrices/enterprise-ai-platforms")} data-site-reveal><div class="portfolio-research-image ai-visual"><img src="/images/company-visuals/ai-workflow-concept.webp" alt={en ? "Illustrative enterprise AI workflow orchestration" : "企业 AI 工作流编排示意图"} loading="lazy" width="1440" height="810"/></div><div><span class="portfolio-type">{text.matrix}</span><h3>{text.ai}</h3><p>{text.aiBody}</p></div><ArrowUpRight size={20}/></a>
+        <a class="portfolio-research-row" href={path("/matrices/embodied-robot-platforms")} data-site-reveal><div class="portfolio-research-image robot-visual"><img src="/images/embodied-robot-exploded.webp" alt={en ? "Illustrative exploded robot structure" : "机器人结构分解示意图"} loading="lazy" width="1920" height="640"/></div><div><span class="portfolio-type">{text.matrix}</span><h3>{text.robotics}</h3><p>{text.roboticsBody}</p></div><ArrowUpRight size={20}/></a>
+        <a class="portfolio-research-row" href={path("/matrices/dexterous-hand-selection")} data-site-reveal><div class="portfolio-research-image hand-visual"><img src="/images/inspire-product-path-concept.webp" alt={en ? "Illustrative dexterous hand and actuator structure" : "灵巧手与驱动结构示意图"} loading="lazy" width="1440" height="810"/></div><div><span class="portfolio-type">{text.matrix}</span><h3>{text.hands}</h3><p>{text.handsBody}</p></div><ArrowUpRight size={20}/></a>
+      </div>
+    </div>
+    <div class="portfolio-archive" data-site-reveal><p>{text.archive}</p><a class="portfolio-text-link" href={path("/companies")}>{text.archiveLink}<ArrowRight size={18}/></a></div>
+  </section>
+
+  <section class="portfolio-method" id="evidence">
+    <div class="portfolio-section">
+      <div class="portfolio-method-intro"><div data-site-reveal><p class="eyebrow">{text.methodEyebrow}</p><h2 class="portfolio-tagline">{text.tagline.map(line => <span class="portfolio-tagline-line">{Array.from(segmenter.segment(line), ({ segment }) => <span data-reveal-word>{segment}</span>)}</span>)}</h2></div><p data-site-reveal>{text.methodBody}</p></div>
+      <div class="portfolio-process">{steps.map(({ title, body, icon: Icon }, index) => <article data-site-reveal><div class="portfolio-step-top"><span>0{index + 1}</span><Icon size={24} stroke-width={1.5}/></div><h3>{title}</h3><p>{body}</p></article>)}</div>
+    </div>
+  </section>
+
+  <section class="portfolio-section portfolio-latest">
+    <div class="portfolio-section-head" data-site-reveal><div><p class="eyebrow">{text.recentEyebrow}</p><h2>{text.recentTitle}</h2></div><div><p>{text.recentIntro}</p><a class="portfolio-text-link" href={path("/articles")}>{text.allArticles}<ArrowRight size={18}/></a></div></div>
+    <EntryList entries={getLatestPublications(locale, library.map(entry => toEntry(entry)))} locale={locale} showMeta={false} reveal={true}/>
+  </section>
+
+  <section class="portfolio-contact"><div class="portfolio-section"><div data-site-reveal><p class="eyebrow">{text.contactKicker}</p><h2>{text.contactTitle}</h2><p>{text.contactBody}</p></div><div class="portfolio-contact-actions" data-site-reveal><a class="button button-primary" href="mailto:chen_career@sina.com">{text.contactAction}<Mail size={18}/></a><a class="portfolio-text-link" href={path("/about")}>{text.about}<ArrowUpRight size={18}/></a></div></div></section>
+</BaseLayout>

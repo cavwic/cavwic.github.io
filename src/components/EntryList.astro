@@ -7,14 +7,15 @@ interface Props {
   entries: Entry[];
   locale?: Locale;
   showMeta?: boolean;
+  reveal?: boolean;
 }
 
-const { entries, locale = "zh", showMeta = true } = Astro.props;
+const { entries, locale = "zh", showMeta = true, reveal = false } = Astro.props;
 ---
 
 <div class="entry-list">
   {entries.map((entry, index) => (
-    <article class:list={["entry-row", !showMeta && "entry-row-plain"]}>
+    <article class:list={["entry-row", !showMeta && "entry-row-plain"]} data-site-reveal={reveal ? "" : undefined}>
       {showMeta && (
         <div class="entry-meta">
           <span class:list={["status", `status-${entry.status}`]}>{statusLabels[locale][entry.status]}</span>
