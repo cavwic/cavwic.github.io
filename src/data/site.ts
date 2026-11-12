@@ -27,25 +27,25 @@ export const solutionsLabDownloadUrl = "https://github.com/cavwic/presales-solut
 export const presalesPlatform = {
   zh: {
     title: "售前解决方案平台",
-    description: "覆盖客户需求梳理、招标文件分析、技术方案与投标文档编制及中标交底，统一管理资料、依据和模板。提供网页版与 Windows 本地版，生成内容需人工复核。",
+    description: "以三栏工作区串联售前、招标、投标和中标交底，支持历史项目搜索、人工投递标记及独立项目设置。提供网页版与 Windows 本地版，生成内容需人工复核。",
     status: "published",
     href: solutionsLabUrl,
     external: true,
     versionPicker: {
       downloadHref: solutionsLabDownloadUrl,
-      webDescription: "在浏览器中整理项目资料与售前流程。",
+      webDescription: "三栏项目工作区，支持浏览器本地历史、资料管理与售前流程。",
       downloadDescription: "Windows x64 便携版，支持本地模型、授权套餐接口、API、混合模式与共享 Skills。",
     },
   },
   en: {
     title: "Presales Solution Platform",
-    description: "Organize customer requirements, review tender documents, prepare technical proposals and bid documents, and track post-award handover. Choose the web or Windows desktop app; review generated content before use.",
+    description: "Manage discovery, tenders, bids and handover in a three-pane workspace, with project history, manual submission tracking and dedicated project settings. Choose the web or Windows desktop app; review generated content before use.",
     status: "published",
     href: solutionsLabUrl,
     external: true,
     versionPicker: {
       downloadHref: solutionsLabDownloadUrl,
-      webDescription: "Manage project materials and presales workflows in your browser.",
+      webDescription: "A three-pane workspace with browser-local project history, materials and presales workflows.",
       downloadDescription: "Portable Windows x64 app with local models, authorized subscription access, API and hybrid modes, and shared Skills.",
     },
   },

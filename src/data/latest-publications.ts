@@ -34,7 +34,7 @@ export function getLatestPublications(locale: Locale, articles: Entry[]): Entry[
     href: "/en/library/enterprise-ai-workflow-delivery", status: "published", date: "2026.10",
   };
   const ai = siteFeatures.aiDeliveryWorkbench ? aiWorkbench : aiDocs;
-  const platform: Entry = { ...presalesPlatform[locale], date: "2026.10" };
+  const platform: Entry = { ...presalesPlatform[locale], date: "2026.11" };
   const seen = new Set([platform.href, ai.href, lab.href]);
   const rest = articles.filter(entry => { if ((!siteFeatures.aiDeliveryWorkbench && entry.href?.includes("/tools/ai-delivery-workbench")) || seen.has(entry.href)) return false; seen.add(entry.href); return true; });
   return [platform, ai, lab, ...rest.slice(0, 1)];
